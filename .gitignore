@@ -1,11 +1,15 @@
 # Obsidian
 .obsidian/
-.trash/
+.obsidian.vimrc
+workspace.json
 
 # OS files
-Thumbs.db
 .DS_Store
-Desktop.ini
+Thumbs.db
+desktop.ini
 
-# Git
-*.orig
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
