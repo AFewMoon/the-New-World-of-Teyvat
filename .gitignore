@@ -1,0 +1,11 @@
+# Obsidian
+.obsidian/
+.trash/
+
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Git
+*.orig
