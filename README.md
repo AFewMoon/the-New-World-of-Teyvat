@@ -144,5 +144,4 @@
 
 ## 关于
 
-作者：AFewMoon  
-更多内容详见 [ABOUT.md](./ABOUT.md)。
+作者：AFewMoon
