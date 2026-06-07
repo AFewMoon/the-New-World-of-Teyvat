@@ -6,9 +6,6 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![GitHub last commit](https://img.shields.io/github/last-commit/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![Nations](https://img.shields.io/badge/Nations-7-green)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
-[![Political Systems](https://img.shields.io/badge/Political%20Systems-7-orange)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
-[![Currencies](https://img.shields.io/badge/Currencies-8-yellow)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
-[![Documents](https://img.shields.io/badge/Documents-39-blueviolet)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 
 基于《原神》世界观的二次创作与深度世界构建项目。
 
