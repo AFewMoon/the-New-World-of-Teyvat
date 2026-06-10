@@ -1,16 +1,14 @@
-#!/usr/bin/env python3
 """
 文本规范化工具：遍历所有 *.md 文件，执行以下操作：
-1. 备份至 backup/ 文件夹，保留目录架构
-2. 将英文单双引号替换为中文引号
-3. 数字间连字符 `-` 统一为 `~`
-4. 数字与非数字（含中文、英文）之间的空格调整为有且仅有一个
-5. 加粗符号 `**` 紧贴其内容（删除 `**` 与其内容之间的空格）
-6. 代码块（```...```）和行内代码（`...`）内部不做变动
+1. 将英文单双引号替换为中文引号
+2. 数字间连字符 `-` 统一为 `~`
+3. 数字与非数字（含中文、英文）之间的空格调整为有且仅有一个
+4. 加粗符号 `**` 紧贴其内容（删除 `**` 与其内容之间的空格）
+5. 代码块（```...```）和行内代码（`...`）内部不做变动
 """
 
-import shutil
 import re
+import time
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -69,40 +67,39 @@ def process_line(line: str) -> str:
     cleaned = re.sub(r'(\d)\s*([\u4e00-\u9fffa-zA-Z])', r'\1 \2', cleaned)
     #    中文或字母后跟数字
     cleaned = re.sub(r'([\u4e00-\u9fffa-zA-Z])\s*(\d)', r'\1 \2', cleaned)
-    #    数字后跟 **（确保一个空格，如 2**1** → 2 **1**）
-    cleaned = re.sub(r'(\d)\s*(\*\*)', r'\1 \2', cleaned)
-    #    ** 后跟数字（确保一个空格，如 **1**2 → **1** 2）
-    cleaned = re.sub(r'(\*\*)\s*(\d)', r'\1 \2', cleaned)
 
-    # 6. 加粗符号 ** 与非数字之间的空格 → 删除
-    #    ** 文字 ** → **文字**（非数字，删空格）
-    #    ** 1 ** → ** 1 **（数字，保留空格）
-    #    非数字 = 中文 + 英文字母 + 日文假名（非标点/格式符号）
-    non_digit = r'[\u4e00-\u9fffa-zA-Z\u3040-\u309f\u30a0-\u30ff]'
-    cleaned = re.sub(r'\*\*\s+(' + non_digit + r')', r'**\1', cleaned)    # ** 后跟非数字
-    cleaned = re.sub(r'(' + non_digit + r')\s+\*\*', r'\1**', cleaned)    # 非数字后跟 **
+    # 6. 删除 ** 与数字之间的多余空格（紧贴加粗内容）
+    #    ** 85%** → **85%**
+    cleaned = re.sub(r'\*\*\s+(\d)', r'**\1', cleaned)
+    cleaned = re.sub(r'(\d)\s+\*\*', r'\1**', cleaned)
 
-    # 7. 还原行内代码
+    # 7. 外部中文/字母/假名与 ** 之间 → 紧贴（删除所有空格）
+    #    保证加粗符号用于汉字之间时不应存在空格
+    external = r'[\u4e00-\u9fffa-zA-Z\u3040-\u309f\u30a0-\u30ff]'
+    cleaned = re.sub(r'\*\*\s+(' + external + r')', r'**\1', cleaned)
+    cleaned = re.sub(r'(' + external + r')\s+\*\*', r'\1**', cleaned)
+    #    处理 ** 文字 ** → **文字**（两侧空格都删除；捕获多个字符）
+    cleaned = re.sub(r'\*\*\s+(' + external + r'+)\s+\*\*', r'**\1**', cleaned)
+    #    修复 ** 左侧为全角/CJK 标点时右侧中文误加空格：** 对 → **对
+    cleaned = re.sub(r'([\u3000-\u303f\uff00-\uffef])\*\*\s+(' + external + r')', r'\1**\2', cleaned)
+    #    修复中文与 ** 之间误加的空格：平衡的 ** 城市 → 平衡的**城市
+    cleaned = re.sub(r'(' + external + r')\s+\*\*\s+(' + external + r')', r'\1**\2', cleaned)
+    #    最终清理：中文与 ** 之间不应有空格（任一侧有空格即删除）
+    cleaned = re.sub(r'(' + external + r')\s+\*\*\s*(' + external + r')', r'\1**\2', cleaned)
+    cleaned = re.sub(r'(' + external + r')\s*\*\*\s+(' + external + r')', r'\1**\2', cleaned)
+
+    # 8. 还原行内代码
     cleaned = restore_inline_code(cleaned, code_parts)
 
     return cleaned
 
 
 def should_skip_file(path: Path) -> bool:
-    """跳过非 md 文件以及 tools/、backup/、.git/ 等目录。"""
+    """跳过非 md 文件以及 tools/、.git/ 等目录。"""
     rel = path.relative_to(BASE_DIR)
     parts = rel.parts
-    skip_dirs = {"tools", "backup", ".git", "node_modules", "__pycache__"}
+    skip_dirs = {"tools", ".git", "node_modules", "__pycache__"}
     return any(p in skip_dirs for p in parts)
-
-
-def backup_file(src: Path) -> None:
-    """将源文件备份至 backup/ 对应子目录。"""
-    rel = src.relative_to(BASE_DIR)
-    dst = BASE_DIR / "backup" / rel
-    dst.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(src, dst)
-    print(f"  [BACKUP] {rel} -> backup/{rel}")
 
 
 def fix_file(path: Path) -> bool:
@@ -157,21 +154,29 @@ def main() -> None:
 
     print(f"\n找到 {len(md_files)} 个 .md 文件")
 
-    # 阶段 1：备份
-    print("\n--- 阶段 1：备份 ---")
-    for path in md_files:
-        backup_file(path)
-    print(f"共备份 {len(md_files)} 个文件至 backup/")
+    # 计算所有文件总大小
+    total_bytes = sum(p.stat().st_size for p in md_files)
+    total_mb = total_bytes / (1024 * 1024)
 
-    # 阶段 2：修改
-    print("\n--- 阶段 2：规范化 ---")
+    # 开始处理并计时
+    print("\n--- 开始规范化 ---")
+    start_time = time.perf_counter()
     fixed_count = 0
     for path in md_files:
         if fix_file(path):
             fixed_count += 1
+    end_time = time.perf_counter()
+
+    elapsed = end_time - start_time
+    seconds_per_mb = elapsed / total_mb if total_mb > 0 else 0
+    mb_per_second = total_mb / elapsed if elapsed > 0 else 0
 
     print(f"\n完成：共处理 {len(md_files)} 个文件，其中 {fixed_count} 个有修改。")
-    print("备份文件位于 backup/ 目录下。")
+    print(f"\n处理统计：")
+    print(f"  总耗时      : {elapsed:.3f} 秒")
+    print(f"  总数据量    : {total_mb:.3f} MB")
+    print(f"  处理速度    : {seconds_per_mb:.3f} 秒/MB")
+    print(f"               {mb_per_second:.3f} MB/秒")
 
 
 if __name__ == "__main__":
