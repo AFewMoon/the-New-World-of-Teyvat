@@ -2,7 +2,7 @@
 
 **The New World of Teyvat**
 
-[![License](https://img.shields.io/badge/License-CC%20 BY--NC%204.0-blue)](LICENSE)
+[![License|51](https://img.shields.io/badge/License-CC%20 BY--NC%204.0-blue)](LICENSE)
 [![GitHub repo size](https://img.shields.io/github/repo-size/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![GitHub last commit](https://img.shields.io/github/last-commit/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![Nations](https://img.shields.io/badge/Nations-8-green)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
