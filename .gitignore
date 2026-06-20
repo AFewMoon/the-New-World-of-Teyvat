@@ -13,3 +13,6 @@ desktop.ini
 *.swp
 *.swo
 *~
+
+# Python cache
+tools/__pycache__/

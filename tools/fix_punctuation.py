@@ -3,8 +3,15 @@
 1. 将英文单双引号替换为中文引号
 2. 数字间连字符 `-` 统一为 `~`
 3. 数字与非数字（含中文、英文）之间的空格调整为有且仅有一个
-4. 加粗符号 `**` 紧贴其内容（删除 `**` 与其内容之间的空格）
-5. 代码块（```...```）和行内代码（`...`）内部不做变动
+4. 加粗符号 `**` 周围空格规范化：
+   内部（** 与内容之间）不留空格，紧贴任意非空字符；
+   外部（** 与相邻字符之间）左侧基于前一个字符 或 加粗内容首字符：
+      任一非 CJK → 补 1 空格；右侧基于加粗内容末字符：非 CJK → 补 1 空格
+      （数字、% 等视为非 CJK，故 `**30%~40%**` 两侧均补空格）
+5. 中文与英文之间补 1 空格（"郡GDP" → "郡 GDP"，"GDP的" → "GDP 的"）
+6. 数字+百分号/连字符（45%~50%、30%）后跟中文 → 补 1 空格
+7. 代码块（```...```）和行内代码（`...`）内部不做变动
+8. 删除 Markdown 标题行序号（"## 一、背景" → "## 背景"，"## 1.2 经济" → "## 经济"）
 """
 
 import re
@@ -46,6 +53,140 @@ def restore_inline_code(text: str, parts: list[str]) -> str:
     return text
 
 
+def is_cjk(c: str) -> bool:
+    """判断字符是否属于 CJK 文字体系（含汉字、CJK 标点、全角标点、通用引号破折号等）。"""
+    return ('\u4e00' <= c <= '\u9fff' or    # CJK 统一汉字
+            '\u3000' <= c <= '\u303f' or    # CJK 符号和标点
+            '\uff00' <= c <= '\uffef' or    # 全角字符（含全角标点）
+            '\u2000' <= c <= '\u206f')      # 通用标点（em dash、en dash、省略号等）
+
+
+def _bold_content_first_last(text: str, start: int) -> tuple[str | None, str | None]:
+    """从 ** 起始位置 start 向前扫描，找到匹配的 ** 并返回内容的第一个/最后一个非空格字符。
+
+    返回 (first_non_space, last_non_space)，若未找到匹配 ** 则返回 (None, None)。
+    """
+    i = start + 2
+    # 跳过 ** 后的空格
+    while i < len(text) and text[i] == ' ':
+        i += 1
+    first = None
+    last = None
+    while i + 2 <= len(text):
+        # 跳过 ***（粗斜体）中间出现的 ***
+        if i + 3 <= len(text) and text[i:i+3] == '***':
+            i += 1
+            continue
+        if text[i:i+2] == '**':
+            content = text[start + 2:i]
+            # 找到内容的第一个和最后一个非空格字符
+            stripped = content.strip()
+            if stripped:
+                first = stripped[0]
+                last = stripped[-1]
+            break
+        i += 1
+    return first, last
+
+
+def fix_bold_spacing(text: str) -> str:
+    """处理 ** 加粗标记周围的空格。
+
+    内部规则：** 与其内容之间不留空格（紧贴任意非空字符）。
+    外部规则：左侧基于"前一个字符 或 加粗内容首字符"，任一非 CJK → 补 1 空格；
+              右侧基于"后一个字符 或 加粗内容末字符"，任一非 CJK → 补 1 空格。
+              非 CJK 字符包括：数字、英文字母、% 等符号。
+              例：`-**力**`（前字符 `-` 非 CJK）+ `的**30%**`（首字符 `3` 非 CJK）均补空格。
+    """
+    result = []
+    i = 0
+
+    while i < len(text):
+        # 跳过 ***（粗斜体）的前两个 *，当作普通字符处理
+        if i + 3 <= len(text) and text[i:i+3] == '***':
+            result.append(text[i])
+            i += 1
+            continue
+
+        if i + 2 <= len(text) and text[i:i+2] == '**':
+            # 向前扫描找到匹配的闭 **
+            first_char, last_char = _bold_content_first_last(text, i)
+
+            if first_char is None:
+                # 没有匹配的闭 **，原样保留
+                result.append(text[i])
+                i += 1
+                continue
+
+            # --- 开启 ** ---
+            # 删除 ** 前累积的空格（内部紧贴）
+            while result and result[-1] == ' ':
+                result.pop()
+            # 外部左侧：内容以非 CJK 开头 或 前一个字符是非 CJK → 加 1 空格
+            if result and (not is_cjk(first_char) or not is_cjk(result[-1])):
+                result.append(' ')
+            result.append('**')
+            # 跳过 ** 后的空格（内部紧贴）
+            i += 2
+            while i < len(text) and text[i] == ' ':
+                i += 1
+
+            # 将内容追加到结果（保持原样，包括可能的空格）
+            content_start = i
+            while i + 2 <= len(text):
+                if text[i:i+3] == '***':
+                    i += 1
+                    continue
+                if text[i:i+2] == '**':
+                    content = text[content_start:i]
+                    result.append(content)
+                    # --- 关闭 ** ---
+                    # 删除 ** 前累积的空格（内部紧贴）
+                    while result and result[-1] == ' ':
+                        result.pop()
+                    result.append('**')
+                    i += 2
+                    # 跳过 ** 后的空格
+                    while i < len(text) and text[i] == ' ':
+                        i += 1
+                    # 外部右侧：内容以非 CJK 结尾 → 加 1 空格
+                    if i < len(text) and not is_cjk(last_char):
+                        if result and result[-1] != ' ':
+                            result.append(' ')
+                    break
+                i += 1
+        else:
+            result.append(text[i])
+            i += 1
+
+    return ''.join(result)
+
+
+def remove_heading_number(text: str) -> str:
+    """删除 Markdown 标题行（## 等）中的序号，包括"一、"、"1.2"、"3.4.5"等格式。
+
+    仅当行以 # 开头（且非代码块内，由调用者保证）时生效。
+    保留 # 与标题文本之间的一个空格。
+    """
+    m = re.match(r'^(\s*#{1,6}\s*).+', text)
+    if not m:
+        return text
+    prefix = m.group(1)
+
+    rest = text[len(prefix):]
+
+    # 模式1：中文数字 + "、" — "一、" "二、" ... "十二、"
+    rest = re.sub(r'^[一二三四五六七八九十百千]+[、，]\s*', '', rest)
+    # 模式2：多层数字编号 + 空格 — "1.2 " "3.4.5 "
+    rest = re.sub(r'^\d+(?:\.\d+)+\s+', '', rest)
+    # 模式3：纯数字 + "、"/"．" — "3、" "2．"
+    rest = re.sub(r'^\d+[、．，]\s*', '', rest)
+    # 模式4：纯数字 + 空格 — "3 "
+    rest = re.sub(r'^\d+\s+', '', rest)
+
+    return prefix + rest
+
+
 def process_line(line: str) -> str:
     """对单行文本执行所有标点规范化处理。"""
     # 1. 提取行内代码，保护后处理
@@ -62,34 +203,26 @@ def process_line(line: str) -> str:
     # 4. 数字间连字符 → ~  （去掉两端空格）
     cleaned = re.sub(r'(\d)\s*-\s*(\d)', r'\1~\2', cleaned)
 
-    # 5. 数字与非数字之间的空格 → 有且仅有一个（先执行，可能产生 ** 内部临时空格）
-    #    数字后跟中文或字母：多余空格 → 一个；无空格 → 添加一个
+    # 5. 数字与非数字之间的空格 → 有且仅有一个
+    #    数字后跟中文或字母
     cleaned = re.sub(r'(\d)\s*([\u4e00-\u9fffa-zA-Z])', r'\1 \2', cleaned)
     #    中文或字母后跟数字
     cleaned = re.sub(r'([\u4e00-\u9fffa-zA-Z])\s*(\d)', r'\1 \2', cleaned)
+    #    数字+符号（%,~）后跟中文（弥补前两条正则遇到 % 等符号无法匹配的情况）
+    cleaned = re.sub(r'(\d[%\d.~]*)\s*([\u4e00-\u9fff])', r'\1 \2', cleaned)
+    #    中文后跟英文字词（如 "郡GDP" → "郡 GDP"）
+    cleaned = re.sub(r'([\u4e00-\u9fff])\s*([a-zA-Z]+)', r'\1 \2', cleaned)
+    #    英文字词后跟中文（如 "GDP的" → "GDP 的"）
+    cleaned = re.sub(r'([a-zA-Z]+)\s*([\u4e00-\u9fff])', r'\1 \2', cleaned)
 
-    # 6. 删除 ** 与数字之间的多余空格（紧贴加粗内容）
-    #    ** 85%** → **85%**
-    cleaned = re.sub(r'\*\*\s+(\d)', r'**\1', cleaned)
-    cleaned = re.sub(r'(\d)\s+\*\*', r'\1**', cleaned)
+    # 6. 处理 ** 加粗标记周围空格（逐字符扫描，区分开闭）
+    cleaned = fix_bold_spacing(cleaned)
 
-    # 7. 外部中文/字母/假名与 ** 之间 → 紧贴（删除所有空格）
-    #    保证加粗符号用于汉字之间时不应存在空格
-    external = r'[\u4e00-\u9fffa-zA-Z\u3040-\u309f\u30a0-\u30ff]'
-    cleaned = re.sub(r'\*\*\s+(' + external + r')', r'**\1', cleaned)
-    cleaned = re.sub(r'(' + external + r')\s+\*\*', r'\1**', cleaned)
-    #    处理 ** 文字 ** → **文字**（两侧空格都删除；捕获多个字符）
-    cleaned = re.sub(r'\*\*\s+(' + external + r'+)\s+\*\*', r'**\1**', cleaned)
-    #    修复 ** 左侧为全角/CJK 标点时右侧中文误加空格：** 对 → **对
-    cleaned = re.sub(r'([\u3000-\u303f\uff00-\uffef])\*\*\s+(' + external + r')', r'\1**\2', cleaned)
-    #    修复中文与 ** 之间误加的空格：平衡的 ** 城市 → 平衡的**城市
-    cleaned = re.sub(r'(' + external + r')\s+\*\*\s+(' + external + r')', r'\1**\2', cleaned)
-    #    最终清理：中文与 ** 之间不应有空格（任一侧有空格即删除）
-    cleaned = re.sub(r'(' + external + r')\s+\*\*\s*(' + external + r')', r'\1**\2', cleaned)
-    cleaned = re.sub(r'(' + external + r')\s*\*\*\s+(' + external + r')', r'\1**\2', cleaned)
-
-    # 8. 还原行内代码
+    # 7. 还原行内代码
     cleaned = restore_inline_code(cleaned, code_parts)
+
+    # 8. 删除标题行序号
+    cleaned = remove_heading_number(cleaned)
 
     return cleaned
 
@@ -181,3 +314,128 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# ============================================================
+# 行文逻辑分析
+# ============================================================
+#
+# 一、整体架构（分层设计）
+#
+#   本工具采用"入口→调度→处理→保护"的四层架构：
+#
+#   1. 入口层  (main)
+#      - 递归扫描 BASE_DIR 下所有 *.md 文件
+#      - 通过 should_skip_file 过滤 tools/、.git/ 等无关目录
+#      - 遍历调用 fix_file，统计修改数量与耗时
+#
+#   2. 文件层  (fix_file)
+#      - 读入文件全部行
+#      - 用 in_code_block 状态跟踪 ``` 代码块边界
+#      - 代码块内：原样保留，不做任何处理
+#      - 代码块外：逐行调用 process_line
+#      - 有修改则写回文件
+#
+#   3. 核心处理层  (process_line)
+#      对单行文本执行 8 步规范化流水线（见下文）
+#
+#   4. 保护/辅助层
+#      - protect_inline_code / restore_inline_code：
+#        将行内 `code` 替换为控制字符占位符 \x00CODE{n}\x01，
+#        避免被后续正则误改，处理完再还原
+#      - is_inside_pair：检查某位置是否被成对标记包裹（当前流程未直接使用，为扩展备用）
+#
+#
+# 二、核心流水线（process_line 的 8 个步骤）
+#
+#   输入：单行文本（已确认不在代码块内）
+#   输出：规范化后的文本
+#
+#   ① 提取行内代码
+#      正则：`([^`]+)`  →  \x00CODE{n}\x01
+#      目的：保护 `...` 不被后续步骤篡改
+#
+#   ② 英文双引号 → 中文双引号
+#      正则："([^"]+)"  →  \u201c\\1\u201d
+#      目的：将英文风格引号替换为中文排版标准
+#
+#   ③ 英文单引号 → 中文单引号
+#      正则：'([^']+)'  →  \u2018\\1\u2019
+#      目的：同上，统一为中文标点
+#
+#   ④ 数字间连字符 → 波浪线
+#      正则：(\d)\s*-\s*(\d)  →  \1~\2
+#      同时删除连字符两侧多余空格
+#      例："85-90" → "85~90"
+#
+#   ⑤ 数字与非数字之间的空格规范化
+#      方向 1：(\d)\s*([\u4e00-\u9fffa-zA-Z])  →  \1 \2
+#      方向 2：([\u4e00-\u9fffa-zA-Z])\s*(\d)  →  \1 \2
+#      效果：保证数字与中文/字母之间恰好有一个空格
+#           "85%" → 不匹配（% 不在字符集内）
+#           "85 万" → "85 万"
+#           "85万" → "85 万"
+#
+#   ⑥ 处理 ** 加粗标记周围空格 (fix_bold_spacing)
+#      算法：逐字符扫描，用 in_bold 状态区分开闭 **。
+#      内部规则：** 与内容之间不留空格，紧贴任意非空字符。
+#         - 遇到 ** 时，先删除累积在结果末尾的空格（内部紧贴）
+#         - 跳过 ** 后跟随的空格（内部紧贴）
+#      外部规则：借助辅助函数 is_cjk(c) 判断字符类型。
+#        is_cjk 返回 True 的范围：汉字 \u4e00-\u9fff、
+#        CJK 符号 \u3000-\u303f、全角字符 \uff00-\uffef、
+#        通用标点 \u2000-\u206f（em dash、省略号等）。
+#        左侧：加粗内容首字符 或 前一个字符，任一非 CJK → 补 1 空格
+#        右侧：加粗内容末字符 或 后一个字符，任一非 CJK → 补 1 空格
+#        （注意：此处"或"使得 `-**力**`（前字符 `-` 非 CJK）和
+#         `的**30%**`（内容首 `3` 非 CJK）均能正确补空格）
+#      特殊处理：***（粗斜体）的前两个 * 不作为加粗解析，原样保留。
+#      例： "中文**加粗**内容" → "中文**加粗**内容"
+#          "en **bold** text" → "en **bold** text"
+#          "中文**加粗**"     → "中文**加粗**"
+#          "en**bold**text"   → "en **bold** text"
+#          "**：**"           → "**：**"
+#          "、**"             → "、**"
+#          "元**（**"         → "元**（**"
+#
+#   ⑦ 还原行内代码
+#      将 \x00CODE{n}\x01 还原为 `原始内容`
+#
+#   ⑧ 删除 Markdown 标题行序号 (remove_heading_number)
+#      先检查行是否以 `#{1,6}\s` 开头（匹配标题前缀）。
+#      若是，提取前缀后对剩余文本依次尝试 4 种序号模式：
+#        模式 1：中文数字 + "、" — "一、" "二、" … "十二、"  → 删除
+#        模式 2：多层小数编号 + 空格 — "1.2 " "3.4.5 "      → 删除
+#        模式 3：纯数字 + "、"/"．" — "3、" "2．"           → 删除
+#        模式 4：纯数字 + 空格 — "3 "                       → 删除
+#      前缀部分（# 本身）不受影响。
+#      非标题行（不以 # 开头）直接跳过。
+#      例："## 一、背景" → "## 背景"
+#         "## 1.2 经济概况" → "## 经济概况"
+#         "正文含一、不删" → 跳过
+#
+#
+# 三、保护策略
+#
+#   ▸ 代码块保护：fix_file 中用 in_code_block 布尔标记，
+#     代码块内所有行完全跳过 process_line
+#   ▸ 行内代码保护：process_line 第①步提取占位符，第⑦步还原，
+#     中间 5 步正则无法匹配控制字符，从而避免了误改
+#
+#
+# 四、跳过过滤（should_skip_file）
+#
+#   检查路径的每一级目录名是否包含以下关键字之一：
+#   tools、.git、node_modules、__pycache__
+#   若包含则跳过，确保工具自身代码和版本控制文件不受影响
+#
+#
+# 五、执行统计（main 末尾）
+#
+#   处理结束后打印：
+#   • 总耗时（秒）
+#   • 总数据量（MB）
+#   • 处理速度（秒/MB 和 MB/秒）
+#
+#   便于在大规模规范化前后对比性能
+#
+# ============================================================

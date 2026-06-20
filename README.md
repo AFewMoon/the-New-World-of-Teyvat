@@ -59,7 +59,7 @@
 
 ## 许可
 
-本项目采用**Creative Commons Attribution-NonCommercial 4.0 International（CC BY-NC 4.0）**许可协议。完整协议文本见 [LICENSE](./LICENSE) 文件。
+本项目采用 **Creative Commons Attribution-NonCommercial 4.0 International（CC BY-NC 4.0）**许可协议。完整协议文本见 [LICENSE](./LICENSE) 文件。
 
 ## 关于
 
