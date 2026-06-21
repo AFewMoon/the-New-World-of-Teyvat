@@ -6,7 +6,8 @@
 4. 加粗符号 `**` 周围空格规范化：
    内部（** 与内容之间）不留空格，紧贴任意非空字符；
    外部（** 与相邻字符之间）左侧基于前一个字符 或 加粗内容首字符：
-      任一非 CJK → 补 1 空格；右侧基于加粗内容末字符：非 CJK → 补 1 空格
+      任一非 CJK → 补 1 空格；右侧基于后一个字符 或 加粗内容末字符：
+      任一非 CJK → 补 1 空格
       （数字、% 等视为非 CJK，故 `**30%~40%**` 两侧均补空格）
 5. 中文与英文之间补 1 空格（"郡GDP" → "郡 GDP"，"GDP的" → "GDP 的"）
 6. 数字+百分号/连字符（45%~50%、30%）后跟中文 → 补 1 空格
@@ -149,8 +150,8 @@ def fix_bold_spacing(text: str) -> str:
                     # 跳过 ** 后的空格
                     while i < len(text) and text[i] == ' ':
                         i += 1
-                    # 外部右侧：内容以非 CJK 结尾 → 加 1 空格
-                    if i < len(text) and not is_cjk(last_char):
+                    # 外部右侧：后一个字符 或 加粗内容末字符，任一非 CJK → 补 1 空格
+                    if i < len(text) and (not is_cjk(last_char) or not is_cjk(text[i])):
                         if result and result[-1] != ' ':
                             result.append(' ')
                     break
