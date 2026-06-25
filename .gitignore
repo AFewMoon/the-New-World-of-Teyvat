@@ -16,3 +16,7 @@ desktop.ini
 
 # Python cache
 tools/__pycache__/
+
+# Generated data files (too large for GitHub)
+output_utf8.txt
+md_files.txt
