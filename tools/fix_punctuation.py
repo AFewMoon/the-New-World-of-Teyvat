@@ -13,6 +13,8 @@
 6. 数字+百分号/连字符（45%~50%、30%）后跟中文 → 补 1 空格
 7. 代码块（```...```）和行内代码（`...`）内部不做变动
 8. 删除 Markdown 标题行序号（"## 一、背景" → "## 背景"，"## 1.2 经济" → "## 经济"）
+9. 删除独立成行的 Markdown 分隔线 `---`
+10. 连续多个空行压缩为有且仅有一个空行
 """
 
 import re
@@ -243,22 +245,40 @@ def fix_file(path: Path) -> bool:
     in_code_block = False
     modified = False
 
+    prev_blank = False
+
     for line in lines:
         stripped = line.strip()
         # 检测代码块边界（``` 开头，可能跟语言标识）
         if stripped.startswith("```"):
             in_code_block = not in_code_block
             new_lines.append(line)
+            prev_blank = False
             continue
 
         if in_code_block:
             # 代码块内部不处理
             new_lines.append(line)
+            prev_blank = False
             continue
 
         processed = process_line(line)
         if processed != line:
             modified = True
+        # 过滤独立成行的 Markdown 分隔线 `---`
+        if processed.strip() == '---':
+            modified = True
+            continue
+
+        # 空行压缩：连续多个空行压缩为有且仅有一个空行
+        if not processed.strip():
+            if prev_blank:
+                modified = True
+                continue
+            prev_blank = True
+        else:
+            prev_blank = False
+
         new_lines.append(processed)
 
     if modified:
@@ -337,7 +357,7 @@ if __name__ == "__main__":
 #      - 有修改则写回文件
 #
 #   3. 核心处理层  (process_line)
-#      对单行文本执行 8 步规范化流水线（见下文）
+#      对单行文本执行 10 步规范化流水线（见下文）
 #
 #   4. 保护/辅助层
 #      - protect_inline_code / restore_inline_code：
@@ -346,7 +366,7 @@ if __name__ == "__main__":
 #      - is_inside_pair：检查某位置是否被成对标记包裹（当前流程未直接使用，为扩展备用）
 #
 #
-# 二、核心流水线（process_line 的 8 个步骤）
+# 二、核心流水线（process_line 的 10 个步骤）
 #
 #   输入：单行文本（已确认不在代码块内）
 #   输出：规范化后的文本
@@ -413,6 +433,22 @@ if __name__ == "__main__":
 #      例："## 一、背景" → "## 背景"
 #         "## 1.2 经济概况" → "## 经济概况"
 #         "正文含一、不删" → 跳过
+#
+#   ⑨ 过滤独立成行的分隔线 (fix_file 内)
+#      在 fix_file() 中，process_line 处理完每行后，
+#      检查 processed.strip() == '---'，若匹配则跳过该行。
+#      目的：删除 Markdown 水平线分隔符，保持文档整洁。
+#      边界：代码块内的 `---` 在 fix_file 中已被 in_code_block
+#      保护，不会经过此过滤；标题行中的 `---`（如 "## --- 概述"）
+#      因 strip 后不等价于纯 `---` 也不会被误删。
+#
+#   ⑩ 连续空行压缩 (fix_file 内)
+#      在 fix_file() 中，所有行处理完毕后通过 prev_blank 变量
+#      跟踪上一行是否为空行；若当前行也为空行且 prev_blank 为 True，
+#      则跳过该行（不追加到 new_lines）。
+#      目的：将连续多个空行压缩为有且仅有一个空行，保持文档段落间距一致。
+#      边界：代码块内的空行在 fix_file 中已被 in_code_block 保护，
+#      不走空行压缩逻辑；分隔线过滤不改变 prev_blank 状态。
 #
 #
 # 三、保护策略
