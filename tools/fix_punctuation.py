@@ -126,7 +126,7 @@ def fix_bold_spacing(text: str) -> str:
             while result and result[-1] == ' ':
                 result.pop()
             # 外部左侧：内容以非 CJK 开头 或 前一个字符是非 CJK → 加 1 空格
-            if result and (not is_cjk(first_char) or not is_cjk(result[-1])):
+            if result and first_char is not None and (not is_cjk(first_char) or not is_cjk(result[-1])):
                 result.append(' ')
             result.append('**')
             # 跳过 ** 后的空格（内部紧贴）
@@ -153,7 +153,7 @@ def fix_bold_spacing(text: str) -> str:
                     while i < len(text) and text[i] == ' ':
                         i += 1
                     # 外部右侧：后一个字符 或 加粗内容末字符，任一非 CJK → 补 1 空格
-                    if i < len(text) and (not is_cjk(last_char) or not is_cjk(text[i])):
+                    if i < len(text) and last_char is not None and (not is_cjk(last_char) or not is_cjk(text[i])):
                         if result and result[-1] != ' ':
                             result.append(' ')
                     break
@@ -184,8 +184,6 @@ def remove_heading_number(text: str) -> str:
     rest = re.sub(r'^\d+(?:\.\d+)+\s+', '', rest)
     # 模式3：纯数字 + "、"/"．" — "3、" "2．"
     rest = re.sub(r'^\d+[、．，]\s*', '', rest)
-    # 模式4：纯数字 + 空格 — "3 "
-    rest = re.sub(r'^\d+\s+', '', rest)
 
     return prefix + rest
 
@@ -423,11 +421,11 @@ if __name__ == "__main__":
 #
 #   ⑧ 删除 Markdown 标题行序号 (remove_heading_number)
 #      先检查行是否以 `#{1,6}\s` 开头（匹配标题前缀）。
-#      若是，提取前缀后对剩余文本依次尝试 4 种序号模式：
+#      若是，提取前缀后对剩余文本依次尝试 3 种序号模式：
 #        模式 1：中文数字 + "、" — "一、" "二、" … "十二、"  → 删除
 #        模式 2：多层小数编号 + 空格 — "1.2 " "3.4.5 "      → 删除
 #        模式 3：纯数字 + "、"/"．" — "3、" "2．"           → 删除
-#        模式 4：纯数字 + 空格 — "3 "                       → 删除
+#        注意：纯数字+空格（如 "3 "）不视为序号，不做删除，避免误伤 "12 个" 等实际内容。
 #      前缀部分（# 本身）不受影响。
 #      非标题行（不以 # 开头）直接跳过。
 #      例："## 一、背景" → "## 背景"

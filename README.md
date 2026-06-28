@@ -2,11 +2,11 @@
 
 **The New World of Teyvat**
 
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue)](LICENSE)
+[![License](https://img.shields.io/badge/License-CC%20 BY--NC%204.0-blue)](LICENSE)
 [![GitHub repo size](https://img.shields.io/github/repo-size/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![GitHub last commit](https://img.shields.io/github/last-commit/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![Nations](https://img.shields.io/badge/Nations-8-green)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
-[![Documents](https://img.shields.io/badge/Documents-60%2B-gray)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
+[![Documents](https://img.shields.io/badge/Documents-60%2 B-gray)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 
 基于《原神》世界观的二次创作与深度世界构建项目。
 
@@ -60,10 +60,10 @@
 
 ## 配套工具
 
-本仓库提供一系列 Python 辅助工具，位于 [`tools/`](./tools) 目录下：
+本仓库提供一系列 Python 辅助工具，位于 [\x 00 CODE 0\x 01](./tools) 目录下：
 
-- **`fix_punctuation.py`**：对 Markdown 文件进行标点符号规范化处理（全半角转换、书名号引号修复、加粗格式修正等）。
-- **`extract_population.py`**：从各区域文档中提取人口数据进行统计分析。
+- **\x 00 CODE 0\x 01** ：对 Markdown 文件进行标点符号规范化处理（全半角转换、书名号引号修复、加粗格式修正等）。
+- **\x 00 CODE 0\x 01** ：从各区域文档中提取人口数据进行统计分析。
 
 ## 许可
 
