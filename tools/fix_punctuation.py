@@ -56,6 +56,38 @@ def restore_inline_code(text: str, parts: list[str]) -> str:
     return text
 
 
+def protect_urls(line: str) -> tuple[str, list[str]]:
+    """将 Markdown 链接/图片中的 URL 提取为占位符，返回 (替换后文本, 原链接列表)。
+
+    匹配 [text](url) 和 ![alt](url)，将整个链接替换为 '\\x00\\x01{n}\\x00\\x01' 占位符
+    （纯控制字符 + 数字，不含字母），避免被"字母+数字"或"数字+字母"正
+    则误插入空格破坏。
+    """
+    parts: list[str] = []
+    idx = 0
+
+    def repl(m: re.Match) -> str:
+        nonlocal idx
+        parts.append(m.group(0))
+        # 占位符为 \x00\x01{n}\x00\x01，纯控制字符 + 数字，无字母
+        placeholder = f"{chr(0)}{chr(1)}{idx}{chr(0)}{chr(1)}"
+        idx += 1
+        return placeholder
+
+    # 匹配 Markdown 链接 [text](url) 和图片 ![alt](url)
+    # 括号内不能包含嵌套括号
+    result = re.sub(r'!?\[(?:[^\[\]]|\[[^\[\]]*\])*\]\([^)]+\)', repl, line)
+    return result, parts
+
+
+def restore_urls(text: str, parts: list[str]) -> str:
+    """将占位符还原为原始 Markdown 链接/图片。"""
+    for i, p in enumerate(parts):
+        placeholder = f"{chr(0)}{chr(1)}{i}{chr(0)}{chr(1)}"
+        text = text.replace(placeholder, p)
+    return text
+
+
 def is_cjk(c: str) -> bool:
     """判断字符是否属于 CJK 文字体系（含汉字、CJK 标点、全角标点、通用引号破折号等）。"""
     return ('\u4e00' <= c <= '\u9fff' or    # CJK 统一汉字
@@ -193,18 +225,21 @@ def process_line(line: str) -> str:
     # 1. 提取行内代码，保护后处理
     cleaned, code_parts = protect_inline_code(line)
 
-    # 2. 英文双引号 → 中文双引号
+    # 2. 提取 Markdown 链接/图片 URL，保护后处理
+    cleaned, url_parts = protect_urls(cleaned)
+
+    # 3. 英文双引号 → 中文双引号
     #    匹配 "content"（content 不含换行、不含双引号）
     cleaned = re.sub(r'"([^"]+)"', '\u201c\\1\u201d', cleaned)
 
-    # 3. 英文单引号 → 中文单引号
+    # 4. 英文单引号 → 中文单引号
     #    匹配 'content'（content 不含换行、不含单引号）
     cleaned = re.sub(r"'([^']+)'", '\u2018\\1\u2019', cleaned)
 
-    # 4. 数字间连字符 → ~  （去掉两端空格）
+    # 5. 数字间连字符 → ~  （去掉两端空格）
     cleaned = re.sub(r'(\d)\s*-\s*(\d)', r'\1~\2', cleaned)
 
-    # 5. 数字与非数字之间的空格 → 有且仅有一个
+    # 6. 数字与非数字之间的空格 → 有且仅有一个
     #    数字后跟中文或字母
     cleaned = re.sub(r'(\d)\s*([\u4e00-\u9fffa-zA-Z])', r'\1 \2', cleaned)
     #    中文或字母后跟数字
@@ -216,13 +251,16 @@ def process_line(line: str) -> str:
     #    英文字词后跟中文（如 "GDP的" → "GDP 的"）
     cleaned = re.sub(r'([a-zA-Z]+)\s*([\u4e00-\u9fff])', r'\1 \2', cleaned)
 
-    # 6. 处理 ** 加粗标记周围空格（逐字符扫描，区分开闭）
+    # 7. 处理 ** 加粗标记周围空格（逐字符扫描，区分开闭）
     cleaned = fix_bold_spacing(cleaned)
 
-    # 7. 还原行内代码
+    # 8. 还原 URL
+    cleaned = restore_urls(cleaned, url_parts)
+
+    # 9. 还原行内代码
     cleaned = restore_inline_code(cleaned, code_parts)
 
-    # 8. 删除标题行序号
+    # 10. 删除标题行序号
     cleaned = remove_heading_number(cleaned)
 
     return cleaned
@@ -333,144 +371,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-# ============================================================
-# 行文逻辑分析
-# ============================================================
-#
-# 一、整体架构（分层设计）
-#
-#   本工具采用"入口→调度→处理→保护"的四层架构：
-#
-#   1. 入口层  (main)
-#      - 递归扫描 BASE_DIR 下所有 *.md 文件
-#      - 通过 should_skip_file 过滤 tools/、.git/ 等无关目录
-#      - 遍历调用 fix_file，统计修改数量与耗时
-#
-#   2. 文件层  (fix_file)
-#      - 读入文件全部行
-#      - 用 in_code_block 状态跟踪 ``` 代码块边界
-#      - 代码块内：原样保留，不做任何处理
-#      - 代码块外：逐行调用 process_line
-#      - 有修改则写回文件
-#
-#   3. 核心处理层  (process_line)
-#      对单行文本执行 10 步规范化流水线（见下文）
-#
-#   4. 保护/辅助层
-#      - protect_inline_code / restore_inline_code：
-#        将行内 `code` 替换为控制字符占位符 \x00CODE{n}\x01，
-#        避免被后续正则误改，处理完再还原
-#      - is_inside_pair：检查某位置是否被成对标记包裹（当前流程未直接使用，为扩展备用）
-#
-#
-# 二、核心流水线（process_line 的 10 个步骤）
-#
-#   输入：单行文本（已确认不在代码块内）
-#   输出：规范化后的文本
-#
-#   ① 提取行内代码
-#      正则：`([^`]+)`  →  \x00CODE{n}\x01
-#      目的：保护 `...` 不被后续步骤篡改
-#
-#   ② 英文双引号 → 中文双引号
-#      正则："([^"]+)"  →  \u201c\\1\u201d
-#      目的：将英文风格引号替换为中文排版标准
-#
-#   ③ 英文单引号 → 中文单引号
-#      正则：'([^']+)'  →  \u2018\\1\u2019
-#      目的：同上，统一为中文标点
-#
-#   ④ 数字间连字符 → 波浪线
-#      正则：(\d)\s*-\s*(\d)  →  \1~\2
-#      同时删除连字符两侧多余空格
-#      例："85-90" → "85~90"
-#
-#   ⑤ 数字与非数字之间的空格规范化
-#      方向 1：(\d)\s*([\u4e00-\u9fffa-zA-Z])  →  \1 \2
-#      方向 2：([\u4e00-\u9fffa-zA-Z])\s*(\d)  →  \1 \2
-#      效果：保证数字与中文/字母之间恰好有一个空格
-#           "85%" → 不匹配（% 不在字符集内）
-#           "85 万" → "85 万"
-#           "85万" → "85 万"
-#
-#   ⑥ 处理 ** 加粗标记周围空格 (fix_bold_spacing)
-#      算法：逐字符扫描，用 in_bold 状态区分开闭 **。
-#      内部规则：** 与内容之间不留空格，紧贴任意非空字符。
-#         - 遇到 ** 时，先删除累积在结果末尾的空格（内部紧贴）
-#         - 跳过 ** 后跟随的空格（内部紧贴）
-#      外部规则：借助辅助函数 is_cjk(c) 判断字符类型。
-#        is_cjk 返回 True 的范围：汉字 \u4e00-\u9fff、
-#        CJK 符号 \u3000-\u303f、全角字符 \uff00-\uffef、
-#        通用标点 \u2000-\u206f（em dash、省略号等）。
-#        左侧：加粗内容首字符 或 前一个字符，任一非 CJK → 补 1 空格
-#        右侧：加粗内容末字符 或 后一个字符，任一非 CJK → 补 1 空格
-#        （注意：此处"或"使得 `-**力**`（前字符 `-` 非 CJK）和
-#         `的**30%**`（内容首 `3` 非 CJK）均能正确补空格）
-#      特殊处理：***（粗斜体）的前两个 * 不作为加粗解析，原样保留。
-#      例： "中文**加粗**内容" → "中文**加粗**内容"
-#          "en **bold** text" → "en **bold** text"
-#          "中文**加粗**"     → "中文**加粗**"
-#          "en**bold**text"   → "en **bold** text"
-#          "**：**"           → "**：**"
-#          "、**"             → "、**"
-#          "元**（**"         → "元**（**"
-#
-#   ⑦ 还原行内代码
-#      将 \x00CODE{n}\x01 还原为 `原始内容`
-#
-#   ⑧ 删除 Markdown 标题行序号 (remove_heading_number)
-#      先检查行是否以 `#{1,6}\s` 开头（匹配标题前缀）。
-#      若是，提取前缀后对剩余文本依次尝试 3 种序号模式：
-#        模式 1：中文数字 + "、" — "一、" "二、" … "十二、"  → 删除
-#        模式 2：多层小数编号 + 空格 — "1.2 " "3.4.5 "      → 删除
-#        模式 3：纯数字 + "、"/"．" — "3、" "2．"           → 删除
-#        注意：纯数字+空格（如 "3 "）不视为序号，不做删除，避免误伤 "12 个" 等实际内容。
-#      前缀部分（# 本身）不受影响。
-#      非标题行（不以 # 开头）直接跳过。
-#      例："## 一、背景" → "## 背景"
-#         "## 1.2 经济概况" → "## 经济概况"
-#         "正文含一、不删" → 跳过
-#
-#   ⑨ 过滤独立成行的分隔线 (fix_file 内)
-#      在 fix_file() 中，process_line 处理完每行后，
-#      检查 processed.strip() == '---'，若匹配则跳过该行。
-#      目的：删除 Markdown 水平线分隔符，保持文档整洁。
-#      边界：代码块内的 `---` 在 fix_file 中已被 in_code_block
-#      保护，不会经过此过滤；标题行中的 `---`（如 "## --- 概述"）
-#      因 strip 后不等价于纯 `---` 也不会被误删。
-#
-#   ⑩ 连续空行压缩 (fix_file 内)
-#      在 fix_file() 中，所有行处理完毕后通过 prev_blank 变量
-#      跟踪上一行是否为空行；若当前行也为空行且 prev_blank 为 True，
-#      则跳过该行（不追加到 new_lines）。
-#      目的：将连续多个空行压缩为有且仅有一个空行，保持文档段落间距一致。
-#      边界：代码块内的空行在 fix_file 中已被 in_code_block 保护，
-#      不走空行压缩逻辑；分隔线过滤不改变 prev_blank 状态。
-#
-#
-# 三、保护策略
-#
-#   ▸ 代码块保护：fix_file 中用 in_code_block 布尔标记，
-#     代码块内所有行完全跳过 process_line
-#   ▸ 行内代码保护：process_line 第①步提取占位符，第⑦步还原，
-#     中间 5 步正则无法匹配控制字符，从而避免了误改
-#
-#
-# 四、跳过过滤（should_skip_file）
-#
-#   检查路径的每一级目录名是否包含以下关键字之一：
-#   tools、.git、node_modules、__pycache__
-#   若包含则跳过，确保工具自身代码和版本控制文件不受影响
-#
-#
-# 五、执行统计（main 末尾）
-#
-#   处理结束后打印：
-#   • 总耗时（秒）
-#   • 总数据量（MB）
-#   • 处理速度（秒/MB 和 MB/秒）
-#
-#   便于在大规模规范化前后对比性能
-#
-# ============================================================
