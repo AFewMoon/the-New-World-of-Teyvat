@@ -32,15 +32,18 @@ def is_inside_pair(text: str, pos: int, left: str, right: str) -> bool:
 
 
 def protect_inline_code(line: str) -> tuple[str, list[str]]:
-    """将行内 `code` 提取为占位符，返回 (替换后文本, 原片段列表)。"""
+    """将行内 `code` 提取为占位符，返回 (替换后文本, 原片段列表)。
+
+    占位符为 \\x00{idx}\\x01（纯控制字符 + 数字，不含字母），防止被
+    "字母-数字间距"类正则插入空格破坏。
+    """
     parts: list[str] = []
-    placeholder_prefix = "\\x00CODE"
     idx = 0
 
     def repl(m: re.Match) -> str:
         nonlocal idx
         parts.append(m.group(1))
-        placeholder = f"{placeholder_prefix}{idx}\\x01"
+        placeholder = f"{chr(0)}{idx}{chr(1)}"
         idx += 1
         return placeholder
 
@@ -52,7 +55,8 @@ def protect_inline_code(line: str) -> tuple[str, list[str]]:
 def restore_inline_code(text: str, parts: list[str]) -> str:
     """将占位符还原为原始行内代码。"""
     for i, p in enumerate(parts):
-        text = text.replace(f"\\x00CODE{i}\\x01", f"`{p}`")
+        placeholder = f"{chr(0)}{i}{chr(1)}"
+        text = text.replace(placeholder, f"`{p}`")
     return text
 
 
