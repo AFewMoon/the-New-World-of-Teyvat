@@ -232,13 +232,19 @@ def process_line(line: str) -> str:
     # 2. 提取 Markdown 链接/图片 URL，保护后处理
     cleaned, url_parts = protect_urls(cleaned)
 
-    # 3. 英文双引号 → 中文双引号
+    # 3. 英文双引号 → 「」（U+300C / U+300D）
     #    匹配 "content"（content 不含换行、不含双引号）
-    cleaned = re.sub(r'"([^"]+)"', '\u201c\\1\u201d', cleaned)
+    cleaned = re.sub(r'"([^"]+)"', '\u300c\\1\u300d', cleaned)
 
-    # 4. 英文单引号 → 中文单引号
+    # 4. 英文单引号 → 『』（U+300E / U+300F）
     #    匹配 'content'（content 不含换行、不含单引号）
-    cleaned = re.sub(r"'([^']+)'", '\u2018\\1\u2019', cleaned)
+    cleaned = re.sub(r"'([^']+)'", '\u300e\\1\u300f', cleaned)
+
+    # 4b. 统一已有的中文弯双引号 → 方角引号
+    cleaned = re.sub(r'\u201c([^\u201d]+)\u201d', '\u300c\\1\u300d', cleaned)
+
+    # 4c. 统一已有的中文弯单引号 → 方角单引号
+    cleaned = re.sub(r'\u2018([^\u2019]+)\u2019', '\u300e\\1\u300f', cleaned)
 
     # 5. 数字间连字符 → ~  （去掉两端空格）
     cleaned = re.sub(r'(\d)\s*-\s*(\d)', r'\1~\2', cleaned)
