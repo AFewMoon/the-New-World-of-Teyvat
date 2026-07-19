@@ -30,6 +30,3 @@ tools/术语索引/
 tools/_linker_state.json
 tools/doc_embeddings.npy
 tools/concept_mappings.json
-
-# Link converter state
-tools/_convert_state.json

@@ -190,7 +190,8 @@ def convert_to_wikilinks(text: str, state: dict[str, str]) -> str:
             continue
 
         fmt = state[key]
-        if fmt == "nopipe":
+        formats = fmt.split(",")
+        if formats == ["nopipe"] and display == file_stem(path):
             wikilink = f"[[{path}]]"
         else:
             wikilink = f"[[{path}|{display}]]"
@@ -258,7 +259,13 @@ def main():
             if changed:
                 modified_count += 1
                 link_count += len(state_entries)
-                all_state.update(state_entries)
+                # 跨文件合并：保留所有格式（pipe / nopipe）
+                for key, fmt in state_entries.items():
+                    existing_fmts = set()
+                    if key in all_state:
+                        existing_fmts.update(all_state[key].split(","))
+                    existing_fmts.update(fmt.split(","))
+                    all_state[key] = ",".join(sorted(existing_fmts))
                 print(f"  [OK] {fp.relative_to(BASE_DIR).as_posix()}")
         # 保存状态
         existing = load_state()
