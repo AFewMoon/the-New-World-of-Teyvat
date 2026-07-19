@@ -261,10 +261,6 @@ class StateManager:
 # ─── VaultScanner ────────────────────────────────────────────────────────────
 
 class VaultScanner:
-    def __init__(self, base_dir: Path):
-        self.base_dir = base_dir
-        self.files: list[Path] = get_markdown_files(base_dir)
-
     def is_valid_alias(self, text: str) -> bool:
         if len(text) < 2 or len(text) > 30:
             return False
@@ -297,29 +293,33 @@ class VaultScanner:
                     break
         return words
 
+    def __init__(self, base_dir: Path):
+        self.base_dir = base_dir
+        self.files: list[Path] = get_markdown_files(base_dir)
+        self._tfidf_vec = TfidfVectorizer(max_features=20, token_pattern=r"(?u)\S+") if TfidfVectorizer is not None else None
+
     def _extract_tfidf_keywords(self, text: str) -> list[str]:
-        """用 TF-IDF 提取正文关键词。"""
-        if TfidfVectorizer is None:
+        """用 TF-IDF 提取正文关键词（TfidfVectorizer 实例复用）。"""
+        if self._tfidf_vec is None:
             return []
         clean = clean_body_text(text)
-        # jieba 分词
-        tokens = jieba.lcut(clean)
-        filtered = [t for t in tokens if len(t) >= 2 and t not in COMMON_WORD_BLACKLIST]
-        tokenized = " ".join(filtered)
 
-        # 按段落拆分
+        # 按段落拆分后一次性 jieba 分词
         paragraphs = [p.strip() for p in re.split(r"\n\s*\n", clean) if len(p.strip()) > 20]
-        para_tokens = [" ".join([t for t in jieba.lcut(p) if len(t) >= 2 and t not in COMMON_WORD_BLACKLIST]) for p in paragraphs]
+        para_tokens = []
+        for p in paragraphs:
+            tokens = jieba.lcut(p)
+            filtered = [t for t in tokens if len(t) >= 2 and t not in COMMON_WORD_BLACKLIST]
+            para_tokens.append(" ".join(filtered))
         para_tokens = [p for p in para_tokens if len(p) > 5]
 
         if len(para_tokens) < 2:
             return []
 
         try:
-            vec = TfidfVectorizer(max_features=20, token_pattern=r"(?u)\S+")
-            mat = vec.fit_transform(para_tokens)
+            mat = self._tfidf_vec.fit_transform(para_tokens)
             scores = np.asarray(mat.sum(axis=0)).flatten()
-            names = vec.get_feature_names_out()
+            names = self._tfidf_vec.get_feature_names_out()
             top_idx = scores.argsort()[-15:][::-1]
             return [names[i] for i in top_idx]
         except Exception:
@@ -340,13 +340,53 @@ class VaultScanner:
                 candidates.append({"target": target, "aliases": aliases, "category": cat, "context_words": []})
                 continue
 
-            # First bold as primary alias
-            first_match = re.search(r"\*\*(.+?)\*\*", text)
+            # YAML frontmatter 内不提取别名
+            body_start = 0
+            if text.startswith("---"):
+                yaml_end = text.find("---", 3)
+                if yaml_end != -1:
+                    body_start = yaml_end + 3
+            body = text[body_start:]
+
+            # First bold in body as primary alias (≥4 chars to avoid short proper nouns)
+            first_match = re.search(r"\*\*(.+?)\*\*", body)
             if first_match:
                 first_bold = first_match.group(1).strip()
-                if self.is_valid_alias(first_bold) and len(first_bold) >= 3:
+                if self.is_valid_alias(first_bold) and len(first_bold) >= 4:
                     if first_bold not in aliases:
                         aliases.append(first_bold)
+
+            # Heading-based alias extraction
+            seen_headings = set()
+            for line in body.splitlines():
+                s = line.strip()
+                if not s.startswith("## "):
+                    continue
+                if s in seen_headings:
+                    continue
+                seen_headings.add(s)
+                heading_text = s[3:].strip()
+                # Clean wikilinks inside heading
+                heading_clean = re.sub(
+                    r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", heading_text
+                )
+                heading_clean = re.sub(
+                    r"\[\[([^\]]+)\]\]",
+                    lambda m: Path(m.group(1)).stem,
+                    heading_clean,
+                )
+                # Take the part after colon/dash separator
+                parts = re.split(r"[:：—\-]", heading_clean)
+                candidate = parts[-1].strip() if len(parts) > 1 else heading_clean.strip()
+                # Remove parenthetical suffixes
+                candidate = re.sub(r"[（(].*?[）)]", "", candidate).strip()
+                if (
+                    candidate
+                    and self.is_valid_alias(candidate)
+                    and 2 <= len(candidate) <= 15
+                    and candidate not in aliases
+                ):
+                    aliases.append(candidate)
 
             # TF-IDF context words
             context_words = self.extract_context_words_with_tfidf(text)
@@ -395,12 +435,14 @@ class Segmenter:
         self.custom_dict_built = True
 
     def discover_unlinked(self, files: list[Path], base_dir: Path) -> list[dict[str, Any]]:
-        """使用 spaCy NER 发现未链接概念（无对应 .md 文件）。"""
+        """使用 spaCy NER（批量 pipe）发现未链接概念。"""
         self._load_spacy()
         file_counts: dict[str, dict[str, Any]] = {}
         ner_label_map = {"PERSON": "人物", "ORG": "政治实体与政党", "GPE": "国家与地区", "LOC": "国家与地区", "FAC": "科技与基础设施", "PRODUCT": "经济与产业", "EVENT": "文化与信仰", "WORK_OF_ART": "文化与信仰"}
 
-        for fp in files:
+        # 预读取所有文件正文
+        file_texts: list[tuple[str, int]] = []
+        for idx, fp in enumerate(files):
             try:
                 text = fp.read_text(encoding="utf-8")
             except Exception:
@@ -408,10 +450,12 @@ class Segmenter:
             clean = clean_body_text(text)
             if len(clean) < 10:
                 continue
+            file_texts.append((clean[:30000], idx))
 
-            if self.nlp is not None:
-                # spaCy NER
-                doc = self.nlp(clean[:30000])
+        if self.nlp is not None:
+            # spaCy NER 批处理：nlp.pipe 一次性送所有文本
+            texts = [t for t, _ in file_texts]
+            for doc, (_, orig_idx) in zip(self.nlp.pipe(texts, batch_size=16), file_texts):
                 seen = set()
                 for ent in doc.ents:
                     w = ent.text.strip()
@@ -425,24 +469,26 @@ class Segmenter:
                             file_counts[w] = {"name": w, "count": 0, "labels": []}
                         file_counts[w]["count"] += 1
                         file_counts[w]["labels"].append(ent.label_)
-            else:
-                # fallback: jieba POS
-                words = jieba.posseg.lcut(clean[:30000])
+        else:
+            # fallback: jieba.lcut（非 posseg，快 3-5 倍）
+            for clean, _ in file_texts:
+                words = jieba.lcut(clean)
                 seen = set()
-                for word, flag in words:
-                    w = word.strip()
+                for w in words:
+                    w = w.strip()
                     if len(w) < 2 or len(w) > 20:
                         continue
-                    if not (flag.startswith("nr") or flag.startswith("ns") or flag.startswith("nt") or flag.startswith("nz")):
-                        continue
                     if w in COMMON_WORD_BLACKLIST:
+                        continue
+                    # 简单启发式：2-4 字符且非纯数字/标点的词作为候选
+                    if re.search(r"[，。；：、！？（）「」『』《》【】\d]", w):
                         continue
                     if w not in seen:
                         seen.add(w)
                         if w not in file_counts:
                             file_counts[w] = {"name": w, "count": 0, "labels": []}
                         file_counts[w]["count"] += 1
-                        file_counts[w]["labels"].append(flag)
+                        file_counts[w]["labels"].append("nz")
 
         # 过滤：频率 >= 4
         candidates: list[dict[str, Any]] = []
@@ -620,7 +666,7 @@ class SemanticResolver:
             return False
 
     def precompute(self, concepts: list[dict], base_dir: Path):
-        """预计算所有文档的嵌入向量和摘要。"""
+        """预计算所有文档的嵌入向量和摘要（批量编码）。"""
         if not self._load_model():
             return
         # Load cache if exists
@@ -636,6 +682,9 @@ class SemanticResolver:
             except Exception:
                 pass
         print("  计算文档向量...")
+        # 先收集所有摘要
+        batch_targets: list[str] = []
+        batch_summaries: list[str] = []
         for c in concepts:
             if not c.get("verified", False):
                 continue
@@ -645,10 +694,15 @@ class SemanticResolver:
                 text = fp.read_text(encoding="utf-8")
                 summary = self._get_summary(text)
                 self.summaries[target] = summary
-                emb = self.model.encode(summary[:512], show_progress_bar=False)
-                self.doc_embeddings[target] = emb
+                batch_targets.append(target)
+                batch_summaries.append(summary[:512])
             except Exception:
                 continue
+        # 批量编码
+        if batch_summaries:
+            embeddings = self.model.encode(batch_summaries, batch_size=32, show_progress_bar=False)
+            for i, target in enumerate(batch_targets):
+                self.doc_embeddings[target] = embeddings[i]
         # Save cache
         try:
             EMBEDDINGS_CACHE.write_bytes(pickle.dumps({"embeddings": self.doc_embeddings, "summaries": self.summaries}))
@@ -656,14 +710,16 @@ class SemanticResolver:
             pass
 
     def _get_summary(self, text: str) -> str:
-        """提取文档摘要（标题 + 首段正文）。"""
+        """提取文档摘要（标题 + 首段正文），O(n) 单次拼接。"""
         lines = text.splitlines()
-        parts = []
+        parts: list[str] = []
+        total = 0
         for line in lines:
             if line.startswith("#") or (line.strip() and not line.startswith(">")):
                 parts.append(line.strip())
-            if len("".join(parts)) > 1000:
-                break
+                total += len(parts[-1])
+                if total > 1000:
+                    break
         return " ".join(parts[:10])
 
     def resolve(self, alias: str, candidates: list[dict], context: str, file_category: str) -> dict | None:
@@ -747,6 +803,14 @@ class LinkInjector:
                 return True
         return False
 
+    def _build_alias_regex(self, alias_index: dict[str, list[dict[str, Any]]]) -> re.Pattern | None:
+        """将所有别名编译为一个多模式正则（长串优先）。"""
+        aliases = sorted((a for a in alias_index if len(a) >= 2), key=len, reverse=True)
+        if not aliases:
+            return None
+        escaped = [re.escape(a) for a in aliases]
+        return re.compile("|".join(escaped))
+
     def inject(self, filepath: Path, alias_index: dict[str, list[dict[str, Any]]], file_category: str, dry_run: bool = False) -> dict[str, Any]:
         try:
             text = filepath.read_text(encoding="utf-8")
@@ -757,17 +821,21 @@ class LinkInjector:
         protected = self.protect_regions(text)
         token_ranges = get_token_ranges(text)
 
+        alias_re = self._build_alias_regex(alias_index)
+        if alias_re is None:
+            return {"path": str(rel), "status": "unchanged", "additions": 0}
+
+        # 多模式匹配：一次扫描找到所有别名出现位置
         candidates: list[dict[str, Any]] = []
-        for alias, targets in alias_index.items():
-            if len(alias) < 2:
+        for m in alias_re.finditer(text):
+            alias = m.group()
+            start, end = m.start(), m.end()
+            if self.is_protected(start, protected):
                 continue
-            positions = plain_text_matches(text, alias)
-            for start, end in positions:
-                if self.is_protected(start, protected):
-                    continue
-                if not is_token_boundary(start, end, token_ranges):
-                    continue
-                candidates.append({"start": start, "end": end, "alias": alias, "targets": targets})
+            if not is_token_boundary(start, end, token_ranges):
+                continue
+            targets = alias_index[alias]
+            candidates.append({"start": start, "end": end, "alias": alias, "targets": targets})
 
         candidates.sort(key=lambda x: (-(x["end"] - x["start"]), x["start"]))
         kept: list[dict[str, Any]] = []

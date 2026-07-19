@@ -32,4 +32,5 @@ tools/local/
 tools/术语索引/
 tools/_linker_state.json
 tools/doc_embeddings.npy
+tools/doc_embeddings.pkl
 tools/concept_mappings.json

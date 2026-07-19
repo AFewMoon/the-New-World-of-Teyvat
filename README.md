@@ -363,8 +363,8 @@ python tools/concept_linker.py --ci    # CI 中校验链接完整性
 ```
 
 安装后自动：
-- `git pull` / `git checkout` → MD links 自动转为 `[[wikilinks]]`（Obsidian 可读）
-- `git commit` → `[[wikilinks]]` 自动转为 MD links 后再入库
+- `git pull` / `git checkout` → MD links 自动转为 `wikilinks`（Obsidian 可读）
+- `git commit` → `wikilinks` 自动转为 MD links 后再入库
 
 **非 Obsidian 用户无需安装，仓库始终为 MD links。**
 

@@ -102,122 +102,87 @@ def is_cjk(c: str) -> bool:
             '\u2000' <= c <= '\u206f')      # 通用标点（em dash、en dash、省略号等）
 
 
-def _bold_content_first_last(text: str, start: int) -> tuple[str | None, str | None]:
-    """从 ** 起始位置 start 向前扫描，找到匹配的 ** 并返回内容的第一个/最后一个非空格字符。
-
-    返回 (first_non_space, last_non_space)，若未找到匹配 ** 则返回 (None, None)。
-    """
-    i = start + 2
-    # 跳过 ** 后的空格
-    while i < len(text) and text[i] == ' ':
-        i += 1
-    first = None
-    last = None
-    while i + 2 <= len(text):
-        # 跳过 ***（粗斜体）中间出现的 ***
-        if i + 3 <= len(text) and text[i:i+3] == '***':
-            i += 1
-            continue
-        if text[i:i+2] == '**':
-            content = text[start + 2:i]
-            # 找到内容的第一个和最后一个非空格字符
-            stripped = content.strip()
-            if stripped:
-                # 若加粗内容以 [[ 开头，取其显示文本（| 后）的首字符作为 first
-                if stripped.startswith('[['):
-                    close_pos = stripped.find(']]')
-                    if close_pos != -1:
-                        inner = stripped[2:close_pos]
-                        pipe_pos = inner.find('|')
-                        display = inner[pipe_pos + 1:] if pipe_pos >= 0 else inner
-                        first = display[0] if display else stripped[0]
-                    else:
-                        first = stripped[0]
-                else:
-                    first = stripped[0]
-                # 若加粗内容以 ]] 结尾，取其显示文本（| 后）的尾字符作为 last
-                if stripped.endswith(']]'):
-                    open_pos = stripped.rfind('[[')
-                    if open_pos != -1:
-                        inner = stripped[open_pos + 2:-2]
-                        pipe_pos = inner.find('|')
-                        display = inner[pipe_pos + 1:] if pipe_pos >= 0 else inner
-                        last = display[-1] if display else stripped[-1]
-                    else:
-                        last = stripped[-1]
-                else:
-                    last = stripped[-1]
-            break
-        i += 1
+def _extract_bold_first_last(content_raw: str) -> tuple[str | None, str | None]:
+    """从加粗内容的原始文本提取首末有效字符（处理 wikilink 嵌套）。"""
+    stripped = content_raw.strip()
+    if not stripped:
+        return None, None
+    first: str | None = stripped[0]
+    last: str | None = stripped[-1]
+    if stripped.startswith('[['):
+        close = stripped.find(']]')
+        if close != -1:
+            inner = stripped[2:close]
+            pipe = inner.find('|')
+            display = inner[pipe + 1:] if pipe >= 0 else inner
+            if display:
+                first = display[0]
+    if stripped.endswith(']]'):
+        open_pos = stripped.rfind('[[')
+        if open_pos != -1:
+            inner = stripped[open_pos + 2:-2]
+            pipe = inner.find('|')
+            display = inner[pipe + 1:] if pipe >= 0 else inner
+            if display:
+                last = display[-1]
     return first, last
 
 
-def fix_bold_spacing(text: str) -> str:
-    """处理 ** 加粗标记周围的空格。
+VERSION_NUM_RE = re.compile(r'^\d+(?:\.\d+)+\s+')
 
-    内部规则：** 与其内容之间不留空格（紧贴任意非空字符）。
-    外部规则：左侧基于"前一个字符 或 加粗内容首字符"，任一非 CJK → 补 1 空格；
-              右侧基于"后一个字符 或 加粗内容末字符"，任一非 CJK → 补 1 空格。
-              非 CJK 字符包括：数字、英文字母、% 等符号。
-              例：`-**力**`（前字符 `-` 非 CJK）+ `的**30%**`（首字符 `3` 非 CJK）均补空格。
-    """
+def fix_bold_spacing(text: str) -> str:
+    """处理 ** 加粗标记周围的空格（单次扫描，无重复遍历）。"""
     result = []
     i = 0
 
     while i < len(text):
-        # 跳过 ***（粗斜体）的前两个 *，当作普通字符处理
         if i + 3 <= len(text) and text[i:i+3] == '***':
             result.append(text[i])
             i += 1
             continue
 
         if i + 2 <= len(text) and text[i:i+2] == '**':
-            # 向前扫描找到匹配的闭 **
-            first_char, last_char = _bold_content_first_last(text, i)
+            open_pos = i
+            # 扫描找到闭 **，同时跳过 *** 干扰
+            j = open_pos + 2
+            while j < len(text) and text[j] == ' ':
+                j += 1
+            k = j
+            close_pos = -1
+            while k + 2 <= len(text):
+                if k + 3 <= len(text) and text[k:k+3] == '***':
+                    k += 1
+                    continue
+                if text[k:k+2] == '**':
+                    close_pos = k
+                    break
+                k += 1
 
-            if first_char is None:
-                # 没有匹配的闭 **，原样保留
+            if close_pos == -1:
                 result.append(text[i])
                 i += 1
                 continue
 
+            content_raw = text[j:close_pos]
+            first_char, last_char = _extract_bold_first_last(content_raw)
+
             # --- 开启 ** ---
-            # 删除 ** 前累积的空格（内部紧贴）
             while result and result[-1] == ' ':
                 result.pop()
-            # 外部左侧：内容以非 CJK 开头 或 前一个字符是非 CJK → 加 1 空格
             if result and first_char is not None and (not is_cjk(first_char) or not is_cjk(result[-1])):
                 result.append(' ')
             result.append('**')
-            # 跳过 ** 后的空格（内部紧贴）
-            i += 2
+            result.append(content_raw)
+            # --- 关闭 ** ---
+            while result and result[-1] == ' ':
+                result.pop()
+            result.append('**')
+            i = close_pos + 2
             while i < len(text) and text[i] == ' ':
                 i += 1
-
-            # 将内容追加到结果（保持原样，包括可能的空格）
-            content_start = i
-            while i + 2 <= len(text):
-                if text[i:i+3] == '***':
-                    i += 1
-                    continue
-                if text[i:i+2] == '**':
-                    content = text[content_start:i]
-                    result.append(content)
-                    # --- 关闭 ** ---
-                    # 删除 ** 前累积的空格（内部紧贴）
-                    while result and result[-1] == ' ':
-                        result.pop()
-                    result.append('**')
-                    i += 2
-                    # 跳过 ** 后的空格
-                    while i < len(text) and text[i] == ' ':
-                        i += 1
-                    # 外部右侧：后一个字符 或 加粗内容末字符，任一非 CJK → 补 1 空格
-                    if i < len(text) and last_char is not None and (not is_cjk(last_char) or not is_cjk(text[i])):
-                        if result and result[-1] != ' ':
-                            result.append(' ')
-                    break
-                i += 1
+            if i < len(text) and last_char is not None and (not is_cjk(last_char) or not is_cjk(text[i])):
+                if result and result[-1] != ' ':
+                    result.append(' ')
         else:
             result.append(text[i])
             i += 1
@@ -278,8 +243,10 @@ def process_line(line: str) -> str:
     cleaned = re.sub(r'(\d)\s*([\u4e00-\u9fffa-zA-Z])', r'\1 \2', cleaned)
     #    中文或字母后跟数字
     cleaned = re.sub(r'([\u4e00-\u9fffa-zA-Z])\s*(\d)', r'\1 \2', cleaned)
-    #    数字+符号（%,~）后跟中文（弥补前两条正则遇到 % 等符号无法匹配的情况）
-    cleaned = re.sub(r'(\d[%\d.~]*)\s*([\u4e00-\u9fff])', r'\1 \2', cleaned)
+    #    数字+百分比等符号后跟中文（弥补前两条遇到 % 等符号无法匹配的情况）
+    cleaned = re.sub(r'(\d[%\d.]*)\s*([\u4e00-\u9fff])', r'\1 \2', cleaned)
+    #    ~ 分隔的数字范围后跟中文
+    cleaned = re.sub(r'(\d[%\d]*~[%\d]*)\s*([\u4e00-\u9fff])', r'\1 \2', cleaned)
     #    中文后跟英文字词（如 "郡GDP" → "郡 GDP"）
     cleaned = re.sub(r'([\u4e00-\u9fff])\s*([a-zA-Z]+)', r'\1 \2', cleaned)
     #    英文字词后跟中文（如 "GDP的" → "GDP 的"）
