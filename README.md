@@ -303,6 +303,55 @@ cd tools
 
 工具会自动递归扫描仓库根目录下所有 `*.md` 文件（排除 `tools/`、`.git/`、`node_modules/` 等目录），输出处理统计信息（处理文件数、修改文件数、耗时、吞吐量）。
 
+### `concept_linker.py` — 概念链接工具
+
+基于 ML 的自动 wikilink 注入工具，扫描仓库中所有概念（国家、政党、人物、组织等），自动添加 `[[双向链接]]`，并生成分类术语索引。
+
+**核心技术：**
+
+| 技术 | 用途 |
+|------|------|
+| spaCy NER (`zh_core_web_sm`) | 中文命名实体识别，替代 jieba 词性标注，假阳性率 <5% |
+| TF-IDF (scikit-learn) | 每篇文档提取 top-15 关键词，用于上下文消歧义 |
+| Sentence Embedding (`paraphrase-multilingual-MiniLM-L12-v2`) | 向量相似度消歧义，处理长尾歧义 |
+
+**工作流程：**
+
+1. 扫描 → 提取文件名别名、加粗首句别名
+2. 命名实体识别 → 发现未链接概念
+3. 合并映射表 → 生成 `tools/concept_mappings.json`
+4. 注入 wikilink → 逐文件匹配别名，保护已有 `[[...]]`、代码块、表格等
+5. 生成术语索引 → 写入 `tools/术语索引/`
+
+**使用方式：**
+
+```bash
+cd tools
+
+# 完整运行（周一会自动增量刷新）
+& "C:\Program\anaconda3\python.exe" concept_linker.py --refresh
+
+# 仅扫描更新映射（首次建议先跑此命令审阅映射表）
+& "C:\Program\anaconda3\python.exe" concept_linker.py --refresh --scan-only
+
+# 跳过 embedding 模型（无网络时）
+& "C:\Program\anaconda3\python.exe" concept_linker.py --refresh --skip-embedding
+
+# 预览模式（不写入）
+& "C:\Program\anaconda3\python.exe" concept_linker.py --dry-run
+```
+
+首次运行后请审阅 `tools/concept_mappings.json`，将确认的类别改为 `"verified": true`。映射表每周一自动增量扫描。
+
+**依赖安装：**
+
+```bash
+pip install jieba spacy scikit-learn sentence-transformers numpy
+python -m spacy download zh_core_web_sm
+```
+
+**执行统计（当前）：** 78 个文件 → 4,584 处 wikilink，0 处嵌套链接。
+
 ## 文档约定
 
 ### 货币说明块
@@ -333,7 +382,8 @@ cd tools
 2. **尊重已有设定**：跨区域内容（如国际关系、金融体系、交通网络）应与核心设定文档保持一致
 3. **基于游戏原设**：衍生创作应以《原神》游戏中的历史碎片、角色背景与地理设定为合理起点
 4. **提交方式**：请通过 GitHub Issues 或 Pull Requests 提交修改建议。对于较大的新增内容，建议先开 Issue 讨论设定方向
-5. **格式处理**：提交前请运行 `fix_punctuation.py` 工具确保标点与格式规范一致
+5. **概念链接**：如有新增概念或文件，请运行 `concept_linker.py` 注入 wikilink（`--refresh` 或 `--scan-only` 后手动确认映射）
+6. **格式处理**：提交前请运行 `fix_punctuation.py` 工具确保标点与格式规范一致
 
 ## 许可
 
