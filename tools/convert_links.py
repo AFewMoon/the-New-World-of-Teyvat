@@ -64,9 +64,6 @@ def find_protected_regions(text: str) -> list[tuple[int, int]]:
     # 标题行
     for m in re.finditer(r"^#{1,6}\s+.*$", text, re.MULTILINE):
         add(m.start(), m.end(), 80)
-    # 表格行
-    for m in re.finditer(r"^\|.*\|\s*$", text, re.MULTILINE):
-        add(m.start(), m.end(), 70)
     # 图片
     for m in re.finditer(r"!\[.*?\]\(.*?\)", text):
         add(m.start(), m.end(), 60)
