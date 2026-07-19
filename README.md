@@ -378,6 +378,58 @@ python -m spacy download zh_core_web_sm
 
 **执行统计（当前）：** 78 个文件 → 4,584 处 wikilink，0 处嵌套链接。
 
+### `convert_links.py` — 链接格式转换工具
+
+在 Obsidian 双向链接 `[[wikilinks]]` 与标准 Markdown 超链接 `[text](path.md)` 之间相互转换。
+
+**动机：** Obsidian 的 `[[双向链接]]` 语法在其他 Markdown 渲染器（GitHub、VS Code 等）中不可点击。本工具在推送至 GitHub 前将 wikilinks 转换为可点击的 Markdown 链接，推送后还原。
+
+**转换规则：**
+
+| 原始 | 转换后 |
+|:----|:------|
+| `[[path\|text]]` | `[text](path.md)` |
+| `[[path]]` | `[stem](path.md)`（stem = 路径最后一段） |
+
+**使用方式：**
+
+```bash
+cd tools
+
+# 正向转换：wikilinks → MD links（推送前运行）
+& "C:\Program\anaconda3\python.exe" convert_links.py --to-md
+
+# 反向转换：MD links → wikilinks（推送后还原）
+& "C:\Program\anaconda3\python.exe" convert_links.py --to-wikilinks
+```
+
+**工作原理：**正向转换时，将每处的 `路径|显示文本` 与原始格式（`pipe` / `nopipe`）记录到 `tools/_convert_state.json`。反向转换时依据状态文件还原，不会误转换原本就是 Markdown 链接的内容。代码块、行内代码、标题行、表格行等受保护区域内的链接不会被触碰。
+
+**执行统计（当前）：** 78 个文件，4,506 处 wikilink 参与转换。
+
+### `git-push.ps1` — GitHub 推送封装
+
+将转换-推送-还原三步自动化。**推送至 GitHub 时请使用此脚本，而非裸 `git push`：**
+
+```powershell
+.\tools\git-push.ps1 origin main
+```
+
+若 GitHub 访问不畅，可通过 `-Proxy` 参数启用 SOCKS 5 代理（127.0.0.1:7890）：
+
+```powershell
+.\tools\git-push.ps1 -Proxy origin main
+```
+
+**流程：**
+1. `convert_links.py --to-md` — wikilinks → MD links
+2. `git add -A && git commit` — 提交转换结果
+3. `git push` — 推送至 GitHub
+4. `convert_links.py --to-wikilinks` — 还原为 wikilinks
+5. `git add -A && git commit` — 提交还原结果
+
+推送失败时第 4~5 步仍然执行，确保本地始终为 wikilinks 状态。
+
 ## 文档约定
 
 ### 货币说明块
@@ -414,6 +466,7 @@ python -m spacy download zh_core_web_sm
 4. **提交方式**：请通过 GitHub Issues 或 Pull Requests 提交修改建议。对于较大的新增内容，建议先开 Issue 讨论设定方向
 5. **概念链接**：如有新增概念或文件，请运行 `concept_linker.py` 注入 wikilink（`--refresh` 或 `--scan-only` 后手动确认映射）
 6. **格式处理**：提交前请运行 `fix_punctuation.py` 工具确保标点与格式规范一致
+7. **推送机制**：推送至 GitHub 前自动将 `[[wikilinks]]` 转为 Markdown 链接，推送后还原。请使用 `.\tools\git-push.ps1` 而非裸 `git push`
 
 ## 许可
 
