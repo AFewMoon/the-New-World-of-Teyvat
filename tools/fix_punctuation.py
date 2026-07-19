@@ -121,8 +121,30 @@ def _bold_content_first_last(text: str, start: int) -> tuple[str | None, str | N
             # 找到内容的第一个和最后一个非空格字符
             stripped = content.strip()
             if stripped:
-                first = stripped[0]
-                last = stripped[-1]
+                # 若加粗内容以 [[ 开头，取其显示文本（| 后）的首字符作为 first
+                if stripped.startswith('[['):
+                    close_pos = stripped.find(']]')
+                    if close_pos != -1:
+                        inner = stripped[2:close_pos]
+                        pipe_pos = inner.find('|')
+                        display = inner[pipe_pos + 1:] if pipe_pos >= 0 else inner
+                        first = display[0] if display else stripped[0]
+                    else:
+                        first = stripped[0]
+                else:
+                    first = stripped[0]
+                # 若加粗内容以 ]] 结尾，取其显示文本（| 后）的尾字符作为 last
+                if stripped.endswith(']]'):
+                    open_pos = stripped.rfind('[[')
+                    if open_pos != -1:
+                        inner = stripped[open_pos + 2:-2]
+                        pipe_pos = inner.find('|')
+                        display = inner[pipe_pos + 1:] if pipe_pos >= 0 else inner
+                        last = display[-1] if display else stripped[-1]
+                    else:
+                        last = stripped[-1]
+                else:
+                    last = stripped[-1]
             break
         i += 1
     return first, last
