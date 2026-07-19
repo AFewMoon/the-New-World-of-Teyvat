@@ -1,0 +1,38 @@
+name: Lint & Auto-link
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  format-and-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jieba scikit-learn numpy
+
+      - name: Punctuation check
+        run: python tools/fix_punctuation.py --check
+
+      - name: Link integrity check
+        run: python tools/concept_linker.py --ci
+
+      - name: Auto-fix on PR
+        if: failure() && github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python tools/fix_punctuation.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --quiet || (
+            git add -A
+            git commit -m "style: auto-format punctuation"
+            git push
+          )

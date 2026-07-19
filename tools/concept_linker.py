@@ -896,8 +896,29 @@ def main():
     parser.add_argument("--verbose", action="store_true", help="详细输出")
     parser.add_argument("--skip-embedding", action="store_true", help="跳过 embedding 模型（省 120MB 内存）")
     parser.add_argument("--target", nargs="+", help="仅处理指定文件")
+    parser.add_argument("--ci", action="store_true", help="CI 模式：只读校验链接完整性，不写文件，返回非零退出码")
     args = parser.parse_args()
     t0 = time.time()
+
+    # ── CI 模式：只读校验 ──────────────────────────────────────────────────
+    if args.ci:
+        print("CI 模式：校验概念链接完整性...")
+        scanner = VaultScanner(BASE_DIR)
+        mapper = ConceptMapper(MAPPINGS_FILE)
+        mapper.load()
+        concepts = mapper.data.get("concepts", [])
+        alias_index = mapper.build_alias_index()
+        # 检查是否存在未链接的概念（concept_mappings.json 中 unlinked 列表）
+        unlinked = mapper.data.get("unlinked", [])
+        if unlinked:
+            print(f"以下 {len(unlinked)} 个概念在仓库中无对应文件：")
+            for u in unlinked[:20]:
+                print(f"  ? {u.get('name')} ({u.get('category', '?')}, {u.get('files_count', '?')} 个文件)")
+            if len(unlinked) > 20:
+                print(f"  ... 共 {len(unlinked)} 个")
+            sys.exit(1)
+        print(f"OK: {len(concepts)} 个已链接概念，0 个未链接概念。")
+        return
 
     state_mgr = StateManager(STATE_FILE)
     scanner = VaultScanner(BASE_DIR)

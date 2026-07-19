@@ -329,116 +329,51 @@ cd tools
 
 工具会自动递归扫描仓库根目录下所有 `*.md` 文件（排除 `tools/`、`.git/`、`node_modules/` 等目录），输出处理统计信息（处理文件数、修改文件数、耗时、吞吐量）。
 
+### `fix_punctuation.py` 的 CI 模式
+
+CI 流水线（`.github/workflows/lint.yml`）使用 `--check` 参数只检查不修改：
+
+```bash
+python tools/fix_punctuation.py --check    # CI 中检查格式
+python tools/fix_punctuation.py --files path/to/file.md  # 仅处理指定文件
+```
+
 ### `concept_linker.py` — 概念链接工具
 
-基于 ML 的自动 wikilink 注入工具，扫描仓库中所有概念（国家、政党、人物、组织等），自动添加 `[[双向链接]]`，并生成分类术语索引。
-
-**核心技术：**
-
-| 技术 | 用途 |
-|------|------|
-| spaCy NER (`zh_core_web_sm`) | 中文命名实体识别，替代 jieba 词性标注，假阳性率 <5% |
-| TF-IDF (scikit-learn) | 每篇文档提取 top-15 关键词，用于上下文消歧义 |
-| Sentence Embedding (`paraphrase-multilingual-MiniLM-L12-v2`) | 向量相似度消歧义，处理长尾歧义 |
-
-**工作流程：**
-
-1. 扫描 → 提取文件名别名、加粗首句别名
-2. 命名实体识别 → 发现未链接概念
-3. 合并映射表 → 生成 `tools/concept_mappings.json`
-4. 注入 wikilink → 逐文件匹配别名，保护已有 `[[...]]`、代码块、表格等
-5. 生成术语索引 → 写入 `tools/术语索引/`
-
-**使用方式：**
+基于 ML 的自动 wikilink 注入工具，扫描概念并生成分类术语索引。CI 模式下只读校验：
 
 ```bash
-cd tools
-
-# 完整运行（周一会自动增量刷新）
-& "C:\Program\anaconda3\python.exe" concept_linker.py --refresh
-
-# 仅扫描更新映射（首次建议先跑此命令审阅映射表）
-& "C:\Program\anaconda3\python.exe" concept_linker.py --refresh --scan-only
-
-# 跳过 embedding 模型（无网络时）
-& "C:\Program\anaconda3\python.exe" concept_linker.py --refresh --skip-embedding
-
-# 预览模式（不写入）
-& "C:\Program\anaconda3\python.exe" concept_linker.py --dry-run
+python tools/concept_linker.py --ci    # CI 中校验链接完整性
 ```
 
-首次运行后请审阅 `tools/concept_mappings.json`，将确认的类别改为 `"verified": true`。映射表每周一自动增量扫描。
+### `tools/local/` — 本地 Obsidian 转换层（gitignored）
 
-**依赖安装：**
+> **仓库规范格式为标准 Markdown 链接 `[text](path.md)`** 。所有协作者（VS Code / Typora / GitHub Web）直接读写，无需任何转换。仅 Obsidian 用户在本地做透明的 wikilink ↔ MD link 切换。
 
-```bash
-pip install jieba spacy scikit-learn sentence-transformers numpy
-python -m spacy download zh_core_web_sm
-```
+| 文件 | 说明 |
+|:----|:-----|
+| `local/convert_links.py` | 双向链接转换（`[[wikilinks]]` ↔ `[text](path.md)`） |
+| `local/install-hooks.ps1` | 一键安装 git hooks（Obsidian 用户**必须**先跑此脚本） |
+| `local/obsidian-sync.ps1` | 手动触发转换（调试用） |
 
-**执行统计（当前）：** 78 个文件 → 4,584 处 wikilink，0 处嵌套链接。
-
-### `convert_links.py` — 链接格式转换工具
-
-在 Obsidian 双向链接 `[[wikilinks]]` 与标准 Markdown 超链接 `[text](path.md)` 之间相互转换。
-
-**动机：** Obsidian 的 `[[双向链接]]` 语法在其他 Markdown 渲染器（GitHub、VS Code 等）中不可点击。本工具在推送至 GitHub 前将 wikilinks 转换为可点击的 Markdown 链接，推送后还原。
-
-**转换规则：**
-
-| 原始 | 转换后 |
-|:----|:------|
-| `[[path\|text]]` | `[text](path.md)` |
-| `[[path]]` | `[stem](path.md)`（stem = 路径最后一段） |
-
-**使用方式：**
-
-```bash
-cd tools
-
-# 正向转换：wikilinks → MD links（推送前运行）
-& "C:\Program\anaconda3\python.exe" convert_links.py --to-md
-
-# 反向转换：MD links → wikilinks（推送后还原）
-& "C:\Program\anaconda3\python.exe" convert_links.py --to-wikilinks
-```
-
-**工作原理：**正向转换时，将每处的 `路径|显示文本` 与原始格式（`pipe` / `nopipe`）记录到 `tools/_convert_state.json`。反向转换时依据状态文件还原，不会误转换原本就是 Markdown 链接的内容。代码块、行内代码、标题行、表格行等受保护区域内的链接不会被触碰。
-
-**执行统计（当前）：** 78 个文件，4,506 处 wikilink 参与转换。
-
-### `git-push.ps1` — GitHub 推送封装
-
-将转换-推送-还原三步自动化。**推送至 GitHub 时请使用此脚本，而非裸 `git push`：**
+**安装 hooks（仅 Obsidian 用户）：**
 
 ```powershell
-.\tools\git-push.ps1 origin main
+.\tools\local\install-hooks.ps1
 ```
 
-若 GitHub 访问不畅，可通过 `-Proxy` 参数启用 SOCKS 5 代理（127.0.0.1:7890）：
+安装后自动：
+- `git pull` / `git checkout` → MD links 自动转为 `[[wikilinks]]`（Obsidian 可读）
+- `git commit` → `[[wikilinks]]` 自动转为 MD links 后再入库
 
-```powershell
-.\tools\git-push.ps1 -Proxy origin main
-```
+**非 Obsidian 用户无需安装，仓库始终为 MD links。**
 
-**流程：**
-1. `convert_links.py --to-md` — wikilinks → MD links
-2. `git add -A && git commit` — 提交转换结果
-3. `git push` — 推送至 GitHub
-4. `convert_links.py --to-wikilinks` — 还原为 wikilinks
-5. `git add -A && git commit` — 提交还原结果
+### CI/CD 流水线
 
-推送失败时第 4~5 步仍然执行，确保本地始终为 wikilinks 状态。
-
-### AI 触发词
-
-如果使用 AI 编码助手（如 Cline），以下触发词会自动执行「格式化→转换→推送→还原」完整流程：
-
-- 「**修改提交远端**」
-- 「**推送到远端**」/「**推送至 GitHub** 」
-- 「 **push to GitHub** 」
-
-详见 `.clinerules/command-trigger-rules.md`。
+`.github/workflows/lint.yml` 自动运行：
+1. `fix_punctuation.py --check` — 标点格式检查
+2. `concept_linker.py --ci` — 链接完整性校验
+3. PR 失败时自动修复并 bot 回推
 
 ## 文档约定
 
@@ -476,7 +411,6 @@ cd tools
 4. **提交方式**：请通过 GitHub Issues 或 Pull Requests 提交修改建议。对于较大的新增内容，建议先开 Issue 讨论设定方向
 5. **概念链接**：如有新增概念或文件，请运行 `concept_linker.py` 注入 wikilink（`--refresh` 或 `--scan-only` 后手动确认映射）
 6. **格式处理**：提交前请运行 `fix_punctuation.py` 工具确保标点与格式规范一致
-7. **推送机制**：推送至 GitHub 前自动将 `[[wikilinks]]` 转为 Markdown 链接，推送后还原。请使用 `.\tools\git-push.ps1` 而非裸 `git push`
 
 ## 许可
 

@@ -17,7 +17,9 @@
 10. 连续多个空行压缩为有且仅有一个空行
 """
 
+import argparse
 import re
+import sys
 import time
 from pathlib import Path
 
@@ -361,26 +363,78 @@ def fix_file(path: Path) -> bool:
 
 
 def main() -> None:
-    print("=" * 60)
-    print("  提瓦特新世界 · 文本规范化工具")
-    print("=" * 60)
+    parser = argparse.ArgumentParser(description="文本规范化工具")
+    parser.add_argument("--check", action="store_true",
+                        help="检查模式：仅列出需要修复的文件，不修改，返回非零退出码")
+    parser.add_argument("--files", nargs="*",
+                        help="仅处理指定文件（路径相对于仓库根目录）")
+    args = parser.parse_args()
 
-    md_files = sorted(
-        p for p in BASE_DIR.rglob("*.md")
-        if not should_skip_file(p) and p.is_file()
-    )
+    if args.files:
+        md_files = sorted(
+            p for fn in args.files
+            if fn.endswith(".md")
+            for p in [BASE_DIR / fn]
+            if p.exists() and p.is_file() and not should_skip_file(p)
+        )
+    else:
+        md_files = sorted(
+            p for p in BASE_DIR.rglob("*.md")
+            if not should_skip_file(p) and p.is_file()
+        )
 
     if not md_files:
         print("未找到任何 .md 文件，退出。")
         return
 
     print(f"\n找到 {len(md_files)} 个 .md 文件")
-
-    # 计算所有文件总大小
     total_bytes = sum(p.stat().st_size for p in md_files)
-    total_mb = total_bytes / (1024 * 1024)
 
-    # 开始处理并计时
+    if args.check:
+        # --check 模式：只报告不修改
+        needs_fix: list[str] = []
+        for path in md_files:
+            original = path.read_text(encoding="utf-8")
+            lines = original.splitlines(keepends=False)
+            in_code = False
+            processed_lines: list[str] = []
+            prev_blank = False
+            for line in lines:
+                stripped = line.strip()
+                if stripped.startswith("```"):
+                    in_code = not in_code
+                    processed_lines.append(line)
+                    prev_blank = False
+                    continue
+                if in_code:
+                    processed_lines.append(line)
+                    prev_blank = False
+                    continue
+                processed = process_line(line)
+                if processed.strip() == '---':
+                    continue
+                if not processed.strip():
+                    if prev_blank:
+                        continue
+                    prev_blank = True
+                else:
+                    prev_blank = False
+                processed_lines.append(processed)
+            result = "\n".join(processed_lines)
+            if original.endswith("\n"):
+                result += "\n"
+            if result != original:
+                needs_fix.append(str(path.relative_to(BASE_DIR)))
+        if needs_fix:
+            print(f"\n以下 {len(needs_fix)} 个文件需要修复：")
+            for f in needs_fix:
+                print(f"  {f}")
+            sys.exit(1)
+        else:
+            print("所有文件格式正确。")
+        return
+
+    # 正常模式：修复文件
     print("\n--- 开始规范化 ---")
     start_time = time.perf_counter()
     fixed_count = 0
@@ -389,6 +443,7 @@ def main() -> None:
             fixed_count += 1
     end_time = time.perf_counter()
 
+    total_mb = total_bytes / (1024 * 1024)
     elapsed = end_time - start_time
     seconds_per_mb = elapsed / total_mb if total_mb > 0 else 0
     mb_per_second = total_mb / elapsed if elapsed > 0 else 0
