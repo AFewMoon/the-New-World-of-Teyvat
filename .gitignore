@@ -3,6 +3,10 @@
 .obsidian.vimrc
 workspace.json
 
+# Cline rules & agents
+.clinerules/
+AGENTS.md
+
 # OS files
 .DS_Store
 Thumbs.db
