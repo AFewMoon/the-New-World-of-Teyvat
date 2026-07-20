@@ -6,8 +6,11 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![GitHub last commit](https://img.shields.io/github/last-commit/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![Nations](https://img.shields.io/badge/Nations-8-green)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
+[![Website](https://img.shields.io/badge/Website-gh--pages-blue)](https://afewmoon.github.io/the-New-World-of-Teyvat/)
 
 基于《原神》世界观的系统性二次创作与深度世界构建项目。
+
+> 📖 **在线阅读**：[afewmoon.github.io/the-New-World-of-Teyvat](https://afewmoon.github.io/the-New-World-of-Teyvat/) — MkDocs Material 主题构建，推送即自动部署。
 
 > ⚠️ **声明**：本项目为同人二次创作，基于《原神》（HoYoverse）的世界观背景。所有内容均为虚构，不代表任何现实政治立场。
 
@@ -370,10 +373,17 @@ python tools/concept_linker.py --ci    # CI 中校验链接完整性
 
 ### CI/CD 流水线
 
-`.github/workflows/lint.yml` 自动运行：
+两个 GitHub Actions 工作流在每次推送时并行运行：
+
+**`.github/workflows/lint.yml`** — 代码质量检查：
 1. `fix_punctuation.py --check` — 标点格式检查
 2. `concept_linker.py --ci` — 链接完整性校验
 3. PR 失败时自动修复并 bot 回推
+
+**`.github/workflows/deploy.yml`** — 网站构建与部署：
+1. 拷贝内容目录到构建隔离区
+2. `mkdocs build` — 生成静态站点
+3. 部署到 `gh-pages` 分支 → GitHub Pages 自动生效
 
 ## 文档约定
 
