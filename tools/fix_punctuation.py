@@ -102,11 +102,21 @@ def is_cjk(c: str) -> bool:
             '\u2000' <= c <= '\u206f')      # 通用标点（em dash、en dash、省略号等）
 
 
-def _extract_bold_first_last(content_raw: str) -> tuple[str | None, str | None]:
-    """从加粗内容的原始文本提取首末有效字符（处理 wikilink 嵌套）。"""
+def _extract_bold_first_last(content_raw: str, url_parts: list[str] | None = None) -> tuple[str | None, str | None]:
+    """从加粗内容的原始文本提取首末有效字符（处理 wikilink / MD 链接嵌套）。"""
     stripped = content_raw.strip()
     if not stripped:
         return None, None
+
+    # 还原 Markdown 链接占位符为显示文本，使间距行为与 wikilink 一致
+    if url_parts:
+        for i, part in enumerate(url_parts):
+            placeholder = f"{chr(0)}{chr(1)}{i}{chr(0)}{chr(1)}"
+            if placeholder in stripped:
+                m = re.match(r'^\[([^\[\]]+)\]\([^)]+\)', part)
+                if m:
+                    stripped = stripped.replace(placeholder, m.group(1))
+
     first: str | None = stripped[0]
     last: str | None = stripped[-1]
     if stripped.startswith('[['):
@@ -130,7 +140,7 @@ def _extract_bold_first_last(content_raw: str) -> tuple[str | None, str | None]:
 
 VERSION_NUM_RE = re.compile(r'^\d+(?:\.\d+)+\s+')
 
-def fix_bold_spacing(text: str) -> str:
+def fix_bold_spacing(text: str, url_parts: list[str] | None = None) -> str:
     """处理 ** 加粗标记周围的空格（单次扫描，无重复遍历）。"""
     result = []
     i = 0
@@ -164,7 +174,7 @@ def fix_bold_spacing(text: str) -> str:
                 continue
 
             content_raw = text[j:close_pos]
-            first_char, last_char = _extract_bold_first_last(content_raw)
+            first_char, last_char = _extract_bold_first_last(content_raw, url_parts)
 
             # --- 开启 ** ---
             while result and result[-1] == ' ':
@@ -253,7 +263,7 @@ def process_line(line: str) -> str:
     cleaned = re.sub(r'([a-zA-Z]+)\s*([\u4e00-\u9fff])', r'\1 \2', cleaned)
 
     # 7. 处理 ** 加粗标记周围空格（逐字符扫描，区分开闭）
-    cleaned = fix_bold_spacing(cleaned)
+    cleaned = fix_bold_spacing(cleaned, url_parts)
 
     # 8. 还原 URL
     cleaned = restore_urls(cleaned, url_parts)
