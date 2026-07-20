@@ -1,0 +1,47 @@
+site_name: 提瓦特新世界
+site_description: 基于《原神》世界观的系统性二次创作与深度世界构建项目
+site_url: https://afewmoon.github.io/the-New-World-of-Teyvat/
+repo_url: https://github.com/AFewMoon/the-New-World-of-Teyvat
+repo_name: AFewMoon/the-New-World-of-Teyvat
+edit_uri: edit/master/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: 切换至暗色模式
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换至亮色模式
+
+docs_dir: content
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
