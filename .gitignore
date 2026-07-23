@@ -39,4 +39,5 @@ tools/concept_mappings.json
 site/
 
 # MkDocs content copy (generated in CI)
-content/
+content/*
+!content/javascripts/
