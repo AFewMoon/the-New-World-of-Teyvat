@@ -50,12 +50,12 @@ markdown_extensions:
       permalink: true
 
 extra_javascript:
+  - https://unpkg.com/katex@0.16.11/dist/katex.min.js
+  - https://unpkg.com/katex@0.16.11/dist/contrib/auto-render.min.js
   - javascripts/katex.js
-  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
-  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
 
 extra_css:
-  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
+  - https://unpkg.com/katex@0.16.11/dist/katex.min.css
 
 nav:
   - 国际:
