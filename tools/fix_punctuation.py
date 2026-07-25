@@ -1,6 +1,6 @@
 """
 文本规范化工具：遍历所有 *.md 文件，执行以下操作：
-0. 制表符统一替换为 4 空格（缩进规范化）
+0. 制表符统一替换为 4 空格；2n 缩进 → 4n 缩进（缩进统一至 4 空格一级）
 1. 将英文单双引号替换为中文引号
 2. 数字间连字符 `-` 统一为 `~`
 3. 数字与非数字（含中文、英文）之间的空格调整为有且仅有一个
@@ -224,6 +224,29 @@ def remove_heading_number(text: str) -> str:
     return prefix + rest
 
 
+def _detect_indent_scheme(lines: list[str]) -> str:
+    """检测文件缩进方案：返回 '2n'（2n 方案，需要转换）或 '4n'（已为 4n 方案）。"""
+    in_code = False
+    indent_set: set[int] = set()
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code = not in_code
+            continue
+        if in_code or not stripped:
+            continue
+        m = re.match(r'^( +)', line)
+        if m:
+            indent_set.add(len(m.group(1)))
+    if not indent_set:
+        return '4n'
+    # 若有任何缩进为 2 mod 4，则文件使用 2n 方案
+    for n in indent_set:
+        if n % 4 == 2:
+            return '2n'
+    return '4n'
+
+
 def process_line(line: str) -> str:
     """对单行文本执行所有标点规范化处理。"""
     # 0. 制表符统一替换为 4 空格（代码块内部由 fix_file 跳过）
@@ -288,12 +311,35 @@ def should_skip_file(path: Path) -> bool:
     return any(p in skip_dirs for p in parts)
 
 
+def _fix_indent_block(lines: list[str]) -> bool:
+    """扫描并修复文件缩进：若文件使用 2n 方案，将缩进乘以 2。"""
+    scheme = _detect_indent_scheme(lines)
+    if scheme == '4n':
+        return False
+    in_code = False
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code = not in_code
+            continue
+        if in_code:
+            continue
+        m = re.match(r'^( +)', line)
+        if m:
+            n = len(m.group(1))
+            if n % 2 == 0:
+                lines[i] = ' ' * (n * 2) + line[n:]
+    return True
+
+
 def fix_file(path: Path) -> bool:
     """处理单个 .md 文件，返回是否有修改。"""
     lines = path.read_text(encoding="utf-8").splitlines(keepends=False)
+    # 缩进统一（2n → 4n），必须在具体处理之前
+    indent_fixed = _fix_indent_block(lines)
     new_lines: list[str] = []
     in_code_block = False
-    modified = False
+    modified = indent_fixed
 
     prev_blank = False
 
