@@ -118,6 +118,10 @@ def _extract_bold_first_last(content_raw: str, url_parts: list[str] | None = Non
                 m = re.match(r'^\[([^\[\]]+)\]\([^)]+\)', part)
                 if m:
                     stripped = stripped.replace(placeholder, m.group(1))
+                else:
+                    m = re.match(r'^\[\[(?:[^\[\]]+\|)?([^\[\]]+)\]\]\([^)]+\)', part)
+                    if m:
+                        stripped = stripped.replace(placeholder, m.group(1))
 
     first: str | None = stripped[0]
     last: str | None = stripped[-1]
