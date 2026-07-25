@@ -1,6 +1,7 @@
 """
 文本规范化工具：遍历所有 *.md 文件，执行以下操作：
 0. 制表符统一替换为 4 空格；2n 缩进 → 4n 缩进（缩进统一至 4 空格一级）
+0e. 括号格式统一：含中文 → `（……）`；不含中文 → `(...)`，并处理两侧间距
 1. 将英文单双引号替换为中文引号
 2. 数字间连字符 `-` 统一为 `~`
 3. 数字与非数字（含中文、英文）之间的空格调整为有且仅有一个
@@ -247,6 +248,26 @@ def _detect_indent_scheme(lines: list[str]) -> str:
     return '4n'
 
 
+def fix_parentheses(text: str) -> str:
+    """统一括号格式：
+    - 括号内容不含中文 → 英文括号 `(...)`；
+    - 括号内容含中文 → 中文括号 `（...）`。
+    """
+    # 1. 中文括号 → 英文括号（若内容不含 CJK）
+    text = re.sub(
+        r'（([^）]*)）',
+        lambda m: f'({m.group(1)})' if not re.search(r'[\u4e00-\u9fff]', m.group(1)) else m.group(0),
+        text
+    )
+    # 2. 英文括号 → 中文括号（若内容含 CJK）
+    text = re.sub(
+        r'\(([^)]*)\)',
+        lambda m: f'（{m.group(1)}）' if re.search(r'[\u4e00-\u9fff]', m.group(1)) else m.group(0),
+        text
+    )
+    return text
+
+
 def process_line(line: str) -> str:
     """对单行文本执行所有标点规范化处理。"""
     # 0. 制表符统一替换为 4 空格（代码块内部由 fix_file 跳过）
@@ -271,6 +292,9 @@ def process_line(line: str) -> str:
     # 4c. 统一已有的中文弯单引号 → 方角单引号
     cleaned = re.sub(r'\u2018([^\u2019]+)\u2019', '\u300e\\1\u300f', cleaned)
 
+    # 4d. 统一括号格式（根据内容语言选择英文/中文括号）
+    cleaned = fix_parentheses(cleaned)
+
     # 5. 数字间连字符 → ~  （去掉两端空格）
     cleaned = re.sub(r'(\d)\s*-\s*(\d)', r'\1~\2', cleaned)
 
@@ -287,6 +311,9 @@ def process_line(line: str) -> str:
     cleaned = re.sub(r'([\u4e00-\u9fff])\s*([a-zA-Z]+)', r'\1 \2', cleaned)
     #    英文字词后跟中文（如 "GDP的" → "GDP 的"）
     cleaned = re.sub(r'([a-zA-Z]+)\s*([\u4e00-\u9fff])', r'\1 \2', cleaned)
+    #    英文括号与中文之间的空格
+    cleaned = re.sub(r'([\u4e00-\u9fff])\s*\(', r'\1 (', cleaned)
+    cleaned = re.sub(r'\)\s*([\u4e00-\u9fff])', r') \1', cleaned)
 
     # 7. 处理 ** 加粗标记周围空格（逐字符扫描，区分开闭）
     cleaned = fix_bold_spacing(cleaned, url_parts)
