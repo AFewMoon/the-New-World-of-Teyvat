@@ -84,7 +84,8 @@ def protect_urls(line: str) -> tuple[str, list[str]]:
 
     # 匹配 Markdown 链接 [text](url) 和图片 ![alt](url)
     # 括号内不能包含嵌套括号
-    result = re.sub(r'!?\[(?:[^\[\]]|\[[^\[\]]*\])*\]\([^)]+\)', repl, line)
+    # (?!\[) 负向前瞻防止将 [[wikilink]](paren) 误认为 Markdown 链接
+    result = re.sub(r'!?\[(?!\[)(?:[^\[\]]|\[[^\[\]]*\])*\]\([^)]+\)', repl, line)
     return result, parts
 
 
@@ -318,6 +319,8 @@ def process_line(line: str) -> str:
     #    英文括号与中文之间的空格
     cleaned = re.sub(r'([\u4e00-\u9fff])\s*\(', r'\1 (', cleaned)
     cleaned = re.sub(r'\)\s*([\u4e00-\u9fff])', r') \1', cleaned)
+    #    wikilink 与英文括号之间：`]]` 后跟 `(` → 补 1 空格
+    cleaned = re.sub(r'\]\]\s*\(', r']] (', cleaned)
 
     # 7. 处理 ** 加粗标记周围空格（逐字符扫描，区分开闭）
     cleaned = fix_bold_spacing(cleaned, url_parts)
