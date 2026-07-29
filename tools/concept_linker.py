@@ -971,12 +971,13 @@ def main():
     # ── CI 模式：只读校验 ──────────────────────────────────────────────────
     if args.ci:
         print("CI 模式：校验概念链接完整性...")
-        scanner = VaultScanner(BASE_DIR)
         mapper = ConceptMapper(MAPPINGS_FILE)
         mapper.load()
         concepts = mapper.data.get("concepts", [])
         alias_index = mapper.build_alias_index()
-        # 检查是否存在未链接的概念（concept_mappings.json 中 unlinked 列表）
+        if not concepts:
+            print("错误: concept_mappings.json 不存在或为空，请先本地运行 --refresh 并 commit")
+            sys.exit(1)
         unlinked = mapper.data.get("unlinked", [])
         if unlinked:
             print(f"以下 {len(unlinked)} 个概念在仓库中无对应文件：")
