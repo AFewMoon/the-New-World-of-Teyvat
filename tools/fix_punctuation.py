@@ -253,19 +253,7 @@ def _detect_indent_scheme(lines: list[str]) -> str:
     return '4n'
 
 
-def _has_cjk_or_url_cjk(content: str, url_parts: list[str] | None = None) -> bool:
-    """检查 content 是否包含中文，若有 URL 占位符则检查原文 URL 含中文的情况。"""
-    if re.search(r'[\u4e00-\u9fff]', content):
-        return True
-    if url_parts:
-        for i, part in enumerate(url_parts):
-            placeholder = f"{chr(0)}{chr(1)}{i}{chr(0)}{chr(1)}"
-            if placeholder in content and re.search(r'[\u4e00-\u9fff]', part):
-                return True
-    return False
-
-
-def fix_parentheses(text: str, url_parts: list[str] | None = None) -> str:
+def fix_parentheses(text: str) -> str:
     """统一括号格式：
     - 括号内容不含中文 → 英文括号 `(...)`；
     - 括号内容含中文 → 中文括号 `（...）`。
@@ -273,10 +261,10 @@ def fix_parentheses(text: str, url_parts: list[str] | None = None) -> str:
     # 1. 中文括号 → 英文括号（若内容不含 CJK）
     text = re.sub(
         r'（([^）]*)）',
-        lambda m: f'({m.group(1)})' if not _has_cjk_or_url_cjk(m.group(1), url_parts) else m.group(0),
+        lambda m: f'({m.group(1)})' if not re.search(r'[\u4e00-\u9fff]', m.group(1)) else m.group(0),
         text
     )
-    # 2. 英文括号 → 中文括号（仅检查直接内容，不查 URL 占位符以免过度转换）
+    # 2. 英文括号 → 中文括号（若内容含 CJK）
     text = re.sub(
         r'\(([^)]*)\)',
         lambda m: f'（{m.group(1)}）' if re.search(r'[\u4e00-\u9fff]', m.group(1)) else m.group(0),
@@ -310,7 +298,7 @@ def process_line(line: str) -> str:
     cleaned = re.sub(r'\u2018([^\u2019]+)\u2019', '\u300e\\1\u300f', cleaned)
 
     # 4d. 统一括号格式（根据内容语言选择英文/中文括号）
-    cleaned = fix_parentheses(cleaned, url_parts)
+    cleaned = fix_parentheses(cleaned)
 
     # 5. 数字间连字符 → ~  （去掉两端空格）
     cleaned = re.sub(r'(\d)\s*-\s*(\d)', r'\1~\2', cleaned)
