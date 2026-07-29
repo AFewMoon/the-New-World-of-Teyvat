@@ -3,7 +3,7 @@
     "last_updated": "2026-07-29",
     "version": 4,
     "total_linked": 103,
-    "total_unlinked": 44
+    "total_unlinked": 0
   },
   "concepts": [
     {
@@ -203,7 +203,9 @@
         "民生与社会保障",
         "文化",
         "对外关系",
-        "挑战与展望"
+        "挑战与展望",
+        "霜月之子",
+        "黄金国"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -263,7 +265,10 @@
         "无政府地带",
         "愚人众驻防区",
         "挪德卡莱全境行政区划简表",
-        "交通与通道"
+        "交通与通道",
+        "希汐岛",
+        "皮达米拉",
+        "米拉镇"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -621,7 +626,8 @@
         "优势产业",
         "基础设施与要素禀赋",
         "土地改革简史",
-        "对外经济关系"
+        "对外经济关系",
+        "欧庇克"
       ],
       "category": "经济与产业",
       "verified": true,
@@ -675,7 +681,8 @@
         "民生与社会保障",
         "文化",
         "对外关系",
-        "挑战与展望"
+        "挑战与展望",
+        "圣夜"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -1126,7 +1133,10 @@
         "民生与社会保障",
         "文化",
         "对外关系",
-        "挑战与展望"
+        "挑战与展望",
+        "琉璃府",
+        "王帝君",
+        "自由合众国"
       ],
       "category": "国家与地区",
       "verified": false,
@@ -1210,7 +1220,8 @@
         "重要铁路一览",
         "国产列车",
         "车次编码体系",
-        "璃月铁路总公司"
+        "璃月铁路总公司",
+        "LRC"
       ],
       "category": "科技与基础设施",
       "verified": true,
@@ -1303,7 +1314,8 @@
         "法律适用性",
         "对外事务",
         "争端解决",
-        "最终条款"
+        "最终条款",
+        "幕府与海祇岛和解备忘录"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -1494,7 +1506,9 @@
         "财阀体制的结构性矛盾与危机",
         "各岛财阀势力分布概述",
         "财阀关键人物一览",
-        "财阀体制的结构性矛盾"
+        "财阀体制的结构性矛盾",
+        "八重堂",
+        "九条"
       ],
       "category": "经济与产业",
       "verified": true,
@@ -1597,7 +1611,8 @@
         "烬寂海的秘密",
         "经济数据",
         "生态与可持续发展",
-        "修改意见"
+        "修改意见",
+        "奇兹托克群岛"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -1688,7 +1703,9 @@
         "国防体制",
         "各共和国政治体制简介",
         "联合部落首领制",
-        "修改意见"
+        "修改意见",
+        "沃原城",
+        "六共和国"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -1825,7 +1842,8 @@
         "土地改革简史",
         "国际贸易",
         "龙伙伴经济链",
-        "基础设施与要素禀赋"
+        "基础设施与要素禀赋",
+        "龙伙伴"
       ],
       "category": "经济与产业",
       "verified": true,
@@ -2355,7 +2373,9 @@
         "军事与国防",
         "民生与社会保障",
         "文化",
-        "对外关系"
+        "对外关系",
+        "晨曦",
+        "艾泽尔"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -2407,7 +2427,8 @@
         "碎片化繁荣",
         "高度垄断的格局",
         "管理体制与安全监管",
-        "挑战与展望"
+        "挑战与展望",
+        "MAFWA"
       ],
       "category": "科技与基础设施",
       "verified": true,
@@ -2490,7 +2511,8 @@
         "蒙德行政区划",
         "功能分化的治理单元",
         "基层治理的毛细血管",
-        "特殊说明"
+        "特殊说明",
+        "蒙德城"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -2874,7 +2896,8 @@
       "target": "须弥/须弥行政区划",
       "aliases": [
         "须弥行政区划",
-        "社会主义联邦的治理经纬"
+        "社会主义联邦的治理经纬",
+        "阿如市"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -2954,7 +2977,8 @@
         "幕府政治概况",
         "幕府政治",
         "政党",
-        "政治制度"
+        "政治制度",
+        "民主社会党"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -3109,7 +3133,8 @@
       "target": "稻妻/幕府/幕府行政区划",
       "aliases": [
         "幕府行政区划",
-        "行政区划"
+        "行政区划",
+        "八酝岛"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -3237,7 +3262,8 @@
         "优势产业",
         "基础设施与要素禀赋",
         "土地改革简史",
-        "对外经济关系"
+        "对外经济关系",
+        "海祇元"
       ],
       "category": "经济与产业",
       "verified": true,
@@ -3290,7 +3316,8 @@
         "民生与社会保障",
         "文化",
         "对外关系",
-        "挑战与展望"
+        "挑战与展望",
+        "珊瑚宫"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -3373,7 +3400,8 @@
         "清籁岛政治",
         "政治体制",
         "政党",
-        "统一战线"
+        "统一战线",
+        "革命党"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -4029,7 +4057,8 @@
         "区域性组织与机制",
         "非政府组织",
         "政党间组织",
-        "国际组织分类一览"
+        "国际组织分类一览",
+        "冒险家协会"
       ],
       "category": "国际组织",
       "verified": true,
@@ -4074,7 +4103,8 @@
         "经贸与金融",
         "行业标准与技术",
         "环境与资源",
-        "条约体系的制度局限"
+        "条约体系的制度局限",
+        "提瓦特和平条约"
       ],
       "category": "国际组织",
       "verified": true,
@@ -4526,446 +4556,5 @@
       ]
     }
   ],
-  "unlinked": [
-    {
-      "name": "中央银行",
-      "aliases": [
-        "中央银行"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 14
-    },
-    {
-      "name": "TE",
-      "aliases": [
-        "TE"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 13
-    },
-    {
-      "name": "北国银行",
-      "aliases": [
-        "北国银行"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 12
-    },
-    {
-      "name": "自由党",
-      "aliases": [
-        "自由党"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 12
-    },
-    {
-      "name": "自由合众国",
-      "aliases": [
-        "自由合众国"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 12
-    },
-    {
-      "name": "议会",
-      "aliases": [
-        "议会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 9
-    },
-    {
-      "name": "珊瑚宫",
-      "aliases": [
-        "珊瑚宫"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 9
-    },
-    {
-      "name": "冒险家协会",
-      "aliases": [
-        "冒险家协会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 8
-    },
-    {
-      "name": "国防部",
-      "aliases": [
-        "国防部"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 8
-    },
-    {
-      "name": "中央政府",
-      "aliases": [
-        "中央政府"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 8
-    },
-    {
-      "name": "雷元素",
-      "aliases": [
-        "雷元素"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 8
-    },
-    {
-      "name": "琉璃府",
-      "aliases": [
-        "琉璃府"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 8
-    },
-    {
-      "name": "九条",
-      "aliases": [
-        "九条"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 8
-    },
-    {
-      "name": "晨曦",
-      "aliases": [
-        "晨曦"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 8
-    },
-    {
-      "name": "设计局",
-      "aliases": [
-        "设计局"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "奇兹托克群岛",
-      "aliases": [
-        "奇兹托克群岛"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "龙伙伴",
-      "aliases": [
-        "龙伙伴"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "八酝岛",
-      "aliases": [
-        "八酝岛"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "八重堂",
-      "aliases": [
-        "八重堂"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "保守党",
-      "aliases": [
-        "保守党"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "希汐岛",
-      "aliases": [
-        "希汐岛"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 6
-    },
-    {
-      "name": "最高法院",
-      "aliases": [
-        "最高法院"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "王帝君",
-      "aliases": [
-        "王帝君"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "海祇元",
-      "aliases": [
-        "海祇元"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "革命党",
-      "aliases": [
-        "革命党"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "欧庇克",
-      "aliases": [
-        "欧庇克"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "财政部",
-      "aliases": [
-        "财政部"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "幕府与海祇岛和解备忘录",
-      "aliases": [
-        "幕府与海祇岛和解备忘录"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "民主社会党",
-      "aliases": [
-        "民主社会党"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "皮达米拉",
-      "aliases": [
-        "皮达米拉"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "米拉镇",
-      "aliases": [
-        "米拉镇"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "霜月之子",
-      "aliases": [
-        "霜月之子"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "提瓦特和平条约",
-      "aliases": [
-        "提瓦特和平条约"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "运河",
-      "aliases": [
-        "运河"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "圣夜",
-      "aliases": [
-        "圣夜"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "沃原城",
-      "aliases": [
-        "沃原城"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "MAFWA",
-      "aliases": [
-        "MAFWA"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 4
-    },
-    {
-      "name": "艾泽尔",
-      "aliases": [
-        "艾泽尔"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "阿如市",
-      "aliases": [
-        "阿如市"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "教育部",
-      "aliases": [
-        "教育部"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "蒙德城",
-      "aliases": [
-        "蒙德城"
-      ],
-      "category": "科技与基础设施",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "LRC",
-      "aliases": [
-        "LRC"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "黄金国",
-      "aliases": [
-        "黄金国"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "六共和国",
-      "aliases": [
-        "六共和国"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    }
-  ]
+  "unlinked": []
 }
