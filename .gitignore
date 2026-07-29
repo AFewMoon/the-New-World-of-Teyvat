@@ -7,6 +7,9 @@ workspace.json
 .clinerules/
 AGENTS.md
 
+# User manual (not tracked)
+用户手册.md
+
 # OS files
 .DS_Store
 Thumbs.db
