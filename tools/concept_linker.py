@@ -118,7 +118,49 @@ COMMON_WORD_BLACKLIST: set[str] = {
     "规模", "数量", "总量", "人口", "面积", "数据",
     "身份", "象征", "货币说明", "概述", "简介", "性质",
     "国名", "政体", "起源", "宗旨",
+    # —— NER 噪声词：纯泛称 / 时间 / 方向词，永不作为链接目标 ——
+    "TE", "大陆", "中央", "中央政府", "全国", "境内",
+    "近年来", "今日", "今天", "今年", "去年", "每月", "全年", "年度",
+    "夜间", "白天", "周末", "如今", "当时", "数字化", "通用",
+    "康养", "港府", "运河", "酒庄", "葡萄园", "沙龙", "一流",
+    "东北", "西北", "东南", "西南",
+    "二元", "第三方", "一周之内", "数十", "数百", "数千", "数万",
 }
+
+_NOISE_TOKEN_RE = re.compile(
+    r"(?:第[〇一二三四五六七八九十百千万零两]+(?:方)?"     # 序数：第一、第四、第十二、第三方
+    r"|[一二三四五六七八九十]成|之一|一半"                 # 分数：六成、之一、一半
+    r"|[一二三四五六七八九十]+分之[一二三四五六七八九十]+"   # 分数：三分之一、三分之二
+    r"|[一二三四五六七八九十]+级(?:行政区)?"               # 层级：三级、二级行政区
+    r"|[一二三四五六七八九十]+大(?:类)?"                   # 概数：三大、三大类
+    r"|[一二三四五六七八九十]+大类)"
+)
+
+_NOISE_DURATION_RE = re.compile(
+    r"(?:[一二三四五六七八九十两几半数余]+)?(?:十|百|千|万)?(?:年|月|日|周|夜|小时)?"
+)
+
+
+def is_noise_token(w: str) -> bool:
+    """判断 NER 候选是否属于无需链接的噪声（数字、序数、分数、时长、异常字符等）。"""
+    if len(w) < 2:
+        return True
+    # 含数字 / 百分号 / 物理单位：1.、10、40%、500 万、50 Hz、160 J、2005 年
+    if re.search(r"[\d%HzJ]", w):
+        return True
+    # 序数 / 分数 / 量词
+    if _NOISE_TOKEN_RE.fullmatch(w):
+        return True
+    # 时长 / 数量泛称：十年、三十年、数月、数百年、五百年、三个月
+    if re.search(r"[年月日周夜小时]", w) and _NOISE_DURATION_RE.fullmatch(w):
+        return True
+    # 括号 / 破折号等标点残缺片段：《》、城—、〉〈
+    if "》《" in w or "〉" in w or "〈" in w or w.endswith(("—", "–", "-")):
+        return True
+    # 私有区（U+E000–U+F8FF）与控制字符
+    if any(0xE000 <= ord(ch) <= 0xF8FF or ord(ch) < 0x20 or 0x7F <= ord(ch) <= 0x9F for ch in w):
+        return True
+    return False
 
 NATION_PRIMARY: dict[str, str] = {
     "蒙德": "蒙德/蒙德综述",
@@ -461,7 +503,7 @@ class Segmenter:
                     w = ent.text.strip()
                     if len(w) < 2 or len(w) > 25:
                         continue
-                    if w in COMMON_WORD_BLACKLIST:
+                    if w in COMMON_WORD_BLACKLIST or is_noise_token(w):
                         continue
                     if w not in seen:
                         seen.add(w)
@@ -478,7 +520,7 @@ class Segmenter:
                     w = w.strip()
                     if len(w) < 2 or len(w) > 20:
                         continue
-                    if w in COMMON_WORD_BLACKLIST:
+                    if w in COMMON_WORD_BLACKLIST or is_noise_token(w):
                         continue
                     # 简单启发式：2-4 字符且非纯数字/标点的词作为候选
                     if re.search(r"[，。；：、！？（）「」『』《》【】\d]", w):
@@ -655,6 +697,9 @@ class SemanticResolver:
         if self.model is not None:
             return True
         try:
+            # conda 环境 numpy(mkl) 与 torch 自带 OpenMP 运行时会冲突（OMP Error #15），
+            # 提前设置跳过重复初始化；CI（未安装 torch）下为无害 no-op。
+            os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
             from sentence_transformers import SentenceTransformer as _ST
             print("  加载 embedding 模型...")
             self.model = _ST("paraphrase-multilingual-MiniLM-L12-v2")
