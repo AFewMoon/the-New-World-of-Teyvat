@@ -360,11 +360,11 @@ python tools/concept_linker.py --ci    # CI 中校验链接完整性
 
 ### `tools/local/` — 本地 Obsidian 转换层 (gitignored)
 
-> **仓库规范格式为标准 Markdown 链接 `[text](path.md)`** 。所有协作者 (VS Code / Typora / GitHub Web) 直接读写，无需任何转换。仅 Obsidian 用户在本地做透明的 wikilink ↔ MD link 切换。
+> **仓库规范格式为标准 Markdown 链接 `[text](./path.md)`** 。所有协作者 (VS Code / Typora / GitHub Web) 直接读写，无需任何转换。仅 Obsidian 用户在本地做透明的 wikilink ↔ MD link 切换。
 
 | 文件 | 说明 |
 |:----|:-----|
-| `local/convert_links.py` | 双向链接转换 (`[[wikilinks]]` ↔ `[text](path.md)`) |
+| `local/convert_links.py` | 双向链接转换 (`[[wikilinks]]` ↔ `[text](./path.md)`) |
 | `local/install-hooks.ps1` | 一键安装 git hooks（Obsidian 用户**必须**先跑此脚本） |
 | `local/obsidian-sync.ps1` | 手动触发转换（调试用） |
 
