@@ -360,7 +360,7 @@ python tools/concept_linker.py --ci    # CI 中校验链接完整性
 
 ### `tools/local/` — 本地 Obsidian 转换层 (gitignored)
 
-> **仓库规范格式为标准 Markdown 链接 `[text](./path.md)`** 。所有协作者 (VS Code / Typora / GitHub Web) 直接读写，无需任何转换。仅 Obsidian 用户在本地做透明的 wikilink ↔ MD link 切换。
+> **仓库规范格式为标准 Markdown 链接 `[text](页面相对路径.md)`** ，链接以**当前文件所在目录**为基准解析（MkDocs 规则）：目标与文件同目录用 `./xxx.md`，跨目录用 `../目录/xxx.md`。所有协作者 (VS Code / Typora / GitHub Web) 直接读写，无需任何转换。仅 Obsidian 用户在本地做透明的 wikilink ↔ MD link 切换。
 
 | 文件 | 说明 |
 |:----|:-----|
