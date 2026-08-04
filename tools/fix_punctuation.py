@@ -1,6 +1,7 @@
 """
 文本规范化工具：遍历所有 *.md 文件，执行以下操作：
-0. 制表符统一替换为 4 空格；2n 缩进 → 4n 缩进（缩进统一至 4 空格一级）
+0. 制表符统一替换为 4 空格；缩进严格约束为 4 空格一级——非 4 倍数贴齐、
+   不越级（每行缩进 = 父行缩进 + 4），2n 缩进方案整体 ×2 保持原有层级
 0e. 括号格式统一：含中文 → `（……）`；不含中文 → `(...)`，并处理两侧间距
 1. 将英文单双引号替换为中文引号
 2. 数字间连字符 `-` 统一为 `~`
@@ -230,10 +231,24 @@ def remove_heading_number(text: str) -> str:
     return prefix + rest
 
 
-def _detect_indent_scheme(lines: list[str]) -> str:
-    """检测文件缩进方案：返回 '2n'（2n 方案，需要转换）或 '4n'（已为 4n 方案）。"""
+def _snap_to_4(width: int) -> int:
+    """将缩进宽度贴齐到最近的 4 倍数（半进位：1→0、2→4、3→4、6→8）。"""
+    return (width + 2) // 4 * 4
+
+
+def fix_indentation(lines: list[str]) -> tuple[list[str], bool]:
+    """严格约束行首缩进（代码块内部与空行不做处理）：
+
+    1. 所有非代码块行首缩进统一为 4 的倍数；
+    2. 不越级缩进：每行缩进 = 父行（上方最近、缩进更小的行所代表的层级）缩进 + 4，
+       同一逻辑层（宽度相等的兄弟行）缩进一致，缩进归零处重置层级栈；
+    3. 2n 缩进方案文件（存在 ≡ 2 mod 4 的宽度）整体 ×2 保持原有层级，
+       其余先贴齐最近的 4 倍数再按层级映射。
+
+    返回 (修复后的行列表, 是否有修改)。"""
+    # 第一步：统计非代码块、非空行的缩进宽度（制表符按 4 展开）
     in_code = False
-    indent_set: set[int] = set()
+    widths: set[int] = set()
     for line in lines:
         stripped = line.strip()
         if stripped.startswith("```"):
@@ -241,16 +256,72 @@ def _detect_indent_scheme(lines: list[str]) -> str:
             continue
         if in_code or not stripped:
             continue
-        m = re.match(r'^( +)', line)
+        m = re.match(r'^(\s+)\S', line)
         if m:
-            indent_set.add(len(m.group(1)))
-    if not indent_set:
-        return '4n'
-    # 若有任何缩进为 2 mod 4，则文件使用 2n 方案
-    for n in indent_set:
-        if n % 4 == 2:
-            return '2n'
-    return '4n'
+            widths.add(len(m.group(1).replace('\t', '    ')))
+    if not widths:
+        return lines, False
+
+    # 第二步：宽度贴齐到 4 倍数
+    if any(w % 4 == 2 for w in widths):
+        # 2n 方案：偶数宽度 ×2 保持层级；奇数宽度贴齐 4 倍数
+        snapped = {w: (w * 2 if w % 2 == 0 else _snap_to_4(w)) for w in widths}
+    else:
+        snapped = {w: _snap_to_4(w) for w in widths}
+
+    # 第三步：栈式结构重排，每行目标缩进 = 父级目标 + 4
+    targets: dict[int, int] = {0: 0}
+    stack: list[list[int]] = [[0, 0]]  # [贴齐后宽度, 目标缩进]
+    in_code = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code = not in_code
+            continue
+        if in_code or not stripped:
+            continue
+        m = re.match(r'^(\s+)\S', line)
+        w = len(m.group(1).replace('\t', '    ')) if m else 0
+        sw = snapped.get(w, w)
+        if sw == 0:
+            stack = [[0, 0]]
+            targets[w] = 0
+            continue
+        while stack and stack[-1][0] >= sw:
+            stack.pop()
+        if not stack:
+            stack = [[0, 0]]
+        target = stack[-1][1] + 4
+        targets[w] = target
+        if sw > stack[-1][0]:
+            stack.append([sw, target])
+
+    # 第四步：重写行首空白
+    new_lines: list[str] = []
+    changed = False
+    in_code = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code = not in_code
+            new_lines.append(line)
+            continue
+        if in_code or not stripped:
+            new_lines.append(line)
+            continue
+        m = re.match(r'^(\s+)(\S.*)$', line)
+        if not m:
+            new_lines.append(line)
+            continue
+        old = m.group(1)
+        w = len(old.replace('\t', '    '))
+        target = targets.get(w, w)
+        if ' ' * target == old:
+            new_lines.append(line)
+        else:
+            new_lines.append(' ' * target + m.group(2))
+            changed = True
+    return new_lines, changed
 
 
 def _has_cjk_or_url_cjk(content: str, url_parts: list[str] | None = None) -> bool:
@@ -357,32 +428,11 @@ def should_skip_file(path: Path) -> bool:
     return any(p in skip_dirs for p in parts)
 
 
-def _fix_indent_block(lines: list[str]) -> bool:
-    """扫描并修复文件缩进：若文件使用 2n 方案，将缩进乘以 2。"""
-    scheme = _detect_indent_scheme(lines)
-    if scheme == '4n':
-        return False
-    in_code = False
-    for i, line in enumerate(lines):
-        stripped = line.strip()
-        if stripped.startswith("```"):
-            in_code = not in_code
-            continue
-        if in_code:
-            continue
-        m = re.match(r'^( +)', line)
-        if m:
-            n = len(m.group(1))
-            if n % 2 == 0:
-                lines[i] = ' ' * (n * 2) + line[n:]
-    return True
-
-
 def fix_file(path: Path) -> bool:
     """处理单个 .md 文件，返回是否有修改。"""
     lines = path.read_text(encoding="utf-8").splitlines(keepends=False)
-    # 缩进统一（2n → 4n），必须在具体处理之前
-    indent_fixed = _fix_indent_block(lines)
+    # 缩进严格约束（4 空格一级、不越级），必须在具体处理之前
+    lines, indent_fixed = fix_indentation(lines)
     new_lines: list[str] = []
     in_code_block = False
     modified = indent_fixed
@@ -468,6 +518,8 @@ def main() -> None:
         for path in md_files:
             original = path.read_text(encoding="utf-8")
             lines = original.splitlines(keepends=False)
+            # 与修复模式共用同一缩进约束
+            lines, _ = fix_indentation(lines)
             in_code = False
             processed_lines: list[str] = []
             prev_blank = False
