@@ -18,6 +18,8 @@
 8. 删除 Markdown 标题行序号（"## 一、背景" → "## 背景"，"## 1.2 经济" → "## 经济"）
 9. 删除独立成行的 Markdown 分隔线 `---`
 10. 连续多个空行压缩为有且仅有一个空行
+11. 删除内容文章（地区目录与 国际/ 下）独立成行的一级标题 `# ...`；
+    非文章文档（README.md、用户手册.md、AGENTS.md、.clinerules/ 等）豁免
 """
 
 import argparse
@@ -27,6 +29,13 @@ import time
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+ARTICLE_TOP_DIRS = {"蒙德", "璃月", "稻妻", "须弥", "枫丹", "纳塔", "挪德卡莱", "国际"}
+
+
+def is_article_file(path: Path) -> bool:
+    """是否为内容文章文件（地区目录或 国际/ 下），其一级标题应被删除。"""
+    return path.relative_to(BASE_DIR).parts[0] in ARTICLE_TOP_DIRS
 
 
 def is_inside_pair(text: str, pos: int, left: str, right: str) -> bool:
@@ -436,6 +445,7 @@ def fix_file(path: Path) -> bool:
     new_lines: list[str] = []
     in_code_block = False
     modified = indent_fixed
+    removed_h1 = False
 
     prev_blank = False
 
@@ -462,6 +472,12 @@ def fix_file(path: Path) -> bool:
             modified = True
             continue
 
+        # 11. 删除内容文章的一级标题 `# ...`（非文章文档豁免；兼容 BOM 头）
+        if processed.strip().lstrip("\ufeff").startswith("# ") and is_article_file(path):
+            modified = True
+            removed_h1 = True
+            continue
+
         # 空行压缩：连续多个空行压缩为有且仅有一个空行
         if not processed.strip():
             if prev_blank:
@@ -475,6 +491,9 @@ def fix_file(path: Path) -> bool:
 
     if modified:
         new_content = "\n".join(new_lines)
+        # 删除一级标题后清理文件首部残留空行
+        if removed_h1:
+            new_content = new_content.lstrip("\n")
         # 确保末尾有换行（如果原文件有）
         if path.read_text(encoding="utf-8").endswith("\n"):
             new_content += "\n"
@@ -523,6 +542,7 @@ def main() -> None:
             in_code = False
             processed_lines: list[str] = []
             prev_blank = False
+            removed_h1 = False
             for line in lines:
                 stripped = line.strip()
                 if stripped.startswith("```"):
@@ -537,6 +557,10 @@ def main() -> None:
                 processed = process_line(line)
                 if processed.strip() == '---':
                     continue
+                # 11. 删除内容文章的一级标题 `# ...`（与修复模式保持一致）
+                if processed.strip().lstrip("\ufeff").startswith("# ") and is_article_file(path):
+                    removed_h1 = True
+                    continue
                 if not processed.strip():
                     if prev_blank:
                         continue
@@ -545,6 +569,8 @@ def main() -> None:
                     prev_blank = False
                 processed_lines.append(processed)
             result = "\n".join(processed_lines)
+            if removed_h1:
+                result = result.lstrip("\n")
             if original.endswith("\n"):
                 result += "\n"
             if result != original:
