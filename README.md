@@ -6,11 +6,11 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![GitHub last commit](https://img.shields.io/github/last-commit/AFewMoon/the-New-World-of-Teyvat)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
 [![Nations](https://img.shields.io/badge/Nations-8-green)](https://github.com/AFewMoon/the-New-World-of-Teyvat)
-[![Website](https://img.shields.io/badge/Website-gh--pages-blue)](https://afewmoon.github.io/the-New-World-of-Teyvat/)
+[![Website](https://img.shields.io/badge/Website-gh--pages-blue)](https://the-new-world-of-teyvat.bstinspection.com/)
 
 基于《原神》世界观的系统性二次创作与深度世界构建项目。
 
-> 📖 **在线阅读**：[afewmoon.github.io/the-New-World-of-Teyvat](https://afewmoon.github.io/the-New-World-of-Teyvat/) — MkDocs Material 主题构建，推送即自动部署。
+> 📖 **在线阅读**：[the-new-world-of-teyvat.bstinspection.com](https://the-new-world-of-teyvat.bstinspection.com/) — MkDocs Material 主题构建，推送即自动部署。
 
 > 📘 **用户手册**：[用户手册.md](./用户手册.md) — 目录结构、链接规范、格式约定、编辑流程与工具速查。
 
