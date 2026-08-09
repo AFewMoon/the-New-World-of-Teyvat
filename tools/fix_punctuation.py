@@ -20,6 +20,10 @@
 10. 连续多个空行压缩为有且仅有一个空行
 11. 删除内容文章（地区目录与 国际/ 下）独立成行的一级标题 `# ...`；
     非文章文档（README.md、用户手册.md、AGENTS.md、.clinerules/ 等）豁免
+12. 列表块规范化：列表块（含单项列表）与前后文之间补 1 空行，项与项
+    之间的空行删除；每项以 `；` 或 `。` 结尾（非末项 `；`、末项 `。`），
+    以 `：` 结尾的标签项及 `？`/`！` 结尾的项豁免；块引用（>）与表格
+    （|）行、代码块内部不处理
 """
 
 import argparse
@@ -357,6 +361,116 @@ def fix_indentation(lines: list[str]) -> tuple[list[str], bool]:
     return new_lines, changed
 
 
+LIST_MARKER_RE = re.compile(r'^(\s*)([-*+]|\d+[.、)])\s+\S')
+
+
+def _fix_item_end(item: str, is_last: bool) -> str:
+    """补全列表项结尾标点：非末项 → `；`，末项 → `。`。
+
+    以 `：` 结尾的项视为标签项（内容在后续行）、以 `？`/`！` 结尾的
+    项保留原义，均不做修改。
+    """
+    if item.endswith(('：', '？', '！')):
+        return item
+    if is_last:
+        if item.endswith('；'):
+            return item[:-1] + '。'
+        if item.endswith('。'):
+            return item
+        return item.rstrip('，、') + '。'
+    if item.endswith(('；', '。')):
+        return item
+    return item.rstrip('，、') + '；'
+
+
+def fix_list_blocks(lines: list[str]) -> tuple[list[str], bool]:
+    """列表块规范化（规则 12）：
+
+    1. 列表块（含单项列表）与前后文之间补 1 个空行（紧邻行已是空行、
+       前后为列表项/引用/表格/缩进续行时跳过）；项与项之间的空行删除；
+    2. 每项以 `；` 或 `。` 结尾：非末项 `；`、末项 `。`（原以 `；`
+       结尾的末项改为 `。`），以 `：`/`？`/`！` 结尾的项豁免；
+    3. 块引用（>）、表格（|）行与代码块内部不处理。
+
+    返回 (修复后的行列表, 是否有修改)。
+    """
+    new_lines: list[str] = []
+    changed = False
+    n = len(lines)
+    i = 0
+    in_code = False
+    while i < n:
+        line = lines[i]
+        stripped = line.strip()
+        if stripped.startswith('```'):
+            in_code = not in_code
+            new_lines.append(line)
+            i += 1
+            continue
+        if in_code or not stripped or stripped.startswith(('>', '|')):
+            new_lines.append(line)
+            i += 1
+            continue
+        m = LIST_MARKER_RE.match(line)
+        if not m:
+            new_lines.append(line)
+            i += 1
+            continue
+        indent = len(m.group(1))
+        # 扫描同缩进的连续列表项（其间空行将被跳过删除）
+        items: list[int] = []
+        pending_blank = False
+        j = i
+        while j < n:
+            s = lines[j].strip()
+            if not s:
+                pending_blank = True
+                j += 1
+                continue
+            if s.startswith(('```', '>', '|')):
+                break
+            mm = LIST_MARKER_RE.match(lines[j])
+            if mm and len(mm.group(1)) == indent:
+                items.append(j)
+                if pending_blank:
+                    changed = True
+                    pending_blank = False
+                j += 1
+                continue
+            break
+        if not items:
+            new_lines.append(line)
+            i += 1
+            continue
+        # 空行规则：列表块（含单项列表）与前后文之间补 1 个空行
+        k = i - 1
+        if k >= 0:
+            pv = lines[k]
+            ps = pv.strip()
+            if (ps and not ps.startswith(('>', '|'))
+                    and not LIST_MARKER_RE.match(pv)
+                    and not re.match(r'^\s+\S', pv)):
+                new_lines.append('')
+                changed = True
+        # 标点规则：逐项补全结尾标点
+        for idx, it in enumerate(items):
+            new_item = _fix_item_end(lines[it].rstrip(), idx == len(items) - 1)
+            if new_item != lines[it]:
+                changed = True
+            new_lines.append(new_item)
+        k = items[-1] + 1
+        if k < n:
+            nv = lines[k]
+            ns = nv.strip()
+            if (ns and not ns.startswith(('>', '|'))
+                    and not LIST_MARKER_RE.match(nv)
+                    and not re.match(r'^\s+\S', nv)):
+                new_lines.append('')
+                changed = True
+        i = items[-1] + 1
+    return new_lines, changed
+
+
 def _has_cjk_or_url_cjk(content: str, url_parts: list[str] | None = None) -> bool:
     """检查 content 是否包含中文，若有 URL 占位符则检查原文 URL 含中文的情况。"""
     if re.search(r'[\u4e00-\u9fff]', content):
@@ -466,9 +580,11 @@ def fix_file(path: Path) -> bool:
     lines = path.read_text(encoding="utf-8").splitlines(keepends=False)
     # 缩进严格约束（4 空格一级、不越级），必须在具体处理之前
     lines, indent_fixed = fix_indentation(lines)
+    # 列表块规范化（空行 + 结尾标点）
+    lines, list_fixed = fix_list_blocks(lines)
     new_lines: list[str] = []
     in_code_block = False
-    modified = indent_fixed
+    modified = indent_fixed or list_fixed
     removed_h1 = False
 
     prev_blank = False
@@ -563,6 +679,7 @@ def main() -> None:
             lines = original.splitlines(keepends=False)
             # 与修复模式共用同一缩进约束
             lines, _ = fix_indentation(lines)
+            lines, _ = fix_list_blocks(lines)
             in_code = False
             processed_lines: list[str] = []
             prev_blank = False
