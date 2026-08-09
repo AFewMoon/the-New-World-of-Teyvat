@@ -44,7 +44,7 @@
 ### ✈️ 提瓦特航空概况
 
 - **文档**：[国际/全球体系/提瓦特航空概况.md](./国际/全球体系/提瓦特航空概况.md)；
-- **志飞系列客机**：志飞联合制造集团公司占据全球商用飞机存量市场约 85% 和增量市场约 95%。产品线覆盖从 12 座通勤机到 290 座宽体客机 (ZF-48) 的完整谱系，其中 **ZF-36** （约 867 架在役）为绝对主力机型，48 座涡桨型号 ZF-24 为干线支线市场补充。
+- **志飞系列客机**：志飞联合制造集团公司占据全球商用飞机存量市场约 85% 和增量市场约 95%。产品线覆盖从 12 座通勤机到 290 座宽体客机 (ZF-48) 的完整谱系，其中 **ZF-36**（约 867 架在役）为绝对主力机型，48 座涡桨型号 ZF-24 为干线支线市场补充。
 - **航线网络**：全球商用机队总规模约 2,000 架，以璃月港国际机场为最大枢纽，连接七国主要城市；志飞在中长途航线市场保持绝对优势。
 
 ### 💰 提瓦特金融体系概况
@@ -354,7 +354,7 @@ cd tools
 
 ### `tools/local/` — 本地 Obsidian 转换层 (gitignored)
 
-> **仓库规范格式为标准 Markdown 链接 `[text](页面相对路径.md)`** ，链接以**当前文件所在目录**为基准解析（MkDocs 规则）：目标与文件同目录用 `./xxx.md`，跨目录用 `../目录/xxx.md`。所有协作者 (VS Code / Typora / GitHub Web) 直接读写，无需任何转换。仅 Obsidian 用户在本地做透明的 wikilink ↔ MD link 切换。
+> **仓库规范格式为标准 Markdown 链接 `[text](页面相对路径.md)`**，链接以**当前文件所在目录**为基准解析（MkDocs 规则）：目标与文件同目录用 `./xxx.md`，跨目录用 `../目录/xxx.md`。所有协作者 (VS Code / Typora / GitHub Web) 直接读写，无需任何转换。仅 Obsidian 用户在本地做透明的 wikilink ↔ MD link 切换。
 
 Obsidian 用户首次使用前安装 git hooks：
 
@@ -366,8 +366,8 @@ Obsidian 用户首次使用前安装 git hooks：
 
 ### CI/CD 流水线
 
-- **`.github/workflows/lint.yml`** ：push/PR 时运行 `fix_punctuation.py --check` + `concept_linker.py --ci`；PR 失败时 bot 自动修复并回推；
-- **`.github/workflows/deploy.yml`** ：push 到 `master` 时构建 MkDocs 并部署 GitHub Pages。
+- **`.github/workflows/lint.yml`**：push/PR 时运行 `fix_punctuation.py --check` + `concept_linker.py --ci`；PR 失败时 bot 自动修复并回推；
+- **`.github/workflows/deploy.yml`**：push 到 `master` 时构建 MkDocs 并部署 GitHub Pages。
 
 ## 文档约定
 

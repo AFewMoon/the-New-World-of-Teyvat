@@ -12,6 +12,7 @@
       任一非 CJK → 补 1 空格；右侧基于后一个字符 或 加粗内容末字符：
       任一非 CJK → 补 1 空格
       （数字、% 等视为非 CJK，故 `**30%~40%**` 两侧均补空格）
+      （全角标点一侧除外：`**ZF-36**（`、`：**05:30**` 等紧贴不留空格）
 5. 中文与英文之间补 1 空格（"郡GDP" → "郡 GDP"，"GDP的" → "GDP 的"）
 6. 数字+百分号/连字符（45%~50%、30%）后跟中文 → 补 1 空格
 7. 代码块（```...```）和行内代码（`...`）内部不做变动
@@ -21,9 +22,11 @@
 11. 删除内容文章（地区目录与 国际/ 下）独立成行的一级标题 `# ...`；
     非文章文档（README.md、用户手册.md、AGENTS.md、.clinerules/ 等）豁免
 12. 列表块规范化：列表块（含单项列表）与前后文之间补 1 空行，项与项
-    之间的空行删除；每项以 `；` 或 `。` 结尾（非末项 `；`、末项 `。`），
-    以 `：` 结尾的标签项及 `？`/`！` 结尾的项豁免；块引用（>）与表格
-    （|）行、代码块内部不处理
+    之间的空行删除；每项以 `；` 或 `。` 结尾（非末项：原以 `；`/`。`
+    结尾者保留，无标点者补 `；`；末项 `。`），以 `：` 结尾的标签项及
+    `？`/`！` 结尾的项豁免；块引用（>）与表格（|）行、代码块内部不
+    处理。局限：嵌套子列表会中断父块的连续扫描，父项各自成为单块末项，
+    故嵌套结构中的父项均以 `。` 结尾
 """
 
 import argparse
@@ -117,6 +120,17 @@ def is_cjk(c: str) -> bool:
             '\u3000' <= c <= '\u303f' or    # CJK 符号和标点
             '\uff00' <= c <= '\uffef' or    # 全角字符（含全角标点）
             '\u2000' <= c <= '\u206f')      # 通用标点（em dash、en dash、省略号等）
+
+
+def is_fullwidth_punct(c: str) -> bool:
+    """判断字符是否为 CJK 标点（全角标点、CJK 符号、通用标点；不含汉字与全角字母数字）。"""
+    if '\u3000' <= c <= '\u303f' or '\u2000' <= c <= '\u206f':
+        return True
+    if '\uff00' <= c <= '\uffef':
+        return not ('\uff10' <= c <= '\uff19' or    # 全角数字
+                    '\uff21' <= c <= '\uff3a' or    # 全角大写字母
+                    '\uff41' <= c <= '\uff5a')      # 全角小写字母
+    return False
 
 
 def _extract_bold_first_last(content_raw: str, url_parts: list[str] | None = None) -> tuple[str | None, str | None]:
@@ -224,7 +238,9 @@ def fix_bold_spacing(text: str, url_parts: list[str] | None = None) -> str:
             while result and result[-1] == ' ':
                 result.pop()
             prev_eff = _effective_prev_char(result, url_parts) if result else None
-            if result and first_char is not None and (not is_cjk(first_char) or (prev_eff is not None and not is_cjk(prev_eff))):
+            if (result and first_char is not None
+                    and not (prev_eff is not None and is_fullwidth_punct(prev_eff))
+                    and (not is_cjk(first_char) or (prev_eff is not None and not is_cjk(prev_eff)))):
                 result.append(' ')
             result.append('**')
             result.append(content_raw)
@@ -235,7 +251,9 @@ def fix_bold_spacing(text: str, url_parts: list[str] | None = None) -> str:
             i = close_pos + 2
             while i < len(text) and text[i] == ' ':
                 i += 1
-            if i < len(text) and last_char is not None and (not is_cjk(last_char) or not is_cjk(text[i])):
+            if (i < len(text) and last_char is not None
+                    and not is_fullwidth_punct(text[i])
+                    and (not is_cjk(last_char) or not is_cjk(text[i]))):
                 if result and result[-1] != ' ':
                     result.append(' ')
         else:
@@ -365,7 +383,7 @@ LIST_MARKER_RE = re.compile(r'^(\s*)([-*+]|\d+[.、)])\s+\S')
 
 
 def _fix_item_end(item: str, is_last: bool) -> str:
-    """补全列表项结尾标点：非末项 → `；`，末项 → `。`。
+    """补全列表项结尾标点：非末项保留原有 `；`/`。`，无标点者补 `；`；末项 → `。`。
 
     以 `：` 结尾的项视为标签项（内容在后续行）、以 `？`/`！` 结尾的
     项保留原义，均不做修改。
@@ -388,8 +406,8 @@ def fix_list_blocks(lines: list[str]) -> tuple[list[str], bool]:
 
     1. 列表块（含单项列表）与前后文之间补 1 个空行（紧邻行已是空行、
        前后为列表项/引用/表格/缩进续行时跳过）；项与项之间的空行删除；
-    2. 每项以 `；` 或 `。` 结尾：非末项 `；`、末项 `。`（原以 `；`
-       结尾的末项改为 `。`），以 `：`/`？`/`！` 结尾的项豁免；
+    2. 每项以 `；` 或 `。` 结尾：非末项保留原有 `；`/`。`、无标点者补
+       `；`，末项改为/补为 `。`；以 `：`/`？`/`！` 结尾的项豁免；
     3. 块引用（>）、表格（|）行与代码块内部不处理。
 
     返回 (修复后的行列表, 是否有修改)。
