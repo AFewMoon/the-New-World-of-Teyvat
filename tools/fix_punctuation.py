@@ -157,6 +157,29 @@ def _extract_bold_first_last(content_raw: str, url_parts: list[str] | None = Non
 
 VERSION_NUM_RE = re.compile(r'^\d+(?:\.\d+)+\s+')
 
+
+def _effective_prev_char(chars: list[str], url_parts: list[str] | None = None) -> str:
+    """取 ** 开启标记前一元素的有效末字符：解开尾部 wikilink 或 MD 链接占位符。"""
+    s = ''.join(chars)
+    if s.endswith(']]'):
+        open_pos = s.rfind('[[')
+        if open_pos != -1:
+            inner = s[open_pos + 2:-2]
+            pipe = inner.find('|')
+            display = inner[pipe + 1:] if pipe >= 0 else inner.rsplit('/', 1)[-1]
+            if display:
+                return display[-1]
+        return ']'
+    if url_parts:
+        m = re.search(r'\x00\x01(\d+)\x00\x01$', s)
+        if m and int(m.group(1)) < len(url_parts):
+            part = url_parts[int(m.group(1))]
+            lm = re.match(r'^\[([^\[\]]+)\]\([^)]+\)', part)
+            if lm and lm.group(1):
+                return lm.group(1)[-1]
+    return s[-1]
+
+
 def fix_bold_spacing(text: str, url_parts: list[str] | None = None) -> str:
     """处理 ** 加粗标记周围的空格（单次扫描，无重复遍历）。"""
     result = []
@@ -196,7 +219,8 @@ def fix_bold_spacing(text: str, url_parts: list[str] | None = None) -> str:
             # --- 开启 ** ---
             while result and result[-1] == ' ':
                 result.pop()
-            if result and first_char is not None and (not is_cjk(first_char) or not is_cjk(result[-1])):
+            prev_eff = _effective_prev_char(result, url_parts) if result else None
+            if result and first_char is not None and (not is_cjk(first_char) or (prev_eff is not None and not is_cjk(prev_eff))):
                 result.append(' ')
             result.append('**')
             result.append(content_raw)
