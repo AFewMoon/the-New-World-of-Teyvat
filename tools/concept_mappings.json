@@ -3,7 +3,7 @@
     "last_updated": "2026-08-10",
     "version": 4,
     "total_linked": 116,
-    "total_unlinked": 60
+    "total_unlinked": 0
   },
   "concepts": [
     {
@@ -528,7 +528,8 @@
         "至冬经济",
         "经济总览",
         "土地改革简史",
-        "至冬"
+        "至冬",
+        "北国银行"
       ],
       "category": "经济与产业",
       "verified": true,
@@ -787,7 +788,8 @@
         "基础设施与要素禀赋",
         "土地改革简史",
         "对外经济关系",
-        "欧庇克"
+        "欧庇克",
+        "莱歌剧院"
       ],
       "category": "经济与产业",
       "verified": true,
@@ -842,7 +844,8 @@
         "文化",
         "对外关系",
         "挑战与展望",
-        "圣夜"
+        "圣夜",
+        "蒸汽鸟日报"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -905,7 +908,8 @@
         "人身限制的绝对禁区",
         "海域管理",
         "特殊行政区",
-        "特殊说明"
+        "特殊说明",
+        "梅洛彼得堡"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -954,7 +958,11 @@
         "各方评价",
         "国际比较",
         "展望",
-        "延伸阅读"
+        "延伸阅读",
+        "吉约丹",
+        "佩特莉可",
+        "雅各布·英戈德",
+        "佩特莉"
       ],
       "category": "国家与地区",
       "verified": false,
@@ -1035,7 +1043,8 @@
         "共和前后历史回顾",
         "对若干历史问题的基本评价",
         "主要历史经验",
-        "坚持和完善共和体制"
+        "坚持和完善共和体制",
+        "过渡时期治理公约"
       ],
       "category": "国家与地区",
       "verified": false,
@@ -1273,7 +1282,10 @@
         "司法与监察机关",
         "政务院",
         "行政官僚与干部选任体系",
-        "政治生态总结"
+        "政治生态总结",
+        "群玉阁",
+        "璃月共和国宪法",
+        "共和党"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -1457,7 +1469,9 @@
         "优势产业",
         "经济管理体制",
         "土地改革简史",
-        "对外经济关系"
+        "对外经济关系",
+        "摩拉",
+        "黄金屋"
       ],
       "category": "经济与产业",
       "verified": true,
@@ -1518,7 +1532,7 @@
         "挑战与展望",
         "琉璃府",
         "王帝君",
-        "自由合众国"
+        "五府"
       ],
       "category": "国家与地区",
       "verified": false,
@@ -1875,7 +1889,8 @@
         "民生与社会保障",
         "文化",
         "对外关系",
-        "挑战与展望"
+        "挑战与展望",
+        "鸣神岛"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -2379,7 +2394,8 @@
         "民生与社会保障",
         "文化",
         "对外关系",
-        "挑战与展望"
+        "挑战与展望",
+        "圣火盟约"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -2644,7 +2660,12 @@
         "西风骑士团的现代转型",
         "政党及其党派",
         "权力如何运作",
-        "MAFWA"
+        "MAFWA",
+        "西风骑士团",
+        "西风教会",
+        "保守党",
+        "工党",
+        "自由工人联盟"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -2902,7 +2923,10 @@
         "文化",
         "对外关系",
         "晨曦",
-        "艾泽尔"
+        "艾泽尔",
+        "阿贝多",
+        "巴巴托斯",
+        "自由合众国"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -3274,7 +3298,8 @@
         "行政官僚与干部选任体系",
         "须弥角色与职务配置",
         "纳西妲的角色定位",
-        "政治生态总结"
+        "政治生态总结",
+        "科学联盟"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -3594,7 +3619,9 @@
         "幕府政治",
         "政党",
         "政治制度",
-        "民主社会党"
+        "民主社会党",
+        "社奉行",
+        "自由党"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -3703,7 +3730,8 @@
         "土地制度简史",
         "基础设施与要素禀赋",
         "对外经济关系",
-        "结构性矛盾"
+        "结构性矛盾",
+        "地租改正条例"
       ],
       "category": "经济与产业",
       "verified": false,
@@ -3847,7 +3875,8 @@
         "结构性矛盾",
         "各方评价",
         "国际比较",
-        "展望"
+        "展望",
+        "国家产业信息平台"
       ],
       "category": "经济与产业",
       "verified": false,
@@ -4178,7 +4207,8 @@
         "政治体制",
         "政党",
         "统一战线",
-        "革命党"
+        "革命党",
+        "人民卫队"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -5174,606 +5204,5 @@
       ]
     }
   ],
-  "unlinked": [
-    {
-      "name": "摩拉",
-      "aliases": [
-        "摩拉"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 19
-    },
-    {
-      "name": "自由党",
-      "aliases": [
-        "自由党"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 15
-    },
-    {
-      "name": "中央银行",
-      "aliases": [
-        "中央银行"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 14
-    },
-    {
-      "name": "北国银行",
-      "aliases": [
-        "北国银行"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 13
-    },
-    {
-      "name": "议会",
-      "aliases": [
-        "议会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 11
-    },
-    {
-      "name": "自由合众国",
-      "aliases": [
-        "自由合众国"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 11
-    },
-    {
-      "name": "国防部",
-      "aliases": [
-        "国防部"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 10
-    },
-    {
-      "name": "琉璃府",
-      "aliases": [
-        "琉璃府"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 10
-    },
-    {
-      "name": "科技大学",
-      "aliases": [
-        "科技大学"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 10
-    },
-    {
-      "name": "雷元素",
-      "aliases": [
-        "雷元素"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 9
-    },
-    {
-      "name": "鸣神岛",
-      "aliases": [
-        "鸣神岛"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 9
-    },
-    {
-      "name": "国家产业信息平台",
-      "aliases": [
-        "国家产业信息平台"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 8
-    },
-    {
-      "name": "设计局",
-      "aliases": [
-        "设计局"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "监察院",
-      "aliases": [
-        "监察院"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "中央委员会",
-      "aliases": [
-        "中央委员会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "王帝君",
-      "aliases": [
-        "王帝君"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "财政部",
-      "aliases": [
-        "财政部"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "保守党",
-      "aliases": [
-        "保守党"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "联邦政府",
-      "aliases": [
-        "联邦政府"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "众议院",
-      "aliases": [
-        "众议院"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "最高法院",
-      "aliases": [
-        "最高法院"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "教育部",
-      "aliases": [
-        "教育部"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "工党",
-      "aliases": [
-        "工党"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "民众大学",
-      "aliases": [
-        "民众大学"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "群玉阁",
-      "aliases": [
-        "群玉阁"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "西风骑士团",
-      "aliases": [
-        "西风骑士团"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "联邦国防军",
-      "aliases": [
-        "联邦国防军"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "旅行者",
-      "aliases": [
-        "旅行者"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "莱歌剧院",
-      "aliases": [
-        "莱歌剧院"
-      ],
-      "category": "科技与基础设施",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "蒸汽鸟日报",
-      "aliases": [
-        "蒸汽鸟日报"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "佩特莉",
-      "aliases": [
-        "佩特莉"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "共和",
-      "aliases": [
-        "共和"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "自由大学",
-      "aliases": [
-        "自由大学"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "星落",
-      "aliases": [
-        "星落"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "人民卫队",
-      "aliases": [
-        "人民卫队"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "社奉行",
-      "aliases": [
-        "社奉行"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "地租改正条例",
-      "aliases": [
-        "地租改正条例"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "阿贝多",
-      "aliases": [
-        "阿贝多"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "国家军事委员会",
-      "aliases": [
-        "国家军事委员会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 5
-    },
-    {
-      "name": "行政院",
-      "aliases": [
-        "行政院"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "梅洛彼得堡",
-      "aliases": [
-        "梅洛彼得堡"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "吉约丹",
-      "aliases": [
-        "吉约丹"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "佩特莉可",
-      "aliases": [
-        "佩特莉可"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "雅各布·英戈德",
-      "aliases": [
-        "雅各布·英戈德"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "五府",
-      "aliases": [
-        "五府"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "黄金屋",
-      "aliases": [
-        "黄金屋"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "璃月共和国宪法",
-      "aliases": [
-        "璃月共和国宪法"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "共和党",
-      "aliases": [
-        "共和党"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "过渡时期治理公约",
-      "aliases": [
-        "过渡时期治理公约"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "党中央委员会",
-      "aliases": [
-        "党中央委员会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "国会",
-      "aliases": [
-        "国会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "圣火盟约",
-      "aliases": [
-        "圣火盟约"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "巴巴托斯",
-      "aliases": [
-        "巴巴托斯"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "下议院",
-      "aliases": [
-        "下议院"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "上议院",
-      "aliases": [
-        "上议院"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "自由工人联盟",
-      "aliases": [
-        "自由工人联盟"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "西风教会",
-      "aliases": [
-        "西风教会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "科学联盟",
-      "aliases": [
-        "科学联盟"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "大革命",
-      "aliases": [
-        "大革命"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "人民委员会",
-      "aliases": [
-        "人民委员会"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    }
-  ]
+  "unlinked": []
 }

@@ -128,6 +128,13 @@ COMMON_WORD_BLACKLIST: set[str] = {
     # —— 2026-08 全量刷新扫出的无对应文件噪声：泛称 / 通用词 / 分词残片 ——
     "三类", "三个月", "两万", "共和国", "加密通信", "初加工中心",
     "温合金", "高铁", "海军", "工会", "琉璃", "两院制", "宪法",
+    # —— 2026-08 全量刷新扫出的无对应文件机构泛称：各国通用的政权 / 部门 / 议会名称 ——
+    "中央银行", "议会", "国会", "众议院", "下议院", "上议院",
+    "中央委员会", "党中央委员会", "人民委员会", "国家军事委员会",
+    "国防部", "财政部", "教育部", "最高法院", "监察院",
+    "联邦政府", "联邦国防军", "共和", "大革命", "行政院",
+    "设计局", "旅行者", "科技大学", "民众大学", "自由大学",
+    "雷元素", "星落",
 }
 
 _NOISE_TOKEN_RE = re.compile(
@@ -617,8 +624,15 @@ class ConceptMapper:
                 new_concepts.append(old)
                 removals.append(f"[保留手动] {target}")
 
+        # 已归属到某个 target 的别名集合：已链接概念不应再报为「无对应文件」。
+        linked_aliases: set[str] = set()
+        for c in new_concepts:
+            linked_aliases.update(c.get("aliases", []))
+
         for candidate in jieba_candidates:
             name = candidate["name"]
+            if name in linked_aliases:
+                continue
             if name in existing_unlinked:
                 old = existing_unlinked[name]
                 old["files_count"] = candidate["files_count"]
@@ -628,6 +642,8 @@ class ConceptMapper:
                 ul_additions.append(f"[未链接] {name} ({candidate['confidence']}, {candidate['files_count']} 文件)")
 
         for name, old in existing_unlinked.items():
+            if name in linked_aliases:
+                continue
             if name not in {c["name"] for c in new_unlinked}:
                 new_unlinked.append(old)
 
