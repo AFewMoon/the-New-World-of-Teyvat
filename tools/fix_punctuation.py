@@ -19,8 +19,10 @@
 8. 删除 Markdown 标题行序号（"## 一、背景" → "## 背景"，"## 1.2 经济" → "## 经济"）
 9. 删除独立成行的 Markdown 分隔线 `---`
 10. 连续多个空行压缩为有且仅有一个空行
-11. 删除内容文章（地区目录与 国际/ 下）独立成行的一级标题 `# ...`；
-    非文章文档（README.md、用户手册.md、AGENTS.md、.clinerules/ 等）豁免
+11. 删除内容文章（地区目录与 国际/ 下）独立成行的一级标题 `# ...`，整行
+    删除，删除位置按空行参与压缩（与相邻空行去重、紧贴内容时保留 1 个
+    分隔空行）；非文章文档（README.md、用户手册.md、AGENTS.md、
+    .clinerules/ 等）豁免
 12. 列表块规范化：列表块（含单项列表）与前后文之间补 1 空行，项与项
     之间的空行删除；每项以 `；` 或 `。` 结尾（非末项：原以 `；`/`。`
     结尾者保留，无标点者补 `；`；末项 `。`），以 `：` 结尾的标签项及
@@ -631,9 +633,13 @@ def fix_file(path: Path) -> bool:
             continue
 
         # 11. 删除内容文章的一级标题 `# ...`（非文章文档豁免；兼容 BOM 头）
+        #     整行删除，该位置按空行参与压缩：与相邻空行去重，紧贴内容时保留 1 个分隔空行
         if processed.strip().lstrip("\ufeff").startswith("# ") and is_article_file(path):
             modified = True
             removed_h1 = True
+            if not prev_blank:
+                new_lines.append("")
+                prev_blank = True
             continue
 
         # 空行压缩：连续多个空行压缩为有且仅有一个空行
@@ -719,6 +725,9 @@ def main() -> None:
                 # 11. 删除内容文章的一级标题 `# ...`（与修复模式保持一致）
                 if processed.strip().lstrip("\ufeff").startswith("# ") and is_article_file(path):
                     removed_h1 = True
+                    if not prev_blank:
+                        processed_lines.append("")
+                        prev_blank = True
                     continue
                 if not processed.strip():
                     if prev_blank:
