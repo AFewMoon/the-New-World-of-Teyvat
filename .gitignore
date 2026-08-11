@@ -1,8 +1,3 @@
-# Obsidian
-.obsidian/
-.obsidian.vimrc
-workspace.json
-
 # Cline rules & agents
 .clinerules/
 AGENTS.md
@@ -27,19 +22,13 @@ desktop.ini
 # Python cache
 tools/__pycache__/
 
-# Generated data files (too large for GitHub)
-output_utf8.txt
-md_files.txt
-
 # Local Obsidian conversion layer (not in git)
 tools/local/
 
 # Concept linker generated
 tools/术语索引/
 tools/_linker_state.json
-tools/doc_embeddings.npy
 tools/doc_embeddings.pkl
-
 
 # MkDocs build output
 site/
