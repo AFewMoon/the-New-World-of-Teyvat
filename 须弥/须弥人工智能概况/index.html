@@ -1,0 +1,5786 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="基于《原神》世界观的系统性二次创作与深度世界构建项目">
+      
+      
+      
+        <link rel="canonical" href="https://the-new-world-of-teyvat.bstinspection.com/%E9%A1%BB%E5%BC%A5/%E9%A1%BB%E5%BC%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%A6%82%E5%86%B5/">
+      
+      
+        <link rel="prev" href="../%E9%A1%BB%E5%BC%A5%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/">
+      
+      
+        <link rel="next" href="../%E9%A1%BB%E5%BC%A5%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>须弥人工智能概况 - 提瓦特新世界</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0.16.11/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="提瓦特新世界" class="md-header__button md-logo" aria-label="提瓦特新世界" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            提瓦特新世界
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              须弥人工智能概况
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换至暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换至亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AFewMoon/the-New-World-of-Teyvat" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AFewMoon/the-New-World-of-Teyvat
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%9B%BD%E9%99%85/%E5%85%A8%E7%90%83%E4%BD%93%E7%B3%BB/%E5%8E%86%E6%B3%95%E4%BD%93%E7%B3%BB%EF%BC%9A%E6%8F%90%E7%93%A6%E7%89%B9%E7%BA%AA%E5%85%83/" class="md-tabs__link">
+          
+  
+  
+  国际
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E7%BB%BC%E8%BF%B0/" class="md-tabs__link">
+          
+  
+  
+  蒙德
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E7%BB%BC%E8%BF%B0/" class="md-tabs__link">
+          
+  
+  
+  璃月
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%A8%BB%E5%A6%BB/%E7%A8%BB%E5%A6%BB%E7%BB%BC%E8%BF%B0/" class="md-tabs__link">
+          
+  
+  
+  稻妻
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/" class="md-tabs__link">
+          
+  
+  
+  须弥
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E7%BB%BC%E8%BF%B0/" class="md-tabs__link">
+          
+  
+  
+  枫丹
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E7%BB%BC%E8%BF%B0/" class="md-tabs__link">
+          
+  
+  
+  纳塔
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E7%BB%BC%E8%BF%B0/" class="md-tabs__link">
+          
+  
+  
+  挪德卡莱
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="提瓦特新世界" class="md-nav__button md-logo" aria-label="提瓦特新世界" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    提瓦特新世界
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AFewMoon/the-New-World-of-Teyvat" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AFewMoon/the-New-World-of-Teyvat
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    国际
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    国际
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    全球体系
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    全球体系
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%85%A8%E7%90%83%E4%BD%93%E7%B3%BB/%E5%8E%86%E6%B3%95%E4%BD%93%E7%B3%BB%EF%BC%9A%E6%8F%90%E7%93%A6%E7%89%B9%E7%BA%AA%E5%85%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    历法体系：提瓦特纪元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%85%A8%E7%90%83%E4%BD%93%E7%B3%BB/%E6%8F%90%E7%93%A6%E7%89%B9%E8%88%AA%E7%A9%BA%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提瓦特航空概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%85%A8%E7%90%83%E4%BD%93%E7%B3%BB/%E6%8F%90%E7%93%A6%E7%89%B9%E9%87%91%E8%9E%8D%E4%BD%93%E7%B3%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提瓦特金融体系概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%85%A8%E7%90%83%E4%BD%93%E7%B3%BB/%E6%8F%90%E7%93%A6%E7%89%B9%E6%AD%A6%E8%A3%85%E5%8A%9B%E9%87%8F%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提瓦特武装力量概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%85%A8%E7%90%83%E4%BD%93%E7%B3%BB/%E6%8F%90%E7%93%A6%E7%89%B9%E7%8E%B0%E4%BB%A3%E4%BA%A7%E4%B8%9A%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提瓦特现代产业体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%85%A8%E7%90%83%E4%BD%93%E7%B3%BB/%E6%8F%90%E7%93%A6%E7%89%B9%E8%99%9A%E7%A9%BA%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提瓦特虚空概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    多边关系
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    多边关系
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%A4%9A%E8%BE%B9%E5%85%B3%E7%B3%BB/%E6%8F%90%E7%93%A6%E7%89%B9%E5%A4%9A%E8%BE%B9%E6%9D%A1%E7%BA%A6%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提瓦特多边条约体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%A4%9A%E8%BE%B9%E5%85%B3%E7%B3%BB/%E6%8F%90%E7%93%A6%E7%89%B9%E5%9B%BD%E9%99%85%E7%BB%84%E7%BB%87%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提瓦特国际组织概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%A4%9A%E8%BE%B9%E5%85%B3%E7%B3%BB/%E6%8F%90%E7%93%A6%E7%89%B9%E5%85%A8%E7%90%83%E6%B2%BB%E7%90%86%E8%AE%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    提瓦特全球治理议题
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    双边关系
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    双边关系
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%8F%8C%E8%BE%B9%E5%85%B3%E7%B3%BB/%E7%92%83%E6%9C%88%E2%80%94%E8%92%99%E5%BE%B7%E5%85%B3%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月—蒙德关系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%8F%8C%E8%BE%B9%E5%85%B3%E7%B3%BB/%E5%B9%95%E5%BA%9C%E2%80%94%E6%B5%B7%E7%A5%87%E5%B2%9B%E5%85%B3%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幕府—海祇岛关系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%9B%BD%E9%99%85/%E5%8F%8C%E8%BE%B9%E5%85%B3%E7%B3%BB/%E8%87%B3%E5%86%AC%E2%80%94%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E5%85%B3%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    至冬—挪德卡莱关系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    蒙德
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德军事概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E7%94%B5%E5%8A%9B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德电力概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E8%88%AA%E7%A9%BA%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德航空概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E9%93%81%E8%B7%AF%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德铁路概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E9%93%81%E8%B7%AF%E9%9B%86%E7%BA%A6%E5%8C%96%E6%B3%95%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德铁路集约化法案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德行政区划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E8%99%9A%E7%A9%BA%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德虚空概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E6%96%B0%E4%B8%96%E7%BA%AA%E5%8F%B2%EF%BC%88%E8%8A%82%E9%80%89%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德新世纪史（节选）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蒙德大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    璃月
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月军事概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E6%95%99%E8%82%B2%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月教育概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E6%B1%BD%E8%BD%A6%E5%8A%A8%E5%8A%9B%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月汽车动力技术
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E9%93%81%E8%B7%AF%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月铁路概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E5%9F%8E%E5%B8%82%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月城市轨道交通概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E8%99%9A%E7%A9%BA%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月虚空概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E9%A9%BF%E9%95%96%E5%B1%80%E8%81%94%E7%9B%9F%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月驿镖局联盟概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E4%BF%83%E8%BF%9B%E5%85%B1%E5%90%8C%E5%8F%91%E5%B1%95%E2%80%94%E2%80%94%E5%8C%BA%E5%9F%9F%E5%8D%8F%E8%B0%83%E5%8F%91%E5%B1%95%E6%88%98%E7%95%A5%E5%B7%A5%E4%BD%9C%E6%96%B9%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    促进共同发展——区域协调发展战略工作方案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E5%85%B3%E4%BA%8E%E7%92%83%E6%9C%88%E8%83%BD%E6%BA%90%E8%B7%AF%E7%BA%BF%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于璃月能源路线的若干历史问题的决议
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E5%85%B3%E4%BA%8E%E5%85%B1%E5%92%8C%E5%89%8D%E5%90%8E%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于共和前后的若干历史问题的决议
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E5%85%B3%E4%BA%8E%E7%90%89%E7%92%83%E8%AE%BE%E5%BA%9C%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%86%B3%E5%AE%9A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于琉璃设府的若干决定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%92%83%E6%9C%88/%E7%92%83%E6%9C%88%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    璃月大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    稻妻
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    稻妻
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E7%A8%BB%E5%A6%BB%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    稻妻综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E7%A8%BB%E5%A6%BB%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    稻妻经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E7%A8%BB%E5%A6%BB%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    稻妻军事概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E7%A8%BB%E5%A6%BB%E8%B4%A2%E9%98%80%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    稻妻财阀概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E3%80%8A%E5%B9%95%E5%BA%9C%E4%B8%8E%E6%B5%B7%E7%A5%87%E5%B2%9B%E5%92%8C%E8%A7%A3%E5%A4%87%E5%BF%98%E5%BD%95%E3%80%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《幕府与海祇岛和解备忘录》
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E7%A8%BB%E5%A6%BB%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    稻妻大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幕府
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    幕府
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幕府综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幕府经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幕府政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幕府政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幕府行政区划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89%E8%AE%A1%E5%88%92%E7%BB%8F%E6%B5%8E%E6%A6%82%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    资本主义计划经济概论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    幕府大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海祇岛
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    海祇岛
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B5%B7%E7%A5%87%E5%B2%9B/%E6%B5%B7%E7%A5%87%E5%B2%9B%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海祇岛综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B5%B7%E7%A5%87%E5%B2%9B/%E6%B5%B7%E7%A5%87%E5%B2%9B%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海祇岛经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B5%B7%E7%A5%87%E5%B2%9B/%E6%B5%B7%E7%A5%87%E5%B2%9B%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海祇岛政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B5%B7%E7%A5%87%E5%B2%9B/%E6%B5%B7%E7%A5%87%E5%B2%9B%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海祇岛政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B5%B7%E7%A5%87%E5%B2%9B/%E6%B5%B7%E7%A5%87%E5%B2%9B%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海祇岛行政区划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B5%B7%E7%A5%87%E5%B2%9B/%E5%85%B3%E4%BA%8E%E7%A5%9E%E6%9D%83%E6%8E%A7%E8%82%A1%E5%8F%8A%E5%85%B6%E5%90%8E%E6%9E%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海祇岛劳动者工会秘密报告——关于神权控股及其后果
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B5%B7%E7%A5%87%E5%B2%9B/%E6%B5%B7%E7%A5%87%E5%B2%9B%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    海祇岛大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清籁岛
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    清籁岛
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清籁岛综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清籁岛经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清籁岛政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清籁岛政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清籁岛行政区划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清籁岛大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    须弥
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A1%BB%E5%BC%A5%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A1%BB%E5%BC%A5%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A1%BB%E5%BC%A5%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥军事概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥人工智能概况
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥人工智能概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心原理：草元素力耦合智能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三层人工智能产品体系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三层人工智能产品体系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        努尔 (Nur)——战略级高端人工智能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hikma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        希克玛 (Hikma)——商业级中高端人工智能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kalam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卡拉姆 (Kalam)——开源中端人工智能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        短板：小模型与场景特化
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        研发管理体系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="研发管理体系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥科技大学（主管单位）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥民众大学——AI 伦理与社会影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        民族团结大学——AI 在沙漠与民族地区的应用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥职业大学——AI 技术技能人才培养
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        邦市高校协同
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥科学院、须弥工程院与教育部
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        监管与治理架构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="监管与治理架构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥科技大学——研发管理与技术迭代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        联邦政府虚空部——技术监管
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        风纪委员会——纪律监督
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两党共同监督
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        算力基础设施
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="算力基础设施">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心节点（国内服务）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        沙漠绿色算力中心（出口服务）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        算力与虚空网络的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        国际维度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="国际维度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        市场地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        希克玛出口中的国际争议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        国内伦理审查的搁置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        开源模型的用途归属
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卡拉姆开源生态的国际化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发展简史
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="发展简史">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#te-2005" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TE 2005 之前：草元素力研究的学术积累
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#te-20052015" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TE 2005~2015 ：虚空军用转民用与努尔初代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#te-20152025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TE 2015~2025 ：商业化、开源化与国际扩张
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#te-20252030" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TE 2025~2030 ：体系成熟与全球角力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        现状与展望
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A1%BB%E5%BC%A5%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥行政区划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A1%BB%E5%BC%A5%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A1%BB%E5%BC%A5%E9%AB%98%E6%A0%A1%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥高校概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A1%BB%E5%BC%A5%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    须弥大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    枫丹
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹军事概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E7%B2%BE%E5%AF%86%E6%9C%BA%E6%A2%B0%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹精密机械概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹行政区划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%B3%95%E5%9B%A2%E4%B8%BB%E4%B9%89%E7%9A%84%E6%9E%AB%E4%B8%B9%E5%AE%9E%E8%B7%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    法团主义的枫丹实践
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    枫丹大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    纳塔
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔军事概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E7%89%B9%E7%A7%8D%E6%9D%90%E6%96%99%E4%B8%8E%E7%87%83%E7%B4%A0%E5%B7%A5%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔特种材料与燃素工业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E9%93%81%E8%B7%AF%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔铁路概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔行政区划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E8%A7%92%E8%89%B2%E6%A1%A3%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔角色档案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E5%8F%A4%E5%90%8D%E4%B8%8E%E8%BF%98%E9%AD%82%E8%AF%97%E2%80%94%E2%80%94%E7%BA%B3%E5%A1%94%E4%BC%A0%E7%BB%9F%E4%BF%A1%E4%BB%B0%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    古名与还魂诗——纳塔传统信仰体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E6%82%A0%E6%82%A0%E5%BA%A6%E5%81%87%E4%B9%A1%E2%80%94%E2%80%94%E7%89%B9%E8%AF%BA%E5%A5%87%E5%85%B9%E6%89%98%E5%85%8B%E7%BE%A4%E5%B2%9B%E5%BA%A6%E5%81%87%E8%83%9C%E5%9C%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    悠悠度假乡——特诺奇兹托克群岛度假胜地
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E5%85%B3%E4%BA%8E%E5%BB%BA%E8%AE%BE%E6%82%A0%E6%82%A0%E5%BA%A6%E5%81%87%E4%B9%A1%E7%9A%84%E5%86%B3%E8%AE%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于建设悠悠度假乡的决议
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E5%9B%BD%E9%98%B2%E4%B8%8E%E5%AE%89%E5%85%A8%E6%94%B9%E9%9D%A9%E7%99%BD%E7%9A%AE%E4%B9%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    国防与安全改革白皮书
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    纳塔大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    挪德卡莱
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E7%BB%BC%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱综述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%A7%E4%B8%9A%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱经济与产业概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E8%87%B3%E5%86%AC%E7%BB%8F%E6%B5%8E%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    至冬经济概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E8%87%B3%E5%86%AC%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    至冬军事概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E5%86%9B%E4%BA%8B%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱军事概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱政治概况
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱行政区划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E6%94%BF%E6%B2%BB%E7%AE%80%E6%98%8E%E8%AF%BB%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱政治简明读本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E7%A4%BE%E4%BC%9A%E5%90%84%E9%98%B6%E7%BA%A7%E7%9A%84%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱社会各阶级的分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E8%A7%92%E8%89%B2%E6%A1%A3%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱角色档案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1/%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E5%A4%A7%E4%BA%8B%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    挪德卡莱大事记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心原理：草元素力耦合智能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三层人工智能产品体系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三层人工智能产品体系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        努尔 (Nur)——战略级高端人工智能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hikma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        希克玛 (Hikma)——商业级中高端人工智能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kalam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卡拉姆 (Kalam)——开源中端人工智能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        短板：小模型与场景特化
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        研发管理体系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="研发管理体系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥科技大学（主管单位）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥民众大学——AI 伦理与社会影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        民族团结大学——AI 在沙漠与民族地区的应用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥职业大学——AI 技术技能人才培养
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        邦市高校协同
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥科学院、须弥工程院与教育部
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        监管与治理架构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="监管与治理架构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        须弥科技大学——研发管理与技术迭代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        联邦政府虚空部——技术监管
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        风纪委员会——纪律监督
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        两党共同监督
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        算力基础设施
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="算力基础设施">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心节点（国内服务）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        沙漠绿色算力中心（出口服务）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        算力与虚空网络的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        国际维度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="国际维度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        市场地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        希克玛出口中的国际争议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        国内伦理审查的搁置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        开源模型的用途归属
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卡拉姆开源生态的国际化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发展简史
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="发展简史">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#te-2005" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TE 2005 之前：草元素力研究的学术积累
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#te-20052015" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TE 2005~2015 ：虚空军用转民用与努尔初代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#te-20152025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TE 2015~2025 ：商业化、开源化与国际扩张
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#te-20252030" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TE 2025~2030 ：体系成熟与全球角力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        现状与展望
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/AFewMoon/the-New-World-of-Teyvat/edit/master/须弥/须弥人工智能概况.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>须弥人工智能概况</h1>
+
+<h2 id="_1">核心原理：草元素力耦合智能<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><a href="./">须弥人工智能</a>的技术根基建立在<strong><a href="./">草元素力耦合计算</a></strong>原理之上。草元素力在自然界中承载着植物的「记忆」——从单细胞的应激反应到整片森林的季节节律，草元素力以极低的能量消耗实现了极大规模的信息处理。</p>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科学家通过以下三项关键技术将草元素力的天然特性转化为现代人工智能的计算基础：</p>
+<ul>
+<li><strong>元素 - 数据转换技术</strong>：将神经网络的权重矩阵和激活值编码为高精密草元素力波动，使信息能以接近光速在元素介质中传输，同时保持极高的信噪比。这一技术使得<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a> AI 模型的推理速度显著快于纯硅基计算的同类模型。</li>
+<li><strong>分布式元素共振架构</strong>：利用草元素力在空间中的自然共振效应，实现模型参数在数千个计算节点之间的同步更新——每个节点的参数更新几乎在同一时刻传递至所有其他节点，极大提升了分布式训练和推理的效率。这是<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a> AI 能够支撑超长上下文窗口的物理基础。</li>
+<li><strong>知识树索引算法</strong>：以草元素力在植物根系中的自然分形结构为设计灵感，构建起层级式知识索引体系。模型在推理时不是遍历全部上下文，而是沿「知识树」主干→分支→叶片的路径精准定位相关信息，其时间复杂度接近对数级。这一算法是<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a> AI 实现极高吞吐效率的关键——上下文越长，相对优势越明显。</li>
+</ul>
+<h2 id="_2">三层人工智能产品体系<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>的人工智能产品已形成完整的三层体系，覆盖从国家战略级到全球开发者级的全谱系需求。三款产品均由<strong><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学</strong>负责核心研发管理与技术迭代，<a href="../%E9%A1%BB%E5%BC%A5%E9%AB%98%E6%A0%A1%E6%A6%82%E5%86%B5/">四所部属高校</a>及各邦市高校按照分工协同参与。</p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>层级</th>
+<th>上下文长度</th>
+<th>性能定位</th>
+<th>服务对象</th>
+<th>商业模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>努尔</strong> (Nur)</td>
+<td>高端</td>
+<td>2 亿</td>
+<td>超高吞吐效率、超低幻觉</td>
+<td>须弥联邦政府、各邦政府、各大单位</td>
+<td>非商用，国家战略资源</td>
+</tr>
+<tr>
+<td><strong>希克玛</strong> (Hikma)</td>
+<td>中高端</td>
+<td>2 千万</td>
+<td>综合性能均衡，逊于努尔</td>
+<td>外国政府与企业，须弥国内个人及中小企业</td>
+<td>商业 API 出口服务</td>
+</tr>
+<tr>
+<td><strong>卡拉姆</strong> (Kalam)</td>
+<td>中端</td>
+<td>2 百万</td>
+<td>性价比之选，开源中端 AI</td>
+<td>全球开发者与企业</td>
+<td>开源生态 + 增值服务</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nur">努尔 (Nur)——战略级高端人工智能<a class="headerlink" href="#nur" title="Permanent link">&para;</a></h3>
+<p><strong>努尔</strong>（<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>古语意为「光」）是<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>最高级别的战略级人工智能，代表了当前提瓦特人工智能技术的最高水平。</p>
+<p><strong>技术规格</strong></p>
+<ul>
+<li>上下文窗口：2 亿 token（可持续扩展）；</li>
+<li>推理吞吐：每秒处理超过 1,000 个复杂推理任务（benchmark 环境中）；</li>
+<li>幻觉率：低于 1‰，在高确定性场景（如法律条文检索、科学计算验证）中接近零；</li>
+<li>能效比：每 token 推理能耗较全球主流 AI 模型低约两个数量级，得益于<a href="./">草元素力耦合计算</a>的超低功耗特性。</li>
+</ul>
+<p><strong>服务对象与管控</strong></p>
+<p>努尔不对外提供任何形式的商业服务，仅供以下<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>境内机构专用：</p>
+<ul>
+<li><strong><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>联邦政府</strong>：总理府、国家计划委员会、虚空部、科技发展部、国防部等核心部委；</li>
+<li><strong>各邦政府</strong>：各邦行政长官办公室及邦级关键治理部门；</li>
+<li><strong>各大单位</strong>：<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学、<a href="../%E9%A1%BB%E5%BC%A5%E9%AB%98%E6%A0%A1%E6%A6%82%E5%86%B5/">须弥科学院</a>、<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>工程院、国家军事委员会等承担国家级职能的机构。</li>
+</ul>
+<p>努尔的调用实行严格的<strong>三级审批制度</strong>——用户须提交申请，经所在单位负责人批准、虚空部技术审核、风纪委员会伦理审查后方可获得临时访问授权。所有调用记录全量审计日志留存，追溯期不低于十年。努尔运行于<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>城联邦直辖区的<strong>机密计算集群</strong>，该集群与公共虚空网络之间实现物理隔离，不接入任何外部网络接口。</p>
+<p><strong>核心应用场景</strong></p>
+<ul>
+<li>国家治理：宏观经济建模与政策仿真、多部门协同决策推演、灾害应急指挥；</li>
+<li>国防安全：军事情报分析、战场态势评估、密码分析与量子安全密码学；</li>
+<li>重大科研攻关：<a href="../%E9%A1%BB%E5%BC%A5%E9%AB%98%E6%A0%A1%E6%A6%82%E5%86%B5/">须弥科学院</a>主导的前沿基础科学研究（如元素生物学、量子引力理论），以及跨学科的「大科学装置」项目。</li>
+</ul>
+<h3 id="hikma">希克玛 (Hikma)——商业级中高端人工智能<a class="headerlink" href="#hikma" title="Permanent link">&para;</a></h3>
+<p><strong>希克玛</strong>（<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>古语意为「智慧」）是<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>对外出口创汇的核心 AI 产品，同时服务<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>国内的个人与中小企业。</p>
+<p><strong>技术规格</strong></p>
+<ul>
+<li>上下文窗口：2,000 万 token；</li>
+<li>综合性能：在通用推理、文本生成、代码编写等主流基准测试中，整体表现略逊于努尔——幻觉率约 5‰（努尔的 5 倍），复杂推理链条深度约为努尔的 70%，但综合性价比远超提瓦特同类商用 AI 产品；</li>
+<li>服务等级：SLA 99.5%（商业标准版）/ 99.9%（企业高级版）。</li>
+</ul>
+<p><strong>国内服务体系</strong></p>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>国内的个人用户、中小企业及非「大单位」序列的民间机构可通过 API 调用希克玛。联邦政府实行<strong>配额管理制度</strong>：</p>
+<ul>
+<li>个人用户：每日免费配额 10 万 token 的使用量，超出部分按量计费；</li>
+<li>中小企业：按月或按年订阅，享有更高的并发调用上限和技术支持等级；</li>
+<li>高校与科研机构（非「大单位」序列）：可申请教育优惠资费，配备专用推理集群。</li>
+</ul>
+<p>希克玛同时也是外国政府和企业了解、使用<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a> AI 能力的主要入口。它以商业 API 形式面向全球输出，定价策略兼顾市场规模与战略收益：</p>
+<ul>
+<li><strong>按 token 计费</strong>：各等级套餐按月度/年度订阅，支持弹性扩缩；</li>
+<li><strong>按 QPS 包月</strong>：面向高并发需求的大型企业（如金融机构、跨国电商平台），提供专用推理集群的包月服务。</li>
+</ul>
+<p><strong>数据主权条款</strong></p>
+<p>希克玛出口业务中，<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>实行了一套独特的折中方案——<strong>「数据属地存储 + 验算缓存留<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>」</strong>。外国客户可以将使用过程中的敏感数据依法存储在本国境内，确保符合本国的数据主权法律要求；但模型推理过程中的验算校验记录与推理缓存必须实时同步至<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>境内的指定算力中心留存备份。这一安排既尊重了外国的数据主权诉求，又使<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>能够持续监控模型的运行状态、追踪异常使用行为、积累跨场景的推理数据以迭代模型能力。</p>
+<p><strong>部署节点</strong></p>
+<ul>
+<li>国内服务：运行于<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>城联邦直辖区核心节点集群；</li>
+<li>出口服务：运行于沙漠中邦千壑沙地的专用出口算力中心集群，与国内服务物理隔离。</li>
+</ul>
+<h3 id="kalam">卡拉姆 (Kalam)——开源中端人工智能<a class="headerlink" href="#kalam" title="Permanent link">&para;</a></h3>
+<p><strong>卡拉姆</strong>（<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>古语意为「言语」）是<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>面向全球开源的端到端人工智能模型，承担着在竞争最激烈的中端 AI 市场上为<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>争取份额与影响力的战略使命。</p>
+<p><strong>技术规格</strong></p>
+<ul>
+<li>上下文窗口：200 万 token；</li>
+<li>模型架构：基于<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学独立研发的草元素力感知混合架构，支持 MoE 稀疏激活；</li>
+<li>许可协议：<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>公共许可证 (Shumeru Public License, SPL-1.0)，允许商业使用、修改和再分发，但衍生产品须标注原始模型来源。</li>
+</ul>
+<p><strong>商业模式</strong></p>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>围绕卡拉姆构建了一套多层次服务体系，在开源基础上实现商业闭环：</p>
+<table>
+<thead>
+<tr>
+<th>服务层级</th>
+<th>内容</th>
+<th>目标用户</th>
+<th>定价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>免费 API</strong></td>
+<td>每日 50 万 token 免费配额，基础并发限制</td>
+<td>个人开发者、学术研究者</td>
+<td>免费</td>
+</tr>
+<tr>
+<td><strong>标准 API</strong></td>
+<td>按量计费，更高并发和优先级</td>
+<td>中小企业、创业团队</td>
+<td>按量付费</td>
+</tr>
+<tr>
+<td><strong>企业 API</strong></td>
+<td>专用推理集群，定制 SLA，技术支持</td>
+<td>大型企业</td>
+<td>季度/年度订阅</td>
+</tr>
+<tr>
+<td><strong>私有化安装</strong></td>
+<td>全套模型权重 + 部署工具链 + 安装调优服务</td>
+<td>对数据隐私有高要求的机构（如外国军事/政府/金融客户）</td>
+<td>一次性授权 + 年维护费</td>
+</tr>
+<tr>
+<td><strong>定制蒸馏</strong></td>
+<td>基于卡拉姆基座模型蒸馏为场景特化的小模型</td>
+<td>有垂直场景需求的客户</td>
+<td>项目制报价</td>
+</tr>
+</tbody>
+</table>
+<p><strong>竞争态势</strong></p>
+<p>中端 AI 市场是当前提瓦特人工智能竞争最为激烈的领域。多个国家投入巨资研发自有的中端 AI 模型，在产品性能、场景覆盖和定价上均与卡拉姆形成直接竞争。卡拉姆在这一市场中的核心优势在于：</p>
+<ul>
+<li><a href="./">草元素力耦合计算</a>带来的能效比优势——同等算力下运行成本更低；</li>
+<li><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学持续的技术迭代支撑——卡拉姆平均每季度发布一次重大版本更新；</li>
+<li>开源社区的第三方贡献正在加速生态建设。</li>
+</ul>
+<p>然而，受限于<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>工业与商业并不发达，卡拉姆在制造、零售、物流等垂直行业的场景特化方面尚不完善，<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>难以独立为每个行业提供深度优化的定制版本。</p>
+<h2 id="_3">短板：小模型与场景特化<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>在高端通用 AI 领域的统治地位并不意味着在所有 AI 赛道上都领先。受限于<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>自身的<strong>工业与商业并不发达</strong>——缺乏大规模制造业、现代零售业、跨境物流等丰富的垂直行业场景——<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>在<a href="./">小模型与场景特化</a>人工智能领域的发展明显逊色。</p>
+<p>具体而言：</p>
+<ul>
+<li><strong>端侧小模型</strong>：在移动设备、物联网终端等资源受限环境下的轻量化 AI 部署方面，<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>尚未形成有竞争力的产品。其他国家凭借各自的消费电子和工业设备制造基础，在端侧推理芯片与模型协同优化上走得更远。</li>
+<li><strong>产业垂直模型</strong>：在工业视觉质检、零售推荐系统、物流路径优化、金融风控建模等以场景数据为核心壁垒的领域，其他国家凭借各自的产业优势建立了深厚的数据积累和模型迭代闭环。</li>
+</ul>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>的应对策略是明确的——<strong>不做<a href="./">小模型与场景特化</a>的跟进者，而是做大模型底座的供应商</strong>。各国企业和开发者可在卡拉姆开源模型的基础上，利用本国的场景数据进行微调和蒸馏，实现面向本地需求的垂直化。<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>则持续强化基座模型的通用能力，提供更加强大的「模型基座」。</p>
+<h2 id="_4">研发管理体系<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">须弥科技大学（主管单位）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学是<a href="./">须弥人工智能</a>研发的核心中枢，定位为研究型理工科高校，由<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>红色科学家联盟（<a href="../%E9%A1%BB%E5%BC%A5%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/">科学联盟</a>）主导。校内<strong>虚空终端实验室</strong>（国家重点实验室）承担三款 AI 产品的总体架构设计、核心算法攻关和版本迭代管理。实验室下设：</p>
+<ul>
+<li><strong>基础模型研究部</strong>：下一代模型架构探索（如超长上下文扩展、多模态融合、推理效率提升）；</li>
+<li><strong>训练与推理工程部</strong>：分布式训练框架、推理优化引擎、算力调度系统的研发；</li>
+<li><strong>安全与对齐研究部</strong>：模型安全性评估、价值观对齐、幻觉抑制技术。</li>
+</ul>
+<p>实验室现有研究员约 1,200 人（含硕博研究生），其中约 40% 来自<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>本国，其余来自<a href="../../%E8%92%99%E5%BE%B7/%E8%92%99%E5%BE%B7%E7%BB%BC%E8%BF%B0/">蒙德</a>、璃月、<a href="../../%E6%9E%AB%E4%B8%B9/%E6%9E%AB%E4%B8%B9%E7%BB%BC%E8%BF%B0/">枫丹</a>等国的顶尖高校和科研机构。<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学与<a href="../%E9%A1%BB%E5%BC%A5%E9%AB%98%E6%A0%A1%E6%A6%82%E5%86%B5/">须弥科学院</a>、<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>工程院实行<strong>双聘导师</strong>制度——科学院院士和工程院院士可直接在科技大学带研究生，促进基础研究与工程落地的紧密衔接。</p>
+<h3 id="ai">须弥民众大学——AI 伦理与社会影响<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>民众大学（由<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>劳动<a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/">革命党</a>主导）以文史哲、政治学、法学、社会科学见长，在人工智能研发体系中承担 AI 伦理规范、社会影响评估和政策建议的职能。民众大学法学研究所为风纪委员会的 AI 伦理审查提供法律论证支撑，社会科学研究中心则持续追踪 AI 对就业结构、收入分配和基层治理的影响，为联邦政府提供独立的政策评估报告。</p>
+<h3 id="ai_1">民族团结大学——AI 在沙漠与民族地区的应用<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h3>
+<p>民族团结大学坐落于<a href="../%E9%A1%BB%E5%BC%A5%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92/">阿如市</a>，由劳动<a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/">革命党</a>主导，定位为民族方向研究型、非民族方向应用型高校。其在人工智能领域的主要贡献包括：沙漠生态 AI 监测系统的研发（服务于沙漠中邦的绿洲生态保护和荒漠化治理），少数民族语言的自然语言处理技术（涵盖<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>境内多种沙漠民族语言的语言模型微调与语料库建设），以及面向沙漠地区基层治理的 AI 应用方案研究。</p>
+<h3 id="ai_2">须弥职业大学——AI 技术技能人才培养<a class="headerlink" href="#ai_2" title="Permanent link">&para;</a></h3>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>职业大学（由<a href="../%E9%A1%BB%E5%BC%A5%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/">科学联盟</a>主导）实行<strong>双元制</strong>培养模式——学生一半时间在校学习，一半时间在企业实训。在人工智能领域，职业大学重点培养三类技术技能人才：AI 运维工程师（负责算力中心的日常运维与故障排查）、数据标注与质检师（负责训练数据的标准化处理和模型输出质量审核）、AI 应用实施技师（负责将 AI 产品部署到工厂、农场和社区等一线场景）。毕业生可获得高级技工资格与应用学士学位双证书。</p>
+<h3 id="_6">邦市高校协同<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>除<a href="../%E9%A1%BB%E5%BC%A5%E9%AB%98%E6%A0%A1%E6%A6%82%E5%86%B5/">四所部属高校</a>外，各邦市的应用型高校也根据自身产业特色参与 AI 研发体系的协作：</p>
+<ul>
+<li><strong>奥摩斯海洋与生物科学大学</strong>（邦市层面的研究型高校）：利用海洋生物学和生物信息学优势，参与 AI 在生物多样性保护、海洋资源管理等领域的研究；</li>
+<li><strong>辛赫绿洲文明大学</strong>（邦市层面的研究型高校）：依托赤王文明考古数据，为 AI 在文化遗产数字化、历史文献分析等领域的应用提供数据支持与研究场景；</li>
+<li><strong>铁漠矿业高等专科学校</strong>：参与矿业场景 AI 应用的数据采集和现场测试。</li>
+</ul>
+<p>各部属高校与邦市高校之间通过<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>教育部的协调机制实现科研项目联合申报、实验设施共享和跨校人才培养。</p>
+<h3 id="_7">须弥科学院、须弥工程院与教育部<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>教令院拆分后形成的三个顶层机构，在 AI 研发体系中各有其不可替代的角色：</p>
+<table>
+<thead>
+<tr>
+<th>机构</th>
+<th>性质</th>
+<th>在 AI 研发中的职能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>须弥科学院</strong></td>
+<td>独立科研机构（不在人民委员会序列内）</td>
+<td>统筹基础科学与前沿探索，为 AI 的底层原理（如草元素力耦合计算理论、神经网络数学基础）提供长期稳定的基础研究资助与学术评价；承担须弥科学院院士直接参与 AI 基础理论攻关</td>
+</tr>
+<tr>
+<td><strong>须弥工程院</strong></td>
+<td>独立科研机构（不在人民委员会序列内）</td>
+<td>制定 AI 产品工程落地的技术标准（如模型评估基准、推理性能指标、安全测试规范），主持重大版本升级的工程评审，评审结论作为虚空部出口管制决策的技术依据之一</td>
+</tr>
+<tr>
+<td><strong>教育部</strong></td>
+<td>人民委员会组成部门</td>
+<td>管理 AI 相关教育经费分配、学位标准制定和学科设置审批，协调四所部属高校与邦市高校之间的 AI 人才培养规划和科研合作，但不干预具体的学术研究与工程评审</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_8">监管与治理架构<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>的人工智能监管实行「三权分立」式的架构——研发管理、技术监管、纪律监督各司其职、相互制衡。</p>
+<h3 id="_9">须弥科技大学——研发管理与技术迭代<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>如前述，<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学承担 AI 产品的核心研发职责，包括：</p>
+<ul>
+<li>规划 AI 技术发展路线图（须报虚空部备案）；</li>
+<li>组织重大版本研发与发布；</li>
+<li>管理开源社区（卡拉姆）和海外 API 服务的技术运维；</li>
+<li>提出模型能力的「分级解密」建议——即哪些能力可对外开放、哪些须限制。</li>
+</ul>
+<h3 id="_10">联邦政府虚空部——技术监管<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>虚空部是<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>联邦政府中负责 AI 技术监管的核心部门，主要职责包括：</p>
+<ul>
+<li><strong>AI 安全标准制定</strong>：制定并更新《<a href="./">须弥人工智能</a>安全技术规范》，涵盖模型抗攻击测试、内容安全过滤、输出可追溯性等标准；</li>
+<li><strong>出口管制政策</strong>：划定可出口 AI 能力的「灰色边界」——哪些参数规模、哪些应用场景的 AI 可以对外提供，哪些须严格限制在<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>境内使用；</li>
+<li><strong>模型能力分级解密评审</strong>：在<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学提出分级建议后，虚空部组织国家级评审，经风纪委员会会签后正式实施；</li>
+<li><strong>算力资源调配</strong>：协调 AI 训练与推理所需的虚空算力资源，确保努尔等战略级应用享有优先级保障。</li>
+</ul>
+<h3 id="_11">风纪委员会——纪律监督<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>风纪委员会独立于两党和联邦政府行政体系，直接向全国民众代表大会报告工作，是<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>最高的纪律监督机关。在人工智能领域，风纪委员会的监督职能包括：</p>
+<ul>
+<li><strong>信息安全审查</strong>：审查 AI 系统的数据安全防护体系，包括希克玛出口业务中涉及跨境数据传输的合规性、努尔机密计算集群的物理安全与网络安全；</li>
+<li><strong>AI 伦理审查</strong>：受理涉及 AI 系统和伦理争议的投诉和举报（如 AI 决策中的歧视性问题、模型输出的有害内容等），有权暂停或中止被认为存在严重伦理风险的 AI 应用；</li>
+<li><strong>数据隐私保护</strong>：监督个人数据在 AI 训练和使用中的采集、存储、处理全链条合规性，定期审计<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学和各 API 服务商的数据处理行为；</li>
+<li><strong>滥用追溯问责</strong>：对利用 AI 系统从事违法违规活动的行为进行调查，追究相关责任人和管理单位的责任。</li>
+</ul>
+<h3 id="_12">两党共同监督<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>在更高层面，<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>的两党共同专政体制为 AI 治理注入了双重监督维度：</p>
+<ul>
+<li><strong>劳动<a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/">革命党</a></strong>：侧重 AI 发展中的政治方向与社会公平——监督 AI 是否服务于最广大人民的利益，而非成为少数精英集团的工具；关注 AI 在就业、社保等民生领域的影响；</li>
+<li><strong><a href="../%E9%A1%BB%E5%BC%A5%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/">科学联盟</a></strong>：侧重技术规范与学术伦理——确保 AI 研发遵循科学共同体的规范，技术决策基于充分的学术论证和同行评议。</li>
+</ul>
+<h2 id="_13">算力基础设施<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="_14">核心节点（国内服务）<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>联邦直辖区拥有全国最密集的 AI <a href="./">算力基础设施</a>：</p>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>节点类型</th>
+<th style="text-align: center;">数量</th>
+<th>托管产品</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>须弥城联邦直辖区</td>
+<td>核心计算集群</td>
+<td style="text-align: center;">12 个</td>
+<td>努尔、希克玛（国内）</td>
+<td>含努尔机密计算集群（物理隔离）</td>
+</tr>
+<tr>
+<td>诃般荼邦</td>
+<td>核心计算节点</td>
+<td style="text-align: center;">3 个</td>
+<td>希克玛（国内）、卡拉姆训练</td>
+<td>法学与政策类任务推理优化</td>
+</tr>
+<tr>
+<td>阿弥利亚邦</td>
+<td>核心计算节点</td>
+<td style="text-align: center;">3 个</td>
+<td>希克玛（国内）、卡拉姆训练</td>
+<td>医疗 AI 场景推理优化</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_15">沙漠绿色算力中心（出口服务）<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>沙漠中邦的千壑沙地和列柱沙原分布着 9 个大型绿色算力中心，承担希克玛出口服务和卡拉姆公有云 API 的计算任务。这些算力中心利用沙漠夜间低温优势实现极低的 PUE（综合电能利用效率 ≤ 1.15），由<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>沙漠光伏电站群和<a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E7%BB%BC%E8%BF%B0/">纳塔</a>地热互补供电：</p>
+<table>
+<thead>
+<tr>
+<th>集群名称</th>
+<th>地点</th>
+<th style="text-align: center;">设计算力（标准机架）</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>沙原一号</strong></td>
+<td>千壑沙地北区</td>
+<td style="text-align: center;">6,000</td>
+<td>希克玛出口 API 推理集群</td>
+</tr>
+<tr>
+<td><strong>沙原二号</strong></td>
+<td>千壑沙地北区</td>
+<td style="text-align: center;">4,500</td>
+<td>希克玛出口 API 推理集群（灾备）</td>
+</tr>
+<tr>
+<td><strong>千壑一号</strong></td>
+<td>千壑沙地中区</td>
+<td style="text-align: center;">8,000</td>
+<td>卡拉姆公有云 API 推理与训练</td>
+</tr>
+<tr>
+<td><strong>千壑二号</strong></td>
+<td>千壑沙地中区</td>
+<td style="text-align: center;">5,000</td>
+<td>卡拉姆私有化部署构建服务</td>
+</tr>
+<tr>
+<td><strong>千壑三号</strong></td>
+<td>千壑沙地中区</td>
+<td style="text-align: center;">5,000</td>
+<td>第三方客户定制蒸馏与微调</td>
+</tr>
+<tr>
+<td><strong>沙原三号</strong></td>
+<td>千壑沙地北区</td>
+<td style="text-align: center;">5,000</td>
+<td>希克玛出口 API 推理集群（扩容）</td>
+</tr>
+<tr>
+<td><strong>千壑四号</strong></td>
+<td>千壑沙地中区</td>
+<td style="text-align: center;">6,000</td>
+<td>卡拉姆公有云 API 推理与训练（扩容）</td>
+</tr>
+<tr>
+<td><strong>列柱一号</strong></td>
+<td>列柱沙原</td>
+<td style="text-align: center;">6,000</td>
+<td>希克玛出口服务验算缓存存储</td>
+</tr>
+<tr>
+<td><strong>列柱二号</strong></td>
+<td>列柱沙原</td>
+<td style="text-align: center;">4,000</td>
+<td>大规模模型训练集群（多版本并行）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_16">算力与虚空网络的关系<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p><a href="./">须弥人工智能</a>并非独立于虚空系统运行，而是<strong>构建在虚空超算网络之上的上层应用</strong>。虚空系统的分布式架构和草元素力通信网络为 AI 模型提供了：</p>
+<ul>
+<li><strong>分布式训练</strong>：利用虚空网络在数千个节点间的极低延迟通信，实现千卡/万卡级别的高效并行训练；</li>
+<li><strong>弹性推理</strong>：根据推理请求的实时流量动态调度算力资源，由虚空网络的智能调度系统自动分配至最合适的计算节点；</li>
+<li><strong>跨节点缓存共享</strong>：推理缓存在虚空网络中各节点之间同步，使得同一用户的多次查询可在最近的节点命中缓存，大幅降低重复推理的开销（这也是希克玛出口服务中「验算缓存留<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>」能够实现的技术前提）。</li>
+</ul>
+<h2 id="_17">国际维度<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h3 id="_18">市场地位<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p><a href="./">须弥人工智能</a>在全球信息产业中占据着不可替代的生态位：</p>
+<ul>
+<li><strong>高端 AI 市场</strong>：近乎垄断——努尔级别的超长上下文、超低幻觉、超高吞吐能力的 AI 产品在全球范围内无可匹敌，且无任何国家在可见未来掌握<a href="./">草元素力耦合计算</a>的核心技术；</li>
+<li><strong>中高端 AI 市场</strong>：<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>是希克玛的唯一供应方。外国政府和企业在需要「类努尔」能力但又无法获得努尔授权时，希克玛是事实上的标准选择。<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>凭借这一结构性优势建立了稳定的服务贸易创汇渠道；</li>
+<li><strong>中端 AI 市场</strong>：竞争最为激烈。卡拉姆以开源生态和完整的商业服务链参与竞争，多国正在投入自研中端 AI 模型与之展开全面角力。</li>
+</ul>
+<h3 id="_19">希克玛出口中的国际争议<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>希克玛的数据主权条款——「敏感数据可储存在他国，但验算与缓存须保留在<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>国内」——在国际上引发了持续的争论。一方面，它允许外国客户将数据留在本国，这在形式上符合多数国家的数据主权法律；另一方面，验算缓存的存在意味着<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>能够看到模型「被问过什么问题、被要求过什么任务、模型的输出是否被用户修改过」，这在安全领域引发了对信息泄露和「后门」可能性的担忧。</p>
+<p>对此，风纪委员会与虚空部的回应口径是：验算缓存仅记录可逆匿名化处理的推理元数据，不包含用户原始输入的具体内容；且验算缓存的访问权限受<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>法律法规的严格限制，未经风纪委员会批准的越权访问行为将承担刑事责任。</p>
+<h3 id="_20">国内伦理审查的搁置<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>对<a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E7%BB%BC%E8%BF%B0/">幕府</a>的算力出口并非没有在<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>国内引发争议。风纪委员会曾就「向<a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E7%BB%BC%E8%BF%B0/">幕府</a>提供算力是否构成对其压迫体制的间接支持」启动伦理审查，调查涉及<a href="../../%E7%A8%BB%E5%A6%BB/%E5%B9%95%E5%BA%9C/%E5%B9%95%E5%BA%9C%E7%BB%BC%E8%BF%B0/">幕府</a>国家产业信息平台及 AI 配给制对希克玛和虚空算力的使用方式。审查未能持续。<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>劳动<a href="../../%E7%A8%BB%E5%A6%BB/%E6%B8%85%E7%B1%81%E5%B2%9B/%E6%B8%85%E7%B1%81%E5%B2%9B%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/">革命党</a>中央委员会以出口创汇、国际观瞻和服务信用为由，单方面施压搁置了调查。这一决定在党内也非毫无代价——风纪委员会委员长<a href="../%E9%A1%BB%E5%BC%A5%E6%94%BF%E6%B2%BB%E6%A6%82%E5%86%B5/">赛诺</a>本人即出身劳动党，此案实质上暴露了劳动党内部纪律监督与中央决策之间的张力，最终以中央压下调查告终。此后，风纪委员会对涉及出口对象政体性质的同类问题形成默认口径：个案报备、不就出口对象的<a href="../../%E7%BA%B3%E5%A1%94/%E7%BA%B3%E5%A1%94%E7%BB%BC%E8%BF%B0/">政治体制</a>作价值判断。</p>
+<h3 id="_21">开源模型的用途归属<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>对开源层级的模型适用另一套逻辑。卡拉姆的许可协议允许第三方自由修改、再分发和本地部署，其被应用于何种场景不归<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>官僚机构指导，<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>也不对其境外用途承担政策责任或作价值审查。压迫与否的叙事不适用于开源层——这是卡拉姆与希克玛在治理体系上的根本区别。</p>
+<h3 id="_22">卡拉姆开源生态的国际化<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<p>卡拉姆的开源社区吸引了来自多个国家的开发者和企业贡献者。<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学通过以下机制维持对开源生态的主导：</p>
+<ul>
+<li><strong>主干模型版本控制</strong>：核心模型权重由<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学官方发布，第三方修改可以形成分支但无权使用「卡拉姆」品牌；</li>
+<li><strong>官方插件与工具链</strong>：<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学维护官方推理引擎、微调工具包、部署框架，推荐社区使用官方工具链以获得最佳兼容性；</li>
+<li><strong>年度国际 AI 大会</strong>：由<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学主办、每年度在<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>城举行的「提瓦特人工智能前沿峰会」，是卡拉姆社区发布新版本、展示优秀第三方应用、组织开发者培训的核心平台。</li>
+</ul>
+<h2 id="_23">发展简史<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<h3 id="te-2005">TE 2005 之前：草元素力研究的学术积累<a class="headerlink" href="#te-2005" title="Permanent link">&para;</a></h3>
+<p>教令院时期的六大学派已在草元素力与信息处理的交叉领域进行了长达数百年的理论探索。伐护末那学派和梨多梵谛学派的学者们发现，草元素力波动可以承载远超自然状态的信息密度，并在植物群落中形成类似神经网络的信号传递模式。这些基础理论为日后的 AI 技术突破奠定了学术根基。然而，教令院的学术寡头体制使这些研究成果长期停留在理论层面，缺乏将其转化为实际生产力和社会应用的政治意愿。</p>
+<h3 id="te-20052015">TE 2005~2015 ：虚空军用转民用与努尔初代<a class="headerlink" href="#te-20052015" title="Permanent link">&para;</a></h3>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>大革命后，新政权对教令院时期的科研成果进行了全面普查与重新评估。虚空系统作为最重要的革命遗产，被确立为国家战略性<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">基础设施</a>。<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学在革命后的重组中成为虚空系统核心维护者和 AI 研发的主导力量。</p>
+<p>TE 2009 年，<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学虚空终端实验室成立，开始系统性地探索将<a href="./">草元素力耦合计算</a>应用于神经网络模型。TE 2012 年，努尔初代版本完成内部验证，展示了在当时惊人的 1,000 万 token 上下文窗口。经全国民众代表大会批准，努尔被确定为仅供联邦政府、各邦政府和各大单位使用的战略级 AI，不对外开放。</p>
+<h3 id="te-20152025">TE 2015~2025 ：商业化、开源化与国际扩张<a class="headerlink" href="#te-20152025" title="Permanent link">&para;</a></h3>
+<p>随着努尔技术的成熟，<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学开始着眼将 AI 能力转化为国民经济收益和国际影响力：</p>
+<ul>
+<li><strong>TE 2016 年</strong>：基于努尔核心架构的降级版本希克玛（初代）完成开发，开始面向外国政府和企业提供限量 API 试用；</li>
+<li><strong>TE 2018 年</strong>：希克玛正式商业化运营，同年出口创汇首次突破<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>软件服务贸易总额的 10%；</li>
+<li><strong>TE 2020 年</strong>：<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学发布卡拉姆（初代）开源版本，采用<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>公共许可证 (SPL-1.0)，向全球 AI 社区开放；</li>
+<li><strong>TE 2022 年</strong>：努尔第三次架构升级，上下文窗口从 5,000 万 token 扩展至 1 亿 token，幻觉率降至 1‰ 以下；</li>
+<li><strong>TE 2024 年</strong>：希克玛年度出口创汇占<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>软件服务贸易总额的约 35%，卡拉姆开源社区月活跃开发者超过 10,000 人。</li>
+</ul>
+<h3 id="te-20252030">TE 2025~2030 ：体系成熟与全球角力<a class="headerlink" href="#te-20252030" title="Permanent link">&para;</a></h3>
+<p>TE 2025 年起，三款 AI 产品全部进入「每季小迭代、每四年大迭代」的成熟迭代节奏——以架构级大迭代定义代际、以季度小迭代保持演进：</p>
+<ul>
+<li><strong>TE 2026 年</strong>：努尔完成第四次架构升级（距 TE 2022 年第三次升级恰好四年），上下文窗口从 1 亿 token 扩展至 2 亿 token；同期希克玛推出 2.0 大版本，综合性能进一步逼近努尔，但仍保留明确的性能降级梯度；</li>
+<li><strong>TE 2027 年</strong>：多国中端 AI 掀起新一轮价格战，卡拉姆凭借<a href="./">草元素力耦合计算</a>的能效比优势守住市场份额，开源社区月活跃开发者突破 5 万人；</li>
+<li><strong>TE 2028 年</strong>：卡拉姆发布 3.0 大版本；<a href="./">多模态融合</a>原型完成内部验证、进入工程化阶段；</li>
+<li><strong>TE 2029 年</strong>：希克玛年度出口创汇占<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>软件服务贸易总额突破 40%；「验算缓存留<a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>」条款遭他国新一轮立法审查，风纪委员会公布匿名化审计细则予以回应；</li>
+<li><strong>TE 2030 年</strong>：沙原三号、千壑四号两座大型绿色算力中心建成投运，沙漠出口算力扩容约 40%；努尔第五次架构级大迭代按四年周期进入内部验证阶段，预计年内完成部署。</li>
+</ul>
+<h3 id="_24">现状与展望<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>截至 TE 2030 年，三款 AI 产品均已进入「每季小迭代、每四年大迭代」的成熟迭代周期：</p>
+<ul>
+<li><strong>努尔</strong>：每季度完成一次能力增量小迭代，每四年进行一次架构级大迭代——最近一次为 TE 2026 年的第四次架构升级，第五次大迭代预计于今年完成，持续扩展上下文窗口与推理深度；</li>
+<li><strong>希克玛</strong>：每季度发布性能与功能小迭代，每四年推出一次大版本——TE 2026 年推出 2.0 大版本后，下一次大版本预计于 TE 2030 年发布，重点提升综合性能、降低部署成本；</li>
+<li><strong>卡拉姆</strong>：每季度发布一次以开源社区反馈为驱动的小迭代，每四年发布一次大版本——TE 2028 年发布的 3.0 为当前最新大版本。</li>
+</ul>
+<p><a href="../%E9%A1%BB%E5%BC%A5%E6%A6%82%E5%86%B5/">须弥</a>科技大学虚空终端实验室已启动下一代 AI 架构的预研，方向包括：多模态融合（图文音视频的端到端理解）——其原型已于 TE 2028 年完成内部验证、正在推进工程化；实时交互（面向对话和协同编辑的亚秒级推理）——已进入实测阶段；以及进一步突破上下文窗口的物理极限。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.action.edit", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0.16.11/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+    
+  </body>
+</html>
