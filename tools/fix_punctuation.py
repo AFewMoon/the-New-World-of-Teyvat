@@ -31,6 +31,10 @@
     `？`/`！` 结尾的项豁免；块引用（>）与表格（|）行、代码块内部不
     处理。局限：嵌套子列表会中断父块的连续扫描，父项各自成为单块末项，
     故嵌套结构中的父项均以 `。` 结尾
+13. 数学区（$$...$$ / $...$）内剥离链接语法：[[target|label]] → label、
+    [[target]] → target、[label](url) → label、![alt](url) → alt。
+    链接会被 Markdown 渲染为 <a> 标签，KaTeX 无法解析，导致公式内
+    出现链接或渲染失败
 """
 
 import argparse
@@ -547,6 +551,54 @@ def fix_parentheses(text: str, url_parts: list[str] | None = None) -> str:
     return text
 
 
+def _strip_links_in_math_span(span: str) -> str:
+    """在单个数学区片段内剥离所有链接语法，仅保留显示文本。
+
+    [[target|label]] → label、[[target]] → target、
+    [label](url) → label、![alt](url) → alt。
+    """
+    # wikilink（含显示文本与纯目标，图片式 ![[...]] 一并处理）
+    span = re.sub(r"!?\[\[(?:[^\[\]]+\|)?([^\[\]]+)\]\]", r"\1", span)
+    # 图片 ![alt](url)
+    span = re.sub(r"!\[([^\[\]]*)\]\([^)]*\)", r"\1", span)
+    # Markdown 链接 [label](url)（负向前瞻排除图片；KaTeX 的 [..] 后跟 ( 的
+    # 场景极罕见，如 \begin{bmatrix} 的 ]} 不受影响）
+    span = re.sub(r"(?<!!)\[([^\[\]]*)\]\([^)]*\)", r"\1", span)
+    return span
+
+
+def fix_links_in_math(text: str) -> tuple[str, bool]:
+    """规则 13：数学区（$$...$$ / $...$）内禁止任何链接语法。
+
+    MkDocs 的 Markdown 处理器会先把 [label](url) / [[wikilink]] 渲染为
+    <a> 标签，KaTeX auto-render 随后再解析数学，导致公式内出现可点击
+    链接或渲染失败。本规则将数学区内的链接语法剥离为纯显示文本。
+    返回 (处理后的文本, 是否发生修改)。
+    """
+    math_spans: list[tuple[int, int]] = []
+    # 块级数学 $$...$$（可跨行），优先匹配
+    for m in re.finditer(r"\$\$[\s\S]*?\$\$", text):
+        math_spans.append((m.start(), m.end()))
+    # 行内数学 $...$（单行），跳过与块级数学重叠的匹配
+    for m in re.finditer(r"\$[^\n$]+\$", text):
+        if not any(s <= m.start() < e for s, e in math_spans):
+            math_spans.append((m.start(), m.end()))
+
+    modified = False
+    chunks: list[str] = []
+    pos = 0
+    for s, e in sorted(math_spans):
+        chunks.append(text[pos:s])
+        span = text[s:e]
+        fixed = _strip_links_in_math_span(span)
+        if fixed != span:
+            modified = True
+        chunks.append(fixed)
+        pos = e
+    chunks.append(text[pos:])
+    return "".join(chunks), modified
+
+
 def process_line(line: str) -> str:
     """对单行文本执行所有标点规范化处理。"""
     # 0. 制表符统一替换为 4 空格（代码块内部由 fix_file 跳过）
@@ -622,13 +674,20 @@ def should_skip_file(path: Path) -> bool:
 def fix_file(path: Path) -> bool:
     """处理单个 .md 文件，返回是否有修改。"""
     lines = path.read_text(encoding="utf-8").splitlines(keepends=False)
+    # 规则 13：数学区（$$...$$ / $...$）内剥离链接语法。须在其他行级规则
+    # 之前执行，避免 protect_urls 等将数学区内的链接提前保护而不受处理
+    joined = "\n".join(lines)
+    joined, math_fixed = fix_links_in_math(joined)
+    if math_fixed:
+        # 用 split 而非 splitlines 还原行，避免丢失末尾空行元素
+        lines = joined.split("\n")
     # 缩进严格约束（4 空格一级、不越级），必须在具体处理之前
     lines, indent_fixed = fix_indentation(lines)
     # 列表块规范化（空行 + 结尾标点）
     lines, list_fixed = fix_list_blocks(lines)
     new_lines: list[str] = []
     in_code_block = False
-    modified = indent_fixed or list_fixed
+    modified = indent_fixed or list_fixed or math_fixed
     removed_h1 = False
 
     prev_blank = False
@@ -725,6 +784,11 @@ def main() -> None:
         for path in md_files:
             original = path.read_text(encoding="utf-8")
             lines = original.splitlines(keepends=False)
+            # 规则 13：数学区内剥离链接语法（与修复模式保持一致）
+            joined = "\n".join(lines)
+            joined, _ = fix_links_in_math(joined)
+            # 用 split 而非 splitlines 还原行，避免丢失末尾空行元素
+            lines = joined.split("\n")
             # 与修复模式共用同一缩进约束
             lines, _ = fix_indentation(lines)
             lines, _ = fix_list_blocks(lines)

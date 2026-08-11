@@ -259,6 +259,8 @@ def clean_body_text(text: str) -> str:
     """清理文本，仅保留正文内容用于 ML 分析。"""
     text = re.sub(r"```[\s\S]*?```", "", text)
     text = re.sub(r"`[^`]*`", "", text)
+    text = re.sub(r"\$\$[\s\S]*?\$\$", "", text)
+    text = re.sub(r"\$[^\n$]+\$", "", text)
     text = re.sub(r"\[\[.*?\]\]", "", text)
     text = re.sub(r"!\[.*?\]\(.*?\)", "", text)
     text = re.sub(r"https?://\S+", "", text)
@@ -827,6 +829,12 @@ class LinkInjector:
                 protected.append((0, end_idx + 3, "yaml"))
         for m in re.finditer(r"```[\s\S]*?```", text):
             protected.append((m.start(), m.end(), "code_block"))
+        # 数学区（$$...$$ / $...$）整体保护：KaTeX 内不能注入链接
+        for m in re.finditer(r"\$\$[\s\S]*?\$\$", text):
+            protected.append((m.start(), m.end(), "math_block"))
+        for m in re.finditer(r"\$[^\n$]+\$", text):
+            if not any(s <= m.start() < e for s, e, _ in protected):
+                protected.append((m.start(), m.end(), "math_inline"))
         for m in re.finditer(r"\[\[.*?\]\]", text):
             if not any(s <= m.start() < e for s, e, _ in protected):
                 protected.append((m.start(), m.end(), "wikilink"))
