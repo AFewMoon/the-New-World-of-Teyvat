@@ -370,6 +370,34 @@ Obsidian 用户首次使用前安装 git hooks：
 - **`.github/workflows/lint.yml`**：push/PR 时运行 `fix_punctuation.py --check` + `concept_linker.py --ci`；PR 失败时 bot 自动修复并回推；
 - **`.github/workflows/deploy.yml`**：push 到 `master` 时构建 MkDocs 并部署 GitHub Pages。
 
+### Python 国内镜像源（新手参考）
+
+国内直连 pypi.org 常出现下载慢或超时，建议使用以下国内镜像（2026~08 实测）：
+
+| 镜像源 | 地址 | 说明 |
+|---|---|---|
+| **清华 TUNA** | `https://pypi.tuna.tsinghua.edu.cn/simple/` | 社区首选，同步及时 |
+| **阿里云** | `https://mirrors.aliyun.com/pypi/simple/` | 企业级维护，实测稳定 |
+| **教育网联合镜像 (MirrorZ)** | `https://mirrors.cernet.edu.cn/pypi/web/simple/` | 校园网用户首选，自动跳转最近的成员高校镜像站 |
+| **中科大 USTC** | `https://pypi.mirrors.ustc.edu.cn/simple/` | 教育网友好，可作备用 |
+
+不推荐：豆瓣源 (`pypi.douban.com`) 已停更多年；华为云源实测返回 429 限流；网易/百度源部分包不同步。
+
+临时使用（单次安装生效）：
+
+```powershell
+python -m pip install 包名 -i https://pypi.tuna.tsinghua.edu.cn/simple/
+```
+
+永久设置（写入 `%APPDATA%\pip\pip.ini`）：
+
+```powershell
+python -m pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/
+python -m pip config set global.trusted-host pypi.tuna.tsinghua.edu.cn
+```
+
+注意：pip 要求 `https`，地址须以 `/` 结尾（联合镜像的 `/pypi/simple` 不带斜杠会返回 500）；本仓库工具脚本在本机需用 `tools/` 下的显式 Python 路径调用，Windows Store 的 python 存根不可用。
+
 ## 文档约定
 
 ### 货币说明块
