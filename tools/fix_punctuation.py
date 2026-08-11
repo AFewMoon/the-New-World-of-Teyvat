@@ -13,6 +13,8 @@
       任一非 CJK → 补 1 空格
       （数字、% 等视为非 CJK，故 `**30%~40%**` 两侧均补空格）
       （全角标点一侧除外：`**ZF-36**（`、`：**05:30**` 等紧贴不留空格）
+      （相邻字符为 wikilink/MD 链接时按其显示文本判定首末字符，与
+      左侧保持一致：`**移交** [[…|纳塔]]` → `**移交**[[…|纳塔]]`）
 5. 中文与英文之间补 1 空格（"郡GDP" → "郡 GDP"，"GDP的" → "GDP 的"）
 6. 数字+百分号/连字符（45%~50%、30%）后跟中文 → 补 1 空格
 7. 代码块（```...```）和行内代码（`...`）内部不做变动
@@ -200,6 +202,27 @@ def _effective_prev_char(chars: list[str], url_parts: list[str] | None = None) -
     return s[-1]
 
 
+def _effective_next_char(text: str, pos: int, url_parts: list[str] | None = None) -> str:
+    """取 ** 关闭标记后一元素的有效首字符：解开开头 wikilink 或 MD 链接占位符。"""
+    if pos + 2 <= len(text) and text[pos:pos+2] == '[[':
+        close = text.find(']]', pos)
+        if close != -1:
+            inner = text[pos+2:close]
+            pipe = inner.find('|')
+            display = inner[pipe + 1:] if pipe >= 0 else inner
+            if display:
+                return display[0]
+        return '['
+    if url_parts:
+        m = re.match(r'\x00\x01(\d+)\x00\x01', text[pos:])
+        if m and int(m.group(1)) < len(url_parts):
+            part = url_parts[int(m.group(1))]
+            lm = re.match(r'^\[([^\[\]]+)\]\([^)]+\)', part)
+            if lm and lm.group(1):
+                return lm.group(1)[0]
+    return text[pos]
+
+
 def fix_bold_spacing(text: str, url_parts: list[str] | None = None) -> str:
     """处理 ** 加粗标记周围的空格（单次扫描，无重复遍历）。"""
     result = []
@@ -253,9 +276,10 @@ def fix_bold_spacing(text: str, url_parts: list[str] | None = None) -> str:
             i = close_pos + 2
             while i < len(text) and text[i] == ' ':
                 i += 1
-            if (i < len(text) and last_char is not None
-                    and not is_fullwidth_punct(text[i])
-                    and (not is_cjk(last_char) or not is_cjk(text[i]))):
+            next_eff = _effective_next_char(text, i, url_parts) if i < len(text) else None
+            if (next_eff is not None and last_char is not None
+                    and not is_fullwidth_punct(next_eff)
+                    and (not is_cjk(last_char) or not is_cjk(next_eff))):
                 if result and result[-1] != ' ':
                     result.append(' ')
         else:
