@@ -3,7 +3,7 @@
     "last_updated": "2026-08-12",
     "version": 4,
     "total_linked": 125,
-    "total_unlinked": 17
+    "total_unlinked": 0
   },
   "concepts": [
     {
@@ -432,7 +432,8 @@
         "交通与通道",
         "希汐岛",
         "皮达米拉",
-        "米拉镇"
+        "米拉镇",
+        "五镇"
       ],
       "category": "国家与地区",
       "verified": true,
@@ -1340,7 +1341,9 @@
         "政治生态总结",
         "群玉阁",
         "璃月共和国宪法",
-        "共和党"
+        "共和党",
+        "农会联盟",
+        "民主党"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -1927,7 +1930,8 @@
         "基础设施与要素禀赋",
         "土地改革简史",
         "财阀主导的经济治理",
-        "对外经济关系"
+        "对外经济关系",
+        "AI 配给制"
       ],
       "category": "经济与产业",
       "verified": true,
@@ -2366,7 +2370,10 @@
         "联合部落首领制",
         "修改意见",
         "沃原城",
-        "六共和国"
+        "六共和国",
+        "巡夜者战争",
+        "团结联盟",
+        "圣火军团"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -4561,7 +4568,8 @@
         "内在张力",
         "各方评价",
         "国际比较",
-        "展望"
+        "展望",
+        "勒鲁瓦主义"
       ],
       "category": "国家与地区",
       "verified": false,
@@ -4617,7 +4625,9 @@
         "政党",
         "统一战线",
         "革命党",
-        "人民卫队"
+        "人民卫队",
+        "久岐忍",
+        "革命之声"
       ],
       "category": "政治实体与政党",
       "verified": true,
@@ -5625,176 +5635,5 @@
       ]
     }
   ],
-  "unlinked": [
-    {
-      "name": "远征军",
-      "aliases": [
-        "远征军"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 7
-    },
-    {
-      "name": "勒鲁瓦主义",
-      "aliases": [
-        "勒鲁瓦主义"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "高",
-      "files_count": 6
-    },
-    {
-      "name": "五镇",
-      "aliases": [
-        "五镇"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "长老会",
-      "aliases": [
-        "长老会"
-      ],
-      "category": "国家与地区",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "农会联盟",
-      "aliases": [
-        "农会联盟"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "民主党",
-      "aliases": [
-        "民主党"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "一次性",
-      "aliases": [
-        "一次性"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "参议院",
-      "aliases": [
-        "参议院"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "荣誉性",
-      "aliases": [
-        "荣誉性"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "双向",
-      "aliases": [
-        "双向"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "AI 配给制",
-      "aliases": [
-        "AI 配给制"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "巡夜者战争",
-      "aliases": [
-        "巡夜者战争"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "团结联盟",
-      "aliases": [
-        "团结联盟"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "圣火军团",
-      "aliases": [
-        "圣火军团"
-      ],
-      "category": "政治实体与政党",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "久岐忍",
-      "aliases": [
-        "久岐忍"
-      ],
-      "category": "人物",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "革命之声",
-      "aliases": [
-        "革命之声"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    },
-    {
-      "name": "孤岛不孤——革命",
-      "aliases": [
-        "孤岛不孤——革命"
-      ],
-      "category": "文化与信仰",
-      "reason": "无对应 .md 文件",
-      "confidence": "中",
-      "files_count": 4
-    }
-  ]
+  "unlinked": []
 }
