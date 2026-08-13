@@ -20,7 +20,7 @@ jobs:
       - name: Prepare content directory
         run: |
           mkdir -p content
-          cp -r 蒙德 璃月 稻妻 枫丹 纳塔 挪德卡莱 须弥 国际 content/
+          cp -r 蒙德 璃月 稻妻 枫丹 纳塔 至冬 挪德卡莱 须弥 国际 content/
           cp README.md content/
       - name: Build site
         run: mkdocs build
