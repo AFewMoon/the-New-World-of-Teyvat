@@ -673,7 +673,11 @@ def should_skip_file(path: Path) -> bool:
 
 def fix_file(path: Path) -> bool:
     """处理单个 .md 文件，返回是否有修改。"""
-    lines = path.read_text(encoding="utf-8").splitlines(keepends=False)
+    raw_text = path.read_text(encoding="utf-8")
+    had_bom = raw_text.startswith("\ufeff")
+    if had_bom:
+        raw_text = raw_text[1:]
+    lines = raw_text.splitlines(keepends=False)
     # 规则 13：数学区（$$...$$ / $...$）内剥离链接语法。须在其他行级规则
     # 之前执行，避免 protect_urls 等将数学区内的链接提前保护而不受处理
     joined = "\n".join(lines)
@@ -687,7 +691,7 @@ def fix_file(path: Path) -> bool:
     lines, list_fixed = fix_list_blocks(lines)
     new_lines: list[str] = []
     in_code_block = False
-    modified = indent_fixed or list_fixed or math_fixed
+    modified = indent_fixed or list_fixed or math_fixed or had_bom
     removed_h1 = False
 
     prev_blank = False
@@ -742,7 +746,7 @@ def fix_file(path: Path) -> bool:
         if removed_h1:
             new_content = new_content.lstrip("\n")
         # 确保末尾有换行（如果原文件有）
-        if path.read_text(encoding="utf-8").endswith("\n"):
+        if raw_text.endswith("\n"):
             new_content += "\n"
         path.write_text(new_content, encoding="utf-8")
         print(f"  [FIXED] {path.relative_to(BASE_DIR)}")
@@ -783,6 +787,8 @@ def main() -> None:
         needs_fix: list[str] = []
         for path in md_files:
             original = path.read_text(encoding="utf-8")
+            if original.startswith("\ufeff"):
+                original = original[1:]
             lines = original.splitlines(keepends=False)
             # 规则 13：数学区内剥离链接语法（与修复模式保持一致）
             joined = "\n".join(lines)
