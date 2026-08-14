@@ -627,7 +627,18 @@ def process_line(line: str) -> str:
     cleaned = fix_parentheses(cleaned, url_parts)
 
     # 5. 数字间连字符 → ~  （去掉两端空格）
+    #    先保护轴式记法（如 2-3-1、1-5-1），避免被当作数字范围转换
+    axle_parts = {}
+
+    def _hold_axle(m):
+        token = f'\x00{len(axle_parts)}\x01'
+        axle_parts[token] = m.group(0)
+        return token
+
+    cleaned = re.sub(r'\d(?:\s*-\s*\d){2,}', _hold_axle, cleaned)
     cleaned = re.sub(r'(\d)\s*-\s*(\d)', r'\1~\2', cleaned)
+    for token, original in axle_parts.items():
+        cleaned = cleaned.replace(token, original)
 
     # 6. 数字与非数字之间的空格 → 有且仅有一个
     #    数字后跟中文或字母
