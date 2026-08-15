@@ -3,9 +3,11 @@
     max-width: 100%;
 }
 
-/* 内容区留白，避免贴边 */
-.md-content {
-    padding: 0 1.5rem;
+/* 内容区留白，避免贴边（仅桌面端；移动端沿用主题边距，内容占满宽度） */
+@media screen and (min-width: 76.25em) {
+    .md-content {
+        padding: 0 1.5rem;
+    }
 }
 
 /* 顶部标签栏（国际、蒙德、璃月……）居中 */
