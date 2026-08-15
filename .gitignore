@@ -36,3 +36,4 @@ site/
 # MkDocs content copy (generated in CI)
 content/*
 !content/javascripts/
+!content/stylesheets/
