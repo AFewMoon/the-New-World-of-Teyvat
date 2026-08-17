@@ -45,7 +45,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ARTICLE_TOP_DIRS = {"蒙德", "璃月", "稻妻", "须弥", "枫丹", "纳塔", "挪德卡莱", "国际"}
+ARTICLE_TOP_DIRS = {"蒙德", "璃月", "稻妻", "须弥", "枫丹", "纳塔", "挪德卡莱", "至冬", "国际"}
 
 
 def is_article_file(path: Path) -> bool:
