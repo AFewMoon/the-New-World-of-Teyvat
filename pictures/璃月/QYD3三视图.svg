@@ -16,7 +16,7 @@
     <g id="q3wheel">
       <circle r="31" fill="#1E1B18"/>
       <circle r="23" fill="#4A4642"/>
-      <circle r="15" fill="#615C56"/>
+      <circle r="15" fill="#3E3A34" stroke="#241B12" stroke-width="2"/>
       <circle r="8" fill="#211E1B"/>
       <circle cx="0" cy="-13" r="3" fill="#77716A"/>
       <circle cx="11" cy="7" r="3" fill="#77716A"/>
@@ -90,7 +90,6 @@
   <rect x="668" y="300" width="180" height="40" fill="url(#q3louver)" stroke="#241B12" stroke-width="2"/>
   <!-- 检修门 -->
   <g stroke="#241B12" stroke-width="2" fill="#4E3B28">
-    <rect x="300" y="222" width="0" height="0"/>
     <rect x="286" y="228" width="54" height="64" rx="3"/>
     <rect x="480" y="228" width="54" height="64" rx="3"/>
     <rect x="674" y="228" width="54" height="64" rx="3"/>
@@ -102,9 +101,9 @@
   <rect x="880" y="382" width="110" height="18" fill="url(#q3grille)" stroke="#241B12" stroke-width="1.5"/>
   <rect x="360" y="382" width="90" height="18" fill="url(#q3grille)" stroke="#241B12" stroke-width="1.5"/>
 
-  <!-- 车号与路徽 -->
-  <text x="600 " y="340" font-size="30" font-weight="700" fill="#EFE3C2">QYD3</text>
-  <text x="694" y="340" font-size="15" fill="#D8C79A">-A 0213</text>
+  <!-- 车号与路徽（置于浅色上沿带，避开百叶带） -->
+  <text x="352" y="288" font-size="24" font-weight="700" fill="#5C4433">QYD-3</text>
+  <text x="430" y="288" font-size="14" fill="#8A7658">213A</text>
 
   <!-- 车顶设备：电阻制动柜百叶 ×2 -->
   <rect x="300" y="212" width="130" height="20" rx="4" fill="#3A342C"/>
@@ -165,9 +164,6 @@
     <circle cx="340" cy="420" r="8" fill="#55504A"/>
     <circle cx="460" cy="420" r="8" fill="#55504A"/>
     <!-- 牵引电机 -->
-    <path d="M 244 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
-    <path d="M 316 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
-    <path d="M 436 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
   </g>
   <g>
     <use href="#q3wheel" x="810" y="439"/>
@@ -180,9 +176,6 @@
     <circle cx="810" cy="420" r="8" fill="#55504A"/>
     <circle cx="930" cy="420" r="8" fill="#55504A"/>
     <circle cx="1050" cy="420" r="8" fill="#55504A"/>
-    <path d="M 834 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
-    <path d="M 906 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
-    <path d="M 1026 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
   </g>
 
   <!-- 撒砂管（粗管） -->
@@ -213,41 +206,41 @@
 
   <!-- ═══════════ 俯视图 ═══════════ -->
   <g>
-    <rect x="40" y="700" width="20" height="16" rx="3" fill="#33302C"/>
-    <rect x="1222" y="700" width="20" height="16" rx="3" fill="#33302C"/>
-    <rect x="72" y="692" width="1138" height="34" rx="6" fill="#4E3B28" stroke="#241B12" stroke-width="1.5"/>
-    <line x1="72" y1="700" x2="1210" y2="700" stroke="#EDE3CD" stroke-width="3"/>
-    <line x1="72" y1="718" x2="1210" y2="718" stroke="#EDE3CD" stroke-width="3"/>
+    <rect x="40" y="701" width="20" height="16" rx="3" fill="#33302C"/>
+    <rect x="1222" y="701" width="20" height="16" rx="3" fill="#33302C"/>
+    <rect x="72" y="637" width="1138" height="144" rx="10" fill="#4E3B28" stroke="#241B12" stroke-width="1.5"/>
+    <line x1="72" y1="673" x2="1210" y2="673" stroke="#EDE3CD" stroke-width="3"/>
+    <line x1="72" y1="745" x2="1210" y2="745" stroke="#EDE3CD" stroke-width="3"/>
     <!-- 司机室顶 -->
-    <rect x="96" y="696" width="150" height="26" rx="6" fill="#57422E"/>
-    <rect x="1036" y="696" width="150" height="26" rx="6" fill="#57422E"/>
+    <rect x="96" y="655" width="150" height="108" rx="8" fill="#57422E"/>
+    <rect x="1036" y="655" width="150" height="108" rx="8" fill="#57422E"/>
     <!-- 风笛座 -->
-    <rect x="140" y="692" width="34" height="6" rx="2" fill="#3E3A34"/>
-    <rect x="1108" y="692" width="34" height="6" rx="2" fill="#3E3A34"/>
+    <rect x="140" y="648" width="34" height="7" rx="2" fill="#3E3A34"/>
+    <rect x="1108" y="648" width="34" height="7" rx="2" fill="#3E3A34"/>
     <!-- 电阻制动柜 -->
-    <rect x="300" y="698" width="130" height="22" rx="3" fill="#3A342C"/>
-    <rect x="850" y="698" width="130" height="22" rx="3" fill="#3A342C"/>
+    <rect x="300" y="682" width="130" height="54" rx="4" fill="#3A342C"/>
+    <rect x="850" y="682" width="130" height="54" rx="4" fill="#3A342C"/>
     <!-- 主断路器 -->
-    <rect x="588" y="700" width="24" height="18" rx="3" fill="#3E3A34"/>
+    <rect x="588" y="687" width="24" height="44" rx="3" fill="#3E3A34"/>
     <!-- 受电弓投影 -->
-    <rect x="414" y="696" width="72" height="26" rx="5" fill="none" stroke="#26221E" stroke-width="2" stroke-dasharray="5 3"/>
-    <line x1="450" y1="696" x2="450" y2="722" stroke="#26221E" stroke-width="2"/>
-    <rect x="884" y="696" width="72" height="26" rx="5" fill="none" stroke="#26221E" stroke-width="2" stroke-dasharray="5 3"/>
-    <line x1="920" y1="696" x2="920" y2="722" stroke="#26221E" stroke-width="2"/>
+    <rect x="414" y="663" width="72" height="92" rx="5" fill="none" stroke="#26221E" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="450" y1="663" x2="450" y2="755" stroke="#26221E" stroke-width="2"/>
+    <rect x="884" y="663" width="72" height="92" rx="5" fill="none" stroke="#26221E" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="920" y1="663" x2="920" y2="755" stroke="#26221E" stroke-width="2"/>
     <line x1="486" y1="709" x2="884" y2="709" stroke="#8A6A28" stroke-width="2.5" stroke-dasharray="8 5"/>
   </g>
-  <text x="55" y="770" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
+  <text x="55" y="815" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
 
   <!-- ═══════════ 正视图（I 端） ═══════════ -->
-  <g>
+  <g transform="translate(74.5 49.5) scale(0.945)">
     <line x1="1250" y1="900" x2="1570" y2="900" stroke="#9C948A" stroke-width="4"/>
     <line x1="1250" y1="907" x2="1570" y2="907" stroke="#C4BCB0" stroke-width="2"/>
     <rect x="1338" y="862" width="32" height="16" rx="5" fill="#33302C"/>
     <path d="M 1342 866 L 1366 866 L 1360 880 L 1348 880 Z" fill="#44403A"/>
     <!-- 加强型排障器 -->
     <path d="M 1282 830 L 1426 830 L 1450 894 L 1258 894 Z" fill="#2B2620"/>
-    <line x1="1290" y1="878" x2="1440" y2="878" stroke="#C9A227" stroke-width="4"/>
-    <line x1="1284" y1="886" x2="1448" y2="886" stroke="#C9A227" stroke-width="4"/>
+    <line x1="1270" y1="878" x2="1438" y2="878" stroke="#C9A227" stroke-width="4"/>
+    <line x1="1266" y1="886" x2="1442" y2="886" stroke="#C9A227" stroke-width="4"/>
     <!-- 防撞梁 -->
     <rect x="1274" y="836" width="160" height="14" fill="#26221E"/>
     <line x1="1290" y1="843" x2="1418" y2="843" stroke="#4A4238" stroke-width="3"/>
@@ -276,7 +269,7 @@
     <circle cx="1354" cy="788" r="14" fill="#C9A227" stroke="#241B12" stroke-width="2"/>
     <polygon points="1354,775 1363,788 1354,801 1345,788" fill="#F7EBCC"/>
     <rect x="1318" y="806" width="72" height="20" rx="3" fill="#171512"/>
-    <text x="1354" y="821" text-anchor="middle" font-size="13" font-weight="700" fill="#EFE3C2">QYD3-A</text>
+    <text x="1354" y="821" text-anchor="middle" font-size="13" font-weight="700" fill="#EFE3C2">QYD-3</text>
     <!-- 登梯 -->
     <g stroke="#2E2822" stroke-width="3.5" fill="none">
       <path d="M 1266 834 L 1266 712 M 1278 834 L 1278 712 M 1270 812 L 1274 812 M 1270 786 L 1274 786 M 1270 760 L 1274 760 M 1270 734 L 1274 734"/>

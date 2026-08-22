@@ -17,7 +17,7 @@
     <g id="qyn5wheel">
       <circle r="19" fill="#1E1B18"/>
       <circle r="14" fill="#46423E"/>
-      <circle r="9" fill="#5D5852"/>
+      <circle r="9" fill="#3E3A34" stroke="#141D18" stroke-width="1.6"/>
       <circle r="4.5" fill="#211E1B"/>
     </g>
   </defs>
@@ -85,8 +85,8 @@
   <text x="507" y="292" text-anchor="middle" font-size="10" fill="#4E5B50">应急电源</text>
 
   <!-- 车号 -->
-  <text x="200" y="316" font-size="17" font-weight="700" fill="#EFE3C2">QYN5-B</text>
-  <text x="264" y="316" font-size="11" fill="#CFEDDD">0011 A</text>
+  <text x="200" y="316" font-size="17" font-weight="700" fill="#EFE3C2">QYN-5</text>
+  <text x="268" y="316" font-size="11" fill="#CFEDDD">011A</text>
 
   <!-- 车顶设备 -->
   <rect x="240" y="276" width="90" height="14" rx="3" fill="#20261F"/>
@@ -107,25 +107,27 @@
   <use href="#qyn5wheel" x="119" y="431"/><use href="#qyn5wheel" x="200" y="431"/>
   <rect x="102" y="414" width="116" height="12" rx="4" fill="#33302C"/>
   <circle cx="119" cy="421" r="5.5" fill="#55504A"/><circle cx="200" cy="421" r="5.5" fill="#55504A"/>
-  <path d="M 136 446 a 17 17 0 0 0 34 0 z" fill="#3E3A34"/>
   <use href="#qyn5wheel" x="459" y="431"/><use href="#qyn5wheel" x="540" y="431"/>
   <rect x="442" y="414" width="116" height="12" rx="4" fill="#33302C"/>
   <circle cx="459" cy="421" r="5.5" fill="#55504A"/><circle cx="540" cy="421" r="5.5" fill="#55504A"/>
-  <path d="M 476 446 a 17 17 0 0 0 34 0 z" fill="#3E3A34"/>
   <line x1="102" y1="418" x2="92" y2="444" stroke="#33302C" stroke-width="3.5"/>
   <line x1="220" y1="418" x2="230" y2="444" stroke="#33302C" stroke-width="3.5"/>
   <line x1="442" y1="418" x2="432" y2="444" stroke="#33302C" stroke-width="3.5"/>
   <line x1="560" y1="418" x2="570" y2="444" stroke="#33302C" stroke-width="3.5"/>
 
   <!-- ══ 节间连接 ══ -->
-  <path d="M 560 316 C 574 306 594 306 608 316" fill="none" stroke="#B98A2E" stroke-width="3.5"/>
-  <path d="M 560 326 C 574 316 594 316 608 326" fill="none" stroke="#B98A2E" stroke-width="3.5"/>
-  <path d="M 548 348 L 620 348 L 620 392 L 548 392 Z" fill="#1A241E"/>
+  <!-- 重联风挡（全高连廊，顶与车顶齐平，包住两端面） -->
+  <path d="M 554 290 L 646 290 L 646 392 L 554 392 Z" fill="#1A241E"/>
+  <line x1="554" y1="290" x2="646" y2="290" stroke="#141D18" stroke-width="2.2"/>
+  <line x1="560" y1="304" x2="640" y2="304" stroke="#B98A2E" stroke-width="2" stroke-dasharray="7 5"/>
   <g stroke="#3E4A40" stroke-width="1.8">
-    <line x1="560" y1="350" x2="560" y2="390"/><line x1="572" y1="350" x2="572" y2="390"/>
-    <line x1="584" y1="350" x2="584" y2="390"/><line x1="596" y1="350" x2="596" y2="390"/><line x1="608" y1="350" x2="608" y2="390"/>
+    <line x1="566" y1="310" x2="566" y2="390"/><line x1="579" y1="310" x2="579" y2="390"/>
+    <line x1="592" y1="310" x2="592" y2="390"/><line x1="605" y1="310" x2="605" y2="390"/>
+    <line x1="618" y1="310" x2="618" y2="390"/><line x1="631" y1="310" x2="631" y2="390"/>
   </g>
-  <rect x="576" y="368" width="16" height="24" rx="2" fill="#E3B23C" stroke="#141D18" stroke-width="1.2"/>
+  <rect x="592" y="368" width="16" height="24" rx="2" fill="#E3B23C" stroke="#141D18" stroke-width="1.2"/>
+  <!-- 节间底架连接梁 -->
+  <rect x="584" y="404" width="32" height="16" fill="#20261F"/>
 
   <!-- ══ B 节（镜像） ══ -->
   <rect x="612" y="404" width="512" height="16" fill="#20261F"/>
@@ -151,8 +153,8 @@
   </g>
   <text x="939" y="292" text-anchor="middle" font-size="10" fill="#4E5B50">救援器材</text>
   <text x="1003" y="292" text-anchor="middle" font-size="10" fill="#4E5B50">应急电源</text>
-  <text x="700" y="316" font-size="17" font-weight="700" fill="#EFE3C2">QYN5-B</text>
-  <text x="764" y="316" font-size="11" fill="#CFEDDD">0011 B</text>
+  <text x="700" y="316" font-size="17" font-weight="700" fill="#EFE3C2">QYN-5</text>
+  <text x="768" y="316" font-size="11" fill="#CFEDDD">011B</text>
   <!-- 车顶设备 -->
   <rect x="670" y="276" width="90" height="14" rx="3" fill="#20261F"/>
   <g stroke="#4E7A62" stroke-width="1.8"><line x1="678" y1="281" x2="752" y2="281"/><line x1="678" y1="286" x2="752" y2="286"/></g>
@@ -177,11 +179,9 @@
   <use href="#qyn5wheel" x="660" y="431"/><use href="#qyn5wheel" x="741" y="431"/>
   <rect x="643" y="414" width="116" height="12" rx="4" fill="#33302C"/>
   <circle cx="660" cy="421" r="5.5" fill="#55504A"/><circle cx="741" cy="421" r="5.5" fill="#55504A"/>
-  <path d="M 677 446 a 17 17 0 0 0 34 0 z" fill="#3E3A34"/>
   <use href="#qyn5wheel" x="1000" y="431"/><use href="#qyn5wheel" x="1081" y="431"/>
   <rect x="983" y="414" width="116" height="12" rx="4" fill="#33302C"/>
   <circle cx="1000" cy="421" r="5.5" fill="#55504A"/><circle cx="1081" cy="421" r="5.5" fill="#55504A"/>
-  <path d="M 1017 446 a 17 17 0 0 0 34 0 z" fill="#3E3A34"/>
   <line x1="643" y1="418" x2="633" y2="444" stroke="#33302C" stroke-width="3.5"/>
   <line x1="761" y1="418" x2="771" y2="444" stroke="#33302C" stroke-width="3.5"/>
   <line x1="983" y1="418" x2="973" y2="444" stroke="#33302C" stroke-width="3.5"/>
@@ -203,84 +203,90 @@
     <line x1="28" y1="470" x2="28" y2="486"/><line x1="1150" y1="470" x2="1150" y2="486"/>
   </g>
   <text x="589" y="498" text-anchor="middle" font-size="13" fill="#8A7658">双节总长 37.0 m（车钩间）· 单节 18.0 m</text>
+  <g stroke="#A08A62" stroke-width="1.5" fill="none">
+    <line x1="1178" y1="290" x2="1178" y2="450"/>
+    <line x1="1170" y1="290" x2="1186" y2="290"/><line x1="1170" y1="450" x2="1186" y2="450"/>
+  </g>
+  <text x="1192" y="374" font-size="13" fill="#8A7658">高 5.30 m</text>
   <text x="15" y="522" font-size="15" font-weight="600" fill="#6B5A40">侧视图（固定重联双节）</text>
 
   <!-- ═══════════ 俯视图 ═══════════ -->
-  <g transform="translate(0 60)">
-    <rect x="20" y="590" width="18" height="14" rx="3" fill="#33302C"/>
-    <rect x="1140" y="590" width="18" height="14" rx="3" fill="#33302C"/>
-    <path d="M 50 588 Q 80 582 122 582 L 1050 582 Q 1092 582 1122 588 L 1122 620 L 50 620 Z" fill="#33463A" stroke="#141D18" stroke-width="1.4"/>
-    <line x1="50" y1="588" x2="1122" y2="588" stroke="#DDE6DD" stroke-width="2.5"/>
-    <line x1="50" y1="614" x2="1122" y2="614" stroke="#DDE6DD" stroke-width="2.5"/>
+  <g>
+    <rect x="20" y="693" width="18" height="14" rx="3" fill="#33302C"/>
+    <rect x="1140" y="693" width="18" height="14" rx="3" fill="#33302C"/>
+    <path d="M 50 678 Q 80 657 122 657 L 1050 657 Q 1092 657 1122 678 L 1122 743 L 50 743 Z" fill="#33463A" stroke="#141D18" stroke-width="1.4"/>
+    <line x1="50" y1="678" x2="1122" y2="678" stroke="#DDE6DD" stroke-width="2.5"/>
+    <line x1="50" y1="729" x2="1122" y2="729" stroke="#DDE6DD" stroke-width="2.5"/>
     <!-- 司机室顶 -->
-    <rect x="66" y="586" width="110" height="30" rx="5" fill="#33463A"/>
-    <rect x="1096" y="586" width="110" height="30" rx="5" fill="#33463A"/>
+    <rect x="66" y="666" width="110" height="68" rx="6" fill="#33463A"/>
+    <rect x="1096" y="666" width="110" height="68" rx="6" fill="#33463A"/>
     <!-- 泛光灯组投影 -->
-    <rect x="80" y="582" width="56" height="6" rx="2" fill="#20261F"/>
-    <rect x="1096" y="582" width="56" height="6" rx="2" fill="#20261F"/>
+    <rect x="80" y="657" width="56" height="14" rx="3" fill="#20261F"/>
+    <rect x="1096" y="657" width="56" height="14" rx="3" fill="#20261F"/>
     <!-- 制动电阻柜 -->
-    <rect x="240" y="588" width="90" height="26" rx="3" fill="#20261F"/>
-    <rect x="670" y="588" width="90" height="26" rx="3" fill="#20261F"/>
+    <rect x="240" y="678" width="90" height="59" rx="4" fill="#20261F"/>
+    <rect x="670" y="678" width="90" height="59" rx="4" fill="#20261F"/>
     <!-- 受电弓投影 -->
-    <rect x="384" y="586" width="72" height="30" rx="4" fill="none" stroke="#141D18" stroke-width="1.8" stroke-dasharray="5 3"/>
-    <line x1="420" y1="586" x2="420" y2="616" stroke="#141D18" stroke-width="1.8"/>
-    <rect x="844" y="586" width="72" height="30" rx="4" fill="none" stroke="#141D18" stroke-width="1.8" stroke-dasharray="5 3"/>
-    <line x1="880" y1="586" x2="880" y2="616" stroke="#141D18" stroke-width="1.8"/>
-    <line x1="456" y1="601" x2="844" y2="601" stroke="#B98A2E" stroke-width="2.2" stroke-dasharray="7 5"/>
-    <!-- 节间连接投影 -->
-    <rect x="548" y="584" width="72" height="34" fill="#1A241E"/>
+    <rect x="384" y="666" width="72" height="68" rx="5" fill="none" stroke="#141D18" stroke-width="1.8" stroke-dasharray="5 3"/>
+    <line x1="420" y1="666" x2="420" y2="734" stroke="#141D18" stroke-width="1.8"/>
+    <rect x="844" y="666" width="72" height="68" rx="5" fill="none" stroke="#141D18" stroke-width="1.8" stroke-dasharray="5 3"/>
+    <line x1="880" y1="666" x2="880" y2="734" stroke="#141D18" stroke-width="1.8"/>
+    <line x1="456" y1="700" x2="844" y2="700" stroke="#B98A2E" stroke-width="2.2" stroke-dasharray="7 5"/>
+    <!-- 节间连接投影（包住两端面） -->
+    <rect x="554" y="661" width="92" height="77" fill="#1A241E"/>
     <g stroke="#3E4A40" stroke-width="1.8">
-      <line x1="562" y1="586" x2="562" y2="616"/><line x1="576" y1="586" x2="576" y2="616"/>
-      <line x1="590" y1="586" x2="590" y2="616"/><line x1="604" y1="586" x2="604" y2="616"/>
+      <line x1="566" y1="666" x2="566" y2="734"/><line x1="579" y1="666" x2="579" y2="734"/>
+      <line x1="592" y1="666" x2="592" y2="734"/><line x1="605" y1="666" x2="605" y2="734"/>
+      <line x1="618" y1="666" x2="618" y2="734"/><line x1="631" y1="666" x2="631" y2="734"/>
     </g>
   </g>
-  <text x="15" y="700" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
+  <text x="15" y="775" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
 
   <!-- ═══════════ 正视图（I 端） ═══════════ -->
-  <g transform="translate(160 0)">
+  <g transform="translate(520.5 346.5) scale(0.615)">
     <line x1="1250" y1="900" x2="1560" y2="900" stroke="#9C948A" stroke-width="4"/>
     <line x1="1250" y1="907" x2="1560" y2="907" stroke="#C4BCB0" stroke-width="2"/>
-    <rect x="1336" y="858" width="30" height="14" rx="4" fill="#33302C"/>
-    <path d="M 1340 861 L 1362 861 L 1356 874 L 1346 874 Z" fill="#44403A"/>
-    <rect x="1330" y="846" width="12" height="18" rx="2" fill="#E3B23C"/>
+    <rect x="1337" y="858" width="30" height="14" rx="4" fill="#33302C"/>
+    <path d="M 1341 861 L 1363 861 L 1357 874 L 1347 874 Z" fill="#44403A"/>
+    <rect x="1346" y="846" width="12" height="18" rx="2" fill="#E3B23C"/>
     <!-- 排障器带警示纹 -->
-    <path d="M 1284 824 L 1416 824 L 1438 888 L 1262 888 Z" fill="#1A241E"/>
-    <g stroke="#E3B23C" stroke-width="4">
-      <line x1="1292" y1="868" x2="1316" y2="842"/>
-      <line x1="1312" y1="872" x2="1338" y2="844"/>
-      <line x1="1384" y1="842" x2="1408" y2="868"/>
-      <line x1="1364" y1="844" x2="1390" y2="872"/>
+    <path d="M 1286 824 L 1418 824 L 1440 888 L 1264 888 Z" fill="#1A241E"/>
+    <g stroke="#E3B23C" stroke-width="5">
+      <line x1="1294" y1="868" x2="1318" y2="842"/>
+      <line x1="1314" y1="872" x2="1340" y2="844"/>
+      <line x1="1386" y1="842" x2="1410" y2="868"/>
+      <line x1="1366" y1="844" x2="1392" y2="872"/>
     </g>
-    <rect x="1278" y="828" width="146" height="13" fill="#20261F"/>
+    <rect x="1279" y="828" width="146" height="13" fill="#20261F"/>
     <!-- 车体端面 -->
-    <rect x="1282" y="640" width="140" height="188" rx="7" fill="url(#qyn5body)" stroke="#141D18" stroke-width="2"/>
+    <rect x="1282" y="640" width="140" height="188" rx="7" fill="url(#qyn5body)" stroke="#141D18" stroke-width="2.6"/>
     <rect x="1282" y="660" width="140" height="16" fill="#DDE6DD"/>
     <rect x="1282" y="752" width="140" height="18" fill="#E3B23C"/>
-    <line x1="1282" y1="676" x2="1422" y2="676" stroke="#141D18" stroke-width="1.3"/>
-    <line x1="1282" y1="752" x2="1422" y2="752" stroke="#141D18" stroke-width="1.3"/>
+    <line x1="1282" y1="676" x2="1422" y2="676" stroke="#141D18" stroke-width="1.8"/>
+    <line x1="1282" y1="752" x2="1422" y2="752" stroke="#141D18" stroke-width="1.8"/>
     <!-- 前窗 -->
-    <rect x="1296" y="684" width="112" height="52" rx="5" fill="#20404E" stroke="#141D18" stroke-width="2"/>
-    <g stroke="#141D18" stroke-width="2.2">
+    <rect x="1296" y="684" width="112" height="52" rx="5" fill="#20404E" stroke="#141D18" stroke-width="2.6"/>
+    <g stroke="#141D18" stroke-width="2.6">
       <line x1="1298" y1="700" x2="1406" y2="700"/><line x1="1298" y1="716" x2="1406" y2="716"/>
     </g>
     <rect x="1290" y="678" width="124" height="7" rx="3" fill="#141D18"/>
-    <!-- 泛光灯组 -->
+    <!-- 泛光灯组（关于中心对称） -->
     <rect x="1288" y="618" width="128" height="10" rx="3" fill="#20261F"/>
-    <rect x="1294" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1"/>
-    <rect x="1316" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1"/>
-    <rect x="1338" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1"/>
-    <rect x="1360" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1"/>
-    <rect x="1382" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1"/>
+    <rect x="1301" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1.4"/>
+    <rect x="1323" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1.4"/>
+    <rect x="1345" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1.4"/>
+    <rect x="1367" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1.4"/>
+    <rect x="1389" y="610" width="14" height="9" rx="2" fill="#FFF3C4" stroke="#141D18" stroke-width="1.4"/>
     <!-- 高位灯 -->
-    <rect x="1290" y="646" width="18" height="11" rx="3" fill="#FFF6DC" stroke="#141D18" stroke-width="1.2"/>
-    <rect x="1396" y="646" width="18" height="11" rx="3" fill="#FFF6DC" stroke="#141D18" stroke-width="1.2"/>
+    <rect x="1290" y="646" width="18" height="11" rx="3" fill="#FFF6DC" stroke="#141D18" stroke-width="1.6"/>
+    <rect x="1396" y="646" width="18" height="11" rx="3" fill="#FFF6DC" stroke="#141D18" stroke-width="1.6"/>
     <!-- 警示灯 -->
-    <circle cx="1352" cy="634" r="7" fill="#E06A2B" stroke="#141D18" stroke-width="1.5"/>
+    <circle cx="1352" cy="634" r="7" fill="#E06A2B" stroke="#141D18" stroke-width="2"/>
     <!-- 徽记与车号牌 -->
-    <circle cx="1332" cy="782" r="13" fill="#E8C36A" stroke="#141D18" stroke-width="2"/>
-    <polygon points="1332,771 1340,782 1332,793 1324,782" fill="#27382E"/>
-    <rect x="1296" y="800" width="72" height="20" rx="3" fill="#101A14"/>
-    <text x="1332" y="815" text-anchor="middle" font-size="13" font-weight="700" fill="#FFF6DC">QYN5-B</text>
+    <circle cx="1352" cy="782" r="13" fill="#E8C36A" stroke="#141D18" stroke-width="2.6"/>
+    <polygon points="1352,771 1360,782 1352,793 1344,782" fill="#27382E"/>
+    <rect x="1316" y="800" width="72" height="20" rx="3" fill="#101A14"/>
+    <text x="1352" y="815" text-anchor="middle" font-size="21" font-weight="700" fill="#FFF6DC">QYN-5</text>
     <!-- 登梯 -->
     <g stroke="#141D18" stroke-width="3" fill="none">
       <path d="M 1272 826 L 1272 714 M 1284 826 L 1284 714 M 1276 804 L 1280 804 M 1276 778 L 1280 778 M 1276 752 L 1280 752"/>

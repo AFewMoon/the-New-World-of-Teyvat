@@ -25,7 +25,7 @@
     <g id="qyn3wheel">
       <circle r="30" fill="#1E1B18"/>
       <circle r="22" fill="#46423E"/>
-      <circle r="14" fill="#5D5852"/>
+      <circle r="14" fill="#3E3A34" stroke="#145238" stroke-width="2"/>
       <circle r="7" fill="#211E1B"/>
       <circle cx="0" cy="-13" r="2.8" fill="#77716A"/>
       <circle cx="11" cy="7" r="2.8" fill="#77716A"/>
@@ -93,8 +93,8 @@
   <circle cx="934" cy="296" r="3.5" fill="#F5DFA6"/>
 
   <!-- 车号与生态星徽 -->
-  <text x="790" y="360" font-size="28" font-weight="700" fill="#FFF6DC">QYN3</text>
-  <text x="884" y="360" font-size="15" fill="#CFEDDD">-C 0003</text>
+  <text x="790" y="360" font-size="28" font-weight="700" fill="#FFF6DC">QYN-3</text>
+  <text x="888" y="360" font-size="15" fill="#CFEDDD">003C</text>
   <circle cx="350" cy="362" r="13" fill="#E8C36A" stroke="#145238" stroke-width="2"/>
   <path d="M 350 352 Q 358 358 350 370 Q 342 358 350 352 Z" fill="#1E8A5E"/>
 
@@ -140,31 +140,25 @@
     <use href="#qyn3wheel" x="238" y="440"/>
     <use href="#qyn3wheel" x="348" y="440"/>
     <use href="#qyn3wheel" x="458" y="440"/>
-    <rect x="214" y="410" width="268" height="15" rx="6" fill="#33302C"/>
+    <rect x="214" y="410" width="288" height="15" rx="6" fill="#33302C"/>
     <rect x="270" y="400" width="28" height="12" rx="2" fill="#55504A"/>
     <rect x="334" y="400" width="28" height="12" rx="2" fill="#55504A"/>
     <rect x="398" y="400" width="28" height="12" rx="2" fill="#55504A"/>
     <circle cx="238" cy="421" r="8" fill="#55504A"/>
     <circle cx="348" cy="421" r="8" fill="#55504A"/>
     <circle cx="458" cy="421" r="8" fill="#55504A"/>
-    <path d="M 262 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
-    <path d="M 326 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
-    <path d="M 436 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
   </g>
   <g>
     <use href="#qyn3wheel" x="785" y="440"/>
     <use href="#qyn3wheel" x="895" y="440"/>
     <use href="#qyn3wheel" x="1005" y="440"/>
-    <rect x="761" y="410" width="268" height="15" rx="6" fill="#33302C"/>
+    <rect x="761" y="410" width="288" height="15" rx="6" fill="#33302C"/>
     <rect x="817" y="400" width="28" height="12" rx="2" fill="#55504A"/>
     <rect x="881" y="400" width="28" height="12" rx="2" fill="#55504A"/>
     <rect x="945" y="400" width="28" height="12" rx="2" fill="#55504A"/>
     <circle cx="785" cy="421" r="8" fill="#55504A"/>
     <circle cx="895" cy="421" r="8" fill="#55504A"/>
     <circle cx="1005" cy="421" r="8" fill="#55504A"/>
-    <path d="M 809 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
-    <path d="M 873 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
-    <path d="M 983 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
   </g>
 
   <!-- 撒砂管 -->
@@ -192,69 +186,69 @@
   <text x="55" y="546" font-size="15" font-weight="600" fill="#6B5A40">侧视图</text>
 
   <!-- ═══════════ 俯视图 ═══════════ -->
-  <g transform="translate(0 90)">
-    <rect x="42" y="620" width="20" height="16" rx="3" fill="#33302C"/>
-    <rect x="1218" y="620" width="20" height="16" rx="3" fill="#33302C"/>
-    <path d="M 74 622 Q 110 614 168 614 L 1112 614 Q 1170 614 1206 622 Q 1170 630 1112 630 L 168 630 Q 110 630 74 622 Z" fill="#F2D489" stroke="#145238" stroke-width="1.5"/>
-    <rect x="150" y="606" width="1000" height="38" fill="#DDB45C" stroke="#145238" stroke-width="1.5"/>
-    <line x1="150" y1="612" x2="1150" y2="612" stroke="#1E8A5E" stroke-width="4"/>
-    <line x1="150" y1="638" x2="1150" y2="638" stroke="#1E8A5E" stroke-width="4"/>
+  <g>
+    <rect x="42" y="717" width="20" height="16" rx="3" fill="#33302C"/>
+    <rect x="1218" y="717" width="20" height="16" rx="3" fill="#33302C"/>
+    <path d="M 74 725 Q 110 701 168 699 L 1112 699 Q 1170 699 1206 725 Q 1170 751 1112 751 L 168 751 Q 110 751 74 725 Z" fill="#F2D489" stroke="#145238" stroke-width="1.5"/>
+    <rect x="150" y="669" width="1000" height="112" fill="#DDB45C" stroke="#145238" stroke-width="1.5"/>
+    <line x1="150" y1="682" x2="1150" y2="682" stroke="#1E8A5E" stroke-width="4"/>
+    <line x1="150" y1="768" x2="1150" y2="768" stroke="#1E8A5E" stroke-width="4"/>
     <!-- 能量转换器散热栅 -->
-    <rect x="330" y="612" width="120" height="26" rx="3" fill="#145238"/>
-    <rect x="850" y="612" width="120" height="26" rx="3" fill="#145238"/>
+    <rect x="330" y="696" width="120" height="58" rx="4" fill="#145238"/>
+    <rect x="850" y="696" width="120" height="58" rx="4" fill="#145238"/>
     <!-- 主断路器 -->
-    <rect x="594" y="616" width="24" height="18" rx="3" fill="#3E3A34"/>
+    <rect x="594" y="706" width="24" height="38" rx="3" fill="#3E3A34"/>
     <!-- 受电弓投影 -->
-    <rect x="414" y="610" width="72" height="30" rx="5" fill="none" stroke="#145238" stroke-width="2" stroke-dasharray="5 3"/>
-    <line x1="450" y1="610" x2="450" y2="640" stroke="#145238" stroke-width="2"/>
-    <rect x="884" y="610" width="72" height="30" rx="5" fill="none" stroke="#145238" stroke-width="2" stroke-dasharray="5 3"/>
-    <line x1="920" y1="610" x2="920" y2="640" stroke="#145238" stroke-width="2"/>
-    <line x1="486" y1="625" x2="884" y2="625" stroke="#B98A2E" stroke-width="2.5" stroke-dasharray="8 5"/>
+    <rect x="414" y="681" width="72" height="88" rx="5" fill="none" stroke="#145238" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="450" y1="681" x2="450" y2="769" stroke="#145238" stroke-width="2"/>
+    <rect x="884" y="681" width="72" height="88" rx="5" fill="none" stroke="#145238" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="920" y1="681" x2="920" y2="769" stroke="#145238" stroke-width="2"/>
+    <line x1="486" y1="725" x2="884" y2="725" stroke="#B98A2E" stroke-width="2.5" stroke-dasharray="8 5"/>
   </g>
-  <text x="55" y="752" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
+  <text x="55" y="815" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
 
   <!-- ═══════════ 正视图（I 端） ═══════════ -->
-  <g>
+  <g transform="translate(129.7 87.3) scale(0.903)">
     <line x1="1250" y1="900" x2="1560" y2="900" stroke="#9C948A" stroke-width="4"/>
     <line x1="1250" y1="907" x2="1560" y2="907" stroke="#C4BCB0" stroke-width="2"/>
-    <rect x="1332" y="862" width="32" height="16" rx="5" fill="#33302C"/>
-    <path d="M 1336 866 L 1360 866 L 1354 880 L 1342 880 Z" fill="#44403A"/>
+    <rect x="1321" y="862" width="32" height="16" rx="5" fill="#33302C"/>
+    <path d="M 1325 866 L 1349 866 L 1343 880 L 1331 880 Z" fill="#44403A"/>
     <!-- 圆润排障器 -->
-    <path d="M 1280 830 Q 1330 822 1420 830 L 1442 892 Q 1370 904 1266 892 Z" fill="#176B47"/>
-    <path d="M 1296 838 Q 1340 832 1404 838 L 1416 872 Q 1360 878 1288 872 Z" fill="none" stroke="#0F3524" stroke-width="2"/>
-    <!-- 车体端面 -->
-    <path d="M 1276 838 L 1276 716 Q 1278 672 1310 650 Q 1342 632 1380 632 L 1398 632 L 1398 838 Z" fill="url(#qyn3gold)" stroke="#145238" stroke-width="2"/>
+    <path d="M 1263 830 Q 1313 822 1403 830 L 1425 892 Q 1353 904 1249 892 Z" fill="#176B47"/>
+    <path d="M 1281 838 Q 1325 832 1389 838 L 1401 872 Q 1345 878 1273 872 Z" fill="none" stroke="#0F3524" stroke-width="2"/>
+    <!-- 车体端面（对称拱） -->
+    <path d="M 1276 838 L 1276 716 Q 1278 672 1306 652 Q 1337 632 1368 652 Q 1396 672 1398 716 L 1398 838 Z" fill="url(#qyn3gold)" stroke="#145238" stroke-width="2"/>
     <path d="M 1276 760 L 1398 760 L 1398 800 L 1276 800 Z" fill="url(#qyn3green)"/>
     <path d="M 1276 800 L 1398 800 L 1398 838 L 1276 838 Z" fill="#145238"/>
     <line x1="1276" y1="760" x2="1398" y2="760" stroke="#145238" stroke-width="1.5"/>
-    <!-- 曲面挡风玻璃 -->
-    <path d="M 1290 730 Q 1296 692 1326 674 Q 1354 660 1384 658 L 1384 730 Z" fill="#20404E" stroke="#145238" stroke-width="2"/>
-    <line x1="1302" y1="712" x2="1322" y2="684" stroke="#6FA0B4" stroke-width="3.5" opacity="0.85"/>
-    <rect x="1284" y="726" width="118" height="8" rx="3" fill="#145238"/>
+    <!-- 曲面挡风玻璃（对称） -->
+    <path d="M 1295 730 Q 1302 694 1325 679 Q 1337 673 1349 679 Q 1372 694 1379 730 Z" fill="#20404E" stroke="#145238" stroke-width="2"/>
+    <line x1="1308" y1="712" x2="1330" y2="684" stroke="#6FA0B4" stroke-width="3.5" opacity="0.85"/>
+    <rect x="1278" y="726" width="118" height="8" rx="3" fill="#145238"/>
     <!-- 高位灯与标志灯 -->
-    <rect x="1282" y="700" width="18" height="13" rx="4" fill="#FFF6DC" stroke="#145238" stroke-width="1.5"/>
-    <rect x="1386" y="700" width="18" height="13" rx="4" fill="#FFF6DC" stroke="#145238" stroke-width="1.5"/>
-    <rect x="1304" y="740" width="12" height="9" rx="2" fill="#2E7D52"/>
-    <rect x="1364" y="740" width="12" height="9" rx="2" fill="#2E7D52"/>
+    <rect x="1276" y="700" width="18" height="13" rx="4" fill="#FFF6DC" stroke="#145238" stroke-width="1.5"/>
+    <rect x="1380" y="700" width="18" height="13" rx="4" fill="#FFF6DC" stroke="#145238" stroke-width="1.5"/>
+    <rect x="1301" y="740" width="12" height="9" rx="2" fill="#2E7D52"/>
+    <rect x="1361" y="740" width="12" height="9" rx="2" fill="#2E7D52"/>
     <!-- 生态星徽与车号牌 -->
-    <circle cx="1330" cy="780" r="14" fill="#E8C36A" stroke="#145238" stroke-width="2"/>
-    <path d="M 1330 768 Q 1340 776 1330 791 Q 1320 776 1330 768 Z" fill="#1E8A5E"/>
-    <rect x="1294" y="800" width="72" height="20" rx="3" fill="#0F3524"/>
-    <text x="1330" y="815" text-anchor="middle" font-size="13" font-weight="700" fill="#FFF6DC">QYN3-C</text>
+    <circle cx="1337" cy="780" r="14" fill="#E8C36A" stroke="#145238" stroke-width="2"/>
+    <path d="M 1337 768 Q 1347 776 1337 791 Q 1327 776 1337 768 Z" fill="#1E8A5E"/>
+    <rect x="1301" y="800" width="72" height="20" rx="3" fill="#0F3524"/>
+    <text x="1337" y="815" text-anchor="middle" font-size="13" font-weight="700" fill="#FFF6DC">QYN-3</text>
     <!-- 登梯 -->
     <g stroke="#145238" stroke-width="3.5" fill="none">
       <path d="M 1266 836 L 1266 722 M 1278 836 L 1278 722 M 1270 814 L 1274 814 M 1270 788 L 1274 788 M 1270 762 L 1274 762"/>
       <path d="M 1408 836 L 1408 722 M 1396 836 L 1396 722 M 1400 814 L 1404 814 M 1400 788 L 1404 788 M 1400 762 L 1404 762"/>
     </g>
-    <rect x="1292" y="886" width="8" height="10" fill="#33302C"/>
-    <rect x="1400" y="886" width="8" height="10" fill="#33302C"/>
+    <rect x="1279" y="886" width="8" height="10" fill="#33302C"/>
+    <rect x="1387" y="886" width="8" height="10" fill="#33302C"/>
     <!-- 车顶受电弓剪影 -->
     <g stroke="#145238" stroke-width="3" fill="none">
-      <line x1="1306" y1="632" x2="1306" y2="620"/>
-      <line x1="1290" y1="620" x2="1322" y2="620"/>
-      <path d="M 1300 620 L 1288 600 M 1312 620 L 1324 600"/>
+      <line x1="1337" y1="632" x2="1337" y2="620"/>
+      <line x1="1321" y1="620" x2="1353" y2="620"/>
+      <path d="M 1331 620 L 1319 600 M 1343 620 L 1355 600"/>
     </g>
-    <rect x="1282" y="594" width="48" height="6" rx="3" fill="#145238"/>
+    <rect x="1313" y="594" width="48" height="6" rx="3" fill="#145238"/>
   </g>
   <text x="1250" y="946" font-size="15" font-weight="600" fill="#6B5A40">正视图（I 端）</text>
 

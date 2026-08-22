@@ -20,13 +20,11 @@
     <g id="wheel">
       <circle r="29" fill="#1E1B18"/>
       <circle r="21" fill="#4A4642"/>
+      <circle r="14" fill="#3E3A34" stroke="#241B12" stroke-width="2"/>
       <circle r="8" fill="#211E1B"/>
       <circle cx="0" cy="-13" r="3.2" fill="#6E6963"/>
       <circle cx="12" cy="7" r="3.2" fill="#6E6963"/>
       <circle cx="-12" cy="7" r="3.2" fill="#6E6963"/>
-    </g>
-    <g id="railpost" stroke="#2E2822" stroke-width="3">
-      <line x1="0" y1="0" x2="0" y2="52"/>
     </g>
   </defs>
 
@@ -134,8 +132,8 @@
   <circle cx="1000" cy="328" r="17" fill="#C9A227" stroke="#241B12" stroke-width="2"/>
   <polygon points="1000,315 1009,328 1000,341 991,328" fill="#F3DD9A"/>
   <!-- 车号与路徽 -->
-  <text x="770" y="380" font-size="26" font-weight="700" fill="#EFE3C2">QYD1</text>
-  <text x="836" y="380" font-size="13" fill="#D8C79A">0027</text>
+  <text x="770" y="380" font-size="26" font-weight="700" fill="#EFE3C2">QYD-1</text>
+  <text x="852" y="380" font-size="13" fill="#D8C79A">027</text>
 
   <!-- 受电弓（电气室顶） -->
   <g stroke="#26221E" stroke-width="4" fill="none">
@@ -168,8 +166,6 @@
     <use href="#wheel" x="292" y="441"/>
     <use href="#wheel" x="428" y="441"/>
     <rect x="270" y="414" width="180" height="16" rx="6" fill="#33302C"/>
-    <path d="M 306 428 a 22 22 0 0 0 44 0 z" fill="#3E3A34"/>
-    <path d="M 398 428 a 22 22 0 0 0 44 0 z" fill="#3E3A34"/>
     <circle cx="292" cy="420" r="9" fill="#55504A"/>
     <circle cx="428" cy="420" r="9" fill="#55504A"/>
   </g>
@@ -178,8 +174,6 @@
     <use href="#wheel" x="886" y="441"/>
     <use href="#wheel" x="1022" y="441"/>
     <rect x="864" y="414" width="180" height="16" rx="6" fill="#33302C"/>
-    <path d="M 900 428 a 22 22 0 0 0 44 0 z" fill="#3E3A34"/>
-    <path d="M 992 428 a 22 22 0 0 0 44 0 z" fill="#3E3A34"/>
     <circle cx="886" cy="420" r="9" fill="#55504A"/>
     <circle cx="1022" cy="420" r="9" fill="#55504A"/>
   </g>
@@ -197,8 +191,8 @@
 
   <!-- 尺寸标注：全长 / 高度 -->
   <g stroke="#A08A62" stroke-width="1.5" fill="none">
-    <line x1="90" y1="500" x2="1178" y2="500"/>
-    <line x1="90" y1="492" x2="90" y2="508"/>
+    <line x1="72" y1="500" x2="1178" y2="500"/>
+    <line x1="72" y1="492" x2="72" y2="508"/>
     <line x1="1178" y1="492" x2="1178" y2="508"/>
   </g>
   <text x="634" y="522" text-anchor="middle" font-size="13" fill="#8A7658">全长 19.0 m（车钩间）</text>
@@ -216,33 +210,33 @@
     <rect x="82" y="716" width="18" height="16" rx="3" fill="#33302C"/>
     <rect x="1166" y="716" width="18" height="16" rx="3" fill="#33302C"/>
     <!-- 底架轮廓 -->
-    <rect x="100" y="700" width="1066" height="48" fill="#3A2E22"/>
+    <rect x="100" y="649" width="1066" height="150" fill="#3A2E22"/>
     <!-- 走台板（两侧）带踏纹 -->
-    <rect x="100" y="700" width="1066" height="11" fill="#57402C"/>
-    <rect x="100" y="737" width="1066" height="11" fill="#57402C"/>
+    <rect x="100" y="649" width="1066" height="26" fill="#57402C"/>
+    <rect x="100" y="773" width="1066" height="26" fill="#57402C"/>
     <g stroke="#6B543A" stroke-width="1">
-      <line x1="112" y1="700" x2="112" y2="711"/><line x1="124" y1="700" x2="124" y2="711"/><line x1="136" y1="700" x2="136" y2="711"/><line x1="148" y1="700" x2="148" y2="711"/><line x1="160" y1="700" x2="160" y2="711"/><line x1="172" y1="700" x2="172" y2="711"/><line x1="184" y1="700" x2="184" y2="711"/>
-      <line x1="1064" y1="700" x2="1064" y2="711"/><line x1="1076" y1="700" x2="1076" y2="711"/><line x1="1088" y1="700" x2="1088" y2="711"/><line x1="1100" y1="700" x2="1100" y2="711"/><line x1="1112" y1="700" x2="1112" y2="711"/><line x1="1124" y1="700" x2="1124" y2="711"/><line x1="1136" y1="700" x2="1136" y2="711"/><line x1="1148" y1="700" x2="1148" y2="711"/>
-      <line x1="112" y1="737" x2="112" y2="748"/><line x1="124" y1="737" x2="124" y2="748"/><line x1="136" y1="737" x2="136" y2="748"/><line x1="148" y1="737" x2="148" y2="748"/><line x1="160" y1="737" x2="160" y2="748"/><line x1="172" y1="737" x2="172" y2="748"/><line x1="184" y1="737" x2="184" y2="748"/>
-      <line x1="1064" y1="737" x2="1064" y2="748"/><line x1="1076" y1="737" x2="1076" y2="748"/><line x1="1088" y1="737" x2="1088" y2="748"/><line x1="1100" y1="737" x2="1100" y2="748"/><line x1="1112" y1="737" x2="1112" y2="748"/><line x1="1124" y1="737" x2="1124" y2="748"/><line x1="1136" y1="737" x2="1136" y2="748"/><line x1="1148" y1="737" x2="1148" y2="748"/>
+      <line x1="112" y1="649" x2="112" y2="663"/><line x1="124" y1="649" x2="124" y2="663"/><line x1="136" y1="649" x2="136" y2="663"/><line x1="148" y1="649" x2="148" y2="663"/><line x1="160" y1="649" x2="160" y2="663"/><line x1="172" y1="649" x2="172" y2="663"/><line x1="184" y1="649" x2="184" y2="663"/>
+      <line x1="1064" y1="649" x2="1064" y2="663"/><line x1="1076" y1="649" x2="1076" y2="663"/><line x1="1088" y1="649" x2="1088" y2="663"/><line x1="1100" y1="649" x2="1100" y2="663"/><line x1="1112" y1="649" x2="1112" y2="663"/><line x1="1124" y1="649" x2="1124" y2="663"/><line x1="1136" y1="649" x2="1136" y2="663"/><line x1="1148" y1="649" x2="1148" y2="663"/>
+      <line x1="112" y1="785" x2="112" y2="799"/><line x1="124" y1="785" x2="124" y2="799"/><line x1="136" y1="785" x2="136" y2="799"/><line x1="148" y1="785" x2="148" y2="799"/><line x1="160" y1="785" x2="160" y2="799"/><line x1="172" y1="785" x2="172" y2="799"/><line x1="184" y1="785" x2="184" y2="799"/>
+      <line x1="1064" y1="785" x2="1064" y2="799"/><line x1="1076" y1="785" x2="1076" y2="799"/><line x1="1088" y1="785" x2="1088" y2="799"/><line x1="1100" y1="785" x2="1100" y2="799"/><line x1="1112" y1="785" x2="1112" y2="799"/><line x1="1124" y1="785" x2="1124" y2="799"/><line x1="1136" y1="785" x2="1136" y2="799"/><line x1="1148" y1="785" x2="1148" y2="799"/>
     </g>
     <!-- 前机罩顶 -->
-    <rect x="200" y="712" width="360" height="24" rx="6" fill="#C9A227"/>
-    <rect x="252" y="716" width="110" height="16" rx="3" fill="#8A6A28"/>
-    <rect x="392" y="718" width="20" height="12" rx="3" fill="#6E5B3A"/>
+    <rect x="200" y="684" width="360" height="80" rx="10" fill="#C9A227"/>
+    <rect x="252" y="700" width="110" height="48" rx="5" fill="#8A6A28"/>
+    <rect x="392" y="710" width="20" height="28" rx="4" fill="#6E5B3A"/>
     <!-- 司机室顶 -->
-    <rect x="560" y="708" width="154" height="32" rx="8" fill="#6B4F35"/>
-    <rect x="590" y="716" width="94" height="16" rx="4" fill="#2C3A44"/>
-    <rect x="596" y="704" width="34" height="6" rx="2" fill="#3E3A34"/>
+    <rect x="560" y="671" width="154" height="106" rx="10" fill="#6B4F35"/>
+    <rect x="590" y="694" width="94" height="60" rx="6" fill="#2C3A44"/>
+    <rect x="596" y="664" width="34" height="7" rx="2" fill="#3E3A34"/>
     <!-- 后机罩顶 -->
-    <rect x="714" y="712" width="360" height="24" rx="6" fill="#C9A227"/>
-    <rect x="744" y="716" width="120" height="16" rx="3" fill="#8A6A28"/>
-    <rect x="880" y="718" width="52" height="12" rx="3" fill="#6E5B3A"/>
+    <rect x="714" y="684" width="360" height="80" rx="10" fill="#C9A227"/>
+    <rect x="744" y="700" width="120" height="48" rx="5" fill="#8A6A28"/>
+    <rect x="880" y="710" width="52" height="28" rx="4" fill="#6E5B3A"/>
     <!-- 受电弓投影 -->
-    <rect x="816" y="714" width="84" height="20" rx="4" fill="none" stroke="#26221E" stroke-width="2" stroke-dasharray="5 3"/>
-    <line x1="858" y1="714" x2="858" y2="734" stroke="#26221E" stroke-width="2"/>
+    <rect x="816" y="689" width="84" height="70" rx="6" fill="none" stroke="#26221E" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="858" y1="689" x2="858" y2="759" stroke="#26221E" stroke-width="2"/>
   </g>
-  <text x="90" y="786" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
+  <text x="90" y="830" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
 
   <!-- ═══════════ 正视图（I 端） ═══════════ -->
   <g>
@@ -275,7 +269,7 @@
     <circle cx="1343" cy="772" r="15" fill="#C9A227" stroke="#241B12" stroke-width="2"/>
     <polygon points="1343,758 1353,772 1343,786 1333,772" fill="#F7EBCC"/>
     <rect x="1306" y="794" width="74" height="22" rx="3" fill="#171512"/>
-    <text x="1343" y="810" text-anchor="middle" font-size="14" font-weight="700" fill="#EFE3C2">QYD1</text>
+    <text x="1343" y="810" text-anchor="middle" font-size="14" font-weight="700" fill="#EFE3C2">QYD-1</text>
     <!-- 登车梯 -->
     <g stroke="#2E2822" stroke-width="3.5" fill="none">
       <path d="M 1256 854 L 1256 700 M 1270 854 L 1270 700 M 1260 830 L 1266 830 M 1260 800 L 1266 800 M 1260 770 L 1266 770 M 1260 740 L 1266 740"/>
