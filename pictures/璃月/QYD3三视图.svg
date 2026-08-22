@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1150" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="q3body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5C4632"/>
+      <stop offset="1" stop-color="#43321F"/>
+    </linearGradient>
+    <pattern id="q3grille" width="9" height="9" patternUnits="userSpaceOnUse">
+      <rect width="9" height="9" fill="#33281D"/>
+      <line x1="0" y1="2.5" x2="9" y2="2.5" stroke="#8A6E4E" stroke-width="1.6"/>
+      <line x1="0" y1="6.5" x2="9" y2="6.5" stroke="#8A6E4E" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="q3louver" width="13" height="13" patternUnits="userSpaceOnUse">
+      <rect width="13" height="13" fill="#2E241A"/>
+      <line x1="0" y1="4.5" x2="13" y2="4.5" stroke="#9A7C56" stroke-width="2.6"/>
+    </pattern>
+    <g id="q3wheel">
+      <circle r="31" fill="#1E1B18"/>
+      <circle r="23" fill="#4A4642"/>
+      <circle r="15" fill="#615C56"/>
+      <circle r="8" fill="#211E1B"/>
+      <circle cx="0" cy="-13" r="3" fill="#77716A"/>
+      <circle cx="11" cy="7" r="3" fill="#77716A"/>
+      <circle cx="-11" cy="7" r="3" fill="#77716A"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="1150" fill="#FBF8F2"/>
+
+  <text x="800" y="58" text-anchor="middle" font-size="38" font-weight="700" fill="#3B2F23">QYD 3 型山区重载电力机车</text>
+  <text x="800" y="92" text-anchor="middle" font-size="17" fill="#8A7658">千岩·电力系列 · 璃月机车集团　|　大功率干线货运 · 山区重载特快 · 琉璃府矿区万吨大列（-C 版）</text>
+  <line x1="480" y1="106" x2="1120" y2="106" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="800,100 810,106 800,112 790,106" fill="#C9A227"/>
+
+  <!-- ═══════════ 侧视图 ═══════════ -->
+  <line x1="40" y1="470" x2="1230" y2="470" stroke="#9C948A" stroke-width="4"/>
+  <line x1="40" y1="477" x2="1230" y2="477" stroke="#C4BCB0" stroke-width="2"/>
+
+  <!-- 车钩 I 端 -->
+  <rect x="42" y="432" width="28" height="14" rx="4" fill="#33302C"/>
+  <path d="M 70 434 L 100 434 L 94 448 L 76 448 Z" fill="#44403A"/>
+  <!-- 排障器 I 端（加强型） -->
+  <path d="M 82 396 L 148 396 L 170 466 L 102 466 Z" fill="#2B2620"/>
+  <line x1="104" y1="452" x2="156" y2="452" stroke="#C9A227" stroke-width="4"/>
+  <line x1="98" y1="460" x2="162" y2="460" stroke="#C9A227" stroke-width="4"/>
+
+  <!-- 底架 -->
+  <rect x="96" y="412" width="1090" height="20" fill="#26221E"/>
+  <!-- 主风缸 ×2 与蓄电池箱 -->
+  <rect x="380" y="392" width="66" height="20" rx="10" fill="#3A342C"/>
+  <rect x="460" y="392" width="66" height="20" rx="10" fill="#3A342C"/>
+  <rect x="700" y="394" width="58" height="18" rx="3" fill="#3A342C"/>
+
+  <!-- 车体主轮廓 -->
+  <path d="M 108 402 L 108 268 Q 108 250 126 246 Q 168 236 214 232 L 1068 232 Q 1114 236 1156 246 Q 1174 250 1174 268 L 1174 402 Z"
+        fill="url(#q3body)" stroke="#241B12" stroke-width="2"/>
+  <!-- 上沿浅色带 -->
+  <path d="M 108 268 L 1174 268 L 1174 292 L 108 292 Z" fill="#EDE3CD"/>
+  <!-- 金色腰带 -->
+  <path d="M 108 352 L 1174 352 L 1174 376 L 108 376 Z" fill="#C9A227"/>
+  <line x1="108" y1="292" x2="1174" y2="292" stroke="#241B12" stroke-width="1.5"/>
+  <line x1="108" y1="352" x2="1174" y2="352" stroke="#241B12" stroke-width="1.5"/>
+  <line x1="108" y1="376" x2="1174" y2="376" stroke="#241B12" stroke-width="1.5"/>
+
+  <!-- I 端司机室 -->
+  <path d="M 118 330 Q 124 282 166 254 Q 200 238 240 234 L 262 234 L 262 402 L 118 402 Z" fill="#57422E"/>
+  <path d="M 132 310 Q 142 272 178 252 L 254 242 L 254 308 Q 186 312 132 310 Z" fill="#2C3A44" stroke="#241B12" stroke-width="2"/>
+  <line x1="152" y1="296" x2="176" y2="260" stroke="#5E7684" stroke-width="3" opacity="0.85"/>
+  <rect x="124" y="318" width="26" height="13" rx="4" fill="#F5E9C8" stroke="#241B12" stroke-width="1.5"/>
+  <rect x="130" y="338" width="14" height="9" rx="3" fill="#B03A2E"/>
+  <!-- 前窗护栅 -->
+  <g stroke="#171512" stroke-width="2">
+    <line x1="140" y1="278" x2="250" y2="270"/>
+    <line x1="146" y1="290" x2="252" y2="284"/>
+  </g>
+
+  <!-- II 端司机室 -->
+  <path d="M 1164 330 Q 1158 282 1116 254 Q 1082 238 1042 234 L 1020 234 L 1020 402 L 1164 402 Z" fill="#57422E"/>
+  <path d="M 1150 310 Q 1140 272 1104 252 L 1028 242 L 1028 308 Q 1096 312 1150 310 Z" fill="#2C3A44" stroke="#241B12" stroke-width="2"/>
+  <line x1="1130" y1="296" x2="1106" y2="260" stroke="#5E7684" stroke-width="3" opacity="0.85"/>
+  <rect x="1132" y="318" width="26" height="13" rx="4" fill="#F5E9C8" stroke="#241B12" stroke-width="1.5"/>
+  <rect x="1138" y="338" width="14" height="9" rx="3" fill="#B03A2E"/>
+  <g stroke="#171512" stroke-width="2">
+    <line x1="1142" y1="278" x2="1032" y2="270"/>
+    <line x1="1136" y1="290" x2="1030" y2="284"/>
+  </g>
+
+  <!-- 机械室侧墙：连续百叶带 -->
+  <rect x="280" y="300" width="180" height="40" fill="url(#q3louver)" stroke="#241B12" stroke-width="2"/>
+  <rect x="474" y="300" width="180" height="40" fill="url(#q3louver)" stroke="#241B12" stroke-width="2"/>
+  <rect x="668" y="300" width="180" height="40" fill="url(#q3louver)" stroke="#241B12" stroke-width="2"/>
+  <!-- 检修门 -->
+  <g stroke="#241B12" stroke-width="2" fill="#4E3B28">
+    <rect x="300" y="222" width="0" height="0"/>
+    <rect x="286" y="228" width="54" height="64" rx="3"/>
+    <rect x="480" y="228" width="54" height="64" rx="3"/>
+    <rect x="674" y="228" width="54" height="64" rx="3"/>
+  </g>
+  <circle cx="333" cy="262" r="3.5" fill="#C9A227"/>
+  <circle cx="527" cy="262" r="3.5" fill="#C9A227"/>
+  <circle cx="721" cy="262" r="3.5" fill="#C9A227"/>
+  <!-- 变压器低位散热栅 -->
+  <rect x="880" y="382" width="110" height="18" fill="url(#q3grille)" stroke="#241B12" stroke-width="1.5"/>
+  <rect x="360" y="382" width="90" height="18" fill="url(#q3grille)" stroke="#241B12" stroke-width="1.5"/>
+
+  <!-- 车号与路徽 -->
+  <text x="600 " y="340" font-size="30" font-weight="700" fill="#EFE3C2">QYD3</text>
+  <text x="694" y="340" font-size="15" fill="#D8C79A">-A 0213</text>
+
+  <!-- 车顶设备：电阻制动柜百叶 ×2 -->
+  <rect x="300" y="212" width="130" height="20" rx="4" fill="#3A342C"/>
+  <g stroke="#8A6E4E" stroke-width="2">
+    <line x1="310" y1="218" x2="420" y2="218"/><line x1="310" y1="225" x2="420" y2="225"/>
+  </g>
+  <rect x="850" y="212" width="130" height="20" rx="4" fill="#3A342C"/>
+  <g stroke="#8A6E4E" stroke-width="2">
+    <line x1="860" y1="218" x2="970" y2="218"/><line x1="860" y1="225" x2="970" y2="225"/>
+  </g>
+  <!-- 主断路器 / 避雷器 -->
+  <rect x="592" y="202" width="20" height="30" rx="3" fill="#3E3A34"/>
+  <ellipse cx="602" cy="197" rx="10" ry="5.5" fill="#8A8578"/>
+  <rect x="626" y="208" width="11" height="24" rx="2" fill="#4A4642"/>
+  <!-- 受电弓（前位折叠） -->
+  <g stroke="#26221E" stroke-width="4" fill="none">
+    <line x1="450" y1="232" x2="450" y2="224"/>
+    <path d="M 426 224 L 474 224 M 446 224 L 432 202 M 454 224 L 468 202"/>
+    <line x1="428" y1="202" x2="472" y2="202"/>
+  </g>
+  <rect x="420" y="196" width="52" height="7" rx="3" fill="#3E3A34"/>
+  <!-- 受电弓（后位升起） -->
+  <g stroke="#26221E" stroke-width="4" fill="none">
+    <line x1="920" y1="232" x2="920" y2="222"/>
+    <line x1="894" y1="222" x2="946" y2="222"/>
+    <line x1="914" y1="222" x2="882" y2="168"/>
+    <line x1="926" y1="222" x2="958" y2="168"/>
+    <line x1="882" y1="168" x2="950" y2="138"/>
+    <line x1="958" y1="168" x2="892" y2="138"/>
+    <line x1="888" y1="142" x2="954" y2="142" stroke-width="2"/>
+    <line x1="880" y1="134" x2="962" y2="134" stroke-width="6"/>
+    <line x1="921" y1="220" x2="954" y2="170" stroke-width="2.5"/>
+  </g>
+  <rect x="906" y="218" width="28" height="8" rx="3" fill="#3E3A34"/>
+  <ellipse cx="896" cy="166" rx="6" ry="4" fill="#8A8578"/>
+  <ellipse cx="944" cy="166" rx="6" ry="4" fill="#8A8578"/>
+
+  <!-- 登车梯 -->
+  <g stroke="#2E2822" stroke-width="3.5" fill="none">
+    <path d="M 288 400 L 288 342 M 304 400 L 304 342 M 292 386 L 300 386 M 292 368 L 300 368 M 292 350 L 300 350"/>
+    <path d="M 994 400 L 994 342 M 1010 400 L 1010 342 M 998 386 L 1006 386 M 998 368 L 1006 368 M 998 350 L 1006 350"/>
+  </g>
+  <rect x="276" y="338" width="40" height="6" rx="3" fill="#2E2822"/>
+  <rect x="982" y="338" width="40" height="6" rx="3" fill="#2E2822"/>
+
+  <!-- 转向架 Co-Co（三轴） -->
+  <g>
+    <use href="#q3wheel" x="220" y="439"/>
+    <use href="#q3wheel" x="340" y="439"/>
+    <use href="#q3wheel" x="460" y="439"/>
+    <rect x="196" y="408" width="288" height="16" rx="6" fill="#33302C"/>
+    <!-- 二系橡胶堆 -->
+    <rect x="256" y="398" width="30" height="12" rx="2" fill="#55504A"/>
+    <rect x="325" y="398" width="30" height="12" rx="2" fill="#55504A"/>
+    <rect x="394" y="398" width="30" height="12" rx="2" fill="#55504A"/>
+    <!-- 一系轴箱弹簧 -->
+    <circle cx="220" cy="420" r="8" fill="#55504A"/>
+    <circle cx="340" cy="420" r="8" fill="#55504A"/>
+    <circle cx="460" cy="420" r="8" fill="#55504A"/>
+    <!-- 牵引电机 -->
+    <path d="M 244 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
+    <path d="M 316 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
+    <path d="M 436 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
+  </g>
+  <g>
+    <use href="#q3wheel" x="810" y="439"/>
+    <use href="#q3wheel" x="930" y="439"/>
+    <use href="#q3wheel" x="1050" y="439"/>
+    <rect x="786" y="408" width="288" height="16" rx="6" fill="#33302C"/>
+    <rect x="846" y="398" width="30" height="12" rx="2" fill="#55504A"/>
+    <rect x="915" y="398" width="30" height="12" rx="2" fill="#55504A"/>
+    <rect x="984" y="398" width="30" height="12" rx="2" fill="#55504A"/>
+    <circle cx="810" cy="420" r="8" fill="#55504A"/>
+    <circle cx="930" cy="420" r="8" fill="#55504A"/>
+    <circle cx="1050" cy="420" r="8" fill="#55504A"/>
+    <path d="M 834 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
+    <path d="M 906 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
+    <path d="M 1026 452 a 24 24 0 0 0 48 0 z" fill="#3E3A34"/>
+  </g>
+
+  <!-- 撒砂管（粗管） -->
+  <line x1="198" y1="432" x2="182" y2="466" stroke="#33302C" stroke-width="5"/>
+  <line x1="482" y1="432" x2="498" y2="466" stroke="#33302C" stroke-width="5"/>
+  <line x1="788" y1="432" x2="772" y2="466" stroke="#33302C" stroke-width="5"/>
+  <line x1="1072" y1="432" x2="1088" y2="466" stroke="#33302C" stroke-width="5"/>
+
+  <!-- 排障器与车钩 II 端 -->
+  <path d="M 1200 396 L 1134 396 L 1112 466 L 1180 466 Z" fill="#2B2620"/>
+  <line x1="1126" y1="452" x2="1178" y2="452" stroke="#C9A227" stroke-width="4"/>
+  <line x1="1120" y1="460" x2="1184" y2="460" stroke="#C9A227" stroke-width="4"/>
+  <rect x="1212" y="432" width="28" height="14" rx="4" fill="#33302C"/>
+  <path d="M 1212 434 L 1182 434 L 1188 448 L 1206 448 Z" fill="#44403A"/>
+
+  <!-- 尺寸标注 -->
+  <g stroke="#A08A62" stroke-width="1.5" fill="none">
+    <line x1="55" y1="500" x2="1226" y2="500"/>
+    <line x1="55" y1="492" x2="55" y2="508"/><line x1="1226" y1="492" x2="1226" y2="508"/>
+  </g>
+  <text x="640" y="522" text-anchor="middle" font-size="13" fill="#8A7658">全长 23.0 m（车钩间）</text>
+  <g stroke="#A08A62" stroke-width="1.5" fill="none">
+    <line x1="1258" y1="230" x2="1258" y2="470"/>
+    <line x1="1250" y1="230" x2="1266" y2="230"/><line x1="1250" y1="470" x2="1266" y2="470"/>
+  </g>
+  <text x="1272" y="352" font-size="13" fill="#8A7658">高 4.80 m</text>
+  <text x="55" y="546" font-size="15" font-weight="600" fill="#6B5A40">侧视图</text>
+
+  <!-- ═══════════ 俯视图 ═══════════ -->
+  <g>
+    <rect x="40" y="700" width="20" height="16" rx="3" fill="#33302C"/>
+    <rect x="1222" y="700" width="20" height="16" rx="3" fill="#33302C"/>
+    <rect x="72" y="692" width="1138" height="34" rx="6" fill="#4E3B28" stroke="#241B12" stroke-width="1.5"/>
+    <line x1="72" y1="700" x2="1210" y2="700" stroke="#EDE3CD" stroke-width="3"/>
+    <line x1="72" y1="718" x2="1210" y2="718" stroke="#EDE3CD" stroke-width="3"/>
+    <!-- 司机室顶 -->
+    <rect x="96" y="696" width="150" height="26" rx="6" fill="#57422E"/>
+    <rect x="1036" y="696" width="150" height="26" rx="6" fill="#57422E"/>
+    <!-- 风笛座 -->
+    <rect x="140" y="692" width="34" height="6" rx="2" fill="#3E3A34"/>
+    <rect x="1108" y="692" width="34" height="6" rx="2" fill="#3E3A34"/>
+    <!-- 电阻制动柜 -->
+    <rect x="300" y="698" width="130" height="22" rx="3" fill="#3A342C"/>
+    <rect x="850" y="698" width="130" height="22" rx="3" fill="#3A342C"/>
+    <!-- 主断路器 -->
+    <rect x="588" y="700" width="24" height="18" rx="3" fill="#3E3A34"/>
+    <!-- 受电弓投影 -->
+    <rect x="414" y="696" width="72" height="26" rx="5" fill="none" stroke="#26221E" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="450" y1="696" x2="450" y2="722" stroke="#26221E" stroke-width="2"/>
+    <rect x="884" y="696" width="72" height="26" rx="5" fill="none" stroke="#26221E" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="920" y1="696" x2="920" y2="722" stroke="#26221E" stroke-width="2"/>
+    <line x1="486" y1="709" x2="884" y2="709" stroke="#8A6A28" stroke-width="2.5" stroke-dasharray="8 5"/>
+  </g>
+  <text x="55" y="770" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
+
+  <!-- ═══════════ 正视图（I 端） ═══════════ -->
+  <g>
+    <line x1="1250" y1="900" x2="1570" y2="900" stroke="#9C948A" stroke-width="4"/>
+    <line x1="1250" y1="907" x2="1570" y2="907" stroke="#C4BCB0" stroke-width="2"/>
+    <rect x="1338" y="862" width="32" height="16" rx="5" fill="#33302C"/>
+    <path d="M 1342 866 L 1366 866 L 1360 880 L 1348 880 Z" fill="#44403A"/>
+    <!-- 加强型排障器 -->
+    <path d="M 1282 830 L 1426 830 L 1450 894 L 1258 894 Z" fill="#2B2620"/>
+    <line x1="1290" y1="878" x2="1440" y2="878" stroke="#C9A227" stroke-width="4"/>
+    <line x1="1284" y1="886" x2="1448" y2="886" stroke="#C9A227" stroke-width="4"/>
+    <!-- 防撞梁 -->
+    <rect x="1274" y="836" width="160" height="14" fill="#26221E"/>
+    <line x1="1290" y1="843" x2="1418" y2="843" stroke="#4A4238" stroke-width="3"/>
+    <!-- 车体端面 -->
+    <rect x="1278" y="646" width="152" height="190" rx="8" fill="url(#q3body)" stroke="#241B12" stroke-width="2"/>
+    <!-- 浅色上带 -->
+    <rect x="1278" y="668" width="152" height="18" fill="#EDE3CD"/>
+    <rect x="1278" y="758" width="152" height="20" fill="#C9A227"/>
+    <line x1="1278" y1="686" x2="1430" y2="686" stroke="#241B12" stroke-width="1.5"/>
+    <line x1="1278" y1="758" x2="1430" y2="758" stroke="#241B12" stroke-width="1.5"/>
+    <!-- 两片式前窗 + 护栅 -->
+    <rect x="1292" y="694" width="56" height="54" rx="5" fill="#2C3A44" stroke="#241B12" stroke-width="2"/>
+    <rect x="1358" y="694" width="56" height="54" rx="5" fill="#2C3A44" stroke="#241B12" stroke-width="2"/>
+    <g stroke="#171512" stroke-width="2.5">
+      <line x1="1294" y1="712" x2="1412" y2="712"/>
+      <line x1="1294" y1="728" x2="1412" y2="728"/>
+    </g>
+    <!-- 雨檐 -->
+    <rect x="1286" y="688" width="140" height="7" rx="3" fill="#171512"/>
+    <!-- 高位灯与标志灯 -->
+    <rect x="1288" y="652" width="22" height="13" rx="3" fill="#F5E9C8" stroke="#241B12" stroke-width="1.5"/>
+    <rect x="1398" y="652" width="22" height="13" rx="3" fill="#F5E9C8" stroke="#241B12" stroke-width="1.5"/>
+    <rect x="1318" y="654" width="11" height="10" rx="2" fill="#B03A2E"/>
+    <rect x="1378" y="654" width="11" height="10" rx="2" fill="#B03A2E"/>
+    <!-- 路徽与车号牌 -->
+    <circle cx="1354" cy="788" r="14" fill="#C9A227" stroke="#241B12" stroke-width="2"/>
+    <polygon points="1354,775 1363,788 1354,801 1345,788" fill="#F7EBCC"/>
+    <rect x="1318" y="806" width="72" height="20" rx="3" fill="#171512"/>
+    <text x="1354" y="821" text-anchor="middle" font-size="13" font-weight="700" fill="#EFE3C2">QYD3-A</text>
+    <!-- 登梯 -->
+    <g stroke="#2E2822" stroke-width="3.5" fill="none">
+      <path d="M 1266 834 L 1266 712 M 1278 834 L 1278 712 M 1270 812 L 1274 812 M 1270 786 L 1274 786 M 1270 760 L 1274 760 M 1270 734 L 1274 734"/>
+      <path d="M 1442 834 L 1442 712 M 1430 834 L 1430 712 M 1434 812 L 1438 812 M 1434 786 L 1438 786 M 1434 760 L 1438 760 M 1434 734 L 1438 734"/>
+    </g>
+    <rect x="1292" y="886" width="8" height="10" fill="#33302C"/>
+    <rect x="1408" y="886" width="8" height="10" fill="#33302C"/>
+  </g>
+  <text x="1250" y="946" font-size="15" font-weight="600" fill="#6B5A40">正视图（I 端）</text>
+
+  <!-- ═══════════ 参数表 ═══════════ -->
+  <g>
+    <rect x="55" y="985" width="1490" height="128" rx="10" fill="#F3EDDE" stroke="#C9A227" stroke-width="2"/>
+    <g font-size="15" fill="#3B2F23">
+      <text x="95" y="1022" font-weight="700">型号</text><text x="170" y="1022">QYD 3（千岩·电力）</text>
+      <text x="430" y="1022" font-weight="700">轴式</text><text x="490" y="1022">Co-Co</text>
+      <text x="650" y="1022" font-weight="700">轨距</text><text x="710" y="1022">1500 mm</text>
+      <text x="870" y="1022" font-weight="700">功率</text><text x="930" y="1022">7200 kW</text>
+      <text x="1110" y="1022" font-weight="700">整备质量</text><text x="1210" y="1022">150 t（轴重 25 t）</text>
+      <text x="95" y="1056" font-weight="700">基础性能</text><text x="195" y="1056">最大起动牵引力 220 kN · 持续牵引力 200 kN · 强坡道起动与制动防滑控制</text>
+      <text x="95" y="1084" font-weight="700">型号细分</text><text x="195" y="1084">-A 版 120 km/h 标准重载货运　|　-B 版 160 km/h 重载特快客运（齿轮比优化）　|　-C 版 80 km/h 极限牵引，起动牵引力 620 kN，矿区万吨大列</text>
+    </g>
+  </g>
+</svg>

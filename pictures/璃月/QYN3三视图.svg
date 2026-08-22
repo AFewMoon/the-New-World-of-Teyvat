@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1150" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="qyn3gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2D489"/>
+      <stop offset="1" stop-color="#DDB45C"/>
+    </linearGradient>
+    <linearGradient id="qyn3green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#27976A"/>
+      <stop offset="1" stop-color="#176B47"/>
+    </linearGradient>
+    <pattern id="crystal" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+      <rect width="26" height="26" fill="#B98A2E"/>
+      <polygon points="13,2 24,13 13,24 2,13" fill="none" stroke="#F5DFA6" stroke-width="1.8"/>
+      <polygon points="13,7 19,13 13,19 7,13" fill="#F0D284"/>
+    </pattern>
+    <pattern id="qyn3grille" width="9" height="9" patternUnits="userSpaceOnUse">
+      <rect width="9" height="9" fill="#123D29"/>
+      <line x1="0" y1="2.5" x2="9" y2="2.5" stroke="#3F8A66" stroke-width="1.6"/>
+      <line x1="0" y1="6.5" x2="9" y2="6.5" stroke="#3F8A66" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="qyn3louver" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#0F3524"/>
+      <line x1="0" y1="4" x2="12" y2="4" stroke="#4E9974" stroke-width="2.2"/>
+    </pattern>
+    <g id="qyn3wheel">
+      <circle r="30" fill="#1E1B18"/>
+      <circle r="22" fill="#46423E"/>
+      <circle r="14" fill="#5D5852"/>
+      <circle r="7" fill="#211E1B"/>
+      <circle cx="0" cy="-13" r="2.8" fill="#77716A"/>
+      <circle cx="11" cy="7" r="2.8" fill="#77716A"/>
+      <circle cx="-11" cy="7" r="2.8" fill="#77716A"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="1150" fill="#FBF8F2"/>
+
+  <text x="800" y="58" text-anchor="middle" font-size="38" font-weight="700" fill="#145238">QYN 3 型环保混动客运机车</text>
+  <text x="800" y="92" text-anchor="middle" font-size="17" fill="#6B8A72">千岩·新能源系列 · 璃月机车集团　|　-C 版「琉璃金 × 翡翠绿」双拼涂装 · Y 字头旅游列车 · 风景区纯岩动力运行</text>
+  <line x1="480" y1="106" x2="1120" y2="106" stroke="#1E8A5E" stroke-width="2.5"/>
+  <polygon points="800,100 810,106 800,112 790,106" fill="#1E8A5E"/>
+
+  <!-- ═══════════ 侧视图 ═══════════ -->
+  <line x1="40" y1="470" x2="1240" y2="470" stroke="#9C948A" stroke-width="4"/>
+  <line x1="40" y1="477" x2="1240" y2="477" stroke="#C4BCB0" stroke-width="2"/>
+
+  <!-- 车钩 I 端 -->
+  <rect x="60" y="430" width="26" height="14" rx="5" fill="#33302C"/>
+  <path d="M 86 432 L 114 432 L 108 446 L 92 446 Z" fill="#44403A"/>
+  <!-- 圆润排障器 I 端 -->
+  <path d="M 94 396 Q 130 392 158 400 L 174 458 Q 140 468 106 462 Z" fill="#176B47"/>
+
+  <!-- 底架 -->
+  <rect x="104" y="414" width="1074" height="18" fill="#26221E"/>
+  <rect x="430" y="394" width="70" height="20" rx="10" fill="#3A342C"/>
+  <rect x="720" y="396" width="56" height="18" rx="3" fill="#3A342C"/>
+
+  <!-- 车体主轮廓（流线双端） -->
+  <path d="M 112 402 L 112 320 Q 116 272 158 250 Q 196 232 252 228 L 1028 228 Q 1084 232 1122 250 Q 1164 272 1168 320 L 1168 402 Z"
+        fill="url(#qyn3gold)" stroke="#145238" stroke-width="2"/>
+  <!-- 翡翠绿宽腰带 -->
+  <path d="M 112 330 L 1168 330 L 1168 372 L 112 372 Z" fill="url(#qyn3green)"/>
+  <path d="M 112 372 L 1168 372 L 1168 402 L 112 402 Z" fill="#145238"/>
+  <line x1="112" y1="330" x2="1168" y2="330" stroke="#145238" stroke-width="1.5"/>
+  <line x1="112" y1="372" x2="1168" y2="372" stroke="#145238" stroke-width="1.5"/>
+
+  <!-- I 端流线头 -->
+  <path d="M 118 322 Q 124 276 164 254 Q 200 236 254 232 L 292 232 L 292 402 L 118 402 Z" fill="#F2D489" opacity="0.65"/>
+  <path d="M 136 306 Q 148 264 198 246 L 280 240 L 280 300 Q 202 304 136 306 Z" fill="#20404E" stroke="#145238" stroke-width="2"/>
+  <line x1="158" y1="290" x2="182" y2="256" stroke="#6FA0B4" stroke-width="3.5" opacity="0.85"/>
+  <rect x="128" y="316" width="26" height="14" rx="5" fill="#FFF6DC" stroke="#145238" stroke-width="1.5"/>
+  <rect x="134" y="338" width="15" height="9" rx="3" fill="#2E7D52"/>
+
+  <!-- II 端对称 -->
+  <path d="M 1162 322 Q 1156 276 1116 254 Q 1080 236 1026 232 L 988 232 L 988 402 L 1162 402 Z" fill="#F2D489" opacity="0.65"/>
+  <path d="M 1144 306 Q 1132 264 1082 246 L 1000 240 L 1000 300 Q 1078 304 1144 306 Z" fill="#20404E" stroke="#145238" stroke-width="2"/>
+  <line x1="1122" y1="290" x2="1098" y2="256" stroke="#6FA0B4" stroke-width="3.5" opacity="0.85"/>
+  <rect x="1126" y="316" width="26" height="14" rx="5" fill="#FFF6DC" stroke="#145238" stroke-width="1.5"/>
+  <rect x="1131" y="338" width="15" height="9" rx="3" fill="#2E7D52"/>
+
+  <!-- 岩元素储能舱（晶体纹观察窗） -->
+  <g stroke="#145238" stroke-width="2">
+    <rect x="410" y="270" width="150" height="50" rx="8" fill="url(#crystal)"/>
+    <rect x="600" y="270" width="150" height="50" rx="8" fill="url(#crystal)"/>
+  </g>
+  <text x="485" y="340" text-anchor="middle" font-size="13" fill="#0F3524">岩元素储能舱</text>
+  <text x="675" y="340" text-anchor="middle" font-size="13" fill="#0F3524">电池舱</text>
+  <!-- 电池散热格栅 -->
+  <rect x="310" y="270" width="84" height="50" fill="url(#qyn3grille)" stroke="#145238" stroke-width="2"/>
+  <rect x="790" y="270" width="84" height="50" fill="url(#qyn3grille)" stroke="#145238" stroke-width="2"/>
+  <!-- 检修门 -->
+  <rect x="900" y="266" width="54" height="58" rx="5" fill="#1E8A5E" stroke="#145238" stroke-width="2"/>
+  <circle cx="934" cy="296" r="3.5" fill="#F5DFA6"/>
+
+  <!-- 车号与生态星徽 -->
+  <text x="790" y="360" font-size="28" font-weight="700" fill="#FFF6DC">QYN3</text>
+  <text x="884" y="360" font-size="15" fill="#CFEDDD">-C 0003</text>
+  <circle cx="350" cy="362" r="13" fill="#E8C36A" stroke="#145238" stroke-width="2"/>
+  <path d="M 350 352 Q 358 358 350 370 Q 342 358 350 352 Z" fill="#1E8A5E"/>
+
+  <!-- 车顶设备：能量转换器散热栅 -->
+  <rect x="330" y="210" width="120" height="18" rx="4" fill="#145238"/>
+  <g stroke="#4E9974" stroke-width="2"><line x1="340" y1="216" x2="440" y2="216"/><line x1="340" y1="222" x2="440" y2="222"/></g>
+  <rect x="850" y="210" width="120" height="18" rx="4" fill="#145238"/>
+  <g stroke="#4E9974" stroke-width="2"><line x1="860" y1="216" x2="960" y2="216"/><line x1="860" y1="222" x2="960" y2="222"/></g>
+  <!-- 主断路器 -->
+  <rect x="596" y="206" width="18" height="22" rx="3" fill="#3E3A34"/>
+  <ellipse cx="605" cy="202" rx="8" ry="4.5" fill="#8A8578"/>
+  <!-- 受电弓（前位折叠） -->
+  <g stroke="#145238" stroke-width="4" fill="none">
+    <line x1="450" y1="228" x2="450" y2="220"/>
+    <path d="M 428 220 L 472 220 M 446 220 L 432 199 M 454 220 L 468 199"/>
+    <line x1="429" y1="199" x2="471" y2="199"/>
+  </g>
+  <rect x="421" y="193" width="50" height="7" rx="3" fill="#145238"/>
+  <!-- 受电弓（后位升起） -->
+  <g stroke="#145238" stroke-width="4" fill="none">
+    <line x1="920" y1="228" x2="920" y2="218"/>
+    <line x1="896" y1="218" x2="944" y2="218"/>
+    <line x1="914" y1="218" x2="884" y2="166"/>
+    <line x1="926" y1="218" x2="956" y2="166"/>
+    <line x1="884" y1="166" x2="948" y2="138"/>
+    <line x1="956" y1="166" x2="894" y2="138"/>
+    <line x1="890" y1="142" x2="952" y2="142" stroke-width="2"/>
+    <line x1="882" y1="134" x2="958" y2="134" stroke-width="6"/>
+    <line x1="921" y1="216" x2="952" y2="168" stroke-width="2.5"/>
+  </g>
+  <rect x="906" y="214" width="28" height="8" rx="3" fill="#145238"/>
+  <ellipse cx="898" cy="164" rx="6" ry="4" fill="#8A8578"/>
+  <ellipse cx="942" cy="164" rx="6" ry="4" fill="#8A8578"/>
+
+  <!-- 登车梯 -->
+  <g stroke="#145238" stroke-width="3.5" fill="none">
+    <path d="M 300 400 L 300 346 M 316 400 L 316 346 M 305 386 L 311 386 M 305 368 L 311 368 M 305 352 L 311 352"/>
+    <path d="M 968 400 L 968 346 M 984 400 L 984 346 M 973 386 L 979 386 M 973 368 L 979 368 M 973 352 L 979 352"/>
+  </g>
+
+  <!-- 转向架 Co-Co -->
+  <g>
+    <use href="#qyn3wheel" x="238" y="440"/>
+    <use href="#qyn3wheel" x="348" y="440"/>
+    <use href="#qyn3wheel" x="458" y="440"/>
+    <rect x="214" y="410" width="268" height="15" rx="6" fill="#33302C"/>
+    <rect x="270" y="400" width="28" height="12" rx="2" fill="#55504A"/>
+    <rect x="334" y="400" width="28" height="12" rx="2" fill="#55504A"/>
+    <rect x="398" y="400" width="28" height="12" rx="2" fill="#55504A"/>
+    <circle cx="238" cy="421" r="8" fill="#55504A"/>
+    <circle cx="348" cy="421" r="8" fill="#55504A"/>
+    <circle cx="458" cy="421" r="8" fill="#55504A"/>
+    <path d="M 262 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
+    <path d="M 326 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
+    <path d="M 436 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
+  </g>
+  <g>
+    <use href="#qyn3wheel" x="785" y="440"/>
+    <use href="#qyn3wheel" x="895" y="440"/>
+    <use href="#qyn3wheel" x="1005" y="440"/>
+    <rect x="761" y="410" width="268" height="15" rx="6" fill="#33302C"/>
+    <rect x="817" y="400" width="28" height="12" rx="2" fill="#55504A"/>
+    <rect x="881" y="400" width="28" height="12" rx="2" fill="#55504A"/>
+    <rect x="945" y="400" width="28" height="12" rx="2" fill="#55504A"/>
+    <circle cx="785" cy="421" r="8" fill="#55504A"/>
+    <circle cx="895" cy="421" r="8" fill="#55504A"/>
+    <circle cx="1005" cy="421" r="8" fill="#55504A"/>
+    <path d="M 809 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
+    <path d="M 873 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
+    <path d="M 983 452 a 23 23 0 0 0 46 0 z" fill="#3E3A34"/>
+  </g>
+
+  <!-- 撒砂管 -->
+  <line x1="216" y1="428" x2="202" y2="464" stroke="#33302C" stroke-width="4"/>
+  <line x1="480" y1="428" x2="494" y2="464" stroke="#33302C" stroke-width="4"/>
+  <line x1="763" y1="428" x2="749" y2="464" stroke="#33302C" stroke-width="4"/>
+  <line x1="1027" y1="428" x2="1041" y2="464" stroke="#33302C" stroke-width="4"/>
+
+  <!-- 排障器与车钩 II 端 -->
+  <path d="M 1186 396 Q 1150 392 1122 400 L 1106 458 Q 1140 468 1174 462 Z" fill="#176B47"/>
+  <rect x="1196" y="430" width="26" height="14" rx="5" fill="#33302C"/>
+  <path d="M 1196 432 L 1168 432 L 1174 446 L 1190 446 Z" fill="#44403A"/>
+
+  <!-- 尺寸标注 -->
+  <g stroke="#A08A62" stroke-width="1.5" fill="none">
+    <line x1="55" y1="500" x2="1222" y2="500"/>
+    <line x1="55" y1="492" x2="55" y2="508"/><line x1="1222" y1="492" x2="1222" y2="508"/>
+  </g>
+  <text x="638" y="522" text-anchor="middle" font-size="13" fill="#8A7658">全长 24.0 m（车钩间）</text>
+  <g stroke="#A08A62" stroke-width="1.5" fill="none">
+    <line x1="1254" y1="228" x2="1254" y2="470"/>
+    <line x1="1246" y1="228" x2="1262" y2="228"/><line x1="1246" y1="470" x2="1262" y2="470"/>
+  </g>
+  <text x="1268" y="352" font-size="13" fill="#8A7658">高 4.80 m</text>
+  <text x="55" y="546" font-size="15" font-weight="600" fill="#6B5A40">侧视图</text>
+
+  <!-- ═══════════ 俯视图 ═══════════ -->
+  <g transform="translate(0 90)">
+    <rect x="42" y="620" width="20" height="16" rx="3" fill="#33302C"/>
+    <rect x="1218" y="620" width="20" height="16" rx="3" fill="#33302C"/>
+    <path d="M 74 622 Q 110 614 168 614 L 1112 614 Q 1170 614 1206 622 Q 1170 630 1112 630 L 168 630 Q 110 630 74 622 Z" fill="#F2D489" stroke="#145238" stroke-width="1.5"/>
+    <rect x="150" y="606" width="1000" height="38" fill="#DDB45C" stroke="#145238" stroke-width="1.5"/>
+    <line x1="150" y1="612" x2="1150" y2="612" stroke="#1E8A5E" stroke-width="4"/>
+    <line x1="150" y1="638" x2="1150" y2="638" stroke="#1E8A5E" stroke-width="4"/>
+    <!-- 能量转换器散热栅 -->
+    <rect x="330" y="612" width="120" height="26" rx="3" fill="#145238"/>
+    <rect x="850" y="612" width="120" height="26" rx="3" fill="#145238"/>
+    <!-- 主断路器 -->
+    <rect x="594" y="616" width="24" height="18" rx="3" fill="#3E3A34"/>
+    <!-- 受电弓投影 -->
+    <rect x="414" y="610" width="72" height="30" rx="5" fill="none" stroke="#145238" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="450" y1="610" x2="450" y2="640" stroke="#145238" stroke-width="2"/>
+    <rect x="884" y="610" width="72" height="30" rx="5" fill="none" stroke="#145238" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="920" y1="610" x2="920" y2="640" stroke="#145238" stroke-width="2"/>
+    <line x1="486" y1="625" x2="884" y2="625" stroke="#B98A2E" stroke-width="2.5" stroke-dasharray="8 5"/>
+  </g>
+  <text x="55" y="752" font-size="15" font-weight="600" fill="#6B5A40">俯视图</text>
+
+  <!-- ═══════════ 正视图（I 端） ═══════════ -->
+  <g>
+    <line x1="1250" y1="900" x2="1560" y2="900" stroke="#9C948A" stroke-width="4"/>
+    <line x1="1250" y1="907" x2="1560" y2="907" stroke="#C4BCB0" stroke-width="2"/>
+    <rect x="1332" y="862" width="32" height="16" rx="5" fill="#33302C"/>
+    <path d="M 1336 866 L 1360 866 L 1354 880 L 1342 880 Z" fill="#44403A"/>
+    <!-- 圆润排障器 -->
+    <path d="M 1280 830 Q 1330 822 1420 830 L 1442 892 Q 1370 904 1266 892 Z" fill="#176B47"/>
+    <path d="M 1296 838 Q 1340 832 1404 838 L 1416 872 Q 1360 878 1288 872 Z" fill="none" stroke="#0F3524" stroke-width="2"/>
+    <!-- 车体端面 -->
+    <path d="M 1276 838 L 1276 716 Q 1278 672 1310 650 Q 1342 632 1380 632 L 1398 632 L 1398 838 Z" fill="url(#qyn3gold)" stroke="#145238" stroke-width="2"/>
+    <path d="M 1276 760 L 1398 760 L 1398 800 L 1276 800 Z" fill="url(#qyn3green)"/>
+    <path d="M 1276 800 L 1398 800 L 1398 838 L 1276 838 Z" fill="#145238"/>
+    <line x1="1276" y1="760" x2="1398" y2="760" stroke="#145238" stroke-width="1.5"/>
+    <!-- 曲面挡风玻璃 -->
+    <path d="M 1290 730 Q 1296 692 1326 674 Q 1354 660 1384 658 L 1384 730 Z" fill="#20404E" stroke="#145238" stroke-width="2"/>
+    <line x1="1302" y1="712" x2="1322" y2="684" stroke="#6FA0B4" stroke-width="3.5" opacity="0.85"/>
+    <rect x="1284" y="726" width="118" height="8" rx="3" fill="#145238"/>
+    <!-- 高位灯与标志灯 -->
+    <rect x="1282" y="700" width="18" height="13" rx="4" fill="#FFF6DC" stroke="#145238" stroke-width="1.5"/>
+    <rect x="1386" y="700" width="18" height="13" rx="4" fill="#FFF6DC" stroke="#145238" stroke-width="1.5"/>
+    <rect x="1304" y="740" width="12" height="9" rx="2" fill="#2E7D52"/>
+    <rect x="1364" y="740" width="12" height="9" rx="2" fill="#2E7D52"/>
+    <!-- 生态星徽与车号牌 -->
+    <circle cx="1330" cy="780" r="14" fill="#E8C36A" stroke="#145238" stroke-width="2"/>
+    <path d="M 1330 768 Q 1340 776 1330 791 Q 1320 776 1330 768 Z" fill="#1E8A5E"/>
+    <rect x="1294" y="800" width="72" height="20" rx="3" fill="#0F3524"/>
+    <text x="1330" y="815" text-anchor="middle" font-size="13" font-weight="700" fill="#FFF6DC">QYN3-C</text>
+    <!-- 登梯 -->
+    <g stroke="#145238" stroke-width="3.5" fill="none">
+      <path d="M 1266 836 L 1266 722 M 1278 836 L 1278 722 M 1270 814 L 1274 814 M 1270 788 L 1274 788 M 1270 762 L 1274 762"/>
+      <path d="M 1408 836 L 1408 722 M 1396 836 L 1396 722 M 1400 814 L 1404 814 M 1400 788 L 1404 788 M 1400 762 L 1404 762"/>
+    </g>
+    <rect x="1292" y="886" width="8" height="10" fill="#33302C"/>
+    <rect x="1400" y="886" width="8" height="10" fill="#33302C"/>
+    <!-- 车顶受电弓剪影 -->
+    <g stroke="#145238" stroke-width="3" fill="none">
+      <line x1="1306" y1="632" x2="1306" y2="620"/>
+      <line x1="1290" y1="620" x2="1322" y2="620"/>
+      <path d="M 1300 620 L 1288 600 M 1312 620 L 1324 600"/>
+    </g>
+    <rect x="1282" y="594" width="48" height="6" rx="3" fill="#145238"/>
+  </g>
+  <text x="1250" y="946" font-size="15" font-weight="600" fill="#6B5A40">正视图（I 端）</text>
+
+  <!-- ═══════════ 参数表 ═══════════ -->
+  <g>
+    <rect x="55" y="985" width="1490" height="128" rx="10" fill="#EFF5EE" stroke="#1E8A5E" stroke-width="2"/>
+    <g font-size="15" fill="#1F3D2C">
+      <text x="95" y="1022" font-weight="700">型号</text><text x="170" y="1022">QYN 3（千岩·新能源）</text>
+      <text x="460" y="1022" font-weight="700">轴式</text><text x="520" y="1022">Co-Co</text>
+      <text x="690" y="1022" font-weight="700">轨距</text><text x="750" y="1022">1500 mm</text>
+      <text x="920" y="1022" font-weight="700">功率</text><text x="980" y="1022">4800 kW / 纯岩动力 3200 kW</text>
+      <text x="1310" y="1022" font-weight="700">整备质量</text><text x="1410" y="1022">138 t（轴重 23 t）</text>
+      <text x="95" y="1056" font-weight="700">基础性能</text><text x="195" y="1056">最大起动牵引力 450 kN · 接触网供电 / 电池与岩元素动力混合输出 · 运行噪音极低且零排放</text>
+      <text x="95" y="1084" font-weight="700">型号细分</text><text x="195" y="1084">-A 版 80 km/h · -B 版 120 km/h 非电化支线普客　|　-C 版 160 km/h 旅游专列，风景区降弓纯岩动力行驶，铁路迷心中的「生态明星」</text>
+    </g>
+  </g>
+</svg>
