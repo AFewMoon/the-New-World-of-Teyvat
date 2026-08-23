@@ -29,7 +29,7 @@
     <text x="724" y="560" font-size="15" font-weight="700" fill="#52C79B">首都区 —— 全国客运枢纽 · 多线交汇 · 客流集散核心</text>
     <rect x="120" y="780" width="560" height="160" rx="18" fill="#F7F0DC" stroke="#C9862B" stroke-width="1.2" opacity="0.75"/>
     <rect x="120" y="940" width="1120" height="420" rx="18" fill="#F7F0DC" stroke="#C9862B" stroke-width="1.2" opacity="0.75"/>
-    <text x="150" y="978" font-size="16" font-weight="700" fill="#8A5B1D">南区 —— 酒业货运与生态旅游客运并重 · 传统私企保留较完整</text>
+    <text x="895" y="1002" text-anchor="middle" font-size="16" font-weight="700" fill="#8A5B1D">南区 —— 酒业货运与生态旅游客运并重 · 传统私企保留较完整</text>
     <rect x="1420" y="520" width="900" height="490" rx="18" fill="#DDEEE6" stroke="#52C79B" stroke-width="1.2" opacity="0.85"/>
     <text x="1450" y="556" font-size="16" font-weight="700" fill="#1F7A5C">东区 —— 工业与矿产货运为主 · 线路等级偏低 · 电气化覆盖有限</text>
 
