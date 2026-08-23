@@ -46,7 +46,7 @@
     <text x="900" y="252" font-size="11.5" fill="#DDF2E8">由西风骑士团团长自动兼任（骑士团政府时期制度遗留）；</text>
     <text x="900" y="274" font-size="11.5" fill="#DDF2E8">保留对国防大臣·法制大臣·宗教与民族事务大臣的任命批准权。</text>
     <line x1="1202" y1="290" x2="1202" y2="314" stroke="#52C79B" stroke-width="2.5" marker-end="url(#arrowG)"/>
-    <rect x="876" y="318" width="652" height="96" rx="8" fill="#EAF4EE"/>
+    <rect x="876" y="318" width="652" height="112" rx="8" fill="#EAF4EE"/>
     <text x="900" y="346" font-size="13" font-weight="700" fill="#1F7A5C">联邦首相 ＋ 内阁</text>
     <text x="900" y="370" font-size="11.5" fill="#3E5F54">由下议院多数党（或联盟）领袖出任并组阁；</text>
     <text x="900" y="392" font-size="11.5" fill="#3E5F54">接受下议院质询和不信任投票机制的监督——</text>

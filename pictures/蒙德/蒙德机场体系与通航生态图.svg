@@ -22,22 +22,22 @@
     <rect x="60" y="146" width="1140" height="640" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
     <text x="84" y="188" font-size="20" font-weight="700" fill="#1E3A31">110 处起降设施的四级金字塔</text>
     <!-- 金字塔四层 -->
-    <polygon points="630,212 556,296 704,296" fill="#1F453B"/>
-    <text x="720" y="262" font-size="13" font-weight="700" fill="#1F7A5C">国际机场 × 2 座</text>
-    <polygon points="540,308 464,392 796,392" fill="#2C5A4C"/>
-    <text x="812" y="358" font-size="13" font-weight="700" fill="#1F7A5C">支线通航机场 × 8 座</text>
-    <polygon points="448,404 366,488 894,488" fill="#52C79B"/>
-    <text x="910" y="454" font-size="13" font-weight="700" fill="#1F7A5C">乡镇起降点 ≈ 30 处</text>
-    <polygon points="350,500 260,584 1000,584" fill="#8FD4BC"/>
-    <text x="1004" y="550" font-size="12" font-weight="700" fill="#1F7A5C">临时起降点／飞行营地 ≈ 70 处</text>
+    <polygon points="630,204 556,284 704,284" fill="#1F453B"/>
+    <text x="720" y="250" font-size="13" font-weight="700" fill="#1F7A5C">国际机场 × 2 座</text>
+    <polygon points="540,292 464,372 796,372" fill="#2C5A4C"/>
+    <text x="812" y="338" font-size="13" font-weight="700" fill="#1F7A5C">支线通航机场 × 8 座</text>
+    <polygon points="448,380 366,460 894,460" fill="#52C79B"/>
+    <text x="910" y="426" font-size="13" font-weight="700" fill="#1F7A5C">乡镇起降点 ≈ 30 处</text>
+    <polygon points="350,468 260,548 1000,548" fill="#8FD4BC"/>
+    <text x="1004" y="532" font-size="12" font-weight="700" fill="#1F7A5C">临时起降点／飞行营地 ≈ 70 处</text>
     <!-- 三层级表 -->
-    <text x="84" y="628" font-size="15" font-weight="700" fill="#1F7A5C">通航机场的三个层级</text>
-    <rect x="84" y="644" width="1092" height="56" rx="8" fill="#1F453B"/>
-    <text x="108" y="678" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">支线通航机场（8 座）：</tspan>硬质跑道 1200~1800 m，有基本航站楼和加油设施</text>
-    <rect x="84" y="708" width="1092" height="56" rx="8" fill="#2C5A4C"/>
-    <text x="108" y="742" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">代表：</tspan>星落城机场 · 晨曦城堡机场 · 清泉镇机场 · 奔狼堡机场 · 鹰巢堡机场 · 荆夫港通航站 · 风起地飞行场 · 摘星崖飞行场</text>
-    <rect x="84" y="772" width="1092" height="56" rx="8" fill="#2C5A4C"/>
-    <text x="108" y="806" font-size="12.5" fill="#DDF2E8"><tspan font-weight="700" fill="#52C79B">乡镇起降点（≈30 处）：</tspan>土质或草地跑道 600~1000 m，部分有简易机库——散布于偏远乡镇、矿区、大型农场</text>
+    <text x="84" y="600" font-size="15" font-weight="700" fill="#1F7A5C">通航机场的三个层级</text>
+    <rect x="84" y="616" width="1092" height="48" rx="8" fill="#1F453B"/>
+    <text x="108" y="646" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">支线通航机场（8 座）：</tspan>硬质跑道 1200~1800 m，有基本航站楼和加油设施</text>
+    <rect x="84" y="668" width="1092" height="48" rx="8" fill="#2C5A4C"/>
+    <text x="108" y="698" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">代表：</tspan>星落城机场 · 晨曦城堡机场 · 清泉镇机场 · 奔狼堡机场 · 鹰巢堡机场 · 荆夫港通航站 · 风起地飞行场 · 摘星崖飞行场</text>
+    <rect x="84" y="720" width="1092" height="48" rx="8" fill="#2C5A4C"/>
+    <text x="108" y="750" font-size="12.5" fill="#DDF2E8"><tspan font-weight="700" fill="#52C79B">乡镇起降点（≈30 处）：</tspan>土质或草地跑道 600~1000 m，部分有简易机库——散布于偏远乡镇、矿区、大型农场</text>
   </g>
 
   <!-- ═══════════ 第 1 区右 · 两大国际机场 ═══════════ -->

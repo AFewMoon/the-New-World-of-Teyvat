@@ -34,7 +34,7 @@
     <text x="84" y="332" font-size="12.5" fill="#DDF2E8">主基地：蒙德自由国际机场 T1（客运）· 特色服务：「蒲公英会所」高端舱——机上供应天使的馈赠联名特调</text>
     <!-- 机队构成 scale 30px/架 -->
     <text x="84" y="372" font-size="15" font-weight="700" fill="#52C79B">机队规模：38 架（全数购自志飞联合制造集团）</text>
-    <g font-size="12.5">
+    <g font-size="12.5" fill="#B9DFCF">
       <text x="84" y="406">ZF-36 L 长途型</text>
       <rect x="300" y="392" width="540" height="22" rx="4" fill="url(#anemoTop)"/><text x="850" y="408" font-weight="700" fill="#F5FAF7">×18</text>
       <text x="902" y="408" fill="#B9DFCF">远程国际航线绝对主力</text>

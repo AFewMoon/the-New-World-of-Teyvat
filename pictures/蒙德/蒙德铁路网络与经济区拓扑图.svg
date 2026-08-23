@@ -40,9 +40,9 @@
     <!-- 东西线：晨曦酒庄 — 清泉镇 — 风起地 — 星落湖 -->
     <polyline points="280,860 1169,860" fill="none" stroke="#1F7A5C" stroke-width="7"/>
     <polyline points="1191,869 1618,869" fill="none" stroke="#1F7A5C" stroke-width="7"/>
-    <!-- 西南跨境线（琥珀虚线）：归离原 — 晨曦酒庄 — 奔狼领 -->
+    <!-- 西南跨境线（琥珀虚线）：归离原 — 晨曦酒庄 — 奔狼领（沿西缘走线，不穿首都区） -->
     <polyline points="280,1100 280,871" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/>
-    <polyline points="280,849 280,545 898,545 898,430 920,430" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9" stroke-linejoin="round"/>
+    <polyline points="280,849 280,430 921,430" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/>
     <!-- 雪山旅游线（点线）：清泉镇 — 龙脊雪山 -->
     <polyline points="500,882 500,1066 616,1066" fill="none" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/>
     <!-- 明冠联络线：明冠峡 — 风龙废墟 —（回接主干）-->
@@ -91,13 +91,13 @@
 
       <!-- 奔狼领 -->
       <circle cx="930" cy="430" r="8" fill="#2FA47E"/>
-      <text x="914" y="422" text-anchor="end" font-size="13" font-weight="600" fill="#1E3A31">奔狼领</text>
+      <text x="914" y="414" text-anchor="end" font-size="13" font-weight="600" fill="#1E3A31">奔狼领</text>
 
       <!-- 蒙德城双站（骑跨竖干） -->
       <rect x="1110" y="584" width="140" height="56" rx="12" fill="#123B2D" stroke="#52C79B" stroke-width="2.5"/>
       <text x="1180" y="607" text-anchor="middle" font-size="12.5" font-weight="700" fill="#52C79B">蒙德城</text>
       <text x="1180" y="627" text-anchor="middle" font-size="10.5" fill="#DDF2E8">北站＋南站</text>
-      <text x="1168" y="664" text-anchor="end" font-size="11" fill="#3E5F54">各 4台8线 · 地下联络线直通 · 南站接果酒湖运河码头</text>
+      <text x="1168" y="664" text-anchor="end" font-size="11" fill="#B9DFCF">各 4台8线 · 地下联络线直通 · 南站接果酒湖运河码头</text>
 
       <!-- 风起地（换乘枢纽方块） -->
       <rect x="1163" y="845" width="34" height="34" rx="8" fill="#123B2D" stroke="#52C79B" stroke-width="2.5"/>
