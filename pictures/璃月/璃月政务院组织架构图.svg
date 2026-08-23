@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2440" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#9C948A"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2440" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月政务院组织架构图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">最高国家行政机关 · 总理负责制 · 特设机构＋十部委 · 关键任职人物一览</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- 总理 -->
+  <rect x="850" y="146" width="700" height="88" rx="44" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+  <text x="1200" y="182" text-anchor="middle" font-size="18" font-weight="700" fill="#F7EBC8">政务院总理 · 凝光（原天权星）</text>
+  <text x="1200" y="212" text-anchor="middle" font-size="12" fill="#E8D8AC">总理负责制 —— 将执政党和议会的蓝图转化为具体行政指令</text>
+  <path d="M 1200 234 V 258" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- 办公厅 -->
+  <rect x="250" y="264" width="1900" height="76" rx="12" fill="url(#goldTop)" stroke="#B8922F" stroke-width="2"/>
+  <text x="1200" y="296" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">办公厅 —— 政务运转中枢（原总理内政机构「月海亭」改组）</text>
+  <text x="1200" y="324" text-anchor="middle" font-size="13" fill="#3B2F23">各部委协调 · 会议安排 · 政令下达 · 公文起草　│　主任兼秘书长：甘雨（半仙之兽）· 秘书局秘书瑶瑶兼司团总支主席</text>
+  <path d="M 1200 340 V 364" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ═══════════ 国资委（特设机构）═══════════ -->
+  <g>
+    <rect x="60" y="370" width="2280" height="310" rx="14" fill="#3B2F23" stroke="#D8AF45" stroke-width="2.5"/>
+    <rect x="1960" y="394" width="356" height="34" rx="17" fill="none" stroke="#D8AF45" stroke-width="1.5"/>
+    <text x="2138" y="417" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">直属特设机构 · 不入行政序列</text>
+    <text x="84" y="418" font-size="21" font-weight="700" fill="#F7EBC8">国务院资产监督管理委员会（国资委 / SASAC）</text>
+    <text x="84" y="450" font-size="13" fill="#E8D8AC">独立于政务院日常行政序列运作，代表国家独立履行出资人职责——新民主主义「节制资本」的终极武器。</text>
+    <text x="84" y="486" font-size="14" font-weight="700" fill="#D8AF45">直接控股的巨无霸企业</text>
+    <g font-size="13">
+      <rect x="84" y="502" width="430" height="52" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+      <text x="299" y="528" text-anchor="middle" font-weight="700" fill="#F7EBC8">璃月铁路总公司（LRC）</text>
+      <text x="299" y="546" text-anchor="middle" font-size="11" fill="#C9B98A">全国铁路网 · LTCS 信号 · 铁路学院</text>
+      <rect x="538" y="502" width="430" height="52" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+      <text x="753" y="528" text-anchor="middle" font-weight="700" fill="#F7EBC8">璃月国家电网与地脉能源局</text>
+      <text x="753" y="546" text-anchor="middle" font-size="11" fill="#C9B98A">电网调度 · 地脉配额登记分配</text>
+      <rect x="992" y="502" width="430" height="52" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+      <text x="1207" y="528" text-anchor="middle" font-weight="700" fill="#F7EBC8">层岩巨渊统筹开采集团</text>
+      <text x="1207" y="546" text-anchor="middle" font-size="11" fill="#C9B98A">矿业命脉 · 矿产定价权</text>
+      <rect x="84" y="562" width="430" height="52" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+      <text x="299" y="588" text-anchor="middle" font-weight="700" fill="#F7EBC8">璃月中央银行</text>
+      <text x="299" y="606" text-anchor="middle" font-size="11" fill="#C9B98A">前身黄金屋 · 璃月元发行 · 存款保险</text>
+      <rect x="538" y="562" width="430" height="52" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+      <text x="753" y="588" text-anchor="middle" font-weight="700" fill="#F7EBC8">往生堂殡葬服务集团</text>
+      <text x="753" y="606" text-anchor="middle" font-size="11" fill="#C9B98A">国有独资 · 胡桃任董事长 · 民俗遗产传承</text>
+    </g>
+    <rect x="1470" y="494" width="846" height="128" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1494" y="526" font-size="13" font-weight="700" fill="#D8AF45">政治作用</text>
+    <text x="1494" y="552" font-size="12" fill="#E8D8AC">通过这些国企，政府可以在不干预吃虎岩小商贩（民主党票仓）的前提下，</text>
+    <text x="1494" y="578" font-size="12" fill="#E8D8AC">牢牢控制重工业与金融定价权，防止自由党所代表的买办资本损害经济主权；</text>
+    <text x="1494" y="604" font-size="12" fill="#E8D8AC">高管实行市场化选聘与市场化薪资（如鱼灯通讯模式），监察院特派员常年进驻。</text>
+  </g>
+
+  <!-- ═══════════ 九部委网格 ═══════════ -->
+  <!-- Row 1 -->
+  <g>
+    <rect x="72" y="710" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="72" y="710" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="72" y="740" width="736" height="22" fill="#3B2F23"/>
+    <text x="96" y="744" font-size="17" font-weight="700" fill="#F7EBC8">财政部 —— 国家的钱袋子</text>
+    <text x="96" y="792" font-size="13" fill="#3B2F23">· 国家预算编制 · 税法执行 · 关税调节</text>
+    <text x="96" y="818" font-size="13" fill="#3B2F23">· 与群玉阁商团及本土钱庄关系错综复杂</text>
+    <text x="96" y="850" font-size="13" font-weight="700" fill="#B8922F">税率调节贫富差距（例）</text>
+    <text x="96" y="876" font-size="13" fill="#3B2F23">· 奢侈级「极光反应混动跑车」征 200% 奢侈品排量税</text>
+    <text x="96" y="902" font-size="13" fill="#3B2F23">· 购买「化学电池面包车」的个体户给予免税</text>
+    <rect x="96" y="926" width="688" height="100" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="120" y="958" font-size="13" font-weight="700" fill="#B8922F">协同事项</text>
+    <text x="120" y="984" font-size="12" fill="#6B5A40">义务教育全额免费中央兜底；高校分档补助与助学贷款贴息；</text>
+    <text x="120" y="1008" font-size="12" fill="#6B5A40">对偏远地区驿站运维、储蓄业务给予适当财政补贴。</text>
+  </g>
+  <g>
+    <rect x="832" y="710" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="832" y="710" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="832" y="740" width="736" height="22" fill="#3B2F23"/>
+    <text x="856" y="744" font-size="17" font-weight="700" fill="#F7EBC8">交通运输部</text>
+    <text x="856" y="792" font-size="13" fill="#3B2F23">· 全国铁路、公路、水路及航空运输的规划、建设与监管</text>
+    <text x="856" y="818" font-size="13" fill="#3B2F23">· 统筹璃月驿镖局联盟的物流网络运营</text>
+    <rect x="856" y="842" width="688" height="118" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="880" y="874" font-size="13" font-weight="700" fill="#B8922F">关键人物：北斗（副部长兼海洋事务局局长）</text>
+    <text x="880" y="900" font-size="12" fill="#6B5A40">以南十字船队长的丰富经验掌管海上运输与渔业执法；</text>
+    <text x="880" y="926" font-size="12" fill="#6B5A40">兼任中央军委委员，在军委层面协调海防事务。</text>
+    <text x="856" y="1000" font-size="13" fill="#3B2F23">· 统筹两轮车换电网络、市郊通勤铁路等民生基建议题</text>
+  </g>
+  <g>
+    <rect x="1592" y="710" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1592" y="710" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="1592" y="740" width="736" height="22" fill="#3B2F23"/>
+    <text x="1616" y="744" font-size="17" font-weight="700" fill="#F7EBC8">卫生保健部</text>
+    <text x="1616" y="792" font-size="13" fill="#3B2F23">· 全国公共卫生体系 · 医疗资源配置 · 传染病防控</text>
+    <rect x="1616" y="842" width="688" height="118" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1640" y="874" font-size="13" font-weight="700" fill="#B8922F">关键人物：白术（副部长）</text>
+    <text x="1640" y="900" font-size="12" fill="#6B5A40">以不卜庐多年行医经验，推动璃月古法与现代外医结合的</text>
+    <text x="1640" y="926" font-size="12" fill="#6B5A40">医疗改革；支撑璃月医学院的人才培养衔接。</text>
+    <text x="1616" y="1000" font-size="13" fill="#3B2F23">· 农会联盟重点关注的偏远山区医疗资源倾斜对象部门之一</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g>
+    <rect x="72" y="1076" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="72" y="1076" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="72" y="1106" width="736" height="22" fill="#3B2F23"/>
+    <text x="96" y="1110" font-size="17" font-weight="700" fill="#F7EBC8">民政部</text>
+    <text x="96" y="1158" font-size="13" fill="#6B5A40">历史渊源：由原七星下辖的总务司拆分改组，褪去专断色彩</text>
+    <text x="96" y="1190" font-size="13" font-weight="700" fill="#B8922F">职能</text>
+    <text x="96" y="1216" font-size="13" fill="#3B2F23">· 社会保障 · 扶贫攻坚（侧重农会联盟关注的偏远山区）</text>
+    <text x="96" y="1242" font-size="13" fill="#3B2F23">· 灾害救援 · 民间 NGO 注册与管理（冒险家协会璃月分部等）</text>
+    <text x="96" y="1268" font-size="13" fill="#3B2F23">· 退伍千岩军的安置工作</text>
+    <rect x="96" y="1292" width="688" height="100" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="120" y="1324" font-size="13" font-weight="700" fill="#B8922F">下属机构：殡葬与民俗事务管理局</text>
+    <text x="120" y="1350" font-size="12" fill="#6B5A40">全国殡葬服务监管与民俗文化遗产保护；往生堂收归国有后</text>
+    <text x="120" y="1374" font-size="12" fill="#6B5A40">改制为国资委直管的往生堂殡葬服务集团。</text>
+  </g>
+  <g>
+    <rect x="832" y="1076" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="832" y="1076" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="832" y="1106" width="736" height="22" fill="#3B2F23"/>
+    <text x="856" y="1110" font-size="17" font-weight="700" fill="#F7EBC8">文化旅游部</text>
+    <text x="856" y="1158" font-size="13" fill="#3B2F23">· 文化产业发展 · 旅游推广 · 非遗保护与传统艺术传承</text>
+    <text x="856" y="1190" font-size="13" font-weight="700" fill="#B8922F">特别顾问（荣誉性职务）</text>
+    <text x="856" y="1216" font-size="13" fill="#3B2F23">· 钟离：国家文化遗产保护特别顾问（不驻会、不领薪）</text>
+    <text x="856" y="1242" font-size="13" fill="#3B2F23">· 萍姥姥：国家非物质文化遗产保护中心名誉主任</text>
+    <text x="856" y="1274" font-size="13" font-weight="700" fill="#B8922F">下设任职</text>
+    <text x="856" y="1300" font-size="13" fill="#3B2F23">· 辛焱：青年发展司副司长兼部团委书记，推动文旅青年化转型</text>
+    <text x="856" y="1326" font-size="13" fill="#3B2F23">· 香菱：餐饮文化推广大使（特聘），传播璃月美食文化</text>
+    <text x="856" y="1352" font-size="13" fill="#3B2F23">· 云堇：传统艺术推广大使（特聘），推动璃月戏曲走向国际舞台</text>
+    <rect x="856" y="1372" width="688" height="24" rx="6" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+    <text x="1200" y="1390" text-anchor="middle" font-size="12" fill="#6B5A40">文化输出三张名片：青年摇滚 × 美食 × 戏曲</text>
+  </g>
+  <g>
+    <rect x="1592" y="1076" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1592" y="1076" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="1592" y="1106" width="736" height="22" fill="#3B2F23"/>
+    <text x="1616" y="1110" font-size="17" font-weight="700" fill="#F7EBC8">教育部</text>
+    <text x="1616" y="1158" font-size="13" fill="#3B2F23">· 制定学制与学位标准 · 主管基础教育、高等教育、职业教育与成人教育</text>
+    <text x="1616" y="1184" font-size="13" fill="#3B2F23">· 组织教材审定与师资建设 · 编制教育经费预算</text>
+    <rect x="1616" y="1208" width="688" height="112" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1640" y="1240" font-size="13" font-weight="700" fill="#B8922F">下属机构：国家考试院</text>
+    <text x="1640" y="1266" font-size="12" fill="#6B5A40">高等教育统一入学考试（统考）等全国性考试的命题、评卷与录取监督；</text>
+    <text x="1640" y="1292" font-size="12" fill="#6B5A40">命题、评卷、录取三环节分离，异地评卷、随机复核。</text>
+    <text x="1616" y="1350" font-size="13" fill="#3B2F23">· 体系衔接：「幼儿可选—童生秀才义务—举翰林进修」统一学制</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g>
+    <rect x="72" y="1442" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="72" y="1442" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="72" y="1472" width="736" height="22" fill="#3B2F23"/>
+    <text x="96" y="1476" font-size="17" font-weight="700" fill="#F7EBC8">工业与信息化部</text>
+    <text x="96" y="1524" font-size="13" font-weight="700" fill="#B8922F">电信与虚空网络市场监管</text>
+    <text x="96" y="1550" font-size="13" fill="#3B2F23">· 网络中立与互联互通；三家运营商及虚拟运营商的</text>
+    <text x="96" y="1576" font-size="13" fill="#3B2F23">　准入、价格监管与消费者权益保护</text>
+    <text x="96" y="1602" font-size="13" fill="#3B2F23">· 电子信息制造业与软件产业管理 · 中小企业发展政策</text>
+    <rect x="96" y="1626" width="688" height="130" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="120" y="1658" font-size="13" font-weight="700" fill="#B8922F">区域职能：算力布局战略</text>
+    <text x="120" y="1684" font-size="12" fill="#6B5A40">会同国资委、国土规划委员会实施「府数郡算」「东数西算」，</text>
+    <text x="120" y="1710" font-size="12" fill="#6B5A40">推动数据存储与算力资源从府城向郡县下沉；数次约谈飞云电传总部，</text>
+    <text x="120" y="1736" font-size="12" fill="#6B5A40">督促加盟商管理与服务标准化建设。</text>
+  </g>
+  <g>
+    <rect x="832" y="1442" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="832" y="1442" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="832" y="1472" width="736" height="22" fill="#3B2F23"/>
+    <text x="856" y="1476" font-size="17" font-weight="700" fill="#F7EBC8">国土规划委员会</text>
+    <text x="856" y="1524" font-size="13" fill="#3B2F23">· 全国国土空间规划与区域协调发展战略的制定与解释</text>
+    <text x="856" y="1556" font-size="13" font-weight="700" fill="#B8922F">牵头编制《璃月国土空间与区域协调发展规划》</text>
+    <text x="856" y="1582" font-size="13" fill="#3B2F23">· 明确五府十郡功能定位、开发强度与交通走廊布局</text>
+    <text x="856" y="1608" font-size="13" fill="#3B2F23">· 对各府、各郡年度投资计划与总规衔接实施把关</text>
+    <rect x="856" y="1632" width="688" height="124" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="880" y="1664" font-size="13" font-weight="700" fill="#B8922F">项目否决权</text>
+    <text x="880" y="1690" font-size="12" fill="#6B5A40">偏离规划方向的重大项目预算可被否决——是制衡地方投资冲动、</text>
+    <text x="880" y="1716" font-size="12" fill="#6B5A40">落实「强郡产业下沉」「弱郡做强郡治」梯次格局的关键闸门。</text>
+  </g>
+  <g>
+    <rect x="1592" y="1442" width="736" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1592" y="1442" width="736" height="52" rx="12" fill="#3B2F23"/>
+    <rect x="1592" y="1472" width="736" height="22" fill="#3B2F23"/>
+    <text x="1616" y="1476" font-size="17" font-weight="700" fill="#F7EBC8">国防部</text>
+    <text x="1616" y="1524" font-size="13" font-weight="700" fill="#B8922F">定位：「政务窗口」与「军地协调机制」</text>
+    <text x="1616" y="1550" font-size="13" fill="#3B2F23">· 不负责前线排兵布阵（武装力量归党中央军委领导）</text>
+    <text x="1616" y="1582" font-size="13" font-weight="700" fill="#B8922F">职责</text>
+    <text x="1616" y="1608" font-size="13" fill="#3B2F23">· 国防预算的申请与划拨</text>
+    <text x="1616" y="1634" font-size="13" fill="#3B2F23">· 军工企业生产协调（向机车集团采购 QYN 5 后勤装备等）</text>
+    <text x="1616" y="1660" font-size="13" fill="#3B2F23">· 兵役征集 · 军民技术相互转化</text>
+    <text x="1616" y="1686" font-size="13" fill="#3B2F23">· 与枫丹、蒙德等国开展例行军事外交与联合演习</text>
+    <rect x="1616" y="1712" width="688" height="44" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1960" y="1740" text-anchor="middle" font-size="12" fill="#6B5A40">宪兵部队（对内）与人民军（对外）由党中央军委绝对领导</text>
+  </g>
+
+  <!-- ═══════════ 底部左 · 与其他国家机关的关系 ═══════════ -->
+  <g>
+    <rect x="60" y="1830" width="1140" height="520" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="1870" font-size="19" font-weight="700" fill="#F7EBC8">政务院与其他国家机关的关系</text>
+    <rect x="430" y="1900" width="400" height="70" rx="10" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1.5"/>
+    <text x="630" y="1942" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">政务院</text>
+    <!-- 四向关系 -->
+    <path d="M 430 1935 H 320 V 1990 H 250" fill="none" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 830 1935 H 940 V 1990 H 1010" fill="none" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 550 1970 V 2030 H 350 V 2060" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowGray)"/>
+    <path d="M 710 1970 V 2030 H 910 V 2060" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowGray)"/>
+    <rect x="110" y="2066" width="290" height="120" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="255" y="2100" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">众议院</text>
+    <text x="255" y="2128" text-anchor="middle" font-size="12" fill="#E8D8AC">对其负责：提交年度工作报告、</text>
+    <text x="255" y="2152" text-anchor="middle" font-size="12" fill="#E8D8AC">接受财政总预算审议批准</text>
+    <rect x="860" y="2066" width="290" height="120" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1005" y="2100" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">参议院</text>
+    <text x="1005" y="2128" text-anchor="middle" font-size="12" fill="#E8D8AC">对各部委部长进行人事质询</text>
+    <text x="1005" y="2152" text-anchor="middle" font-size="12" fill="#E8D8AC">与弹劾；闭会期间监督施政</text>
+    <rect x="110" y="2200" width="290" height="120" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="255" y="2234" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">监察院</text>
+    <text x="255" y="2262" text-anchor="middle" font-size="12" fill="#E8D8AC">特派员常年驻扎各大部委；</text>
+    <text x="255" y="2286" text-anchor="middle" font-size="12" fill="#E8D8AC">重大工程严苛财政审计</text>
+    <rect x="860" y="2200" width="290" height="120" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1005" y="2234" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">人民党中央委员会</text>
+    <text x="1005" y="2262" text-anchor="middle" font-size="12" fill="#E8D8AC">执行执政党与议会的治理蓝图；</text>
+    <text x="1005" y="2286" text-anchor="middle" font-size="12" fill="#E8D8AC">党管方向、政府管执行</text>
+    <text x="630" y="2338" text-anchor="middle" font-size="12" fill="#C9B98A">实线＝负责与报告关系　虚线＝监督与派驻关系</text>
+  </g>
+
+  <!-- ═══════════ 底部右 · 关键人物速览 ═══════════ -->
+  <g>
+    <rect x="1240" y="1830" width="1100" height="520" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1264" y="1870" font-size="19" font-weight="700" fill="#3B2F23">关键人物速览（政务院系统）</text>
+    <line x1="1264" y1="1892" x2="2316" y2="1892" stroke="#D8CCAE" stroke-width="1.5"/>
+    <g font-size="13">
+      <text x="1264" y="1926" font-weight="700" fill="#B8922F">凝光</text><text x="1420" y="1926" fill="#3B2F23">政务院总理 · 原天权星 · 行政机器实际掌舵者</text>
+      <line x1="1264" y1="1940" x2="2316" y2="1940" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="1972" font-weight="700" fill="#B8922F">甘雨</text><text x="1420" y="1972" fill="#3B2F23">办公厅主任兼秘书长 · 润滑官僚机器的政务中枢</text>
+      <line x1="1264" y1="1986" x2="2316" y2="1986" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="2018" font-weight="700" fill="#B8922F">瑶瑶</text><text x="1420" y="2018" fill="#3B2F23">办公厅秘书局秘书兼司团总支主席 · 青年文秘培养</text>
+      <line x1="1264" y1="2032" x2="2316" y2="2032" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="2064" font-weight="700" fill="#B8922F">北斗</text><text x="1420" y="2064" fill="#3B2F23">交通运输部副部长兼海洋事务局局长 · 中央军委委员</text>
+      <line x1="1264" y1="2078" x2="2316" y2="2078" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="2110" font-weight="700" fill="#B8922F">白术</text><text x="1420" y="2110" fill="#3B2F23">卫生保健部副部长 · 古法与现代外医结合的医改推手</text>
+      <line x1="1264" y1="2124" x2="2316" y2="2124" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="2156" font-weight="700" fill="#B8922F">辛焱</text><text x="1420" y="2156" fill="#3B2F23">文旅部青年发展司副司长兼部团委书记</text>
+      <line x1="1264" y1="2170" x2="2316" y2="2170" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="2202" font-weight="700" fill="#B8922F">胡桃</text><text x="1420" y="2202" fill="#3B2F23">往生堂殡葬服务集团董事长（国资委直管国企）</text>
+      <line x1="1264" y1="2216" x2="2316" y2="2216" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="2248" font-weight="700" fill="#B8922F">钟离 · 萍姥姥</text><text x="1420" y="2248" fill="#3B2F23">文化遗产特别顾问 · 非遗保护中心名誉主任（荣誉职）</text>
+      <line x1="1264" y1="2262" x2="2316" y2="2262" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="2294" font-weight="700" fill="#B8922F">香菱 · 云堇</text><text x="1420" y="2294" fill="#3B2F23">餐饮文化推广大使 · 传统艺术推广大使（特聘）</text>
+      <line x1="1264" y1="2308" x2="2316" y2="2308" stroke="#E4DCC8" stroke-width="1"/>
+      <text x="1264" y="2332" font-style="italic" fill="#6B5A40">注：行秋虽出身飞云商会但不担任任何公务；七七与锅巴亦无公职。</text>
+    </g>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2400" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月政治概况》整理；部委设置以《璃月共和国宪法》及政务院组织法为准，特聘大使与荣誉顾问不占行政编制。</text>
+</svg>

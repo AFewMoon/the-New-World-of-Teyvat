@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2440" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#9C948A"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2440" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月驿镖局联盟治理架构图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">从江湖镖局到国家动脉 · 赎买整合 · 联盟大会—理事会—监事会 · 五级科层网络 · 镖师传承生态</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区 · 历史沿革 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="2280" height="330" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="186" font-size="19" font-weight="700" fill="#F7EBC8">历史渊源：危机与「赎买整合」（TE 2005~2010 完成）</text>
+    <rect x="84" y="206" width="1096" height="240" rx="10" fill="#8C3B2E" stroke="#D8AF45" stroke-width="1.2"/>
+    <text x="108" y="238" font-size="13" font-weight="700" fill="#F7EBC8">两大致命冲击</text>
+    <text x="108" y="266" font-size="12" fill="#F3EDDE">① 铁路网的碾压：LRC 铁轨铺遍各府，蒸汽与电力机车单趟运力抵百支镖队，</text>
+    <text x="108" y="292" font-size="12" fill="#F3EDDE">　「千里走单骑」在速度和成本上被彻底碾压</text>
+    <text x="108" y="318" font-size="12" fill="#F3EDDE">② 外来物流资本围剿：北国银行支持的至冬物流集团、枫丹精密运输会社以标准化管理、</text>
+    <text x="108" y="344" font-size="12" fill="#F3EDDE">　金融杠杆和先进技术蚕食市场，意图控制璃月经济毛细血管</text>
+    <text x="108" y="376" font-size="12" font-weight="700" fill="#F7EBC8">后果：超过七成中小镖局破产——经济危机＋失业镖师的社会危机＋物流主权危机三重叠加</text>
+    <rect x="1220" y="206" width="1096" height="240" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1244" y="238" font-size="13" font-weight="700" fill="#D8AF45">凝光的「新契约谈判」（群玉阁 · 历时三个月）</text>
+    <text x="1244" y="266" font-size="12" fill="#F3EDDE">· 以国家信用与黄金屋储备为背书注资，资产、人才、线路尽数整合进一家超级国企</text>
+    <text x="1244" y="292" font-size="12" fill="#F3EDDE">· 自愿入股镖局按高于市价的估值转化为联盟股权</text>
+    <text x="1244" y="318" font-size="12" fill="#F3EDDE">· 镖师趟子手经考核转为企业正式职工，享五险一金与退休金</text>
+    <text x="1244" y="344" font-size="12" fill="#F3EDDE">· 保留各镖局字号、纹章与传统作为「文化品牌」继续发扬</text>
+    <text x="1244" y="370" font-size="12" fill="#F3EDDE">· 政府给予三年免税扶持＋境内末端物流独家经营权承诺</text>
+    <text x="1244" y="402" font-size="12" font-weight="700" fill="#D8AF45">抉择：「要么被外吞并，要么与国同行」——绝大多数选择了后者</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 治理结构 ═══════════ -->
+  <g>
+    <!-- 企业性质徽章 -->
+    <rect x="850" y="506" width="700" height="56" rx="28" fill="url(#goldTop)" stroke="#B8922F" stroke-width="2"/>
+    <text x="1200" y="542" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">副部级国有企业 · 国资委控股 · 计划逐步实现 100% 国有化（二十年赎买）</text>
+
+    <!-- 联盟大会 -->
+    <rect x="120" y="600" width="600" height="230" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="144" y="638" font-size="18" font-weight="700" fill="#F7EBC8">联盟大会（最高权力机关）</text>
+    <text x="144" y="668" font-size="13" fill="#E8D8AC">· 由联盟全体股东代表组成，每年召开一次</text>
+    <text x="144" y="694" font-size="13" fill="#E8D8AC">· 审议年度工作报告、财务预决算、分红方案</text>
+    <text x="144" y="720" font-size="13" fill="#E8D8AC">· 初期存在少量民间股东；国资委计划二十年内完成 100% 赎买</text>
+    <text x="144" y="750" font-size="13" fill="#E8D8AC">· 大会推选产生理事会与监事会</text>
+
+    <!-- 理事会 -->
+    <rect x="900" y="600" width="600" height="230" rx="14" fill="url(#goldTop)" stroke="#B8922F" stroke-width="2"/>
+    <text x="924" y="638" font-size="18" font-weight="700" fill="#3B2F23">理事会（决策机关）· 13 人</text>
+    <text x="924" y="668" font-size="13" fill="#3B2F23">· 国资委直接委派 7 人（含理事长，由政务院任命）</text>
+    <text x="924" y="694" font-size="13" fill="#3B2F23">· 职工代表大会推选 4 人 · 民间股东代表 2 人</text>
+    <text x="924" y="720" font-size="13" fill="#3B2F23">· 理事长通常由具财经或军事后勤经验的官员出任</text>
+    <text x="924" y="750" font-size="13" font-weight="700" fill="#6B5A40">下设：战略与发展委员会 · 安全与合规委员会</text>
+
+    <!-- 监事会 -->
+    <rect x="1680" y="600" width="600" height="230" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
+    <text x="1704" y="638" font-size="18" font-weight="700" fill="#3B2F23">监事会（监督机关）· 7 人</text>
+    <text x="1704" y="668" font-size="13" fill="#3B2F23">· 监察院派遣 3 人（含监事长）· 理事会提名、国资委审批 2 人</text>
+    <text x="1704" y="694" font-size="13" fill="#3B2F23">· 职工代表 2 人</text>
+    <text x="1704" y="722" font-size="13" fill="#3B2F23">· 对财务、合同、安全生产、员工福利全天候审计监督</text>
+    <rect x="1704" y="740" width="552" height="70" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1980" y="768" text-anchor="middle" font-size="12" font-weight="700" fill="#8C3B2E">任何一笔超过 8.5 亿璃月元的采购，</text>
+    <text x="1980" y="792" text-anchor="middle" font-size="12" font-weight="700" fill="#8C3B2E">必须由监事长签字</text>
+
+    <!-- 连线 -->
+    <path d="M 420 830 V 862 H 1200 M 1200 562 V 600" fill="none" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 420 830 V 862 H 1200" fill="none" stroke="#B8922F" stroke-width="2"/>
+    <path d="M 1980 830 V 862 H 1200" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowGray)"/>
+
+    <!-- 总裁执行层 -->
+    <rect x="450" y="868" width="1500" height="130" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
+    <text x="474" y="906" font-size="17" font-weight="700" fill="#3B2F23">总裁（1 人）与执行层</text>
+    <text x="474" y="934" font-size="13" fill="#3B2F23">总裁由理事会提名，报国资委与政务院批准；下设若干副总裁分管六大条线：</text>
+    <text x="474" y="964" font-size="13" fill="#6B5A40">陆路运输 · 水运与港口联动 · 仓储与供应链 · 国际物流 · 人力资源与镖师传承 · 技术与装备</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 五级科层网络 ═══════════ -->
+  <text x="1200" y="1070" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">科层化组织：与行政区划高度耦合的五级网络（中央到村落的毛细血管级覆盖）</text>
+  <g>
+    <!-- L1 总部 -->
+    <rect x="300" y="1096" width="1800" height="96" rx="12" fill="#3B2F23" stroke="#D8AF45" stroke-width="2"/>
+    <text x="330" y="1132" font-size="16" font-weight="700" fill="#D8AF45">Ⅰ 联盟总部（璃港府）</text>
+    <text x="2070" y="1132" text-anchor="end" font-size="12" fill="#E8D8AC">全国调度指挥 · 战略规划 · 国际合同 · 票价/运费政策</text>
+    <text x="330" y="1164" font-size="12" fill="#C9B98A">调度中心与 LRC 调度控制中心 (LTCC) 实现系统级实时对接，共享铁路与公路运力数据</text>
+    <path d="M 1200 1192 V 1214" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- L2 郡/府局 -->
+    <rect x="300" y="1220" width="1800" height="110" rx="12" fill="url(#goldTop)" stroke="#B8922F" stroke-width="2"/>
+    <text x="330" y="1256" font-size="16" font-weight="700" fill="#3B2F23">Ⅱ 郡／府驿镖局 × 15 家（五府＋十个与府平级的郡）</text>
+    <text x="2070" y="1256" text-anchor="end" font-size="12" fill="#6B5A40">璃港府 · 珑埠府 · 翠玦府 · 归离原府 · 琉璃府 ＋ 十郡各设一家</text>
+    <text x="330" y="1290" font-size="12" fill="#3B2F23">局机关五科：调度科 · 安全保卫科（配备武装押运队）· 市场运营科 · 财务科 · 文化遗产科（专门保护老镖局字号与文物）</text>
+    <path d="M 1200 1330 V 1352" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- L3 分局 -->
+    <rect x="300" y="1358" width="1800" height="96" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
+    <text x="330" y="1394" font-size="16" font-weight="700" fill="#3B2F23">Ⅲ 县／市／区驿镖分局</text>
+    <text x="2070" y="1394" text-anchor="end" font-size="12" fill="#6B5A40">五大府每个区＋各郡下辖县、县级市</text>
+    <text x="330" y="1426" font-size="12" fill="#6B5A40">负责本县市内的支线运输、零售与商户对接、乡镇站管理</text>
+    <path d="M 1200 1454 V 1476" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- L4 乡镇站 -->
+    <rect x="300" y="1482" width="1800" height="110" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
+    <text x="330" y="1518" font-size="16" font-weight="700" fill="#3B2F23">Ⅳ 乡／镇驿镖站 —— 最后一公里的送达与收寄</text>
+    <text x="2070" y="1518" text-anchor="end" font-size="12" fill="#6B5A40">标准化的新能源厢式货车、两轮/三轮电动车</text>
+    <text x="330" y="1552" font-size="12" fill="#6B5A40">偏远山区（如轻策庄深处）恢复使用骡马队或驯化的岩晶蝶短途接驳——被视作非物质文化遗产的活态传承</text>
+    <path d="M 1200 1592 V 1614" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- L5 村点 -->
+    <rect x="300" y="1620" width="1800" height="96" rx="12" fill="#F5EFE0" stroke="#9C948A" stroke-width="2" stroke-dasharray="10 6"/>
+    <text x="330" y="1656" font-size="16" font-weight="700" fill="#6B5A40">Ⅴ （试行）村／坊寄送网点 ——「驿镖便民点」</text>
+    <text x="2070" y="1656" text-anchor="end" font-size="12" fill="#9C948A">由村委会或退休职工代管</text>
+    <text x="330" y="1690" font-size="12" fill="#6B5A40">支撑「工业品下乡、农产品进城」的乡村振兴战略，被璃月农会联盟高度评价</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 职工与传承 ═══════════ -->
+  <g>
+    <rect x="60" y="1760" width="1140" height="500" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="1802" font-size="19" font-weight="700" fill="#F7EBC8">职工规模与特色人事制度</text>
+    <rect x="84" y="1822" width="520" height="80" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="344" y="1856" text-anchor="middle" font-size="20" font-weight="700" fill="#D8AF45">约 1.2 万人</text>
+    <text x="344" y="1886" text-anchor="middle" font-size="11" fill="#E8D8AC">正式职工</text>
+    <rect x="656" y="1822" width="520" height="80" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="916" y="1856" text-anchor="middle" font-size="20" font-weight="700" fill="#D8AF45">逾 4.8 万人</text>
+    <text x="916" y="1886" text-anchor="middle" font-size="11" fill="#E8D8AC">含合同制骑手等非全日制雇员的总从业人数</text>
+    <text x="84" y="1936" font-size="14" font-weight="700" fill="#D8AF45">镖师九职级制</text>
+    <text x="84" y="1962" font-size="13" fill="#F3EDDE">· 所有一线物流人员统称「镖师」，内部设九个职级（初行镖师至大宗师镖师）</text>
+    <text x="84" y="1988" font-size="13" fill="#F3EDDE">· 与薪酬、福利、投票权挂钩</text>
+    <text x="84" y="2014" font-size="13" fill="#F3EDDE">· 晋级需同时满足三项硬指标：工龄 ＋ 业绩考核 ＋ 安全里程数</text>
+    <text x="84" y="2050" font-size="14" font-weight="700" fill="#D8AF45">文脉保护岗</text>
+    <text x="84" y="2076" font-size="13" fill="#F3EDDE">· 「威震」「顺风」「铁血」等老字号获颁「百年字号」铜牌，原址设文脉传承办公室</text>
+    <text x="84" y="2102" font-size="13" fill="#F3EDDE">· 原镖局传人任名誉顾问领文化保护津贴；不参与日常经营，拥有联盟文化活动指导监督权</text>
+  </g>
+  <g>
+    <rect x="1240" y="1760" width="1100" height="500" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <text x="1264" y="1802" font-size="19" font-weight="700" fill="#3B2F23">镖师节与文化认同</text>
+    <rect x="1264" y="1822" width="1052" height="220" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1288" y="1856" font-size="14" font-weight="700" fill="#B8922F">每年立冬 · 镖师节祭拜仪式</text>
+    <text x="1288" y="1884" font-size="13" fill="#3B2F23">· 联盟各地职工代表齐聚璃港府，大型祭拜仪式</text>
+    <text x="1288" y="1910" font-size="13" fill="#3B2F23">· 纪念在押运途中因公殉职的先辈镖师</text>
+    <text x="1288" y="1936" font-size="13" fill="#3B2F23">· 由凝光或继任理事长亲自点燃象征「永远的商路」的长明灯</text>
+    <text x="1288" y="1962" font-size="13" fill="#3B2F23">· 同城骑手身着统一制式轻便甲胄、头盔绘老镖局纹章——已成璃月街头文化符号</text>
+    <text x="1288" y="1996" font-size="13" font-weight="700" fill="#B8922F">内部张力</text>
+    <text x="1288" y="2022" font-size="12" fill="#6B5A40">科层化后部分老镖师抱怨「公文比拳头重」，创造力与江湖效率下降——</text>
+    <text x="1288" y="2048" font-size="12" fill="#6B5A40">《联盟远景纲要》试图以「智能驿站村」「人机协同镖队」「跨府三日达」重启自我革命。</text>
+    <rect x="1264" y="2072" width="1052" height="160" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1288" y="2106" font-size="13" font-weight="700" fill="#D8AF45">未来挑战三题</text>
+    <text x="1288" y="2134" font-size="12" fill="#E8D8AC">技术冲击：枫丹无人配送构装体、稻妻雷元素微型无人机挑战庞大人力成本模式；</text>
+    <text x="1288" y="2160" font-size="12" fill="#E8D8AC">内部僵化：科层化的效率损耗；开放压力：自由党推动《驿镖法》修订，要求允许民间资本自建末端网络。</text>
+    <text x="1288" y="2200" font-size="11" fill="#C9B98A">老字号的金字牌匾下，一场新的自我革命正在缓缓展开。</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2320" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月驿镖局联盟概况》整理；接受政务院指导、众议院监察。赎买整合约于 TE 2005~2010 年间完成。</text>
+</svg>

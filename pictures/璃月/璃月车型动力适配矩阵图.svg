@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2360" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2400" height="2360" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月车型动力适配矩阵图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">看排气管（或有没有排气管）就能猜出车主身份与目的地 —— 八类车型的精准市场细分</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 卡片网格 2×4 ═══════════ -->
+  <!-- 1 平民轿车 -->
+  <g>
+    <rect x="60" y="150" width="1130" height="380" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="60" y="150" width="1130" height="56" rx="14" fill="#3B2F23"/>
+    <rect x="60" y="178" width="1130" height="28" fill="#3B2F23"/>
+    <text x="84" y="186" font-size="17" font-weight="700" fill="#F7EBC8">平民轿车（A 级 / B 级家用车）</text>
+    <rect x="880" y="162" width="290" height="32" rx="16" fill="url(#goldTop)"/>
+    <text x="1025" y="184" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">纯化学电池（枫丹引进版）</text>
+    <text x="84" y="244" font-size="13" font-weight="700" fill="#B8922F">市场逻辑</text>
+    <text x="84" y="272" font-size="13" fill="#3B2F23">· 居住在电网范围内的普通市民，「买断制」民用级符箓（动辄百万璃月元）无法承受</text>
+    <text x="84" y="298" font-size="13" fill="#3B2F23">· 面对仅需 25.5 璃月元/度的国家电网，纯电轿车是绝对性价比之王</text>
+    <text x="84" y="324" font-size="13" fill="#3B2F23">· 续航通常 300~400 公里：白天城内代步，夜晚插小区慢充桩；周末卫星城郊游无压力</text>
+    <rect x="84" y="352" width="1082" height="140" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="384" font-size="13" font-weight="700" fill="#B8922F">用户画像</text>
+    <text x="108" y="412" font-size="12" fill="#6B5A40">工薪家庭、小商户、通勤族——「白天拉人，晚上喂电」的规律用车节奏，</text>
+    <text x="108" y="438" font-size="12" fill="#6B5A40">与电网负荷曲线天然互补；换车周期内省下的能源钱足以覆盖电池衰减。</text>
+    <text x="108" y="470" font-size="11" fill="#9C948A">对应动力技术：电驱动 · 化学电池分支</text>
+  </g>
+
+  <!-- 2 MPV -->
+  <g>
+    <rect x="1230" y="150" width="1110" height="380" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <rect x="1230" y="150" width="1110" height="56" rx="14" fill="#3B2F23"/>
+    <rect x="1230" y="178" width="1110" height="28" fill="#3B2F23"/>
+    <text x="1254" y="186" font-size="17" font-weight="700" fill="#F7EBC8">MPV／保姆车（多用途乘用车）</text>
+    <rect x="1990" y="162" width="330" height="32" rx="16" fill="url(#goldTop)"/>
+    <text x="2155" y="184" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">符箓-电网插电混动 ★中产之选</text>
+    <text x="1254" y="244" font-size="13" font-weight="700" fill="#B8922F">市场逻辑</text>
+    <text x="1254" y="272" font-size="13" fill="#3B2F23">· MPV 核心诉求＝绝对的平顺与空间：岩引擎怠速震动大、有残渣，易惊醒车内休息的老人贵客</text>
+    <text x="1254" y="298" font-size="13" fill="#3B2F23">· 插混车型无论城内城外均由电机驱动，符箓仅作静默发电机为电池补能</text>
+    <text x="1254" y="324" font-size="13" fill="#3B2F23">· 实现全域极致平顺与静谧——永远不断电的空调是一大卖点</text>
+    <rect x="1254" y="352" width="1062" height="140" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1278" y="384" font-size="13" font-weight="700" fill="#B8922F">用户画像与口碑</text>
+    <text x="1278" y="412" font-size="12" fill="#6B5A40">被璃月中产阶级家庭誉为「带轮子的移动茶室」；接送长辈、商务接待、家族出游的体面之选。</text>
+    <text x="1278" y="438" font-size="12" fill="#6B5A40">车顶符箓的静默运转即是社交名片——「我家车不用充电桩，它自己会发电」。</text>
+    <text x="1278" y="470" font-size="11" fill="#9C948A">对应动力架构：混合动力 · 符箓-电网插电式</text>
+  </g>
+
+  <!-- 3 GT 跑车 -->
+  <g>
+    <rect x="60" y="566" width="1130" height="380" rx="14" fill="#3B2F23" stroke="#D8AF45" stroke-width="2"/>
+    <rect x="60" y="566" width="1130" height="56" rx="14" fill="#8C3B2E"/>
+    <rect x="60" y="594" width="1130" height="28" fill="#8C3B2E"/>
+    <text x="84" y="602" font-size="17" font-weight="700" fill="#F7EBC8">豪华轿跑／性能车（GT 跑车）</text>
+    <rect x="790" y="578" width="380" height="32" rx="16" fill="none" stroke="#D8AF45" stroke-width="1.5"/>
+    <text x="980" y="600" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">纯雷元素动力 或 极光反应混动</text>
+    <text x="84" y="660" font-size="13" font-weight="700" fill="#D8AF45">市场逻辑</text>
+    <text x="84" y="688" font-size="13" fill="#E8D8AC">· 富商子弟（飞云商会少爷们）或追求极致驾驶乐趣的权贵对「省钱」毫无兴趣</text>
+    <text x="84" y="714" font-size="13" fill="#E8D8AC">· 雷元素动力的恐怖初段加速、无声推背感，以及去 VIP 站点享受「注射」服务的过程本身就是阶级剥离感</text>
+    <text x="84" y="740" font-size="13" fill="#E8D8AC">· 极少数立于财富顶端的疯子定制航天级结晶隔离舱＋惯性中和器的极光混动跑车，享受雷岩交织的狂暴轰鸣</text>
+    <rect x="84" y="768" width="1082" height="140" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="800" font-size="13" font-weight="700" fill="#D8AF45">用户画像</text>
+    <text x="108" y="828" font-size="12" fill="#E8D8AC">港口区注射站的常客、午夜归离原公路的电弧传说；财政部以 200% 奢侈品排量税</text>
+    <text x="108" y="854" font-size="12" fill="#E8D8AC">完成二次财富调节——税单本身也成为身份证明的一部分。</text>
+    <text x="108" y="886" font-size="11" fill="#C9B98A">对应动力技术：雷元素动力 ／ 混合动力 · 极光反应（市占不足 3%）</text>
+  </g>
+
+  <!-- 4 行政座驾 -->
+  <g>
+    <rect x="1230" y="566" width="1110" height="380" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <rect x="1230" y="566" width="1110" height="56" rx="14" fill="#3B2F23"/>
+    <rect x="1230" y="594" width="1110" height="28" fill="#3B2F23"/>
+    <text x="1254" y="602" font-size="17" font-weight="700" fill="#F7EBC8">政商轿车／行政级座驾（D 级旗舰）</text>
+    <rect x="2010" y="578" width="310" height="32" rx="16" fill="url(#goldTop)"/>
+    <text x="2165" y="600" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">纯符箓动力（顶规＋大型飞轮组）</text>
+    <text x="1254" y="660" font-size="13" font-weight="700" fill="#B8922F">市场逻辑</text>
+    <text x="1254" y="688" font-size="13" fill="#3B2F23">· 政务院办公厅秘书们、北国银行高管最看重「绝对的可靠性与时间成本」</text>
+    <text x="1254" y="714" font-size="13" fill="#3B2F23">· 没时间去充电，也不愿加注带危险性的雷元素液</text>
+    <text x="1254" y="740" font-size="13" fill="#3B2F23">· 顶配手绘符箓＋重达半吨的悬浮合金飞轮缓冲：20 年不间断的幽灵般行驶（地脉契约免费能源）</text>
+    <rect x="1254" y="768" width="1062" height="140" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1278" y="800" font-size="13" font-weight="700" fill="#B8922F">用户画像</text>
+    <text x="1278" y="828" font-size="12" fill="#6B5A40">车外是喧嚣的璃月港，车内则是死一般的寂静——随时可以召开加密的商战会议。</text>
+    <text x="1278" y="854" font-size="12" fill="#6B5A40">后排办公桌、加密通讯终端、隔音玻璃升降一键切换「会议模式」，是行政级标配。</text>
+    <text x="1278" y="886" font-size="11" fill="#9C948A">对应动力技术：电驱动 · 符箓自发电（民用顶规）</text>
+  </g>
+
+  <!-- 5 SUV -->
+  <g>
+    <rect x="60" y="982" width="1130" height="380" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="60" y="982" width="1130" height="56" rx="14" fill="#3B2F23"/>
+    <rect x="60" y="1010" width="1130" height="28" fill="#3B2F23"/>
+    <text x="84" y="1018" font-size="17" font-weight="700" fill="#F7EBC8">SUV／越野车</text>
+    <rect x="850" y="994" width="320" height="32" rx="16" fill="url(#goldTop)"/>
+    <text x="1010" y="1016" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">增程式岩电混动（模块化燃烧室）</text>
+    <text x="84" y="1076" font-size="13" font-weight="700" fill="#B8922F">市场逻辑</text>
+    <text x="84" y="1104" font-size="13" fill="#3B2F23">· 冒险家协会高级成员、宪兵部队边境巡逻队是主要受众</text>
+    <text x="84" y="1130" font-size="13" fill="#3B2F23">· 离开文明社会后充电桩彻底消失——增程架构完美解决痛点</text>
+    <text x="84" y="1156" font-size="13" fill="#3B2F23">· 四轮独立电控提供精准低速脱困扭矩；电池告急时野外开采几块石珀或白铁矿直接投入后备箱底部的微型岩元素发电机即可继续前进</text>
+    <rect x="84" y="1184" width="1082" height="140" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1216" font-size="13" font-weight="700" fill="#B8922F">用户画像</text>
+    <text x="108" y="1244" font-size="12" fill="#6B5A40">真正的「荒野求生级」动力架构：模块化燃烧室堵塞可快速更换，极端环境下可靠运行；</text>
+    <text x="108" y="1270" font-size="12" fill="#6B5A40">探险队的改装清单里永远有一格备用燃烧室模块和一箱石珀。</text>
+    <text x="108" y="1302" font-size="11" fill="#9C948A">对应动力架构：混合动力 · 增程式岩电</text>
+  </g>
+
+  <!-- 6 面包车 -->
+  <g>
+    <rect x="1230" y="982" width="1110" height="380" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1230" y="982" width="1110" height="56" rx="14" fill="#3B2F23"/>
+    <rect x="1230" y="1010" width="1110" height="28" fill="#3B2F23"/>
+    <text x="1254" y="1018" font-size="17" font-weight="700" fill="#F7EBC8">面包车／轻型厢式货车</text>
+    <rect x="1900" y="994" width="420" height="32" rx="16" fill="#E4DCC8"/>
+    <text x="2110" y="1016" text-anchor="middle" font-size="13" font-weight="700" fill="#6B5A40">纯化学电池 或 丐版岩元素引擎</text>
+    <text x="1254" y="1076" font-size="13" font-weight="700" fill="#B8922F">市场逻辑</text>
+    <text x="1254" y="1104" font-size="13" fill="#3B2F23">· 万民堂送货车、码头小型驳货车对成本极其敏感</text>
+    <text x="1254" y="1130" font-size="13" fill="#3B2F23">· 电网范围内活动：只充廉价电网的纯电面包车是最佳选择</text>
+    <text x="1254" y="1156" font-size="13" fill="#3B2F23">· 往返层岩巨渊与轻策庄之间的倒爷偏爱最原始的岩引擎——吵闹震动大、经常要扫排气管石渣，但抗造、结构极简</text>
+    <rect x="1254" y="1184" width="1062" height="140" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1278" y="1216" font-size="13" font-weight="700" fill="#B8922F">用户画像</text>
+    <text x="1278" y="1244" font-size="12" fill="#6B5A40">路边随便一家铁匠铺抡起锤子就能修——对跑矿区线路的老司机而言，</text>
+    <text x="1278" y="1270" font-size="12" fill="#6B5A40">「能一直跑」比「跑得舒服」重要一百倍。</text>
+    <text x="1278" y="1302" font-size="11" fill="#9C948A">对应动力技术：化学电池分支 ／ 岩元素动力（丐版）</text>
+  </g>
+
+  <!-- 7 重卡 -->
+  <g>
+    <rect x="60" y="1398" width="1130" height="380" rx="14" fill="#3B2F23" stroke="#D8AF45" stroke-width="2"/>
+    <rect x="60" y="1398" width="1130" height="56" rx="14" fill="#3B2F23"/>
+    <rect x="60" y="1426" width="1130" height="28" fill="#3B2F23"/>
+    <text x="84" y="1434" font-size="17" font-weight="700" fill="#F7EBC8">重型卡车／跨国物流车</text>
+    <rect x="730" y="1410" width="440" height="32" rx="16" fill="url(#goldTop)"/>
+    <text x="950" y="1432" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">入门工业级符箓 (5~20 MW)＋高速飞轮</text>
+    <text x="84" y="1494" font-size="13" font-weight="700" fill="#D8AF45">市场逻辑</text>
+    <text x="84" y="1522" font-size="13" fill="#E8D8AC">· 璃月金融与重工业结合的奇观：能拉动百吨矿石的重卡，买断制动总成单价 20.4 亿~51 亿璃月元</text>
+    <text x="84" y="1548" font-size="13" fill="#E8D8AC">· 物流公司无力全款购买 → 通过本土钱庄或北国银行进行重资产抵押贷款</text>
+    <text x="84" y="1574" font-size="13" fill="#E8D8AC">· 一旦购入：未来 20 年享受地脉契约免费基础配额，日常运营「燃料」成本几乎为零</text>
+    <rect x="84" y="1602" width="1082" height="140" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1634" font-size="13" font-weight="700" fill="#D8AF45">用户画像</text>
+    <text x="108" y="1662" font-size="12" fill="#E8D8AC">业务遍及提瓦特大陆的跨国物流巨头、矿区电网功率不高的矿产巨头——境内廉价电网对其意义不大，</text>
+    <text x="108" y="1688" font-size="12" fill="#E8D8AC">符箓重卡带来的「无需妥协的自由运作」才是愿意进行这场重资产豪赌的真正原因。</text>
+    <text x="108" y="1720" font-size="11" fill="#C9B98A">对应动力技术：电驱动 · 符箓自发电（入门工业级）</text>
+  </g>
+
+  <!-- 8 摩托 -->
+  <g>
+    <rect x="1230" y="1398" width="1110" height="380" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1230" y="1398" width="1110" height="56" rx="14" fill="#3B2F23"/>
+    <rect x="1230" y="1426" width="1110" height="28" fill="#3B2F23"/>
+    <text x="1254" y="1434" font-size="17" font-weight="700" fill="#F7EBC8">摩托车／踏板车</text>
+    <rect x="2030" y="1410" width="290" height="32" rx="16" fill="#E4DCC8"/>
+    <text x="2175" y="1432" text-anchor="middle" font-size="13" font-weight="700" fill="#6B5A40">换电式纯化学电池</text>
+    <text x="1254" y="1494" font-size="13" font-weight="700" fill="#B8922F">为什么摩托车不用岩元素或符箓？</text>
+    <text x="1254" y="1522" font-size="13" fill="#3B2F23">· 岩引擎高温且排斥砂石废渣：装在胯下烫腿、溅后行路人一脸碎石</text>
+    <text x="1254" y="1548" font-size="13" fill="#3B2F23">· 符箓又太贵太大——于是催生极其成熟的「两轮车换电网络」</text>
+    <text x="1254" y="1574" font-size="13" fill="#3B2F23">· 街头巷尾的换电柜多由当地商会投资建立：上百璃月元，10 秒换满电枫丹标准规格电池继续穿行港口之夜</text>
+    <rect x="1254" y="1602" width="1062" height="140" rx="10" fill="#8C3B2E" stroke="#D8AF45" stroke-width="1.2"/>
+    <text x="1278" y="1634" font-size="13" font-weight="700" fill="#F7EBC8">非法改装警示</text>
+    <text x="1278" y="1662" font-size="12" fill="#F3EDDE">极少数叛逆摇滚青年（辛焱的乐迷们）非法改装微型雷元素激发器，在午夜归离原公路拉出蓝紫色电弧尾迹——</text>
+    <text x="1278" y="1688" font-size="12" fill="#F3EDDE">极易引发雷元素失控爆炸，缺乏绝缘防护时停车积水即形成导电回路瞬间化为焦炭。宪兵部队对此严惩不贷。</text>
+    <text x="1278" y="1720" font-size="11" fill="#E8D8AC">对应动力技术：化学电池分支 · 换电模式（送餐员与急递员的最爱）</text>
+  </g>
+
+  <!-- ═══════════ 底部面板 ═══════════ -->
+  <g>
+    <rect x="60" y="1814" width="2280" height="120" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="84" y="1852" font-size="15" font-weight="700" fill="#3B2F23">细分逻辑总结：初始成本 × 使用成本 × 环境适应性 的三维权衡</text>
+    <text x="84" y="1880" font-size="13" fill="#3B2F23">各种动力技术在三个维度上差异巨大，使璃月汽车市场呈现极其精准的分层——没有一种路线通吃，也没有一种路线出局。</text>
+    <text x="84" y="1908" font-size="12" fill="#6B5A40">识别口诀：有排气管且冒石渣＝岩系；排气管带快拆接口＝增程越野；完全无声＝雷系或符箓；车顶有微光纹路＝符箓在发电。</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="1980" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月汽车动力技术》整理；车型分类与适配逻辑为文中给定设定，价格与技术参数详见《璃月汽车动力四大流派图》《璃月符箓动力经济性图》。</text>
+</svg>

@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2780" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2780" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月高校体系与教育规模图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">三级办学格局 · 重点高校一览 · 在校生结构金字塔 · 职业与成人教育 · 国际交流合作（TE 2030 参考值）</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区左 · 教育规模 ═══════════ -->
+  <g>
+    <rect x="60" y="150" width="1130" height="540" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="84" y="190" font-size="19" font-weight="700" fill="#3B2F23">教育规模总览（截至 TE 2030 · 参考值）</text>
+    <!-- 义务教育条 -->
+    <text x="84" y="232" font-size="14" font-weight="700" fill="#3B2F23">义务教育阶段在校生　约 760 万</text>
+    <rect x="84" y="244" width="984" height="44" rx="8" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1.5"/>
+    <text x="576" y="273" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">童生（小学五年）＋ 秀才（中学三年）· 八年免费 · 中央兜底</text>
+    <!-- 高校总量条 -->
+    <text x="84" y="330" font-size="14" font-weight="700" fill="#3B2F23">各类高校在校生　约 190 万</text>
+    <rect x="84" y="342" width="246" height="44" rx="8" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="207" y="371" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">金字塔结构</text>
+    <text x="350" y="371" font-size="12" fill="#6B5A40">宽度按在校生比例绘制</text>
+    <!-- 高校内部构成 -->
+    <rect x="84" y="404" width="172" height="40" rx="6" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1"/>
+    <text x="270" y="430" font-size="13" font-weight="700" fill="#3B2F23">举人 ≈ 七成（约 133 万）</text>
+    <rect x="84" y="452" width="62" height="40" rx="6" fill="#D8AF45" stroke="#B8922F" stroke-width="1"/>
+    <text x="270" y="478" font-size="13" font-weight="700" fill="#3B2F23">进士 ≈ 两成半（约 48 万）</text>
+    <rect x="84" y="500" width="16" height="40" rx="4" fill="#9C948A"/>
+    <text x="270" y="526" font-size="13" font-weight="700" fill="#3B2F23">庶常＋翰林 ≈ 半成（约 10 万）· 精英化培养</text>
+    <text x="160" y="431" text-anchor="middle" font-size="11" font-weight="700" fill="#3B2F23">70%</text>
+    <text x="115" y="478" text-anchor="middle" font-size="11" font-weight="700" fill="#FBF8F2">25%</text>
+    <!-- 毛入学率 -->
+    <line x1="84" y1="566" x2="1166" y2="566" stroke="#D8CCAE" stroke-width="1"/>
+    <rect x="84" y="586" width="380" height="72" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="274" y="618" text-anchor="middle" font-size="22" font-weight="700" fill="#D8AF45">≈ 55%</text>
+    <text x="274" y="644" text-anchor="middle" font-size="12" fill="#E8D8AC">高等教育毛入学率 · 大众化阶段</text>
+    <rect x="484" y="586" width="330" height="72" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="649" y="618" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">城 90% ／ 乡 60%</text>
+    <text x="649" y="644" text-anchor="middle" font-size="12" fill="#6B5A40">城区／乡村入园率（差距待弥合）</text>
+    <rect x="834" y="586" width="334" height="72" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1001" y="618" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">提瓦特前列</text>
+    <text x="1001" y="644" text-anchor="middle" font-size="12" fill="#6B5A40">教育规模与普及程度居各列前茅</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · 管理架构与办学格局 ═══════════ -->
+  <g>
+    <rect x="1250" y="150" width="1090" height="540" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1274" y="190" font-size="19" font-weight="700" fill="#3B2F23">管理架构与三级办学格局</text>
+    <!-- 政务院 → 教育部 -->
+    <rect x="1630" y="212" width="330" height="42" rx="21" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1795" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">政务院</text>
+    <path d="M 1795 254 V 276" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="1545" y="282" width="500" height="48" rx="10" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1.5"/>
+    <text x="1795" y="313" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">教育部（主管全国教育事业）</text>
+    <!-- 五司 -->
+    <g font-size="12">
+      <rect x="1274" y="348" width="200" height="32" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+      <text x="1374" y="369" text-anchor="middle" fill="#3B2F23">基础教育司</text>
+      <rect x="1490" y="348" width="200" height="32" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+      <text x="1590" y="369" text-anchor="middle" fill="#3B2F23">高等教育司</text>
+      <rect x="1706" y="348" width="290" height="32" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+      <text x="1851" y="369" text-anchor="middle" fill="#3B2F23">职业教育与成人教育司</text>
+      <rect x="2012" y="348" width="200" height="32" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+      <text x="2112" y="369" text-anchor="middle" fill="#3B2F23">师范与师资司</text>
+      <rect x="1420" y="392" width="290" height="32" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+      <text x="1565" y="413" text-anchor="middle" fill="#3B2F23">语言文字与教材司</text>
+    </g>
+    <text x="1274" y="452" font-size="12" fill="#6B5A40">职能：学制与学位标准制定 · 教材审定 · 教师队伍建设 · 教育经费分配 · 对高校行政监督</text>
+    <!-- 直属与地方 -->
+    <rect x="1274" y="468" width="512" height="66" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.5"/>
+    <text x="1290" y="494" font-size="13" font-weight="700" fill="#B8922F">国家考试院（教育部直属）</text>
+    <text x="1290" y="518" font-size="12" fill="#3B2F23">统考命题·组织·评卷·录取监督；管理全国性考试</text>
+    <rect x="1806" y="468" width="510" height="66" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1822" y="494" font-size="13" font-weight="700" fill="#B8922F">府教育局 → 郡教谕署（沿旧称）</text>
+    <text x="1822" y="518" font-size="12" fill="#3B2F23">学校布点 · 学籍管理 · 教师调配 · 督导评估</text>
+    <!-- 三级办学 -->
+    <line x1="1274" y1="552" x2="2316" y2="552" stroke="#D8CCAE" stroke-width="1"/>
+    <rect x="1274" y="566" width="1042" height="36" rx="8" fill="#3B2F23" stroke="#C9A227" stroke-width="1"/>
+    <text x="1290" y="590" font-size="13" font-weight="700" fill="#D8AF45">① 教育部直属高校</text>
+    <text x="2316" y="590" text-anchor="end" font-size="12" fill="#E8D8AC">承担国家科研任务与高层次人才培养</text>
+    <rect x="1274" y="608" width="1042" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+    <text x="1290" y="632" font-size="13" font-weight="700" fill="#B8922F">② 府郡属高校</text>
+    <text x="2316" y="632" text-anchor="end" font-size="12" fill="#6B5A40">服务区域产业（如珑埠航运商贸学院、层岩矿冶学院）</text>
+    <rect x="1274" y="650" width="1042" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+    <text x="1290" y="674" font-size="13" font-weight="700" fill="#B8922F">③ 企业与民办办学机构</text>
+    <text x="2316" y="674" text-anchor="end" font-size="12" fill="#6B5A40">国企技术学校、行业培训学院，对接一线技能需求</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 重点高校一览 ═══════════ -->
+  <text x="1200" y="738" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">重点高校一览</text>
+  <line x1="960" y1="752" x2="1440" y2="752" stroke="#C9A227" stroke-width="1.5"/>
+  <g>
+    <!-- 表头 -->
+    <rect x="60" y="768" width="2280" height="48" fill="#3B2F23"/>
+    <text x="270" y="799" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">高校</text>
+    <text x="580" y="799" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">所在府</text>
+    <text x="830" y="799" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">办学层级 · 类型</text>
+    <text x="1180" y="799" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">分类定位</text>
+    <text x="1810" y="799" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">主要方向</text>
+    <!-- 行 1 -->
+    <rect x="60" y="816" width="2280" height="74" fill="#F5EFE0"/>
+    <text x="88" y="860" font-size="15" font-weight="700" fill="#3B2F23">璃月岩华大学</text>
+    <text x="580" y="860" text-anchor="middle" font-size="13" fill="#3B2F23">璃港府</text>
+    <text x="830" y="860" text-anchor="middle" font-size="13" fill="#3B2F23">部属 · 学术综合</text>
+    <text x="1180" y="860" text-anchor="middle" font-size="13" fill="#3B2F23">研究型 · 最高学府</text>
+    <text x="1350" y="860" font-size="13" fill="#6B5A40">四轨齐备，文史哲、理学、工科、商学并重</text>
+    <!-- 行 2 -->
+    <rect x="60" y="890" width="2280" height="74" fill="#FBF8F2"/>
+    <text x="88" y="934" font-size="15" font-weight="700" fill="#3B2F23">璃月职业大学</text>
+    <text x="580" y="934" text-anchor="middle" font-size="13" fill="#3B2F23">璃港府</text>
+    <text x="830" y="934" text-anchor="middle" font-size="13" fill="#3B2F23">部属 · 职业应用</text>
+    <text x="1180" y="934" text-anchor="middle" font-size="13" fill="#3B2F23">职业型 · 双元制特色</text>
+    <text x="1350" y="934" font-size="13" fill="#6B5A40">面向制造与物流一线的技术技能人才，实行双元制培养</text>
+    <!-- 行 3 -->
+    <rect x="60" y="964" width="2280" height="74" fill="#F5EFE0"/>
+    <text x="88" y="1008" font-size="15" font-weight="700" fill="#3B2F23">归离原工业技术学院</text>
+    <text x="580" y="1008" text-anchor="middle" font-size="13" fill="#3B2F23">归离原府</text>
+    <text x="830" y="1008" text-anchor="middle" font-size="13" fill="#3B2F23">部属 · 技术应用</text>
+    <text x="1180" y="1008" text-anchor="middle" font-size="13" fill="#3B2F23">应用型 · 产研结合</text>
+    <text x="1350" y="1008" font-size="13" fill="#6B5A40">机械、冶金与工程制造，与蒙德风能产业长期合作</text>
+    <!-- 行 4 -->
+    <rect x="60" y="1038" width="2280" height="74" fill="#FBF8F2"/>
+    <text x="88" y="1082" font-size="15" font-weight="700" fill="#3B2F23">翠玦科技大学</text>
+    <text x="580" y="1082" text-anchor="middle" font-size="13" fill="#3B2F23">翠玦府</text>
+    <text x="830" y="1082" text-anchor="middle" font-size="13" fill="#3B2F23">部属 · 学术理科为主</text>
+    <text x="1180" y="1082" text-anchor="middle" font-size="13" fill="#3B2F23">研究型 · 理工强校</text>
+    <text x="1350" y="1082" font-size="13" fill="#6B5A40">符箓与高新科技、材料、计算科学</text>
+    <!-- 行 5 -->
+    <rect x="60" y="1112" width="2280" height="74" fill="#F5EFE0"/>
+    <text x="88" y="1156" font-size="15" font-weight="700" fill="#3B2F23">珑埠航运与商贸学院</text>
+    <text x="580" y="1156" text-anchor="middle" font-size="13" fill="#3B2F23">珑埠府</text>
+    <text x="830" y="1156" text-anchor="middle" font-size="13" fill="#3B2F23">府属 · 技术文科</text>
+    <text x="1180" y="1156" text-anchor="middle" font-size="13" fill="#3B2F23">应用型 · 行业院校</text>
+    <text x="1350" y="1156" font-size="13" fill="#6B5A40">航运、物流、国际贸易与涉外商务</text>
+    <!-- 行 6 -->
+    <rect x="60" y="1186" width="2280" height="74" fill="#FBF8F2"/>
+    <text x="88" y="1230" font-size="15" font-weight="700" fill="#3B2F23">璃月医学院</text>
+    <text x="580" y="1230" text-anchor="middle" font-size="13" fill="#3B2F23">璃港府</text>
+    <text x="830" y="1230" text-anchor="middle" font-size="13" fill="#3B2F23">部属 · 学术理科</text>
+    <text x="1180" y="1230" text-anchor="middle" font-size="13" fill="#3B2F23">研究型 · 医学重镇</text>
+    <text x="1350" y="1230" font-size="13" fill="#6B5A40">古法医术与现代外医结合，支撑医疗改革</text>
+    <!-- 行 7 -->
+    <rect x="60" y="1260" width="2280" height="74" fill="#F5EFE0"/>
+    <text x="88" y="1304" font-size="15" font-weight="700" fill="#3B2F23">云翰艺术与戏剧学院</text>
+    <text x="580" y="1304" text-anchor="middle" font-size="13" fill="#3B2F23">璃港府</text>
+    <text x="830" y="1304" text-anchor="middle" font-size="13" fill="#3B2F23">部属 · 学术文科</text>
+    <text x="1180" y="1304" text-anchor="middle" font-size="13" fill="#3B2F23">应用型 · 艺术院校</text>
+    <text x="1350" y="1304" font-size="13" fill="#6B5A40">戏曲、音乐、美术与影视，衔接传统艺术推广</text>
+    <!-- 行 8 -->
+    <rect x="60" y="1334" width="2280" height="74" fill="#FBF8F2"/>
+    <text x="88" y="1378" font-size="15" font-weight="700" fill="#3B2F23">天衡政法学院</text>
+    <text x="580" y="1378" text-anchor="middle" font-size="13" fill="#3B2F23">璃港府</text>
+    <text x="830" y="1378" text-anchor="middle" font-size="13" fill="#3B2F23">部属 · 学术文科</text>
+    <text x="1180" y="1378" text-anchor="middle" font-size="13" fill="#3B2F23">应用型 · 政法专门</text>
+    <text x="1350" y="1378" font-size="13" fill="#6B5A40">法学与公共管理，衔接成文法化与司法人才培养</text>
+    <!-- 行 9 -->
+    <rect x="60" y="1408" width="2280" height="74" fill="#F5EFE0"/>
+    <text x="88" y="1452" font-size="15" font-weight="700" fill="#3B2F23">层岩矿冶学院</text>
+    <text x="580" y="1452" text-anchor="middle" font-size="13" fill="#3B2F23">琉璃府</text>
+    <text x="830" y="1452" text-anchor="middle" font-size="13" fill="#3B2F23">府属 · 技术理科</text>
+    <text x="1180" y="1452" text-anchor="middle" font-size="13" fill="#3B2F23">应用型 · 产业配套</text>
+    <text x="1350" y="1452" font-size="13" fill="#6B5A40">采矿、选矿与矿冶工程，服务层岩巨渊产业带</text>
+    <!-- 表格边框线 -->
+    <line x1="60" y1="1482" x2="2340" y2="1482" stroke="#C9A227" stroke-width="1.5"/>
+    <line x1="500" y1="768" x2="500" y2="1482" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="660" y1="768" x2="660" y2="1482" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1000" y1="768" x2="1000" y2="1482" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1330" y1="768" x2="1330" y2="1482" stroke="#D8CCAE" stroke-width="1"/>
+    <rect x="60" y="768" width="2280" height="714" fill="none" stroke="#C9A227" stroke-width="2"/>
+  </g>
+  <text x="84" y="1520" font-size="13" fill="#6B5A40">注：归离原工业技术学院在琉璃府设西部实训基地，并计划在明蕴郡设制造技术实训基地，每年向蒙德风能与精密仪器企业输送约 500 名毕业生。</text>
+  <text x="84" y="1546" font-size="13" fill="#6B5A40">此外各府郡设有师范、农林、医护、旅游等专科学校，以及璃月铁路总公司下属的铁路学院等行业院校。</text>
+
+  <!-- ═══════════ 第 3 区 · 分类管理 / 职成教 / 公平与挑战 ═══════════ -->
+  <g>
+    <rect x="72" y="1580" width="736" height="660" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="96" y="1620" font-size="19" font-weight="700" fill="#3B2F23">高校分类管理（提瓦特通行口径）</text>
+    <rect x="96" y="1644" width="688" height="150" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.5"/>
+    <text x="120" y="1680" font-size="15" font-weight="700" fill="#B8922F">Ⅰ 研究型高校</text>
+    <text x="120" y="1710" font-size="13" fill="#3B2F23">· 须具备翰林学位授予权</text>
+    <text x="120" y="1736" font-size="13" fill="#3B2F23">· 承担国家科研任务</text>
+    <text x="120" y="1762" font-size="13" fill="#6B5A40">代表：璃月岩华大学、翠玦科技大学、璃月医学院</text>
+    <rect x="96" y="1810" width="688" height="150" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="120" y="1846" font-size="15" font-weight="700" fill="#B8922F">Ⅱ 应用型高校</text>
+    <text x="120" y="1876" font-size="13" fill="#3B2F23">· 以进士（本科）、专业型庶常培养为主</text>
+    <text x="120" y="1902" font-size="13" fill="#3B2F23">· 与厂商联合培养、定向就业为常态</text>
+    <text x="120" y="1928" font-size="13" fill="#6B5A40">代表：珑埠航运与商贸学院、天衡政法学院</text>
+    <rect x="96" y="1976" width="688" height="150" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="120" y="2012" font-size="15" font-weight="700" fill="#B8922F">Ⅲ 职业型高校</text>
+    <text x="120" y="2042" font-size="13" fill="#3B2F23">· 以举人结业、技能证书与双元制培养为特色</text>
+    <text x="120" y="2068" font-size="13" fill="#3B2F23">· 半工半读，毕业即上岗</text>
+    <text x="120" y="2094" font-size="13" fill="#6B5A40">代表：璃月职业大学</text>
+    <text x="96" y="2170" font-size="13" fill="#6B5A40">学位授予与学术评价标准由教育部会同各高校学位评定委员会确定；</text>
+    <text x="96" y="2196" font-size="13" fill="#6B5A40">高校在专业设置与培养方案上保有自主权。</text>
+  </g>
+  <g>
+    <rect x="832" y="1580" width="736" height="660" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="856" y="1620" font-size="19" font-weight="700" fill="#3B2F23">职业教育与成人教育</text>
+    <text x="856" y="1654" font-size="13" font-weight="700" fill="#B8922F">技术学校与现代学徒制</text>
+    <text x="856" y="1680" font-size="13" fill="#3B2F23">· 承接行会学徒传统：「三年学徒、四年效力」师承体系转型</text>
+    <text x="856" y="1706" font-size="13" fill="#3B2F23">· 企业与技校联合招生，学生半工半读</text>
+    <text x="856" y="1732" font-size="13" fill="#3B2F23">· 毕业既获技能等级证书，又可转考高校</text>
+    <text x="856" y="1758" font-size="13" fill="#3B2F23">· 依托璃月职业大学和各府技校，服务重工制造与物流业</text>
+    <text x="856" y="1794" font-size="13" font-weight="700" fill="#B8922F">成人教育与终身学习</text>
+    <text x="856" y="1820" font-size="13" fill="#3B2F23">· 渠道：夜校、函授、开放大学与在线课程</text>
+    <text x="856" y="1846" font-size="13" fill="#3B2F23">· 在职人员可补修学历、转换专业</text>
+    <text x="856" y="1872" font-size="13" fill="#3B2F23">· 虚空网络支撑远程教学，偏远教学点共享城市优质课程</text>
+    <text x="856" y="1908" font-size="13" font-weight="700" fill="#B8922F">职业技能等级证书（四级）</text>
+    <g font-size="14" font-weight="700">
+      <rect x="856" y="1928" width="150" height="46" rx="8" fill="#E4DCC8"/>
+      <text x="931" y="1958" text-anchor="middle" fill="#6B5A40">学徒</text>
+      <path d="M 1010 1951 H 1036" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="1042" y="1928" width="150" height="46" rx="8" fill="#D8AF45"/>
+      <text x="1117" y="1958" text-anchor="middle" fill="#3B2F23">工匠</text>
+      <path d="M 1196 1951 H 1222" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="1228" y="1928" width="150" height="46" rx="8" fill="#B8922F"/>
+      <text x="1303" y="1958" text-anchor="middle" fill="#F7EBC8">技师</text>
+      <path d="M 1382 1951 H 1408" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="1414" y="1928" width="150" height="46" rx="8" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1489" y="1958" text-anchor="middle" fill="#F7EBC8">高级技师</text>
+    </g>
+    <text x="856" y="2006" font-size="13" fill="#3B2F23">· 由行业主管部门与考试机构联合考核</text>
+    <text x="856" y="2032" font-size="13" fill="#3B2F23">· 与学历证书互通互认，是晋升与薪酬的重要依据</text>
+    <text x="856" y="2058" font-size="13" fill="#3B2F23">· 应对「高级技师紧缺」的关键制度安排</text>
+    <rect x="856" y="2084" width="688" height="120" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="880" y="2118" font-size="13" font-weight="700" fill="#B8922F">学历通胀背景下的再平衡</text>
+    <text x="880" y="2146" font-size="13" fill="#3B2F23">进士学位供给增多后，部分岗位出现「学历高配」；</text>
+    <text x="880" y="2172" font-size="13" fill="#3B2F23">实用技能愈发被看重——技能证书成为就业市场的硬通货。</text>
+  </g>
+  <g>
+    <rect x="1592" y="1580" width="736" height="660" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1616" y="1620" font-size="19" font-weight="700" fill="#3B2F23">教育公平与未来挑战</text>
+    <text x="1616" y="1654" font-size="13" font-weight="700" fill="#B8922F">城乡差距与资源下沉</text>
+    <text x="1616" y="1680" font-size="13" fill="#3B2F23">· 山区及新设地区师资、设备、优质课程相对薄弱</text>
+    <text x="1616" y="1706" font-size="13" fill="#3B2F23">· 手段：「分校分院」「实训基地」「乡村教师轮岗」</text>
+    <text x="1616" y="1732" font-size="13" fill="#3B2F23">· 案例：璃港一中遁玉分校；归离原工院琉璃、明蕴基地</text>
+    <text x="1616" y="1768" font-size="13" font-weight="700" fill="#B8922F">教育支出保障</text>
+    <text x="1616" y="1794" font-size="13" fill="#3B2F23">· 教育经费占财政支出比例长期保持高位</text>
+    <text x="1616" y="1820" font-size="13" fill="#3B2F23">· 义务教育全额免费、中央财政兜底</text>
+    <text x="1616" y="1846" font-size="13" fill="#3B2F23">· 高校学费分档补助＋助学贷款，确保「上得起学」</text>
+    <text x="1616" y="1882" font-size="13" font-weight="700" fill="#B8922F">三大挑战</text>
+    <text x="1616" y="1908" font-size="13" fill="#3B2F23">· 应试与通识的张力：统考导向下重应试轻素养，</text>
+    <text x="1616" y="1934" font-size="13" fill="#3B2F23">　举人通识时间偏短，屡引发学制讨论</text>
+    <text x="1616" y="1960" font-size="13" fill="#3B2F23">· 学历通胀：进士学位供给增多，「学历高配」显现</text>
+    <text x="1616" y="1986" font-size="13" fill="#3B2F23">· 技能人才缺口：重工、矿业、物流一线高级技师紧缺，</text>
+    <text x="1616" y="2012" font-size="13" fill="#3B2F23">　职业教育吸引力与待遇有待提升</text>
+    <rect x="1616" y="2038" width="688" height="166" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1640" y="2072" font-size="13" font-weight="700" fill="#D8AF45">未来方向：「普及与提高」并行</text>
+    <text x="1640" y="2100" font-size="13" fill="#E8D8AC">· 扩大幼儿教育覆盖，弥合城乡入园率差距</text>
+    <text x="1640" y="2126" font-size="13" fill="#E8D8AC">· 强化职业教育与产业对接，畅通技能人才晋升通道</text>
+    <text x="1640" y="2152" font-size="13" fill="#E8D8AC">· 推进教育数字化：虚空网络远程教学全覆盖</text>
+    <text x="1640" y="2186" font-size="12" fill="#C9B98A">「学而优则仕」转化为「学历＋基层实践」选任路径，</text>
+    <text x="1640" y="2210" font-size="12" fill="#C9B98A">使教育与实际治理紧密挂钩。</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 国际交流 ═══════════ -->
+  <text x="1200" y="2290" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">国际交流与合作</text>
+  <line x1="1020" y1="2304" x2="1380" y2="2304" stroke="#C9A227" stroke-width="1.5"/>
+  <g>
+    <rect x="72" y="2320" width="546" height="340" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <text x="96" y="2358" font-size="17" font-weight="700" fill="#3B2F23">蒙德</text>
+    <text x="96" y="2390" font-size="13" fill="#3B2F23">· 璃蒙学分互认与学历对等协议，涵盖双方</text>
+    <text x="96" y="2416" font-size="13" fill="#3B2F23">　高校与职业资格认证</text>
+    <text x="96" y="2442" font-size="13" fill="#3B2F23">· 归离原工业技术学院与蒙德风能企业长期合作</text>
+    <text x="96" y="2468" font-size="13" fill="#3B2F23">· 蒙德自由大学、西风骑士学院与璃月岩华大学、</text>
+    <text x="96" y="2494" font-size="13" fill="#3B2F23">　归离原工业技术学院建立交换与联合培养项目</text>
+    <text x="96" y="2520" font-size="13" fill="#3B2F23">· 蒙德的酿酒与管理专业吸引璃月留学生</text>
+    <text x="96" y="2560" font-size="12" fill="#B8922F">合作深度：★★★ 双向流动最活跃方向</text>
+  </g>
+  <g>
+    <rect x="642" y="2320" width="546" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="666" y="2358" font-size="17" font-weight="700" fill="#3B2F23">须弥</text>
+    <text x="666" y="2390" font-size="13" fill="#3B2F23">· 双方高校保持学术交流与留学生往来</text>
+    <text x="666" y="2416" font-size="13" fill="#3B2F23">· 璃月理工科学生赴须弥高校深造</text>
+    <text x="666" y="2442" font-size="13" fill="#3B2F23">· 须弥的人工智能课程与技术管理经验</text>
+    <text x="666" y="2468" font-size="13" fill="#3B2F23">　进入璃月高校课堂</text>
+    <text x="666" y="2494" font-size="13" fill="#3B2F23">· 庶常阶段可赴须弥合作高校修读学分</text>
+    <text x="666" y="2560" font-size="12" fill="#B8922F">合作深度：★★☆ 理工科深造与 AI 课程引进</text>
+  </g>
+  <g>
+    <rect x="1212" y="2320" width="546" height="340" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1236" y="2358" font-size="17" font-weight="700" fill="#3B2F23">枫丹 · 稻妻 · 至冬</text>
+    <text x="1236" y="2390" font-size="13" fill="#3B2F23">· 在精密机械、半导体与重工装备领域开展</text>
+    <text x="1236" y="2416" font-size="13" fill="#3B2F23">　工程师联合培养与技术进修合作</text>
+    <text x="1236" y="2456" font-size="13" font-weight="700" fill="#B8922F">重点领域</text>
+    <text x="1236" y="2482" font-size="13" fill="#3B2F23">枫丹：精密机械与工程标准</text>
+    <text x="1236" y="2508" font-size="13" fill="#3B2F23">稻妻：雷元素应用与电子技术</text>
+    <text x="1236" y="2534" font-size="13" fill="#3B2F23">至冬：重工装备与极地工程技术</text>
+    <text x="1236" y="2560" font-size="12" fill="#B8922F">合作深度：★★☆ 工程师定向联合培养</text>
+  </g>
+  <g>
+    <rect x="1782" y="2320" width="546" height="340" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1806" y="2358" font-size="17" font-weight="700" fill="#F7EBC8">提瓦特国际联盟 (ILT)</text>
+    <text x="1806" y="2390" font-size="13" fill="#E8D8AC">· 璃月高校参与提瓦特层面的教育合作</text>
+    <text x="1806" y="2416" font-size="13" fill="#E8D8AC">　与文凭互认框架</text>
+    <text x="1806" y="2442" font-size="13" fill="#E8D8AC">· 是 ILT 成员国的教育交流枢纽之一</text>
+    <text x="1806" y="2482" font-size="13" font-weight="700" fill="#D8AF45">枢纽地位</text>
+    <text x="1806" y="2508" font-size="13" fill="#E8D8AC">凭借教育规模优势与重商传统，承接跨国</text>
+    <text x="1806" y="2534" font-size="13" fill="#E8D8AC">学历认证、职业资格互认与学术会议承办。</text>
+    <text x="1806" y="2560" font-size="12" fill="#C9B98A">多边框架：ILT 教育交流网络节点</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2720" text-anchor="middle" font-size="12" fill="#6B5A40">注：在校生规模、毛入学率、入园率等为 TE 2030（共和历 26 年）参考值；高校名录以教育部备案的部属与府郡属重点院校为准。</text>
+</svg>

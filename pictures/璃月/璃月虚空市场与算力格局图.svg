@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2600" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2600" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月虚空市场与算力格局图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">鱼灯通讯混合所有制 · 三大运营商分工竞争 · 虚拟运营商生态 · 「5+12」数据中心 · 府数郡算／东数西算</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区左 · 鱼灯通讯 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="1140" height="660" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="188" font-size="20" font-weight="700" fill="#F7EBC8">璃月鱼灯通讯有限公司（唯一基础设施维护商）</text>
+    <text x="84" y="220" font-size="13" fill="#D8AF45">成立 2010 TE（前身七星通信处）· 总部璃港府鱼灯大厦 · 员工约 8,500 人 · TAA 骨干网份额 ≈22%</text>
+    <!-- 股权饼图示意 -->
+    <g>
+      <circle cx="330" cy="440" r="150" fill="none" stroke="#4A3A28" stroke-width="1"/>
+      <path d="M 330 440 L 330 290 A 150 150 0 0 1 480 440 Z" fill="url(#goldTop)"/>
+      <path d="M 330 440 L 480 440 A 150 150 0 0 1 375.6 568.9 Z" fill="#B8922F"/>
+      <path d="M 330 440 L 375.6 568.9 A 150 150 0 0 1 208.1 541.6 Z" fill="#C9A227"/>
+      <path d="M 330 440 L 208.1 541.6 A 150 150 0 0 1 330 290 Z" fill="#6B5A40"/>
+      <text x="400" y="350" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">40%</text>
+      <text x="420" y="515" text-anchor="middle" font-size="14" font-weight="700" fill="#FBF8F2">30%</text>
+      <text x="298" y="530" text-anchor="middle" font-size="13" font-weight="700" fill="#FBF8F2">20%</text>
+      <text x="243" y="405" text-anchor="middle" font-size="12" font-weight="700" fill="#FBF8F2">10%</text>
+    </g>
+    <g font-size="13">
+      <rect x="540" y="296" width="24" height="24" fill="url(#goldTop)"/><text x="580" y="314" fill="#E8D8AC">国资委直接持股 40% —— 战略方向与重大决策否决权</text>
+      <rect x="540" y="338" width="24" height="24" fill="#B8922F"/><text x="580" y="356" fill="#E8D8AC">民间资本约 30% —— 建筑、金融、科技企业与个人股东</text>
+      <rect x="540" y="380" width="24" height="24" fill="#C9A227"/><text x="580" y="398" fill="#E8D8AC">其他国有资本约 20% —— 璃月投资集团、社保基金等（财务投资）</text>
+      <rect x="540" y="422" width="24" height="24" fill="#6B5A40"/><text x="580" y="440" fill="#E8D8AC">战略投资者约 10%（技术合作与互联互通纽带）</text>
+      <text x="580" y="468" font-size="12" fill="#C9B98A">须弥智慧之眼 ≈5% · 枫丹发条数据 ≈3% · 蒙德风声电讯 ≈2%；</text>
+      <text x="580" y="492" font-size="12" fill="#C9B98A">北国银行 ≈3%（计入民间，战略投资——金融交易通道建设）</text>
+      <text x="540" y="524" font-size="12" font-weight="700" fill="#D8AF45">治理特色：国资委不派行政编制高管——总经理、总工程师市场化选聘，对标国际薪酬</text>
+    </g>
+    <!-- 分红条 -->
+    <rect x="84" y="560" width="1092" height="110" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="592" font-size="13" font-weight="700" fill="#D8AF45">年度净利润分配机制</text>
+    <rect x="108" y="606" width="327" height="30" fill="url(#goldTop)"/>
+    <rect x="435" y="606" width="437" height="30" fill="#B8922F"/>
+    <rect x="872" y="606" width="219" height="30" fill="#C9A227"/>
+    <rect x="1091" y="606" width="85" height="30" fill="#6B5A40"/>
+    <text x="271" y="627" text-anchor="middle" font-size="12" font-weight="700" fill="#3B2F23">30% 股东分红</text>
+    <text x="653" y="627" text-anchor="middle" font-size="12" font-weight="700" fill="#FBF8F2">40% 基础设施再投资与技术改造</text>
+    <text x="981" y="627" text-anchor="middle" font-size="11" font-weight="700" fill="#3B2F23">20% 运营储备</text>
+    <text x="1133" y="627" text-anchor="middle" font-size="10" font-weight="700" fill="#FBF8F2">10%</text>
+    <text x="108" y="658" font-size="12" fill="#E8D8AC">核心业务：全境光缆运维 · 国家数据中心 · 三大国际交换中心 · 智慧城市网络基础设施 · 企业级专线与高端定制服务</text>
+    <text x="84" y="706" font-size="13" font-weight="700" fill="#D8AF45">主要部门：网络建设部 · 数据中心部 · 国际业务部 · 技术研发部（驻翠玦）· 网络安全中心 · 客户服务部 · 智慧城市事业部</text>
+    <text x="84" y="736" font-size="12" fill="#C9B98A">网络安全中心运营国家网关，参与 TAA 应急中心 (CSEC) 全部合作机制；三级应急响应（蓝／黄／红），每月红蓝对抗演练。</text>
+    <text x="84" y="766" font-size="12" fill="#C9B98A">核心资产：光缆 25,000 km · 数据中心 5 大＋边缘 12 · 飞艇约 20 艘 · 基站约 12,000 座 · 地脉节点约 800 座 · 国家网关 3 座。</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · 三运营商 ═══════════ -->
+  <g>
+    <rect x="1240" y="146" width="1100" height="660" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1264" y="188" font-size="20" font-weight="700" fill="#3B2F23">市场格局：三家运营商的分工与竞争</text>
+    <rect x="1264" y="210" width="1052" height="180" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1288" y="242" font-size="14" font-weight="700" fill="#D8AF45">鱼灯通讯（混合所有制 · 国资委 40%）—— 统一基建维护者</text>
+    <text x="1288" y="270" font-size="12" fill="#E8D8AC">统一负责全境光缆、基站、飞艇、地脉节点维护；同时参与日常业务竞争。</text>
+    <text x="1288" y="296" font-size="12" fill="#E8D8AC">重心在企业级客户：低延迟专线、企业 VPN、跨境云互联——ULLTC、国际交换中心直连缆、SD-WAN。</text>
+    <text x="1288" y="322" font-size="12" fill="#E8D8AC">个人市场角色＝底层批发：为人民联通、飞云电传提供物理网络资源租用。</text>
+    <text x="1288" y="352" font-size="12" fill="#E8D8AC">工业与信息化部负责市场监管，确保网络中立与互联互通；用户可自由选择三家。</text>
+    <rect x="1264" y="404" width="516" height="240" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.5"/>
+    <text x="1288" y="436" font-size="14" font-weight="700" fill="#B8922F">人民联通（国有独资）</text>
+    <text x="1288" y="464" font-size="12" fill="#3B2F23">· 主打企业客户与政府机构：专线接入、数据中心托管、电子政务网</text>
+    <text x="1288" y="490" font-size="12" fill="#3B2F23">· 核心竞争力「安全可靠」：政务专网、金融专网、国防动员通信</text>
+    <text x="1288" y="516" font-size="12" fill="#3B2F23">· 个人市场推「透明消费」套餐：资费简单明了、无隐形条款、无自动续约陷阱</text>
+    <text x="1288" y="542" font-size="12" fill="#3B2F23">· 全国统一标准化客服体系，在求稳用户中口碑良好</text>
+    <text x="1288" y="572" font-size="12" font-weight="700" fill="#B8922F">趋势：加快推出灵活资费方案</text>
+    <text x="1288" y="598" font-size="12" fill="#6B5A40">对数据安全敏感的金融、政务客户持续信赖</text>
+    <rect x="1800" y="404" width="516" height="240" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1824" y="436" font-size="14" font-weight="700" fill="#B8922F">飞云电传（民间资本全资）</text>
+    <text x="1824" y="464" font-size="12" fill="#3B2F23">· 灵活定价、快速响应见长；个人宽带市占率居三家之首</text>
+    <text x="1824" y="490" font-size="12" fill="#3B2F23">· 低价融合套餐（宽带＋电视＋移动打包），深耕郡域偏远定制接入</text>
+    <text x="1824" y="516" font-size="12" fill="#3B2F23">· 组织灵活、决策链条短，受民资大厂青睐（临时扩容、定制 SLA）</text>
+    <text x="1824" y="548" font-size="12" font-weight="700" fill="#8C3B2E">问题：加盟制参差不齐——隐性收费、自动续约加价、宣传带宽不符，投诉量长期居前</text>
+    <text x="1824" y="578" font-size="12" fill="#6B5A40">工信部门数次约谈总部，督促加强加盟商管理与服务标准化</text>
+    <rect x="1264" y="660" width="1052" height="120" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1288" y="692" font-size="13" font-weight="700" fill="#B8922F">业务趋同与交叉选择</text>
+    <text x="1288" y="718" font-size="12" fill="#3B2F23">民资大厂：核心业务选人民联通的安全保障＋弹性需求选飞云电传的快速响应；部分国企与政府部门亦采纳飞云作为冗余备用——交叉选择促进竞争深化与服务提升。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区左 · MVNO ═══════════ -->
+  <g>
+    <rect x="60" y="850" width="1140" height="480" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="84" y="892" font-size="19" font-weight="700" fill="#3B2F23">虚拟运营商生态 (MVNO)</text>
+    <text x="84" y="924" font-size="13" fill="#3B2F23">十余家虚拟运营商不拥有物理网络，租用三大基础运营商资源，面向细分长尾市场整合打包：</text>
+    <rect x="84" y="944" width="524" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
+    <text x="108" y="976" font-size="13" font-weight="700" fill="#B8922F">削峰平谷套餐</text>
+    <text x="108" y="1002" font-size="12" fill="#3B2F23">利用闲时低价带宽推夜间下载包、周末流量包，</text>
+    <text x="108" y="1028" font-size="12" fill="#3B2F23">帮助基础运营商平滑全网流量峰谷</text>
+    <rect x="632" y="944" width="524" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
+    <text x="656" y="976" font-size="13" font-weight="700" fill="#B8922F">游戏加速服务</text>
+    <text x="656" y="1002" font-size="12" fill="#3B2F23">面向庞大玩家群体，提供到稻妻、蒙德等地</text>
+    <text x="656" y="1028" font-size="12" fill="#3B2F23">游戏服务器的低延迟加速通道</text>
+    <rect x="84" y="1094" width="524" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
+    <text x="108" y="1126" font-size="13" font-weight="700" fill="#B8922F">边缘节点内容分发</text>
+    <text x="108" y="1152" font-size="12" fill="#3B2F23">在郡域网吧、坊委会部署小型缓存节点，分销热门</text>
+    <text x="108" y="1178" font-size="12" fill="#3B2F23">更新与流媒体，降低跨府骨干带宽消耗</text>
+    <rect x="632" y="1094" width="524" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
+    <text x="656" y="1126" font-size="13" font-weight="700" fill="#B8922F">纯上网卡（物联网卡）</text>
+    <text x="656" y="1152" font-size="12" fill="#3B2F23">面向智能电表、共享设备、物流追踪等终端，</text>
+    <text x="656" y="1178" font-size="12" fill="#3B2F23">提供不含语音短信的纯数据卡服务</text>
+    <rect x="84" y="1244" width="1072" height="60" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1270" font-size="12" font-weight="700" fill="#D8AF45">乱象与治理：「先发展后规范」</text>
+    <text x="108" y="1292" font-size="11" fill="#E8D8AC">流量虚标、隐性扣费、数据泄露等投诉居高不下；工信部推动头部兼并小规模经营者，降监管成本、提服务质量。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区右 · 数据中心 ═══════════ -->
+  <g>
+    <rect x="1240" y="850" width="1100" height="480" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1264" y="892" font-size="19" font-weight="700" fill="#F7EBC8">「5 + 12」算力格局：五大府大型数据中心＋12 座边缘节点</text>
+    <g font-size="13">
+      <rect x="1264" y="916" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="950" font-weight="700" fill="#D8AF45">璃港云谷（Tier IV · 8000 架）</text>
+      <text x="2316" y="950" text-anchor="end" font-size="12" fill="#E8D8AC">金融交易核心承载 · ULLTC ＜1 ms</text>
+      <rect x="1264" y="982" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="1016" font-weight="700" fill="#D8AF45">珑埠北极（Tier III+ · 5000 架）</text>
+      <text x="2316" y="1016" text-anchor="end" font-size="12" fill="#E8D8AC">北向国际业务交换 · 跨境内容缓存</text>
+      <rect x="1264" y="1048" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="1082" font-weight="700" fill="#D8AF45">翠玦智算（Tier IV · 6000 架）</text>
+      <text x="2316" y="1082" text-anchor="end" font-size="12" fill="#E8D8AC">AI 算力与科研 · 量子通信试验网节点</text>
+      <rect x="1264" y="1114" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="1148" font-weight="700" fill="#D8AF45">归离原工业（Tier III · 5000 架）</text>
+      <text x="2316" y="1148" text-anchor="end" font-size="12" fill="#E8D8AC">工业互联网 · 制造业数据 · 供应链管理</text>
+      <rect x="1264" y="1180" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="1214" font-weight="700" fill="#D8AF45">琉璃能源（Tier III · 3000 架）</text>
+      <text x="2316" y="1214" text-anchor="end" font-size="12" fill="#E8D8AC">矿产资源数据 · 能源调度 · 环境监测</text>
+    </g>
+    <text x="1264" y="1272" font-size="13" font-weight="700" fill="#D8AF45">边缘计算节点三功能</text>
+    <text x="1264" y="1298" font-size="12" fill="#F3EDDE">物联网汇聚（本地预处理减少上传）· 内容分发缓存（降低跨府带宽消耗）· 低延迟本地服务（交通信号、电网调度毫秒级响应）</text>
+    <text x="1264" y="1326" font-size="13" font-weight="700" fill="#D8AF45">与铁路网络中心协同</text>
+    <text x="1264" y="1352" font-size="12" fill="#F3EDDE">偏远地区中继站同址共建共用电力安防温控；备用纤芯应急互济；运营管理、数据存储、安全策略完全独立。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 府数郡算 / 东数西算 ═══════════ -->
+  <g>
+    <rect x="60" y="1370" width="2280" height="700" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <text x="84" y="1412" font-size="19" font-weight="700" fill="#3B2F23">「府数郡算」与「东数西算」—— 数据与算力资源从府城向郡县下沉</text>
+    <text x="84" y="1440" font-size="12" fill="#6B5A40">秉持《促进共同发展——区域协调发展战略工作方案》「五府双轮驱动、强郡产业下沉、弱郡做强郡治」精神，由政务院工业与信息化部会同国资委、国土规划委员会实施。</text>
+    <rect x="84" y="1464" width="1096" height="250" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="108" y="1498" font-size="15" font-weight="700" fill="#B8922F">「府数郡算」：网络服务向强郡县城转移</text>
+    <text x="108" y="1526" font-size="13" fill="#3B2F23">· 强郡（沉玉谷、明蕴、天遒谷等）基建完善、土地电力低廉、铁路便捷</text>
+    <text x="108" y="1552" font-size="13" fill="#3B2F23">　适合承接非实时算力需求</text>
+    <text x="108" y="1578" font-size="13" fill="#3B2F23">· 案例①：翠玦智算已在沉玉谷郡城建边缘算力节点承接 AI 训练预处理，</text>
+    <text x="108" y="1604" font-size="13" fill="#3B2F23">　翠玦至沉玉谷 100 GB/s 直连光缆投运</text>
+    <text x="108" y="1630" font-size="13" fill="#3B2F23">· 案例②：归离原工业数据中心冷数据存储与离线分析迁往明蕴工业数据分中心</text>
+    <rect x="1220" y="1464" width="1096" height="250" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1244" y="1498" font-size="15" font-weight="700" fill="#B8922F">「东数西算」：东部计算需求向西部郡转移</text>
+    <text x="1244" y="1526" font-size="13" fill="#3B2F23">· 西部弱郡（青墟、灵矩、绝云间等）依托低电价、低地价与地热/风电绿色能源</text>
+    <text x="1244" y="1552" font-size="13" fill="#3B2F23">　承接灾备、离线归档、批量计算等延迟不敏感需求</text>
+    <text x="1244" y="1578" font-size="13" fill="#3B2F23">· 案例①：琉璃能源数据中心灾备系统部署于灵矩郡治（普快 120 km/h 公交化，日 16 对列车）</text>
+    <text x="1244" y="1604" font-size="13" fill="#3B2F23">· 案例②：绝云间郡建成旅游数据汇聚节点，归离原游客行为分析业务分流处理</text>
+    <text x="1244" y="1630" font-size="13" fill="#3B2F23">　（依托仙人文化遗产旅游业数据）</text>
+    <!-- 实施阶段表 -->
+    <rect x="84" y="1740" width="2232" height="48" fill="#3B2F23"/>
+    <text x="360" y="1771" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">阶段</text>
+    <text x="720" y="1771" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">时间</text>
+    <text x="1160" y="1771" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">目标</text>
+    <text x="1840" y="1771" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">重点措施</text>
+    <rect x="84" y="1788" width="2232" height="64" fill="#FBF8F2"/>
+    <text x="360" y="1827" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">试点阶段</text>
+    <text x="720" y="1827" text-anchor="middle" font-size="13" fill="#3B2F23">2022~2024 TE</text>
+    <text x="1160" y="1827" text-anchor="middle" font-size="13" fill="#3B2F23">强郡县城边缘节点试点</text>
+    <text x="1840" y="1827" text-anchor="middle" font-size="13" fill="#6B5A40">沉玉谷郡、明蕴郡各建成一座边缘算力节点</text>
+    <rect x="84" y="1852" width="2232" height="64" fill="#F5EFE0"/>
+    <text x="360" y="1891" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">推广阶段</text>
+    <text x="720" y="1891" text-anchor="middle" font-size="13" fill="#3B2F23">2024~2026 TE</text>
+    <text x="1160" y="1891" text-anchor="middle" font-size="13" fill="#3B2F23">覆盖各强郡及部分弱郡</text>
+    <text x="1840" y="1891" text-anchor="middle" font-size="13" fill="#6B5A40">新建 6~8 座郡级数据节点，建设郡至府直连光缆</text>
+    <rect x="84" y="1916" width="2232" height="64" fill="#FBF8F2"/>
+    <text x="360" y="1955" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">深化阶段</text>
+    <text x="720" y="1955" text-anchor="middle" font-size="13" fill="#3B2F23">2026~2030 TE</text>
+    <text x="1160" y="1955" text-anchor="middle" font-size="13" fill="#3B2F23">实现「一郡一节点」</text>
+    <text x="1840" y="1955" text-anchor="middle" font-size="13" fill="#6B5A40">十郡均建成至少一座数据汇聚或算力处理节点</text>
+    <rect x="84" y="1740" width="2232" height="240" fill="none" stroke="#C9A227" stroke-width="1.5"/>
+    <line x1="520" y1="1740" x2="520" y2="1980" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="900" y1="1740" x2="900" y2="1980" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1420" y1="1740" x2="1420" y2="1980" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="84" y="2040" font-size="13" fill="#6B5A40">成效：缓解各府数据中心空间与电力压力，为郡县创造产业增长点与就业机会，与区域协调梯次推进格局高度契合。</text>
+  </g>
+
+  <!-- 未来规划横条 -->
+  <g>
+    <rect x="60" y="2110" width="2280" height="150" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="2148" font-size="16" font-weight="700" fill="#D8AF45">未来规划三线并进</text>
+    <text x="84" y="2180" font-size="13" fill="#E8D8AC">· 量子通信：翠玦 QKD 试验站已验证须弥方向链路，二期延伸至璃港金融结算系统，服务璃月元跨境交易安全</text>
+    <text x="84" y="2208" font-size="13" fill="#E8D8AC">· 骨干网三期扩容：5 TB/s → 10~15 TB/s；璃港—翠玦—珑埠高铁段试点空芯光子晶体光纤（单纤容量 ×3~5，延迟 −30%）</text>
+    <text x="84" y="2236" font-size="13" fill="#E8D8AC">· 「全境互联」：乡乡通宽带（2025~27）→ 村落普及率 80%（2028~30）→ 普及与提高并行，乡镇带宽升至 50~100 Mb/s 并推广 FTTH</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2320" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月虚空概况》整理；股权比例、分红比例为文中给定参考值，数据中心容量为设计标准机架数。</text>
+</svg>

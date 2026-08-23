@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2460" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#9C948A"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2460" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月虚空骨干网络拓扑图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">「双环三角」骨架 · 沿铁路干线光缆 · 三大国际交换中心与五国方向路由（TAA 一级枢纽）</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- 统计条 -->
+  <g font-weight="700">
+    <rect x="120" y="140" width="520" height="60" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="380" y="178" text-anchor="middle" font-size="17" fill="#D8AF45">TAA 骨干网份额 ≈ 22%（成员企业最高）</text>
+    <rect x="672" y="140" width="520" height="60" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="932" y="178" text-anchor="middle" font-size="17" fill="#D8AF45">月均国际数据交换 ＞ 500 PB</text>
+    <rect x="1224" y="140" width="520" height="60" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1484" y="178" text-anchor="middle" font-size="17" fill="#D8AF45">全境光缆总长 ≈ 25,000 km（承载 99% 流量）</text>
+    <rect x="1776" y="140" width="504" height="60" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="2028" y="178" text-anchor="middle" font-size="17" fill="#D8AF45">骨干总带宽 5 TB/s（WDM 波分复用）</text>
+  </g>
+
+  <!-- ═══════════ 地图区 ═══════════ -->
+  <rect x="100" y="230" width="2200" height="1260" rx="16" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
+
+  <!-- 图例 -->
+  <g>
+    <rect x="130" y="260" width="380" height="240" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="150" y="292" font-size="15" font-weight="700" fill="#3B2F23">图例</text>
+    <line x1="150" y1="318" x2="230" y2="318" stroke="#B8922F" stroke-width="6"/>
+    <text x="246" y="323" font-size="12" fill="#3B2F23">国内骨干光缆 5 TB/s</text>
+    <line x1="150" y1="346" x2="230" y2="346" stroke="#D8AF45" stroke-width="4"/>
+    <text x="246" y="351" font-size="12" fill="#3B2F23">国内骨干光缆 2.5 TB/s</text>
+    <line x1="150" y1="374" x2="230" y2="374" stroke="#3E4A5A" stroke-width="3" stroke-dasharray="14 7"/>
+    <text x="246" y="379" font-size="12" fill="#3B2F23">专用直连光缆（低延迟通道）</text>
+    <line x1="150" y1="402" x2="230" y2="402" stroke="#9C948A" stroke-width="3" stroke-dasharray="2 6"/>
+    <text x="246" y="407" font-size="12" fill="#3B2F23">主干网共享带宽（普通优先级）</text>
+    <circle cx="190" cy="436" r="16" fill="#3B2F23" stroke="#D8AF45" stroke-width="2.5"/>
+    <text x="246" y="441" font-size="12" fill="#3B2F23">核心交换中心 CX（★＝一级枢纽）</text>
+    <circle cx="190" cy="472" r="26" fill="none" stroke="#B8922F" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <text x="246" y="477" font-size="12" fill="#3B2F23">低成本路由枢纽辐射圈</text>
+  </g>
+
+  <!-- 邻国标签 -->
+  <g font-size="20" fill="#9C948A" font-weight="700">
+    <text x="2080" y="250" text-anchor="middle">〔 至 冬 〕</text>
+    <text x="330" y="290" text-anchor="middle">〔 枫 丹 〕</text>
+    <text x="185" y="600" text-anchor="middle">〔 蒙 德 〕</text>
+    <text x="320" y="1360" text-anchor="middle">〔 须 弥 〕</text>
+    <text x="1980" y="1420" text-anchor="middle">〔 稻 妻 · 海 〕</text>
+  </g>
+
+  <!-- ─── 国内骨干链路（先画线，再画节点覆盖）─── -->
+  <g fill="none">
+    <!-- 璃港—翠玦 500km 5TB -->
+    <path d="M 1300 1220 L 1180 800" stroke="#B8922F" stroke-width="6"/>
+    <!-- 翠玦—归离原 500km 5TB -->
+    <path d="M 1180 800 L 880 520" stroke="#B8922F" stroke-width="6"/>
+    <!-- 翠玦—珑埠 500km 5TB -->
+    <path d="M 1180 800 L 1520 380" stroke="#B8922F" stroke-width="6"/>
+    <!-- 归离原—珑埠 700km 5TB -->
+    <path d="M 880 520 L 1520 380" stroke="#B8922F" stroke-width="6"/>
+    <!-- 璃港—归离原 700km 5TB -->
+    <path d="M 1300 1220 L 880 520" stroke="#B8922F" stroke-width="6"/>
+    <!-- 璃港—琉璃 1000km 2.5TB -->
+    <path d="M 1300 1220 L 430 840" stroke="#D8AF45" stroke-width="4"/>
+    <!-- 琉璃—珑埠 1000km 2.5TB -->
+    <path d="M 430 840 L 1520 380" stroke="#D8AF45" stroke-width="4"/>
+    <!-- 琉璃—翠玦 500km 2.5TB -->
+    <path d="M 430 840 L 1180 800" stroke="#D8AF45" stroke-width="4"/>
+  </g>
+
+  <!-- 链路标注 -->
+  <g font-size="12" fill="#6B5A40">
+    <rect x="1246" y="986" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1334" y="1006" text-anchor="middle" fill="#B8922F" font-weight="700">500 km · 5 TB/s</text>
+    <text x="1334" y="1025" text-anchor="middle">沿高速铁路线</text>
+    <rect x="1348" y="562" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1436" y="582" text-anchor="middle" fill="#B8922F" font-weight="700">500 km · 5 TB/s</text>
+    <text x="1436" y="601" text-anchor="middle">沿高速铁路线</text>
+    <rect x="1096" y="392" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1184" y="412" text-anchor="middle" fill="#B8922F" font-weight="700">700 km · 5 TB/s</text>
+    <text x="1184" y="431" text-anchor="middle">沿高速铁路线</text>
+    <rect x="908" y="618" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="996" y="638" text-anchor="middle" fill="#B8922F" font-weight="700">500 km · 5 TB/s</text>
+    <text x="996" y="657" text-anchor="middle">沿高速铁路线</text>
+    <rect x="952" y="850" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1040" y="870" text-anchor="middle" fill="#B8922F" font-weight="700">700 km · 5 TB/s</text>
+    <text x="1040" y="889" text-anchor="middle">沿快速铁路线（预留升级）</text>
+    <rect x="706" y="1024" width="196" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="804" y="1044" text-anchor="middle" fill="#B8922F" font-weight="700">1000 km · 2.5 TB/s</text>
+    <text x="804" y="1063" text-anchor="middle">沿普快铁路线</text>
+    <rect x="1086" y="496" width="196" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1184" y="516" text-anchor="middle" fill="#B8922F" font-weight="700">1000 km · 2.5 TB/s</text>
+    <text x="1184" y="535" text-anchor="middle">沿普快铁路线</text>
+    <rect x="686" y="866" width="196" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="784" y="886" text-anchor="middle" fill="#B8922F" font-weight="700">500 km · 2.5 TB/s</text>
+    <text x="784" y="905" text-anchor="middle">沿快速铁路线</text>
+  </g>
+
+  <!-- ─── 国际方向链路 ─── -->
+  <g fill="none">
+    <!-- 璃港 → 稻妻：海底光缆 -->
+    <path d="M 1350 1262 Q 1650 1370 1870 1385" stroke="#9C948A" stroke-width="3.5" stroke-dasharray="2 7"/>
+    <!-- 璃港 → 须弥：专线 -->
+    <path d="M 1252 1252 Q 900 1360 420 1330" stroke="#3E4A5A" stroke-width="3.5" stroke-dasharray="14 7"/>
+    <!-- 归离原 → 蒙德：专线 -->
+    <path d="M 832 512 Q 550 540 262 606" stroke="#3E4A5A" stroke-width="3.5" stroke-dasharray="14 7"/>
+    <!-- 珑埠 → 枫丹：专线 -->
+    <path d="M 1490 340 Q 1100 210 400 282" stroke="#3E4A5A" stroke-width="3.5" stroke-dasharray="14 7"/>
+    <!-- 珑埠 → 至冬：陆缆主干网 -->
+    <path d="M 1568 352 Q 1800 300 2010 262" stroke="#9C948A" stroke-width="3.5" stroke-dasharray="2 7"/>
+  </g>
+  <g font-size="12" fill="#3E4A5A">
+    <rect x="1440" y="1290" width="256" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1568" y="1314" text-anchor="middle" font-weight="700">稻妻方向 · 海底光缆</text>
+    <text x="1568" y="1336" text-anchor="middle">1 TB/s · 主干网共享带宽</text>
+    <rect x="620" y="1284" width="270" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="755" y="1308" text-anchor="middle" font-weight="700">须弥方向 · 专用直连光缆</text>
+    <text x="755" y="1330" text-anchor="middle">1 TB/s · 往返延迟 ≤ 15 ms</text>
+    <rect x="380" y="530" width="264" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="512" y="554" text-anchor="middle" font-weight="700">蒙德方向 · 专用直连光缆</text>
+    <text x="512" y="576" text-anchor="middle">1 TB/s · 经归离原府出境</text>
+    <rect x="700" y="222" width="280" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="840" y="246" text-anchor="middle" font-weight="700">枫丹方向 · 专用直连光缆</text>
+    <text x="840" y="268" text-anchor="middle">1.5 TB/s · 经翠玦西行 ≤ 50 ms</text>
+    <rect x="1660" y="272" width="264" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1792" y="296" text-anchor="middle" font-weight="700">至冬方向 · 陆上光缆</text>
+    <text x="1792" y="318" text-anchor="middle">1 TB/s · 主干网共享带宽</text>
+  </g>
+
+  <!-- ─── 节点 ─── -->
+  <!-- 琉璃府 二级 -->
+  <g>
+    <circle cx="430" cy="840" r="52" fill="#3B2F23" stroke="#9C948A" stroke-width="3"/>
+    <text x="430" y="834" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">琉璃府</text>
+    <text x="430" y="858" text-anchor="middle" font-size="11" fill="#C9B98A">二级 CX</text>
+    <text x="430" y="918" text-anchor="middle" font-size="12" fill="#6B5A40">能源与矿产资源数据汇聚 · 西部网络枢纽</text>
+  </g>
+  <!-- 归离原府 二级 -->
+  <g>
+    <circle cx="880" cy="520" r="52" fill="#3B2F23" stroke="#9C948A" stroke-width="3"/>
+    <text x="880" y="514" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">归离原府</text>
+    <text x="880" y="538" text-anchor="middle" font-size="11" fill="#C9B98A">二级 CX</text>
+    <text x="880" y="598" text-anchor="middle" font-size="12" fill="#6B5A40">工业互联网与制造业数据汇聚中心</text>
+  </g>
+  <!-- 珑埠府 一级 -->
+  <g>
+    <circle cx="1520" cy="380" r="52" fill="#3B2F23" stroke="#D8AF45" stroke-width="4"/>
+    <text x="1520" y="372" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">珑埠府</text>
+    <text x="1520" y="396" text-anchor="middle" font-size="11" fill="#D8AF45">★ 一级 CX</text>
+    <text x="1520" y="458" text-anchor="middle" font-size="12" fill="#6B5A40">北向国际流量集散地 · 国家网关（北向）</text>
+  </g>
+  <!-- 璃港府 一级 -->
+  <g>
+    <circle cx="1300" cy="1220" r="52" fill="#3B2F23" stroke="#D8AF45" stroke-width="4"/>
+    <text x="1300" y="1212" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">璃港府</text>
+    <text x="1300" y="1236" text-anchor="middle" font-size="11" fill="#D8AF45">★ 一级 CX</text>
+    <text x="1300" y="1298" text-anchor="middle" font-size="12" fill="#6B5A40">国内骨干汇聚中心 · 国家网关（南向）</text>
+  </g>
+  <!-- 翠玦府 一级 + 辐射圈 -->
+  <g>
+    <circle cx="1180" cy="800" r="86" fill="none" stroke="#B8922F" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <circle cx="1180" cy="800" r="52" fill="#3B2F23" stroke="#D8AF45" stroke-width="4"/>
+    <text x="1180" y="792" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">翠玦府</text>
+    <text x="1180" y="816" text-anchor="middle" font-size="11" fill="#D8AF45">★ 一级 CX</text>
+    <text x="1180" y="712" text-anchor="middle" font-size="12" font-weight="700" fill="#B8922F">低成本国际路由枢纽</text>
+    <text x="1180" y="694" text-anchor="middle" font-size="12" fill="#6B5A40">所有方向普通优先级流量走主干网 · 对外 2 TB/s（弹性 3 TB/s）· ITS 智能流量调度</text>
+    <text x="1180" y="912" text-anchor="middle" font-size="12" fill="#6B5A40">土地/电力/运维成本显著低于沿海两府 · 承载拥塞时优先级调度与绕行</text>
+  </g>
+
+  <!-- 地图标题注 -->
+  <text x="2180" y="1466" text-anchor="end" font-size="13" fill="#6B5A40">布局为地理示意：南接稻妻，西连须弥、蒙德，北接枫丹、至冬；三大国际交换中心呈「三角布局」。</text>
+
+  <!-- ═══════════ 对比表 ═══════════ -->
+  <text x="1200" y="1560" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">三大国际交换中心对比</text>
+  <g>
+    <rect x="60" y="1580" width="2280" height="44" fill="#3B2F23"/>
+    <text x="480" y="1609" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">维度</text>
+    <text x="1120" y="1609" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">璃港府国际交换中心（南线枢纽）</text>
+    <text x="1680" y="1609" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">珑埠府国际交换中心（北线枢纽）</text>
+    <text x="2120" y="1609" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">翠玦府国际交换中心</text>
+    <!-- 行1 -->
+    <rect x="60" y="1624" width="2280" height="52" fill="#F5EFE0"/>
+    <text x="84" y="1656" font-size="13" font-weight="700" fill="#B8922F">对外总带宽</text>
+    <text x="1120" y="1656" text-anchor="middle" font-size="13" fill="#3B2F23">3 TB/s</text>
+    <text x="1680" y="1656" text-anchor="middle" font-size="13" fill="#3B2F23">3 TB/s</text>
+    <text x="2120" y="1656" text-anchor="middle" font-size="13" fill="#3B2F23">2 TB/s（弹性扩展至 3 TB/s）</text>
+    <!-- 行2 -->
+    <rect x="60" y="1676" width="2280" height="76" fill="#FBF8F2"/>
+    <text x="84" y="1708" font-size="13" font-weight="700" fill="#B8922F">主要方向</text>
+    <text x="1120" y="1708" text-anchor="middle" font-size="13" fill="#3B2F23">稻妻（海底光缆·主干网）</text>
+    <text x="1120" y="1732" text-anchor="middle" font-size="13" fill="#3B2F23">须弥（专线）、蒙德（专线经归离原）</text>
+    <text x="1680" y="1708" text-anchor="middle" font-size="13" fill="#3B2F23">枫丹（专线）、至冬（主干网）、</text>
+    <text x="1680" y="1732" text-anchor="middle" font-size="13" fill="#3B2F23">须弥与蒙德（专线备份）</text>
+    <text x="2120" y="1720" text-anchor="middle" font-size="13" fill="#3B2F23">所有方向的低成本路由</text>
+    <!-- 行3 -->
+    <rect x="60" y="1752" width="2280" height="52" fill="#F5EFE0"/>
+    <text x="84" y="1784" font-size="13" font-weight="700" fill="#B8922F">路由路径</text>
+    <text x="1120" y="1784" text-anchor="middle" font-size="13" fill="#3B2F23">低延迟走专用直连，普通流走主干网</text>
+    <text x="1680" y="1784" text-anchor="middle" font-size="13" fill="#3B2F23">低延迟走专用直连，普通流走主干网</text>
+    <text x="2120" y="1784" text-anchor="middle" font-size="13" fill="#3B2F23">全部走主干网共享带宽</text>
+    <!-- 行4 -->
+    <rect x="60" y="1804" width="2280" height="52" fill="#FBF8F2"/>
+    <text x="84" y="1836" font-size="13" font-weight="700" fill="#B8922F">成本 / 延迟定位</text>
+    <text x="1120" y="1836" text-anchor="middle" font-size="13" fill="#3B2F23">标准成本 · 低延迟（≤ 15 ms 至须弥）</text>
+    <text x="1680" y="1836" text-anchor="middle" font-size="13" fill="#3B2F23">标准成本 · 低延迟（≤ 50 ms 至枫丹）</text>
+    <text x="2120" y="1836" text-anchor="middle" font-size="13" fill="#3B2F23">低成本（约 60~70%）· 一般延迟</text>
+    <!-- 行5 -->
+    <rect x="60" y="1856" width="2280" height="52" fill="#F5EFE0"/>
+    <text x="84" y="1888" font-size="13" font-weight="700" fill="#B8922F">特殊功能</text>
+    <text x="1120" y="1888" text-anchor="middle" font-size="13" fill="#3B2F23">国家网关（南向）· 海底光缆登陆站</text>
+    <text x="1680" y="1888" text-anchor="middle" font-size="13" fill="#3B2F23">国家网关（北向）· 北方极地路由中继</text>
+    <text x="2120" y="1888" text-anchor="middle" font-size="13" fill="#3B2F23">国家网关（低成本路由）· ITS 与拥塞绕行</text>
+    <rect x="60" y="1580" width="2280" height="328" fill="none" stroke="#C9A227" stroke-width="2"/>
+    <line x1="780" y1="1580" x2="780" y2="1908" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1400" y1="1580" x2="1400" y2="1908" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1920" y1="1580" x2="1920" y2="1908" stroke="#D8CCAE" stroke-width="1"/>
+  </g>
+
+  <!-- ═══════════ 底部左 · 骨架与铁路协同 ═══════════ -->
+  <g>
+    <rect x="60" y="1950" width="1130" height="440" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="1990" font-size="19" font-weight="700" fill="#F7EBC8">「双环三角」骨架与铁路协同</text>
+    <text x="84" y="2024" font-size="13" fill="#E8D8AC">五大府间骨干环路＋三大国际交换节点构成「双环三角」；任意单点光缆中断均可经反向路径绕行，不影响全网连通。</text>
+    <rect x="84" y="2044" width="1082" height="316" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="2078" font-size="14" font-weight="700" fill="#D8AF45">与 LRC 列车通信网络「共用渠道、物理分离」的四项优势</text>
+    <text x="108" y="2110" font-size="13" fill="#F3EDDE">· 安全隔离：同一沟槽／杆塔／隧道内各自独立光纤束，无电磁串扰，LTCS 信号安全等级不受影响</text>
+    <text x="108" y="2140" font-size="13" fill="#F3EDDE">· 冗余互补：一方受损时可借对方备用纤芯应急恢复（光缆交接箱手动跳接），日常完全独立</text>
+    <text x="108" y="2170" font-size="13" fill="#F3EDDE">· 成本分摊：沟槽开挖、管道预埋、杆塔架设等土建费用由铁路总公司与鱼灯通讯按比例分摊</text>
+    <text x="108" y="2200" font-size="13" fill="#F3EDDE">· 维护协同：滑坡、洪水等灾害发生时两方维护队伍联合出动、同步抢修，提高恢复效率</text>
+    <text x="108" y="2240" font-size="13" font-weight="700" fill="#D8AF45">建设方式</text>
+    <text x="108" y="2268" font-size="13" fill="#F3EDDE">利用铁路路基、桥梁、隧道等既有基础设施敷设，大幅降低建设成本与施工周期；</text>
+    <text x="108" y="2294" font-size="13" fill="#F3EDDE">物理层三种介质（光缆、地脉、飞艇微波）在网络层实现透明切换，用户无需感知链路差异。</text>
+    <text x="108" y="2334" font-size="12" fill="#C9B98A">APS（TAA 协议栈）统一编址与路由 · 鱼灯通讯骨干网交换机执行数据包转发</text>
+  </g>
+
+  <!-- ═══════════ 底部右 · 路由策略 ═══════════ -->
+  <g>
+    <rect x="1230" y="1950" width="1110" height="440" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1254" y="1990" font-size="19" font-weight="700" fill="#3B2F23">国际路由策略两分法</text>
+    <rect x="1254" y="2012" width="524" height="350" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.5"/>
+    <text x="1278" y="2046" font-size="15" font-weight="700" fill="#B8922F">低延迟通道</text>
+    <text x="1278" y="2076" font-size="13" fill="#3B2F23">· 专用直连光缆（非主干网）</text>
+    <text x="1278" y="2102" font-size="13" fill="#3B2F23">· 路由最优化、跳数最少、不共享带宽</text>
+    <text x="1278" y="2128" font-size="13" fill="#3B2F23">· 适用：金融交易、实时音视频、在线游戏</text>
+    <text x="1278" y="2154" font-size="13" fill="#3B2F23">· 代价：成本较高、带宽资源有限</text>
+    <text x="1278" y="2190" font-size="12" fill="#6B5A40">典型：璃港⇌须弥金融云计算专线、</text>
+    <text x="1278" y="2214" font-size="12" fill="#6B5A40">蒙德风能数据中心协同通道、枫丹影视渲染</text>
+    <rect x="1802" y="2012" width="514" height="350" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1826" y="2046" font-size="15" font-weight="700" fill="#B8922F">低成本通道</text>
+    <text x="1826" y="2076" font-size="13" fill="#3B2F23">· 主干网共享带宽（容量大、分摊成本低）</text>
+    <text x="1826" y="2102" font-size="13" fill="#3B2F23">· 适用：数据备份、批量同步、内容分发</text>
+    <text x="1826" y="2128" font-size="13" fill="#3B2F23">· 由翠玦府枢纽统一承接</text>
+    <text x="1826" y="2154" font-size="13" fill="#3B2F23">· ITS 自动识别流量类型并引导转发</text>
+    <text x="1826" y="2190" font-size="12" fill="#6B5A40">拥塞策略：可为高级用户临时借用专线空闲</text>
+    <text x="1826" y="2214" font-size="12" fill="#6B5A40">带宽；专线拥堵时将非实时流强占主干网传输</text>
+    <text x="1254" y="2384" font-size="12" fill="#6B5A40">国家网关（LNG）：三中心均承担出入境数据流量管理与安全审查职能。</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2434" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月虚空概况》整理；链路长度与带宽为约数，地理位置为示意布局。鱼灯通讯持有 TAA 骨干网约 22% 份额。</text>
+</svg>

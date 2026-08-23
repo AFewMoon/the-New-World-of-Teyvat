@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2500" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2500" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月虚空接入技术体系图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">四层网络架构 · 光纤／基站／飞艇／地脉四级接入 · 飞艇两类核心场景 · 地脉淤积管理机制</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区 · 四层架构栈 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="2280" height="380" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="186" font-size="19" font-weight="700" fill="#F7EBC8">层级架构：物理层的三种介质在网络层实现透明切换，用户无需感知底层链路差异</text>
+    <!-- 应用层 -->
+    <rect x="84" y="206" width="2232" height="66" rx="10" fill="#4A3A28" stroke="#D8AF45" stroke-width="1.5"/>
+    <text x="108" y="236" font-size="15" font-weight="700" fill="#D8AF45">应用层</text>
+    <text x="108" y="260" font-size="12" fill="#E8D8AC">金融交易通道 · 智慧城市平台 · 电子政务门户</text>
+    <!-- 接入层 -->
+    <rect x="84" y="282" width="2232" height="66" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="108" y="312" font-size="15" font-weight="700" fill="#D8AF45">接入层（按覆盖人口计，多网重叠故合计略超百）</text>
+    <text x="108" y="336" font-size="12" fill="#E8D8AC">光纤宽带 53% · 蜂窝基站 35% · 飞艇中继 12% · 地脉接入 ＜1%</text>
+    <!-- 网络层 -->
+    <rect x="84" y="358" width="2232" height="66" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="108" y="388" font-size="15" font-weight="700" fill="#D8AF45">网络层</text>
+    <text x="108" y="412" font-size="12" fill="#E8D8AC">TAA 协议栈 (APS) 统一编址与路由 · 鱼灯通讯骨干网交换机执行数据包转发</text>
+    <!-- 物理层 -->
+    <rect x="84" y="434" width="2232" height="72" rx="10" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1.5"/>
+    <text x="108" y="464" font-size="15" font-weight="700" fill="#3B2F23">物理层（总长约 25,000 km，承载 99% 以上流量）</text>
+    <text x="108" y="492" font-size="12" fill="#3B2F23">沿铁路干线光缆为主 · 地脉接入节点为辅（短信、广播等极低带宽）· 飞艇通信平台为末梢补点（偏远山区与临时高密度场景）</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 占比条 ═══════════ -->
+  <g>
+    <text x="84" y="580" font-size="17" font-weight="700" fill="#3B2F23">接入方式部署比例（按覆盖人口计）</text>
+    <rect x="84" y="596" width="1183" height="52" fill="#B8922F"/>
+    <rect x="1267" y="596" width="781" height="52" fill="#D8AF45"/>
+    <rect x="2048" y="596" width="268" height="52" fill="#E4DCC8"/>
+    <rect x="2316" y="596" width="24" height="52" fill="#9C948A"/>
+    <text x="675" y="629" text-anchor="middle" font-size="16" font-weight="700" fill="#FBF8F2">光纤宽带 53%</text>
+    <text x="1657" y="629" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">蜂窝基站 35%</text>
+    <text x="2182" y="629" text-anchor="middle" font-size="14" font-weight="700" fill="#6B5A40">飞艇 12%</text>
+    <text x="2328" y="629" text-anchor="middle" font-size="11" font-weight="700" fill="#FBF8F2">＜1%</text>
+    <text x="2328" y="676" text-anchor="end" font-size="12" fill="#6B5A40">地脉 ＜1%（短信·广播级）</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 四技术卡片 ═══════════ -->
+  <!-- 宽带 -->
+  <g>
+    <rect x="60" y="720" width="1120" height="480" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <text x="84" y="762" font-size="19" font-weight="700" fill="#3B2F23">① 宽带（点对点光纤）——「黄金标准」</text>
+    <g font-size="13">
+      <text x="84" y="800" font-weight="700" fill="#B8922F">带宽</text><text x="220" y="800" fill="#3B2F23">100 Mb/s ~ 10 Gb/s（对称）</text>
+      <text x="84" y="832" font-weight="700" fill="#B8922F">延迟</text><text x="220" y="832" fill="#3B2F23">＜1 ms（府城内）</text>
+      <text x="84" y="864" font-weight="700" fill="#B8922F">覆盖</text><text x="220" y="864" fill="#3B2F23">府城核心区、高新技术产业园、大型企业园区</text>
+      <text x="84" y="896" font-weight="700" fill="#B8922F">典型用户</text><text x="220" y="896" fill="#3B2F23">金融机构站、数据中心、大型企业、智慧城市终端</text>
+      <text x="84" y="928" font-weight="700" fill="#B8922F">部署比例</text><text x="220" y="928" fill="#3B2F23">约 53%（按覆盖人口计）</text>
+    </g>
+    <line x1="84" y1="952" x2="1156" y2="952" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="84" y="984" font-size="13" fill="#3B2F23">· 以 FTTB/FTTH 为主要形式；璃港中央商务区、翠玦高新园区、归离原工业区已实现万兆全覆盖</text>
+    <text x="84" y="1010" font-size="13" fill="#3B2F23">· 府域网下行主承载：100~400 GB/s 光纤汇聚上行至本府 CX；金融集群超低延迟交易通道（ULLTC）依托专线光纤</text>
+    <text x="84" y="1036" font-size="13" fill="#3B2F23">· 也是延迟敏感型应用（金融交易通道、智慧城市管理平台）的主要承载网络</text>
+    <rect x="84" y="1060" width="1072" height="110" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="108" y="1094" font-size="13" font-weight="700" fill="#D8AF45">子网支撑：府域网 vs 郡域网</text>
+    <text x="108" y="1122" font-size="12" fill="#E8D8AC">府域网：高密度、低延迟，节点间距 1~5 km，MAN 汇聚节点 100~1000 GB/s 级；</text>
+    <text x="108" y="1148" font-size="12" fill="#E8D8AC">郡域网：广覆盖、灵活接入，节点间距 10~50 km，RAN 每郡 2~5 座，10~100 GB/s 上行。</text>
+  </g>
+
+  <!-- 基站 -->
+  <g>
+    <rect x="1220" y="720" width="1120" height="480" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1244" y="762" font-size="19" font-weight="700" fill="#3B2F23">② 蜂窝基站 —— 城镇化覆盖主力</text>
+    <g font-size="13">
+      <text x="1244" y="800" font-weight="700" fill="#B8922F">带宽</text><text x="1380" y="800" fill="#3B2F23">10~100 Mb/s（单用户）</text>
+      <text x="1244" y="832" font-weight="700" fill="#B8922F">延迟</text><text x="1380" y="832" fill="#3B2F23">5~8 ms</text>
+      <text x="1244" y="864" font-weight="700" fill="#B8922F">覆盖</text><text x="1380" y="864" fill="#3B2F23">城镇建成区、交通沿线、工业园区（500 m~3 km 半径）</text>
+      <text x="1244" y="896" font-weight="700" fill="#B8922F">典型用户</text><text x="1380" y="896" fill="#3B2F23">普通居民、移动办公、物流追踪、物联网终端</text>
+      <text x="1244" y="928" font-weight="700" fill="#B8922F">部署比例</text><text x="1380" y="928" fill="#3B2F23">约 35%（按覆盖人口计）· 全网约 12,000 座（含共建共享）</text>
+    </g>
+    <line x1="1244" y1="952" x2="2316" y2="952" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1244" y="984" font-size="13" fill="#3B2F23">· 三家运营商共建共享基站基础设施（鱼灯通讯、人民联通、飞云电传），减少重复建设</text>
+    <text x="1244" y="1010" font-size="13" fill="#3B2F23">· 沿高铁线路基站兼顾旅客车载互联网接入需求</text>
+    <text x="1244" y="1036" font-size="13" fill="#3B2F23">· 是璃月郡域接入的主要框架——「基站中继为主、飞艇中继为辅」的技术路线基石</text>
+    <rect x="1244" y="1060" width="1072" height="110" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1268" y="1094" font-size="13" font-weight="700" fill="#B8922F">与蒙德模式的对比</text>
+    <text x="1268" y="1122" font-size="12" fill="#6B5A40">璃月缺乏蒙德成熟的风元素技术积累，飞艇能耗高、抗风差、载荷受限；</text>
+    <text x="1268" y="1148" font-size="12" fill="#6B5A40">因此乡村覆盖以基站中继为主体，飞艇仅作特定场景的不可替代补充。</text>
+  </g>
+
+  <!-- 飞艇 -->
+  <g>
+    <rect x="60" y="1230" width="1120" height="600" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="84" y="1272" font-size="19" font-weight="700" fill="#3B2F23">③ 飞艇通信平台 —— 特定场景的补充手段</text>
+    <g font-size="13">
+      <text x="84" y="1310" font-weight="700" fill="#B8922F">带宽</text><text x="220" y="1310" fill="#3B2F23">1~10 Mb/s（单用户，受频谱与载荷功率限制）</text>
+      <text x="84" y="1342" font-weight="700" fill="#B8922F">延迟</text><text x="220" y="1342" fill="#3B2F23">1~3 ms</text>
+      <text x="84" y="1374" font-weight="700" fill="#B8922F">覆盖</text><text x="220" y="1374" fill="#3B2F23">半径 50~100 km（单艇）· 约 12%（按覆盖人口计）</text>
+      <text x="84" y="1406" font-weight="700" fill="#B8922F">在役规模</text><text x="220" y="1406" fill="#3B2F23">约 20 艘＝固定部署 12 艘＋机动备份 8 艘</text>
+      <text x="84" y="1438" font-weight="700" fill="#B8922F">平台特性</text><text x="220" y="1438" fill="#3B2F23">轻质复合材料壳体＋顶部柔性太阳能薄膜，驻空 3~6 个月</text>
+    </g>
+    <rect x="84" y="1462" width="524" height="180" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1494" font-size="13" font-weight="700" fill="#D8AF45">场景一：基站建不起来的极端环境</text>
+    <text x="108" y="1522" font-size="12" fill="#E8D8AC">轻策庄、绝云间、天遒谷等风景区与生态保护区：</text>
+    <text x="108" y="1548" font-size="12" fill="#E8D8AC">飞艇悬停海拔 3,000~5,000 米搭载基站设备，</text>
+    <text x="108" y="1574" font-size="12" fill="#E8D8AC">以无线方式为下方广阔区域提供宽带级接入；</text>
+    <text x="108" y="1600" font-size="12" fill="#E8D8AC">经定向微波回传至最近光纤或郡域汇聚节点。</text>
+    <rect x="632" y="1462" width="524" height="180" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="656" y="1494" font-size="13" font-weight="700" fill="#D8AF45">场景二：突发超高密度流量环境</text>
+    <text x="656" y="1522" font-size="12" fill="#E8D8AC">海灯节、决斗节、璃月港国际会展、轻策庄音乐节：</text>
+    <text x="656" y="1548" font-size="12" fill="#E8D8AC">机动飞艇数小时内调拨至活动现场上空提供临时容量，</text>
+    <text x="656" y="1574" font-size="12" fill="#E8D8AC">活动结束回收基地——「弹性扩容」避免为峰值</text>
+    <text x="656" y="1600" font-size="12" fill="#E8D8AC">部署大量闲置固定基站，显著降低总体拥有成本。</text>
+    <text x="84" y="1678" font-size="13" fill="#3B2F23">· 局限：单用户带宽较低、易受暴风雷暴影响</text>
+    <text x="84" y="1704" font-size="13" fill="#3B2F23">· 技术短板根源：风元素辅助推进缺失＋轻量化复合材料量产能力不足 → 国产飞艇壳体较重、经济性受限</text>
+    <text x="84" y="1730" font-size="13" font-weight="700" fill="#B8922F">定位：不是光纤或基站的替代方案，而是低人口密度山区与临时超密流量的精确定位补充策略</text>
+    <rect x="84" y="1752" width="1072" height="56" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="620" y="1787" text-anchor="middle" font-size="12" fill="#6B5A40">对比：蒙德以飞艇作为乡村主力覆盖手段 —— 两国工业禀赋差异在接入路线上的直接投射</text>
+  </g>
+
+  <!-- 地脉 -->
+  <g>
+    <rect x="1220" y="1230" width="1120" height="600" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1244" y="1272" font-size="19" font-weight="700" fill="#F7EBC8">④ 地脉接入 —— 低效但几乎免维护的全球通行方式</text>
+    <g font-size="13">
+      <text x="1244" y="1310" font-weight="700" fill="#D8AF45">带宽</text><text x="1380" y="1310" fill="#F3EDDE">0.1~1 Mb/s（短信收发、广播信息级）</text>
+      <text x="1244" y="1342" font-weight="700" fill="#D8AF45">延迟</text><text x="1380" y="1342" fill="#F3EDDE">100~500 ms（因地质条件差异大）</text>
+      <text x="1244" y="1374" font-weight="700" fill="#D8AF45">覆盖</text><text x="1380" y="1374" fill="#F3EDDE">地脉能量富集区（翠玦府、绝云间、天遒谷等）· 约 800 座节点</text>
+      <text x="1244" y="1406" font-weight="700" fill="#D8AF45">维护</text><text x="1380" y="1406" fill="#F3EDDE">无故障周期以年为单位，一次安装调试后维护间隔 3~5 年</text>
+    </g>
+    <rect x="1244" y="1428" width="1072" height="106" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1268" y="1460" font-size="13" font-weight="700" fill="#D8AF45">工作原理</text>
+    <text x="1268" y="1488" font-size="12" fill="#F3EDDE">元素共鸣转换装置将数据信号调制为地脉能量波沿地下脉络传播，接收端逆向解调；</text>
+    <text x="1268" y="1514" font-size="12" fill="#F3EDDE">几乎不受地表物理破坏影响——地震、滑坡、洪水影响微乎其微，脉络具自我修复特性。</text>
+    <text x="1244" y="1568" font-size="13" font-weight="700" fill="#D8AF45">与地脉淤积的关系：通信即治理</text>
+    <text x="1244" y="1596" font-size="13" fill="#F3EDDE">· 收发过程持续消耗地脉能量，相当于对脉络做周期性「减负」，降低淤积水平，减少地脉之花的人工处理频率</text>
+    <text x="1244" y="1622" font-size="13" fill="#F3EDDE">· 在富集区具备超越通信本身的价值——同时是一种地脉能量管理手段</text>
+    <rect x="1244" y="1644" width="1072" height="156" rx="10" fill="#8C3B2E" stroke="#D8AF45" stroke-width="1.5"/>
+    <text x="1268" y="1678" font-size="13" font-weight="700" fill="#F7EBC8">安全阈值与过度消耗风险</text>
+    <text x="1268" y="1706" font-size="12" fill="#F3EDDE">本地淤积降至安全线以下时，节点自动降低功率或转入休眠，仅保留应急基础信道；</text>
+    <text x="1268" y="1732" font-size="12" fill="#F3EDDE">阈值参数由璃月国家电网与地脉能源局设定，鱼灯通讯不得自行修改。</text>
+    <text x="1268" y="1766" font-size="12" fill="#E8D8AC">应急价值：主干光缆中断时可激活为「最低限度通信通道」，保障政府应急指挥不中断。</text>
+    <text x="1244" y="1826" font-size="12" fill="#C9B98A">未来：「增强型地脉接入节点」将升级至 1~5 Mb/s 基本数据传输能力（「全境互联」计划）。</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 对比总览表 ═══════════ -->
+  <g>
+    <text x="1200" y="1900" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">四种接入方式对比总览</text>
+    <rect x="60" y="1920" width="2280" height="44" fill="#3B2F23"/>
+    <text x="240" y="1949" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">接入方式</text>
+    <text x="520" y="1949" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">带宽</text>
+    <text x="780" y="1949" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">延迟</text>
+    <text x="1030" y="1949" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">覆盖半径</text>
+    <text x="1290" y="1949" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">每用户容量</text>
+    <text x="1530" y="1949" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">维护频率</text>
+    <text x="1740" y="1949" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">部署成本</text>
+    <text x="2050" y="1949" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">适用场景</text>
+    <rect x="60" y="1964" width="2280" height="56" fill="#F5EFE0"/>
+    <text x="240" y="1998" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">宽带（光纤）</text>
+    <text x="520" y="1998" text-anchor="middle" font-size="13" fill="#3B2F23">极高</text>
+    <text x="780" y="1998" text-anchor="middle" font-size="13" fill="#3B2F23">极低</text>
+    <text x="1030" y="1998" text-anchor="middle" font-size="13" fill="#3B2F23">有限（需物理铺设）</text>
+    <text x="1290" y="1998" text-anchor="middle" font-size="13" fill="#3B2F23">极高</text>
+    <text x="1530" y="1998" text-anchor="middle" font-size="13" fill="#3B2F23">中等</text>
+    <text x="1740" y="1998" text-anchor="middle" font-size="13" fill="#3B2F23">高</text>
+    <text x="2050" y="1998" text-anchor="middle" font-size="13" fill="#6B5A40">府城核心、园区、企业</text>
+    <rect x="60" y="2020" width="2280" height="56" fill="#FBF8F2"/>
+    <text x="240" y="2054" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">基站</text>
+    <text x="520" y="2054" text-anchor="middle" font-size="13" fill="#3B2F23">高</text>
+    <text x="780" y="2054" text-anchor="middle" font-size="13" fill="#3B2F23">低</text>
+    <text x="1030" y="2054" text-anchor="middle" font-size="13" fill="#3B2F23">中等（500 m~3 km）</text>
+    <text x="1290" y="2054" text-anchor="middle" font-size="13" fill="#3B2F23">高</text>
+    <text x="1530" y="2054" text-anchor="middle" font-size="13" fill="#3B2F23">高</text>
+    <text x="1740" y="2054" text-anchor="middle" font-size="13" fill="#3B2F23">中高</text>
+    <text x="2050" y="2054" text-anchor="middle" font-size="13" fill="#6B5A40">城镇、交通沿线</text>
+    <rect x="60" y="2076" width="2280" height="56" fill="#F5EFE0"/>
+    <text x="240" y="2110" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">飞艇</text>
+    <text x="520" y="2110" text-anchor="middle" font-size="13" fill="#3B2F23">较低</text>
+    <text x="780" y="2110" text-anchor="middle" font-size="13" fill="#3B2F23">低</text>
+    <text x="1030" y="2110" text-anchor="middle" font-size="13" fill="#3B2F23">广（50~100 km）</text>
+    <text x="1290" y="2110" text-anchor="middle" font-size="13" fill="#3B2F23">较低</text>
+    <text x="1530" y="2110" text-anchor="middle" font-size="13" fill="#3B2F23">低</text>
+    <text x="1740" y="2110" text-anchor="middle" font-size="13" fill="#3B2F23">中</text>
+    <text x="2050" y="2110" text-anchor="middle" font-size="13" fill="#6B5A40">山区、偏远村镇、临时大流量</text>
+    <rect x="60" y="2132" width="2280" height="56" fill="#FBF8F2"/>
+    <text x="240" y="2166" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">地脉</text>
+    <text x="520" y="2166" text-anchor="middle" font-size="13" fill="#3B2F23">极低（短信/广播级）</text>
+    <text x="780" y="2166" text-anchor="middle" font-size="13" fill="#3B2F23">高（100~500 ms）</text>
+    <text x="1030" y="2166" text-anchor="middle" font-size="13" fill="#3B2F23">视地脉网络而定</text>
+    <text x="1290" y="2166" text-anchor="middle" font-size="13" fill="#3B2F23">极低</text>
+    <text x="1530" y="2166" text-anchor="middle" font-size="13" fill="#3B2F23">极低（3~5 年）</text>
+    <text x="1740" y="2166" text-anchor="middle" font-size="13" fill="#3B2F23">中低</text>
+    <text x="2050" y="2166" text-anchor="middle" font-size="13" fill="#6B5A40">短信广播、应急通信、淤积管理</text>
+    <rect x="60" y="1920" width="2280" height="268" fill="none" stroke="#C9A227" stroke-width="2"/>
+    <line x1="380" y1="1920" x2="380" y2="2188" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="650" y1="1920" x2="650" y2="2188" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="900" y1="1920" x2="900" y2="2188" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1160" y1="1920" x2="1160" y2="2188" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1420" y1="1920" x2="1420" y2="2188" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1640" y1="1920" x2="1640" y2="2188" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1850" y1="1920" x2="1850" y2="2188" stroke="#D8CCAE" stroke-width="1"/>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2250" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月虚空概况》整理；部署比例为按覆盖人口计的约数，多网重叠覆盖使合计略超百分之百。</text>
+
+  <!-- 综合覆盖率徽章 -->
+  <g>
+    <rect x="920" y="2300" width="560" height="120" rx="16" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1200" y="2350" text-anchor="middle" font-size="26" font-weight="700" fill="#D8AF45">综合覆盖人口率 ≈ 93%</text>
+    <text x="1200" y="2390" text-anchor="middle" font-size="13" fill="#E8D8AC">高于提瓦特平均水平 · 「全境互联」计划向 2030 TE 村落普及率 80% 目标推进</text>
+  </g>
+</svg>
