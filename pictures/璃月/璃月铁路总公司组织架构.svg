@@ -28,18 +28,18 @@
     <text x="744" y="242" font-size="13" fill="#E8D8AC">每年召开一次，审议年度报告、利润分配、重大投资等事项</text>
     <text x="744" y="266" font-size="12" fill="#C9A227">★ 国资委一票否决权：涉及国家安全、铁路网规划、票价调整等重大事项</text>
     <g>
-      <rect x="750" y="286" width="240" height="58" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
-      <text x="870" y="310" text-anchor="middle" font-size="17" font-weight="700" fill="#F7EBC8">70%</text>
-      <text x="870" y="332" text-anchor="middle" font-size="12" fill="#E8D8AC">璃月国资委 · 绝对控股</text>
-      <rect x="1035" y="286" width="240" height="58" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
-      <text x="1155" y="310" text-anchor="middle" font-size="17" font-weight="700" fill="#F7EBC8">25%</text>
-      <text x="1155" y="332" text-anchor="middle" font-size="12" fill="#E8D8AC">民间资本 · 建筑·金融·保险</text>
-      <rect x="1320" y="286" width="240" height="58" rx="8" fill="#4A3A28" stroke="#8A7658" stroke-width="1.5"/>
-      <text x="1440" y="310" text-anchor="middle" font-size="17" font-weight="700" fill="#F7EBC8">5%</text>
-      <text x="1440" y="332" text-anchor="middle" font-size="12" fill="#C9B98A">外国资本 · 邻国铁路·国际金融</text>
+      <rect x="744" y="286" width="240" height="58" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+      <text x="864" y="310" text-anchor="middle" font-size="17" font-weight="700" fill="#F7EBC8">70%</text>
+      <text x="864" y="332" text-anchor="middle" font-size="12" fill="#E8D8AC">璃月国资委 · 绝对控股</text>
+      <rect x="1080" y="286" width="240" height="58" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+      <text x="1200" y="310" text-anchor="middle" font-size="17" font-weight="700" fill="#F7EBC8">25%</text>
+      <text x="1200" y="332" text-anchor="middle" font-size="12" fill="#E8D8AC">民间资本 · 建筑·金融·保险</text>
+      <rect x="1416" y="286" width="240" height="58" rx="8" fill="#4A3A28" stroke="#8A7658" stroke-width="1.5"/>
+      <text x="1536" y="310" text-anchor="middle" font-size="17" font-weight="700" fill="#F7EBC8">5%</text>
+      <text x="1536" y="332" text-anchor="middle" font-size="12" fill="#C9B98A">外国资本 · 邻国铁路·国际金融</text>
     </g>
   </g>
-  <path d="M 710 400 V 380 M 1725 380 V 400 M 710 380 H 1725 M 1200 360 V 380" fill="none" stroke="#B8922F" stroke-width="2"/>
+  <path d="M 675 400 V 380 M 1725 380 V 400 M 675 380 H 1725 M 1200 360 V 380" fill="none" stroke="#B8922F" stroke-width="2"/>
 
   <!-- ═══════════ 第 2 层 · 董事会 / 监事会 ═══════════ -->
   <!-- 董事会 -->
@@ -52,18 +52,18 @@
     <text x="224" y="558" font-size="13" fill="#F3EDDE">· 民间资本提名 4 人</text>
     <text x="224" y="586" font-size="13" fill="#F3EDDE">· 外国资本提名 1 人（无表决权，仅列席）</text>
     <text x="224" y="622" font-size="13" fill="#E8D8AC">下设委员会</text>
-    <rect x="224" y="638" width="450" height="88" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
-    <text x="449" y="676" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">战略发展委员会</text>
-    <text x="449" y="702" text-anchor="middle" font-size="12" fill="#C9B98A">安全、路网规划、票价、重大投资</text>
-    <rect x="700" y="638" width="450" height="88" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
-    <text x="925" y="676" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">审计与风险控制委员会</text>
-    <text x="925" y="702" text-anchor="middle" font-size="12" fill="#C9B98A">财务审计、内控、合规风控</text>
-    <rect x="224" y="738" width="450" height="88" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
-    <text x="449" y="776" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">薪酬与提名委员会</text>
-    <text x="449" y="802" text-anchor="middle" font-size="12" fill="#C9B98A">高管薪酬、人事提名与考核</text>
-    <rect x="700" y="738" width="450" height="88" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
-    <text x="925" y="776" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">技术委员会</text>
-    <text x="925" y="802" text-anchor="middle" font-size="12" fill="#C9B98A">技术路线、标准与研发方向</text>
+    <rect x="224" y="638" width="439" height="88" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="444" y="676" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">战略发展委员会</text>
+    <text x="444" y="702" text-anchor="middle" font-size="12" fill="#C9B98A">安全、路网规划、票价、重大投资</text>
+    <rect x="687" y="638" width="439" height="88" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="906" y="676" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">审计与风险控制委员会</text>
+    <text x="906" y="702" text-anchor="middle" font-size="12" fill="#C9B98A">财务审计、内控、合规风控</text>
+    <rect x="224" y="738" width="439" height="88" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="444" y="776" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">薪酬与提名委员会</text>
+    <text x="444" y="802" text-anchor="middle" font-size="12" fill="#C9B98A">高管薪酬、人事提名与考核</text>
+    <rect x="687" y="738" width="439" height="88" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="906" y="776" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">技术委员会</text>
+    <text x="906" y="802" text-anchor="middle" font-size="12" fill="#C9B98A">技术路线、标准与研发方向</text>
   </g>
   <!-- 监事会 -->
   <g>
@@ -83,7 +83,7 @@
   </g>
 
   <!-- ═══════════ 第 3 层 · 管理层 ═══════════ -->
-  <path d="M 710 850 V 880 M 710 880 H 1200 M 1200 880 V 900" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 675 850 V 880 M 675 880 H 1200 M 1200 880 V 900" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
   <path d="M 1725 850 V 880 M 1725 880 H 1200" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrowDash)"/>
   <g>
     <rect x="600" y="900" width="1200" height="180" rx="14" fill="url(#goldTop)" stroke="#B8922F" stroke-width="2"/>
