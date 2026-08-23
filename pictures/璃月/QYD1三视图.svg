@@ -119,18 +119,18 @@
   <!-- 顶部大灯座 -->
   <rect x="566" y="222" width="14" height="8" fill="#2B2620"/>
 
-  <!-- 后机罩（电气·储能室） -->
+  <!-- 后机罩（电气室·主变流与设备柜） -->
   <path d="M 714 400 L 714 246 Q 714 232 730 232 L 1058 232 Q 1074 232 1074 246 L 1074 400 Z" fill="url(#bodyLow)" stroke="#241B12" stroke-width="2"/>
   <rect x="714" y="232" width="360" height="26" rx="8" fill="url(#hoodTop)"/>
   <!-- 进气格栅组 -->
   <rect x="744" y="290" width="120" height="64" fill="url(#grille)" stroke="#241B12" stroke-width="2"/>
   <rect x="878" y="290" width="56" height="64" fill="url(#louver)" stroke="#241B12" stroke-width="2"/>
-  <!-- 岩元素储能罐检修门 -->
+  <!-- 设备检修门 -->
   <g stroke="#241B12" stroke-width="2" fill="#5C4433">
     <rect x="948" y="278" width="104" height="100" rx="5"/>
   </g>
-  <circle cx="1000" cy="328" r="17" fill="#C9A227" stroke="#241B12" stroke-width="2"/>
-  <polygon points="1000,315 1009,328 1000,341 991,328" fill="#F3DD9A"/>
+  <rect x="960" y="330" width="5" height="34" rx="2.5" fill="#241B12"/>
+  <rect x="968" y="330" width="5" height="34" rx="2.5" fill="#241B12"/>
   <!-- 车号与路徽 -->
   <text x="770" y="380" font-size="26" font-weight="700" fill="#EFE3C2">QYD-1</text>
   <text x="852" y="380" font-size="13" fill="#D8C79A">027</text>
