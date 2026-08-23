@@ -73,7 +73,7 @@
     <text x="2150" y="284" text-anchor="middle" font-size="11.5" fill="#DDF2E8">主干线电气化·信号升级·</text>
     <text x="2150" y="306" text-anchor="middle" font-size="11.5" fill="#DDF2E8">动车组换装，期满可赎回</text>
     <!-- 一套班子两块牌子 -->
-    <rect x="1264" y="336" width="1052" height="160" rx="10" fill="#2C5A4C"/>
+    <rect x="1264" y="336" width="1052" height="166" rx="10" fill="#2C5A4C"/>
     <text x="1288" y="366" font-size="14" font-weight="700" fill="#52C79B">「一套班子、两块牌子」的管理模式</text>
     <text x="1288" y="392" font-size="12.5" fill="#DDF2E8">在璃月体系内以「璃月铁路璃蒙公司」名义行使管理职能；在蒙德境内以「璃蒙铁路有限公司」独立法人运营——</text>
     <text x="1288" y="416" font-size="12.5" fill="#DDF2E8">同一管理团队，蒙德中央政府通过嵌入后者董事会与治理架构实施监督。与璃铁五大区域公司平级。</text>
@@ -81,14 +81,14 @@
     <text x="1288" y="464" font-size="12.5" fill="#B9DFCF">员工约 2,100 人＝璃月派驻约 300 人 ＋ 本地雇佣约 1,800 人</text>
     <text x="1288" y="488" font-size="12.5" font-weight="700" fill="#52C79B">对外旅客服务统一以「狮牙快线 (Lionfang Express)」品牌运营——车体涂装、车站标识与票务宣传统一使用该品牌。</text>
     <!-- 资产 -->
-    <rect x="1264" y="502" width="1052" height="86" rx="10" fill="#DDEEE6"/>
-    <text x="1288" y="530" font-size="12.5" font-weight="700" fill="#1F7A5C">全权拥有的主干线资产（记入自身资产负债表）</text>
-    <text x="1288" y="556" font-size="12" fill="#3E5F54">MR 160 J 动车组（48 列起步）· 约 2,400 km 线路（北南线约 1,600 km＋东西线约 800 km）· 全部车站、供电与信号设备</text>
-    <text x="1288" y="578" font-size="12" fill="#3E5F54">享有特许期内主干线的独家客运运营权，租赁业务同时面向支线及开放准入的货运运营商。</text>
+    <rect x="1264" y="514" width="1052" height="86" rx="10" fill="#DDEEE6"/>
+    <text x="1288" y="542" font-size="12.5" font-weight="700" fill="#1F7A5C">全权拥有的主干线资产（记入自身资产负债表）</text>
+    <text x="1288" y="568" font-size="12" fill="#3E5F54">MR 160 J 动车组（48 列起步）· 约 2,400 km 线路（北南线约 1,600 km＋东西线约 800 km）· 全部车站、供电与信号设备</text>
+    <text x="1288" y="590" font-size="12" fill="#3E5F54">享有特许期内主干线的独家客运运营权，租赁业务同时面向支线及开放准入的货运运营商。</text>
     <!-- 协作 -->
-    <rect x="1264" y="604" width="1052" height="76" rx="10" fill="#3A3325"/>
-    <text x="1288" y="632" font-size="12.5" font-weight="700" fill="#E0A94E">与蒙德各方的协作</text>
-    <text x="1288" y="658" font-size="12" fill="#EDE3CC">缴纳低比例特许经营费（运营收入的 1~2%）· 分包支线维护给本地企业 · 联合调度室同场办公 · 跨境货物「一次申报一次查验一次放行」。</text>
+    <rect x="1264" y="606" width="1052" height="76" rx="10" fill="#3A3325"/>
+    <text x="1288" y="634" font-size="12.5" font-weight="700" fill="#E0A94E">与蒙德各方的协作</text>
+    <text x="1288" y="660" font-size="12" fill="#EDE3CC">缴纳低比例特许经营费（运营收入的 1~2%）· 分包支线维护给本地企业 · 联合调度室同场办公 · 跨境货物「一次申报一次查验一次放行」。</text>
   </g>
 
   <!-- ═══════════ 第 2 区左 · 组织架构 ═══════════ -->
