@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1960" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#52C79B"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#C9862B"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="1960" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德虚空骨干网络拓扑图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">五条并行竞争的骨干光缆 · 两强多弱的六级交换中心 · 二级国际枢纽 · 「竞争性冗余」的高容错拓扑</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区 · 拓扑地图 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="2280" height="1174" rx="14" fill="#EFF7F2" stroke="#2E8B6E" stroke-width="1.5"/>
+
+    <!-- 国际方向 -->
+    <rect x="2080" y="600" width="230" height="90" rx="10" fill="#DDEEE6" stroke="#2E8B6E" stroke-dasharray="8 5"/>
+    <text x="2195" y="636" text-anchor="middle" font-size="13" font-weight="700" fill="#1F7A5C">东接璃月</text>
+    <text x="2195" y="662" text-anchor="middle" font-size="11.5" fill="#3E5F54">陆上＋海底双路由</text>
+    <line x1="2076" y1="645" x2="1160" y2="655" stroke="#52C79B" stroke-width="3" stroke-dasharray="10 8"/>
+    <rect x="1560" y="212" width="250" height="76" rx="10" fill="#22493E"/>
+    <text x="1685" y="242" text-anchor="middle" font-size="13" font-weight="700" fill="#52C79B">北连枫丹 · 至冬</text>
+    <text x="1685" y="266" text-anchor="middle" font-size="11.5" fill="#B9DFCF">「北方弧线」国际通道</text>
+
+    <!-- ══ 光缆 ══ -->
+    <path d="M 1090 640 C 980 520 880 420 770 350" fill="none" stroke="#1F7A5C" stroke-width="6"/>
+    <text x="860" y="470" font-size="13" font-weight="700" fill="#1F7A5C">① 800 km · 1 TB/s</text>
+    <text x="860" y="492" font-size="11.5" fill="#3E5F54">沿北南铁路路基（璃蒙公司沟槽）</text>
+    <text x="860" y="514" font-size="11.5" fill="#3E5F54">风声电讯＋鱼灯通讯共享租用</text>
+
+    <path d="M 1080 670 C 900 740 720 790 615 830 C 520 880 490 1010 485 1110" fill="none" stroke="#1F7A5C" stroke-width="6"/>
+    <text x="565" y="905" font-size="13" font-weight="700" fill="#1F7A5C">② 1,200 km · 1 TB/s</text>
+    <text x="565" y="927" font-size="11.5" fill="#3E5F54">沿东西线＋北南线南段·公路复合路由</text>
+    <text x="565" y="949" font-size="11.5" fill="#3E5F54">风声电讯＋晨曦酒庄集团自建（地埋为主）</text>
+
+    <path d="M 1120 645 C 1300 680 1470 720 1590 775 C 1780 820 1950 860 2040 892" fill="none" stroke="#2FA47E" stroke-width="5"/>
+    <text x="1700" y="742" font-size="13" font-weight="700" fill="#2FA47E">③ 400 km · 500 GB/s</text>
+    <text x="1700" y="764" font-size="11.5" fill="#3E5F54">沿东西线及高速公路（架空光缆）</text>
+    <text x="1700" y="786" font-size="11.5" fill="#3E5F54">鱼灯通讯＋飞云商会联合投资</text>
+
+    <path d="M 1080 680 C 1010 760 950 850 895 930 C 760 1060 560 1180 420 1250" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/>
+    <text x="705" y="1075" font-size="13" font-weight="700" fill="#C9862B">④ 400 km · 1 TB/s</text>
+    <text x="705" y="1097" font-size="11.5" fill="#8A5B1D">沿璃蒙铁路跨境线路——鱼灯通讯</text>
+    <text x="705" y="1119" font-size="11.5" fill="#8A5B1D">跨境骨干延伸（通往归离原／璃月）</text>
+
+    <path d="M 775 315 C 900 330 1050 360 1190 398 C 1310 385 1430 360 1505 340" fill="none" stroke="#8FB5A6" stroke-width="4"/>
+    <text x="1240" y="352" font-size="13" font-weight="700" fill="#4A7A68">⑤ 500 km · 200 GB/s</text>
+    <text x="1240" y="374" font-size="11.5" fill="#3E5F54">沿荆夫领公路（架空）·北国银行投资</text>
+    <text x="1240" y="396" font-size="11.5" fill="#3E5F54">风声电讯代维</text>
+
+    <!-- ══ 节点 ══ -->
+    <g>
+      <!-- 一级 CX -->
+      <circle cx="1100" cy="650" r="26" fill="url(#anemoTop)" stroke="#123B2D" stroke-width="3"/>
+      <circle cx="1100" cy="650" r="10" fill="#EAF9F3"/>
+      <text x="1100" y="706" text-anchor="middle" font-size="17" font-weight="700" fill="#1E3A31">蒙德城 CX</text>
+      <text x="1100" y="728" text-anchor="middle" font-size="12" font-weight="700" fill="#1F7A5C">一级枢纽</text>
+      <text x="1100" y="748" text-anchor="middle" font-size="11" fill="#3E5F54">全国骨干汇聚 · 国际出入口 · CDN 核心</text>
+
+      <circle cx="750" cy="320" r="20" fill="#1F7A5C" stroke="#123B2D" stroke-width="3"/>
+      <circle cx="750" cy="320" r="8" fill="#EAF9F3"/>
+      <text x="750" y="284" text-anchor="middle" font-size="16" font-weight="700" fill="#1E3A31">荆夫港 CX</text>
+      <text x="750" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#1F7A5C">一级枢纽</text>
+      <text x="750" y="382" text-anchor="middle" font-size="11" fill="#3E5F54">北部国际出入口 · 花卉冷链数据枢纽</text>
+
+      <!-- 二级 CX -->
+      <circle cx="600" cy="830" r="14" fill="#52C79B" stroke="#123B2D" stroke-width="2.5"/>
+      <text x="600" y="806" text-anchor="middle" font-size="14" font-weight="700" fill="#1E3A31">晨曦酒庄 CX（二级）</text>
+      <text x="600" y="862" text-anchor="middle" font-size="11" fill="#3E5F54">酒业供应链数据中心 · 西向汇聚 · 全资自建</text>
+
+      <circle cx="880" cy="950" r="14" fill="#52C79B" stroke="#123B2D" stroke-width="2.5"/>
+      <text x="880" y="986" text-anchor="middle" font-size="14" font-weight="700" fill="#1E3A31">风起地 CX（二级）</text>
+      <text x="880" y="1008" text-anchor="middle" font-size="11" fill="#3E5F54">西南区域汇聚 · 跨境流量绕行备份 · 全资</text>
+
+      <circle cx="1600" cy="780" r="14" fill="#52C79B" stroke="#123B2D" stroke-width="2.5"/>
+      <text x="1600" y="756" text-anchor="middle" font-size="14" font-weight="700" fill="#1E3A31">星落湖 CX（二级）</text>
+      <text x="1600" y="812" text-anchor="middle" font-size="11" fill="#3E5F54">东区工业数据汇聚 · 矿业物联网</text>
+
+      <!-- 三级 -->
+      <circle cx="1900" cy="560" r="10" fill="#8FD4BC" stroke="#2FA47E" stroke-width="2"/>
+      <text x="1900" y="536" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A31">龙脊雪山 CX（三级）</text>
+      <text x="1900" y="586" text-anchor="middle" font-size="11" fill="#3E5F54">季节性旅游·科研数据 · 艾泽尔租赁运营</text>
+
+      <!-- 普通节点 -->
+      <circle cx="1200" cy="400" r="9" fill="#2FA47E"/>
+      <text x="1200" y="380" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">明冠</text>
+      <rect x="1462" y="292" width="116" height="52" rx="8" fill="none" stroke="#6E614A" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="1520" y="314" text-anchor="middle" font-size="13" font-weight="600" fill="#3D3524">风龙废墟</text>
+      <text x="1520" y="332" text-anchor="middle" font-size="10.5" fill="#3D3524">军事区外围接入</text>
+      <circle cx="480" cy="1130" r="9" fill="#2FA47E"/>
+      <text x="480" y="1110" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">誓言岬</text>
+      <circle cx="2050" cy="905" r="9" fill="#2FA47E"/>
+      <text x="2050" y="885" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">望风角</text>
+      <rect x="330" y="1225" width="140" height="56" rx="10" fill="#FDF3E0" stroke="#C9862B" stroke-width="2" stroke-dasharray="8 5"/>
+      <text x="400" y="1249" text-anchor="middle" font-size="14" font-weight="700" fill="#8A5B1D">归离原</text>
+      <text x="400" y="1271" text-anchor="middle" font-size="11" fill="#8A5B1D">璃月境内 · 跨境网关</text>
+    </g>
+
+    <!-- 图例 -->
+    <rect x="84" y="216" width="430" height="180" rx="12" fill="#1F453B"/>
+    <text x="108" y="248" font-size="14" font-weight="700" fill="#52C79B">图例</text>
+    <line x1="108" y1="270" x2="158" y2="270" stroke="#1F7A5C" stroke-width="6"/><text x="170" y="275" font-size="12" fill="#DDF2E8">1 TB/s 级骨干光缆（①②④）</text>
+    <line x1="108" y1="298" x2="158" y2="298" stroke="#2FA47E" stroke-width="5"/><text x="170" y="303" font-size="12" fill="#DDF2E8">中低容量光缆（③ 500 GB/s · ⑤ 200 GB/s）</text>
+    <line x1="108" y1="326" x2="158" y2="326" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/><text x="170" y="331" font-size="12" fill="#DDF2E8">跨境骨干延伸（经璃蒙铁路至璃月）</text>
+    <circle cx="133" cy="358" r="8" fill="url(#anemoTop)"/><text x="170" y="363" font-size="12" fill="#DDF2E8">一级枢纽 ×2 · 二级 ×3 · 三级 ×1</text>
+    <text x="108" y="388" font-size="11" fill="#8FB5A6">※ 示意图：节点相对位置经艺术化处理，不代表真实方位。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区左 · 五缆参数表 ═══════════ -->
+  <g>
+    <rect x="60" y="1352" width="1140" height="500 " rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="1392" font-size="19" font-weight="700" fill="#DDF2E8">五条骨干光缆参数一览</text>
+    <g font-size="12">
+      <rect x="84" y="1410" width="1092" height="80" rx="8" fill="#2C5A4C"/>
+      <text x="108" y="1438" font-weight="700" fill="#52C79B">① 蒙德城 ⇌ 荆夫港　　约 800 km · 1 TB/s</text>
+      <text x="108" y="1462" fill="#DDF2E8">路由：沿北南铁路线（璃蒙铁路公司路基）· 与铁路通信网络共用沟槽、物理分离（与璃月做法一致）</text>
+      <text x="108" y="1484" fill="#B9DFCF">主导：风声电讯 · 鱼灯通讯（共享租用）——全国最繁忙的数据走廊</text>
+      <rect x="84" y="1500" width="1092" height="80" rx="8" fill="#2C5A4C"/>
+      <text x="108" y="1528" font-weight="700" fill="#52C79B">② 蒙德城 ⇌ 晨曦酒庄 ⇌ 誓言岬　　约 1,200 km · 1 TB/s</text>
+      <text x="108" y="1552" fill="#DDF2E8">路由：东西铁路线＋北南线南段＋公路复合路由；晨曦酒庄集团自建段以地埋为主，</text>
+      <text x="108" y="1574" fill="#B9DFCF">穿越葡萄园区域使用微型盾构技术减少对种植面的影响</text>
+      <rect x="84" y="1590" width="1092" height="80" rx="8" fill="#2C5A4C"/>
+      <text x="108" y="1618" font-weight="700" fill="#52C79B">③ 蒙德城 ⇌ 星落湖 ⇌ 望风角　　约 400 km · 500 GB/s</text>
+      <text x="108" y="1642" fill="#DDF2E8">路由：沿东西铁路线及高速公路（多为架空光缆）</text>
+      <text x="108" y="1664" fill="#B9DFCF">主导：鱼灯通讯 · 飞云商会联合投资</text>
+      <rect x="84" y="1680" width="1092" height="80" rx="8" fill="#2C5A4C"/>
+      <text x="108" y="1708" font-weight="700" fill="#E0A94E">④ 蒙德城 ⇌ 风起地 ⇌ 归离原（璃月方向）　　约 400 km · 1 TB/s</text>
+      <text x="108" y="1732" fill="#DDF2E8">路由：沿璃蒙铁路跨境线路 · 鱼灯通讯的璃月跨境骨干网延伸段</text>
+      <text x="108" y="1754" fill="#B9DFCF">支撑蒙德—璃月金融数据通道与跨境电商数据流</text>
+      <rect x="84" y="1770" width="1092" height="66" rx="8" fill="#2C5A4C"/>
+      <text x="108" y="1796" font-weight="700" fill="#8FB5A6">⑤ 荆夫港 ⇌ 明冠 ⇌ 风龙废墟　　约 500 km · 200 GB/s</text>
+      <text x="108" y="1820" fill="#B9DFCF">路由：沿荆夫领公路 · 北国银行投资、风声电讯代维——服务北方军事区与边境监测数据回传</text>
+    </g>
+  </g>
+
+  <!-- ═══════════ 第 2 区右 · 国际地位与竞争性冗余 ═══════════ -->
+  <g>
+    <rect x="1240" y="1352" width="1100" height="500" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1264" y="1392" font-size="19" font-weight="700" fill="#1E3A31">全球体系中的定位与「竞争性冗余」</text>
+    <g font-size="12.5">
+      <rect x="1264" y="1410" width="1052" height="60" rx="8" fill="#DDEEE6"/>
+      <text x="1288" y="1434" font-weight="700" fill="#1F7A5C">TAA 地位：创始参与国（2015 TE 签署《虚空网络互联互通协议》）· 二级国际枢纽</text>
+      <text x="1288" y="1458" fill="#3E5F54">骨干网份额约 15%（风声电讯运营）· 蒙德骨干网流量占比约 5% · 国家网关：蒙德城 CX＋荆夫港 CX</text>
+      <rect x="1264" y="1482" width="512" height="150" rx="8" fill="#1F453B"/>
+      <text x="1288" y="1510" font-weight="700" fill="#52C79B">「两强多弱」的交换中心分布</text>
+      <text x="1288" y="1536" fill="#DDF2E8">与璃月「五大府各设核心交换中心」的整齐格局不同，</text>
+      <text x="1288" y="1560" fill="#DDF2E8">蒙德的节点因资本介入方式和时间不同自然演化——</text>
+      <text x="1288" y="1584" fill="#DDF2E8">一级：蒙德城 CX（风声控股·鱼灯参股·群玉阁投资）</text>
+      <text x="1288" y="1608" fill="#DDF2E8">　　　荆夫港 CX（北国银行—风声合资）</text>
+      <rect x="1804" y="1482" width="512" height="150" rx="8" fill="#3A3325"/>
+      <text x="1828" y="1510" font-weight="700" fill="#E0A94E">敷设方式因资本而异</text>
+      <text x="1828" y="1536" fill="#EDE3CC">铁路路基段＝共用沟槽物理分离；高速公路侧＝</text>
+      <text x="1828" y="1560" fill="#EDE3CC">多为架空光缆；晨曦自建段以地埋为主，葡萄园下</text>
+      <text x="1828" y="1584" fill="#EDE3CC">用微型盾构——逐利而建，各显神通。</text>
+      <rect x="1264" y="1646" width="1052" height="130 " rx="8" fill="#22493E"/>
+      <text x="1288" y="1674" font-weight="700" fill="#52C79B">「竞争性冗余」：重复建设的意外红利</text>
+      <text x="1288" y="1700" fill="#DDF2E8">鱼灯沿璃蒙铁路路基铺缆时，风声正在同一走廊的高速公路侧敷设自己的光纤；晨曦酒庄集团为确保酒业供应链数据独立安全，</text>
+      <text x="1288" y="1724" fill="#DDF2E8">干脆沿自己的管廊另铺一套。多家运营商各自追求商业利益的副产品，造就了极高的网络冗余度——即使龙灾级别的极端事件</text>
+      <text x="1288" y="1748" fill="#B9DFCF">摧毁一条光缆，数据流量仍可经另外两三条路由绕行。代价则是社会资源的重复投入与走廊内的「管道爆炸」风险。</text>
+    </g>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="1884" x2="2180" y2="1884" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="1916" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德虚空概况》· 蒙德自由合众国虚空网络同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>

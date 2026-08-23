@@ -1,0 +1,206 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1650" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#3E5F54"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="1650" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德政党格局与政治光谱图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">体制内三大党 × 议会外极左翼 · 下议院 200 席 · 工党—自由党联合政府 · TE 2026 大选结果</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区 · 政治光谱与派系 ═══════════ -->
+  <g>
+    <!-- MAFWA -->
+    <rect x="84" y="146" width="400" height="560" rx="14" fill="#3A2626" stroke="#C0392B" stroke-width="1.5"/>
+    <text x="108" y="182" font-size="17" font-weight="700" fill="#E8837A">MAFWA（议会外）</text>
+    <text x="108" y="206" font-size="11.5" fill="#F0D9D6">蒙德无政府主义者—自由工人联盟</text>
+    <text x="108" y="232" font-size="11.5" fill="#F0D9D6">准政党／社会运动联盟——不以获取议席为目标</text>
+    <rect x="108" y="248" width="352" height="86" rx="8" fill="#4A3535"/>
+    <text x="128" y="274" font-size="12" font-weight="700" fill="#E8837A">「自由之风」温迪（巴巴托斯）</text>
+    <text x="128" y="296" font-size="11" fill="#F0D9D6">精神领袖 · 公开身份＝游吟诗人</text>
+    <text x="128" y="318" font-size="11" fill="#F0D9D6">以歌声传播去中心化理念，拒绝一切权力集中</text>
+    <rect x="108" y="344" width="352" height="86" rx="8" fill="#4A3535"/>
+    <text x="128" y="370" font-size="12" font-weight="700" fill="#E8837A">「狼少年」雷泽</text>
+    <text x="128" y="392" font-size="11" fill="#F0D9D6">行动总干事 · 公开身份＝奔狼领护林者</text>
+    <text x="128" y="414" font-size="11" fill="#F0D9D6">组织基层互助社与直接行动，林地为活动掩护</text>
+    <text x="108" y="458" font-size="11.5" fill="#F0D9D6">· 规模：核心 200~400 人，外围同情者 1,500~3,000 人</text>
+    <text x="108" y="482" font-size="11.5" fill="#F0D9D6">· 渗透策略：成员以个人身份加入工党参选，当选后为其议程代言；</text>
+    <text x="108" y="504" font-size="11.5" fill="#F0D9D6">  工党党纲「自由公社与联邦政府间的桥梁」即制度化纽带</text>
+    <text x="108" y="528" font-size="11.5" fill="#F0D9D6">· 行动：社区互助网络 · 抗议与直接行动（TE 2017 荆夫港反港口</text>
+    <text x="108" y="550" font-size="11.5" fill="#F0D9D6">  私有化集会约 1,200 人）· 地下刊物《真风之声》（500~800 份／期）</text>
+    <rect x="108" y="572" width="352" height="110" rx="8" fill="#2A1A1A"/>
+    <text x="128" y="594" font-size="11.5" font-weight="700" fill="#E8837A">纲领：废除一切国家机器与私有制，</text>
+    <text x="128" y="616" font-size="11.5" fill="#F0D9D6">代之以自愿联合的社区自治网络与互助经济；</text>
+    <text x="128" y="638" font-size="11.5" fill="#F0D9D6">解散常备军，改设社区自卫队。</text>
+    <text x="128" y="664" font-size="10.5" fill="#C99B94">当局「冷处理」：监控而不轻易公诉，避免激化矛盾并保全自由形象。</text>
+
+    <!-- 工党 -->
+    <rect x="508" y="146" width="580" height="560" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="532" y="182" font-size="17" font-weight="700" fill="#1F7A5C">蒙德工党 (Labour) —— 第一大党 · 执政</text>
+    <text x="532" y="206" font-size="11.5" fill="#3E5F54">TE 2014 首次参选即执政 · 票仓：旧城区中低收入社区·码头工·矿区·高校</text>
+    <rect x="532" y="220" width="532" height="106" rx="8" fill="#1F453B"/>
+    <text x="556" y="246" font-size="12.5" font-weight="700" fill="#52C79B">左派 · 民主社会主义 —— 凯亚·亚尔伯里奇</text>
+    <text x="556" y="268" font-size="11" fill="#DDF2E8">党主席 · 西风骑士团骑兵队长（荣誉称号）· 情报与对外联络处主任 · 下议院议员 · 现任首相</text>
+    <text x="556" y="290" font-size="11" fill="#DDF2E8">主张：三大风电集团与五家核心酒庄国有化 · 最高 45% 边际税率 · 全民免费医疗</text>
+    <text x="556" y="312" font-size="11" fill="#DDF2E8">主导《情报监督法》（TE 2018）——情报监控须报下议院特别委员会季度审核</text>
+    <rect x="532" y="336" width="532" height="100 " rx="8" fill="#DDEEE6"/>
+    <text x="556" y="362" font-size="12.5" font-weight="700" fill="#1F7A5C">中派 · 社会民主主义 —— 诺艾尔</text>
+    <text x="556" y="384" font-size="11" fill="#3E5F54">行动委员会委员长 · 见习骑士 · 蒙德民政服务局局长 · 公民信任度第二（仅次于琴）</text>
+    <text x="556" y="406" font-size="11" fill="#3E5F54">《最低工资与基本劳动保障法》：时薪基准＝中位数 43% · 周 48 小时上限 · 年带薪假 ≥15 天；</text>
+    <text x="556" y="426" font-size="11" fill="#3E5F54">公共医疗补贴网络：低收入家庭诊疗费报销 70%</text>
+    <rect x="532" y="446" width="532" height="96" rx="8" fill="#1F453B"/>
+    <text x="556" y="472" font-size="12.5" font-weight="700" fill="#52C79B">右派 · 社会自由主义 —— 芭芭拉·古恩希尔德</text>
+    <text x="556" y="494" font-size="11" fill="#DDF2E8">形象大使 · 文化与宗教委员 · 西风教会唱诗班首席 · 文化与青年事务司司长</text>
+    <text x="556" y="516" font-size="11" fill="#DDF2E8">8 座区级文化中心＋22 座社区图书馆（藏书 40 万册）；教会学校纳入国家标准换同额财政补助</text>
+    <text x="556" y="534" font-size="11" fill="#DDF2E8">企业税立场 20%（低于左派主张的 28%），刺激中小企业投资</text>
+    <rect x="532" y="552" width="532" height="86" rx="8" fill="#DDEEE6"/>
+    <text x="556" y="578" font-size="12.5" font-weight="700" fill="#1F7A5C">新派 · 进步主义 —— 班尼特</text>
+    <text x="556" y="600" font-size="11" fill="#3E5F54">「自由进步」青年团主席 · 行动委员会预备委员 · 冒险家协会荣誉顾问</text>
+    <text x="556" y="622" font-size="11" fill="#3E5F54">「绿色蒙德」计划获拨款 3,200 万镑；青少年科技创新基金年资助 30~50 个项目</text>
+
+    <!-- 自由党 -->
+    <rect x="1112" y="146" width="580" height="560" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1136" y="182" font-size="17" font-weight="700" fill="#1F7A5C">蒙德自由党 (MLibP) —— 第二大党 · 执政伙伴</text>
+    <text x="1136" y="206" font-size="11.5" fill="#3E5F54">TE 2011 由自由民主党重组而来 · 票仓：酒庄主·科研社区·高收入白领区</text>
+    <rect x="1136" y="220" width="532" height="120" rx="8" fill="#1F453B"/>
+    <text x="1160" y="246" font-size="12.5" font-weight="700" fill="#52C79B">左派 · 自由意志主义 —— 安柏 ＆ 优菈·劳伦斯</text>
+    <text x="1160" y="268" font-size="11" fill="#DDF2E8">安柏：侦察骑兵队队长；优菈：游击小队队长·边境安全事务专员</text>
+    <text x="1160" y="290" font-size="11" fill="#DDF2E8">完全市场经济·废除贸易壁垒与资本管制；反对《边境监控强化法案》；</text>
+    <text x="1160" y="312" font-size="11" fill="#DDF2E8">宪法诉讼致《情报监督法》通信拦截条款部分违宪（TE 2026）——里程碑式胜利</text>
+    <text x="1160" y="334" font-size="10.5" fill="#8FB5A6">提瓦特最引人注目的同性伴侣——其存在本身即公民自由的实践宣言。</text>
+    <rect x="1136" y="350" width="532" height="76" rx="8" fill="#DDEEE6"/>
+    <text x="1160" y="376" font-size="12.5" font-weight="700" fill="#1F7A5C">中派 · 中间路线 —— 暂缺明确领袖</text>
+    <text x="1160" y="398" font-size="11" fill="#3E5F54">约占党员 40%（党内最大派系）：有限公共服务＋定向福利＋适度市场监管，</text>
+    <text x="1160" y="418" font-size="11" fill="#3E5F54">长期缺乏旗帜鲜明的代表性人物——党的中间地带。</text>
+    <rect x="1136" y="436" width="532" height="106" rx="8" fill="#1F453B"/>
+    <text x="1160" y="462" font-size="12.5" font-weight="700" fill="#52C79B">右派 · 古典自由主义 —— 迪卢克·莱艮芬德 ＆ 阿贝多</text>
+    <text x="1160" y="484" font-size="11" fill="#DDF2E8">迪卢克：晨曦酒庄领主·联邦经济顾问委员会副主任——主导企业税率逐级下调</text>
+    <text x="1160" y="506" font-size="11" fill="#DDF2E8">（28%→20%），资本利得税门槛 5,000→30,000 蒙德镑</text>
+    <text x="1160" y="528" font-size="11" fill="#DDF2E8">阿贝多：首席炼金术士·研究部部长——元素力转化效率项目 1,700 万镑列入国家科技优先目录</text>
+    <rect x="1136" y="552" width="532" height="86 " rx="8" fill="#DDEEE6"/>
+    <text x="1160" y="578" font-size="12.5" font-weight="700" fill="#1F7A5C">民粹派 · 「快乐经济」 —— 可莉</text>
+    <text x="1160" y="600" font-size="11" fill="#3E5F54">西风骑士团火花骑士（爆破与工程特种兵）</text>
+    <text x="1160" y="622" font-size="11" fill="#3E5F54">《烟花与公众庆典促进法案》（「炸掉不开心」）跨党派通过——年追加 500 万镑庆典经费</text>
+
+    <!-- 保守党 -->
+    <rect x="1716" y="146" width="624" height="560" rx="14" fill="#3D3524" stroke="#C9862B" stroke-width="1.5"/>
+    <text x="1740" y="182" font-size="17" font-weight="700" fill="#E0A94E">蒙德保守党 (MCP) —— 第三大党 · 在野</text>
+    <text x="1740" y="206" font-size="11.5" fill="#EDE3CC">TE 2009 普选前旧势力紧急联合的产物 · 票仓：农业领乡村·教会信徒·中老年·传统手工业</text>
+    <rect x="1740" y="222" width="576" height="150" rx="8" fill="#1F453B"/>
+    <text x="1764" y="248" font-size="12.5" font-weight="700" fill="#52C79B">温和改革派 —— 琴·古恩希尔德 ＆ 丽莎·敏茨</text>
+    <text x="1764" y="270" font-size="11" fill="#DDF2E8">琴：名誉主席（不参与日常决策）· 代理团长 · 蒙德城行政长官——</text>
+    <text x="1764" y="292" font-size="11" fill="#DDF2E8">渐进改革·维护秩序·重视乡村；推动《乡村振兴与农业支持法案》年拨 1,500 万镑</text>
+    <text x="1764" y="314" font-size="11" fill="#DDF2E8">丽莎：图书馆馆长·高级学术顾问——《农业技术改良十年规划》节水灌溉·病虫害预警·种质资源库</text>
+    <text x="1764" y="336" font-size="11" fill="#B9DFCF">在公众声望与关键行政职位上占优，但资源控制力弱于威权派。</text>
+    <rect x="1740" y="382 " width="576" height="140" rx="8" fill="#4A3535"/>
+    <text x="1764" y="408" font-size="12.5" font-weight="700" fill="#E8837A">威权民主主义派 —— 菲谢尔 ＆ 艾泽尔</text>
+    <text x="1764" y="430" font-size="11" fill="#F0D9D6">菲谢尔：上议院议员（贵族代表）·「断罪之皇女」感召保守派青年</text>
+    <text x="1764" y="452" font-size="11" fill="#F0D9D6">艾泽尔：中央银行董事——以金融话语权与竞选资金充当幕后支柱，</text>
+    <text x="1764" y="474" font-size="11" fill="#F0D9D6">经信贷政策间接施压中小企业；正推动「数字身份认证体系」草案</text>
+    <text x="1764" y="496" font-size="11" fill="#F0D9D6">《网络安全与信息秩序法案》（TE 2020）二读以 104:89 被否——最重大立法挫败</text>
+    <rect x="1740" y="532" width="576" height="106 " rx="8" fill="#2C2418"/>
+    <text x="1764" y="558" font-size="12" font-weight="700" fill="#E0A94E">其他关联人物</text>
+    <text x="1764" y="582" font-size="11" fill="#EDE3CC">法尔伽：荣誉顾问·骑士团团长（现任）·远征军总司令——骑士团传统与保守党的历史同盟象征；</text>
+    <text x="1764" y="604" font-size="11" fill="#EDE3CC">罗莎莉亚：西风教会修女·蒙德城治安特别顾问——教会保守势力的基层力量。</text>
+    <text x="1764" y="628" font-size="10.5" fill="#C9B98A">得票率稳定于 22%~27%，TE 2026 止跌回升至 25.8%（+3 席）。</text>
+  </g>
+
+  <!-- ═══════════ 光谱轴 ═══════════ -->
+  <g>
+    <line x1="140" y1="746" x2="2260" y2="746" stroke="#3E5F54" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <line x1="140" y1="746" x2="100" y2="746" stroke="#3E5F54" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <text x="130" y="778" font-size="13" font-weight="700" fill="#3E5F54">◀ 左翼（体制批判／再分配）</text>
+    <text x="2270" y="778" text-anchor="end" font-size="13" font-weight="700" fill="#3E5F54">右翼（市场／传统秩序）▶</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区左 · 议席分布与执政联盟 ═══════════ -->
+  <g>
+    <rect x="84" y="810" width="1140" height="520" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="108" y="852" font-size="19" font-weight="700" fill="#DDF2E8">下议院议席分布（共 200 席 · TE 2026 大选）</text>
+    <!-- 堆叠条 68/55/52/25 → scale 4.5px/席 = 900px -->
+    <rect x="108" y="876" width="306" height="70" fill="#3BB08A"/>
+    <rect x="414" y="876" width="247.5" height="70" fill="#1F7A5C"/>
+    <rect x="661.5" y="876" width="234" height="70" fill="#C9862B"/>
+    <rect x="895.5" y="876" width="112.5" height="70" fill="#6B857B"/>
+    <text x="261" y="918" text-anchor="middle" font-size="15" font-weight="700" fill="#123B2D">工党 68</text>
+    <text x="538" y="918" text-anchor="middle" font-size="15" font-weight="700" fill="#EAF9F3">自由党 55</text>
+    <text x="779" y="918" text-anchor="middle" font-size="15" font-weight="700" fill="#3A2A10">保守党 52</text>
+    <text x="952" y="918" text-anchor="middle" font-size="12" font-weight="700" fill="#EAF2EE">小党·独立 25</text>
+    <text x="108" y="978" font-size="11.5" fill="#B9DFCF">对比前次：工党 −2 席 · 自由党 −1 席 · 保守党 +3 席（止跌回升）· 小党独立持平——执政联盟合计 123 席，过半续任。</text>
+    <!-- 执政联盟 -->
+    <rect x="108" y="1000" width="1092" height="150" rx="10" fill="#2C5A4C"/>
+    <text x="132" y="1030" font-size="14" font-weight="700" fill="#52C79B">执政联盟：工党 ＋ 自由党（TE 2026 年 11 月宣誓就职）</text>
+    <text x="132" y="1056" font-size="12" fill="#DDF2E8">首相：凯亚·亚尔伯里奇（工党党魁）· 内阁 16 席＝工党 10 席＋自由党 6 席</text>
+    <text x="132" y="1082" font-size="12" fill="#DDF2E8">联合协议核心条款：最低工资标准维持并与通胀挂钩动态调整 · 完成铁路骨干网二期收尾验收</text>
+    <text x="132" y="1108" font-size="12" fill="#DDF2E8">· 继续不推动上议院改革（自由党红线）</text>
+    <text x="132" y="1134" font-size="11.5" fill="#8FB5A6">不稳定性根源：产业政策（国有化边界）与公民自由（情报监控权限）两党分歧依旧显著。</text>
+    <!-- 焦点议题 -->
+    <rect x="108" y="1166 " width="1092" height="140" rx="10" fill="#3A3325"/>
+    <text x="132" y="1194" font-size="13" font-weight="700" fill="#E0A94E">TE 2030 年大选前的核心变量（定于今年秋举行）</text>
+    <text x="132" y="1220" font-size="11.5" fill="#EDE3CC">· 国有化试点：晨曦酒庄非迪卢克家族资产部分已于 TE 2028 完成收购——工党左派酝酿扩大至第二家核心酒庄；</text>
+    <text x="132" y="1244" font-size="11.5" fill="#EDE3CC">· 数字身份认证体系：艾泽尔力推的国家级统一数字身份草案——自由党左派斥为「迈向全面监控的第一步」；</text>
+    <text x="132" y="1270" font-size="11.5" fill="#EDE3CC">· 选后联合政府构成是各党博弈的核心变量；保守党借回升势头力图重返执政竞争。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区右 · 历届大选得票率 ═══════════ -->
+  <g>
+    <rect x="1240" y="810" width="1096" height="520" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1264" y="852" font-size="19" font-weight="700" fill="#1E3A31">历届大选得票率走势（TE 2014–2026）</text>
+    <!-- 网格与刻度 -->
+    <g font-size="11" fill="#6B857B">
+      <line x1="1310" y1="930" x2="2300" y2="930" stroke="#C5DAD0"/><text x="1298" y="934" text-anchor="end">40%</text>
+      <line x1="1310" y1="1010" x2="2300" y2="1010" stroke="#C5DAD0"/><text x="1298" y="1014" text-anchor="end">35%</text>
+      <line x1="1310" y1="1090" x2="2300" y2="1090" stroke="#C5DAD0"/><text x="1298" y="1094" text-anchor="end">30%</text>
+      <line x1="1310" y1="1170" x2="2300" y2="1170" stroke="#C5DAD0"/><text x="1298" y="1174" text-anchor="end">25%</text>
+      <line x1="1310" y1="1250" x2="2300" y2="1250" stroke="#C5DAD0"/><text x="1298" y="1254" text-anchor="end">20%</text>
+    </g>
+    <!-- 折线 -->
+    <polyline points="1340,1108 1640,931 1940,952 2240,970" fill="none" stroke="#3BB08A" stroke-width="4"/>
+    <polyline points="1340,1135 1640,1140 1940,1166 2240,1175" fill="none" stroke="#1F7A5C" stroke-width="4" stroke-dasharray="10 6"/>
+    <polyline points="1340,1203 1640,1197 1940,1213 2240,1189" fill="none" stroke="#C9862B" stroke-width="4"/>
+    <!-- 数据点 -->
+    <g fill="#3BB08A"><circle cx="1340" cy="1108" r="5"/><circle cx="1640" cy="931" r="5"/><circle cx="1940" cy="952" r="5"/><circle cx="2240" cy="970" r="5"/></g>
+    <g fill="#1F7A5C"><circle cx="1340" cy="1135" r="5"/><circle cx="1640" cy="1140" r="5"/><circle cx="1940" cy="1166" r="5"/><circle cx="2240" cy="1175" r="5"/></g>
+    <g fill="#C9862B"><circle cx="1340" cy="1203" r="5"/><circle cx="1640" cy="1197" r="5"/><circle cx="1940" cy="1213" r="5"/><circle cx="2240" cy="1189" r="5"/></g>
+    <!-- 数值标签 -->
+    <g font-size="11" font-weight="700">
+      <text x="1340" y="1092" text-anchor="middle" fill="#1F7A5C">31.4</text><text x="1640" y="915" text-anchor="middle" fill="#1F7A5C">36.2</text><text x="1940" y="936" text-anchor="middle" fill="#1F7A5C">35.1</text><text x="2240" y="954" text-anchor="middle" fill="#1F7A5C">34.2</text>
+      <text x="1340" y="1158" text-anchor="middle" fill="#2FA47E">29.8</text><text x="1640" y="1163" text-anchor="middle" fill="#2FA47E">29.5</text><text x="1940" y="1190" text-anchor="middle" fill="#2FA47E">27.9</text><text x="2240" y="1152" text-anchor="middle" fill="#2FA47E">27.4</text>
+      <text x="1340" y="1226" text-anchor="middle" fill="#8A5B1D">25.3</text><text x="1640" y="1220" text-anchor="middle" fill="#8A5B1D">23.1</text><text x="1940" y="1236" text-anchor="middle" fill="#8A5B1D">24.3</text><text x="2240" y="1213" text-anchor="middle" fill="#8A5B1D">25.8</text>
+    </g>
+    <g font-size="12" fill="#3E5F54">
+      <text x="1340" y="1282" text-anchor="middle">TE 2014</text><text x="1640" y="1282" text-anchor="middle">TE 2018</text><text x="1940" y="1282" text-anchor="middle">TE 2022</text><text x="2240" y="1282" text-anchor="middle">TE 2026</text>
+    </g>
+    <!-- 图例 -->
+    <g font-size="12">
+      <line x1="1310" y1="1310" x2="1360" y2="1310" stroke="#3BB08A" stroke-width="4"/><text x="1372" y="1315" fill="#1F7A5C">工党</text>
+      <line x1="1450" y1="1310" x2="1500" y2="1310" stroke="#1F7A5C" stroke-width="4" stroke-dasharray="10 6"/><text x="1512" y="1315" fill="#2FA47E">自由党</text>
+      <line x1="1600" y1="1310" x2="1650" y2="1310" stroke="#C9862B" stroke-width="4"/><text x="1662" y="1315" fill="#8A5B1D">保守党</text>
+    </g>
+    <text x="1264" y="884" font-size="11" fill="#6B857B">※ 保守党 TE 2010 首选即获 22.1%（44 席）——普选并未如预言般「断崖式下跌」。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 社会界别代表与体制外声音 ═══════════ -->
+  <g>
+    <rect x="84" y="1362" width="2252" height="150" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="108" y="1398" font-size="15" font-weight="700" fill="#1F7A5C">社会界别代表（无特定政党归属）</text>
+    <g font-size="11.5" fill="#3E5F54">
+      <text x="108" y="1426"><tspan font-weight="700">迪奥娜</tspan> 猫尾酒馆首席调酒师——自由党民粹派同情者，「专调难喝鸡尾酒」与「快乐经济」暗合；</text>
+      <text x="108" y="1452"><tspan font-weight="700">莫娜·梅吉斯图斯</tspan> 占星术士·自由学者——自由党中派同情者，「真相大于一切」契合理性知识自由主张；</text>
+      <text x="108" y="1478"><tspan font-weight="700">辛焱</tspan> 摇滚乐手——介于自由党左派与工党之间，以摇滚表达反叛；<tspan font-weight="700">米卡</tspan> 骑士团测绘员——非党人士，专注测绘与后勤。</text>
+    </g>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="1560" x2="2180" y2="1560" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="1592" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德政治概况》· 蒙德自由合众国政治体系同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>

@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2760" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#2E8B6E"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2760" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德机场体系与通航生态图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">国内通用航空一片繁荣 · 国际航空高度垄断 · 110 处起降设施 · 「空中毛细血管」连接各领与人烟</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区左 · 设施金字塔与三层级 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="1140" height="640" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="188" font-size="20" font-weight="700" fill="#1E3A31">110 处起降设施的四级金字塔</text>
+    <!-- 金字塔四层 -->
+    <polygon points="630,204 556,284 704,284" fill="#1F453B"/>
+    <text x="720" y="250" font-size="13" font-weight="700" fill="#1F7A5C">国际机场 × 2 座</text>
+    <polygon points="540,292 464,372 796,372" fill="#2C5A4C"/>
+    <text x="812" y="338" font-size="13" font-weight="700" fill="#1F7A5C">支线通航机场 × 8 座</text>
+    <polygon points="448,380 366,460 894,460" fill="#52C79B"/>
+    <text x="910" y="426" font-size="13" font-weight="700" fill="#1F7A5C">乡镇起降点 ≈ 30 处</text>
+    <polygon points="350,468 260,548 1000,548" fill="#8FD4BC"/>
+    <text x="1004" y="532" font-size="12" font-weight="700" fill="#1F7A5C">临时起降点／飞行营地 ≈ 70 处</text>
+    <!-- 三层级表 -->
+    <text x="84" y="600" font-size="15" font-weight="700" fill="#1F7A5C">通航机场的三个层级</text>
+    <rect x="84" y="616" width="1092" height="48" rx="8" fill="#1F453B"/>
+    <text x="108" y="646" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">支线通航机场（8 座）：</tspan>硬质跑道 1200~1800 m，有基本航站楼和加油设施</text>
+    <rect x="84" y="668" width="1092" height="48" rx="8" fill="#2C5A4C"/>
+    <text x="108" y="698" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">代表：</tspan>星落城机场 · 晨曦城堡机场 · 清泉镇机场 · 奔狼堡机场 · 鹰巢堡机场 · 荆夫港通航站 · 风起地飞行场 · 摘星崖飞行场</text>
+    <rect x="84" y="720" width="1092" height="48" rx="8" fill="#2C5A4C"/>
+    <text x="108" y="750" font-size="12.5" fill="#DDF2E8"><tspan font-weight="700" fill="#52C79B">乡镇起降点（≈30 处）：</tspan>土质或草地跑道 600~1000 m，部分有简易机库——散布于偏远乡镇、矿区、大型农场</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · 两大国际机场 ═══════════ -->
+  <g>
+    <rect x="1240" y="146" width="1100" height="652" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="1264" y="188" font-size="20" font-weight="700" fill="#DDF2E8">两大国际机场参数对照</text>
+    <rect x="1264" y="208" width="1052" height="280" rx="10" fill="#2C5A4C" stroke="#52C79B" stroke-width="1.5"/>
+    <text x="1288" y="242" font-size="16" font-weight="700" fill="#52C79B">蒙德自由国际机场 (Mondstadt Liberty International Airport)</text>
+    <text x="1288" y="270" font-size="12.5" fill="#DDF2E8">等级 4 F 级（可接纳 ZF-48 起降，未投入商业运营）· 蒙德城南郊约 24 km · 风起地正北 6 km</text>
+    <text x="1288" y="296" font-size="12.5" fill="#DDF2E8">跑道 3 条：3800 m × 1 ＋ 3200 m × 2（沥青混凝土）· 航站楼 T1（国际／国内干线）＋T2（低成本及包机）</text>
+    <text x="1288" y="322" font-size="12.5" fill="#DDF2E8">年吞吐能力：近期 1400 万人次 → 远期规划 1800 万人次</text>
+    <text x="1288" y="348" font-size="12.5" fill="#DDF2E8">地面交通：地下联络线「自由国际机场站」，市域铁路直达蒙德城北站／南站；机场高速接城市环线</text>
+    <text x="1288" y="374" font-size="12.5" fill="#DDF2E8">主基地：蒲公英航空公司（客运主基地）· 晨曦酒庄航空公司（货运机坪）</text>
+    <text x="1288" y="402" font-size="12.5" font-weight="700" fill="#52C79B">定位：蒙德面向提瓦特的第一门户 · 全国最大客运枢纽</text>
+    <text x="2290" y="270" text-anchor="end" font-size="24" font-weight="700" fill="#52C79B">1400 万</text>
+    <rect x="1264" y="504" width="1052" height="252" rx="10" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1288" y="538" font-size="16" font-weight="700" fill="#1F7A5C">荆夫骑士国际机场 (Dornman Knight International Airport)</text>
+    <text x="1288" y="566" font-size="12.5" fill="#3E5F54">等级 4 E 级 · 荆夫市北部郊区 · 荆夫港以东 12 km</text>
+    <text x="1288" y="592" font-size="12.5" fill="#3E5F54">跑道 2 条：3000 m ＋ 2600 m（沥青混凝土）· 航站楼 T1 年吞吐能力 600 万人次</text>
+    <text x="1288" y="618" font-size="12.5" fill="#3E5F54">地面交通：荆夫港市域铁路支线「骑士机场站」；机场快速路直连荆夫港自由贸易区</text>
+    <text x="1288" y="644" font-size="12.5" fill="#3E5F54">主基地：晨曦酒庄航空公司（货运主基地）· 蒲公英航空公司（次要基地）</text>
+    <text x="1288" y="672" font-size="12.5" font-weight="700" fill="#1F7A5C">定位：北方航路门户——以国际货运、花卉冷链空运和季节性包机为主</text>
+    <text x="2288" y="566" text-anchor="end" font-size="24" font-weight="700" fill="#1F7A5C">600 万</text>
+    <text x="1264" y="776" font-size="11.5" fill="#6B857B">※ 两场均由西风骑士团空军提供终端防空识别服务；临时警戒区 (TDA) 训练期间限制民航通航飞行。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区左 · 通航兴起成因与六优势 ═══════════ -->
+  <g>
+    <rect x="60" y="818" width="1140" height="520" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="860" font-size="20" font-weight="700" fill="#DDF2E8">碎片化繁荣的由来：「意外收获」而非规划结果</text>
+    <rect x="84" y="880" width="1092" height="130" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="908" font-size="12.5" fill="#DDF2E8">· 1990 年代 TE 铁路反垄断拆分后陷入碎片化运营——线路公司只卖路权不跑车，时刻混乱、中转繁琐，旅客转向公路航空；</text>
+    <text x="108" y="934" font-size="12.5" fill="#DDF2E8">· 高速公路以蒙德城为中心放射状布局，跨领跨乡镇的「毛细血管」出行难以高效覆盖；</text>
+    <text x="108" y="960" font-size="12.5" fill="#DDF2E8">· TE 2008 志飞 ZF-16 项目叫停留下市场真空，刺激本土轻型飞机制造业兴起；</text>
+    <text x="108" y="986" font-size="12.5" fill="#DDF2E8">· 宽松的自由空域政策 ＋ 西风骑士团空军「风之翼」技术民用转化，让通航在风之神眷顾的土地扎根。</text>
+    <!-- 六优势 -->
+    <text x="84" y="1046" font-size="15" font-weight="700" fill="#52C79B">航空相对铁路的六点结构性竞争优势</text>
+    <rect x="84" y="1062" width="344" height="112" rx="10" fill="#EAF4EE"/>
+    <text x="256" y="1096" text-anchor="middle" font-size="17" font-weight="700" fill="#1F7A5C">轻资产</text>
+    <text x="256" y="1124" text-anchor="middle" font-size="11.5" fill="#3E5F54">无需庞大轨道基建投入</text>
+    <rect x="448" y="1062" width="344" height="112" rx="10" fill="#EAF4EE"/>
+    <text x="620" y="1096" text-anchor="middle" font-size="17" font-weight="700" fill="#1F7A5C">高准时</text>
+    <text x="620" y="1124" text-anchor="middle" font-size="11.5" fill="#3E5F54">不受线路拥堵与调度碎片化影响</text>
+    <rect x="812" y="1062" width="340" height="112" rx="10" fill="#EAF4EE"/>
+    <text x="982" y="1096" text-anchor="middle" font-size="17" font-weight="700" fill="#1F7A5C">门槛低</text>
+    <text x="982" y="1124" text-anchor="middle" font-size="11.5" fill="#3E5F54">个人及小企业即可运营通航</text>
+    <rect x="84" y="1190" width="344" height="112" rx="10" fill="#EAF4EE"/>
+    <text x="256" y="1224" text-anchor="middle" font-size="17" font-weight="700" fill="#1F7A5C">管制松</text>
+    <text x="256" y="1252" text-anchor="middle" font-size="11.5" fill="#3E5F54">自由空域政策降低合规成本</text>
+    <rect x="448" y="1190" width="344" height="112" rx="10" fill="#EAF4EE"/>
+    <text x="620" y="1224" text-anchor="middle" font-size="17" font-weight="700" fill="#1F7A5C">易征地</text>
+    <text x="620" y="1252" text-anchor="middle" font-size="11.5" fill="#3E5F54">小型机场用地协调远易于铁路征地</text>
+    <rect x="812" y="1190" width="340" height="112" rx="10" fill="#EAF4EE"/>
+    <text x="982" y="1224" text-anchor="middle" font-size="17" font-weight="700" fill="#1F7A5C">耗时短</text>
+    <text x="982" y="1252" text-anchor="middle" font-size="11.5" fill="#3E5F54">点对点飞行避开地面迂回</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区右 · 机型竞争格局 ═══════════ -->
+  <g>
+    <rect x="1240" y="818" width="1100" height="520" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1264" y="860" font-size="20" font-weight="700" fill="#1E3A31">机型生态：三分天下的竞争态势</text>
+    <text x="1264" y="888" font-size="13" fill="#3E5F54">ZF-16 夭折留下的「空中皮卡」真空，由本土制造商与进口机型共同填补</text>
+    <rect x="1264" y="906" width="1052" height="150" rx="10" fill="#1F453B"/>
+    <text x="1288" y="936" font-size="14" font-weight="700" fill="#52C79B">本土主力：「蒲公英」系列 (Dandelion Series)</text>
+    <text x="1288" y="962" font-size="12" fill="#DDF2E8">蒙德风机制造集团航空事业部出品（脱胎于风能技术研发中心），以高可靠性与适应草地跑道著称：</text>
+    <text x="1288" y="988" font-size="12" fill="#DDF2E8">DND-1 四座活塞 · DND-2 六座涡桨 · DND-3 九座涡桨客货混运型——起降距离仅需 450 米，</text>
+    <text x="1288" y="1014" font-size="12" fill="#DDF2E8">广泛用于偏远乡镇通勤与花卉冷链运输。</text>
+    <text x="2290" y="942" text-anchor="end" font-size="13" font-weight="700" fill="#52C79B">守本土</text>
+    <rect x="1264" y="1068" width="512" height="130" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1288" y="1098" font-size="13.5" font-weight="700" fill="#1F7A5C">「风车菊」系列 (Windwheel Series)</text>
+    <text x="1288" y="1124" font-size="12" fill="#3E5F54">晨曦酒庄领小型航空器制造商出品；</text>
+    <text x="1288" y="1150" font-size="12" fill="#3E5F54">WWA-1 五座涡桨主打高端商务通勤，</text>
+    <text x="1288" y="1176" font-size="12" fill="#3E5F54">受企业高管与富裕农场主青睐。</text>
+    <rect x="1804" y="1068" width="512" height="130" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1828" y="1098" font-size="13.5" font-weight="700" fill="#1F7A5C">二手志飞 ZF-24 / ZF-28</text>
+    <text x="1828" y="1124" font-size="12" fill="#3E5F54">部分通航公司从志飞公司采购二手</text>
+    <text x="1828" y="1150" font-size="12" fill="#3E5F54">ZF-24 与 ZF-28，投入运量较大的</text>
+    <text x="1828" y="1176" font-size="12" fill="#3E5F54">支线航线。</text>
+    <rect x="1264" y="1214" width="512" height="106" rx="10" fill="#3A3A2A" stroke="#C9862B" stroke-width="1.5"/>
+    <text x="1288" y="1244" font-size="13.5" font-weight="700" fill="#E0A94E">璃月「岩鹰」系列 —— 抢货运</text>
+    <text x="1288" y="1270" font-size="12" fill="#EDE3CC">低运营成本＋坚固耐用，在东区</text>
+    <text x="1288" y="1296" font-size="12" fill="#EDE3CC">矿业城镇占据相当份额。</text>
+    <rect x="1804" y="1214" width="512" height="106" rx="10" fill="#2A3345" stroke="#1F6FA8" stroke-width="1.5"/>
+    <text x="1828" y="1244" font-size="13.5" font-weight="700" fill="#7FB6DC">枫丹「潮汐」系列 —— 夺高端</text>
+    <text x="1828" y="1270" font-size="12" fill="#DCE9F5">舒适性与客舱静音设计为卖点，</text>
+    <text x="1828" y="1296" font-size="12" fill="#DCE9F5">主攻荆夫领高端通勤与旅游包机。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区左 · 运营主体光谱 ═══════════ -->
+  <g>
+    <rect x="60" y="1370" width="1140" height="520" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="1412" font-size="20" font-weight="700" fill="#1E3A31">运营主体：从个人到大企业的完整光谱</text>
+    <text x="84" y="1440" font-size="13" fill="#3E5F54">准入门槛极低——通过体格检查与理论考试即可取得私用飞行员执照；一架二手 DND-1 即可成立通航公司</text>
+    <rect x="84" y="1458" width="1092" height="104" rx="10" fill="#1F453B"/>
+    <text x="108" y="1488" font-size="13.5" font-weight="700" fill="#52C79B">个人飞行爱好者</text>
+    <text x="108" y="1514" font-size="12" fill="#DDF2E8">提瓦特最高的人均飞行员执照持有率；星落平原的风力条件极适合滑翔翼与超轻型飞机——</text>
+    <text x="108" y="1540" font-size="12" fill="#DDF2E8">周末驾自己的小飞机从蒙德城飞往晨曦酒庄享用午餐，是中产阶层的一种生活方式。</text>
+    <rect x="84" y="1574" width="1092" height="104" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="1604" font-size="13.5" font-weight="700" fill="#52C79B">小型通航公司 ≈ 50 余家（运营 1~5 架）</text>
+    <text x="108" y="1630" font-size="12" fill="#DDF2E8">空中出租车、观光飞行、飞行培训；典型如「清泉空中巴士」(Springvale Air Bus)——</text>
+    <text x="108" y="1656" font-size="12" fill="#DDF2E8">每天执飞清泉镇—蒙德城—星落城定时航班，单程仅 40 分钟，票价不及铁路一等座。</text>
+    <rect x="84" y="1690" width="1092" height="88 " rx="10" fill="#2C5A4C"/>
+    <text x="108" y="1720" font-size="13.5" font-weight="700" fill="#52C79B">大企业自有机队</text>
+    <text x="108" y="1746" font-size="12" fill="#DDF2E8">蒲公英酒业联盟、晨曦酒庄集团、蒙德风机制造集团等用于高管出行与紧急调运；晨曦酒庄集团设独立航空部，运营 3 架 WWA-1 ＋ 2 架 DND-3。</text>
+    <rect x="84" y="1790" width="1092" height="76" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="1818" font-size="13.5" font-weight="700" fill="#52C79B">农业航空合作社</text>
+    <text x="108" y="1844" font-size="12" fill="#DDF2E8">星落平原大型农场联合组建，使用喷洒型／播种型无人机与小型飞机规模化作业；空军无人机管控技术为农业无人机划定专用空域与高度层。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区右 · 多元业态 ═══════════ -->
+  <g>
+    <rect x="1240" y="1370" width="1100" height="520" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="1264" y="1412" font-size="20" font-weight="700" fill="#DDF2E8">多元业态：低空经济的五个切面</text>
+    <rect x="1264" y="1430" width="1052" height="86" rx="10" fill="#2C5A4C"/>
+    <text x="1288" y="1458" font-size="13" font-weight="700" fill="#52C79B">空中出租车</text>
+    <text x="1288" y="1482" font-size="11.5" fill="#DDF2E8">蒙德城—晨曦酒庄—清泉镇—星落城间多家公司定期航班，高峰时段每 30 分钟一班；手机应用可预约「随叫随飞」包机——在璃月人枫丹人眼中是难以置信的奢侈。</text>
+    <rect x="1264" y="1526" width="1052" height="86" rx="10" fill="#2C5A4C"/>
+    <text x="1288" y="1554" font-size="13" font-weight="700" fill="#52C79B">低空旅游</text>
+    <text x="1288" y="1578" font-size="11.5" fill="#DDF2E8">滑翔翼、热气球与观光飞行是蒙德旅游招牌：风起地热气球观光、摘星崖滑翔翼体验、龙脊雪山直升机滑雪投放——并催生装备制造与培训产业。</text>
+    <rect x="1264" y="1622" width="1052" height="86" rx="10" fill="#2C5A4C"/>
+    <text x="1288" y="1650" font-size="13" font-weight="700" fill="#52C79B">花卉冷链空运——「花瓣航线」</text>
+    <text x="1288" y="1674" font-size="11.5" fill="#DDF2E8">荆夫领鲜切花清晨采摘后由小型货机在 2 小时内运抵蒙德自由国际机场，再经 ZF-28 M / ZF-36 F 转运璃月枫丹市场——花卉出口竞争力的核心环节。</text>
+    <rect x="1264" y="1718" width="1052" height="72" rx="10" fill="#2C5A4C"/>
+    <text x="1288" y="1746" font-size="13" font-weight="700" fill="#52C79B">农林喷洒与空中播种</text>
+    <text x="1288" y="1770" font-size="11.5" fill="#DDF2E8">星落平原智慧农业大量使用无人机精准喷洒与空中播种；奔狼领保护区以固定翼飞机进行草种播撒与水源监测。</text>
+    <rect x="1264" y="1800" width="1052" height="86" rx="10" fill="url(#anemoTop)"/>
+    <text x="1288" y="1828" font-size="13" font-weight="700" fill="#F5FAF7">紧急医疗救援——全国空中救援网络</text>
+    <text x="1288" y="1852" font-size="11.5" fill="#EFFBF6">西风骑士团空军「风之翼」特种部队＋民航管理局联合建立；医疗救援专用机为改装版 DND-3 担架型。响应时间目标：平原 ≤30 分钟 · 山地雪山 ≤60 分钟 · 恶劣天气 ≤90 分钟。</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 管理体制与安全监管 ═══════════ -->
+  <g>
+    <rect x="60" y="1922" width="2280" height="560" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="1964" font-size="20" font-weight="700" fill="#1E3A31">管理体制：蒙德民航管理局 (MCAA) 与空域分层</text>
+    <text x="84" y="1992" font-size="13" fill="#3E5F54">隶属蒙德联邦交通部，负责全国民航业监管；适航审定参照志飞技术规范但适度降低通航飞机疲劳寿命与冗余设计要求</text>
+    <!-- 空域三层 -->
+    <rect x="84" y="2012" width="744" height="200" rx="10" fill="#1F453B"/>
+    <text x="108" y="2042" font-size="14" font-weight="700" fill="#52C79B">A 类管制空域</text>
+    <text x="108" y="2068" font-size="12" fill="#DDF2E8">国际机场终端区＋主干航线；</text>
+    <text x="108" y="2092" font-size="12" fill="#DDF2E8">完全管制运行。</text>
+    <rect x="108" y="2112" width="696" height="2" fill="#3E6E5C"/>
+    <rect x="108" y="2124" width="696" height="76" rx="8" fill="#2C5A4C"/>
+    <text x="132" y="2150" font-size="12.5" font-weight="700" fill="#52C79B">E 类低管制空域（通航主要活动区域）＋ G 类非管制空域（低空自由飞行区）</text>
+    <text x="132" y="2176" font-size="11.5" fill="#DDF2E8">以报备代替审批（跨领飞行除外），仅需保持无线电守听。</text>
+    <!-- 执照门槛 -->
+    <rect x="852" y="2012" width="716" height="200" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="876" y="2042" font-size="14" font-weight="700" fill="#1F7A5C">飞行员执照门槛（小时数）</text>
+    <g font-size="12" fill="#3E5F54">
+      <text x="876" y="2074">PPL 私用</text><rect x="1020" y="2060" width="64" height="20" fill="url(#anemoTop)"/><text x="1092" y="2074" font-weight="700">40 h</text>
+      <text x="876" y="2104">CPL 商用</text><rect x="1020" y="2090" width="320" height="20" fill="url(#anemoTop)"/><text x="1348" y="2104" font-weight="700">200 h</text>
+      <text x="876" y="2134">ATPL 航线运输</text><rect x="1020" y="2120" width="480" height="20" fill="#C9862B"/><text x="1492" y="2134" text-anchor="end" font-weight="700" fill="#F5FAF7">1,500 h</text>
+    </g>
+    <text x="876" y="2172" font-size="11" fill="#6B857B">PPL/CPL 门槛远低于 ATPL——低门槛是通航繁荣的制度基石之一。</text>
+    <!-- 安全困境 -->
+    <rect x="1592" y="2012" width="748" height="200" rx="10" fill="#3A2A2A"/>
+    <text x="1616" y="2042" font-size="14" font-weight="700" fill="#E8837A">安全困境：繁荣背后的监管压力</text>
+    <text x="1616" y="2068" font-size="11.5" fill="#F0D9D6">· 通航机队约 20% 服役超 25 年，老旧机型事故率明显高于新机；</text>
+    <text x="1616" y="2092" font-size="11.5" fill="#F0D9D6">· 部分偏远起降点无任何导航通信设施，完全依赖目视飞行规则 (VFR)；</text>
+    <text x="1616" y="2116" font-size="11.5" fill="#F0D9D6">· 飞行培训市场资质参差不齐；MCAA 收紧标准遭俱乐部与企业强烈反对，</text>
+    <text x="1616" y="2140" font-size="11.5" fill="#F0D9D6">  认为会扼杀蒙德最具活力的交通板块；</text>
+    <text x="1616" y="2164" font-size="11.5" fill="#F0D9D6">· 「通航安全提升计划」(2020~2025)：简易气象站＋ADS-B 接收站＋强制适航检查周期。</text>
+    <!-- 展望三块 -->
+    <text x="84" y="2250" font-size="15" font-weight="700" fill="#1F7A5C">挑战与展望</text>
+    <rect x="84" y="2266" width="744" height="186" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="2296" font-size="13.5" font-weight="700" fill="#52C79B">铁路复兴的分流压力</text>
+    <text x="108" y="2322" font-size="12" fill="#DDF2E8">璃蒙铁路电气化＋MR 160 J 换装显著压缩时间距离：蒙德城—晨曦酒庄从 2.5 小时缩至 1 小时 10 分，</text>
+    <text x="108" y="2348" font-size="12" fill="#DDF2E8">逼近空中出租车全程约 50 分钟的水平；主干线 200 km/h 达速后中短途竞争将趋于激烈——</text>
+    <text x="108" y="2374" font-size="12" fill="#DDF2E8">但凭六点结构性优势，短期尚不构成颠覆性冲击。</text>
+    <rect x="852" y="2266" width="716" height="186" rx="10" fill="#2C5A4C"/>
+    <text x="876" y="2296" font-size="13.5" font-weight="700" fill="#52C79B">垄断松动的前夜</text>
+    <text x="876" y="2322" font-size="12" fill="#DDF2E8">璃月国家航空多次申请开通璃月港—蒙德城第五条每日航线，将首次实质性挑战蒲公英航空地位；</text>
+    <text x="876" y="2348" font-size="12" fill="#DDF2E8">货运领域飞云物流正评估在荆夫骑士国际机场设立转运中心——双寡头的「井水不犯河水」默契面临考验。</text>
+    <rect x="1592" y="2266" width="748" height="186" rx="10" fill="#2C5A4C"/>
+    <text x="1616" y="2296" font-size="13.5" font-weight="700" fill="#52C79B">低空经济 2.0：「蒲公英-eVTOL」预研项目</text>
+    <text x="1616" y="2322" font-size="12" fill="#DDF2E8">电动垂直起降飞行器低噪音、零排放、垂直起降，与「风神之城」环保理念契合；</text>
+    <text x="1616" y="2348" font-size="12" fill="#DDF2E8">MCAA＋蒙德风机制造集团＋须弥高校空气动力学实验室联合预研：</text>
+    <text x="1616" y="2374" font-size="12" fill="#DDF2E8">2032 年验证机首飞 → 2038 年商用——从「燃油小飞机的繁荣」迈向「绿色空中出行的标杆」。</text>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="2712" x2="2180" y2="2712" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="2744" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德航空概况》· 蒙德自由合众国航空体系同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>

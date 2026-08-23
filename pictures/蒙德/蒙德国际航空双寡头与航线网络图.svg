@@ -1,0 +1,200 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2260" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2400" height="2260" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德国际航空双寡头与航线网络图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">蒲公英航空公司 × 晨曦酒庄航空公司 · 全志飞机队 · 客货分治的温和双寡头 · 六方向国际航线</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区左 · 蒲公英航空 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="1140" height="800" rx="14" fill="#1F453B" stroke="#52C79B" stroke-width="2"/>
+    <text x="84" y="188" font-size="20" font-weight="700" fill="#DDF2E8">蒲公英航空公司 (Dandelion Airlines)</text>
+    <text x="84" y="216" font-size="13" fill="#B9DFCF">蒙德唯一的定期国际客运航司 · 覆盖商务、旅游、探亲全品类需求</text>
+    <!-- 股权条 -->
+    <rect x="84" y="234" width="1092" height="66" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="262" font-size="12.5" font-weight="700" fill="#52C79B">股权结构</text>
+    <rect x="108" y="272" width="273" height="20" fill="url(#anemoTop)"/>
+    <rect x="381" y="272" width="156" height="20" fill="#52C79B"/>
+    <rect x="537" y="272" width="108" height="20" fill="#8FD4BC"/>
+    <rect x="645" y="272" width="531" height="20" fill="#3E6E5C"/>
+    <text x="244" y="287" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">国有 51%</text>
+    <text x="459" y="287" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">蒲公英酒业 29%</text>
+    <text x="591" y="287" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">公众 20%</text>
+    <text x="1184" y="287" text-anchor="end" font-size="11" fill="#DDF2E8">国有控股 · 总部落户蒙德城</text>
+    <!-- 基本信息 -->
+    <text x="84" y="332" font-size="12.5" fill="#DDF2E8">主基地：蒙德自由国际机场 T1（客运）· 特色服务：「蒲公英会所」高端舱——机上供应天使的馈赠联名特调</text>
+    <!-- 机队构成 scale 30px/架 -->
+    <text x="84" y="372" font-size="15" font-weight="700" fill="#52C79B">机队规模：38 架（全数购自志飞联合制造集团）</text>
+    <g font-size="12.5" fill="#B9DFCF">
+      <text x="84" y="406">ZF-36 L 长途型</text>
+      <rect x="300" y="392" width="540" height="22" rx="4" fill="url(#anemoTop)"/><text x="850" y="408" font-weight="700" fill="#F5FAF7">×18</text>
+      <text x="902" y="408" fill="#B9DFCF">远程国际航线绝对主力</text>
+      <text x="84" y="444">ZF-28 M 客货混运型</text>
+      <rect x="300" y="430" width="240" height="22" rx="4" fill="#3BB08A"/><text x="550" y="446" font-weight="700" fill="#F5FAF7">×8</text>
+      <text x="602" y="446" fill="#B9DFCF">区域跨境支线</text>
+      <text x="84" y="482">ZF-36 H 高密度型</text>
+      <rect x="300" y="468" width="180" height="22" rx="4" fill="#3BB08A"/><text x="490" y="484" font-weight="700" fill="#F5FAF7">×6</text>
+      <text x="542" y="484" fill="#B9DFCF">旅游包机及低成本航线（旺季客改货支援 DWA）</text>
+      <text x="84" y="520">ZF-40 B 高密度干线型</text>
+      <rect x="300" y="506" width="120" height="22" rx="4" fill="#3BB08A"/><text x="430" y="522" font-weight="700" fill="#F5FAF7">×4</text>
+      <text x="482" y="522" fill="#B9DFCF">蒙德—璃月港高频穿梭快线</text>
+      <text x="84" y="558">ZF-32 E 高原型</text>
+      <rect x="300" y="544" width="60" height="22" rx="4" fill="#3BB08A"/><text x="370" y="560" font-weight="700" fill="#F5FAF7">×2</text>
+      <text x="422" y="560" fill="#B9DFCF">须弥高高原航线专用</text>
+    </g>
+    <!-- 定位注释 -->
+    <rect x="84" y="596" width="1092" height="150" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="626" font-size="13.5" font-weight="700" fill="#52C79B">垄断的合理性：全盘托付志飞技术体系</text>
+    <text x="108" y="652" font-size="12" fill="#DDF2E8">发动机通用 · 航电系统通用 · 维护流程通用，甚至飞行员差异训练仅需 3 天即可在不同机型间转换；</text>
+    <text x="108" y="678" font-size="12" fill="#DDF2E8">在志飞占据全球 85% 存量、95% 增量市场的格局下，独立于该体系的新航司面临维修网络不兼容、</text>
+    <text x="108" y="704" font-size="12" fill="#DDF2E8">航材库存成本高昂、飞行员培训周期长等结构性壁垒——稳定运营的前提恰是「不折腾」。</text>
+    <!-- 客运枢纽地位 -->
+    <rect x="84" y="762" width="1092" height="152" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="792" font-size="13.5" font-weight="700" fill="#52C79B">枢纽与时刻资源</text>
+    <text x="108" y="818" font-size="12" fill="#DDF2E8">以蒙德自由国际机场 T1 为核心枢纽，荆夫骑士国际机场设次要基地；国内无第二家定期国际客运竞争者，</text>
+    <text x="108" y="844" font-size="12" fill="#DDF2E8">国际航线票价常年维持高位：蒙德—璃月港约 1200 km 航程经济舱票价约为铁路软卧的 2 倍。</text>
+    <text x="108" y="878" font-size="12" fill="#B9DFCF">航线创新动力不足——须弥、纳塔方向运力投放长期保守，是消费者与监管的共同抱怨点。</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · 晨曦酒庄航空 ═══════════ -->
+  <g>
+    <rect x="1240" y="146" width="1100" height="800" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1264" y="188" font-size="20" font-weight="700" fill="#1E3A31">晨曦酒庄航空公司 (Dawn Winery Aviation, DWA)</text>
+    <text x="1264" y="216" font-size="13" fill="#3E5F54">以货运、包机、通航服务为核心的多元化航空企业 · 晨曦酒庄集团全资控股</text>
+    <rect x="1264" y="234" width="1052" height="60" rx="10" fill="#DDEEE6"/>
+    <text x="1288" y="260" font-size="12.5" fill="#3E5F54"><tspan font-weight="700" fill="#1F7A5C">总部：</tspan>晨曦城堡　<tspan font-weight="700" fill="#1F7A5C">主基地：</tspan>蒙德自由国际机场（货运机坪）＋ 荆夫骑士国际机场</text>
+    <text x="1288" y="284" font-size="12.5" fill="#3E5F54"><tspan font-weight="700" fill="#1F7A5C">特殊地位：</tspan>承担蒙德高端酒类和花卉的全球冷链运输任务</text>
+    <!-- 机队 scale 55px/架 -->
+    <text x="1264" y="330" font-size="15" font-weight="700" fill="#1F7A5C">机队规模：22 架（全志飞平台，与蒲公英共享维护体系）</text>
+    <g font-size="12.5">
+      <text x="1264" y="364">ZF-32 F 货运型</text>
+      <rect x="1480" y="350" width="440" height="22" rx="4" fill="#1F7A5C"/><text x="1930" y="366" font-weight="700" fill="#1F7A5C">×8</text>
+      <text x="1968" y="366" fill="#3E5F54">支线货运网络骨干</text>
+      <text x="1264" y="402">ZF-40 F 货运型</text>
+      <rect x="1480" y="388" width="330" height="22" rx="4" fill="#2FA47E"/><text x="1820" y="404" font-weight="700" fill="#1F7A5C">×6</text>
+      <text x="1958" y="404" fill="#3E5F54">远程货运主力：花卉·酒类·高价值农产品出口</text>
+      <text x="1264" y="440">ZF-36 F 货运型</text>
+      <rect x="1480" y="426" width="220" height="22" rx="4" fill="#52C79B"/><text x="1710" y="442" font-weight="700" fill="#1F7A5C">×4</text>
+      <text x="1748" y="442" fill="#3E5F54">区域货运</text>
+      <text x="1264" y="478">ZF-36 L 长途型</text>
+      <rect x="1480" y="464" width="110" height="22" rx="4" fill="#8FD4BC"/><text x="1600" y="480" font-weight="700" fill="#1F7A5C">×2</text>
+      <text x="1638" y="480" fill="#3E5F54">企业高管商务包机</text>
+      <text x="1264" y="516">ZF-28 M 客货混运型</text>
+      <rect x="1480" y="502" width="110" height="22" rx="4" fill="#8FD4BC"/><text x="1600" y="518" font-weight="700" fill="#1F7A5C">×2</text>
+      <text x="1638" y="518" fill="#3E5F54">客货混运灵活调配</text>
+    </g>
+    <!-- 客货默契 -->
+    <rect x="1264" y="548" width="1052" height="140" rx="10" fill="#1F453B"/>
+    <text x="1288" y="578" font-size="13.5" font-weight="700" fill="#52C79B">双寡头的「井水不犯河水」</text>
+    <text x="1288" y="604" font-size="12" fill="#DDF2E8">蒲公英专注客运、DWA 专注货运，两家在各自领域形成事实默契、缺乏真正的正面竞争；</text>
+    <text x="1288" y="630" font-size="12" fill="#DDF2E8">花卉出口旺季运力吃紧时，DWA 需向蒲公英租用 ZF-36 H 客改货运力——竞争不足、互补有余；</text>
+    <text x="1288" y="656" font-size="12" fill="#DDF2E8">这种温和格局保证了服务稳定，却也固化了高价与创新迟缓。</text>
+    <!-- 冷链链条 -->
+    <rect x="1264" y="704" width="1052" height="212" rx="10" fill="#DDEEE6"/>
+    <text x="1288" y="734" font-size="13.5" font-weight="700" fill="#1F7A5C">全球冷链运输链路（以鲜花为例）</text>
+    <g font-size="12" fill="#3E5F54">
+      <rect x="1288" y="752" width="180" height="56" rx="8" fill="#F5FAF7" stroke="#2E8B6E"/><text x="1378" y="776" text-anchor="middle">荆夫领花卉基地</text><text x="1378" y="798" text-anchor="middle" font-size="11">清晨采摘</text>
+      <line x1="1472" y1="780" x2="1512" y2="780" stroke="#2E8B6E" stroke-width="2.5"/>
+      <rect x="1516" y="752" width="180" height="56" rx="8" fill="#F5FAF7" stroke="#2E8B6E"/><text x="1606" y="776" text-anchor="middle">小型货机支线集散</text><text x="1606" y="798" text-anchor="middle" font-size="11">2 小时内抵达机场</text>
+      <line x1="1700" y1="780" x2="1740" y2="780" stroke="#2E8B6E" stroke-width="2.5"/>
+      <rect x="1744" y="752" width="200" height="56" rx="8" fill="#F5FAF7" stroke="#2E8B6E"/><text x="1844" y="776" text-anchor="middle">ZF-40 F / ZF-36 F</text><text x="1844" y="798" text-anchor="middle" font-size="11">远程冷链干线</text>
+      <line x1="1948" y1="780" x2="1988" y2="780" stroke="#2E8B6E" stroke-width="2.5"/>
+      <rect x="1992" y="752" width="304" height="56" rx="8" fill="#F5FAF7" stroke="#2E8B6E"/><text x="2144" y="776" text-anchor="middle">璃月 · 枫丹等目标市场</text><text x="2144" y="798" text-anchor="middle" font-size="11">当日／次日鲜达</text>
+      <text x="1288" y="842">旺季补充运力：租用蒲公英航空 ZF-36 H 执行客改货航班；荆夫骑士国际机场为货运主场。</text>
+      <text x="1288" y="868">高端酒类出口同样依赖该链路——「从酒窖到异国酒杯」的恒温承诺是品牌溢价的一部分。</text>
+    </g>
+    <text x="1264" y="936" font-size="11.5" fill="#6B857B">※ 两家航司机队全部为志飞平台，航材互备、飞行员差异训练仅 3 天——体系内柔性调度成为可能。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 航线网络 ═══════════ -->
+  <g>
+    <rect x="60" y="978" width="2280" height="600" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="1020" font-size="20" font-weight="700" fill="#DDF2E8">六方向国际航线网络（定期航班频次）</text>
+    <!-- 表头 -->
+    <rect x="84" y="1040" width="360" height="56" fill="#2C5A4C"/><text x="264" y="1074" text-anchor="middle" font-size="14" font-weight="700" fill="#52C79B">方向</text>
+    <rect x="444" y="1040" width="1010" height="56" fill="#2C5A4C"/><text x="949" y="1074" text-anchor="middle" font-size="14" font-weight="700" fill="#52C79B">定期客运航线（蒲公英航空）</text>
+    <rect x="1454" y="1040" width="886" height="56" fill="#2C5A4C"/><text x="1897" y="1074" text-anchor="middle" font-size="14" font-weight="700" fill="#52C79B">定期货运航线（DWA／联运）</text>
+    <!-- 行 -->
+    <g font-size="12.5">
+      <rect x="84" y="1096" width="360" height="76" fill="#22493E"/><text x="264" y="1140" text-anchor="middle" font-weight="700" fill="#DDF2E8">璃月</text>
+      <rect x="444" y="1096" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1126" fill="#DDF2E8">蒙德—璃月港（每日 8 班，含 ZF-40 B 快线）</text><text x="468" y="1152" fill="#B9DFCF">蒙德—归离原（每日 2 班，ZF-28 M）</text>
+      <rect x="1454" y="1096" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1126" fill="#DDF2E8">蒙德—璃月港（每日 3 班货运）</text><text x="1478" y="1152" fill="#B9DFCF">荆夫—璃月港（每日 2 班花卉专线）</text>
+
+      <rect x="84" y="1172" width="360" height="76" fill="#22493E"/><text x="264" y="1216" text-anchor="middle" font-weight="700" fill="#DDF2E8">枫丹</text>
+      <rect x="444" y="1172" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1202" fill="#DDF2E8">蒙德—枫丹庭（每日 4 班）</text><text x="468" y="1228" fill="#B9DFCF">荆夫—枫丹庭（每日 1 班，季节性）</text>
+      <rect x="1454" y="1172" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1216" fill="#DDF2E8">蒙德—枫丹庭（每日 2 班）</text>
+
+      <rect x="84" y="1248" width="360" height="76" fill="#22493E"/><text x="264" y="1292" text-anchor="middle" font-weight="700" fill="#DDF2E8">须弥</text>
+      <rect x="444" y="1248" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1278" fill="#DDF2E8">蒙德—须弥城（每日 2 班，ZF-32 E 高原型执飞）</text><text x="468" y="1304" fill="#B9DFCF">荆夫—须弥城（每日 1 班，经停璃月港）</text>
+      <rect x="1454" y="1248" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1292" fill="#DDF2E8">蒙德—须弥城（每周 5 班）</text>
+
+      <rect x="84" y="1324" width="360" height="76" fill="#22493E"/><text x="264" y="1368" text-anchor="middle" font-weight="700" fill="#DDF2E8">至冬</text>
+      <rect x="444" y="1324" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1354" fill="#DDF2E8">蒙德—北堡市（每日 3 班）</text><text x="468" y="1380" fill="#B9DFCF">荆夫—北堡市（每日 1 班）</text>
+      <rect x="1454" y="1324" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1368" fill="#DDF2E8">荆夫—至冬南部港口（每日 1 班货运）</text>
+
+      <rect x="84" y="1400" width="360" height="76" fill="#22493E"/><text x="264" y="1444" text-anchor="middle" font-weight="700" fill="#DDF2E8">稻妻</text>
+      <rect x="444" y="1400" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1444" fill="#DDF2E8">蒙德—稻妻城（每日 1 班，经停璃月港）</text>
+      <rect x="1454" y="1400" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1444" fill="#DDF2E8">蒙德—稻妻城（每周 3 班，须中转璃月港）</text>
+
+      <rect x="84" y="1476" width="360" height="76" fill="#22493E"/><text x="264" y="1520" text-anchor="middle" font-weight="700" fill="#DDF2E8">纳塔</text>
+      <rect x="444" y="1476" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1520" fill="#DDF2E8">蒙德—纳塔（每周 3 班，经停枫丹庭）</text>
+      <rect x="1454" y="1476" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1520" fill="#DDF2E8">蒙德—纳塔（每周 2 班）</text>
+    </g>
+    <text x="84" y="1590" font-size="11.5" fill="#8FB5A6">※ 璃月方向为最繁忙走廊：客运每日 10 班＋货运每日 5 班；稻妻、纳塔方向受经停限制，班次稀疏——正是蒲公英运力投放保守的争议所在。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区左 · 垄断的合理性 ═══════════ -->
+  <g>
+    <rect x="60" y="1610" width="1140" height="500" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="1652" font-size="20" font-weight="700" fill="#1E3A31">为什么垄断难以打破：志飞体系的引力场</text>
+    <rect x="84" y="1672" width="1092" height="120" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="1702" font-size="13.5" font-weight="700" fill="#52C79B">全球市场基本盘（志飞系列客机）</text>
+    <text x="108" y="1734" font-size="12" fill="#DDF2E8">覆盖全球的制造体系与售后网络将各国国际航线牢牢锁定在单一技术平台上；</text>
+    <text x="108" y="1760" font-size="12" fill="#DDF2E8">任何新进入者都必须回答：维修网络、航材库存、飞行员训练从哪里来？</text>
+    <g font-size="16" font-weight="700">
+      <rect x="84" y="1810" width="530" height="100" rx="10" fill="url(#anemoTop)"/>
+      <text x="349" y="1852" text-anchor="middle" fill="#123B2D">85% 存量市场</text>
+      <text x="349" y="1884" text-anchor="middle" font-size="12" font-weight="400" fill="#1F453B">现役志飞机队占全球份额</text>
+      <rect x="646" y="1810" width="530" height="100" rx="10" fill="#1F7A5C"/>
+      <text x="911" y="1852" text-anchor="middle" fill="#EAF9F3">95% 增量市场</text>
+      <text x="911" y="1884" text-anchor="middle" font-size="12" font-weight="400" fill="#CBEBDE">新增订单占全球份额</text>
+    </g>
+    <rect x="84" y="1934" width="1092 " height="148" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="108" y="1964" font-size="13" font-weight="700" fill="#1F7A5C">结构性壁垒三件套</text>
+    <text x="108" y="1992" font-size="12.5" fill="#3E5F54">① 维修网络不兼容：非志飞机队的航材备件与技师体系需从零建设；</text>
+    <text x="108" y="2018" font-size="12.5" fill="#3E5F54">② 航材库存成本高昂：小规模机队摊薄不了备件占用资金；</text>
+    <text x="108" y="2044" font-size="12.5" fill="#3E5F54">③ 飞行员培训周期长：而体系内差异训练仅需 3 天——进出不对称锁死了竞争。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区右 · 弊端与变局前夜 ═══════════ -->
+  <g>
+    <rect x="1240" y="1610" width="1100" height="500" rx="14" fill="#3A2A2A" stroke="#C0392B" stroke-width="1.5"/>
+    <text x="1264" y="1652" font-size="20" font-weight="700" fill="#F0D9D6">垄断的代价与松动信号</text>
+    <rect x="1264" y="1672" width="1056" height="56" rx="10" fill="#4A3535"/>
+    <text x="1288" y="1706" font-size="12.5" fill="#F0D9D6"><tspan font-weight="700" fill="#E8837A">票价高位：</tspan>蒙德—璃月港 1200 km 经济舱票价约为铁路软卧的 2 倍，常年缺乏下调动力</text>
+    <rect x="1264" y="1740" width="1056" height="56" rx="10" fill="#4A3535"/>
+    <text x="1288" y="1774" font-size="12.5" fill="#F0D9D6"><tspan font-weight="700" fill="#E8837A">创新迟缓：</tspan>须弥、纳塔方向运力投放长期保守，新兴市场需求得不到响应</text>
+    <rect x="1264" y="1808" width="1056" height="56" rx="10" fill="#4A3535"/>
+    <text x="1288" y="1842" font-size="12.5" fill="#F0D9D6"><tspan font-weight="700" fill="#E8837A">默契分治：</tspan>客运／货运两域事实分割，缺乏正面竞争——服务改善依赖外部压力</text>
+    <rect x="1264" y="1888" width="1056" height="190" rx="10" fill="#2C5A4C" stroke="#52C79B" stroke-width="1.5"/>
+    <text x="1288" y="1920" font-size="14" font-weight="700" fill="#52C79B">变局前夜的两个信号</text>
+    <text x="1288" y="1948" font-size="12.5" fill="#DDF2E8">① 璃月国家航空多次向联邦交通部申请开通璃月港—蒙德城第五条每日航线——</text>
+    <text x="1288" y="1974" font-size="12.5" fill="#DDF2E8">　 蒲公英航空的垄断地位将首次面临实质性挑战；</text>
+    <text x="1288" y="2000" font-size="12.5" fill="#DDF2E8">② 飞云物流评估在荆夫骑士国际机场设立转运中心——若落地，货运侧的 DWA 独占亦被撬动。</text>
+    <text x="1288" y="2044" font-size="11.5" fill="#8FB5A6">随着蒙璃贸易量持续增长和枫丹航线加密，跨国航司对蒙德航权的兴趣日益浓厚。</text>
+    <text x="1264" y="2092" font-size="11.5" fill="#C99B94">※ 观察窗口：航权谈判进展 · 荆夫转运中心可行性结论 · eVTOL 商用化对短程国际线的潜在替代。</text>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="2172" x2="2180" y2="2172" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="2204" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德航空概况》· 蒙德自由合众国航空体系同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>

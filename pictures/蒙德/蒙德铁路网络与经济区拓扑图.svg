@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2080" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#B8A98C"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#6E614A" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <rect width="2400" height="2080" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德铁路网络与经济区拓扑图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">四大经济分区 · 主干 200 km/h 双线电气化 · 次干 160 km/h 单线 · 高度私有化高度分离化体系</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区 · 路网拓扑（正交示意） ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="2280" height="1266" rx="14" fill="#EFF7F2" stroke="#2E8B6E" stroke-width="1.5"/>
+
+    <!-- 经济区底色 -->
+    <rect x="120" y="215" width="1180" height="285" rx="18" fill="#E3F0FA" stroke="#7FB6DC" stroke-width="1.2" opacity="0.75"/>
+    <text x="150" y="253" font-size="16" font-weight="700" fill="#1F6FA8">北区 —— 以荆夫港为枢纽 · 花卉冷链出口与外贸货运为主 · 璃蒙铁路公司重点改造区域</text>
+    <rect x="700" y="520" width="700" height="380" rx="18" fill="#1F453B" opacity="0.92"/>
+    <text x="724" y="560" font-size="15" font-weight="700" fill="#52C79B">首都区 —— 全国客运枢纽 · 多线交汇 · 客流集散核心</text>
+    <rect x="120" y="780" width="560" height="160" rx="18" fill="#F7F0DC" stroke="#C9862B" stroke-width="1.2" opacity="0.75"/>
+    <rect x="120" y="940" width="1120" height="420" rx="18" fill="#F7F0DC" stroke="#C9862B" stroke-width="1.2" opacity="0.75"/>
+    <text x="895" y="1002" text-anchor="middle" font-size="16" font-weight="700" fill="#8A5B1D">南区 —— 酒业货运与生态旅游客运并重 · 传统私企保留较完整</text>
+    <rect x="1420" y="520" width="900" height="490" rx="18" fill="#DDEEE6" stroke="#52C79B" stroke-width="1.2" opacity="0.85"/>
+    <text x="1450" y="556" font-size="16" font-weight="700" fill="#1F7A5C">东区 —— 工业与矿产货运为主 · 线路等级偏低 · 电气化覆盖有限</text>
+
+    <!-- ══ 线路（水平／垂直直角走线） ══ -->
+    <!-- 北南线：顶排 → 竖干 → 蒙德城 → 风起地 → 南下 -->
+    <polyline points="330,310 930,310" fill="none" stroke="#1F7A5C" stroke-width="7"/>
+    <polyline points="930,310 930,520 1180,520 1180,1254" fill="none" stroke="#1F7A5C" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 东西线：晨曦酒庄 — 清泉镇 — 风起地 — 星落湖 -->
+    <polyline points="280,860 1169,860" fill="none" stroke="#1F7A5C" stroke-width="7"/>
+    <polyline points="1191,869 1618,869" fill="none" stroke="#1F7A5C" stroke-width="7"/>
+    <!-- 西南跨境线（琥珀虚线）：归离原 — 晨曦酒庄 — 奔狼领（沿西缘走线，不穿首都区） -->
+    <polyline points="280,1100 280,871" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/>
+    <polyline points="280,849 280,430 921,430" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/>
+    <!-- 雪山旅游线（点线）：清泉镇 — 龙脊雪山 -->
+    <polyline points="500,882 500,1066 616,1066" fill="none" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/>
+    <!-- 明冠联络线：明冠峡 — 风龙废墟 —（回接主干）-->
+    <polyline points="948,310 1126,310" fill="none" stroke="#2FA47E" stroke-width="4.5"/>
+    <polyline points="1288,310 1332,310 1332,538 938,538" fill="none" stroke="#2FA47E" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="930" cy="538" r="4.5" fill="#2FA47E"/>
+    <!-- 摘星崖支线（点线）：风起地 — 摘星崖 -->
+    <polyline points="1197,851 1436,851" fill="none" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/>
+    <!-- 东北海岸线：星落湖 — 望风山地 — 望风角 -->
+    <polyline points="1640,879 1640,1000 2162,1000" fill="none" stroke="#2FA47E" stroke-width="4.5" stroke-linejoin="round"/>
+
+    <!-- 四线段标注（脱离线条放置） -->
+    <g font-size="11" font-weight="700">
+      <rect x="417" y="276" width="96" height="24" rx="12" fill="#123B2D"/><text x="465" y="293" text-anchor="middle" fill="#52C79B">进出段四线</text>
+      <rect x="1262" y="596" width="96" height="24" rx="12" fill="#123B2D"/><text x="1310" y="613" text-anchor="middle" fill="#52C79B">进出段四线</text>
+      <rect x="1030" y="822" width="104" height="24" rx="12" fill="#123B2D"/><text x="1082" y="839" text-anchor="middle" fill="#52C79B">枢纽段四线</text>
+    </g>
+    <!-- 线路名标注 -->
+    <g font-size="13" font-weight="700">
+      <text x="640" y="506" fill="#1F7A5C">北南线（主干·约 1,600 km）</text>
+      <text x="560" y="842" fill="#1F7A5C">东西线（主干）</text>
+      <text x="310" y="690" fill="#8A5B1D">西南跨境线（次干·唯一铁路跨境通道·客货混跑）</text>
+      <text x="532" y="986" fill="#1F7A5C">雪山旅游线</text>
+      <text x="1345" y="290" fill="#2FA47E">明冠联络线</text>
+      <text x="1220" y="830" fill="#1F7A5C">摘星崖支线</text>
+      <text x="1700" y="966" fill="#2FA47E">东北海岸线</text>
+    </g>
+
+    <!-- ══ 节点 ══ -->
+    <g>
+      <!-- 顶排 -->
+      <circle cx="330" cy="310" r="11" fill="#1F7A5C"/><circle cx="330" cy="310" r="5" fill="#EAF9F3"/>
+      <text x="330" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#1E3A31">荆夫港站</text>
+      <text x="330" y="340" text-anchor="middle" font-size="11" fill="#3E5F54">一等站·4台10线·海关＋冷链场</text>
+
+      <circle cx="630" cy="310" r="8" fill="#2FA47E"/>
+      <text x="630" y="292" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">风车</text>
+
+      <circle cx="930" cy="310" r="8" fill="#2FA47E"/>
+      <text x="930" y="292" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">明冠峡</text>
+
+      <!-- 风龙废墟军事区 -->
+      <rect x="1128" y="282" width="160" height="56" rx="8" fill="url(#hatch)" stroke="#6E614A" stroke-width="2"/>
+      <text x="1208" y="306" text-anchor="middle" font-size="13" font-weight="700" fill="#2B2416">风龙废墟</text>
+      <text x="1208" y="326" text-anchor="middle" font-size="10.5" fill="#3D3524">军事区·军方协调</text>
+
+      <!-- 奔狼领 -->
+      <circle cx="930" cy="430" r="8" fill="#2FA47E"/>
+      <text x="914" y="414" text-anchor="end" font-size="13" font-weight="600" fill="#1E3A31">奔狼领</text>
+
+      <!-- 蒙德城双站（骑跨竖干） -->
+      <rect x="1110" y="584" width="140" height="56" rx="12" fill="#123B2D" stroke="#52C79B" stroke-width="2.5"/>
+      <text x="1180" y="607" text-anchor="middle" font-size="12.5" font-weight="700" fill="#52C79B">蒙德城</text>
+      <text x="1180" y="627" text-anchor="middle" font-size="10.5" fill="#DDF2E8">北站＋南站</text>
+      <text x="1168" y="664" text-anchor="end" font-size="11" fill="#B9DFCF">各 4台8线 · 地下联络线直通 · 南站接果酒湖运河码头</text>
+
+      <!-- 风起地（换乘枢纽方块） -->
+      <rect x="1163" y="845" width="34" height="34" rx="8" fill="#123B2D" stroke="#52C79B" stroke-width="2.5"/>
+      <text x="1206" y="930" font-size="14" font-weight="700" fill="#1E3A31">风起地站</text>
+      <text x="1206" y="950" font-size="11" fill="#3E5F54">一等站·3台8线·两干线换乘枢纽</text>
+
+      <!-- 摘星崖 -->
+      <circle cx="1454" cy="851" r="7" fill="#52C79B"/>
+      <text x="1454" y="831" text-anchor="middle" font-size="12" font-weight="600" fill="#1E3A31">摘星崖</text>
+
+      <!-- 星落湖 -->
+      <circle cx="1640" cy="869" r="10" fill="#2FA47E"/><circle cx="1640" cy="869" r="4.5" fill="#EAF9F3"/>
+      <text x="1658" y="849" font-size="13" font-weight="700" fill="#1E3A31">星落湖站</text>
+      <text x="1658" y="895" font-size="11" fill="#3E5F54">二等站·2台4线·毗邻工业区</text>
+
+      <!-- 望风山地 / 望风角 -->
+      <circle cx="1900" cy="1000" r="8" fill="#2FA47E"/>
+      <text x="1900" y="978" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">望风山地</text>
+      <circle cx="2140" cy="1000" r="7" fill="#52C79B"/>
+      <text x="2140" y="978" text-anchor="middle" font-size="12" font-weight="600" fill="#1E3A31">望风角</text>
+
+      <!-- 达达乌帕谷 / 誓言岬 -->
+      <circle cx="1180" cy="1075" r="8" fill="#2FA47E"/>
+      <text x="1166" y="1055" text-anchor="end" font-size="13" font-weight="600" fill="#1E3A31">达达乌帕谷站</text>
+      <text x="1166" y="1097" text-anchor="end" font-size="11" fill="#3E5F54">三等站·生态旅游客流</text>
+
+      <circle cx="1180" cy="1265" r="8" fill="#2FA47E"/>
+      <text x="1166" y="1245" text-anchor="end" font-size="13" font-weight="600" fill="#1E3A31">誓言岬站</text>
+      <text x="1166" y="1287" text-anchor="end" font-size="11" fill="#3E5F54">三等站·蒙德最南端车站</text>
+
+      <!-- 晨曦酒庄 / 清泉镇 -->
+      <circle cx="280" cy="860" r="10" fill="#2FA47E"/><circle cx="280" cy="860" r="4.5" fill="#EAF9F3"/>
+      <text x="280" y="836" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A31">晨曦酒庄站</text>
+      <text x="280" y="890" text-anchor="middle" font-size="11" fill="#3E5F54">二等站·酒类货运为主兼旅游</text>
+
+      <circle cx="500" cy="860" r="8" fill="#2FA47E"/>
+      <text x="500" y="836" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">清泉镇</text>
+
+      <!-- 龙脊雪山站 -->
+      <rect x="618" y="1040" width="140" height="52" rx="10" fill="#F5FAF7" stroke="#52C79B" stroke-width="1.5"/>
+      <text x="688" y="1062" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F7A5C">龙脊雪山站</text>
+      <text x="688" y="1082" text-anchor="middle" font-size="10.5" fill="#3E5F54">三等站·冬季加密班次</text>
+
+      <!-- 归离原（璃月境内） -->
+      <rect x="210" y="1100" width="140" height="60" rx="10" fill="#FDF3E0" stroke="#C9862B" stroke-width="2" stroke-dasharray="8 5"/>
+      <text x="280" y="1126" text-anchor="middle" font-size="14" font-weight="700" fill="#8A5B1D">归离原</text>
+      <text x="280" y="1148" text-anchor="middle" font-size="11" fill="#8A5B1D">璃月境内终点站</text>
+    </g>
+
+    <!-- 图例 -->
+    <rect x="1770" y="240" width="540" height="230" rx="12" fill="#1F453B"/>
+    <text x="1794" y="272" font-size="15" font-weight="700" fill="#52C79B">图例</text>
+    <line x1="1794" y1="294" x2="1854" y2="294" stroke="#1F7A5C" stroke-width="7"/><text x="1866" y="299" font-size="12.5" fill="#DDF2E8">主干线：200 km/h 双线电气化（繁忙路段四线），璃蒙铁路公司统营</text>
+    <line x1="1794" y1="322" x2="1854" y2="322" stroke="#2FA47E" stroke-width="4.5"/><text x="1866" y="327" font-size="12.5" fill="#DDF2E8">次干线／联络线：160 km/h 单线（繁忙路段双线）</text>
+    <line x1="1794" y1="350" x2="1854" y2="350" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/><text x="1866" y="355" font-size="12.5" fill="#DDF2E8">西南跨境线：通往归离原（璃月铁路网）</text>
+    <line x1="1794" y1="378" x2="1854" y2="378" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/><text x="1866" y="383" font-size="12.5" fill="#DDF2E8">旅游／观光支线：季节性开行</text>
+    <rect x="1794" y="400" width="40" height="22" fill="url(#hatch)" stroke="#6E614A"/><text x="1846" y="416" font-size="12.5" fill="#DDF2E8">风龙废墟军事区——运营与安全管理需与军方协调</text>
+    <text x="1794" y="452" font-size="11.5" fill="#8FB5A6">※ 正交示意图：节点相对位置经艺术化处理，不代表真实地理方位与比例。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 技术标准与车辆 ═══════════ -->
+  <g>
+    <rect x="60" y="1444" width="744" height="500" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="1486" font-size="19" font-weight="700" fill="#1E3A31">技术标准</text>
+    <g font-size="13" fill="#3E5F54">
+      <rect x="84" y="1506" width="696" height="64" rx="8" fill="#F5FAF7" stroke="#9CC5B4"/><text x="108" y="1532" font-weight="700" fill="#1F7A5C">轨距</text><text x="108" y="1556">1,500 mm 标准轨——与璃月一致，为跨线直通预留条件</text>
+      <rect x="84" y="1582" width="696" height="64" rx="8" fill="#F5FAF7" stroke="#9CC5B4"/><text x="108" y="1608" font-weight="700" fill="#1F7A5C">主干线供电</text><text x="108" y="1632">单相交流 25 kV · 50 Hz（接触网受流），与璃月完全统一</text>
+      <rect x="84" y="1658" width="696" height="64" rx="8" fill="#F5FAF7" stroke="#9CC5B4"/><text x="108" y="1684" font-weight="700" fill="#1F7A5C">次干线供电</text><text x="108" y="1708">部分电气化；其余为内燃或混合动力牵引</text>
+      <rect x="84" y="1734" width="696" height="64" rx="8" fill="#F5FAF7" stroke="#9CC5B4"/><text x="108" y="1760" font-weight="700" fill="#1F7A5C">主干线信号</text><text x="108" y="1784">LTCS-2 级固定闭塞（璃月引进）· 蒙德调度中心统一调度</text>
+      <rect x="84" y="1810" width="696" height="64" rx="8" fill="#F5FAF7" stroke="#9CC5B4"/><text x="108" y="1836" font-weight="700" fill="#1F7A5C">次干线信号</text><text x="108" y="1860">各线不一——部分仍使用机械臂板信号或人工闭塞</text>
+      <rect x="84" y="1886" width="696" height="44" rx="8" fill="#1F453B"/><text x="108" y="1914" font-size="12.5" font-weight="700" fill="#52C79B">近期目标：主干线全线 200 km/h 达速运行</text>
+    </g>
+
+    <rect x="828" y="1444" width="1512" height="500" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="852" y="1486" font-size="19" font-weight="700" fill="#DDF2E8">车辆体系：动力集中式动车组挑大梁</text>
+    <!-- MR 160 J -->
+    <rect x="852" y="1506" width="1464" height="230" rx="10" fill="#2C5A4C" stroke="#52C79B" stroke-width="1.5"/>
+    <text x="876" y="1540" font-size="16" font-weight="700" fill="#52C79B">MR 160 J 系列推挽动车组 (Mondstadt Railway 160 km/h Push-Pull)</text>
+    <text x="876" y="1566" font-size="12.5" fill="#DDF2E8">改造自璃月 LR 160 J 技术平台·蒙德本地定型·由璃月机车集团（归离原府主厂区）制造·蒙德本地维修公司承接三级及以下检修</text>
+    <g font-size="13" fill="#DDF2E8">
+      <rect x="876" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1015" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">编组 1M＋8T＋1C</text><text x="1015" y="1636" text-anchor="middle" font-size="11.5">支持重联</text>
+      <rect x="1170" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1309" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">功率 4,800 kW</text><text x="1309" y="1636" text-anchor="middle" font-size="11.5">轴式 Bo-Bo</text>
+      <rect x="1464" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1603" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">160 km/h</text><text x="1603" y="1636" text-anchor="middle" font-size="11.5">提速段可 200 km/h 运行</text>
+      <rect x="1758" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1897" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">定员 786 人</text><text x="1897" y="1636" text-anchor="middle" font-size="11.5">一等软座＋二等硬座</text>
+      <rect x="2052" y="1586" width="264" height="64" rx="8" fill="#1F453B"/><text x="2184" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">48 列现役</text><text x="2184" y="1636" text-anchor="middle" font-size="11.5">后续每年增购数列</text>
+      <text x="876" y="1676" font-size="12">涂装：墨绿底色配金色风车菊纹饰，车头印蒙德国徽；以租赁形式提供给私有运营公司使用。</text>
+      <text x="876" y="1702" font-size="12">主干线全部客运列车均已换装 MR 160 J，替换此前老旧的机车牵引客车。</text>
+    </g>
+    <!-- 机车四种 -->
+    <g font-size="12.5">
+      <rect x="852" y="1752" width="352" height="86" rx="10" fill="#EAF4EE"/>
+      <text x="876" y="1782" font-weight="700" fill="#1F7A5C">MD 1 P 型电力机车（客运）</text>
+      <text x="876" y="1806" fill="#3E5F54">Bo-Bo · 4,800 kW · 160 km/h</text>
+      <text x="876" y="1828" fill="#3E5F54">用于电气化次干线客运牵引</text>
+      <rect x="1220" y="1752" width="352" height="86" rx="10" fill="#EAF4EE"/>
+      <text x="1244" y="1782" font-weight="700" fill="#1F7A5C">MD 1 F 型电力机车（货运）</text>
+      <text x="1244" y="1806" fill="#3E5F54">Bo-Bo · 4,800 kW · 120 km/h</text>
+      <text x="1244" y="1828" fill="#3E5F54">用于电气化次干线货运牵引</text>
+      <rect x="1588" y="1752" width="352" height="86" rx="10" fill="#EAF4EE"/>
+      <text x="1612" y="1782" font-weight="700" fill="#1F7A5C">MD 2 型内燃机车</text>
+      <text x="1612" y="1806" fill="#3E5F54">Co-Co · 2,400 kW · 100 km/h</text>
+      <text x="1612" y="1828" fill="#3E5F54">用于非电气化支线货运</text>
+      <rect x="1956" y="1752" width="360" height="86" rx="10" fill="#EAF4EE"/>
+      <text x="1980" y="1782" font-weight="700" fill="#1F7A5C">MD 3 型混合动力调车机</text>
+      <text x="1980" y="1806" fill="#3E5F54">编组站及港口内部转运</text>
+      <text x="1980" y="1828" fill="#3E5F54">荆夫港海铁联运的重要环节</text>
+    </g>
+    <rect x="852" y="1854" width="1464" height="66" rx="10" fill="#3A3325"/>
+    <text x="876" y="1882" font-size="12.5" font-weight="700" fill="#E0A94E">实验任务：MR 200 J 动力集中式准高速动车组（璃月 LR 200 J 的蒙德实验型号）</text>
+    <text x="876" y="1906" font-size="12" fill="#EDE3CC">承接自璃月机车集团委托——在主干线 200 km/h 提速段积累准高速运营数据，为将来统一替换干线动力分散式车组做技术验证。</text>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="1990" x2="2180" y2="1990" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="2022" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德铁路概况》· 蒙德自由合众国铁路体系同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>

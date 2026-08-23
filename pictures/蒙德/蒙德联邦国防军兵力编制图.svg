@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2420" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#2E8B6E"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#C9862B"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2420" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德联邦国防军兵力编制图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">国土防卫 · 联盟依赖 · 璃月退役／二手装备为主的国防体系 · 风之翼部队为唯一自主亮点</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区左 · 总兵力仪表盘 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="1140" height="470" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="188" font-size="20" font-weight="700" fill="#DDF2E8">兵力规模总览</text>
+    <rect x="84" y="208" width="520 " height="180" rx="10" fill="#2C5A4C"/>
+    <text x="344" y="278" text-anchor="middle" font-size="52" font-weight="700" fill="#52C79B">≈84 万</text>
+    <text x="344" y="318" text-anchor="middle" font-size="14" fill="#DDF2E8">常备兵力</text>
+    <text x="344" y="352" text-anchor="middle" font-size="12" fill="#8FB5A6">人口约 5,600 万 · 动员率约 1.5%</text>
+    <rect x="628" y="208" width="260" height="180" rx="10" fill="#2C5A4C"/>
+    <text x="758" y="278" text-anchor="middle" font-size="38" font-weight="700" fill="#52C79B">60 万</text>
+    <text x="758" y="316" text-anchor="middle" font-size="13" fill="#DDF2E8">预备役</text>
+    <rect x="912" y="208" width="264" height="180" rx="10" fill="#2C5A4C"/>
+    <text x="1044" y="266" text-anchor="middle" font-size="30" font-weight="700" fill="#52C79B">1.2%~1.5%</text>
+    <text x="1044" y="298" text-anchor="middle" font-size="13" fill="#DDF2E8">国防预算占 GDP</text>
+    <!-- 军种构成条 scale: 55万→900px -->
+    <text x="84" y="430" font-size="15" font-weight="700" fill="#52C79B">四军种兵力构成（合计 ≈84 万）</text>
+    <g font-size="12.5" fill="#DDF2E8">
+      <text x="84" y="464">陆军</text><rect x="160" y="450" width="589" height="22" rx="4" fill="url(#anemoTop)"/><text x="759" y="466" font-weight="700" fill="#F5FAF7">55 万</text>
+      <text x="84" y="498">空军</text><rect x="160" y="484" width="161" height="22" rx="4" fill="#3BB08A"/><text x="331" y="500" font-weight="700" fill="#F5FAF7">15 万</text>
+      <text x="84" y="532">海岸警卫力量</text><rect x="160" y="518" width="86" height="22" rx="4" fill="#52C79B"/><text x="256" y="534" font-weight="700" fill="#F5FAF7">8 万</text>
+      <text x="84" y="566">风之翼部队</text><rect x="160" y="552" width="64" height="22" rx="4" fill="#8FD4BC"/><text x="234" y="568" font-weight="700" fill="#F5FAF7">6 万</text>
+    </g>
+    <text x="84" y="600" font-size="11.5" fill="#8FB5A6">※ 不设独立海军编制；西风骑士团的名称沿用为联邦国防军的正式名称。</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · 指挥体系 ═══════════ -->
+  <g>
+    <rect x="1240" y="146" width="1100" height="470" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1264" y="188" font-size="20" font-weight="700" fill="#1E3A31">指挥体系：联邦中央与城邦自治的双重遗产</text>
+    <!-- 层级流 -->
+    <rect x="1290" y="212" width="420" height="80" rx="10" fill="#1F453B"/>
+    <text x="1500" y="244" text-anchor="middle" font-size="14" font-weight="700" fill="#52C79B">联邦总统（礼仪性国家元首）</text>
+    <text x="1500" y="270" text-anchor="middle" font-size="11.5" fill="#B9DFCF">由西风骑士团团长自动兼任——制度遗留</text>
+    <line x1="1500" y1="292" x2="1500" y2="320" stroke="#2E8B6E" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <rect x="1290" y="324" width="420" height="80" rx="10" fill="#1F453B"/>
+    <text x="1500" y="356" text-anchor="middle" font-size="14" font-weight="700" fill="#52C79B">联邦国防部</text>
+    <text x="1500" y="382" text-anchor="middle" font-size="11.5" fill="#B9DFCF">和平时期日常指挥权的实际行使者</text>
+    <line x1="1500" y1="404" x2="1500" y2="432" stroke="#2E8B6E" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <rect x="1290" y="436" width="420" height="70" rx="10" fill="#2C5A4C"/>
+    <text x="1500" y="464" text-anchor="middle" font-size="13" font-weight="700" fill="#DDF2E8">陆军 · 空军 · 海岸警卫力量 · 风之翼部队</text>
+    <text x="1500" y="490" text-anchor="middle" font-size="11.5" fill="#8FB5A6">重大军事决策需经议会批准</text>
+    <!-- 侧挂：璃月顾问团 -->
+    <line x1="1710" y1="364" x2="1790" y2="364" stroke="#C9862B" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arrowAmber)"/>
+    <rect x="1794" y="300" width="520" height="128" rx="10" fill="#3A3325" stroke="#C9862B" stroke-width="1.5"/>
+    <text x="1818" y="330" font-size="13.5" font-weight="700" fill="#E0A94E">璃月派遣军事顾问团（常驻蒙德国防部）</text>
+    <text x="1818" y="356" font-size="12" fill="#EDE3CC">协助装备维护 · 训练组织 · 体系规划</text>
+    <text x="1818" y="382" font-size="12" fill="#EDE3CC">两国设有联合参谋会议机制；</text>
+    <text x="1818" y="408" font-size="12" fill="#EDE3CC">核心安全保障来自璃月的核威慑保护伞。</text>
+    <!-- 战略理念 -->
+    <rect x="1290" y="522" width="1024" height="72" rx="10" fill="#DDEEE6"/>
+    <text x="1314" y="550" font-size="13" font-weight="700" fill="#1F7A5C">军事战略核心理念：「国土防卫、联盟依赖」</text>
+    <text x="1314" y="576" font-size="12" fill="#3E5F54">不具备境外投送与主动出击能力，国防战略以领土领空完整为底线；璃月承担防御协防与战略威慑责任。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 四军种卡片 ═══════════ -->
+  <g>
+    <!-- 陆军 -->
+    <rect x="60" y="648" width="576" height="650" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="690" font-size="19" font-weight="700" fill="#DDF2E8">陆军</text>
+    <text x="84" y="718" font-size="24" font-weight="700" fill="#52C79B">≈55 万人</text>
+    <text x="220" y="718" font-size="12" fill="#8FB5A6">联邦国防军主体 · 约 12 个机械化旅＋若干独立边防团</text>
+    <g font-size="12" fill="#DDF2E8">
+      <text x="84" y="756">主战坦克</text><rect x="210" y="742" width="120" height="20" rx="4" fill="url(#anemoTop)"/><text x="340" y="757" font-weight="700" fill="#52C79B">≈800 辆</text>
+      <text x="84" y="786">步战车／装甲运兵车</text><rect x="210" y="772" width="225" height="20" rx="4" fill="#3BB08A"/><text x="445" y="787" font-weight="700" fill="#52C79B">≈1,500 辆</text>
+      <text x="84" y="816">火炮（牵引／自行）</text><rect x="210" y="802" width="150" height="20" rx="4" fill="#52C79B"/><text x="370" y="817" font-weight="700" fill="#52C79B">≈1,000 门</text>
+    </g>
+    <text x="84" y="850" font-size="11" fill="#8FB5A6">（远程火箭炮数量有限）</text>
+    <rect x="84" y="868" width="528" height="196" rx="10" fill="#2C5A4C"/>
+    <text x="108" y="896" font-size="12.5" font-weight="700" fill="#52C79B">装备来源结构</text>
+    <text x="108" y="922" font-size="12" fill="#DDF2E8">· 主力为璃月退役的第二代主战坦克；</text>
+    <text x="108" y="948" font-size="12" fill="#DDF2E8">· 少量为璃月现役第二代改进型与第三代初期型；</text>
+    <text x="108" y="974" font-size="12" fill="#DDF2E8">· 步战车与装甲运兵车来自璃月库存；</text>
+    <text x="108" y="1000" font-size="12" fill="#DDF2E8">· 反坦克武器以璃月口径的牵引式／车载导弹为主。</text>
+    <rect x="84" y="1080" width="528" height="190" rx="10" fill="#3A3325" stroke="#C9862B" stroke-width="1.2"/>
+    <text x="108" y="1108" font-size="12.5" font-weight="700" fill="#E0A94E">后勤命脉在璃月</text>
+    <text x="108" y="1136" font-size="12" fill="#EDE3CC">装备维护和升级依赖璃月零配件供应；部分主力装备的翻修</text>
+    <text x="108" y="1162" font-size="12" fill="#EDE3CC">和大修须送至璃月黑岩厂完成——战场可持续能力实质上由供应链决定。</text>
+    <text x="84" y="1284" font-size="11.5" fill="#8FB5A6">※ 兵役制度：义务兵役制，服役期 12 个月；退伍军人可优先报考公务员与国企。</text>
+
+    <!-- 空军 -->
+    <rect x="660" y="648" width="576" height="650" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="684" y="690" font-size="19" font-weight="700" fill="#1E3A31">空军</text>
+    <text x="684" y="718" font-size="24" font-weight="700" fill="#1F7A5C">≈15 万人</text>
+    <text x="820" y="718" font-size="12" fill="#6B857B">编有 6 个航空团</text>
+    <g font-size="12">
+      <text x="684" y="756">战斗机</text><rect x="810" y="742" width="150" height="20" rx="4" fill="#1F7A5C"/><text x="970" y="757" font-weight="700" fill="#1F7A5C">≈150 架</text>
+      <text x="684" y="786">运输机</text><rect x="810" y="772" width="40" height="20" rx="4" fill="#3BB08A"/><text x="860" y="787" font-weight="700" fill="#1F7A5C">≈40 架</text>
+      <text x="684" y="816">教练机</text><rect x="810" y="802" width="60" height="20" rx="4" fill="#52C79B"/><text x="880" y="817" font-weight="700" fill="#1F7A5C">≈60 架</text>
+    </g>
+    <!-- 战斗机构成嵌套 -->
+    <rect x="684" y="840" width="528" height="110" rx="10" fill="#DDEEE6"/>
+    <text x="708" y="868" font-size="12.5" font-weight="700" fill="#1F7A5C">战斗机机队构成（全部为璃月移交装备）</text>
+    <rect x="708" y="882" width="233" height="22" fill="#1F453B"/>
+    <rect x="941" y="882" width="117" height="22" fill="#52C79B"/>
+    <text x="824" y="898" text-anchor="middle" font-size="11" font-weight="700" fill="#DDF2E8">二代机 ≈100 架</text>
+    <text x="999" y="898" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">三代初期 ≈50</text>
+    <text x="708" y="930" font-size="11" fill="#6B857B">二代机已属老旧，三代初期型为璃月换装后移交。</text>
+    <rect x="684" y="966" width="528" height="170" rx="10" fill="#3A2A2A"/>
+    <text x="708" y="994" font-size="12.5" font-weight="700" fill="#E8837A">能力短板清单</text>
+    <text x="708" y="1020" font-size="12" fill="#F0D9D6">· 不具备超视距空战能力；</text>
+    <text x="708" y="1046" font-size="12" fill="#F0D9D6">· 缺乏精确对地打击能力；</text>
+    <text x="708" y="1072" font-size="12" fill="#F0D9D6">· 空中预警与指挥控制能力薄弱；</text>
+    <text x="708" y="1098" font-size="12" fill="#F0D9D6">· 战时须依赖璃月预警机的支援。</text>
+    <text x="684" y="1160" font-size="11.5" fill="#6B857B">装备以璃月二手战斗机为主——数量尚可、代际落后的典型样本。</text>
+
+    <!-- 海岸警卫 -->
+    <rect x="1260" y="648" width="540" height="650" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1284" y="690" font-size="19" font-weight="700" fill="#1E3A31">海岸警卫力量</text>
+    <text x="1284" y="718" font-size="24" font-weight="700" fill="#1F7A5C">≈8 万人</text>
+    <text x="1420" y="718" font-size="12" fill="#6B857B">不设独立海军编制</text>
+    <rect x="1284" y="742" width="492" height="130" rx="10" fill="#1F453B"/>
+    <text x="1308" y="772" font-size="12.5" font-weight="700" fill="#52C79B">主要装备</text>
+    <text x="1308" y="800" font-size="12" fill="#DDF2E8">· 巡逻艇约 40 艘——以中小型近海巡逻艇为主；</text>
+    <text x="1308" y="826" font-size="12" fill="#DDF2E8">· 小型护卫舰约 10 艘——装备轻型舰炮与近程防空导弹。</text>
+    <rect x="1284" y="888" width="492" height="120" rx="10" fill="#DDEEE6"/>
+    <text x="1308" y="916" font-size="12.5" font-weight="700" fill="#1F7A5C">任务范围</text>
+    <text x="1308" y="942" font-size="12" fill="#3E5F54">领海巡逻 · 海上搜救 · 渔业执法；</text>
+    <text x="1308" y="968" font-size="12" fill="#3E5F54">不具备远洋作战能力——近海防御定位明确。</text>
+    <rect x="1284" y="1024" width="492" height="112" rx="10" fill="#3A3325" stroke="#C9862B" stroke-width="1.2"/>
+    <text x="1308" y="1052" font-size="12.5" font-weight="700" fill="#E0A94E">为什么没有海军？</text>
+    <text x="1308" y="1078" font-size="11.5" fill="#EDE3CC">「国土防卫、联盟依赖」的战略下，远洋力量既无必要亦无财力；</text>
+    <text x="1308" y="1102" font-size="11.5" fill="#EDE3CC">海上安全实质上依托璃月在北方航路的存在的庇护。</text>
+    <text x="1284" y="1170" font-size="11.5" fill="#6B857B">※ 北部荆夫港、南部蒙德港的港口警卫由海岸警卫部队与宪兵分工负责。</text>
+
+    <!-- 风之翼 -->
+    <rect x="1824" y="648" width="516" height="650" rx="14" fill="url(#anemoTop)" />
+    <text x="1848" y="690" font-size="19" font-weight="700" fill="#123B2D">风之翼部队</text>
+    <text x="1848" y="720" font-size="24" font-weight="700" fill="#F5FAF7">≈6 万人</text>
+    <text x="1990" y="720" font-size="12" fill="#DFF5EC">最具特色的特种作战力量</text>
+    <rect x="1848" y="742" width="468" height="150" rx="10" fill="#1F453B"/>
+    <text x="1872" y="770" font-size="12.5" font-weight="700" fill="#52C79B">能力画像</text>
+    <text x="1872" y="796" font-size="12" fill="#DDF2E8">依托百年风之翼技术积累，具备复杂地形（山地、</text>
+    <text x="1872" y="822" font-size="12" fill="#DDF2E8">峡谷、城市）战术伞降、滑翔渗透与快速撤离能力；</text>
+    <text x="1872" y="848" font-size="12" fill="#DDF2E8">参与多项国际救援与维和行动——对外军事合作的</text>
+    <text x="1872" y="874" font-size="12" fill="#DDF2E8">主要窗口。</text>
+    <rect x="1848" y="908" width="468" height="170" rx="10" fill="#F5FAF7"/>
+    <text x="1872" y="936" font-size="12.5" font-weight="700" fill="#1F7A5C">唯一的例外：不受璃月二手装备限制</text>
+    <text x="1872" y="962" font-size="12" fill="#3E5F54">核心技术（滑翔翼材质、动力辅助系统）由蒙德</text>
+    <text x="1872" y="988" font-size="12" fill="#3E5F54">自主研制，曾由首席炼金术士阿贝多改进；</text>
+    <text x="1872" y="1014" font-size="12" fill="#3E5F54">民用转化：航空安全装备与极限运动装备产业——</text>
+    <text x="1872" y="1040" font-size="12" fill="#3E5F54">蒙德国防工业「仅有的亮点」。</text>
+    <rect x="1848" y="1094" width="468" height="176" rx="10" fill="#1F453B"/>
+    <text x="1872" y="1122" font-size="12.5" font-weight="700" fill="#52C79B">境外存在：挪德卡莱远征军的执行主体</text>
+    <text x="1872" y="1148" font-size="12" fill="#DDF2E8">驻挪德卡莱的西风骑士团远征军由团长法尔伽</text>
+    <text x="1872" y="1174" font-size="12" fill="#DDF2E8">亲任总司令；「风之翼」的低空渗透技术亦服务</text>
+    <text x="1872" y="1200" font-size="12" fill="#DDF2E8">于深渊能量监测与侨民保护任务。</text>
+    <text x="1848" y="1290" font-size="11.5" fill="#DFF5EC">※ 与枫丹、须弥、纳塔的有限军事交流亦以风之翼技术合作与国际救援为主。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区左 · 璃月依赖链 ═══════════ -->
+  <g>
+    <rect x="60" y="1330" width="1140" height="470" rx="14" fill="#3A3325" stroke="#C9862B" stroke-width="1.5"/>
+    <text x="84" y="1372" font-size="20" font-weight="700" fill="#EDE3CC">对璃月的防务依赖链</text>
+    <text x="84" y="1400" font-size="13" fill="#C9B98A">没有独立军工体系——从装备到训练到战略威慑的全链条依附</text>
+    <g font-size="12.5">
+      <rect x="84" y="1420" width="1068" height="56" rx="10" fill="#4A4130"/><text x="108" y="1454" fill="#EDE3CC"><tspan font-weight="700" fill="#E0A94E">装备层：</tspan>陆军坦克步战火炮、空军战机均为璃月退役／库存移交；反坦克武器沿用璃月口径</text>
+      <rect x="84" y="1488" width="1068" height="56" rx="10" fill="#4A4130"/><text x="108" y="1522" fill="#EDE3CC"><tspan font-weight="700" fill="#E0A94E">后勤层：</tspan>零配件供应、翻修大修（黑岩厂）、弹药生产均依赖璃月供应链</text>
+      <rect x="84" y="1556" width="1068" height="56" rx="10" fill="#4A4130"/><text x="108" y="1590" fill="#EDE3CC"><tspan font-weight="700" fill="#E0A94E">训练层：</tspan>璃月军事顾问团常驻国防部，协助装备维护、训练组织与体系规划</text>
+      <rect x="84" y="1624" width="1068" height="56" rx="10" fill="#4A4130"/><text x="108" y="1658" fill="#EDE3CC"><tspan font-weight="700" fill="#E0A94E">战略层：</tspan>璃月提供核威慑保护伞；联合参谋会议机制协调两国防务</text>
+    </g>
+    <rect x="84" y="1704" width="1068" height="74" rx="10" fill="#1F453B"/>
+    <text x="108" y="1732" font-size="12.5" font-weight="700" fill="#52C79B">唯一的自主板块</text>
+    <text x="108" y="1758" font-size="12" fill="#DDF2E8">风之翼部队的滑翔装备及相关技术由蒙德自主研制生产，并已转化为民用产业。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区右 · 挪德卡莱远征军 ═══════════ -->
+  <g>
+    <rect x="1240" y="1330" width="1100" height="470" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1264" y="1372" font-size="20" font-weight="700" fill="#1E3A31">境外存在：驻挪德卡莱远征军</text>
+    <text x="1264" y="1400" font-size="13" fill="#3E5F54">唯一例外——TE 2005 年以来唯一的境外军事部署，团长法尔伽亲任总司令</text>
+    <!-- 时间轴 -->
+    <line x1="1300" y1="1470" x2="2280" y2="1470" stroke="#2E8B6E" stroke-width="3"/>
+    <circle cx="1360" cy="1470" r="10" fill="#1F7A5C"/>
+    <circle cx="1720" cy="1470" r="10" fill="#52C79B"/>
+    <circle cx="2080" cy="1470" r="10" fill="#8FD4BC"/>
+    <g font-size="12">
+      <text x="1360" y="1444" text-anchor="middle" font-weight="700" fill="#1F7A5C">TE 2005~06</text>
+      <text x="1360" y="1500" text-anchor="middle" fill="#3E5F54">猎月人灾变肆虐、狂猎风暴逼近失控</text>
+      <text x="1360" y="1524" text-anchor="middle" fill="#3E5F54">议会批准派遣合成旅协防</text>
+      <text x="1720" y="1444" text-anchor="middle" font-weight="700" fill="#1F7A5C">TE ≈2010</text>
+      <text x="1720" y="1500" text-anchor="middle" fill="#3E5F54">雷利尔被剿灭、狂猎风暴平息</text>
+      <text x="1720" y="1524" text-anchor="middle" fill="#3E5F54">远征军开始分批撤回</text>
+      <text x="2080" y="1444" text-anchor="middle" font-weight="700" fill="#1F7A5C">TE 2030</text>
+      <text x="2080" y="1500" text-anchor="middle" fill="#3E5F54">留守约 500 人</text>
+      <text x="2080" y="1524" text-anchor="middle" fill="#3E5F54">撤仍在进行</text>
+    </g>
+    <!-- 关键参数 -->
+    <rect x="1264" y="1560" width="340 " height="100" rx="10" fill="#1F453B"/>
+    <text x="1434" y="1600" text-anchor="middle" font-size="22" font-weight="700" fill="#52C79B">5,000 → 500</text>
+    <text x="1434" y="1630" text-anchor="middle" font-size="12" fill="#DDF2E8">满编合成旅 → 现留守兵力</text>
+    <rect x="1624" y="1560" width="340" height="100" rx="10" fill="#1F453B"/>
+    <text x="1794" y="1594" text-anchor="middle" font-size="14" font-weight="700" fill="#52C79B">安瓦蒂尼尔湖</text>
+    <text x="1794" y="1622" text-anchor="middle" font-size="12" fill="#DDF2E8">前沿哨站驻地</text>
+    <rect x="1984" y="1560" width="336" height="100" rx="10" fill="#1F453B"/>
+    <text x="2152" y="1594" text-anchor="middle" font-size="14" font-weight="700" fill="#52C79B">高度自治</text>
+    <text x="2152" y="1622" text-anchor="middle" font-size="12" fill="#DDF2E8">名义归执灯人节制·实际独立决策</text>
+    <rect x="1264" y="1680" width="1056" height="96" rx="10" fill="#DDEEE6"/>
+    <text x="1288" y="1708" font-size="12.5" font-weight="700" fill="#1F7A5C">深远影响</text>
+    <text x="1288" y="1734" font-size="12" fill="#3E5F54">抗灾义举提升蒙德国际声望，一定程度抵消了 TE 2001~02 年风神之心被愚人众当众夺走的窘境；二十余年驻留为挪德卡莱</text>
+    <text x="1288" y="1758" font-size="12" fill="#3E5F54">留下可观影响——政治经济制度、教育体系与城市建设均有蒙德痕迹，撤军后仍保有软性影响力。</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 防务困境 ═══════════ -->
+  <g>
+    <rect x="60" y="1832" width="2280" height="280" rx="14" fill="#3A2A2A" stroke="#C0392B" stroke-width="1.5"/>
+    <text x="84" y="1874" font-size="20" font-weight="700" fill="#F0D9D6">防务困境：规模与质量的错位</text>
+    <text x="84" y="1904" font-size="13.5" fill="#F0D9D6">拥有 5,600 万人口和适度规模的常规兵力，装备却完全依赖他国淘汰品——面对至冬或幕府的军事压力，缺乏独立进行高技术战争的能力。</text>
+    <rect x="84" y="1924" width="716" height="160" rx="10" fill="#4A3535"/>
+    <text x="108" y="1952" font-size="13" font-weight="700" fill="#E8837A">内在逻辑</text>
+    <text x="108" y="1978" font-size="12" fill="#F0D9D6">自主军工的缺位不是疏忽而是选择的结果——</text>
+    <text x="108" y="2004" font-size="12" fill="#F0D9D6">将国防安全完全绑定于璃月联盟体系，以最低成本</text>
+    <text x="108" y="2030" font-size="12" fill="#F0D9D6">换取安全保障，同时把资源留给自由市场与社会福利。</text>
+    <rect x="832" y="1924" width="716" height="160" rx="10" fill="#4A3535"/>
+    <text x="856" y="1952" font-size="13" font-weight="700" fill="#E8837A">结构性风险</text>
+    <text x="856" y="1978" font-size="12" fill="#F0D9D6">装备代际受制于人：璃月的换装节奏决定蒙德的装备水平；</text>
+    <text x="856" y="2004" font-size="12" fill="#F0D9D6">战时供应链即生命线；预警、精确打击等关键节点能力空心化，</text>
+    <text x="856" y="2030" font-size="12" fill="#F0D9D6">高技术战争场景下须全盘仰赖盟友体系支撑。</text>
+    <rect x="1580" y="1924" width="736" height="160" rx="10" fill="#1F453B"/>
+    <text x="1604" y="1952" font-size="13" font-weight="700" fill="#52C79B">平衡之道</text>
+    <text x="1604" y="1978" font-size="12" fill="#DDF2E8">义务兵役维持基本盘（12 个月服役期），预备役 60 万保留动员潜力；</text>
+    <text x="1604" y="2004" font-size="12" fill="#DDF2E8">风之翼技术保持一技之长并创造外交价值；</text>
+    <text x="1604" y="2030" font-size="12" fill="#DDF2E8">以挪德卡莱远征等国际公共产品积累声望与话语权。</text>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="2144" x2="2180" y2="2144" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="2176" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德军事概况》· 蒙德自由合众国国防体系同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>
