@@ -18,132 +18,144 @@
   <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
   <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
 
-  <!-- ═══════════ 第 1 区 · 路网拓扑 ═══════════ -->
+  <!-- ═══════════ 第 1 区 · 路网拓扑（正交示意） ═══════════ -->
   <g>
     <rect x="60" y="146" width="2280" height="1266" rx="14" fill="#EFF7F2" stroke="#2E8B6E" stroke-width="1.5"/>
 
     <!-- 经济区底色 -->
-    <rect x="120" y="240" width="1060" height="360" rx="18" fill="#E3F0FA" stroke="#7FB6DC" stroke-width="1.2" opacity="0.75"/>
-    <text x="150" y="278" font-size="16" font-weight="700" fill="#1F6FA8">北区 —— 以荆夫港为枢纽 · 花卉冷链出口与外贸货运为主 · 璃蒙铁路公司重点改造区域</text>
-    <rect x="120" y="820" width="720" height="500" rx="18" fill="#F7F0DC" stroke="#C9862B" stroke-width="1.2" opacity="0.75"/>
-    <text x="150" y="858" font-size="16" font-weight="700" fill="#8A5B1D">南区 —— 酒业货运与生态旅游客运并重 · 传统私企保留较完整</text>
-    <rect x="1380" y="700" width="920" height="440" rx="18" fill="#DDEEE6" stroke="#52C79B" stroke-width="1.2" opacity="0.85"/>
-    <text x="1410" y="738" font-size="16" font-weight="700" fill="#1F7A5C">东区 —— 工业与矿产货运为主 · 线路等级偏低 · 电气化覆盖有限</text>
-    <rect x="640" y="620" width="560" height="180" rx="18" fill="#1F453B" opacity="0.92"/>
-    <text x="668" y="656" font-size="15" font-weight="700" fill="#52C79B">首都区 —— 全国客运枢纽 · 多线交汇 · 客流集散核心</text>
+    <rect x="120" y="215" width="1180" height="285" rx="18" fill="#E3F0FA" stroke="#7FB6DC" stroke-width="1.2" opacity="0.75"/>
+    <text x="150" y="253" font-size="16" font-weight="700" fill="#1F6FA8">北区 —— 以荆夫港为枢纽 · 花卉冷链出口与外贸货运为主 · 璃蒙铁路公司重点改造区域</text>
+    <rect x="700" y="520" width="700" height="380" rx="18" fill="#1F453B" opacity="0.92"/>
+    <text x="724" y="560" font-size="15" font-weight="700" fill="#52C79B">首都区 —— 全国客运枢纽 · 多线交汇 · 客流集散核心</text>
+    <rect x="120" y="780" width="560" height="160" rx="18" fill="#F7F0DC" stroke="#C9862B" stroke-width="1.2" opacity="0.75"/>
+    <rect x="120" y="940" width="1120" height="420" rx="18" fill="#F7F0DC" stroke="#C9862B" stroke-width="1.2" opacity="0.75"/>
+    <text x="150" y="978" font-size="16" font-weight="700" fill="#8A5B1D">南区 —— 酒业货运与生态旅游客运并重 · 传统私企保留较完整</text>
+    <rect x="1420" y="520" width="900" height="490" rx="18" fill="#DDEEE6" stroke="#52C79B" stroke-width="1.2" opacity="0.85"/>
+    <text x="1450" y="556" font-size="16" font-weight="700" fill="#1F7A5C">东区 —— 工业与矿产货运为主 · 线路等级偏低 · 电气化覆盖有限</text>
 
-    <!-- ══ 线路 ══ -->
-    <!-- 北南线 主干（粗实） -->
-    <polyline points="330,330 470,410 600,495 430,585 780,712 1080,762 890,992 985,1155" fill="none" stroke="#1F7A5C" stroke-width="7" stroke-linejoin="round"/>
-    <!-- 东西线 主干 -->
-    <polyline points="472,952 645,882 1078,764 1418,882" fill="none" stroke="#1F7A5C" stroke-width="7" stroke-linejoin="round"/>
-    <!-- 西南跨境线（琥珀虚线） -->
-    <polyline points="255,1118 468,954 432,588" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9" stroke-linejoin="round"/>
-    <!-- 雪山旅游线（点线） -->
-    <polyline points="648,884 1128,1128" fill="none" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9" stroke-linecap="round"/>
-    <!-- 明冠联络线 -->
-    <polyline points="604,492 878,404 434,586" fill="none" stroke="#2FA47E" stroke-width="4.5" stroke-linejoin="round"/>
-    <!-- 摘星崖支线（点线） -->
-    <polyline points="1084,758 1288,694" fill="none" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9" stroke-linecap="round"/>
-    <!-- 东北海岸线 -->
-    <polyline points="1698,938 1422,884" fill="none" stroke="#2FA47E" stroke-width="4.5"/>
-    <polyline points="1422,884 1958,1008" fill="none" stroke="#2FA47E" stroke-width="4.5"/>
+    <!-- ══ 线路（水平／垂直直角走线） ══ -->
+    <!-- 北南线：顶排 → 竖干 → 蒙德城 → 风起地 → 南下 -->
+    <polyline points="330,310 930,310" fill="none" stroke="#1F7A5C" stroke-width="7"/>
+    <polyline points="930,310 930,520 1180,520 1180,1254" fill="none" stroke="#1F7A5C" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 东西线：晨曦酒庄 — 清泉镇 — 风起地 — 星落湖 -->
+    <polyline points="280,860 1169,860" fill="none" stroke="#1F7A5C" stroke-width="7"/>
+    <polyline points="1191,869 1618,869" fill="none" stroke="#1F7A5C" stroke-width="7"/>
+    <!-- 西南跨境线（琥珀虚线）：归离原 — 晨曦酒庄 — 奔狼领 -->
+    <polyline points="280,1100 280,871" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/>
+    <polyline points="280,849 280,545 898,545 898,430 920,430" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9" stroke-linejoin="round"/>
+    <!-- 雪山旅游线（点线）：清泉镇 — 龙脊雪山 -->
+    <polyline points="500,882 500,1066 616,1066" fill="none" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/>
+    <!-- 明冠联络线：明冠峡 — 风龙废墟 —（回接主干）-->
+    <polyline points="948,310 1126,310" fill="none" stroke="#2FA47E" stroke-width="4.5"/>
+    <polyline points="1288,310 1332,310 1332,538 938,538" fill="none" stroke="#2FA47E" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="930" cy="538" r="4.5" fill="#2FA47E"/>
+    <!-- 摘星崖支线（点线）：风起地 — 摘星崖 -->
+    <polyline points="1197,851 1436,851" fill="none" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/>
+    <!-- 东北海岸线：星落湖 — 望风山地 — 望风角 -->
+    <polyline points="1640,879 1640,1000 2162,1000" fill="none" stroke="#2FA47E" stroke-width="4.5" stroke-linejoin="round"/>
 
-    <!-- 四线段标注 -->
+    <!-- 四线段标注（脱离线条放置） -->
     <g font-size="11" font-weight="700">
-      <rect x="212" y="352" width="96" height="26" rx="13" fill="#123B2D"/><text x="260" y="370" text-anchor="middle" fill="#52C79B">进出段四线</text>
-      <rect x="700" y="672" width="96" height="26" rx="13" fill="#123B2D"/><text x="748" y="690" text-anchor="middle" fill="#52C79B">进出段四线</text>
-      <rect x="960" y="772" width="104" height="26" rx="13" fill="#123B2D"/><text x="1012" y="790" text-anchor="middle" fill="#52C79B">枢纽段四线</text>
+      <rect x="417" y="276" width="96" height="24" rx="12" fill="#123B2D"/><text x="465" y="293" text-anchor="middle" fill="#52C79B">进出段四线</text>
+      <rect x="1262" y="596" width="96" height="24" rx="12" fill="#123B2D"/><text x="1310" y="613" text-anchor="middle" fill="#52C79B">进出段四线</text>
+      <rect x="1030" y="822" width="104" height="24" rx="12" fill="#123B2D"/><text x="1082" y="839" text-anchor="middle" fill="#52C79B">枢纽段四线</text>
     </g>
     <!-- 线路名标注 -->
     <g font-size="13" font-weight="700">
-      <text x="512" y="556" fill="#1F7A5C">北南线（主干·约 1,600 km 区段）</text>
-      <text x="836" y="856" fill="#1F7A5C">东西线（主干）</text>
-      <text x="238" y="880" fill="#8A5B1D">西南跨境线（次干·唯一铁路跨境通道·客货混跑）</text>
-      <text x="700" y="1032" fill="#1F7A5C">雪山旅游线</text>
-      <text x="628" y="446" fill="#2FA47E">明冠联络线</text>
-      <text x="1128" y="716" fill="#1F7A5C">摘星崖支线</text>
-      <text x="1560" y="978" fill="#2FA47E">东北海岸线</text>
+      <text x="640" y="506" fill="#1F7A5C">北南线（主干·约 1,600 km）</text>
+      <text x="560" y="842" fill="#1F7A5C">东西线（主干）</text>
+      <text x="310" y="690" fill="#8A5B1D">西南跨境线（次干·唯一铁路跨境通道·客货混跑）</text>
+      <text x="532" y="986" fill="#1F7A5C">雪山旅游线</text>
+      <text x="1345" y="290" fill="#2FA47E">明冠联络线</text>
+      <text x="1220" y="830" fill="#1F7A5C">摘星崖支线</text>
+      <text x="1700" y="966" fill="#2FA47E">东北海岸线</text>
     </g>
 
     <!-- ══ 节点 ══ -->
     <g>
-      <!-- 归离原（璃月境内，特殊框） -->
-      <rect x="185" y="1090" width="140" height="56" rx="10" fill="#FDF3E0" stroke="#C9862B" stroke-width="2" stroke-dasharray="8 5"/>
-      <text x="255" y="1114" text-anchor="middle" font-size="14" font-weight="700" fill="#8A5B1D">归离原</text>
-      <text x="255" y="1136" text-anchor="middle" font-size="11" fill="#8A5B1D">璃月境内终点站</text>
-      <!-- 风龙废墟军事区（斜纹方块） -->
-      <rect x="828" y="376" width="104" height="56" rx="8" fill="url(#hatch)" stroke="#6E614A" stroke-width="2"/>
-      <text x="880" y="400" text-anchor="middle" font-size="13" font-weight="700" fill="#2B2416">风龙废墟</text>
-      <text x="880" y="420" text-anchor="middle" font-size="10.5" fill="#3D3524">军事区·军方协调</text>
-      <!-- 普通节点 -->
-      <g>
-        <circle cx="330" cy="330" r="11" fill="#1F7A5C"/><circle cx="330" cy="330" r="5" fill="#EAF9F3"/>
-        <text x="330" y="306" text-anchor="middle" font-size="14" font-weight="700" fill="#1E3A31">荆夫港站</text>
-        <text x="330" y="362" text-anchor="middle" font-size="11" fill="#3E5F54">一等站·4台10线·海关＋冷链场</text>
+      <!-- 顶排 -->
+      <circle cx="330" cy="310" r="11" fill="#1F7A5C"/><circle cx="330" cy="310" r="5" fill="#EAF9F3"/>
+      <text x="330" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#1E3A31">荆夫港站</text>
+      <text x="330" y="340" text-anchor="middle" font-size="11" fill="#3E5F54">一等站·4台10线·海关＋冷链场</text>
 
-        <circle cx="470" cy="410" r="8" fill="#2FA47E"/>
-        <text x="470" y="392" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">风车</text>
+      <circle cx="630" cy="310" r="8" fill="#2FA47E"/>
+      <text x="630" y="292" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">风车</text>
 
-        <circle cx="600" cy="495" r="8" fill="#2FA47E"/>
-        <text x="600" y="477" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">明冠峡</text>
+      <circle cx="930" cy="310" r="8" fill="#2FA47E"/>
+      <text x="930" y="292" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">明冠峡</text>
 
-        <circle cx="430" cy="585" r="8" fill="#2FA47E"/>
-        <text x="430" y="567" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">奔狼领</text>
+      <!-- 风龙废墟军事区 -->
+      <rect x="1128" y="282" width="160" height="56" rx="8" fill="url(#hatch)" stroke="#6E614A" stroke-width="2"/>
+      <text x="1208" y="306" text-anchor="middle" font-size="13" font-weight="700" fill="#2B2416">风龙废墟</text>
+      <text x="1208" y="326" text-anchor="middle" font-size="10.5" fill="#3D3524">军事区·军方协调</text>
 
-        <!-- 蒙德城双站 -->
-        <rect x="742" y="686" width="76 " height="52" rx="12" fill="#123B2D" stroke="#52C79B" stroke-width="2.5"/>
-        <text x="780" y="708" text-anchor="middle" font-size="12.5" font-weight="700" fill="#52C79B">蒙德城</text>
-        <text x="780" y="728" text-anchor="middle" font-size="10.5" fill="#DDF2E8">北站＋南站</text>
-        <text x="780" y="762" text-anchor="middle" font-size="11" fill="#3E5F54">各 4台8线 · 地下联络线直通 · 南站接果酒湖运河码头</text>
+      <!-- 奔狼领 -->
+      <circle cx="930" cy="430" r="8" fill="#2FA47E"/>
+      <text x="914" y="422" text-anchor="end" font-size="13" font-weight="600" fill="#1E3A31">奔狼领</text>
 
-        <circle cx="1080" cy="762" r="11" fill="#1F7A5C"/><circle cx="1080" cy="762" r="5" fill="#EAF9F3"/>
-        <text x="1080" y="738" text-anchor="middle" font-size="14" font-weight="700" fill="#1E3A31">风起地站</text>
-        <text x="1080" y="794" text-anchor="middle" font-size="11" fill="#3E5F54">一等站·3台8线·两干线换乘枢纽</text>
+      <!-- 蒙德城双站（骑跨竖干） -->
+      <rect x="1110" y="584" width="140" height="56" rx="12" fill="#123B2D" stroke="#52C79B" stroke-width="2.5"/>
+      <text x="1180" y="607" text-anchor="middle" font-size="12.5" font-weight="700" fill="#52C79B">蒙德城</text>
+      <text x="1180" y="627" text-anchor="middle" font-size="10.5" fill="#DDF2E8">北站＋南站</text>
+      <text x="1168" y="664" text-anchor="end" font-size="11" fill="#3E5F54">各 4台8线 · 地下联络线直通 · 南站接果酒湖运河码头</text>
 
-        <circle cx="1290" cy="692" r="7" fill="#52C79B"/>
-        <text x="1290" y="674" text-anchor="middle" font-size="12" font-weight="600" fill="#1E3A31">摘星崖</text>
+      <!-- 风起地（换乘枢纽方块） -->
+      <rect x="1163" y="845" width="34" height="34" rx="8" fill="#123B2D" stroke="#52C79B" stroke-width="2.5"/>
+      <text x="1206" y="930" font-size="14" font-weight="700" fill="#1E3A31">风起地站</text>
+      <text x="1206" y="950" font-size="11" fill="#3E5F54">一等站·3台8线·两干线换乘枢纽</text>
 
-        <circle cx="1420" cy="882" r="10" fill="#2FA47E"/><circle cx="1420" cy="882" r="4.5" fill="#EAF9F3"/>
-        <text x="1420" y="858" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A31">星落湖站</text>
-        <text x="1420" y="912" text-anchor="middle" font-size="11" fill="#3E5F54">二等站·2台4线·毗邻工业区</text>
+      <!-- 摘星崖 -->
+      <circle cx="1454" cy="851" r="7" fill="#52C79B"/>
+      <text x="1454" y="831" text-anchor="middle" font-size="12" font-weight="600" fill="#1E3A31">摘星崖</text>
 
-        <circle cx="1700" cy="938" r="8" fill="#2FA47E"/>
-        <text x="1700" y="920" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">望风山地</text>
+      <!-- 星落湖 -->
+      <circle cx="1640" cy="869" r="10" fill="#2FA47E"/><circle cx="1640" cy="869" r="4.5" fill="#EAF9F3"/>
+      <text x="1658" y="849" font-size="13" font-weight="700" fill="#1E3A31">星落湖站</text>
+      <text x="1658" y="895" font-size="11" fill="#3E5F54">二等站·2台4线·毗邻工业区</text>
 
-        <circle cx="1960" cy="1008" r="7" fill="#52C79B"/>
-        <text x="1960" y="990" text-anchor="middle" font-size="12" font-weight="600" fill="#1E3A31">望风角</text>
+      <!-- 望风山地 / 望风角 -->
+      <circle cx="1900" cy="1000" r="8" fill="#2FA47E"/>
+      <text x="1900" y="978" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">望风山地</text>
+      <circle cx="2140" cy="1000" r="7" fill="#52C79B"/>
+      <text x="2140" y="978" text-anchor="middle" font-size="12" font-weight="600" fill="#1E3A31">望风角</text>
 
-        <circle cx="890" cy="992" r="8" fill="#2FA47E"/>
-        <text x="890" y="974" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">达达乌帕谷站</text>
-        <text x="890" y="1022" text-anchor="middle" font-size="11" fill="#3E5F54">三等站·生态旅游客流</text>
+      <!-- 达达乌帕谷 / 誓言岬 -->
+      <circle cx="1180" cy="1075" r="8" fill="#2FA47E"/>
+      <text x="1166" y="1055" text-anchor="end" font-size="13" font-weight="600" fill="#1E3A31">达达乌帕谷站</text>
+      <text x="1166" y="1097" text-anchor="end" font-size="11" fill="#3E5F54">三等站·生态旅游客流</text>
 
-        <circle cx="985" cy="1155" r="8" fill="#2FA47E"/>
-        <text x="985" y="1137" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">誓言岬站</text>
-        <text x="985" y="1185" text-anchor="middle" font-size="11" fill="#3E5F54">三等站·蒙德最南端车站</text>
+      <circle cx="1180" cy="1265" r="8" fill="#2FA47E"/>
+      <text x="1166" y="1245" text-anchor="end" font-size="13" font-weight="600" fill="#1E3A31">誓言岬站</text>
+      <text x="1166" y="1287" text-anchor="end" font-size="11" fill="#3E5F54">三等站·蒙德最南端车站</text>
 
-        <circle cx="645" cy="882" r="8" fill="#2FA47E"/>
-        <text x="645" y="864" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">清泉镇</text>
+      <!-- 晨曦酒庄 / 清泉镇 -->
+      <circle cx="280" cy="860" r="10" fill="#2FA47E"/><circle cx="280" cy="860" r="4.5" fill="#EAF9F3"/>
+      <text x="280" y="836" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A31">晨曦酒庄站</text>
+      <text x="280" y="890" text-anchor="middle" font-size="11" fill="#3E5F54">二等站·酒类货运为主兼旅游</text>
 
-        <circle cx="470" cy="952" r="10" fill="#2FA47E"/><circle cx="470" cy="952" r="4.5" fill="#EAF9F3"/>
-        <text x="470" y="928" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A31">晨曦酒庄站</text>
-        <text x="470" y="982" text-anchor="middle" font-size="11" fill="#3E5F54">二等站·酒类货运为主兼旅游</text>
+      <circle cx="500" cy="860" r="8" fill="#2FA47E"/>
+      <text x="500" y="836" text-anchor="middle" font-size="13" font-weight="600" fill="#1E3A31">清泉镇</text>
 
-        <rect x="1064" y="1104" width="128" height="48" rx="10" fill="#F5FAF7" stroke="#52C79B" stroke-width="1.5"/>
-        <text x="1128" y="1124" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F7A5C">龙脊雪山站</text>
-        <text x="1128" y="1144" text-anchor="middle" font-size="10.5" fill="#3E5F54">三等站·冬季加密班次</text>
-      </g>
+      <!-- 龙脊雪山站 -->
+      <rect x="618" y="1040" width="140" height="52" rx="10" fill="#F5FAF7" stroke="#52C79B" stroke-width="1.5"/>
+      <text x="688" y="1062" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1F7A5C">龙脊雪山站</text>
+      <text x="688" y="1082" text-anchor="middle" font-size="10.5" fill="#3E5F54">三等站·冬季加密班次</text>
+
+      <!-- 归离原（璃月境内） -->
+      <rect x="210" y="1100" width="140" height="60" rx="10" fill="#FDF3E0" stroke="#C9862B" stroke-width="2" stroke-dasharray="8 5"/>
+      <text x="280" y="1126" text-anchor="middle" font-size="14" font-weight="700" fill="#8A5B1D">归离原</text>
+      <text x="280" y="1148" text-anchor="middle" font-size="11" fill="#8A5B1D">璃月境内终点站</text>
     </g>
 
     <!-- 图例 -->
-    <rect x="1770" y="240" width="540" height="270" rx="12" fill="#1F453B"/>
-    <text x="1794" y="274" font-size="15" font-weight="700" fill="#52C79B">图例</text>
-    <line x1="1794" y1="298" x2="1854" y2="298" stroke="#1F7A5C" stroke-width="7"/><text x="1866" y="303" font-size="12.5" fill="#DDF2E8">主干线：200 km/h 双线电气化（繁忙路段四线），璃蒙铁路公司统营</text>
-    <line x1="1794" y1="330" x2="1854" y2="330" stroke="#2FA47E" stroke-width="4.5"/><text x="1866" y="335" font-size="12.5" fill="#DDF2E8">次干线／联络线：160 km/h 单线（繁忙路段双线）</text>
-    <line x1="1794" y1="362" x2="1854" y2="362" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/><text x="1866" y="367" font-size="12.5" fill="#DDF2E8">西南跨境线：通往归离原（璃月铁路网）</text>
-    <line x1="1794" y1="394" x2="1854" y2="394" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/><text x="1866" y="399" font-size="12.5" fill="#DDF2E8">旅游／观光支线：季节性开行</text>
-    <rect x="1794" y="420" width="40" height="22" fill="url(#hatch)" stroke="#6E614A"/><text x="1846" y="436" font-size="12.5" fill="#DDF2E8">风龙废墟军事区——运营与安全管理需与军方协调</text>
-    <text x="1794" y="486" font-size="11.5" fill="#8FB5A6">※ 示意图：节点相对位置经艺术化处理，不代表真实地理方位与比例。</text>
+    <rect x="1770" y="240" width="540" height="230" rx="12" fill="#1F453B"/>
+    <text x="1794" y="272" font-size="15" font-weight="700" fill="#52C79B">图例</text>
+    <line x1="1794" y1="294" x2="1854" y2="294" stroke="#1F7A5C" stroke-width="7"/><text x="1866" y="299" font-size="12.5" fill="#DDF2E8">主干线：200 km/h 双线电气化（繁忙路段四线），璃蒙铁路公司统营</text>
+    <line x1="1794" y1="322" x2="1854" y2="322" stroke="#2FA47E" stroke-width="4.5"/><text x="1866" y="327" font-size="12.5" fill="#DDF2E8">次干线／联络线：160 km/h 单线（繁忙路段双线）</text>
+    <line x1="1794" y1="350" x2="1854" y2="350" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/><text x="1866" y="355" font-size="12.5" fill="#DDF2E8">西南跨境线：通往归离原（璃月铁路网）</text>
+    <line x1="1794" y1="378" x2="1854" y2="378" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/><text x="1866" y="383" font-size="12.5" fill="#DDF2E8">旅游／观光支线：季节性开行</text>
+    <rect x="1794" y="400" width="40" height="22" fill="url(#hatch)" stroke="#6E614A"/><text x="1846" y="416" font-size="12.5" fill="#DDF2E8">风龙废墟军事区——运营与安全管理需与军方协调</text>
+    <text x="1794" y="452" font-size="11.5" fill="#8FB5A6">※ 正交示意图：节点相对位置经艺术化处理，不代表真实地理方位与比例。</text>
   </g>
 
   <!-- ═══════════ 第 2 区 · 技术标准与车辆 ═══════════ -->

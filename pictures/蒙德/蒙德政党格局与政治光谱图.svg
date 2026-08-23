@@ -38,9 +38,10 @@
     <text x="108" y="528" font-size="11.5" fill="#F0D9D6">· 行动：社区互助网络 · 抗议与直接行动（TE 2017 荆夫港反港口</text>
     <text x="108" y="550" font-size="11.5" fill="#F0D9D6">  私有化集会约 1,200 人）· 地下刊物《真风之声》（500~800 份／期）</text>
     <rect x="108" y="572" width="352" height="110" rx="8" fill="#2A1A1A"/>
-    <text x="132" y="598" font-size="11.5" font-weight="700" fill="#E8837A">纲领：废除国家机器与私有制，</text>
-    <text x="132" y="620" font-size="11.5" fill="#F0D9D6">代之以自愿联合的社区自治网络与互助经济；解散常备军改设社区自卫队。</text>
-    <text x="132" y="664" font-size="10.5" fill="#C99B94">当局「冷处理」：监控而不轻易公诉，避免激化矛盾并保全自由形象。</text>
+    <text x="128" y="594" font-size="11.5" font-weight="700" fill="#E8837A">纲领：废除一切国家机器与私有制，</text>
+    <text x="128" y="616" font-size="11.5" fill="#F0D9D6">代之以自愿联合的社区自治网络与互助经济；</text>
+    <text x="128" y="638" font-size="11.5" fill="#F0D9D6">解散常备军，改设社区自卫队。</text>
+    <text x="128" y="664" font-size="10.5" fill="#C99B94">当局「冷处理」：监控而不轻易公诉，避免激化矛盾并保全自由形象。</text>
 
     <!-- 工党 -->
     <rect x="508" y="146" width="580" height="560" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>

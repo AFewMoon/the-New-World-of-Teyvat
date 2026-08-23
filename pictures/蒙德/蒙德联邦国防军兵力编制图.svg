@@ -36,11 +36,11 @@
     <text x="1044" y="298" text-anchor="middle" font-size="13" fill="#DDF2E8">国防预算占 GDP</text>
     <!-- 军种构成条 scale: 55万→900px -->
     <text x="84" y="430" font-size="15" font-weight="700" fill="#52C79B">四军种兵力构成（合计 ≈84 万）</text>
-    <g font-size="12.5">
-      <text x="84" y="464">陆军</text><rect x="160" y="450" width="589" height="22" rx="4" fill="url(#anemoTop)"/><text x="759" y="466" font-weight="700" fill="#52C79B">55 万</text>
-      <text x="84" y="498">空军</text><rect x="160" y="484" width="161" height="22" rx="4" fill="#3BB08A"/><text x="331" y="500" font-weight="700" fill="#52C79B">15 万</text>
-      <text x="84" y="532">海岸警卫力量</text><rect x="160" y="518" width="86" height="22" rx="4" fill="#52C79B"/><text x="256" y="534" font-weight="700" fill="#52C79B">8 万</text>
-      <text x="84" y="566">风之翼部队</text><rect x="160" y="552" width="64" height="22" rx="4" fill="#8FD4BC"/><text x="234" y="568" font-weight="700" fill="#1F7A5C">6 万</text>
+    <g font-size="12.5" fill="#DDF2E8">
+      <text x="84" y="464">陆军</text><rect x="160" y="450" width="589" height="22" rx="4" fill="url(#anemoTop)"/><text x="759" y="466" font-weight="700" fill="#F5FAF7">55 万</text>
+      <text x="84" y="498">空军</text><rect x="160" y="484" width="161" height="22" rx="4" fill="#3BB08A"/><text x="331" y="500" font-weight="700" fill="#F5FAF7">15 万</text>
+      <text x="84" y="532">海岸警卫力量</text><rect x="160" y="518" width="86" height="22" rx="4" fill="#52C79B"/><text x="256" y="534" font-weight="700" fill="#F5FAF7">8 万</text>
+      <text x="84" y="566">风之翼部队</text><rect x="160" y="552" width="64" height="22" rx="4" fill="#8FD4BC"/><text x="234" y="568" font-weight="700" fill="#F5FAF7">6 万</text>
     </g>
     <text x="84" y="600" font-size="11.5" fill="#8FB5A6">※ 不设独立海军编制；西风骑士团的名称沿用为联邦国防军的正式名称。</text>
   </g>
@@ -81,7 +81,7 @@
     <text x="84" y="690" font-size="19" font-weight="700" fill="#DDF2E8">陆军</text>
     <text x="84" y="718" font-size="24" font-weight="700" fill="#52C79B">≈55 万人</text>
     <text x="220" y="718" font-size="12" fill="#8FB5A6">联邦国防军主体 · 约 12 个机械化旅＋若干独立边防团</text>
-    <g font-size="12">
+    <g font-size="12" fill="#DDF2E8">
       <text x="84" y="756">主战坦克</text><rect x="210" y="742" width="120" height="20" rx="4" fill="url(#anemoTop)"/><text x="340" y="757" font-weight="700" fill="#52C79B">≈800 辆</text>
       <text x="84" y="786">步战车／装甲运兵车</text><rect x="210" y="772" width="225" height="20" rx="4" fill="#3BB08A"/><text x="445" y="787" font-weight="700" fill="#52C79B">≈1,500 辆</text>
       <text x="84" y="816">火炮（牵引／自行）</text><rect x="210" y="802" width="150" height="20" rx="4" fill="#52C79B"/><text x="370" y="817" font-weight="700" fill="#52C79B">≈1,000 门</text>
@@ -95,8 +95,9 @@
     <text x="108" y="1000" font-size="12" fill="#DDF2E8">· 反坦克武器以璃月口径的牵引式／车载导弹为主。</text>
     <rect x="84" y="1080" width="528" height="190" rx="10" fill="#3A3325" stroke="#C9862B" stroke-width="1.2"/>
     <text x="108" y="1108" font-size="12.5" font-weight="700" fill="#E0A94E">后勤命脉在璃月</text>
-    <text x="108" y="1134" font-size="12" fill="#EDE3CC">装备维护和升级依赖璃月零配件供应；部分主力装备的翻修和大修须送至璃月黑岩厂完成——战场可持续能力实质上由供应链决定。</text>
-    <text x="84" y="1284" font-size="11.5" fill="#8FB5A6">※ 兵役制度：义务兵役制，服役期 12 个月；社会反军国主义氛围浓厚，退伍军人可优先报考公务员与国企。</text>
+    <text x="108" y="1136" font-size="12" fill="#EDE3CC">装备维护和升级依赖璃月零配件供应；部分主力装备的翻修</text>
+    <text x="108" y="1162" font-size="12" fill="#EDE3CC">和大修须送至璃月黑岩厂完成——战场可持续能力实质上由供应链决定。</text>
+    <text x="84" y="1284" font-size="11.5" fill="#8FB5A6">※ 兵役制度：义务兵役制，服役期 12 个月；退伍军人可优先报考公务员与国企。</text>
 
     <!-- 空军 -->
     <rect x="660" y="648" width="576" height="650" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>

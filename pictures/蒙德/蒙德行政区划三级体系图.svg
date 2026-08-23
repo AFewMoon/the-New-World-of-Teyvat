@@ -67,6 +67,12 @@
     <text x="2069" y="402" text-anchor="middle" font-size="13" font-weight="600" fill="#B9DFCF">三级：警备区（军管·级别等同乡镇）</text>
   </g>
 
+  <!-- ═══ 层级分隔条 · 第一级 ═══ -->
+  <g>
+    <rect x="60" y="450" width="2280" height="22" rx="8" fill="url(#anemoTop)"/>
+    <text x="1200" y="466" text-anchor="middle" font-size="13" font-weight="700" fill="#123B2D">第 一 级 —— 领 × 7 ｜ 联邦直辖行政区（蒙德城）｜ 特殊军事管理区（风龙废墟）</text>
+  </g>
+
   <!-- ═══════════ 第 2 区 · 一级行政区卡片矩阵 (Row 1) ═══════════ -->
   <g font-size="12">
     <rect x="60" y="478" width="756" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
@@ -203,6 +209,12 @@
     <text x="1632" y="1536" font-size="11.5" fill="#F0D9D6">持续的魔物威胁；元素紊乱的复杂性；平衡军事管制与科研探索。</text>
   </g>
 
+  <!-- ═══ 层级分隔条 · 第二级 ═══ -->
+  <g>
+    <rect x="60" y="1600" width="2280" height="20" rx="8" fill="#2FA47E"/>
+    <text x="1200" y="1615" text-anchor="middle" font-size="12.5" font-weight="700" fill="#F5FAF7">第 二 级 —— 自治市 ｜ 行政区 ｜ 军分区（领级政府与基层管理之间的桥梁）</text>
+  </g>
+
   <!-- ═══════════ 第 3 区 · 二级行政区 ═══════════ -->
   <g font-size="12">
     <rect x="60" y="1626" width="756" height="270" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
@@ -238,6 +250,12 @@
     <text x="1632" y="1860" font-size="11.5" font-weight="600" fill="#52C79B">特点：独立军事指挥权＋有限行政管理权，管理模式偏向军事化。</text>
   </g>
 
+  <!-- ═══ 层级分隔条 · 第三级 ═══ -->
+  <g>
+    <rect x="60" y="1900" width="2280" height="20" rx="8" fill="#8FD4BC"/>
+    <text x="1200" y="1915" text-anchor="middle" font-size="12.5" font-weight="700" fill="#123B2D">第 三 级 —— 乡 ｜ 镇 ｜ 警备区（基层治理的毛细血管）</text>
+  </g>
+
   <!-- ═══════════ 第 4 区 · 三级行政区 ═══════════ -->
   <g font-size="12">
     <rect x="60" y="1928" width="756" height="250" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
@@ -269,6 +287,25 @@
     <rect x="1608" y="2090" width="708" height="64" rx="8" fill="#1F453B"/>
     <text x="1632" y="2114" font-size="11.5" font-weight="700" fill="#52C79B">特点</text>
     <text x="1632" y="2138" font-size="11.5" fill="#DDF2E8">小型军事哨所或营地；居民以军人家属及随军服务人员为主。</text>
+  </g>
+
+  <!-- ═══ 层级角标 ═══ -->
+  <g font-size="12" font-weight="700">
+    <rect x="746" y="486" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="774" y="502" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="1490" y="486" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="1518" y="502" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="2270" y="486" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="2298" y="502" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="746" y="866" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="774" y="882" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="1490" y="866" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="1518" y="882" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="2270" y="866" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="2298" y="882" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="746" y="1246" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="774" y="1262" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="1490" y="1246" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="1518" y="1262" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="2270" y="1246" width="56" height="22" rx="11" fill="#1F7A5C"/><text x="2298" y="1262" text-anchor="middle" fill="#F5FAF7">一级</text>
+    <rect x="746" y="1638" width="56" height="22" rx="11" fill="#2FA47E"/><text x="774" y="1654" text-anchor="middle" fill="#F5FAF7">二级</text>
+    <rect x="1490" y="1638" width="56" height="22" rx="11" fill="#2FA47E"/><text x="1518" y="1654" text-anchor="middle" fill="#F5FAF7">二级</text>
+    <rect x="2270" y="1638" width="56" height="22" rx="11" fill="#2FA47E"/><text x="2298" y="1654" text-anchor="middle" fill="#F5FAF7">二级</text>
+    <rect x="746" y="1940" width="56" height="22" rx="11" fill="#52C79B"/><text x="774" y="1956" text-anchor="middle" fill="#123B2D">三级</text>
+    <rect x="1490" y="1940" width="56" height="22" rx="11" fill="#52C79B"/><text x="1518" y="1956" text-anchor="middle" fill="#123B2D">三级</text>
+    <rect x="2270" y="1940" width="56" height="22" rx="11" fill="#52C79B"/><text x="2298" y="1956" text-anchor="middle" fill="#123B2D">三级</text>
   </g>
 
   <!-- ═══════════ 特殊说明 ═══════════ -->

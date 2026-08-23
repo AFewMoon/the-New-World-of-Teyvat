@@ -29,7 +29,7 @@
     <polygon points="448,404 366,488 894,488" fill="#52C79B"/>
     <text x="910" y="454" font-size="13" font-weight="700" fill="#1F7A5C">乡镇起降点 ≈ 30 处</text>
     <polygon points="350,500 260,584 1000,584" fill="#8FD4BC"/>
-    <text x="1016" y="550" font-size="13" font-weight="700" fill="#1F7A5C">临时起降点／飞行营地 ≈ 70 处</text>
+    <text x="1004" y="550" font-size="12" font-weight="700" fill="#1F7A5C">临时起降点／飞行营地 ≈ 70 处</text>
     <!-- 三层级表 -->
     <text x="84" y="628" font-size="15" font-weight="700" fill="#1F7A5C">通航机场的三个层级</text>
     <rect x="84" y="644" width="1092" height="56" rx="8" fill="#1F453B"/>
@@ -42,7 +42,7 @@
 
   <!-- ═══════════ 第 1 区右 · 两大国际机场 ═══════════ -->
   <g>
-    <rect x="1240" y="146" width="1100" height="640" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <rect x="1240" y="146" width="1100" height="652" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
     <text x="1264" y="188" font-size="20" font-weight="700" fill="#DDF2E8">两大国际机场参数对照</text>
     <rect x="1264" y="208" width="1052" height="280" rx="10" fill="#2C5A4C" stroke="#52C79B" stroke-width="1.5"/>
     <text x="1288" y="242" font-size="16" font-weight="700" fill="#52C79B">蒙德自由国际机场 (Mondstadt Liberty International Airport)</text>
@@ -61,7 +61,7 @@
     <text x="1288" y="644" font-size="12.5" fill="#3E5F54">主基地：晨曦酒庄航空公司（货运主基地）· 蒲公英航空公司（次要基地）</text>
     <text x="1288" y="672" font-size="12.5" font-weight="700" fill="#1F7A5C">定位：北方航路门户——以国际货运、花卉冷链空运和季节性包机为主</text>
     <text x="2288" y="566" text-anchor="end" font-size="24" font-weight="700" fill="#1F7A5C">600 万</text>
-    <text x="1264" y="786" font-size="11.5" fill="#6B857B">※ 两场均由西风骑士团空军提供终端防空识别服务；临时警戒区 (TDA) 训练期间限制民航通航飞行。</text>
+    <text x="1264" y="776" font-size="11.5" fill="#6B857B">※ 两场均由西风骑士团空军提供终端防空识别服务；临时警戒区 (TDA) 训练期间限制民航通航飞行。</text>
   </g>
 
   <!-- ═══════════ 第 2 区左 · 通航兴起成因与六优势 ═══════════ -->
@@ -188,7 +188,7 @@
     <g font-size="12" fill="#3E5F54">
       <text x="876" y="2074">PPL 私用</text><rect x="1020" y="2060" width="64" height="20" fill="url(#anemoTop)"/><text x="1092" y="2074" font-weight="700">40 h</text>
       <text x="876" y="2104">CPL 商用</text><rect x="1020" y="2090" width="320" height="20" fill="url(#anemoTop)"/><text x="1348" y="2104" font-weight="700">200 h</text>
-      <text x="876" y="2134">ATPL 航线运输</text><rect x="1020" y="2120" width="524" height="20" fill="#C9862B"/><text x="1560" y="2134" font-weight="700">1,500 h</text>
+      <text x="876" y="2134">ATPL 航线运输</text><rect x="1020" y="2120" width="480" height="20" fill="#C9862B"/><text x="1492" y="2134" text-anchor="end" font-weight="700" fill="#F5FAF7">1,500 h</text>
     </g>
     <text x="876" y="2172" font-size="11" fill="#6B857B">PPL/CPL 门槛远低于 ATPL——低门槛是通航繁荣的制度基石之一。</text>
     <!-- 安全困境 -->

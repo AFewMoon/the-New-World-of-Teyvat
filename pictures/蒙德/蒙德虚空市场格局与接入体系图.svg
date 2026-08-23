@@ -138,7 +138,7 @@
     <text x="108" y="1306" font-size="12" fill="#DDF2E8">晨曦酒庄企业园区、荆夫港自由贸易区。</text>
     <rect x="108" y="1330" width="492" height="70 " rx="8" fill="#3A2A2A"/>
     <text x="132" y="1356" font-size="11.5" font-weight="700" fill="#E8837A">「马太效应」显著</text>
-    <text x="132" y="1380" font-size="11.5" fill="#F0D9D6">蒙德城中央商务区光纤到户率超 95%、部分高端住宅提供万兆；奔狼领牧场与龙脊雪山村镇仍是稀缺资源。</text>
+    <text x="132" y="1380" font-size="11.5" fill="#F0D9D6">核心区光纤到户率超 95%、高端住宅提供万兆；奔狼领牧场与雪山村镇仍是稀缺资源。</text>
     <!-- 基站 -->
     <rect x="648" y="1198" width="540" height="368" rx="10" fill="#2C5A4C"/>
     <text x="672" y="1228" font-size="15" font-weight="700" fill="#52C79B">基站 · 45%</text>
@@ -166,9 +166,9 @@
     <text x="1260" y="1422" font-size="11.5" fill="#EDE3CC">· 蒲公英「花冠」：荆夫花卉产区＋冷链物流数据中继。</text>
     <rect x="1236" y="1440" width="492" height="100" rx="8" fill="#3A2A2A"/>
     <text x="1260" y="1466" font-size="11.5" font-weight="700" fill="#E8837A">结构性问题</text>
-    <text x="1260" y="1490" font-size="11.5" fill="#F0D9D6">集中式架构——单艇故障即数十公里范围同时断网；暴风雨雷暴</text>
-    <text x="1260" y="1514" font-size="11.5" fill="#F0D9D6">下信号显著衰减甚至全频段中断。冬季强风季回收飞艇、切换地脉</text>
-    <text x="1260" y="1532" font-size="11.5" fill="#F0D9D6">节点——用户仅剩短信与广播级服务。</text>
+    <text x="1260" y="1488" font-size="11.5" fill="#F0D9D6">集中式架构——单艇故障即数十公里范围同时断网；</text>
+    <text x="1260" y="1508" font-size="11.5" fill="#F0D9D6">暴风雨、雷暴下信号显著衰减甚至全频段中断。冬季强风季</text>
+    <text x="1260" y="1528" font-size="11.5" fill="#F0D9D6">回收飞艇切换地脉节点，用户仅剩短信与广播级服务。</text>
     <!-- 地脉 -->
     <rect x="1776" y="1198" width="540" height="368" rx="10" fill="#1F453B"/>
     <text x="1800" y="1228" font-size="15" font-weight="700" fill="#52C79B">地脉接入节点 · 最后的兜底</text>
@@ -191,17 +191,18 @@
     <g font-size="12">
       <rect x="84" y="1684" width="1092" height="66" fill="#4A3535"/>
       <text x="108" y="1710" font-weight="700" fill="#52C79B">核心城区</text><text x="300" y="1710" fill="#F0D9D6">蒙德城·荆夫港市区</text>
-      <text x="640" y="1710" font-weight="700" fill="#E8837A">覆盖率 &gt;95%</text><text x="880" y="1710" fill="#F0D9D6">均速 500 Mb/s</text><text x="1090" y="1710" fill="#F0D9D6">运营商 4~6 家</text>
-      <rect x="84" y="1750" width="1092" height="66 " fill="#453232"/>
+      <text x="640" y="1710" font-weight="700" fill="#E8837A">覆盖率 &gt;95%</text><text x="880" y="1710" fill="#F0D9D6">均速 500 Mb/s</text><text x="1010" y="1710" fill="#F0D9D6">运营商 4~6 家</text>
+      <rect x="84" y="1750" width="1092" height="66" fill="#453232"/>
       <text x="108" y="1776" font-weight="700" fill="#52C79B">经济走廊城镇</text><text x="300" y="1776" fill="#F0D9D6">晨曦酒庄·清泉镇·星落湖镇</text>
-      <text x="640" y="1776" font-weight="700" fill="#E8837A">80~95%</text><text x="880" y="1776" fill="#F0D9D6">均速 100 Mb/s</text><text x="1090" y="1776" fill="#F0D9D6">运营商 2~4 家</text>
+      <text x="640" y="1776" font-weight="700" fill="#E8837A">80~95%</text><text x="880" y="1776" fill="#F0D9D6">均速 100 Mb/s</text><text x="1010" y="1776" fill="#F0D9D6">运营商 2~4 家</text>
       <rect x="84" y="1816" width="1092" height="66" fill="#4A3535"/>
       <text x="108" y="1842" font-weight="700" fill="#52C79B">一般乡村</text><text x="300" y="1842" fill="#F0D9D6">奔狼领牧场区·望风山地农场</text>
-      <text x="640" y="1842" font-weight="700" fill="#E8837A">50~70%</text><text x="880" y="1842" fill="#F0D9D6">均速 20 Mb/s</text><text x="1090" y="1842" fill="#F0D9D6">1~2 家（含合作社）</text>
+      <text x="640" y="1842" font-weight="700" fill="#E8837A">50~70%</text><text x="880" y="1842" fill="#F0D9D6">均速 20 Mb/s</text><text x="1010" y="1842" fill="#F0D9D6">运营商 1~2 家</text>
       <rect x="84" y="1882" width="1092" height="66" fill="#3A2626"/>
       <text x="108" y="1908" font-weight="700" fill="#E8837A">欠发达偏远区域</text><text x="300" y="1908" fill="#F0D9D6">龙脊雪山村镇·风龙废墟外围·荆夫内陆</text>
-      <text x="640" y="1908" font-weight="700" fill="#E8837A">&lt; 40%</text><text x="880" y="1908" fill="#F0D9D6">均速 5 Mb/s</text><text x="1090" y="1908" fill="#F0D9D6">0~1 家（仅合作社/地脉）</text>
+      <text x="640" y="1908" font-weight="700" fill="#E8837A">&lt; 40%</text><text x="880" y="1908" fill="#F0D9D6">均速 5 Mb/s</text><text x="1010" y="1908" fill="#F0D9D6">运营商 0~1 家</text>
     </g>
+    <text x="84" y="1956" font-size="11" fill="#C99B94">※ 运营商数量＝同时覆盖该区域的持牌主体（含虚拟运营商）；欠达区域的 1 家通常仅为电信合作社或地脉节点。</text>
     <rect x="84" y="1964" width="1092" height="94" rx="8" fill="#453232"/>
     <text x="108" y="1992" font-size="12.5" font-weight="700" fill="#E8837A">投资差距：核心区人均通信基建投资 ＝ 偏远区域的 12 倍（《虚空接入年度报告》）</text>
     <text x="108" y="2018" font-size="12" fill="#F0D9D6">市场力量天然流向高回报区域；欠发达区域支付能力有限、建设成本高企，长期无人问津——「逐利而建」的必然代价。</text>
@@ -224,10 +225,15 @@
     </g>
     <rect x="1264" y="1924" width="512" height="134" rx="8" fill="#1F453B"/>
     <text x="1288" y="1950" font-size="12.5" font-weight="700" fill="#52C79B">透明网关五特征</text>
-    <text x="1288" y="1974" font-size="11" fill="#DDF2E8">内外网边界模糊 · 无国家内容过滤 · 境外访问完全开放 · 无数据本地化要求 · 日志仅按商业惯例保留——提瓦特最宽松的治理政策。</text>
+    <text x="1288" y="1974" font-size="11" fill="#DDF2E8">内外网边界模糊 · 无国家内容过滤 · 境外访问完全开放；</text>
+    <text x="1288" y="1996" font-size="11" fill="#DDF2E8">无数据本地化要求 · 日志仅按一般商业惯例保留——</text>
+    <text x="1288" y="2018" font-size="11" fill="#DDF2E8">提瓦特最为宽松的互联网治理政策。</text>
     <rect x="1804" y="1924" width="512" height="134" rx="8" fill="#3A2A2A"/>
     <text x="1828" y="1950" font-size="12.5" font-weight="700" fill="#E8837A">开放的代价</text>
-    <text x="1828" y="1974" font-size="11" fill="#F0D9D6">近乎不设防的网关易成跨国攻击中转跳板；境外不法分子借道部署钓鱼诈骗平台；CSEC 多次建议增设基础 DDoS 清洗与僵尸网络检测，风声电讯以「不干预数据流」为由推进迟缓。</text>
+    <text x="1828" y="1972" font-size="11" fill="#F0D9D6">近乎不设防的网关易成跨国攻击的中转跳板；境外不法分子</text>
+    <text x="1828" y="1992" font-size="11" fill="#F0D9D6">借道部署钓鱼网站和诈骗平台；CSEC 多次建议增设基础的</text>
+    <text x="1828" y="2012" font-size="11" fill="#F0D9D6">DDoS 清洗和僵尸网络检测能力，风声电讯以「不干预数据流」</text>
+    <text x="1828" y="2032" font-size="11" fill="#F0D9D6">为由推进迟缓。</text>
   </g>
 
   <!-- ═══════════ 第 5 区 · 数字经济与未来规划 ═══════════ -->
@@ -237,16 +243,27 @@
     <g font-size="12">
       <rect x="84" y="2176" width="540" height="150" rx="10" fill="#2C5A4C"/>
       <text x="108" y="2204" font-weight="700" fill="#52C79B">「风神认证」产品溯源平台</text>
-      <text x="108" y="2230" fill="#DDF2E8">扫码即查葡萄产地·采摘时间·酿造批次·窖藏温度曲线与冷链路径；群玉阁投资＋鱼灯跨境通道＋艾泽尔云存储与区块链节点——多资本跨行业协作的典型。</text>
+      <text x="108" y="2228" fill="#DDF2E8">扫码即查葡萄产地·采摘时间·酿造批次·窖藏温度曲线与</text>
+      <text x="108" y="2250" fill="#DDF2E8">冷链路径；群玉阁投资＋鱼灯跨境通道＋艾泽尔云存储与</text>
+      <text x="108" y="2272" fill="#DDF2E8">区块链节点——多资本跨行业协作的典型案例。</text>
       <rect x="648" y="2176" width="540" height="150" rx="10" fill="#2C5A4C"/>
       <text x="672" y="2204" font-weight="700" fill="#52C79B">低空经济数字化 ＋ 蒙璃金融数据通道</text>
-      <text x="672" y="2230" fill="#DDF2E8">低空空域管理平台整合 ADS-B 信号·气象·空域申请；滑翔翼气象导航；空中出租车统一调度（App 叫飞）；北国银行×群玉阁租赁专用波长——蒙德城—璃港府端到端往返延迟约 12~14 ms，支撑外汇做市与量化交易。</text>
+      <text x="672" y="2226" fill="#DDF2E8">低空空域管理平台整合 ADS-B·气象·空域申请；滑翔翼气象</text>
+      <text x="672" y="2248" fill="#DDF2E8">导航；空中出租车统一调度（App 叫飞）；北国银行×群玉阁</text>
+      <text x="672" y="2270" fill="#DDF2E8">租赁专用波长——蒙德城—璃港府往返延迟约 12~14 ms，</text>
+      <text x="672" y="2292" fill="#DDF2E8">支撑外汇做市与量化交易。</text>
       <rect x="1212" y="2176" width="540" height="150" rx="10" fill="#2C5A4C"/>
       <text x="1236" y="2204" font-weight="700" fill="#52C79B">信息服务业与云计算生态</text>
-      <text x="1236" y="2230" fill="#DDF2E8">蒙德城 CBD 的在线协作与 SaaS 服务商；晨曦酒庄领酒业 SaaS（工艺参数·库存·分销按年订阅）；荆夫港跨境电商数据处理中心；风声＋艾泽尔边缘计算与公有云。</text>
+      <text x="1236" y="2226" fill="#DDF2E8">蒙德城 CBD 的在线协作与 SaaS 服务商；晨曦酒业 SaaS 将</text>
+      <text x="1236" y="2248" fill="#DDF2E8">工艺参数·库存调度·全球分销整合为标准化软件按年订阅；</text>
+      <text x="1236" y="2270" fill="#DDF2E8">荆夫港聚集跨境电商数据处理中心；风声＋艾泽尔提供边缘</text>
+      <text x="1236" y="2292" fill="#DDF2E8">计算节点与公有云服务。</text>
       <rect x="1776" y="2176" width="564" height="150" rx="10" fill="#3A3325"/>
       <text x="1800" y="2204" font-weight="700" fill="#E0A94E">量子通信试验 · 绿色算力枢纽</text>
-      <text x="1800" y="2230" fill="#EDE3CC">晨曦酒庄 CX 建成首个 QKD 试验站，已完成与翠玦府的跨流量子加密验证；下一步延伸至蒙德城 CX。龙脊雪山 CX 凭低温＋风电被 TAA 选为西部算力枢纽试验节点——「算力跟随能源」。</text>
+      <text x="1800" y="2226" fill="#EDE3CC">晨曦酒庄 CX 建成首个 QKD 试验站，已完成与翠玦府的跨流</text>
+      <text x="1800" y="2248" fill="#EDE3CC">量子加密验证，下一步延伸至蒙德城 CX；龙脊雪山 CX 凭常</text>
+      <text x="1800" y="2270" fill="#EDE3CC">年低温＋风电优势被 TAA 选为西部算力枢纽试验节点——</text>
+      <text x="1800" y="2292" fill="#EDE3CC">「算力跟随能源」的绿色计算愿景逐步落地。</text>
     </g>
     <!-- 风之神的光纤计划 -->
     <rect x="84" y="2342" width="2256" height="164" rx="10" fill="url(#anemoTop)"/>
