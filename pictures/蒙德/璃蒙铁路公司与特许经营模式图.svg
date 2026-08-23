@@ -73,12 +73,13 @@
     <text x="2150" y="284" text-anchor="middle" font-size="11.5" fill="#DDF2E8">主干线电气化·信号升级·</text>
     <text x="2150" y="306" text-anchor="middle" font-size="11.5" fill="#DDF2E8">动车组换装，期满可赎回</text>
     <!-- 一套班子两块牌子 -->
-    <rect x="1264" y="336" width="1052" height="150" rx="10" fill="#2C5A4C"/>
+    <rect x="1264" y="336" width="1052" height="160" rx="10" fill="#2C5A4C"/>
     <text x="1288" y="366" font-size="14" font-weight="700" fill="#52C79B">「一套班子、两块牌子」的管理模式</text>
     <text x="1288" y="392" font-size="12.5" fill="#DDF2E8">在璃月体系内以「璃月铁路璃蒙公司」名义行使管理职能；在蒙德境内以「璃蒙铁路有限公司」独立法人运营——</text>
-    <text x="1288" y="418" font-size="12.5" fill="#DDF2E8">同一管理团队，蒙德中央政府通过嵌入后者董事会与治理架构实施监督。与璃铁五大区域公司平级。</text>
-    <text x="1288" y="452" font-size="12.5" fill="#B9DFCF">注册资本 2,000 亿璃月元 · 注册地蒙德城 · 总部设蒙德城北站附属办公楼</text>
-    <text x="1288" y="474" font-size="12.5" fill="#B9DFCF">员工约 2,100 人＝璃月派驻约 300 人 ＋ 本地雇佣约 1,800 人</text>
+    <text x="1288" y="416" font-size="12.5" fill="#DDF2E8">同一管理团队，蒙德中央政府通过嵌入后者董事会与治理架构实施监督。与璃铁五大区域公司平级。</text>
+    <text x="1288" y="440" font-size="12.5" fill="#B9DFCF">注册资本 2,000 亿璃月元 · 注册地蒙德城 · 总部设蒙德城北站附属办公楼</text>
+    <text x="1288" y="464" font-size="12.5" fill="#B9DFCF">员工约 2,100 人＝璃月派驻约 300 人 ＋ 本地雇佣约 1,800 人</text>
+    <text x="1288" y="488" font-size="12.5" font-weight="700" fill="#52C79B">对外旅客服务统一以「狮牙快线 (Lionfang Express)」品牌运营——车体涂装、车站标识与票务宣传统一使用该品牌。</text>
     <!-- 资产 -->
     <rect x="1264" y="502" width="1052" height="86" rx="10" fill="#DDEEE6"/>
     <text x="1288" y="530" font-size="12.5" font-weight="700" fill="#1F7A5C">全权拥有的主干线资产（记入自身资产负债表）</text>
@@ -93,22 +94,22 @@
   <!-- ═══════════ 第 2 区左 · 组织架构 ═══════════ -->
   <g>
     <rect x="60" y="738" width="1140" height="520" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
-    <text x="84" y="780" font-size="19" font-weight="700" fill="#DDF2E8">公司组织架构：六个局级部门</text>
+    <text x="84" y="780" font-size="19" font-weight="700" fill="#DDF2E8">公司组织架构：六个事业部</text>
     <g font-size="13">
       <rect x="84" y="800" width="532" height="96" rx="10" fill="#2C5A4C"/>
-      <text x="108" y="832" font-weight="700" fill="#52C79B">动车局</text>
+      <text x="108" y="832" font-weight="700" fill="#52C79B">动车事业部</text>
       <text x="108" y="858" font-size="12" fill="#DDF2E8">MR 160 J 动车组的运用调度与乘务管理</text>
       <rect x="640" y="800" width="536" height="96" rx="10" fill="#2C5A4C"/>
-      <text x="664" y="832" font-weight="700" fill="#52C79B">货车局</text>
+      <text x="664" y="832" font-weight="700" fill="#52C79B">货运事业部</text>
       <text x="664" y="858" font-size="12" fill="#DDF2E8">主干线货运组织＋荆夫港—璃月港海铁联运</text>
       <rect x="84" y="908" width="532" height="96" rx="10" fill="#2C5A4C"/>
-      <text x="108" y="940" font-weight="700" fill="#52C79B">车辆维修局</text>
+      <text x="108" y="940" font-weight="700" fill="#52C79B">车辆检修事业部</text>
       <text x="108" y="966" font-size="12" fill="#DDF2E8">动车组及少量国产机车的定期检修与整备</text>
       <rect x="640" y="908" width="536" height="96" rx="10" fill="#2C5A4C"/>
-      <text x="664" y="940" font-weight="700" fill="#52C79B">线路设施局</text>
+      <text x="664" y="940" font-weight="700" fill="#52C79B">基础设施事业部</text>
       <text x="664" y="966" font-size="12" fill="#DDF2E8">约 2,400 km 主干线的线路·供电·信号设备维护</text>
       <rect x="84" y="1016" width="532" height="96" rx="10" fill="#2C5A4C"/>
-      <text x="108" y="1048" font-weight="700" fill="#52C79B">站务运营局</text>
+      <text x="108" y="1048" font-weight="700" fill="#52C79B">车站运营部</text>
       <text x="108" y="1074" font-size="12" fill="#DDF2E8">沿线主要车站：蒙德城北／南站、荆夫港、风起地、星落湖、晨曦酒庄、达达乌帕谷、誓言岬</text>
       <rect x="640" y="1016" width="536" height="96" rx="10" fill="#2C5A4C"/>
       <text x="664" y="1048" font-weight="700" fill="#52C79B">综合管理部</text>
