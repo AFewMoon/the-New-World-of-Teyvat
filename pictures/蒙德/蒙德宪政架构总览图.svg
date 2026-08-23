@@ -1,0 +1,168 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1780" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#52C79B"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="1780" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德宪政架构总览图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">联邦制议会民主共和制 · 在继承骑士团与教会历史遗产的同时，将最终权力约束在宪法框架和公民选票之下</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区 · 三权分立框架 ═══════════ -->
+  <g>
+    <!-- 立法 -->
+    <rect x="84" y="146" width="744" height="360 " rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="108" y="184" font-size="17" font-weight="700" fill="#1F7A5C">立法权 —— 联邦议会（两院制）</text>
+    <rect x="108" y="200" width="352" height="130" rx="8" fill="#1F453B"/>
+    <text x="128" y="228" font-size="13" font-weight="700" fill="#52C79B">下议院 · 200 席</text>
+    <text x="128" y="252" font-size="11.5" fill="#DDF2E8">全民普选产生——决定「做什么」；</text>
+    <text x="128" y="274" font-size="11.5" fill="#DDF2E8">政府法案与预算的实际决策场；</text>
+    <text x="128" y="296" font-size="11.5" fill="#DDF2E8">以三分之二多数再通过被否法案时，</text>
+    <text x="128" y="318" font-size="11.5" fill="#DDF2E8">公民意志可压倒上议院否决权。</text>
+    <rect x="476" y="200" width="328" height="130" rx="8" fill="#2C5A4C"/>
+    <text x="496" y="228" font-size="13" font-weight="700" fill="#52C79B">上议院</text>
+    <text x="496" y="252" font-size="11.5" fill="#DDF2E8">各领传统精英机构按名额推举代表；</text>
+    <text x="496" y="274" font-size="11.5" fill="#DDF2E8">把关「能不能做」——贵族代表在民生</text>
+    <text x="496" y="296" font-size="11.5" fill="#DDF2E8">议题倾向克制，土地／宗教等敏感</text>
+    <text x="496" y="318" font-size="11.5" fill="#DDF2E8">议题立场更具对抗性。</text>
+    <rect x="108" y="344" width="696" height="70 " rx="8" fill="#DDEEE6"/>
+    <text x="132" y="372" font-size="12" font-weight="700" fill="#1F7A5C">公民复决机制（蒙德特色直接民主）</text>
+    <text x="132" y="396" font-size="11.5" fill="#3E5F54">经 5% 以上登记选民联署的法案可进入全民公投，直接修正或否决议会立法；同一事项每五年内仅可动用一次。</text>
+
+    <!-- 行政 -->
+    <rect x="852" y="146" width="700 " height="360" rx="14" fill="#1F453B" stroke="#52C79B" stroke-width="2"/>
+    <text x="876" y="184" font-size="17" font-weight="700" fill="#52C79B">行政权 —— 向议会负责的内阁</text>
+    <rect x="876" y="200" width="652" height="90 " rx="8" fill="#2C5A4C"/>
+    <text x="900" y="228" font-size="13" font-weight="700" fill="#52C79B">联邦总统（礼仪性国家元首）</text>
+    <text x="900" y="252" font-size="11.5" fill="#DDF2E8">由西风骑士团团长自动兼任（骑士团政府时期制度遗留）；</text>
+    <text x="900" y="274" font-size="11.5" fill="#DDF2E8">保留对国防大臣·法制大臣·宗教与民族事务大臣的任命批准权。</text>
+    <line x1="1202" y1="290" x2="1202" y2="314" stroke="#52C79B" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <rect x="876" y="318" width="652" height="96" rx="8" fill="#EAF4EE"/>
+    <text x="900" y="346" font-size="13" font-weight="700" fill="#1F7A5C">联邦首相 ＋ 内阁</text>
+    <text x="900" y="370" font-size="11.5" fill="#3E5F54">由下议院多数党（或联盟）领袖出任并组阁；</text>
+    <text x="900" y="392" font-size="11.5" fill="#3E5F54">接受下议院质询和不信任投票机制的监督——</text>
+    <text x="900" y="414" font-size="11.5" fill="#3E5F54">行政权存续完全系于议会信任。</text>
+
+    <!-- 司法 -->
+    <rect x="1576" y="146" width="760" height="360" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1600" y="184" font-size="17" font-weight="700" fill="#1F7A5C">司法权 —— 独立行使</text>
+    <rect x="1600" y="200" width="712" height="120" rx="8" fill="#1F453B"/>
+    <text x="1624" y="228" font-size="13" font-weight="700" fill="#52C79B">联邦最高法院：合宪性审查权</text>
+    <text x="1624" y="252" font-size="11.5" fill="#DDF2E8">对联邦法律和各领立法行使合宪性审查；判例可否决政府部门</text>
+    <text x="1624" y="274" font-size="11.5" fill="#DDF2E8">行政政策与地方立法，且终审不可上诉。</text>
+    <text x="1624" y="302" font-size="11.5" fill="#8FB5A6">TE 2026 年裁定《情报监督法》通信拦截条款部分违宪——拦截须事先取得法院令状。</text>
+    <rect x="1600" y="330" width="712" height="84" rx="8" fill="#DDEEE6"/>
+    <text x="1624" y="356" font-size="12" font-weight="700" fill="#1F7A5C">标杆判例：「晨曦酒庄领与清泉领水权纠纷案」（MSC-2019~0117）</text>
+    <text x="1624" y="380" font-size="11.5" fill="#3E5F54">5 名大法官·8 个月审理——确立联邦水资源跨领共享原则优先于各领自治管辖权：</text>
+    <text x="1624" y="402" font-size="11.5" fill="#3E5F54">晨曦酒庄领按年度灌溉取水量 22% 支付补偿金并恢复果酒河最低生态流量。</text>
+
+    <!-- 联邦制权责 -->
+    <rect x="84" y="522" width="2252" height="90" rx="10" fill="#1F453B"/>
+    <text x="108" y="550" font-size="13" font-weight="700" fill="#52C79B">联邦制权责划分</text>
+    <text x="108" y="576" font-size="12" fill="#DDF2E8">归联邦管辖：外交 · 国防 · 货币政策 · 全国性基础设施规划 · 跨区域资源分配；</text>
+    <text x="108" y="600" font-size="12" fill="#B9DFCF">归各领与蒙德城行政区：地方事务高度自治——自己的议会·行政长官·独立财政系统。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区左 · 西风骑士团现代转型 ═══════════ -->
+  <g>
+    <rect x="84" y="644" width="1140" height="620" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="108" y="684" font-size="18" font-weight="700" fill="#DDF2E8">西风骑士团的现代转型（TE 1990 年代联邦化改革）</text>
+    <text x="108" y="710" font-size="12" fill="#B9DFCF">此前实行「骑士团政府」体制：团长既是武装力量最高统帅，也直接代理全国政务</text>
+    <rect x="108" y="726" width="1092 " height="56" rx="8" fill="url(#anemoTop)"/>
+    <text x="654" y="761" text-anchor="middle" font-size="14.5" font-weight="700" fill="#123B2D">骑士团政府 —— 改革将行政权力移交民选首相及其内阁</text>
+    <line x1="380" y1="782" x2="380" y2="804" stroke="#52C79B" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <line x1="930" y1="782" x2="930" y2="804" stroke="#52C79B" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <g font-size="11.5">
+      <rect x="108" y="808" width="532" height="56" rx="8" fill="#2C5A4C"/>
+      <text x="132" y="830" font-weight="700" fill="#52C79B">军事国防 → 蒙德联邦国防军</text>
+      <text x="132" y="852" fill="#DDF2E8">唯一正规武装力量；团长任最高统帅，日常指挥归国防大臣</text>
+      <rect x="664" y="808" width="536" height="56" rx="8" fill="#2C5A4C"/>
+      <text x="688" y="830" font-weight="700" fill="#52C79B">治安 → 各领及首都警察系统</text>
+      <text x="688" y="852" fill="#DDF2E8">负责日常公共安全与刑事侦查，不再隶属骑士团</text>
+      <rect x="108" y="874" width="532" height="56" rx="8" fill="#2C5A4C"/>
+      <text x="132" y="896" font-weight="700" fill="#52C79B">秩序维护与边防 → 联邦宪兵</text>
+      <text x="132" y="918" fill="#DDF2E8">边境巡逻 · 重要设施警卫 · 特殊执法职能</text>
+      <rect x="664" y="874" width="536" height="56" rx="8" fill="#2C5A4C"/>
+      <text x="688" y="896" font-weight="700" fill="#52C79B">消防与民防 → 联邦消防应急救援体系</text>
+      <text x="688" y="918" fill="#DDF2E8">覆盖全国的灾害响应与民防事务</text>
+      <rect x="108" y="940" width="1092" height="50" rx="8" fill="#22493E"/>
+      <text x="132" y="962" font-weight="700" fill="#52C79B">行政管理 → 土地管理·司法裁判·税收征管等民事职能统一移交各民政部门</text>
+      <text x="132" y="984" fill="#B9DFCF">重大军事决策需经议会批准；每年风神节骑士团授勋仪式连接历史传统与现代治理。</text>
+    </g>
+    <rect x="108" y="1006" width="1092" height="110" rx="8" fill="#DDEEE6"/>
+    <text x="132" y="1034" font-size="12.5" font-weight="700" fill="#1F7A5C">制度遗产的三重延续</text>
+    <text x="132" y="1060" font-size="11.5" fill="#3E5F54">① 名称沿用：「西风骑士团」为联邦国防军正式名称；② 荣誉职衔：「代理团长」「骑兵队长」「侦察骑士」「火花骑士」</text>
+    <text x="132" y="1082" font-size="11.5" fill="#3E5F54">等保留为由总统／团长依议会推荐授予的荣誉称号；③ 人事分流：琴入保守党 · 凯亚入工党 · 安柏与优菈入自由党——</text>
+    <text x="132" y="1104" font-size="11.5" fill="#3E5F54">事实上奠定了蒙德多党政治的人事基础。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区右 · 立法流程案例 ═══════════ -->
+  <g>
+    <rect x="1248" y="644" width="1088" height="620" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1272" y="684" font-size="18" font-weight="700" fill="#1E3A31">一部法律的诞生：《最低工资与基本劳动保障法》</text>
+    <text x="1272" y="710" font-size="12" fill="#3E5F54">TE 2019 年通过——三党博弈、两院互动的完整样本（下议院 200 席）</text>
+    <!-- 流程节点 -->
+    <g font-size="11.5">
+      <rect x="1272" y="726" width="1040" height="76" rx="8" fill="#1F453B"/>
+      <text x="1296" y="750" font-weight="700" fill="#52C79B">提案阶段（TE 2017）</text>
+      <text x="1296" y="772" fill="#DDF2E8">民政服务局完成 14 个月调查：4,200 样本户，约 23% 城镇劳动者时薪低于 8 镑——荆夫港码头非正式用工中该比例高达 47%。</text>
+      <rect x="1272" y="810" width="1040" height="66 " rx="8" fill="#2C5A4C"/>
+      <text x="1296" y="834" font-weight="700" fill="#52C79B">一读（2018 年 6 月）：无投票，转经济与社会事务委员会审议</text>
+      <rect x="1272" y="884" width="1040" height="106" rx="8" fill="#DDEEE6"/>
+      <text x="1296" y="908" font-weight="700" fill="#1F7A5C">委员会审议（7~9 月）：14 名三党委员逐条讨论——修正案即博弈场</text>
+      <text x="1296" y="932" fill="#3E5F54">· 安柏（自由党）：改由独立市场薪酬委员会核定标准 → 8:6 通过；丽莎（保守党）：覆盖范围扩展至农业季节性雇工 → 9:5 通过。</text>
+      <rect x="1272" y="998" width="1040" height="96" rx="8" fill="#2C5A4C"/>
+      <text x="1296" y="1022" font-weight="700" fill="#52C79B">二读（10 月）：3 天共 18 小时辩论</text>
+      <text x="1296" y="1046" fill="#DDF2E8">凯亚要求时薪基准从 42% 提至 45% —— 87:96 被否决（本党右派芭芭拉与部分自由党议员倒戈）；最终定格 43%，成两派妥协结果。</text>
+      <rect x="1272" y="1102" width="1040" height="60 " rx="8" fill="#1F453B"/>
+      <text x="1296" y="1126" font-weight="700" fill="#52C79B">三读（11 月）：118 赞成 · 72 反对 · 10 弃权 —— 法案通过</text>
+      <rect x="1272" y="1170" width="1040" height="80" rx="8" fill="#DDEEE6"/>
+      <text x="1296" y="1194" font-weight="700" fill="#1F7A5C">上议院复核（2019 年 1 月）＋ 签署生效（4 月）</text>
+      <text x="1296" y="1216" fill="#3E5F54">菲谢尔就「契约自由」提出疑虑→闭门协商后仅修改个别措辞、未用否决权；退回后下议院以 132:58 接受；代理团长琴签署生效。</text>
+    </g>
+    <text x="1272" y="1250" font-size="12" font-weight="700" fill="#1F7A5C">成效：截至 TE 2030 已执行三轮最低工资调整，覆盖约 17.5 万名劳动者。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 四根支柱 ═══════════ -->
+  <g>
+    <rect x="84" y="1296" width="2252" height="330" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="108" y="1334" font-size="18" font-weight="700" fill="#1E3A31">政体底线：宪政运作的四根支柱</text>
+    <rect x="108" y="1352" width="540 " height="240" rx="10" fill="#1F453B"/>
+    <text x="132" y="1380" font-size="14" font-weight="700" fill="#52C79B">① 议会两院制</text>
+    <text x="132" y="1406" font-size="11.5" fill="#DDF2E8">下议院决定「做什么」，上议院把关「能不能做」；</text>
+    <text x="132" y="1430" font-size="11.5" fill="#DDF2E8">当下议院以三分之二多数再次通过被上议院否决的</text>
+    <text x="132" y="1454" font-size="11.5" fill="#DDF2E8">法案时，公民意志可以压倒传统精英的否决权——</text>
+    <text x="132" y="1478" font-size="11.5" fill="#DDF2E8">传统精英的制衡是程序性的，而非绝对的。</text>
+    <rect x="672" y="1352" width="540" height="240" rx="10" fill="#2C5A4C"/>
+    <text x="696" y="1380" font-size="14" font-weight="700" fill="#52C79B">② 行政权向议会负责</text>
+    <text x="696" y="1406" font-size="11.5" fill="#DDF2E8">首相及其内阁由下议院多数党（或联盟）产生；</text>
+    <text x="696" y="1430" font-size="11.5" fill="#DDF2E8">同时接受下议院质询和不信任投票机制的监督；</text>
+    <text x="696" y="1454" font-size="11.5" fill="#DDF2E8">总统的三项人事批准权（国防·法制·宗教与民族事务）</text>
+    <text x="696" y="1478" font-size="11.5" fill="#DDF2E8">确保关键部门对国家基本价值观的忠诚。</text>
+    <rect x="1236" y="1352" width="540" height="240" rx="10" fill="#2C5A4C"/>
+    <text x="1260" y="1380" font-size="14" font-weight="700" fill="#52C79B">③ 司法独立</text>
+    <text x="1260" y="1406" font-size="11.5" fill="#DDF2E8">最高法院拥有对联邦法律和各领立法的合宪性审查权；</text>
+    <text x="1260" y="1430" font-size="11.5" fill="#DDF2E8">判例可以否决政府部门的行政政策和地方立法，</text>
+    <text x="1260" y="1454" font-size="11.5" fill="#DDF2E8">且终审不可上诉——水权案即为联邦权威压倒</text>
+    <text x="1260" y="1478" font-size="11.5" fill="#DDF2E8">领地自治主张的制度性确认。</text>
+    <rect x="1800" y="1352" width="512" height="240" rx="10" fill="#1F453B"/>
+    <text x="1824" y="1380" font-size="14" font-weight="700" fill="#52C79B">④ 联邦制</text>
+    <text x="1824" y="1406" font-size="11.5" fill="#DDF2E8">各领与蒙德城行政区在地方事务上拥有高度自治权；</text>
+    <text x="1824" y="1430" font-size="11.5" fill="#DDF2E8">但外交、国防、货币政策、全国性基础设施规划</text>
+    <text x="1824" y="1454" font-size="11.5" fill="#DDF2E8">与跨区域资源分配由联邦政府管辖——「自由与秩序</text>
+    <text x="1824" y="1478" font-size="11.5" fill="#DDF2E8">的平衡」的空间治理表达。</text>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="1660" x2="2180" y2="1660" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="1692" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德政治概况》· 蒙德自由合众国政治体系同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>

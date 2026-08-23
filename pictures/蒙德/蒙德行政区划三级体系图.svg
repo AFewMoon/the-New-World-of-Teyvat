@@ -1,0 +1,285 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2440" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#52C79B"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2440" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德行政区划三级体系图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">七个领＋一个联邦直辖行政区＋一个特殊军事管理区 · 「自由与秩序的平衡」在空间治理上的体现</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区左 · 历史沿革 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="1140" height="300" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="186" font-size="18" font-weight="700" fill="#1E3A31">历史沿革：从割据到联邦</text>
+    <line x1="110" y1="230" x2="1160" y2="230" stroke="#2E8B6E" stroke-width="3"/>
+    <circle cx="160" cy="230" r="8" fill="#1F7A5C"/><circle cx="450" cy="230" r="8" fill="#3BB08A"/><circle cx="740" cy="230" r="8" fill="#52C79B"/><circle cx="1060" cy="230" r="8" fill="#8FD4BC"/>
+    <g font-size="11.5" fill="#3E5F54">
+      <text x="160" y="214" text-anchor="middle" font-weight="700" fill="#1F7A5C">建国初期</text>
+      <text x="160" y="258" text-anchor="middle">分封功臣贵族、骑士团功勋、</text>
+      <text x="160" y="278" text-anchor="middle">教会核心——家族／骑士团／</text>
+      <text x="160" y="298" text-anchor="middle">教会三类领地，封建割据</text>
+      <text x="450" y="214" text-anchor="middle" font-weight="700" fill="#1F7A5C">割据时代</text>
+      <text x="450" y="258" text-anchor="middle">地方壁垒阻碍商品流通，领地</text>
+      <text x="450" y="278" text-anchor="middle">摩擦影响稳定；贵族特权与</text>
+      <text x="450" y="298" text-anchor="middle">平民权利冲突日益尖锐</text>
+      <text x="740" y="214" text-anchor="middle" font-weight="700" fill="#1F7A5C">渐进改革</text>
+      <text x="740" y="258" text-anchor="middle">西风骑士团改革派与风神教会</text>
+      <text x="740" y="278" text-anchor="middle">开明人士长期致力于削弱地方</text>
+      <text x="740" y="298" text-anchor="middle">势力、回收特权</text>
+      <text x="1060" y="214" text-anchor="middle" font-weight="700" fill="#1F7A5C">TE ≈1990—1998</text>
+      <text x="1060" y="258" text-anchor="middle">联邦化改革：公民院主导的政治</text>
+      <text x="1060" y="278" text-anchor="middle">浪潮废除近千年领地制度，</text>
+      <text x="1060" y="298" text-anchor="middle">确立议会自治的「领」</text>
+    </g>
+    <rect x="84" y="330" width="1092" height="92" rx="10" fill="#DDEEE6"/>
+    <text x="108" y="358" font-size="12.5" font-weight="700" fill="#1F7A5C">现行「领」的属性</text>
+    <text x="108" y="384" font-size="12" fill="#3E5F54">联邦框架下的地方自治单位：拥有自己的地方议会、行政长官和独立的财政系统，享有高度立法与行政自主权；</text>
+    <text x="108" y="408" font-size="12" fill="#3E5F54">但在国防、外交、联邦法律和货币政策上服从中央政府——相当于联邦制下的「州」或「联邦属地」。</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · 三级层级树 ═══════════ -->
+  <g>
+    <rect x="1240" y="146" width="1100" height="300" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="1264" y="186" font-size="18" font-weight="700" fill="#DDF2E8">三级架构总览</text>
+    <rect x="1288" y="206" width="1028" height="60" rx="10" fill="url(#anemoTop)"/>
+    <text x="1802" y="243" text-anchor="middle" font-size="15.5" font-weight="700" fill="#123B2D">一级：领 × 7 ＋ 联邦直辖行政区 × 1（蒙德城）＋ 特殊军事管理区 × 1（风龙废墟）</text>
+    <line x1="1550" y1="266" x2="1550" y2="290" stroke="#52C79B" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <line x1="2050" y1="266" x2="2050" y2="290" stroke="#52C79B" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <rect x="1288" y="294" width="494" height="56" rx="10" fill="#2C5A4C"/>
+    <text x="1535" y="328" text-anchor="middle" font-size="13.5" font-weight="700" fill="#DDF2E8">二级：自治市 · 行政区（普通领下设）</text>
+    <rect x="1822" y="294" width="494" height="56" rx="10" fill="#2C5A4C"/>
+    <text x="2069" y="328" text-anchor="middle" font-size="13.5" font-weight="700" fill="#DDF2E8">二级：军分区（边境要地·骑士团管理）</text>
+    <line x1="1550" y1="350" x2="1550" y2="366" stroke="#52C79B" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <line x1="2050" y1="350" x2="2050" y2="366" stroke="#52C79B" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <rect x="1288" y="370" width="494" height="52" rx="10" fill="#22493E"/>
+    <text x="1535" y="402" text-anchor="middle" font-size="13" font-weight="600" fill="#B9DFCF">三级：乡 · 镇（基层民选自治）</text>
+    <rect x="1822" y="370" width="494" height="52" rx="10" fill="#22493E"/>
+    <text x="2069" y="402" text-anchor="middle" font-size="13" font-weight="600" fill="#B9DFCF">三级：警备区（军管·级别等同乡镇）</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 一级行政区卡片矩阵 (Row 1) ═══════════ -->
+  <g font-size="12">
+    <rect x="60" y="478" width="756" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <rect x="84" y="502" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
+    <text x="106" y="524" font-size="17" font-weight="700" fill="#1E3A31">星落湖领 (Starfall Lake)</text>
+    <text x="700" y="524" font-size="13" font-weight="700" fill="#1F7A5C">首府：星落城</text>
+    <text x="84" y="556" fill="#3E5F54">· 定位：重要工业和农业基地 · 清洁能源（风能水能）战略储备区</text>
+    <text x="84" y="582" fill="#3E5F54">· 资源：星落湖水系广阔，铁矿水晶矿少量魔晶矿；大规模机械化</text>
+    <text x="84" y="606" fill="#3E5F54">  种植高产小麦与风车菊</text>
+    <text x="84" y="632" fill="#3E5F54">· 特色：全国最大风力发电场群＋大型矿业综合体＋精密机械制造；</text>
+    <text x="84" y="656" fill="#3E5F54">  推广生态修复与可持续采矿技术</text>
+    <text x="84" y="682" fill="#3E5F54">· 城市：新兴工业城市，现代化港口与铁路枢纽，重要物流中心</text>
+    <rect x="84" y="706" width="708" height="104" rx="8" fill="#3A2A2A"/>
+    <text x="108" y="734" font-size="11.5" font-weight="700" fill="#E8837A">挑战</text>
+    <text x="108" y="758" font-size="11.5" fill="#F0D9D6">工业发展的环境压力；矿产资源枯竭后的产业转型。</text>
+
+    <rect x="840" y="478" width="720" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <rect x="864" y="502" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
+    <text x="886" y="524" font-size="17" font-weight="700" fill="#1E3A31">奔狼领 (Wolvendom)</text>
+    <text x="1400" y="524" font-size="13" font-weight="700" fill="#1F7A5C">首府：奔狼堡</text>
+    <text x="864" y="556" fill="#3E5F54">· 区位：蒙德城西偏北、明冠峡西南，南部与璃月接壤</text>
+    <text x="864" y="582" fill="#3E5F54">· 经济：草原广阔森林茂密——优质羊毛与肉制品的畜牧业基地</text>
+    <text x="864" y="608" fill="#3E5F54">· 军事：骑士团重要野外训练场所＋野战训练营·边境巡逻站</text>
+    <text x="864" y="634" fill="#3E5F54">· 生态：国家级自然保护区保留古老狼群栖息地，「狼之契约」文化</text>
+    <text x="864" y="660" fill="#3E5F54">· 要塞：军事要塞转型行政中心＋骑士团野战指挥学院所在地</text>
+    <rect x="864" y="706" width="672" height="104" rx="8" fill="#3A2A2A"/>
+    <text x="888" y="734" font-size="11.5" font-weight="700" fill="#E8837A">挑战</text>
+    <text x="888" y="758" font-size="11.5" fill="#F0D9D6">保护区与经济发展的平衡；边境走私与非法越境问题。</text>
+
+    <rect x="1584" y="478" width="756" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <rect x="1608" y="502" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
+    <text x="1630" y="524" font-size="17" font-weight="700" fill="#1E3A31">清泉领 (Springvale)</text>
+    <text x="2224" y="524" font-size="13" font-weight="700" fill="#1F7A5C">首府：清泉镇</text>
+    <text x="1608" y="556" fill="#3E5F54">· 区位：中部偏南，地下泉水清澈、冲积平原肥沃、气候宜人</text>
+    <text x="1608" y="582" fill="#3E5F54">· 经济：最重要的农业基地——高品质苹果、葡萄与各类蔬果，</text>
+    <text x="1608" y="606" fill="#3E5F54">  蒙德的「果园与菜篮子」</text>
+    <text x="1608" y="632" fill="#3E5F54">· 特色：精细化有机化种植；家庭式酿酒坊与果酱作坊众多，</text>
+    <text x="1608" y="656" fill="#3E5F54">  保留最纯粹的田园风光与淳朴民风，泉水苹果酒吸引游客</text>
+    <text x="1608" y="682" fill="#3E5F54">· 传统与现代技术相结合的农场经营方式</text>
+    <rect x="1608" y="706" width="708" height="104" rx="8" fill="#3A2A2A"/>
+    <text x="1632" y="734" font-size="11.5" font-weight="700" fill="#E8837A">挑战</text>
+    <text x="1632" y="758" font-size="11.5" fill="#F0D9D6">农业生产的季节性波动；如何吸引年轻人留在农村发展。</text>
+  </g>
+
+  <!-- ═══════════ Row 2 ═══════════ -->
+  <g font-size="12">
+    <rect x="60" y="858" width="756" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <rect x="84" y="882" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
+    <text x="106" y="904" font-size="17" font-weight="700" fill="#1E3A31">晨曦酒庄领 (Dawn Winery)</text>
+    <text x="700" y="904" font-size="13" font-weight="700" fill="#1F7A5C">首府：晨曦城堡</text>
+    <text x="84" y="936" fill="#3E5F54">· 区位：南部，靠近晨曦河下游，酿酒历史悠久、葡萄园广阔</text>
+    <text x="84" y="962" fill="#3E5F54">· 经济：最重要的经济支柱——葡萄酒畅销提瓦特乃至更远，</text>
+    <text x="84" y="986" fill="#3E5F54">  蒙德的「金色名片」</text>
+    <text x="84" y="1012" fill="#3E5F54">· 文旅：高端旅游与文化交流重镇——历史酒庄、葡萄酒博物馆、</text>
+    <text x="84" y="1036" fill="#3E5F54">  美食餐厅；举办国际葡萄酒节与酿酒技术研讨会</text>
+    <text x="84" y="1062" fill="#3E5F54">· 象征：迪卢克家族古老城堡现为领政府所在地与产业象征</text>
+    <rect x="84" y="1086" width="708" height="104" rx="8" fill="#3A2A2A"/>
+    <text x="108" y="1114" font-size="11.5" font-weight="700" fill="#E8837A">挑战</text>
+    <text x="108" y="1138" font-size="11.5" fill="#F0D9D6">国际市场竞争加剧；气候变化对葡萄种植的影响。</text>
+
+    <rect x="840" y="858" width="720" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <rect x="864" y="882" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
+    <text x="886" y="904" font-size="17" font-weight="700" fill="#1E3A31">望风山地领 (Windwail Highland)</text>
+    <text x="1420" y="904" font-size="13" font-weight="700" fill="#1F7A5C">首府：鹰巢堡</text>
+    <text x="864" y="936" fill="#3E5F54">· 区位：东部，与坎瑞亚遗迹接壤；山峰险峻、原始森林茂密</text>
+    <text x="864" y="962" fill="#3E5F54">· 经济：重要的木材产地；各种珍稀动植物的栖息地</text>
+    <text x="864" y="988" fill="#3E5F54">· 科研：新兴科技与元素力研究的秘密基地——最大自然保护区＋</text>
+    <text x="864" y="1012" fill="#3E5F54">  多个联邦级实验室（元素力·生物多样性·古代遗迹）</text>
+    <text x="864" y="1038" fill="#3E5F54">· 管理：严格执行可持续伐木与生态恢复计划</text>
+    <text x="864" y="1064" fill="#3E5F54">· 要塞：山顶古老要塞现为领政府与联邦科研机构联合办公地</text>
+    <rect x="864" y="1086" width="672" height="104" rx="8" fill="#3A2A2A"/>
+    <text x="888" y="1114" font-size="11.5" font-weight="700" fill="#E8837A">挑战</text>
+    <text x="888" y="1138" font-size="11.5" fill="#F0D9D6">保护珍稀物种与资源开发的矛盾；科研活动的潜在风险。</text>
+
+    <rect x="1584" y="858" width="756" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <rect x="1608" y="882" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
+    <text x="1630" y="904" font-size="17" font-weight="700" fill="#1E3A31">荆夫领 (Dornman)</text>
+    <text x="2224" y="904" font-size="13" font-weight="700" fill="#1F7A5C">首府：荆夫市</text>
+    <text x="1608" y="936" fill="#3E5F54">· 区位：东北沿海，北部南下船只抵达的第一个大港；深水良港</text>
+    <text x="1608" y="962" fill="#3E5F54">· 支柱：对外贸易与航运 · 花卉产业 · 远洋渔业 · 信息服务业</text>
+    <text x="1608" y="988" fill="#3E5F54">· 沿革：骑士团北征补给据点 → TE≈1890 风车菊种植技术推广使</text>
+    <text x="1608" y="1012" fill="#3E5F54">  花卉业异军突起 → 新世纪依托北方航路枢纽，外贸与信息服务</text>
+    <text x="1608" y="1036" fill="#3E5F54">  （原冒险家协会分会业务转型）迅速崛起</text>
+    <text x="1608" y="1062" fill="#3E5F54">· 地位：东北部最具活力的经济增长极</text>
+    <rect x="1608" y="1086" width="708" height="104" rx="8" fill="#3A2A2A"/>
+    <text x="1632" y="1110" font-size="11.5" font-weight="700" fill="#E8837A">挑战</text>
+    <text x="1632" y="1132" font-size="11.5" fill="#F0D9D6">花卉渔业资源可持续性；北境「疗养院」军分区与民用区的安全隔离协调；开发强度与生态承载力的平衡。</text>
+  </g>
+
+  <!-- ═══════════ Row 3 ═══════════ -->
+  <g font-size="12">
+    <rect x="60" y="1238" width="756" height="356" rx="14" fill="#1F453B" stroke="#52C79B" stroke-width="2"/>
+    <rect x="84" y="1262" width="8" height="30" rx="4" fill="#52C79B"/>
+    <text x="106" y="1284" font-size="17" font-weight="700" fill="#DDF2E8">龙脊雪山领 (Dragonspine)</text>
+    <text x="700" y="1284" font-size="13" font-weight="700" fill="#52C79B">首府：雪栖堡</text>
+    <text x="84" y="1316" fill="#DDF2E8">· 区位：东南部，终年积雪的龙脊雪山核心；高海拔严寒山地</text>
+    <text x="84" y="1342" fill="#DDF2E8">· 资源：独特的古国遗迹、地脉紊乱区域、丰富元素结晶矿藏</text>
+    <text x="84" y="1368" fill="#DDF2E8">· 科研：尖端元素力研究与炼金术核心基地＋联邦级实验室、</text>
+    <text x="84" y="1392" fill="#DDF2E8">  气象观测站、冰雪极限装备测试基地</text>
+    <text x="84" y="1418" fill="#DDF2E8">· 管制：盆地核心区＝国家重点科研保护区，仅向持联邦研究许可</text>
+    <text x="84" y="1442" fill="#DDF2E8">  者开放；游客限入：单次停留 ≤2 周·离境后 3 个月内不得重返</text>
+    <text x="84" y="1468" fill="#DDF2E8">· 旅游：外围滑雪雪橇项目；雪栖堡设入境检查站与游客接待中心</text>
+    <rect x="84" y="1486" width="708" height="88" rx="8" fill="#2C5A4C"/>
+    <text x="108" y="1512" font-size="11.5" font-weight="700" fill="#52C79B">挑战</text>
+    <text x="108" y="1536" font-size="11.5" fill="#DDF2E8">科研保密与旅游经济的平衡；极端环境基建维护；古国遗迹研究风险与环境安全。</text>
+
+    <rect x="840" y="1238" width="720" height="356" rx="14" fill="url(#anemoTop)"/>
+    <rect x="864" y="1262" width="8" height="30" rx="4" fill="#123B2D"/>
+    <text x="886" y="1284" font-size="17" font-weight="700" fill="#123B2D">蒙德城行政区（联邦直辖）</text>
+    <text x="1420" y="1284" font-size="13" font-weight="700" fill="#1F453B">市政厅直辖</text>
+    <text x="864" y="1316" fill="#1F453B">· 地位：政治经济文化教育中心——联邦政府、西风骑士团总部、</text>
+    <text x="864" y="1340" fill="#1F453B">  风神教会总部驻地；地位与「领」相同的一级行政区</text>
+    <text x="864" y="1366" fill="#1F453B">· 管理：不设下级行政区，由市政厅直接管理，享高度自治权与</text>
+    <text x="864" y="1390" fill="#1F453B">  财政独立性；下设城市规划局·公共交通局·环境卫生局·</text>
+    <text x="864" y="1414" fill="#1F453B">  文化教育局等职能部门；城警察局负责城市治安</text>
+    <text x="864" y="1440" fill="#1F453B">· 港口：南缘鹰翔海滩设蒙德港——与荆夫港并称南北双核心港口，</text>
+    <text x="864" y="1464" fill="#1F453B">  兼营外贸、客滚与滨海游轮业务</text>
+    <rect x="864" y="1480" width="672" height="90" rx="8" fill="#123B2D"/>
+    <text x="888" y="1506" font-size="11.5" font-weight="700" fill="#52C79B">挑战</text>
+    <text x="888" y="1530" font-size="11.5" fill="#DDF2E8">人口膨胀带来的交通拥堵·住房压力·环境污染；保持「自由之都」的独特魅力。</text>
+
+    <rect x="1584" y="1238" width="756" height="356" rx="14" fill="#E8E2D2" stroke="#6E614A" stroke-width="1.5"/>
+    <rect x="1608" y="1262" width="8" height="30" rx="4" fill="#6E614A"/>
+    <text x="1630" y="1284" font-size="17" font-weight="700" fill="#2B2416">风龙废墟军事区（特殊军事管理区）</text>
+    <text x="1630" y="1316" fill="#3D3524">· 由来：古代文明政治中心的废墟——「风魔龙」特瓦林异变后</text>
+    <text x="1630" y="1340" fill="#3D3524">  封存至今的广袤危险区域</text>
+    <text x="1630" y="1366" fill="#3D3524">· 管制：西风骑士团长期驻扎实行军政合一管理＋屯田（军事农业）</text>
+    <text x="1630" y="1390" fill="#3D3524">  实现物资自给，减轻联邦财政负担</text>
+    <text x="1630" y="1416" fill="#3D3524">· 职能：防魔物滋生·净化元素紊乱区域·保障蒙德—璃月贸易线</text>
+    <text x="1630" y="1442" fill="#3D3524">  安全；元素力净化与遗迹研究的重要前沿阵地</text>
+    <text x="1630" y="1468" fill="#3D3524">· 架构：军事区总司令部下辖多个军分区和警备区，行政长官均为军官</text>
+    <rect x="1608" y="1486" width="708" height="88" rx="8" fill="#3A2A2A"/>
+    <text x="1632" y="1512" font-size="11.5" font-weight="700" fill="#E8837A">挑战</text>
+    <text x="1632" y="1536" font-size="11.5" fill="#F0D9D6">持续的魔物威胁；元素紊乱的复杂性；平衡军事管制与科研探索。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 二级行政区 ═══════════ -->
+  <g font-size="12">
+    <rect x="60" y="1626" width="756" height="270" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="1664" font-size="16" font-weight="700" fill="#1F7A5C">自治市 (Autonomous Municipality)</text>
+    <text x="84" y="1692" fill="#3E5F54">· 各领下辖的主要城镇或城市，区域性经济文化交通中心</text>
+    <text x="84" y="1718" fill="#3E5F54">· 独立市政议会＋民选市长；预算与政策相对独立于领政府</text>
+    <text x="84" y="1744" fill="#3E5F54">· 职能：市政建设（道路供水电力排水）· 公共服务（教育医疗</text>
+    <text x="84" y="1768" fill="#3E5F54">  消防环卫）· 市警察局 · 城市规划 · 商业管理 · 地方税收</text>
+    <rect x="84" y="1790" width="708" height="82" rx="8" fill="#DDEEE6"/>
+    <text x="108" y="1816" font-size="11.5" font-weight="700" fill="#1F7A5C">特点</text>
+    <text x="108" y="1840" font-size="11.5" fill="#3E5F54">居民直接选举市级官员——城市化进程的缩影，现代都市治理的典范。</text>
+
+    <rect x="840" y="1626" width="720" height="270" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="864" y="1664" font-size="16" font-weight="700" fill="#1F7A5C">行政区 (Administrative District)</text>
+    <text x="864" y="1692" fill="#3E5F54">· 各领下辖除自治市以外的区域——广阔农村、山区、森林、</text>
+    <text x="864" y="1718" fill="#3E5F54">  未开发地带</text>
+    <text x="864" y="1744" fill="#3E5F54">· 领政府任命行政长官管理，设行政区议会（权力小于自治市议会）</text>
+    <text x="864" y="1770" fill="#3E5F54">· 职能：大型水利设施 · 区域道路网 · 农技推广 · 环境保护 ·</text>
+    <text x="864" y="1794" fill="#3E5F54">  区域性医疗中心 · 高中教育</text>
+    <rect x="864" y="1810" width="672" height="62" rx="8" fill="#DDEEE6"/>
+    <text x="888" y="1836" font-size="11.5" font-weight="700" fill="#1F7A5C">特点</text>
+    <text x="888" y="1858" font-size="11.5" fill="#3E5F54">侧重资源管理与跨乡镇协调——领政府政策在基层落实的重要载体。</text>
+
+    <rect x="1584" y="1626" width="756" height="270" rx="14" fill="#3D3524" stroke="#C9862B" stroke-width="1.5"/>
+    <text x="1608" y="1664" font-size="16" font-weight="700" fill="#E0A94E">军分区 (Military Sub-district)</text>
+    <text x="1608" y="1692" fill="#EDE3CC">· 分布于边境地区、战略要地或特殊敏感区域</text>
+    <text x="1608" y="1718" fill="#EDE3CC">· 西风骑士团管理，军政合一；长官由高级军官兼任</text>
+    <text x="1608" y="1744" fill="#EDE3CC">· 职责：保卫边疆 · 打击走私偷渡与魔物入侵 · 边境口岸管理 ·</text>
+    <text x="1608" y="1770" fill="#EDE3CC">  紧急救援与灾害应对等部分民事职能</text>
+    <text x="1608" y="1796" fill="#EDE3CC">· 并非所有边境都设军分区——部分边境由领直接管理但加强驻防；</text>
+    <text x="1608" y="1820" fill="#EDE3CC">  风龙废墟军事区亦下辖多个军分区</text>
+    <rect x="1608" y="1836" width="708" height="36 " rx="8" fill="#1F453B"/>
+    <text x="1632" y="1860" font-size="11.5" font-weight="600" fill="#52C79B">特点：独立军事指挥权＋有限行政管理权，管理模式偏向军事化。</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 三级行政区 ═══════════ -->
+  <g font-size="12">
+    <rect x="60" y="1928" width="756" height="250" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="1966" font-size="16" font-weight="700" fill="#1F7A5C">乡 (Rural Township)</text>
+    <text x="84" y="1994" fill="#3E5F54">· 广阔农村地区最基层的行政单位；乡长由乡民选举产生，</text>
+    <text x="84" y="2020" fill="#3E5F54">  乡议会由乡民代表组成</text>
+    <text x="84" y="2046" fill="#3E5F54">· 职能：农业生产指导 · 村道小型水利与电力入户 · 农村</text>
+    <text x="84" y="2070" fill="#3E5F54">  社会保障（养老医疗互助）· 基层教育（小学）· 文化活动 · 纠纷调解</text>
+    <rect x="84" y="2090" width="708" height="64" rx="8" fill="#DDEEE6"/>
+    <text x="108" y="2114" font-size="11.5" font-weight="700" fill="#1F7A5C">特点</text>
+    <text x="108" y="2138" font-size="11.5" fill="#3E5F54">传统乡村生活与农业生产的载体，保留较强的社区自治和乡土文化。</text>
+
+    <rect x="840" y="1928" width="720" height="250" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="864" y="1966" font-size="16" font-weight="700" fill="#1F7A5C">镇 (Urban Town)</text>
+    <text x="864" y="1994" fill="#3E5F54">· 城镇化程度较高地区——行政区中心或交通枢纽；镇长由镇民</text>
+    <text x="864" y="2020" fill="#3E5F54">  选举产生，镇议会由镇民代表组成</text>
+    <text x="864" y="2046" fill="#3E5F54">· 职能：城镇规划 · 街道市场公共绿地等市政建设 · 镇医院与</text>
+    <text x="864" y="2070" fill="#3E5F54">  中学 · 镇派出所 · 商业管理与文化娱乐设施</text>
+    <rect x="864" y="2090" width="672" height="64" rx="8" fill="#DDEEE6"/>
+    <text x="888" y="2114" font-size="11.5" font-weight="700" fill="#1F7A5C">特点</text>
+    <text x="888" y="2138" font-size="11.5" fill="#3E5F54">连接乡村与城市的重要节点，承担区域性商业和服务职能。</text>
+
+    <rect x="1584" y="1928" width="756" height="250" rx="14" fill="#3D3524" stroke="#C9862B" stroke-width="1.5"/>
+    <text x="1608" y="1966" font-size="16" font-weight="700" fill="#E0A94E">警备区 (Garrison Post)</text>
+    <text x="1608" y="1994" fill="#EDE3CC">· 设于边境军分区下辖或特殊敏感区域；西风骑士团驻守、军事化管理</text>
+    <text x="1608" y="2020" fill="#EDE3CC">· 长官由骑士团军官担任；行政级别等同乡和镇，但完全服从上级军分区</text>
+    <text x="1608" y="2046" fill="#EDE3CC">· 职责：边境巡逻 · 情报收集 · 打击走私 · 反恐维稳 · 魔物清理 ·</text>
+    <text x="1608" y="2070" fill="#EDE3CC">  紧急快速反应与救援——维护边境安全的第一线力量</text>
+    <rect x="1608" y="2090" width="708" height="64" rx="8" fill="#1F453B"/>
+    <text x="1632" y="2114" font-size="11.5" font-weight="700" fill="#52C79B">特点</text>
+    <text x="1632" y="2138" font-size="11.5" fill="#DDF2E8">小型军事哨所或营地；居民以军人家属及随军服务人员为主。</text>
+  </g>
+
+  <!-- ═══════════ 特殊说明 ═══════════ -->
+  <g>
+    <rect x="60" y="2210" width="2280" height="110" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="2246" font-size="15" font-weight="700" fill="#52C79B">特殊说明</text>
+    <text x="84" y="2276" font-size="12.5" fill="#DDF2E8">· 首都蒙德城作为联邦直辖行政区不设二级行政区——市政厅直接管理城市内部事务，其下属各区（商业区·居住区·文化区等）为功能性划分而非行政区划；</text>
+    <text x="84" y="2302" font-size="12.5" fill="#DDF2E8">· 风龙废墟军事区下辖的警备区，行政级别等同其他地区的乡镇，但管理体制与职能具有鲜明的军事特色。</text>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="2348" x2="2180" y2="2348" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="2380" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德行政区划》· 蒙德自由合众国行政区划同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>

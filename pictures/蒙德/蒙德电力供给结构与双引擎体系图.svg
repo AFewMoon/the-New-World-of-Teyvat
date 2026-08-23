@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2760" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#1F7A5C"/>
+    </marker>
+    <marker id="arrowR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#C0392B"/>
+    </marker>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#1F6FA8"/>
+    </marker>
+    <marker id="axisArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#3E5F54"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2760" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德电力供给结构与双引擎体系图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">风与自由的能源哲学 · 物理风电与风元素发电双引擎 · 装机构成 · 反周期互补 · 跨境电力贸易</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区左 · 电力构成对比条形图 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="1140" height="634" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="188" font-size="20" font-weight="700" fill="#1E3A31">全国电力装机容量与年发电量构成</text>
+    <rect x="84" y="206" width="22" height="22" fill="url(#anemoTop)"/><text x="116" y="223" font-size="13" fill="#3E5F54">装机占比</text>
+    <rect x="220" y="206" width="22" height="22" fill="#C9862B"/><text x="252" y="223" font-size="13" fill="#3E5F54">年发电量占比</text>
+    <!-- scale: 12 px per 1% -->
+    <g font-size="14" fill="#1E3A31">
+      <!-- 物理风电 -->
+      <text x="296" y="272" text-anchor="end" font-weight="600">物理风力发电</text>
+      <rect x="308" y="246" width="600" height="22" rx="4" fill="url(#anemoTop)"/><text x="916" y="262" font-size="12" fill="#3E5F54">约 50%</text>
+      <rect x="308" y="272" width="660" height="22" rx="4" fill="#C9862B"/><text x="976" y="288" font-size="12" fill="#8A5B1D">约 55%</text>
+      <!-- 风元素 -->
+      <text x="296" y="344" text-anchor="end" font-weight="600">风元素发电</text>
+      <rect x="308" y="318" width="240" height="22" rx="4" fill="url(#anemoTop)"/><text x="556" y="334" font-size="12" fill="#3E5F54">约 20%</text>
+      <rect x="308" y="344" width="180" height="22" rx="4" fill="#C9862B"/><text x="496" y="360" font-size="12" fill="#8A5B1D">约 15%</text>
+      <!-- 水电 -->
+      <text x="296" y="416" text-anchor="end" font-weight="600">水力发电</text>
+      <rect x="308" y="390" width="144" height="22" rx="4" fill="url(#anemoTop)"/><text x="460" y="406" font-size="12" fill="#3E5F54">约 12%</text>
+      <rect x="308" y="416" width="168" height="22" rx="4" fill="#C9862B"/><text x="484" y="432" font-size="12" fill="#8A5B1D">约 14%</text>
+      <!-- 太阳能 -->
+      <text x="296" y="488" text-anchor="end" font-weight="600">太阳能</text>
+      <rect x="308" y="462" width="96" height="22" rx="4" fill="url(#anemoTop)"/><text x="412" y="478" font-size="12" fill="#3E5F54">约 8%</text>
+      <rect x="308" y="488" width="60" height="22" rx="4" fill="#C9862B"/><text x="376" y="504" font-size="12" fill="#8A5B1D">约 5%</text>
+      <!-- 生物质 -->
+      <text x="296" y="560" text-anchor="end" font-weight="600">生物质／其他</text>
+      <rect x="308" y="534" width="60" height="22" rx="4" fill="url(#anemoTop)"/><text x="376" y="550" font-size="12" fill="#3E5F54">约 5%</text>
+      <rect x="308" y="560" width="72" height="22" rx="4" fill="#C9862B"/><text x="388" y="576" font-size="12" fill="#8A5B1D">约 6%</text>
+      <!-- 抽蓄燃油 -->
+      <text x="296" y="632" text-anchor="end" font-weight="600">抽水蓄能与燃油调峰</text>
+      <rect x="308" y="606" width="60" height="22" rx="4" fill="url(#anemoTop)"/><text x="376" y="622" font-size="12" fill="#3E5F54">约 5%</text>
+      <text x="308" y="650" font-size="12" fill="#6B857B">发电量不计——削峰填谷与备用容量属性</text>
+      <!-- 须弥转口 -->
+      <text x="296" y="704" text-anchor="end" font-weight="600">经璃月转口须弥绿电</text>
+      <rect x="308" y="678" width="60" height="22" rx="4" fill="#1F6FA8"/><text x="376" y="694" font-size="12" fill="#1F6FA8">约 5%</text>
+      <text x="384" y="694" font-size="12" fill="#6B857B">计入消费侧·不纳入装机统计</text>
+    </g>
+    <rect x="84" y="720" width="1092" height="40" rx="8" fill="#DDEEE6"/>
+    <text x="108" y="746" font-size="13" fill="#1F7A5C" font-weight="600">结构特征：物理风电一家独大＋风元素独家补位，双引擎合计贡献约七成装机与七成发电量</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · 双引擎反周期互补曲线 ═══════════ -->
+  <g>
+    <rect x="1240" y="146" width="1100" height="634" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="1264" y="188" font-size="20" font-weight="700" fill="#DDF2E8">双引擎反周期互补出力示意</text>
+    <text x="1264" y="214" font-size="13" fill="#B9DFCF">风元素地脉节点与大气元素力场的天然共振平衡——风速越强，感应阵列输出越低</text>
+    <!-- 时段底色 -->
+    <rect x="1330" y="250" width="290" height="310" fill="#3BB08A" opacity="0.16"/>
+    <rect x="1620" y="250" width="360" height="310" fill="#C9862B" opacity="0.14"/>
+    <rect x="1980" y="250" width="320" height="310" fill="#3BB08A" opacity="0.16"/>
+    <text x="1475" y="276" text-anchor="middle" font-size="13" font-weight="700" fill="#52C79B">强风时段</text>
+    <text x="1800" y="276" text-anchor="middle" font-size="13" font-weight="700" fill="#E0A94E">弱风时段</text>
+    <text x="2140" y="276" text-anchor="middle" font-size="13" font-weight="700" fill="#52C79B">强风时段</text>
+    <!-- 坐标轴 -->
+    <line x1="1310" y1="560" x2="2310" y2="560" stroke="#3E5F54" stroke-width="2" marker-end="url(#axisArrow)"/>
+    <line x1="1310" y1="560" x2="1310" y2="245" stroke="#3E5F54" stroke-width="2" marker-end="url(#axisArrow)"/>
+    <text x="1296" y="240" text-anchor="end" font-size="12" fill="#B9DFCF">出力</text>
+    <text x="2300" y="584" text-anchor="end" font-size="12" fill="#B9DFCF">时间 →</text>
+    <!-- 物理风电曲线（亮青绿） -->
+    <path d="M 1330 400 C 1380 350 1430 330 1480 335 C 1530 340 1580 365 1620 395 C 1700 455 1780 500 1860 505 C 1930 508 1990 480 2050 430 C 2130 370 2220 340 2300 335" fill="none" stroke="#52C79B" stroke-width="4"/>
+    <!-- 风元素曲线（琥珀） -->
+    <path d="M 1330 470 C 1390 495 1450 505 1500 500 C 1560 493 1600 470 1650 430 C 1720 372 1800 340 1870 338 C 1940 338 2010 362 2080 400 C 2160 442 2240 462 2300 468" fill="none" stroke="#E0A94E" stroke-width="4" stroke-dasharray="10 6"/>
+    <!-- 图例 -->
+    <line x1="1350" y1="618" x2="1400" y2="618" stroke="#52C79B" stroke-width="4"/><text x="1412" y="623" font-size="13" fill="#DDF2E8">物理风电出力（随风速三次方波动）</text>
+    <line x1="1810" y1="618" x2="1860" y2="618" stroke="#E0A94E" stroke-width="4" stroke-dasharray="10 6"/><text x="1872" y="623" font-size="13" fill="#DDF2E8">风元素阵列出力（反向补偿）</text>
+    <rect x="1284" y="648" width="1032" height="106" rx="10" fill="#2C5A4C" stroke="#2E8B6E" stroke-width="1.2"/>
+    <text x="1308" y="678" font-size="13" font-weight="700" fill="#52C79B">反周期特性</text>
+    <text x="1308" y="704" font-size="12.5" fill="#DDF2E8">· 强风时地脉节点与大气元素力场趋于平衡，阵列输出反而较低；弱风时节点蓄积能量显著释放，输出升高。</text>
+    <text x="1308" y="730" font-size="12.5" fill="#DDF2E8">· 两条曲线天然互补，配合储能缓冲，使蒙德电力系统整体输出平滑度达到提瓦特一流水平。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区左 · 物理风电产业 ═══════════ -->
+  <g>
+    <rect x="60" y="812" width="1140" height="756" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="854" font-size="20" font-weight="700" fill="#DDF2E8">物理风力发电：成熟产业的支柱地位</text>
+    <text x="84" y="882" font-size="13" fill="#B9DFCF">星落平原数万台银白色风机昼夜不息——深入人心的国家象征 · 星落平原与荆夫领沿海为主要基地</text>
+    <!-- 关键指标四格 -->
+    <rect x="84" y="902" width="256" height="86" rx="10" fill="#2C5A4C"/>
+    <text x="212" y="938" text-anchor="middle" font-size="24" font-weight="700" fill="#52C79B">8,600+</text>
+    <text x="212" y="968" text-anchor="middle" font-size="12.5" fill="#DDF2E8">并网型风电机组（台）</text>
+    <rect x="356" y="902" width="256" height="86" rx="10" fill="#2C5A4C"/>
+    <text x="484" y="938" text-anchor="middle" font-size="24" font-weight="700" fill="#52C79B">≈1 MW</text>
+    <text x="484" y="968" text-anchor="middle" font-size="12.5" fill="#DDF2E8">单机平均容量</text>
+    <rect x="628" y="902" width="256" height="86" rx="10" fill="#2C5A4C"/>
+    <text x="756" y="938" text-anchor="middle" font-size="24" font-weight="700" fill="#52C79B">80~150 m</text>
+    <text x="756" y="968" text-anchor="middle" font-size="12.5" fill="#DDF2E8">塔架高度范围</text>
+    <rect x="900" y="902" width="276" height="86" rx="10" fill="#2C5A4C"/>
+    <text x="1038" y="938" text-anchor="middle" font-size="24" font-weight="700" fill="#52C79B">前列</text>
+    <text x="1038" y="968" text-anchor="middle" font-size="12.5" fill="#DDF2E8">总装机居提瓦特前列</text>
+    <!-- 龙头企业 -->
+    <rect x="84" y="1006" width="1092" height="74" rx="10" fill="#2C5A4C" stroke="#2E8B6E" stroke-width="1.2"/>
+    <text x="108" y="1036" font-size="13.5" font-weight="700" fill="#52C79B">龙头企业「星落风能集团」(Starfall Wind Energy Group)</text>
+    <text x="108" y="1062" font-size="12.5" fill="#DDF2E8">蒙德最大风电运营商；设备制造子公司向须弥、纳塔出口大型风机整机与叶片，产业链完整。</text>
+    <!-- 三大技术优势 -->
+    <text x="84" y="1116" font-size="14" font-weight="700" fill="#52C79B">技术研发三大领先领域（多所世界级风能研究所）</text>
+    <rect x="84" y="1132" width="348" height="196" rx="10" fill="#EAF4EE"/>
+    <text x="104" y="1162" font-size="13.5" font-weight="700" fill="#1F7A5C">大型海上风机</text>
+    <text x="104" y="1188" font-size="12" fill="#3E5F54">面向荆夫领沿海深水区域的</text>
+    <text x="104" y="1210" font-size="12" fill="#3E5F54">12 MW 级机型，叶片长度超</text>
+    <text x="104" y="1232" font-size="12" fill="#3E5F54">过 100 米；在年风速仅</text>
+    <text x="104" y="1254" font-size="12" fill="#3E5F54">6.5 m/s 的低风速海域实现</text>
+    <text x="104" y="1276" font-size="12" fill="#3E5F54">高经济性发电。</text>
+    <rect x="444" y="1132" width="348" height="196" rx="10" fill="#EAF4EE"/>
+    <text x="464" y="1162" font-size="13.5" font-weight="700" fill="#1F7A5C">低风速发电技术</text>
+    <text x="464" y="1188" font-size="12" fill="#3E5F54">针对内陆丘陵地带的低风速</text>
+    <text x="464" y="1210" font-size="12" fill="#3E5F54">工况优化设计，大幅扩展了</text>
+    <text x="464" y="1232" font-size="12" fill="#3E5F54">可经济开发的风能资源范围，</text>
+    <text x="464" y="1254" font-size="12" fill="#3E5F54">让非沿海领区也能分享风电</text>
+    <text x="464" y="1276" font-size="12" fill="#3E5F54">红利。</text>
+    <rect x="804" y="1132" width="372" height="196" rx="10" fill="#EAF4EE"/>
+    <text x="824" y="1162" font-size="13.5" font-weight="700" fill="#1F7A5C">风力预测与调度算法</text>
+    <text x="824" y="1188" font-size="12" fill="#3E5F54">与须弥 AI 技术合作开发的</text>
+    <text x="824" y="1210" font-size="12" fill="#3E5F54">风功率预测系统，可在 72 小</text>
+    <text x="824" y="1232" font-size="12" fill="#3E5F54">时内以 92% 以上的准确率预</text>
+    <text x="824" y="1254" font-size="12" fill="#3E5F54">测风力变化，支撑调度决策。</text>
+    <!-- 局限性 -->
+    <rect x="84" y="1348" width="1092" height="192" rx="10" fill="#3A2A2A" stroke="#C0392B" stroke-width="1.5"/>
+    <text x="108" y="1380" font-size="14" font-weight="700" fill="#E8837A">先天缺陷：「靠天吃饭」，难以承担基荷</text>
+    <text x="108" y="1408" font-size="12.5" fill="#F0D9D6">· 发电功率与风速的三次方成正比——风速的微小变化即导致输出功率大幅波动；</text>
+    <text x="108" y="1434" font-size="12.5" fill="#F0D9D6">· 无风或弱风时段，整个风电场群出力可能骤降至额定容量的 5% 以下；</text>
+    <text x="108" y="1460" font-size="12.5" fill="#F0D9D6">· 风暴天气下叶片必须桨距控制甚至停机保护设备；</text>
+    <text x="108" y="1486" font-size="12.5" fill="#F0D9D6">· 正是这一局限，催生了蒙德独一无二的风元素发电路线（右图）。</text>
+    <text x="84" y="1572" font-size="12" fill="#8FB5A6">※ 装备来源注记：部分早期机组技术受稻妻设备影响，全国输配电频率因此定为 60 Hz。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区右 · 风元素发电 ═══════════ -->
+  <g>
+    <rect x="1240" y="812" width="1100" height="756" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1264" y="854" font-size="20" font-weight="700" fill="#1E3A31">风元素发电：蒙德的独家技术革命</text>
+    <text x="1264" y="882" font-size="13" fill="#3E5F54">跳过「机械能再转电能」的古典范式，直接在元素层面实现能量转换 · 商业化始于约 25 年前</text>
+    <!-- 技术链 -->
+    <rect x="1264" y="900" width="1052" height="66" rx="10" fill="#1F453B"/>
+    <text x="1288" y="928" font-size="13.5" font-weight="700" fill="#52C79B">① 天然风元素地脉节点</text>
+    <text x="1288" y="952" font-size="12" fill="#DDF2E8">蒙德城周边地层深处的高浓度风元素结晶层——千风之神巴巴托斯重塑地貌时留下的力场遗迹</text>
+    <line x1="1790" y1="966" x2="1790" y2="994" stroke="#2E8B6E" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <rect x="1264" y="1000" width="1052" height="66" rx="10" fill="#1F453B"/>
+    <text x="1288" y="1028" font-size="13.5" font-weight="700" fill="#52C79B">② 元素力场共振</text>
+    <text x="1288" y="1052" font-size="12" fill="#DDF2E8">气流流经时，节点与大气之间的风元素力场变化被天然激发——风起地等节点密集区效应最显著</text>
+    <line x1="1790" y1="1066" x2="1790" y2="1094" stroke="#2E8B6E" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <rect x="1264" y="1100" width="1052" height="66" rx="10" fill="#1F453B"/>
+    <text x="1288" y="1128" font-size="13.5" font-weight="700" fill="#52C79B">③ 风元素感应阵列 (Anemo Induction Array)</text>
+    <text x="1288" y="1152" font-size="12" fill="#DDF2E8">核心组件：多组以风晶石为核心材料的感应单元，捕捉力场变化并将其转化为电能</text>
+    <line x1="1790" y1="1166" x2="1790" y2="1194" stroke="#2E8B6E" stroke-width="2.5" marker-end="url(#arrowG)"/>
+    <rect x="1264" y="1200" width="1052" height="56" rx="10" fill="url(#anemoTop)"/>
+    <text x="1288" y="1234" font-size="13.5" font-weight="700" fill="#F5FAF7">④ 特制导体中的感应电流 —— 直接并网输出</text>
+    <!-- 专利源头 -->
+    <rect x="1264" y="1284" width="1052" height="82" rx="10" fill="#DDEEE6" stroke="#2E8B6E" stroke-width="1.2"/>
+    <text x="1288" y="1314" font-size="13.5" font-weight="700" fill="#1F7A5C">专利源头：蒙德风元素研究所 (MAERI)</text>
+    <text x="1288" y="1340" font-size="12" fill="#3E5F54">风神教会出资＋西风骑士团提供安保的半官方研究机构，持有最早相关专利；技术随后向民间逐步扩散。</text>
+    <!-- 产业格局三层 -->
+    <rect x="1264" y="1382" width="1052" height="56" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1288" y="1416" font-size="12.5" fill="#1E3A31"><tspan font-weight="700" fill="#1F7A5C">大型电站：</tspan>授权 3~4 家大型运营商建于蒙德城周边、风起地等节点密集区，总装机约 3,500 MW，基荷＋调峰双重任务</text>
+    <rect x="1264" y="1448" width="1052" height="56" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1288" y="1482" font-size="12.5" fill="#1E3A31"><tspan font-weight="700" fill="#1F7A5C">分布式下放：</tspan>清风科技、流风之翼电气等精密仪器企业量产家用／工坊装置，功率 5 kW ~ 500 kW，遍布乡村偏远地区</text>
+    <rect x="1264" y="1514" width="1052" height="56" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1288" y="1548" font-size="12.5" fill="#1E3A31"><tspan font-weight="700" fill="#1F7A5C">技术出口：</tspan>须弥沙漠地区（炎热无风环境的辅助电源）；枫丹科学院水元素—风元素混合发电研究（技术授权协定）</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 其他可再生能源三小卡 ═══════════ -->
+  <g>
+    <rect x="60" y="1596" width="744" height="204" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="1636" font-size="17" font-weight="700" fill="#1F7A5C">水力发电 · ≈2,000 MW</text>
+    <text x="84" y="1664" font-size="12.5" fill="#3E5F54">晨曦河及其支流上数十座小型和中型水电站；</text>
+    <text x="84" y="1690" font-size="12.5" fill="#3E5F54">主要服务沿河酿酒业与农业灌溉用电需求；</text>
+    <text x="84" y="1716" font-size="12.5" fill="#3E5F54">季节性水位变化较大，出力随水文周期波动。</text>
+    <rect x="828" y="1596" width="744" height="204" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="852" y="1636" font-size="17" font-weight="700" fill="#1F7A5C">太阳能 · 装机占比约 8%</text>
+    <text x="852" y="1664" font-size="12.5" fill="#3E5F54">以屋顶光伏为主，集中于清泉领和晨曦酒庄领农业区，</text>
+    <text x="852" y="1690" font-size="12.5" fill="#3E5F54">为泵站、冷藏设施和温室提供补充电源；</text>
+    <text x="852" y="1716" font-size="12.5" fill="#3E5F54">龙脊雪山周边利用高海拔强日照建集中式电站，规模不大。</text>
+    <rect x="1596" y="1596" width="744" height="204" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1620" y="1636" font-size="17" font-weight="700" fill="#1F7A5C">生物质／其他 · 装机占比约 5%</text>
+    <text x="1620" y="1664" font-size="12.5" fill="#3E5F54">星落平原与晨曦酒庄领的酿酒业年产大量酒糟与废液；</text>
+    <text x="1620" y="1690" font-size="12.5" fill="#3E5F54">部分大中型酒庄建有沼气发电设施，另有秸秆燃烧；</text>
+    <text x="1620" y="1716" font-size="12.5" fill="#3E5F54">实现酿造废弃物资源化利用，循环经济样板。</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 跨境电力贸易 ═══════════ -->
+  <g>
+    <rect x="60" y="1832" width="2280" height="850" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="1874" font-size="20" font-weight="700" fill="#DDF2E8">跨境电力贸易：创汇支柱与区域互济</text>
+    <text x="84" y="1902" font-size="13" fill="#B9DFCF">碎片化的出口方结构催生 MCECC 统一协调机制——对外一个声音，对内分摊责任</text>
+
+    <!-- 左半 · 流向图 -->
+    <rect x="84" y="1926" width="1130 " height="530" rx="10" fill="#2C5A4C" stroke="#2E8B6E" stroke-width="1.2"/>
+    <text x="108" y="1958" font-size="15" font-weight="700" fill="#52C79B">电力流向示意</text>
+    <!-- 蒙德节点 -->
+    <rect x="120" y="2060" width="260" height="120" rx="12" fill="url(#anemoTop)"/>
+    <text x="250" y="2100" text-anchor="middle" font-size="17" font-weight="700" fill="#F5FAF7">蒙德</text>
+    <text x="250" y="2126" text-anchor="middle" font-size="11.5" fill="#EAF9F3">物理风电为主＋风元素为辅</text>
+    <text x="250" y="2148" text-anchor="middle" font-size="11.5" fill="#EAF9F3">多家电网·IPP·VPP 共同供应</text>
+    <!-- 璃月节点 -->
+    <rect x="880" y="2060" width="260" height="120" rx="12" fill="#8A5B1D"/>
+    <text x="1010" y="2100" text-anchor="middle" font-size="17" font-weight="700" fill="#FDF3E0">璃月国家电网</text>
+    <text x="1010" y="2126" text-anchor="middle" font-size="11.5" fill="#FDF3E0">北部负荷中心</text>
+    <text x="1010" y="2148" text-anchor="middle" font-size="11.5" fill="#FDF3E0">碳税抵扣驱动绿电需求</text>
+    <!-- 出口箭头 -->
+    <line x1="384" y1="2096" x2="872" y2="2096" stroke="#52C79B" stroke-width="5" marker-end="url(#arrowG)"/>
+    <text x="628" y="2078" text-anchor="middle" font-size="13" font-weight="700" fill="#52C79B">出口峰值输送能力 2,800 MW</text>
+    <text x="628" y="2118" text-anchor="middle" font-size="11.5" fill="#B9DFCF">TE 2008 建投初始 1,200 MW · 多次扩容</text>
+    <text x="628" y="2140" text-anchor="middle" font-size="11.5" fill="#B9DFCF">「绿色能源认证电力」溢价销售</text>
+    <text x="628" y="2162" text-anchor="middle" font-size="11.5" fill="#B9DFCF">年创汇约合 1.4~2.0 亿蒙德镑</text>
+    <!-- 反向购电 -->
+    <line x1="876" y1="2210" x2="388" y2="2210" stroke="#E8837A" stroke-width="3.5" stroke-dasharray="12 7" marker-end="url(#arrowR)"/>
+    <text x="632" y="2238" text-anchor="middle" font-size="12" font-weight="700" fill="#E8837A">反向购电：夏季风谷期单次 200~600 MW · 持续数小时至数天（冬春净出口）</text>
+    <!-- 须弥转口 -->
+    <rect x="120" y="2320" width="260" height="100" rx="12" fill="#1F6FA8"/>
+    <text x="250" y="2358" text-anchor="middle" font-size="16" font-weight="700" fill="#E4F1FA">须弥沙漠光伏</text>
+    <text x="250" y="2384" text-anchor="middle" font-size="11.5" fill="#E4F1FA">夏季日照充沛</text>
+    <text x="250" y="2406" text-anchor="middle" font-size="11.5" fill="#E4F1FA">与蒙德风季低谷互补</text>
+    <path d="M 384 2370 L 628 2370 L 628 2250" fill="none" stroke="#7FB6DC" stroke-width="3.5" stroke-dasharray="4 6" marker-end="url(#arrowB)"/>
+    <text x="520" y="2352" text-anchor="middle" font-size="11.5" fill="#B9DFCF">经璃月电网转口 · 峰值约 600 MW</text>
+    <text x="520" y="2374" text-anchor="middle" font-size="11.5" fill="#B9DFCF">璃月按转口电量收取运输费</text>
+    <!-- 碳税机制说明 -->
+    <rect x="880" y="2280" width="314" height="152" rx="10" fill="#3A2A2A" stroke="#C0392B" stroke-width="1.2"/>
+    <text x="902" y="2308" font-size="12.5" font-weight="700" fill="#E8837A">璃月溢价的底层逻辑：碳税抵扣</text>
+    <text x="902" y="2332" font-size="11" fill="#F0D9D6">璃月自 TE 2020 征收碳排放税；购买绿色认证电力</text>
+    <text x="902" y="2354" font-size="11" fill="#F0D9D6">可按量获得碳税抵扣额度——溢价由「纯成本」变</text>
+    <text x="902" y="2376" font-size="11" fill="#F0D9D6">为「税务筹划手段」，综合用电成本不高于火电。</text>
+    <text x="902" y="2404" font-size="11" fill="#C9B98A">※ 璃月消费者更认可「看得见的风电」品牌价值</text>
+    <!-- 标准差异 -->
+    <rect x="120" y="2478" width="1074" height="60" rx="10" fill="#2C5A4C"/>
+    <text x="144" y="2504" font-size="12" font-weight="700" fill="#52C79B">标准对接难点：蒙德 60 Hz（稻妻早期进口设备影响） vs 璃月 50 Hz</text>
+    <text x="144" y="2526" font-size="11.5" fill="#DDF2E8">线路两端均设变频换流站，其运维成本与功率损耗是跨境贸易的争议焦点之一。</text>
+
+    <!-- 右半 · MCECC -->
+    <rect x="1246" y="1926" width="1068" height="732" rx="10" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1270" y="1966" font-size="17" font-weight="700" fill="#1F7A5C">蒙德跨境电力协调委员会 (MCECC)</text>
+    <text x="1270" y="1992" font-size="12" fill="#3E5F54">联邦能源委员会牵头设立 · 碎片化格局下跨境贸易的唯一协调窗口</text>
+    <!-- 组成 -->
+    <rect x="1270" y="2010" width="1020" height="86" rx="10" fill="#DDEEE6"/>
+    <text x="1292" y="2038" font-size="12.5" font-weight="700" fill="#1F7A5C">组成架构</text>
+    <text x="1292" y="2062" font-size="12" fill="#3E5F54">理事长由联邦能源委员会主席兼任；主要出口运营商各派 1 名代表任委员；</text>
+    <text x="1292" y="2084" font-size="12" fill="#3E5F54">另设独立专家委员 2 名（蒙德自由大学、风神教会学者）。日常办事机构设在风起地，紧邻跨境换流站。</text>
+    <!-- 四职能 -->
+    <rect x="1270" y="2112" width="496" height="150" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1292" y="2142" font-size="13" font-weight="700" fill="#1F7A5C">① 出口配额分配</text>
+    <text x="1292" y="2168" font-size="12" fill="#3E5F54">根据各运营商供应能力与历史表现，</text>
+    <text x="1292" y="2190" font-size="12" fill="#3E5F54">协调分配对璃月的出口额度，</text>
+    <text x="1292" y="2212" font-size="12" fill="#3E5F54">避免多头抢跑与内部压价。</text>
+    <rect x="1794" y="2112" width="496" height="150" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1816" y="2142" font-size="13" font-weight="700" fill="#1F7A5C">② 统一对外谈判</text>
+    <text x="1816" y="2168" font-size="12" fill="#3E5F54">作为与璃月国家电网进行跨境交易</text>
+    <text x="1816" y="2190" font-size="12" fill="#3E5F54">谈判的唯一窗口，杜绝多家运营商</text>
+    <text x="1816" y="2212" font-size="12" fill="#3E5F54">各自为政导致的协调混乱。</text>
+    <rect x="1270" y="2278" width="496" height="150" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1292" y="2308" font-size="13" font-weight="700" fill="#1F7A5C">③ 功率平衡责任</text>
+    <text x="1292" y="2334" font-size="12" fill="#3E5F54">出口电力因风况变化大幅波动时，</text>
+    <text x="1292" y="2356" font-size="12" fill="#3E5F54">协调各成员分摊调整责任；</text>
+    <text x="1292" y="2378" font-size="12" fill="#3E5F54">未达标成员按协议支付罚金。</text>
+    <rect x="1794" y="2278" width="496" height="150" rx="10" fill="#F5FAF7" stroke="#2E8B6E"/>
+    <text x="1816" y="2308" font-size="13" font-weight="700" fill="#1F7A5C">④ 反向购电安排</text>
+    <text x="1816" y="2334" font-size="12" fill="#3E5F54">需从璃月购电或经璃月转口须弥</text>
+    <text x="1816" y="2356" font-size="12" fill="#3E5F54">绿电时，统一提出购电需求</text>
+    <text x="1816" y="2378" font-size="12" fill="#3E5F54">并分配至各成员执行。</text>
+    <!-- JWGC -->
+    <rect x="1270" y="2448" width="1020" height="130" rx="10" fill="#2C5A4C"/>
+    <text x="1292" y="2478" font-size="13" font-weight="700" fill="#52C79B">纠纷解决机制：跨境电力联合工作组 (JWGC)</text>
+    <text x="1292" y="2504" font-size="12" fill="#DDF2E8">MCECC 与璃月国家电网每年召开两次会议，评估贸易执行情况并协商价格调整方案。</text>
+    <text x="1292" y="2528" font-size="12" fill="#DDF2E8">历史上因功率波动超出约定范围的数起纠纷，均在联合工作组框架下协商解决，未诉诸正式仲裁。</text>
+    <text x="1292" y="2556" font-size="11.5" fill="#B9DFCF">季节节律：冬季／春季净出口 · 夏季／秋季偶有反向购电并叠加须弥光伏转口补谷。</text>
+    <text x="1270" y="2630" font-size="11.5" fill="#6B857B">※ 出口电量以物理风电为主、风元素发电为辅；出口方涵盖区域电网公司、独立运营商与虚拟电厂等多类主体。</text>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="2710" x2="2180" y2="2710" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="2742" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德电力概况》· 蒙德自由合众国能源体系同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>
