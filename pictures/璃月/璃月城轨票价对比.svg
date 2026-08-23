@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1000" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <rect width="2000" height="1000" fill="#FBF8F2"/>
+
+  <text x="1000" y="56" text-anchor="middle" font-size="38" font-weight="700" fill="#3B2F23">璃月城轨票价结构对比（璃月元）</text>
+  <text x="1000" y="92" text-anchor="middle" font-size="15" fill="#6B5A40">各府独立定价、遵循统一指导价框架 · 不设封顶票价 · 长者及中小学生享 50% 折扣</text>
+  <line x1="240" y1="112" x2="1760" y2="112" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1000,106 1010,112 1000,118 990,112" fill="#C9A227"/>
+
+  <!-- ═══════════ 左 · 起步价条形图 ═══════════ -->
+  <g>
+    <text x="445" y="170" text-anchor="middle" font-size="19" font-weight="700" fill="#3B2F23">起步价（元）</text>
+    <line x1="90" y1="760" x2="800" y2="760" stroke="#7A6A52" stroke-width="2.5"/>
+    <!-- 刻度 170 -->
+    <line x1="800" y1="760" x2="800" y2="240" stroke="#B7A98C" stroke-width="2"/>
+    <text x="806" y="256" font-size="12" fill="#6B5A40">200</text>
+    <text x="806" y="396" font-size="12" fill="#6B5A40">150</text>
+    <text x="806" y="536" font-size="12" fill="#6B5A40">100</text>
+    <text x="806" y="672" font-size="12" fill="#6B5A40">50</text>
+    <text x="806" y="752" font-size="12" fill="#6B5A40">0</text>
+
+    <!-- scale 420/170 = 2.47 px per 元; y = 760 - h -->
+    <g font-size="13" fill="#3B2F23">
+      <!-- 璃港 170 -->
+      <rect x="95" y="340" width="108" height="420" rx="7" fill="#C0392B"/>
+      <text x="149" y="330" text-anchor="middle" font-size="15" font-weight="700" fill="#C0392B">170</text>
+      <text x="149" y="794" text-anchor="middle" font-size="14" font-weight="700">璃港府</text>
+      <!-- 归离原 153 -->
+      <rect x="223" y="382" width="108" height="378" rx="7" fill="#4C7A8C"/>
+      <text x="277" y="372" text-anchor="middle" font-size="15" font-weight="700" fill="#4C7A8C">153</text>
+      <text x="277" y="794" text-anchor="middle" font-size="14" font-weight="700">归离原府</text>
+      <!-- 珑埠 153 -->
+      <rect x="351" y="382" width="108" height="378" rx="7" fill="#1F6FA8"/>
+      <text x="405" y="372" text-anchor="middle" font-size="15" font-weight="700" fill="#1F6FA8">153</text>
+      <text x="405" y="794" text-anchor="middle" font-size="14" font-weight="700">珑埠府</text>
+      <!-- 翠玦 127.5 -->
+      <rect x="479" y="445" width="108" height="315" rx="7" fill="#8E44AD"/>
+      <text x="533" y="435" text-anchor="middle" font-size="15" font-weight="700" fill="#8E44AD">127.5</text>
+      <text x="533" y="794" text-anchor="middle" font-size="14" font-weight="700">翠玦府</text>
+      <!-- 琉璃 102 -->
+      <rect x="607" y="508" width="108" height="252" rx="7" fill="#8B5A2B"/>
+      <text x="661" y="498" text-anchor="middle" font-size="15" font-weight="700" fill="#8B5A2B">102</text>
+      <text x="661" y="794" text-anchor="middle" font-size="14" font-weight="700">琉璃府</text>
+    </g>
+    <text x="445" y="844" text-anchor="middle" font-size="12.5" fill="#6B5A40">起步价：琉璃府最低（102 元），璃港府最高（170 元）。</text>
+  </g>
+
+  <line x1="840" y1="150" x2="840" y2="820" stroke="#C9A227" stroke-width="2"/>
+
+  <!-- ═══════════ 右 · 票价—距离曲线 ═══════════ -->
+  <g>
+    <text x="1415" y="170" text-anchor="middle" font-size="19" font-weight="700" fill="#3B2F23">单程票价 · 随里程变化（元）</text>
+    <!-- 坐标轴 -->
+    <line x1="900" y1="760" x2="1940" y2="760" stroke="#7A6A52" stroke-width="2.5"/>
+    <line x1="900" y1="240" x2="900" y2="760" stroke="#7A6A52" stroke-width="2.5"/>
+    <!-- 公里刻度 -->
+    <g font-size="12" fill="#6B5A40">
+      <text x="900" y="780" text-anchor="middle">0 km</text>
+      <line x1="1160" y1="756" x2="1160" y2="764" stroke="#7A6A52" stroke-width="1.5"/><text x="1160" y="780" text-anchor="middle">10</text>
+      <line x1="1420" y1="756" x2="1420" y2="764" stroke="#7A6A52" stroke-width="1.5"/><text x="1420" y="780" text-anchor="middle">20</text>
+      <line x1="1680" y1="756" x2="1680" y2="764" stroke="#7A6A52" stroke-width="1.5"/><text x="1680" y="780" text-anchor="middle">30</text>
+      <line x1="1940" y1="756" x2="1940" y2="764" stroke="#7A6A52" stroke-width="1.5"/><text x="1940" y="780" text-anchor="middle">40</text>
+      <text x="1940" y="806" text-anchor="end" font-size="12.5" fill="#8A7658">乘坐里程</text>
+    </g>
+    <!-- 票价刻度 y: fare = (760-y)/0.7428 ; gridlines at 100/300/500/700 -->
+    <g font-size="12" fill="#8A7658">
+      <line x1="896" y1="685.7" x2="905" y2="685.7" stroke="#7A6A52" stroke-width="1.5"/><text x="892" y="689" text-anchor="end">100</text>
+      <line x1="896" y1="537.1" x2="905" y2="537.1" stroke="#7A6A52" stroke-width="1.5"/><text x="892" y="540" text-anchor="end">300</text>
+      <line x1="896" y1="388.6" x2="905" y2="388.6" stroke="#7A6A52" stroke-width="1.5"/><text x="892" y="392" text-anchor="end">500</text>
+      <line x1="896" y1="240" x2="905" y2="240" stroke="#7A6A52" stroke-width="1.5"/><text x="892" y="244" text-anchor="end">700</text>
+    </g>
+
+    <!-- 曲线 样例点 (0,10,15,20,30,40) x: 900,1160,1290,1420,1680,1940 -->
+    <!-- 璃港 -->
+    <polyline points="900,634 1160,507 1290,444 1420,406 1680,331 1940,255" fill="none" stroke="#C0392B" stroke-width="4"/>
+    <!-- 归离原 -->
+    <polyline points="900,646 1160,533 1290,476 1420,444 1680,381 1940,318" fill="none" stroke="#4C7A8C" stroke-width="4"/>
+    <!-- 珑埠 -->
+    <polyline points="900,646 1160,520 1290,457 1420,419 1680,343 1940,268" fill="none" stroke="#1F6FA8" stroke-width="4"/>
+    <!-- 翠玦 -->
+    <polyline points="900,665 1160,552 1290,495 1420,463 1680,400 1940,337" fill="none" stroke="#8E44AD" stroke-width="4"/>
+    <!-- 琉璃 -->
+    <polyline points="900,684 1160,589 1290,542 1420,516 1680,466 1940,415" fill="none" stroke="#8B5A2B" stroke-width="4"/>
+
+    <!-- 图例 -->
+    <g font-size="13" fill="#3B2F23">
+      <rect x="1030" y="250" width="16" height="16" rx="4" fill="#C0392B"/><text x="1056" y="264">璃港府</text>
+      <rect x="1030" y="282" width="16" height="16" rx="4" fill="#4C7A8C"/><text x="1056" y="296">归离原府</text>
+      <rect x="1030" y="314" width="16" height="16" rx="4" fill="#1F6FA8"/><text x="1056" y="328">珑埠府</text>
+      <rect x="1030" y="346" width="16" height="16" rx="4" fill="#8E44AD"/><text x="1056" y="360">翠玦府</text>
+      <rect x="1030" y="378" width="16" height="16" rx="4" fill="#8B5A2B"/><text x="1056" y="392">琉璃府</text>
+    </g>
+
+    <!-- 注释 -->
+    <text x="920" y="860" font-size="12.5" fill="#6B5A40">示意：起步价 + 里程单价分段累加（0–15 km 按档一、15 km 以上按档二，各府档一/档二费率不同）。</text>
+    <text x="920" y="884" font-size="12.5" fill="#6B5A40">琉璃府整体票价最低；璃港、珑埠单价最高，远途票价上升最快。</text>
+  </g>
+
+  <!-- ═══════════ 底部 · 多日票与折扣 ═══════════ -->
+  <g>
+    <rect x="90" y="908" width="1820" height="80" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.4"/>
+    <text x="118" y="940" font-size="14.5" font-weight="700" fill="#3B2F23">折扣与多日票（元）</text>
+    <text x="118" y="966" font-size="13" fill="#3B2F23">长者（60+）及中小学生凭专用卡享 50% 折扣；三日票 / 五日票——璃港 2040/2975 · 归离原 1700/2380 · 珑埠 1785/2550 · 翠玦 1275/1870 · 琉璃 850/1275。</text>
+  </g>
+</svg>
