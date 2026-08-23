@@ -88,7 +88,7 @@
 
   <!-- ═══════════ 符箓自发电 ═══════════ -->
   <g>
-    <rect x="60" y="986" width="1130" height="560" rx="14" fill="#3B2F23" stroke="#D8AF45" stroke-width="2.5"/>
+    <rect x="60" y="986" width="1130" height="585" rx="14" fill="#3B2F23" stroke="#D8AF45" stroke-width="2.5"/>
     <rect x="84" y="1010" width="300" height="38" rx="19" fill="url(#goldTop)"/>
     <text x="234" y="1036" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">流派三 · 符箓自发电（本土）</text>
     <text x="400" y="1036" font-size="13" fill="#C9B98A">类燃料电池逻辑</text>
@@ -238,8 +238,10 @@
     <text x="1830" y="1960" font-size="12" fill="#F3EDDE">· 车载系统毫秒级在纯雷/纯岩模式间切换，两套系统理论上永不同时工作</text>
     <text x="1830" y="1986" font-size="12" fill="#F3EDDE">· 吸收切换时的微量泄露元素，作为稳定剂固化于飞轮表面</text>
     <text x="1830" y="2012" font-size="12" fill="#F3EDDE">· 双动力舱航天级绝缘屏蔽材料密封</text>
-    <text x="1806" y="2104" font-size="12" fill="#E8D8AC">起步雷元素恐怖推背感，高速巡航岩元素维持极速；造价高昂维护如流水——「财力与权力的象征」（传闻凝光私人座驾即此架构）。</text>
-    <text x="1806" y="2140" font-size="11" fill="#C9B98A">典型车型：GT 跑车定制款 · 财政部对其征收 200% 奢侈品排量税</text>
+    <text x="1806" y="2104" font-size="12" fill="#E8D8AC">起步雷元素恐怖推背感，高速巡航岩元素维持极速；</text>
+    <text x="1806" y="2130" font-size="12" fill="#E8D8AC">造价高昂维护如流水——「财力与权力的象征」</text>
+    <text x="1806" y="2156" font-size="12" fill="#E8D8AC">（传闻凝光私人座驾即此架构）。</text>
+    <text x="1806" y="2192" font-size="11" fill="#C9B98A">典型车型：GT 跑车定制款 · 财政部对其征收 200% 奢侈品排量税</text>
   </g>
 
   <!-- 脚注 -->

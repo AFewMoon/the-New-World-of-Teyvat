@@ -206,10 +206,6 @@
     <rect x="430" y="1900" width="400" height="70" rx="10" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1.5"/>
     <text x="630" y="1942" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">政务院</text>
     <!-- 四向关系 -->
-    <path d="M 430 1935 H 320 V 1990 H 250" fill="none" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
-    <path d="M 830 1935 H 940 V 1990 H 1010" fill="none" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
-    <path d="M 550 1970 V 2030 H 350 V 2060" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowGray)"/>
-    <path d="M 710 1970 V 2030 H 910 V 2060" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowGray)"/>
     <rect x="110" y="2066" width="290" height="120" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
     <text x="255" y="2100" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">众议院</text>
     <text x="255" y="2128" text-anchor="middle" font-size="12" fill="#E8D8AC">对其负责：提交年度工作报告、</text>
@@ -226,7 +222,6 @@
     <text x="1005" y="2234" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">人民党中央委员会</text>
     <text x="1005" y="2262" text-anchor="middle" font-size="12" fill="#E8D8AC">执行执政党与议会的治理蓝图；</text>
     <text x="1005" y="2286" text-anchor="middle" font-size="12" fill="#E8D8AC">党管方向、政府管执行</text>
-    <text x="630" y="2338" text-anchor="middle" font-size="12" fill="#C9B98A">实线＝负责与报告关系　虚线＝监督与派驻关系</text>
   </g>
 
   <!-- ═══════════ 底部右 · 关键人物速览 ═══════════ -->

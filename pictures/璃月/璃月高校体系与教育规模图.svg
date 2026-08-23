@@ -87,13 +87,13 @@
     <line x1="1274" y1="552" x2="2316" y2="552" stroke="#D8CCAE" stroke-width="1"/>
     <rect x="1274" y="566" width="1042" height="36" rx="8" fill="#3B2F23" stroke="#C9A227" stroke-width="1"/>
     <text x="1290" y="590" font-size="13" font-weight="700" fill="#D8AF45">① 教育部直属高校</text>
-    <text x="2316" y="590" text-anchor="end" font-size="12" fill="#E8D8AC">承担国家科研任务与高层次人才培养</text>
+    <text x="2300" y="590" text-anchor="end" font-size="12" fill="#E8D8AC">承担国家科研任务与高层次人才培养</text>
     <rect x="1274" y="608" width="1042" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
     <text x="1290" y="632" font-size="13" font-weight="700" fill="#B8922F">② 府郡属高校</text>
-    <text x="2316" y="632" text-anchor="end" font-size="12" fill="#6B5A40">服务区域产业（如珑埠航运商贸学院、层岩矿冶学院）</text>
+    <text x="2300" y="632" text-anchor="end" font-size="12" fill="#6B5A40">服务区域产业（如珑埠航运商贸学院、层岩矿冶学院）</text>
     <rect x="1274" y="650" width="1042" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
     <text x="1290" y="674" font-size="13" font-weight="700" fill="#B8922F">③ 企业与民办办学机构</text>
-    <text x="2316" y="674" text-anchor="end" font-size="12" fill="#6B5A40">国企技术学校、行业培训学院，对接一线技能需求</text>
+    <text x="2300" y="674" text-anchor="end" font-size="12" fill="#6B5A40">国企技术学校、行业培训学院，对接一线技能需求</text>
   </g>
 
   <!-- ═══════════ 第 2 区 · 重点高校一览 ═══════════ -->
@@ -254,7 +254,7 @@
     <text x="1616" y="1960" font-size="13" fill="#3B2F23">· 学历通胀：进士学位供给增多，「学历高配」显现</text>
     <text x="1616" y="1986" font-size="13" fill="#3B2F23">· 技能人才缺口：重工、矿业、物流一线高级技师紧缺，</text>
     <text x="1616" y="2012" font-size="13" fill="#3B2F23">　职业教育吸引力与待遇有待提升</text>
-    <rect x="1616" y="2038" width="688" height="166" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1616" y="2038" width="688" height="190" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
     <text x="1640" y="2072" font-size="13" font-weight="700" fill="#D8AF45">未来方向：「普及与提高」并行</text>
     <text x="1640" y="2100" font-size="13" fill="#E8D8AC">· 扩大幼儿教育覆盖，弥合城乡入园率差距</text>
     <text x="1640" y="2126" font-size="13" fill="#E8D8AC">· 强化职业教育与产业对接，畅通技能人才晋升通道</text>

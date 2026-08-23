@@ -24,15 +24,15 @@
     <text x="84" y="220" font-size="13" fill="#D8AF45">成立 2010 TE（前身七星通信处）· 总部璃港府鱼灯大厦 · 员工约 8,500 人 · TAA 骨干网份额 ≈22%</text>
     <!-- 股权饼图示意 -->
     <g>
-      <circle cx="330" cy="440" r="150" fill="none" stroke="#4A3A28" stroke-width="1"/>
-      <path d="M 330 440 L 330 290 A 150 150 0 0 1 480 440 Z" fill="url(#goldTop)"/>
-      <path d="M 330 440 L 480 440 A 150 150 0 0 1 375.6 568.9 Z" fill="#B8922F"/>
-      <path d="M 330 440 L 375.6 568.9 A 150 150 0 0 1 208.1 541.6 Z" fill="#C9A227"/>
-      <path d="M 330 440 L 208.1 541.6 A 150 150 0 0 1 330 290 Z" fill="#6B5A40"/>
-      <text x="400" y="350" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">40%</text>
-      <text x="420" y="515" text-anchor="middle" font-size="14" font-weight="700" fill="#FBF8F2">30%</text>
-      <text x="298" y="530" text-anchor="middle" font-size="13" font-weight="700" fill="#FBF8F2">20%</text>
-      <text x="243" y="405" text-anchor="middle" font-size="12" font-weight="700" fill="#FBF8F2">10%</text>
+      <circle cx="330" cy="415" r="125" fill="none" stroke="#4A3A28" stroke-width="1"/>
+      <path d="M 330 415 L 330 290 A 125 125 0 0 1 403.5 516.1 Z" fill="url(#goldTop)"/>
+      <path d="M 330 415 L 403.5 516.1 A 125 125 0 0 1 211.1 453.6 Z" fill="#B8922F"/>
+      <path d="M 330 415 L 211.1 453.6 A 125 125 0 0 1 256.5 313.9 Z" fill="#C9A227"/>
+      <path d="M 330 415 L 256.5 313.9 A 125 125 0 0 1 330 290 Z" fill="#6B5A40"/>
+      <text x="408" y="398" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">40%</text>
+      <text x="305" y="500" text-anchor="middle" font-size="13" font-weight="700" fill="#FBF8F2">30%</text>
+      <text x="252" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#FBF8F2">20%</text>
+      <text x="305" y="342" text-anchor="middle" font-size="11" font-weight="700" fill="#FBF8F2">10%</text>
     </g>
     <g font-size="13">
       <rect x="540" y="296" width="24" height="24" fill="url(#goldTop)"/><text x="580" y="314" fill="#E8D8AC">国资委直接持股 40% —— 战略方向与重大决策否决权</text>
@@ -46,14 +46,14 @@
     <!-- 分红条 -->
     <rect x="84" y="560" width="1092" height="110" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
     <text x="108" y="592" font-size="13" font-weight="700" fill="#D8AF45">年度净利润分配机制</text>
-    <rect x="108" y="606" width="327" height="30" fill="url(#goldTop)"/>
-    <rect x="435" y="606" width="437" height="30" fill="#B8922F"/>
-    <rect x="872" y="606" width="219" height="30" fill="#C9A227"/>
-    <rect x="1091" y="606" width="85" height="30" fill="#6B5A40"/>
-    <text x="271" y="627" text-anchor="middle" font-size="12" font-weight="700" fill="#3B2F23">30% 股东分红</text>
-    <text x="653" y="627" text-anchor="middle" font-size="12" font-weight="700" fill="#FBF8F2">40% 基础设施再投资与技术改造</text>
-    <text x="981" y="627" text-anchor="middle" font-size="11" font-weight="700" fill="#3B2F23">20% 运营储备</text>
-    <text x="1133" y="627" text-anchor="middle" font-size="10" font-weight="700" fill="#FBF8F2">10%</text>
+    <rect x="108" y="606" width="313" height="30" fill="url(#goldTop)"/>
+    <rect x="421" y="606" width="418" height="30" fill="#B8922F"/>
+    <rect x="839" y="606" width="209" height="30" fill="#C9A227"/>
+    <rect x="1048" y="606" width="104" height="30" fill="#6B5A40"/>
+    <text x="264" y="627" text-anchor="middle" font-size="12" font-weight="700" fill="#3B2F23">30% 股东分红</text>
+    <text x="630" y="627" text-anchor="middle" font-size="12" font-weight="700" fill="#FBF8F2">40% 基础设施再投资与技术改造</text>
+    <text x="943" y="627" text-anchor="middle" font-size="11" font-weight="700" fill="#3B2F23">20% 运营储备</text>
+    <text x="1100" y="627" text-anchor="middle" font-size="11" font-weight="700" fill="#FBF8F2">10%</text>
     <text x="108" y="658" font-size="12" fill="#E8D8AC">核心业务：全境光缆运维 · 国家数据中心 · 三大国际交换中心 · 智慧城市网络基础设施 · 企业级专线与高端定制服务</text>
     <text x="84" y="706" font-size="13" font-weight="700" fill="#D8AF45">主要部门：网络建设部 · 数据中心部 · 国际业务部 · 技术研发部（驻翠玦）· 网络安全中心 · 客户服务部 · 智慧城市事业部</text>
     <text x="84" y="736" font-size="12" fill="#C9B98A">网络安全中心运营国家网关，参与 TAA 应急中心 (CSEC) 全部合作机制；三级应急响应（蓝／黄／红），每月红蓝对抗演练。</text>
@@ -95,23 +95,23 @@
     <rect x="60" y="850" width="1140" height="480" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
     <text x="84" y="892" font-size="19" font-weight="700" fill="#3B2F23">虚拟运营商生态 (MVNO)</text>
     <text x="84" y="924" font-size="13" fill="#3B2F23">十余家虚拟运营商不拥有物理网络，租用三大基础运营商资源，面向细分长尾市场整合打包：</text>
-    <rect x="84" y="944" width="524" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
+    <rect x="84" y="944" width="534" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
     <text x="108" y="976" font-size="13" font-weight="700" fill="#B8922F">削峰平谷套餐</text>
     <text x="108" y="1002" font-size="12" fill="#3B2F23">利用闲时低价带宽推夜间下载包、周末流量包，</text>
     <text x="108" y="1028" font-size="12" fill="#3B2F23">帮助基础运营商平滑全网流量峰谷</text>
-    <rect x="632" y="944" width="524" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
-    <text x="656" y="976" font-size="13" font-weight="700" fill="#B8922F">游戏加速服务</text>
-    <text x="656" y="1002" font-size="12" fill="#3B2F23">面向庞大玩家群体，提供到稻妻、蒙德等地</text>
-    <text x="656" y="1028" font-size="12" fill="#3B2F23">游戏服务器的低延迟加速通道</text>
-    <rect x="84" y="1094" width="524" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
+    <rect x="642" y="944" width="534" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
+    <text x="666" y="976" font-size="13" font-weight="700" fill="#B8922F">游戏加速服务</text>
+    <text x="666" y="1002" font-size="12" fill="#3B2F23">面向庞大玩家群体，提供到稻妻、蒙德等地</text>
+    <text x="666" y="1028" font-size="12" fill="#3B2F23">游戏服务器的低延迟加速通道</text>
+    <rect x="84" y="1094" width="534" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
     <text x="108" y="1126" font-size="13" font-weight="700" fill="#B8922F">边缘节点内容分发</text>
     <text x="108" y="1152" font-size="12" fill="#3B2F23">在郡域网吧、坊委会部署小型缓存节点，分销热门</text>
     <text x="108" y="1178" font-size="12" fill="#3B2F23">更新与流媒体，降低跨府骨干带宽消耗</text>
-    <rect x="632" y="1094" width="524" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
-    <text x="656" y="1126" font-size="13" font-weight="700" fill="#B8922F">纯上网卡（物联网卡）</text>
-    <text x="656" y="1152" font-size="12" fill="#3B2F23">面向智能电表、共享设备、物流追踪等终端，</text>
-    <text x="656" y="1178" font-size="12" fill="#3B2F23">提供不含语音短信的纯数据卡服务</text>
-    <rect x="84" y="1244" width="1072" height="60" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+    <rect x="642" y="1094" width="534" height="130" rx="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="1.2"/>
+    <text x="666" y="1126" font-size="13" font-weight="700" fill="#B8922F">纯上网卡（物联网卡）</text>
+    <text x="666" y="1152" font-size="12" fill="#3B2F23">面向智能电表、共享设备、物流追踪等终端，</text>
+    <text x="666" y="1178" font-size="12" fill="#3B2F23">提供不含语音短信的纯数据卡服务</text>
+    <rect x="84" y="1244" width="1092" height="60" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
     <text x="108" y="1270" font-size="12" font-weight="700" fill="#D8AF45">乱象与治理：「先发展后规范」</text>
     <text x="108" y="1292" font-size="11" fill="#E8D8AC">流量虚标、隐性扣费、数据泄露等投诉居高不下；工信部推动头部兼并小规模经营者，降监管成本、提服务质量。</text>
   </g>

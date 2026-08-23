@@ -193,56 +193,57 @@
 
   <!-- ═══════════ 第 4 区左 · 干部选任阶梯 ═══════════ -->
   <g>
-    <rect x="60" y="1734" width="1140" height="540" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <rect x="60" y="1734" width="1140" height="806" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
     <text x="84" y="1774" font-size="19" font-weight="700" fill="#3B2F23">行政官僚选任：「宰相起于州部」</text>
     <!-- 阶梯 -->
     <g>
-      <rect x="110" y="2180" width="180" height="56" rx="8" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="200" y="2214" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">村 / 坊 干事</text>
-      <rect x="320" y="2100" width="180" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="410" y="2134" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">乡 / 镇 / 街道</text>
-      <rect x="530" y="2020" width="180" height="56" rx="8" fill="#6B5A40" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="620" y="2054" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">县 / 市</text>
-      <rect x="740" y="1940" width="180" height="56" rx="8" fill="#B8922F" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="830" y="1974" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">郡 / 府</text>
+      <rect x="110" y="2164" width="180" height="56" rx="8" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="200" y="2198" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">村 / 坊 干事</text>
+      <rect x="320" y="2088" width="180" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="410" y="2122" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">乡 / 镇 / 街道</text>
+      <rect x="530" y="2012" width="180" height="56" rx="8" fill="#6B5A40" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="620" y="2046" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">县 / 市</text>
+      <rect x="740" y="1936" width="180" height="56" rx="8" fill="#B8922F" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="830" y="1970" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">郡 / 府</text>
       <rect x="950" y="1860" width="200" height="56" rx="8" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1.5"/>
       <text x="1050" y="1894" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">中央部委</text>
-      <path d="M 296 2208 H 316 M 506 2128 H 526 M 716 2048 H 736 M 926 1968 H 946" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
-      <text x="640" y="1830" text-anchor="middle" font-size="14" font-weight="700" fill="#B8922F">层层选拔 · 严禁越级提拔（越级属重大政治违规）</text>
-      <text x="640" y="1858" text-anchor="middle" font-size="12" fill="#6B5A40">每一级主官必须在下一级岗位干满完整任期并留下过硬实绩</text>
+      <path d="M 296 2192 H 316 M 506 2116 H 526 M 716 2040 H 736 M 926 1964 H 946" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+      <text x="640" y="1816" text-anchor="middle" font-size="14" font-weight="700" fill="#B8922F">层层选拔 · 严禁越级提拔（越级属重大政治违规）</text>
+      <text x="640" y="1840" text-anchor="middle" font-size="12" fill="#6B5A40">每一级主官必须在下一级岗位干满完整任期并留下过硬实绩</text>
     </g>
-    <text x="84" y="2288" font-size="13" font-weight="700" fill="#B8922F">基层强制起步（≥ 2 年）</text>
-    <text x="84" y="2314" font-size="13" fill="#3B2F23">无论顶尖学府毕业生还是名门子弟，第一步必须赴最基层单位（农建村、坊委会），直接处理劳资纠纷、农机补贴、邻里矛盾。</text>
-    <text x="84" y="2340" font-size="13" fill="#3B2F23">考核不合格暂缓晋升，严重者降职降薪——有力减少脱产政客。</text>
-    <line x1="84" y1="2364" x2="1176" y2="2364" stroke="#D8CCAE" stroke-width="1"/>
-    <text x="84" y="2396" font-size="13" font-weight="700" fill="#B8922F">政务官 ⇄ 事务官「无缝转化」（旋转门）</text>
-    <text x="84" y="2422" font-size="13" fill="#3B2F23">· 国企攻克技术难题的总工程师 → 可随时出任分管产业升级的副市长（政务官）</text>
-    <text x="84" y="2448" font-size="13" fill="#3B2F23">· 统筹能力极强的县长 → 常平调交通部任具体业务司长（事务官）</text>
-    <text x="84" y="2474" font-size="13" fill="#3B2F23">· 配合监察院终身审计，确保国家机器既懂政治方向、又精通底层技术</text>
+    <text x="84" y="2284" font-size="13" font-weight="700" fill="#B8922F">基层强制起步（≥ 2 年）</text>
+    <text x="84" y="2312" font-size="13" fill="#3B2F23">无论顶尖学府毕业生还是名门子弟，第一步必须赴最基层单位（农建村、坊委会），直接处理劳资纠纷、农机补贴、邻里矛盾。</text>
+    <text x="84" y="2338" font-size="13" fill="#3B2F23">考核不合格暂缓晋升，严重者降职降薪——有力减少脱产政客。</text>
+    <line x1="84" y1="2366" x2="1176" y2="2366" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="84" y="2400" font-size="13" font-weight="700" fill="#B8922F">政务官 ⇄ 事务官「无缝转化」（旋转门）</text>
+    <text x="84" y="2428" font-size="13" fill="#3B2F23">· 国企攻克技术难题的总工程师 → 可随时出任分管产业升级的副市长（政务官）</text>
+    <text x="84" y="2456" font-size="13" fill="#3B2F23">· 统筹能力极强的县长 → 常平调交通部任具体业务司长（事务官）</text>
+    <text x="84" y="2484" font-size="13" fill="#3B2F23">· 配合监察院终身审计，确保国家机器既懂政治方向、又精通底层技术</text>
   </g>
 
   <!-- ═══════════ 第 4 区右 · 武装力量 ═══════════ -->
   <g>
-    <rect x="1240" y="1734" width="1100" height="540" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <rect x="1240" y="1734" width="1100" height="806" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
     <text x="1264" y="1774" font-size="19" font-weight="700" fill="#F7EBC8">武装力量体制：「党指挥枪」</text>
     <rect x="1400" y="1800" width="780" height="64" rx="10" fill="#4A3A28" stroke="#D8AF45" stroke-width="2"/>
     <text x="1790" y="1828" text-anchor="middle" font-size="15" font-weight="700" fill="#D8AF45">璃月人民党中央军事委员会（绝对领导）</text>
     <text x="1790" y="1852" text-anchor="middle" font-size="12" fill="#E8D8AC">武装力量不直接隶属于政务院</text>
-    <path d="M 1580 1864 V 1892 M 2000 1864 V 1892" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
-    <rect x="1330" y="1898" width="500" height="92" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
-    <text x="1580" y="1932" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">璃月宪兵部队</text>
-    <text x="1580" y="1962" text-anchor="middle" font-size="12" fill="#E8D8AC">原千岩军整编 · 对内维稳、反恐</text>
-    <rect x="1950" y="1898" width="500" height="92" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
-    <text x="2200" y="1932" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">璃月人民军</text>
-    <text x="2200" y="1962" text-anchor="middle" font-size="12" fill="#E8D8AC">对外防御、海防</text>
-    <text x="1264" y="2030" font-size="13" font-weight="700" fill="#D8AF45">军委体系内的名誉与外聘岗位</text>
-    <text x="1264" y="2058" font-size="13" fill="#F3EDDE">· 北斗：海防动员局局长兼任中央军委委员，军委层面协调海防事务</text>
-    <text x="1264" y="2084" font-size="13" fill="#F3EDDE">· 魈：退役夜叉，受聘中央警卫局名誉顾问（不驻会），特种作战与高危目标防护战术指导</text>
-    <text x="1264" y="2110" font-size="13" fill="#F3EDDE">· 申鹤：驱魔世家传人，受聘中央特殊事务局外聘专员，协助处理仙家遗物与古籍封印任务</text>
-    <rect x="1264" y="2140" width="1052" height="106" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
-    <text x="1288" y="2172" font-size="13" font-weight="700" fill="#D8AF45">国防部＝「政务窗口」与「军地协调机制」（不负责前线指挥）</text>
-    <text x="1288" y="2198" font-size="12" fill="#E8D8AC">国防预算申请与划拨 · 军工生产协调（如向机车集团采购 QYN 5 混动牵引车作后勤装备）</text>
-    <text x="1288" y="2224" font-size="12" fill="#E8D8AC">兵役征集 · 军民技术相互转化 · 与枫丹、蒙德等国例行军事外交与联合演习</text>
+    <path d="M 1522 1868 V 1896 M 2058 1868 V 1896" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="1264" y="1902" width="516" height="92" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1522" y="1936" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">璃月宪兵部队</text>
+    <text x="1522" y="1966" text-anchor="middle" font-size="12" fill="#E8D8AC">原千岩军整编 · 对内维稳、反恐</text>
+    <rect x="1800" y="1902" width="516" height="92" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="2058" y="1936" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">璃月人民军</text>
+    <text x="2058" y="1966" text-anchor="middle" font-size="12" fill="#E8D8AC">对外防御、海防</text>
+    <text x="1264" y="2040" font-size="13" font-weight="700" fill="#D8AF45">军委体系内的名誉与外聘岗位</text>
+    <text x="1264" y="2070" font-size="13" fill="#F3EDDE">· 北斗：海防动员局局长兼任中央军委委员，军委层面协调海防事务</text>
+    <text x="1264" y="2100" font-size="13" fill="#F3EDDE">· 魈：退役夜叉，受聘中央警卫局名誉顾问（不驻会），特种作战与高危目标防护战术指导</text>
+    <text x="1264" y="2130" font-size="13" fill="#F3EDDE">· 申鹤：驱魔世家传人，受聘中央特殊事务局外聘专员，协助处理仙家遗物与古籍封印任务</text>
+    <rect x="1264" y="2152" width="1052" height="118" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1288" y="2184" font-size="13" font-weight="700" fill="#D8AF45">国防部＝「政务窗口」与「军地协调机制」（不负责前线指挥）</text>
+    <text x="1288" y="2212" font-size="12" fill="#E8D8AC">国防预算申请与划拨 · 军工生产协调（如向机车集团采购 QYN 5 混动牵引车作后勤装备）</text>
+    <text x="1288" y="2240" font-size="12" fill="#E8D8AC">兵役征集 · 军民技术相互转化 · 与枫丹、蒙德等国例行军事外交与联合演习</text>
+    <text x="1790" y="2310" text-anchor="middle" font-size="12" fill="#C9B98A">宪兵对内、人民军对外——分工明确、互不隶属，共同构成党领导下的武装力量体系。</text>
   </g>
 
   <!-- 脚注 -->

@@ -52,9 +52,9 @@
 
   <!-- 邻国标签 -->
   <g font-size="20" fill="#9C948A" font-weight="700">
-    <text x="2080" y="250" text-anchor="middle">〔 至 冬 〕</text>
-    <text x="330" y="290" text-anchor="middle">〔 枫 丹 〕</text>
-    <text x="185" y="600" text-anchor="middle">〔 蒙 德 〕</text>
+    <text x="2080" y="250" text-anchor="middle">〔 蒙 德 〕</text>
+    <text x="555" y="306" text-anchor="middle">〔 枫 丹 〕</text>
+    <text x="185" y="600" text-anchor="middle">〔 至 冬 〕</text>
     <text x="320" y="1360" text-anchor="middle">〔 须 弥 〕</text>
     <text x="1980" y="1420" text-anchor="middle">〔 稻 妻 · 海 〕</text>
   </g>
@@ -64,13 +64,13 @@
     <!-- 璃港—翠玦 500km 5TB -->
     <path d="M 1300 1220 L 1180 800" stroke="#B8922F" stroke-width="6"/>
     <!-- 翠玦—归离原 500km 5TB -->
-    <path d="M 1180 800 L 880 520" stroke="#B8922F" stroke-width="6"/>
+    <path d="M 1180 800 L 1460 560" stroke="#B8922F" stroke-width="6"/>
     <!-- 翠玦—珑埠 500km 5TB -->
     <path d="M 1180 800 L 1520 380" stroke="#B8922F" stroke-width="6"/>
     <!-- 归离原—珑埠 700km 5TB -->
-    <path d="M 880 520 L 1520 380" stroke="#B8922F" stroke-width="6"/>
+    <path d="M 1460 560 L 1520 380" stroke="#B8922F" stroke-width="6"/>
     <!-- 璃港—归离原 700km 5TB -->
-    <path d="M 1300 1220 L 880 520" stroke="#B8922F" stroke-width="6"/>
+    <path d="M 1300 1220 L 1460 560" stroke="#B8922F" stroke-width="6"/>
     <!-- 璃港—琉璃 1000km 2.5TB -->
     <path d="M 1300 1220 L 430 840" stroke="#D8AF45" stroke-width="4"/>
     <!-- 琉璃—珑埠 1000km 2.5TB -->
@@ -84,18 +84,18 @@
     <rect x="1246" y="986" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
     <text x="1334" y="1006" text-anchor="middle" fill="#B8922F" font-weight="700">500 km · 5 TB/s</text>
     <text x="1334" y="1025" text-anchor="middle">沿高速铁路线</text>
-    <rect x="1348" y="562" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
-    <text x="1436" y="582" text-anchor="middle" fill="#B8922F" font-weight="700">500 km · 5 TB/s</text>
-    <text x="1436" y="601" text-anchor="middle">沿高速铁路线</text>
-    <rect x="1096" y="392" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
-    <text x="1184" y="412" text-anchor="middle" fill="#B8922F" font-weight="700">700 km · 5 TB/s</text>
-    <text x="1184" y="431" text-anchor="middle">沿高速铁路线</text>
+    <rect x="1230" y="650" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1318" y="670" text-anchor="middle" fill="#B8922F" font-weight="700">500 km · 5 TB/s</text>
+    <text x="1318" y="689" text-anchor="middle">沿高速铁路线</text>
+    <rect x="1620" y="478" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1708" y="498" text-anchor="middle" fill="#B8922F" font-weight="700">700 km · 5 TB/s</text>
+    <text x="1708" y="517" text-anchor="middle">沿高速铁路线</text>
     <rect x="908" y="618" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
     <text x="996" y="638" text-anchor="middle" fill="#B8922F" font-weight="700">500 km · 5 TB/s</text>
     <text x="996" y="657" text-anchor="middle">沿高速铁路线</text>
-    <rect x="952" y="850" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
-    <text x="1040" y="870" text-anchor="middle" fill="#B8922F" font-weight="700">700 km · 5 TB/s</text>
-    <text x="1040" y="889" text-anchor="middle">沿快速铁路线（预留升级）</text>
+    <rect x="1420" y="900" width="176" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1508" y="920" text-anchor="middle" fill="#B8922F" font-weight="700">700 km · 5 TB/s</text>
+    <text x="1508" y="939" text-anchor="middle">沿快速铁路线（预留升级）</text>
     <rect x="706" y="1024" width="196" height="46" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
     <text x="804" y="1044" text-anchor="middle" fill="#B8922F" font-weight="700">1000 km · 2.5 TB/s</text>
     <text x="804" y="1063" text-anchor="middle">沿普快铁路线</text>
@@ -113,12 +113,12 @@
     <path d="M 1350 1262 Q 1650 1370 1870 1385" stroke="#9C948A" stroke-width="3.5" stroke-dasharray="2 7"/>
     <!-- 璃港 → 须弥：专线 -->
     <path d="M 1252 1252 Q 900 1360 420 1330" stroke="#3E4A5A" stroke-width="3.5" stroke-dasharray="14 7"/>
-    <!-- 归离原 → 蒙德：专线 -->
-    <path d="M 832 512 Q 550 540 262 606" stroke="#3E4A5A" stroke-width="3.5" stroke-dasharray="14 7"/>
+    <!-- 归离原 → 蒙德：专线（东北方向出境） -->
+    <path d="M 1500 520 Q 1800 380 2010 300" stroke="#3E4A5A" stroke-width="3.5" stroke-dasharray="14 7"/>
     <!-- 珑埠 → 枫丹：专线 -->
     <path d="M 1490 340 Q 1100 210 400 282" stroke="#3E4A5A" stroke-width="3.5" stroke-dasharray="14 7"/>
-    <!-- 珑埠 → 至冬：陆缆主干网 -->
-    <path d="M 1568 352 Q 1800 300 2010 262" stroke="#9C948A" stroke-width="3.5" stroke-dasharray="2 7"/>
+    <!-- 珑埠 → 至冬：陆缆主干网（西向） -->
+    <path d="M 1470 372 Q 1000 470 300 600" stroke="#9C948A" stroke-width="3.5" stroke-dasharray="2 7"/>
   </g>
   <g font-size="12" fill="#3E4A5A">
     <rect x="1440" y="1290" width="256" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
@@ -127,15 +127,15 @@
     <rect x="620" y="1284" width="270" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
     <text x="755" y="1308" text-anchor="middle" font-weight="700">须弥方向 · 专用直连光缆</text>
     <text x="755" y="1330" text-anchor="middle">1 TB/s · 往返延迟 ≤ 15 ms</text>
-    <rect x="380" y="530" width="264" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
-    <text x="512" y="554" text-anchor="middle" font-weight="700">蒙德方向 · 专用直连光缆</text>
-    <text x="512" y="576" text-anchor="middle">1 TB/s · 经归离原府出境</text>
+    <rect x="1730" y="400" width="264" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1862" y="424" text-anchor="middle" font-weight="700">蒙德方向 · 专用直连光缆</text>
+    <text x="1862" y="446" text-anchor="middle">1 TB/s · 经归离原府出境</text>
     <rect x="700" y="222" width="280" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
     <text x="840" y="246" text-anchor="middle" font-weight="700">枫丹方向 · 专用直连光缆</text>
     <text x="840" y="268" text-anchor="middle">1.5 TB/s · 经翠玦西行 ≤ 50 ms</text>
-    <rect x="1660" y="272" width="264" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
-    <text x="1792" y="296" text-anchor="middle" font-weight="700">至冬方向 · 陆上光缆</text>
-    <text x="1792" y="318" text-anchor="middle">1 TB/s · 主干网共享带宽</text>
+    <rect x="360" y="466" width="264" height="64" rx="6" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="492" y="490" text-anchor="middle" font-weight="700">至冬方向 · 陆上光缆</text>
+    <text x="492" y="512" text-anchor="middle">1 TB/s · 主干网共享带宽</text>
   </g>
 
   <!-- ─── 节点 ─── -->
@@ -148,10 +148,10 @@
   </g>
   <!-- 归离原府 二级 -->
   <g>
-    <circle cx="880" cy="520" r="52" fill="#3B2F23" stroke="#9C948A" stroke-width="3"/>
-    <text x="880" y="514" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">归离原府</text>
-    <text x="880" y="538" text-anchor="middle" font-size="11" fill="#C9B98A">二级 CX</text>
-    <text x="880" y="598" text-anchor="middle" font-size="12" fill="#6B5A40">工业互联网与制造业数据汇聚中心</text>
+    <circle cx="1460" cy="560" r="52" fill="#3B2F23" stroke="#9C948A" stroke-width="3"/>
+    <text x="1460" y="554" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">归离原府</text>
+    <text x="1460" y="578" text-anchor="middle" font-size="11" fill="#C9B98A">二级 CX</text>
+    <text x="1460" y="638" text-anchor="middle" font-size="12" fill="#6B5A40">工业互联网与制造业数据汇聚中心</text>
   </g>
   <!-- 珑埠府 一级 -->
   <g>

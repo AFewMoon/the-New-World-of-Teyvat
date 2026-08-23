@@ -191,7 +191,7 @@
   <!-- ═══════════ 第 3 区 · 统考与升学路径 ═══════════ -->
   <g>
     <text x="1200" y="978" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">高等教育统一入学考试（统考）与升学路径</text>
-    <line x1="880" y1="992" x2="1520" y2="992" stroke="#C9A227" stroke-width="1.5"/>
+    <line x1="1010" y1="992" x2="1390" y2="992" stroke="#C9A227" stroke-width="1.5"/>
   </g>
 
   <!-- 秀才结业入口胶囊 -->

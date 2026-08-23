@@ -71,9 +71,10 @@
       <text x="1264" y="342" font-weight="700" fill="#3B2F23">一般工商业</text>
       <rect x="1440" y="326" width="770" height="30" rx="6" fill="#B8922F"/>
       <text x="2230" y="347" font-size="14" font-weight="700" fill="#3B2F23">27.2</text>
-      <text x="1264" y="394" font-weight="700" fill="#3B2F23">规模化工业（两部制＋分时综合）</text>
+      <text x="1264" y="394" font-weight="700" fill="#3B2F23">规模化工业</text>
       <rect x="1440" y="378" width="482" height="30" rx="6" fill="#9C948A"/>
       <text x="1942" y="399" font-size="14" font-weight="700" fill="#3B2F23">13 ~ 17</text>
+      <text x="2010" y="397" font-size="11" fill="#6B5A40">（两部制电价＋分时电价综合）</text>
     </g>
     <line x1="1264" y1="430" x2="2316" y2="430" stroke="#D8CCAE" stroke-width="1"/>
     <text x="1264" y="462" font-size="13" font-weight="700" fill="#B8922F">解读</text>
