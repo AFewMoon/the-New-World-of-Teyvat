@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1150" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+  </defs>
+
+  <rect width="2000" height="1150" fill="#FBF8F2"/>
+
+  <text x="1000" y="56" text-anchor="middle" font-size="38" font-weight="700" fill="#3B2F23">「岩契通」票务体系图</text>
+  <text x="1000" y="92" text-anchor="middle" font-size="15" fill="#6B5A40">Rock-Contract Pass (RCP) IC 卡 · 名义跨系统通刷 · 实质融合未畅通</text>
+  <line x1="240" y1="112" x2="1760" y2="112" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1000,106 1010,112 1000,118 990,112" fill="#C9A227"/>
+
+  <!-- ═══════════ 顶部 · 政务院督办 ═══════════ -->
+  <g>
+    <rect x="440" y="136" width="1120" height="86" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1000" y="172" text-anchor="middle" font-size="17" font-weight="700" fill="#F7EBC8">政务院督办 · 票务一体化政令（TE 2025—2030）</text>
+    <text x="1000" y="200" text-anchor="middle" font-size="12.5" fill="#D8AF45">《关于加快推进城轨票务互联互通的指导意见》——「一卡走璃月」列为督办事项</text>
+  </g>
+  <path d="M 620 222 V 270 M 620 270 H 1000 M 1000 270 V 300" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="630" y="292" font-size="12" fill="#9C948A">名义统一卡面与基础费率框架（虚线）</text>
+
+  <!-- ═══════════ 中心 · 岩契通卡 ═══════════ -->
+  <g>
+    <rect x="620" y="300" width="760" height="180" rx="22" fill="url(#goldTop)" stroke="#B8922F" stroke-width="3"/>
+    <rect x="644" y="324" width="380" height="132" rx="12" fill="#F7EBC8"/>
+    <text x="834" y="382" text-anchor="middle" font-size="26" font-weight="700" fill="#3B2F23">岩契通</text>
+    <text x="834" y="416" text-anchor="middle" font-size="13" fill="#6B5A40">Rock-Contract Pass</text>
+    <text x="834" y="440" text-anchor="middle" font-size="12" fill="#8A7658">RCP · IC 卡</text>
+    <rect x="1048" y="340" width="300" height="72" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1198" y="370" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">岩契通票务联盟</text>
+    <text x="1198" y="394" text-anchor="middle" font-size="11.5" fill="#C9B98A">璃港府牵头 · 五府城轨公司联合组建</text>
+  </g>
+
+  <!-- ═══════════ 中上 · 四个通刷对象 ═══════════ -->
+  <g>
+    <text x="1000" y="512" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">跨系统通刷范围</text>
+    <path d="M 1000 480 V 526" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <!-- 四个对象 + 两个折扣标签 -->
+    <g font-size="14" fill="#3B2F23">
+      <rect x="410" y="530" width="260" height="96" rx="11" fill="#E4EBF2" stroke="#5B7FBF" stroke-width="1.5"/>
+      <text x="540" y="564" text-anchor="middle" font-size="15" font-weight="700">城市轨道交通</text>
+      <text x="540" y="588" text-anchor="middle" font-size="12" fill="#6B5A40">五府地铁/轻轨/有轨电车</text>
+      <text x="540" y="610" text-anchor="middle" font-size="12" fill="#6B5A40">→ 公交换乘减 4.3 元</text>
+
+      <rect x="700" y="530" width="260" height="96" rx="11" fill="#E4EBF2" stroke="#C9A227" stroke-width="1.5"/>
+      <text x="830" y="564" text-anchor="middle" font-size="15" font-weight="700">市域铁路（S 字头）</text>
+      <text x="830" y="588" text-anchor="middle" font-size="12" fill="#6B5A40">国铁统一运营 · 编入 S</text>
+      <text x="830" y="610" text-anchor="middle" font-size="12" fill="#6B5A40">→ 换乘减 8.5 元</text>
+
+      <rect x="990" y="530" width="260" height="96" rx="11" fill="#E4EBF2" stroke="#B8922F" stroke-width="1.5"/>
+      <text x="1120" y="564" text-anchor="middle" font-size="15" font-weight="700">公交巴士</text>
+      <text x="1120" y="588" text-anchor="middle" font-size="12" fill="#6B5A40">各府公交</text>
+      <text x="1120" y="610" text-anchor="middle" font-size="12" fill="#6B5A40">—</text>
+
+      <rect x="1280" y="530" width="260" height="96" rx="11" fill="#E4EBF2" stroke="#7FA05A" stroke-width="1.5"/>
+      <text x="1410" y="564" text-anchor="middle" font-size="15" font-weight="700">公共自行车</text>
+      <text x="1410" y="588" text-anchor="middle" font-size="12" fill="#6B5A40">公共自行车</text>
+      <text x="1410" y="610" text-anchor="middle" font-size="12" fill="#6B5A40">—</text>
+    </g>
+
+    <rect x="410" y="642" width="1130" height="46" rx="10" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.3"/>
+    <text x="975" y="672" text-anchor="middle" font-size="13.5" fill="#3B2F23">技术能力：支持手机虚空支付（NFC 虚拟卡）</text>
+  </g>
+
+  <!-- ═══════════ 中下 · 三大壁垒 ═══════════ -->
+  <path d="M 1000 692 V 742" fill="none" stroke="#C0392B" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="1020" y="730" font-size="12.5" font-weight="700" fill="#C0392B">实质融合未畅通 · 三大壁垒</text>
+
+  <g font-size="13.5" fill="#3B2F23">
+    <!-- 1 识别终端 -->
+    <rect x="170" y="750" width="520" height="200" rx="12" fill="#FBE9E4" stroke="#C0392B" stroke-width="1.5"/>
+    <text x="192" y="786" font-size="15" font-weight="700" fill="#C0392B">① 识别终端兼容性差异</text>
+    <text x="192" y="816" font-size="12.5" fill="#6B5A40">· 璃港府新款闸机识别率 ≈ 99%</text>
+    <text x="192" y="842" font-size="12.5" fill="#6B5A40">· 琉璃府旧款闸机拒识率高达 15%</text>
+    <text x="192" y="868" font-size="12.5" fill="#6B5A40">· 高峰时段闸机口常排长龙</text>
+    <text x="192" y="906" font-size="12" fill="#8A7658">各府票务后台的密钥体系、结算系统、清分协议各自为政。</text>
+
+    <!-- 2 优惠不互通 -->
+    <rect x="740" y="750" width="520" height="200" rx="12" fill="#FBE9E4" stroke="#C0392B" stroke-width="1.5"/>
+    <text x="762" y="786" font-size="15" font-weight="700" fill="#C0392B">② 本地优惠各不相通</text>
+    <text x="762" y="816" font-size="12.5" fill="#6B5A40">· 归离原「工人通勤五日票」仅限本府发卡</text>
+    <text x="762" y="842" font-size="12.5" fill="#6B5A40">· 珑埠「长者出行补贴」仅限本府发卡</text>
+    <text x="762" y="868" font-size="12.5" fill="#6B5A40">· 跨府持卡人无法互通享受</text>
+    <text x="762" y="906" font-size="12" fill="#8A7658">优惠与补贴仅向本地发行 RCP 卡开放。</text>
+
+    <!-- 3 客诉不清 -->
+    <rect x="1310" y="750" width="520" height="200" rx="12" fill="#FBE9E4" stroke="#C0392B" stroke-width="1.5"/>
+    <text x="1332" y="786" font-size="15" font-weight="700" fill="#C0392B">③ 跨府客诉处理权限不清</text>
+    <text x="1332" y="816" font-size="12.5" fill="#6B5A40">· 珑埠储值卡在归离原扣费异常</text>
+    <text x="1332" y="842" font-size="12.5" fill="#6B5A40">· 两地后台不互通、客服相互推诿</text>
+    <text x="1332" y="868" font-size="12.5" fill="#6B5A40">· 乘客需先垫付，再回原发卡地处理</text>
+    <text x="1332" y="906" font-size="12" fill="#8A7658">跨府消费异常缺乏统一的清分与申诉通道。</text>
+  </g>
+
+  <!-- ═══════════ 底部结论 ═══════════ -->
+  <g>
+    <rect x="440" y="990" width="1120" height="92" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1000" y="1028" text-anchor="middle" font-size="16" font-weight="700" fill="#F7EBC8">现实定位</text>
+    <text x="1000" y="1056" text-anchor="middle" font-size="13" fill="#E8D8AC">识别效率、清分时效、优惠互通、客服协同等层面的实质性融合，「一卡走璃月」仍是任重道远的政治承诺。</text>
+  </g>
+  <path d="M 1000 950 V 990" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+</svg>

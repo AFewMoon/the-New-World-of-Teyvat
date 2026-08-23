@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1580" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+  </defs>
+
+  <rect width="2000" height="1580" fill="#FBF8F2"/>
+
+  <text x="1000" y="56" text-anchor="middle" font-size="38" font-weight="700" fill="#3B2F23">璃月城轨管理体制关系图</text>
+  <text x="1000" y="92" text-anchor="middle" font-size="15" fill="#6B5A40">所有权归五府人民政府 · 运营主体各异 · 市域铁路交由 LRC 统一运营（S 字头）</text>
+  <line x1="240" y1="112" x2="1760" y2="112" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1000,106 1010,112 1000,118 990,112" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 层 · 政务院交通运输部（法规/督办） ═══════════ -->
+  <g>
+    <rect x="500" y="140" width="1000" height="150" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2.5"/>
+    <text x="524" y="176" font-size="13" fill="#D8AF45">监管与政策层 · [[璃月/璃月政治概况|政务院]]组成部分</text>
+    <text x="524" y="212" font-size="21" font-weight="700" fill="#F7EBC8">政务院交通运输部</text>
+    <text x="524" y="242" font-size="13" fill="#E8D8AC">· 制定《璃月城市轨道交通安全管理指导纲要》（安检标准 · 资质 · 重大事故报告）</text>
+    <text x="524" y="266" font-size="13" fill="#E8D8AC">· 下达城轨票务互联互通政令，将「岩契通」一体化列为督办事项</text>
+  </g>
+  <path d="M 700 290 V 330 M 700 330 H 1000 M 1000 330 V 356" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 1300 290 V 330 M 1300 330 H 1000" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="1006" y="350" font-size="12" fill="#9C948A">指导纲要·督办（虚线）</text>
+
+  <!-- ═══════════ 第 2 层 · 五府人民政府 / 府国资委 ═══════════ -->
+  <g>
+    <rect x="120" y="356" width="1760" height="200" rx="16" fill="#E4EBF2" stroke="#B8922F" stroke-width="2"/>
+    <text x="1000" y="392" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">所有权层 · 五府人民政府（由府国资委代表持有）</text>
+    <text x="1000" y="414" text-anchor="middle" font-size="12" fill="#6B5A40">城轨系统独立于 [[璃月/璃月铁路概况|LRC]] 国铁干线网络；各府依据《条例》由市政执法局负责本地安全管理</text>
+
+    <!-- 五府各一个小块 + 各自运营主体 -->
+    <g font-size="14" fill="#3B2F23">
+      <rect x="170" y="432" width="290" height="104" rx="9" fill="#D8AF45" stroke="#B8922F" stroke-width="1.5"/>
+      <text x="315" y="462" text-anchor="middle" font-size="16" font-weight="700">璃港府</text>
+      <text x="315" y="486" text-anchor="middle" font-size="12" fill="#5A4A30">1050 万人 · 366 km</text>
+      <text x="315" y="516" text-anchor="middle" font-size="11.5" fill="#5A4A30">票价：府物价局审批</text>
+
+      <rect x="510" y="432" width="290" height="104" rx="9" fill="#D8AF45" stroke="#B8922F" stroke-width="1.5"/>
+      <text x="655" y="462" text-anchor="middle" font-size="16" font-weight="700">归离原府</text>
+      <text x="655" y="486" text-anchor="middle" font-size="12" fill="#5A4A30">1160 万人 · 323 km</text>
+      <text x="655" y="516" text-anchor="middle" font-size="11.5" fill="#5A4A30">票价：府物价局审批</text>
+
+      <rect x="850" y="432" width="290" height="104" rx="9" fill="#D8AF45" stroke="#B8922F" stroke-width="1.5"/>
+      <text x="995" y="462" text-anchor="middle" font-size="16" font-weight="700">珑埠府</text>
+      <text x="995" y="486" text-anchor="middle" font-size="12" fill="#5A4A30">930 万人 · 253 km</text>
+      <text x="995" y="516" text-anchor="middle" font-size="11.5" fill="#5A4A30">票价：府物价局审批</text>
+
+      <rect x="1190" y="432" width="290" height="104" rx="9" fill="#D8AF45" stroke="#B8922F" stroke-width="1.5"/>
+      <text x="1335" y="462" text-anchor="middle" font-size="16" font-weight="700">翠玦府</text>
+      <text x="1335" y="486" text-anchor="middle" font-size="12" fill="#5A4A30">700 万人 · 200 km</text>
+      <text x="1335" y="516" text-anchor="middle" font-size="11.5" fill="#5A4A30">票价：府物价局审批</text>
+
+      <rect x="1530" y="432" width="290" height="104" rx="9" fill="#E9DFC6" stroke="#9C948A" stroke-width="1.5"/>
+      <text x="1675" y="462" text-anchor="middle" font-size="16" font-weight="700">琉璃府</text>
+      <text x="1675" y="486" text-anchor="middle" font-size="12" fill="#6B5A40">360 万人 · 110 km</text>
+      <text x="1675" y="516" text-anchor="middle" font-size="11.5" fill="#6B5A40">票价：府议会审议</text>
+    </g>
+  </g>
+  <path d="M 315 556 V 600 M 655 556 V 600 M 995 556 V 600 M 1335 556 V 600 M 1675 556 V 600" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ═══════════ 第 3 层 · 运营主体 ═══════════ -->
+  <g>
+    <rect x="120" y="600" width="1330" height="470" rx="16" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
+    <text x="785" y="636" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">运营层 · 各府运营主体（所有权→运营权）</text>
+
+    <g font-size="13.5" fill="#3B2F23">
+      <!-- 璃港 -->
+      <rect x="160" y="656" width="360" height="200" rx="11" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.4"/>
+      <text x="180" y="688" font-size="16" font-weight="700">璃港轨道交通运营有限公司</text>
+      <text x="180" y="712" font-size="12" fill="#B8922F">府国资委全资国企</text>
+      <text x="180" y="738" font-size="12.5">· 6 条普线 + 4 条市域铁路</text>
+      <text x="180" y="762" font-size="12.5">· 396 km · 日均 615 万人次</text>
+      <text x="180" y="786" font-size="12.5">· 岩契通牵头（票务联盟）</text>
+
+      <!-- 归离原 -->
+      <rect x="552" y="656" width="360" height="200" rx="11" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.4"/>
+      <text x="572" y="688" font-size="16" font-weight="700">归离原轨道交通有限公司</text>
+      <text x="572" y="712" font-size="12" fill="#B8922F">府国资委绝对控股（含 15% 社会资本）</text>
+      <text x="572" y="738" font-size="12.5">· 6 条地铁 + 2 条市域，客货混跑</text>
+      <text x="572" y="762" font-size="12.5">· 323 km · 日均 439 万人次</text>
+      <text x="572" y="786" font-size="12.5">· 2/6 号线常态化货运</text>
+
+      <!-- 珑埠 -->
+      <rect x="944" y="656" width="360" height="200" rx="11" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.4"/>
+      <text x="964" y="688" font-size="16" font-weight="700">珑埠轨道交通运营公司</text>
+      <text x="964" y="712" font-size="12" fill="#B8922F">府国资委全资国企</text>
+      <text x="964" y="738" font-size="12.5">· 4 条地铁 + 1 环线 + 2 条市域</text>
+      <text x="964" y="762" font-size="12.5">· 253 km · 日均 415 万人次</text>
+      <text x="964" y="786" font-size="12.5">· 环线 GoA 4 全自动</text>
+
+      <!-- 翠玦 -->
+      <rect x="160" y="872" width="440" height="180" rx="11" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.4"/>
+      <text x="180" y="904" font-size="16" font-weight="700">翠玦轨道交通公司</text>
+      <text x="180" y="928" font-size="12" fill="#B8922F">府国资委全资（磁浮线含 LRC 研究院技术入股）</text>
+      <text x="180" y="954" font-size="12.5">· 地铁 4 线 + 磁浮 3 线 + 有轨电车 T 1</text>
+      <text x="180" y="978" font-size="12.5">· 200 km · 日均 344 万人次</text>
+      <text x="180" y="1002" font-size="12.5">· 磁浮线由璃月悬运制造公司造车</text>
+
+      <!-- 琉璃 (非公司化) -->
+      <rect x="632" y="872" width="430" height="180" rx="11" fill="#E9DFC6" stroke="#9C948A" stroke-width="1.4"/>
+      <text x="652" y="904" font-size="16" font-weight="700">琉璃府市政交通局</text>
+      <text x="652" y="928" font-size="12" fill="#6B5A40">市政部门直接运营（非公司化）· 与 LRC 合作最积极</text>
+      <text x="652" y="954" font-size="12.5">· 轻轨 3 线 + 有轨电车 2 线 + 市域 1</text>
+      <text x="652" y="978" font-size="12.5">· 110 km · 日均 44 万人次</text>
+      <text x="652" y="1002" font-size="12.5">· 「琉璃模式」轻轨起步、预留升级</text>
+    </g>
+  </g>
+
+  <!-- ═══════════ 右侧 · LRC（统一运营市域铁路） ═══════════ -->
+  <g>
+    <rect x="1500" y="600" width="480" height="470" rx="16" fill="#3B2F23" stroke="#C9A227" stroke-width="2.5"/>
+    <text x="1740" y="636" text-anchor="middle" font-size="19" font-weight="700" fill="#F7EBC8">璃月铁路总公司 LRC</text>
+    <text x="1740" y="660" text-anchor="middle" font-size="12.5" fill="#D8AF45">国铁干线网络 · 垂直一体化</text>
+
+    <g font-size="13" fill="#E8D8AC">
+      <rect x="1524" y="680" width="432" height="76" rx="9" fill="#4A3A28" stroke="#C9A227" stroke-width="1.4"/>
+      <text x="1544" y="706" font-size="14" font-weight="700" fill="#F7EBC8">统一运营市域铁路（S 字头）</text>
+      <text x="1544" y="730" font-size="12" fill="#C9B98A">车次编码、列车运用、统一调度 · 地方每年购买服务</text>
+
+      <rect x="1524" y="770" width="432" height="88" rx="9" fill="#4A3A28" stroke="#C9A227" stroke-width="1.4"/>
+      <text x="1544" y="796" font-size="14" font-weight="700" fill="#F7EBC8">三层协作机制</text>
+      <text x="1544" y="820" font-size="12" fill="#C9B98A">① 技术标准：URTCS 授权 · 机车集团造车</text>
+      <text x="1544" y="842" font-size="12" fill="#C9B98A">② 跨线运行：签订《跨线运行协议》</text>
+
+      <rect x="1524" y="872" width="432" height="88" rx="9" fill="#4A3A28" stroke="#C9A227" stroke-width="1.4"/>
+      <text x="1544" y="898" font-size="14" font-weight="700" fill="#F7EBC8">③ 重大基建协作</text>
+      <text x="1544" y="922" font-size="12" fill="#C9B98A">区域公司提供土地、股道与行车配合</text>
+      <text x="1544" y="944" font-size="12" fill="#C9B98A">（璃港公司 · 归离原公司等）</text>
+
+      <rect x="1524" y="974" width="432" height="80" rx="9" fill="#5B4A32" stroke="#C9A227" stroke-width="1.4"/>
+      <text x="1544" y="1000" font-size="14" font-weight="700" fill="#F7EBC8">琉璃合作模式</text>
+      <text x="1544" y="1024" font-size="12" fill="#C9B98A">代管市域 1 号线 · 参与 T 2 无接触网改造</text>
+    </g>
+  </g>
+
+  <!-- 运营层 → LRC 购买服务箭头 -->
+  <path d="M 1450 760 H 1500" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="1475" y="748" text-anchor="middle" font-size="11.5" fill="#B8922F">购买服务</text>
+
+  <!-- ═══════════ 底部 · 与 LRC 的市域铁路归属关系说明 ═══════════ -->
+  <g>
+    <rect x="120" y="1110" width="1760" height="150" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.4"/>
+    <text x="144" y="1146" font-size="16" font-weight="700" fill="#3B2F23">市域铁路双重属性（一体两面）</text>
+    <text x="144" y="1176" font-size="13" fill="#3B2F23">· 府的角度：规划、产权、票价 → 归各府所有</text>
+    <text x="144" y="1200" font-size="13" fill="#3B2F23">· 璃铁的角度：车次编码（S 字头）、列车运用、统一调度 → 交由 LRC 统一运营，地方每年购买服务</text>
+    <text x="144" y="1228" font-size="13" fill="#6B5A40">特殊：翠玦磁浮 2/3 号线为中低速磁浮、不与国铁直通，但仍纳入 S 字头编码体系管理。</text>
+  </g>
+  <path d="M 1402 1104 V 1074" fill="none" stroke="#B8922F" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="1420" y="1096" font-size="12" fill="#9C948A">属性：名义上岩契通共用</text>
+</svg>
