@@ -1,121 +1,121 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1240" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
-  <rect width="2000" height="1240" fill="#FBF8F2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 1240" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <rect width="3000" height="1240" fill="#FBF8F2"/>
 
-  <text x="1000" y="56" text-anchor="middle" font-size="38" font-weight="700" fill="#3B2F23">璃月城轨车辆限界对比</text>
-  <text x="1000" y="92" text-anchor="middle" font-size="15" fill="#6B5A40">全系统统一 1500 mm 标准轨距 · 车体按真实宽度比例绘制（正视图 1 m ≈ 100 px，长度 1 m ≈ 45 px）</text>
-  <line x1="240" y1="112" x2="1760" y2="112" stroke="#C9A227" stroke-width="2.5"/>
-  <polygon points="1000,106 1010,112 1000,118 990,112" fill="#C9A227"/>
+  <text x="1500" y="56" text-anchor="middle" font-size="48" font-weight="700" fill="#3B2F23">璃月城轨车辆限界对比</text>
+  <text x="1500" y="92" text-anchor="middle" font-size="18" fill="#6B5A40">全系统统一 1500 mm 标准轨距 · 车体按真实宽度比例绘制（正视图 1 m ≈ 100 px，长度 1 m ≈ 67.5 px）</text>
+  <line x1="740" y1="112" x2="2260" y2="112" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1500,106 1510,112 1500,118 1490,112" fill="#C9A227"/>
 
-  <text x="1000" y="170" text-anchor="middle" font-size="19" font-weight="700" fill="#3B2F23">正视图 · 车体截面（按宽度比例，坐于钢轨之上）</text>
+  <text x="1500" y="192" text-anchor="middle" font-size="23" font-weight="700" fill="#3B2F23">正视图 · 车体截面（按宽度比例，坐于钢轨之上）</text>
 
   <!-- 轨面基准线 -->
-  <line x1="30" y1="760" x2="1970" y2="760" stroke="#7A6A52" stroke-width="3"/>
-  <line x1="30" y1="776" x2="1970" y2="776" stroke="#B7A98C" stroke-width="2"/>
+  <line x1="100" y1="760" x2="2900" y2="760" stroke="#7A6A52" stroke-width="3"/>
+  <line x1="100" y1="776" x2="2900" y2="776" stroke="#B7A98C" stroke-width="2"/>
 
-  <!-- ══ LMR 宽3.40/340px · 中心190 · 底层[20,360] ══ -->
+  <!-- ══ LMR 宽3.40/340px · 中心340 ══ -->
   <g>
-    <rect x="20" y="346" width="340" height="414" rx="20" fill="#3B2F23" stroke="#C9A227" stroke-width="2.5"/>
-    <rect x="0" y="336" width="380" height="24" rx="11" fill="#C9A227"/>
-    <rect x="36" y="700" width="308" height="8" fill="#F5EFE0"/>
-    <rect x="30" y="452" width="320" height="8" fill="#F5EFE0"/>
-    <rect x="36" y="560" width="308" height="8" fill="#F5EFE0"/>
-    <text x="190" y="804" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">LMR</text>
-    <text x="190" y="828" text-anchor="middle" font-size="13" fill="#6B5A40">璃铁车型（市域 · 横排 2+2）</text>
-    <text x="190" y="850" text-anchor="middle" font-size="12.5" fill="#B8922F">宽 3.40 m · 单节定员 120 · AC 25 kV · 140/160 km/h</text>
+    <rect x="170" y="346" width="340" height="414" rx="20" fill="#3B2F23" stroke="#C9A227" stroke-width="2.5"/>
+    <rect x="150" y="336" width="380" height="24" rx="11" fill="#C9A227"/>
+    <rect x="186" y="700" width="308" height="8" fill="#F5EFE0"/>
+    <rect x="180" y="452" width="320" height="8" fill="#F5EFE0"/>
+    <rect x="186" y="560" width="308" height="8" fill="#F5EFE0"/>
+    <text x="340" y="804" text-anchor="middle" font-size="21" font-weight="700" fill="#3B2F23">LMR</text>
+    <text x="340" y="828" text-anchor="middle" font-size="15" fill="#6B5A40">璃铁车型（市域 · 横排 2+2）</text>
+    <text x="340" y="850" text-anchor="middle" font-size="14.5" fill="#B8922F">宽 3.40 m · 单节定员 120 · AC 25 kV · 140/160 km/h</text>
   </g>
 
-  <!-- ══ LMA 宽3.20/320px · 中心525 · [365,685] ══ -->
+  <!-- ══ LMA 宽3.20/320px · 中心862 ══ -->
   <g>
-    <rect x="365" y="356" width="320" height="404" rx="20" fill="#3B2F23" stroke="#3E8E8E" stroke-width="2.5"/>
-    <rect x="349" y="346" width="352" height="24" rx="11" fill="#3E8E8E"/>
-    <rect x="380" y="700" width="290" height="8" fill="#F5EFE0"/>
-    <rect x="374" y="452" width="302" height="8" fill="#F5EFE0"/>
-    <rect x="380" y="560" width="290" height="8" fill="#F5EFE0"/>
-    <text x="525" y="804" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">LMA</text>
-    <text x="525" y="828" text-anchor="middle" font-size="13" fill="#6B5A40">A 型车（地铁 · 重轨）</text>
-    <text x="525" y="850" text-anchor="middle" font-size="12.5" fill="#B8922F">宽 3.20 m · 单节定员 330 · DC 750/1500 V · 80~100 km/h</text>
+    <rect x="702" y="356" width="320" height="404" rx="20" fill="#3B2F23" stroke="#3E8E8E" stroke-width="2.5"/>
+    <rect x="686" y="346" width="352" height="24" rx="11" fill="#3E8E8E"/>
+    <rect x="717" y="700" width="290" height="8" fill="#F5EFE0"/>
+    <rect x="711" y="452" width="302" height="8" fill="#F5EFE0"/>
+    <rect x="717" y="560" width="290" height="8" fill="#F5EFE0"/>
+    <text x="862" y="804" text-anchor="middle" font-size="21" font-weight="700" fill="#3B2F23">LMA</text>
+    <text x="862" y="828" text-anchor="middle" font-size="15" fill="#6B5A40">A 型车（地铁 · 重轨）</text>
+    <text x="862" y="850" text-anchor="middle" font-size="14.5" fill="#B8922F">宽 3.20 m · 单节定员 330 · DC 750/1500 V · 80~100 km/h</text>
   </g>
 
-  <!-- ══ LMB 宽3.00/300px · 中心860 · [710,1010] ══ -->
+  <!-- ══ LMB 宽3.00/300px · 中心1358 ══ -->
   <g>
-    <rect x="710" y="366" width="300" height="394" rx="20" fill="#3B2F23" stroke="#5B7FBF" stroke-width="2.5"/>
-    <rect x="696" y="356" width="328" height="24" rx="11" fill="#5B7FBF"/>
-    <rect x="725" y="700" width="270" height="8" fill="#F5EFE0"/>
-    <rect x="720" y="452" width="280" height="8" fill="#F5EFE0"/>
-    <rect x="725" y="560" width="270" height="8" fill="#F5EFE0"/>
-    <text x="860" y="804" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">LMB</text>
-    <text x="860" y="828" text-anchor="middle" font-size="13" fill="#6B5A40">B 型车（地铁）</text>
-    <text x="860" y="850" text-anchor="middle" font-size="12.5" fill="#B8922F">宽 3.00 m · 单节定员 255 · DC 750/1500 V · 80~120 km/h</text>
+    <rect x="1208" y="366" width="300" height="394" rx="20" fill="#3B2F23" stroke="#5B7FBF" stroke-width="2.5"/>
+    <rect x="1194" y="356" width="328" height="24" rx="11" fill="#5B7FBF"/>
+    <rect x="1223" y="700" width="270" height="8" fill="#F5EFE0"/>
+    <rect x="1218" y="452" width="280" height="8" fill="#F5EFE0"/>
+    <rect x="1223" y="560" width="270" height="8" fill="#F5EFE0"/>
+    <text x="1358" y="804" text-anchor="middle" font-size="21" font-weight="700" fill="#3B2F23">LMB</text>
+    <text x="1358" y="828" text-anchor="middle" font-size="15" fill="#6B5A40">B 型车（地铁）</text>
+    <text x="1358" y="850" text-anchor="middle" font-size="14.5" fill="#B8922F">宽 3.00 m · 单节定员 255 · DC 750/1500 V · 80~120 km/h</text>
   </g>
 
-  <!-- ══ LMF 宽2.80/280px · 中心1195 · [1055,1335] ══ -->
+  <!-- ══ LMF 宽2.80/280px · 中心1830 ══ -->
   <g>
-    <rect x="1055" y="370" width="280" height="390" rx="20" fill="#3B2F23" stroke="#B06AB3" stroke-width="2.5"/>
-    <rect x="1043" y="360" width="304" height="24" rx="11" fill="#B06AB3"/>
-    <rect x="1069" y="700" width="252" height="8" fill="#F5EFE0"/>
-    <rect x="1064" y="452" width="262" height="8" fill="#F5EFE0"/>
-    <rect x="1069" y="560" width="252" height="8" fill="#F5EFE0"/>
-    <text x="1195" y="804" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">LMF</text>
-    <text x="1195" y="828" text-anchor="middle" font-size="13" fill="#6B5A40">磁浮（3 C 编组）</text>
-    <text x="1195" y="850" text-anchor="middle" font-size="12.5" fill="#B8922F">宽 2.80 m · 单节定员 120 · DC 1500 V 轨旁 · 100~140 km/h</text>
+    <rect x="1690" y="370" width="280" height="390" rx="20" fill="#3B2F23" stroke="#B06AB3" stroke-width="2.5"/>
+    <rect x="1678" y="360" width="304" height="24" rx="11" fill="#B06AB3"/>
+    <rect x="1704" y="700" width="252" height="8" fill="#F5EFE0"/>
+    <rect x="1699" y="452" width="262" height="8" fill="#F5EFE0"/>
+    <rect x="1704" y="560" width="252" height="8" fill="#F5EFE0"/>
+    <text x="1830" y="804" text-anchor="middle" font-size="21" font-weight="700" fill="#3B2F23">LMF</text>
+    <text x="1830" y="828" text-anchor="middle" font-size="15" fill="#6B5A40">磁浮（3 C 编组）</text>
+    <text x="1830" y="850" text-anchor="middle" font-size="14.5" fill="#B8922F">宽 2.80 m · 单节定员 120 · DC 1500 V 轨旁 · 100~140 km/h</text>
   </g>
 
-  <!-- ══ LMC 宽2.70/270px · 中心1530 · [1395,1665] ══ -->
+  <!-- ══ LMC 宽2.70/270px · 中心2285 ══ -->
   <g>
-    <rect x="1395" y="374" width="270" height="386" rx="20" fill="#3B2F23" stroke="#C97A2F" stroke-width="2.5"/>
-    <rect x="1383" y="364" width="294" height="24" rx="11" fill="#C97A2F"/>
-    <rect x="1409" y="700" width="242" height="8" fill="#F5EFE0"/>
-    <rect x="1404" y="452" width="252" height="8" fill="#F5EFE0"/>
-    <rect x="1409" y="560" width="242" height="8" fill="#F5EFE0"/>
-    <text x="1530" y="804" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">LMC</text>
-    <text x="1530" y="828" text-anchor="middle" font-size="13" fill="#6B5A40">轻轨 C 型车</text>
-    <text x="1530" y="850" text-anchor="middle" font-size="12.5" fill="#B8922F">宽 2.70 m · 单节定员 185 · DC 750 V 接触网 · 60~100 km/h</text>
+    <rect x="2150" y="374" width="270" height="386" rx="20" fill="#3B2F23" stroke="#C97A2F" stroke-width="2.5"/>
+    <rect x="2138" y="364" width="294" height="24" rx="11" fill="#C97A2F"/>
+    <rect x="2164" y="700" width="242" height="8" fill="#F5EFE0"/>
+    <rect x="2159" y="452" width="252" height="8" fill="#F5EFE0"/>
+    <rect x="2164" y="560" width="242" height="8" fill="#F5EFE0"/>
+    <text x="2285" y="804" text-anchor="middle" font-size="21" font-weight="700" fill="#3B2F23">LMC</text>
+    <text x="2285" y="828" text-anchor="middle" font-size="15" fill="#6B5A40">轻轨 C 型车</text>
+    <text x="2285" y="850" text-anchor="middle" font-size="14.5" fill="#B8922F">宽 2.70 m · 单节定员 185 · DC 750 V 接触网 · 60~100 km/h</text>
   </g>
 
-  <!-- ══ LMT 宽2.40/240px · 中心1865 · [1745,1985] ══ -->
+  <!-- ══ LMT 宽2.40/240px · 中心2720 ══ -->
   <g>
-    <rect x="1745" y="378" width="240" height="382" rx="20" fill="#3B2F23" stroke="#7FA05A" stroke-width="2.5"/>
-    <rect x="1733" y="368" width="264" height="24" rx="11" fill="#7FA05A"/>
-    <rect x="1759" y="700" width="212" height="8" fill="#F5EFE0"/>
-    <rect x="1754" y="452" width="222" height="8" fill="#F5EFE0"/>
-    <rect x="1759" y="560" width="212" height="8" fill="#F5EFE0"/>
-    <text x="1865" y="804" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">LMT</text>
-    <text x="1865" y="828" text-anchor="middle" font-size="13" fill="#6B5A40">有轨电车（每模块）</text>
-    <text x="1865" y="850" text-anchor="middle" font-size="12.5" fill="#B8922F">宽 2.40 m · 单模块约 60 · DC 750 V / 超级电容</text>
+    <rect x="2600" y="378" width="240" height="382" rx="20" fill="#3B2F23" stroke="#7FA05A" stroke-width="2.5"/>
+    <rect x="2588" y="368" width="264" height="24" rx="11" fill="#7FA05A"/>
+    <rect x="2614" y="700" width="212" height="8" fill="#F5EFE0"/>
+    <rect x="2609" y="452" width="222" height="8" fill="#F5EFE0"/>
+    <rect x="2614" y="560" width="212" height="8" fill="#F5EFE0"/>
+    <text x="2720" y="804" text-anchor="middle" font-size="21" font-weight="700" fill="#3B2F23">LMT</text>
+    <text x="2720" y="828" text-anchor="middle" font-size="15" fill="#6B5A40">有轨电车（每模块）</text>
+    <text x="2720" y="850" text-anchor="middle" font-size="14.5" fill="#B8922F">宽 2.40 m · 单模块约 60 · DC 750 V / 超级电容</text>
   </g>
 
-  <line x1="230" y1="868" x2="1770" y2="868" stroke="#C9A227" stroke-width="2"/>
+  <line x1="500" y1="868" x2="2500" y2="868" stroke="#C9A227" stroke-width="2"/>
 
   <!-- ═══════════ 长度对比 ═══════════ -->
-  <text x="1000" y="912" text-anchor="middle" font-size="19" font-weight="700" fill="#3B2F23">车体长度对比（1 m ≈ 45 px）</text>
+  <text x="1500" y="920" text-anchor="middle" font-size="23" font-weight="700" fill="#3B2F23">车体长度对比（1 m ≈ 67.5 px）</text>
 
-  <!-- 长度条形 名称列x=200, 条起点x=360 -->
-  <g font-size="14" fill="#3B2F23">
-    <!-- LMR 24.4m → 1098 -->
-    <text x="200" y="922">LMR</text>
-    <text x="200" y="945" font-size="12" fill="#8A7658">24.4 m</text>
-    <rect x="360" y="912" width="1098" height="34" rx="7" fill="#C9A227"/>
+  <!-- 长度条形 名称列x=300, 条起点x=460 -->
+  <g font-size="17" fill="#3B2F23">
+    <!-- LMR 24.4m → 1647 -->
+    <text x="300" y="958">LMR</text>
+    <text x="300" y="981" font-size="14.5" fill="#8A7658">24.4 m</text>
+    <rect x="460" y="948" width="1647" height="33" rx="7" fill="#C9A227"/>
     <!-- LMA 24.4m -->
-    <text x="200" y="976">LMA</text>
-    <text x="200" y="999" font-size="12" fill="#8A7658">24.4 m</text>
-    <rect x="360" y="966" width="1098" height="34" rx="7" fill="#3E8E8E"/>
-    <!-- LMB 22m → 990 -->
-    <text x="200" y="1030">LMB</text>
-    <text x="200" y="1053" font-size="12" fill="#8A7658">22.0 m</text>
-    <rect x="360" y="1020" width="990" height="34" rx="7" fill="#5B7FBF"/>
-    <!-- LMF 20m → 900 -->
-    <text x="200" y="1084">LMF</text>
-    <text x="200" y="1107" font-size="12" fill="#8A7658">20.0 m</text>
-    <rect x="360" y="1074" width="900" height="34" rx="7" fill="#B06AB3"/>
-    <!-- LMC 19m → 855 -->
-    <text x="200" y="1138">LMC</text>
-    <text x="200" y="1161" font-size="12" fill="#8A7658">19.0 m</text>
-    <rect x="360" y="1128" width="855" height="34" rx="7" fill="#C97A2F"/>
-    <!-- LMT 12.8m → 576 -->
-    <text x="200" y="1192">LMT</text>
-    <text x="200" y="1215" font-size="12" fill="#8A7658">≤12.8 m</text>
-    <rect x="360" y="1182" width="576" height="34" rx="7" fill="#7FA05A"/>
+    <text x="300" y="1004">LMA</text>
+    <text x="300" y="1027" font-size="14.5" fill="#8A7658">24.4 m</text>
+    <rect x="460" y="994" width="1647" height="33" rx="7" fill="#3E8E8E"/>
+    <!-- LMB 22m → 1485 -->
+    <text x="300" y="1050">LMB</text>
+    <text x="300" y="1073" font-size="14.5" fill="#8A7658">22.0 m</text>
+    <rect x="460" y="1040" width="1485" height="33" rx="7" fill="#5B7FBF"/>
+    <!-- LMF 20m → 1350 -->
+    <text x="300" y="1096">LMF</text>
+    <text x="300" y="1119" font-size="14.5" fill="#8A7658">20.0 m</text>
+    <rect x="460" y="1086" width="1350" height="33" rx="7" fill="#B06AB3"/>
+    <!-- LMC 19m → 1283 -->
+    <text x="300" y="1142">LMC</text>
+    <text x="300" y="1165" font-size="14.5" fill="#8A7658">19.0 m</text>
+    <rect x="460" y="1132" width="1283" height="33" rx="7" fill="#C97A2F"/>
+    <!-- LMT 12.8m → 864 -->
+    <text x="300" y="1188">LMT</text>
+    <text x="300" y="1211" font-size="14.5" fill="#8A7658">≤12.8 m</text>
+    <rect x="460" y="1178" width="864" height="33" rx="7" fill="#7FA05A"/>
   </g>
 
-  <text x="1000" y="1232" text-anchor="middle" font-size="12.5" fill="#6B5A40">注：LMR 为市域铁路平台，最长；LMT 以模块计、用于低地板有轨电车。定员为单节/单模块参考值，实际按客流灵活编组。</text>
+  <text x="1500" y="1234" text-anchor="middle" font-size="15" fill="#6B5A40">注：LMR 为市域铁路平台，最长；LMT 以模块计、用于低地板有轨电车。定员为单节/单模块参考值，实际按客流灵活编组。</text>
 </svg>
