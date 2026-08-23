@@ -121,26 +121,26 @@
     <rect x="1240" y="850" width="1100" height="480" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
     <text x="1264" y="892" font-size="19" font-weight="700" fill="#F7EBC8">「5 + 12」算力格局：五大府大型数据中心＋12 座边缘节点</text>
     <g font-size="13">
-      <rect x="1264" y="916" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
-      <text x="1288" y="950" font-weight="700" fill="#D8AF45">璃港云谷（Tier IV · 8000 架）</text>
-      <text x="2316" y="950" text-anchor="end" font-size="12" fill="#E8D8AC">金融交易核心承载 · ULLTC ＜1 ms</text>
-      <rect x="1264" y="982" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
-      <text x="1288" y="1016" font-weight="700" fill="#D8AF45">珑埠北极（Tier III+ · 5000 架）</text>
-      <text x="2316" y="1016" text-anchor="end" font-size="12" fill="#E8D8AC">北向国际业务交换 · 跨境内容缓存</text>
-      <rect x="1264" y="1048" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
-      <text x="1288" y="1082" font-weight="700" fill="#D8AF45">翠玦智算（Tier IV · 6000 架）</text>
-      <text x="2316" y="1082" text-anchor="end" font-size="12" fill="#E8D8AC">AI 算力与科研 · 量子通信试验网节点</text>
-      <rect x="1264" y="1114" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
-      <text x="1288" y="1148" font-weight="700" fill="#D8AF45">归离原工业（Tier III · 5000 架）</text>
-      <text x="2316" y="1148" text-anchor="end" font-size="12" fill="#E8D8AC">工业互联网 · 制造业数据 · 供应链管理</text>
-      <rect x="1264" y="1180" width="1052" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
-      <text x="1288" y="1214" font-weight="700" fill="#D8AF45">琉璃能源（Tier III · 3000 架）</text>
-      <text x="2316" y="1214" text-anchor="end" font-size="12" fill="#E8D8AC">矿产资源数据 · 能源调度 · 环境监测</text>
+      <rect x="1264" y="916" width="1052" height="52" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="949" font-weight="700" fill="#D8AF45">璃港云谷（Tier IV · 8000 架）</text>
+      <text x="2316" y="949" text-anchor="end" font-size="12" fill="#E8D8AC">金融交易核心承载 · ULLTC ＜1 ms</text>
+      <rect x="1264" y="972" width="1052" height="52" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="1005" font-weight="700" fill="#D8AF45">珑埠北极（Tier III+ · 5000 架）</text>
+      <text x="2316" y="1005" text-anchor="end" font-size="12" fill="#E8D8AC">北向国际业务交换 · 跨境内容缓存</text>
+      <rect x="1264" y="1028" width="1052" height="52" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="1061" font-weight="700" fill="#D8AF45">翠玦智算（Tier IV · 6000 架）</text>
+      <text x="2316" y="1061" text-anchor="end" font-size="12" fill="#E8D8AC">AI 算力与科研 · 量子通信试验网节点</text>
+      <rect x="1264" y="1084" width="1052" height="52" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="1117" font-weight="700" fill="#D8AF45">归离原工业（Tier III · 5000 架）</text>
+      <text x="2316" y="1117" text-anchor="end" font-size="12" fill="#E8D8AC">工业互联网 · 制造业数据 · 供应链管理</text>
+      <rect x="1264" y="1140" width="1052" height="52" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1288" y="1173" font-weight="700" fill="#D8AF45">琉璃能源（Tier III · 3000 架）</text>
+      <text x="2316" y="1173" text-anchor="end" font-size="12" fill="#E8D8AC">矿产资源数据 · 能源调度 · 环境监测</text>
     </g>
-    <text x="1264" y="1272" font-size="13" font-weight="700" fill="#D8AF45">边缘计算节点三功能</text>
-    <text x="1264" y="1298" font-size="12" fill="#F3EDDE">物联网汇聚（本地预处理减少上传）· 内容分发缓存（降低跨府带宽消耗）· 低延迟本地服务（交通信号、电网调度毫秒级响应）</text>
-    <text x="1264" y="1326" font-size="13" font-weight="700" fill="#D8AF45">与铁路网络中心协同</text>
-    <text x="1264" y="1352" font-size="12" fill="#F3EDDE">偏远地区中继站同址共建共用电力安防温控；备用纤芯应急互济；运营管理、数据存储、安全策略完全独立。</text>
+    <text x="1264" y="1226" font-size="13" font-weight="700" fill="#D8AF45">边缘计算节点三功能</text>
+    <text x="1264" y="1252" font-size="12" fill="#F3EDDE">物联网汇聚（本地预处理减少上传）· 内容分发缓存（降低跨府带宽消耗）· 低延迟本地服务（交通信号、电网调度毫秒级响应）</text>
+    <text x="1264" y="1280" font-size="13" font-weight="700" fill="#D8AF45">与铁路网络中心协同</text>
+    <text x="1264" y="1306" font-size="12" fill="#F3EDDE">偏远地区中继站同址共建共用电力安防温控；备用纤芯应急互济；运营管理、数据存储、安全策略完全独立。</text>
   </g>
 
   <!-- ═══════════ 第 3 区 · 府数郡算 / 东数西算 ═══════════ -->
