@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2680" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#9C948A"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2680" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月宪政架构总览图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">从七星执政到共和国 · 两院制议会民主 · 司法监察体系 · 干部选任阶梯 · 党指挥枪（总理内阁制）</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区 · 历史沿革 ═══════════ -->
+  <text x="1200" y="164" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">宪政过渡时间轴（TE 2001 — 2005）</text>
+  <g>
+    <line x1="120" y1="280" x2="2280" y2="280" stroke="#B8922F" stroke-width="2.5"/>
+    <!-- 节点 1 -->
+    <circle cx="240" cy="280" r="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="3"/>
+    <text x="240" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#B8922F">TE 2001 春</text>
+    <rect x="70" y="310" width="340" height="190" rx="10" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="90" y="344" font-size="14" font-weight="700" fill="#3B2F23">合法性危机</text>
+    <text x="90" y="374" font-size="12" fill="#3B2F23">· 轻策庄抗租运动酿成冲突，一名佃农身亡</text>
+    <text x="90" y="400" font-size="12" fill="#3B2F23">· 农会发《轻策庄宣言》，公开质疑</text>
+    <text x="90" y="426" font-size="12" fill="#3B2F23">　「七星代天巡狩」的正当性</text>
+    <text x="90" y="452" font-size="12" fill="#6B5A40">· 摩拉停铸引发通缩，货币改革三派僵局近一年</text>
+    <text x="90" y="482" font-size="11" fill="#9C948A">背景：帝君退位后「人治时代」权力来源真空</text>
+    <!-- 节点 2 -->
+    <circle cx="624" cy="280" r="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="3"/>
+    <text x="624" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#B8922F">TE 2001—2003</text>
+    <rect x="454" y="310" width="340" height="190" rx="10" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="474" y="344" font-size="14" font-weight="700" fill="#3B2F23">看守政权与制宪启动</text>
+    <text x="474" y="374" font-size="12" fill="#3B2F23">· 七星签《过渡时期治理公约》自居看守政权，</text>
+    <text x="474" y="400" font-size="12" fill="#3B2F23">　承诺届满后不再连任</text>
+    <text x="474" y="426" font-size="12" fill="#3B2F23">· 宪政起草委员会成立，刻晴任召集人；</text>
+    <text x="474" y="452" font-size="12" fill="#3B2F23">　萍姥姥公开表态支持改革</text>
+    <text x="474" y="482" font-size="11" fill="#9C948A">商帮分裂：飞云商会反对 vs 吃虎岩联合会支持</text>
+    <!-- 节点 3 -->
+    <circle cx="1008" cy="280" r="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="3"/>
+    <text x="1008" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#B8922F">TE 2002—2005</text>
+    <rect x="838" y="310" width="340" height="190" rx="10" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="858" y="344" font-size="14" font-weight="700" fill="#3B2F23">思想与法理准备</text>
+    <text x="858" y="374" font-size="12" fill="#3B2F23">· 商界与学界持续两年「新契约大讨论」，</text>
+    <text x="858" y="400" font-size="12" fill="#3B2F23">　为宪政提供思想基础</text>
+    <text x="858" y="426" font-size="12" fill="#3B2F23">· 烟绯在宪政起草委员会任技术角色，</text>
+    <text x="858" y="452" font-size="12" fill="#3B2F23">　主持《璃月民法典》初稿编纂——</text>
+    <text x="858" y="478" font-size="12" fill="#3B2F23">　契约精神从商业习惯法转化为成文法典</text>
+    <!-- 节点 4 -->
+    <circle cx="1392" cy="280" r="10" fill="url(#goldTop)" stroke="#B8922F" stroke-width="3"/>
+    <text x="1392" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#B8922F">TE 2003 秋</text>
+    <rect x="1222" y="310" width="340" height="190" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1242" y="344" font-size="14" font-weight="700" fill="#D8AF45">「翠玦草案」</text>
+    <text x="1242" y="374" font-size="12" fill="#E8D8AC">· 废除七星终身制，设立民选议会</text>
+    <text x="1242" y="400" font-size="12" fill="#E8D8AC">· 国家元首为虚位主席，行政权归政务院总理</text>
+    <text x="1242" y="426" font-size="12" fill="#E8D8AC">· 「节制资本、平均地权」列为国策</text>
+    <text x="1242" y="452" font-size="12" fill="#E8D8AC">· 确立独立于政务院的国资委体制</text>
+    <text x="1242" y="482" font-size="11" fill="#C9B98A">凝光主张：「资本家不能既当裁判又当球员」</text>
+    <!-- 节点 5 -->
+    <circle cx="1776" cy="280" r="10" fill="#FBF8F2" stroke="#B8922F" stroke-width="3"/>
+    <text x="1776" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#B8922F">TE 2004 秋</text>
+    <rect x="1606" y="310" width="340" height="190" rx="10" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1626" y="344" font-size="14" font-weight="700" fill="#3B2F23">契约式民主</text>
+    <text x="1626" y="374" font-size="12" fill="#3B2F23">· 草案经各商会、农会、工匠行会等</text>
+    <text x="1626" y="400" font-size="12" fill="#3B2F23">　法人团体代表投票通过</text>
+    <text x="1626" y="430" font-size="12" fill="#6B5A40">土地改革方案：赎买为主、征用为辅、</text>
+    <text x="1626" y="456" font-size="12" fill="#6B5A40">分三步走，由国资委主导缓冲冲突</text>
+    <!-- 节点 6 -->
+    <circle cx="2160" cy="280" r="10" fill="url(#goldTop)" stroke="#B8922F" stroke-width="3"/>
+    <text x="2160" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#B8922F">TE 2005 春</text>
+    <rect x="1990" y="310" width="340" height="190" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="2010" y="344" font-size="14" font-weight="700" fill="#D8AF45">璃月共和国成立</text>
+    <text x="2010" y="374" font-size="12" fill="#E8D8AC">· 凝光出任首任政务院总理</text>
+    <text x="2010" y="400" font-size="12" fill="#E8D8AC">· 刻晴当选首任国家主席（虚位）</text>
+    <text x="2010" y="426" font-size="12" fill="#E8D8AC">· 群玉阁签署第一份《政府与议会权力契约》</text>
+    <text x="2010" y="462" font-size="11" fill="#C9B98A">刻晴：「过去是我们替帝君管璃月，</text>
+    <text x="2010" y="486" font-size="11" fill="#C9B98A">现在是我们替璃月管这个国家。」</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 两院制 ═══════════ -->
+  <text x="1200" y="560" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">国家权力机关：层级差别两院制（宏观民意 × 微观效率）</text>
+  <line x1="900" y1="574" x2="1500" y2="574" stroke="#C9A227" stroke-width="1.5"/>
+  <g>
+    <!-- 众议院 -->
+    <rect x="80" y="594" width="1040" height="430" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="104" y="634" font-size="22" font-weight="700" fill="#F7EBC8">众议院 House of Representatives</text>
+    <text x="104" y="662" font-size="13" fill="#D8AF45">最高国家权力机关 · 代表全民意志</text>
+    <text x="104" y="696" font-size="13" font-weight="700" fill="#E8D8AC">运作机制</text>
+    <text x="104" y="722" font-size="13" fill="#F3EDDE">· 议员约 1200 人，由全国各府、郡按人口比例直选产生</text>
+    <text x="104" y="748" font-size="13" fill="#F3EDDE">· 每年春季在璃港府召开一次全会，会期约两周</text>
+    <text x="104" y="782" font-size="13" font-weight="700" fill="#E8D8AC">核心职权（宏观把控）</text>
+    <text x="104" y="808" font-size="13" fill="#F3EDDE">· 修改宪法 · 选举国家主席（虚位元首）</text>
+    <text x="104" y="834" font-size="13" fill="#F3EDDE">· 听取并审议政务院年度工作报告 · 批准国家年度财政总预算</text>
+    <text x="104" y="860" font-size="13" fill="#F3EDDE">· 决定战争与和平等重大国策</text>
+    <text x="104" y="886" font-size="13" fill="#F3EDDE">· 选举产生参议院议员</text>
+    <rect x="104" y="918" width="992" height="76" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="600" y="950" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">≈ 1200 席 · 全民直选 · 年度全会</text>
+    <text x="600" y="978" text-anchor="middle" font-size="12" fill="#E8D8AC">人民党长期保持多数党地位并独立组阁（常延揽党外专家入阁）</text>
+  </g>
+  <!-- 选举箭头 -->
+  <path d="M 1120 800 H 1272" stroke="#B8922F" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="1196" y="786" text-anchor="middle" font-size="12" font-weight="700" fill="#B8922F">选举产生</text>
+  <g>
+    <!-- 参议院 -->
+    <rect x="1280" y="594" width="1040" height="430" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <text x="1304" y="634" font-size="22" font-weight="700" fill="#3B2F23">参议院 Senate</text>
+    <text x="1304" y="662" font-size="13" fill="#B8922F">众议院常设机构 · 具体立法机关</text>
+    <text x="1304" y="696" font-size="13" font-weight="700" fill="#3B2F23">运作机制</text>
+    <text x="1304" y="722" font-size="13" fill="#3B2F23">· 由众议院从其代表中选举出约 150 名精英议员组成</text>
+    <text x="1304" y="748" font-size="13" fill="#3B2F23">· 每两周开会一次，下设专门委员会：</text>
+    <text x="1304" y="774" font-size="13" fill="#6B5A40">　交通委员会 · 法律与契约委员会 · 预算委员会 等</text>
+    <text x="1304" y="808" font-size="13" font-weight="700" fill="#3B2F23">核心职权（具体立法）</text>
+    <text x="1304" y="834" font-size="13" fill="#3B2F23">· 起草、审议、通过具体法律（《璃月铁路法》《元素动力安全管理条例》）</text>
+    <text x="1304" y="860" font-size="13" fill="#3B2F23">· 众议院闭会期间代行大部分国家权力</text>
+    <text x="1304" y="886" font-size="13" fill="#3B2F23">· 对政务院各部委部长进行人事质询与弹劾 · 监督法检监三机关</text>
+    <rect x="1304" y="918" width="992" height="76" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1800" y="950" text-anchor="middle" font-size="14" font-weight="700" fill="#B8922F">≈ 150 席 · 双周例会 · 专门委员会立法</text>
+    <text x="1800" y="978" text-anchor="middle" font-size="12" fill="#6B5A40">监察院院长由众议院选举、受参议院监督；法检两院受参议院监督</text>
+  </g>
+
+  <!-- 元首与政府胶囊 -->
+  <path d="M 600 1024 V 1052 M 1800 1024 V 1052" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="250" y="1058" width="700" height="86" rx="43" fill="url(#goldTop)" stroke="#B8922F" stroke-width="2"/>
+    <text x="600" y="1094" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">国家主席（虚位元首）· 由众议院选举产生</text>
+    <text x="600" y="1124" text-anchor="middle" font-size="12" fill="#3B2F23">不掌握行政实权 · 专注国家战略方向的学习调研与理论思考（现任：刻晴，兼党总书记）</text>
+  </g>
+  <path d="M 1800 1024 V 1052" stroke="#9C948A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowGray)"/>
+  <g>
+    <rect x="1450" y="1058" width="700" height="86" rx="43" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1800" y="1094" text-anchor="middle" font-size="16" font-weight="700" fill="#F7EBC8">政务院（最高行政机关）· 总理负责制</text>
+    <text x="1800" y="1124" text-anchor="middle" font-size="12" fill="#E8D8AC">对众议院负责：提交年度工作报告＋财政预算（现任总理：凝光）</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 司法与监察 ═══════════ -->
+  <text x="1200" y="1204" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">司法与监察机关 —— 「契约精神是立国之本」</text>
+  <g>
+    <rect x="60" y="1234" width="740" height="450" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="84" y="1274" font-size="19" font-weight="700" fill="#3B2F23">最高法院 · 最高检察院</text>
+    <text x="84" y="1304" font-size="12" fill="#B8922F">全国刑事、民事与商事案件的终审与公诉</text>
+    <text x="84" y="1338" font-size="13" font-weight="700" fill="#B8922F">独立性保障</text>
+    <text x="84" y="1364" font-size="13" fill="#3B2F23">· 受参议院监督，但具体案件审判保持绝对独立</text>
+    <text x="84" y="1390" font-size="13" fill="#3B2F23">· 不受行政机关干预</text>
+    <text x="84" y="1424" font-size="13" font-weight="700" fill="#B8922F">成文法化进程</text>
+    <text x="84" y="1450" font-size="13" fill="#3B2F23">· 知名律法专家烟绯推动近代大陆法系成文法化</text>
+    <text x="84" y="1476" font-size="13" fill="#3B2F23">· TE 2002—2005 宪政过渡期间主持《璃月民法典》</text>
+    <text x="84" y="1502" font-size="13" fill="#3B2F23">· 将「契约精神」从商业习惯法转化为成文法典</text>
+    <rect x="84" y="1530" width="692" height="120" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1562" font-size="13" font-weight="700" fill="#B8922F">特殊民事纠纷调解庭（最高法院下设）</text>
+    <text x="108" y="1590" font-size="13" fill="#3B2F23">专门处理涉及元素力伤害、驱魔契约、仙家遗产等特殊案件；</text>
+    <text x="108" y="1616" font-size="13" fill="#3B2F23">驱魔世家传人重云任荣誉顾问（不坐班），兼国家安全部特殊事务顾问。</text>
+  </g>
+  <g>
+    <rect x="830" y="1234" width="740" height="450" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="854" y="1274" font-size="19" font-weight="700" fill="#F7EBC8">监察院</text>
+    <text x="854" y="1304" font-size="12" fill="#D8AF45">最高监察与审计机关 · 「现代的夜兰之网」</text>
+    <text x="854" y="1338" font-size="13" font-weight="700" fill="#E8D8AC">产生与监督</text>
+    <text x="854" y="1364" font-size="13" fill="#F3EDDE">· 院长由众议院选举产生，受参议院监督</text>
+    <text x="854" y="1390" font-size="13" fill="#F3EDDE">· 每季度向参议院司法委员会提交工作报告</text>
+    <text x="854" y="1416" font-size="13" fill="#F3EDDE">· 参议院有权就重大监察事项举行听证</text>
+    <text x="854" y="1450" font-size="13" font-weight="700" fill="#E8D8AC">职权范围（严格限定）</text>
+    <text x="854" y="1476" font-size="13" fill="#F3EDDE">· 仅涉全体公务员、政务官及国企高管廉洁履职</text>
+    <text x="854" y="1502" font-size="13" fill="#F3EDDE">· 不涉及私营企业及非公务员身份政党人士</text>
+    <text x="854" y="1528" font-size="13" fill="#F3EDDE">· 查办贪污受贿、对重大工程严苛财政审计</text>
+    <rect x="854" y="1556" width="692" height="94" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1700" y="1592" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">特派员制度：常年驻扎各大部委及国资委下属国企内部</text>
+    <text x="1700" y="1622" text-anchor="middle" font-size="12" fill="#E8D8AC">配合终身审计，构成「旋转门」干部体制的廉政兜底</text>
+  </g>
+  <g>
+    <rect x="1600" y="1234" width="740" height="450" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1624" y="1274" font-size="19" font-weight="700" fill="#3B2F23">宪政原则速览</text>
+    <text x="1624" y="1310" font-size="13" font-weight="700" fill="#B8922F">政体定位</text>
+    <text x="1624" y="1336" font-size="13" fill="#3B2F23">· 总理内阁制的议会民主制</text>
+    <text x="1624" y="1362" font-size="13" fill="#3B2F23">· 各政党在宪法框架内自由竞争众议院席位</text>
+    <text x="1624" y="1388" font-size="13" fill="#3B2F23">· 凝光多次连选连任源于定期改选，而非终身制</text>
+    <text x="1624" y="1424" font-size="13" font-weight="700" fill="#B8922F">意识形态：璃月特色民主主义</text>
+    <text x="1624" y="1450" font-size="13" fill="#3B2F23">· 不消灭私有制的前提下，以国家力量</text>
+    <text x="1624" y="1476" font-size="13" fill="#3B2F23">　「节制资本、平均地权」</text>
+    <text x="1624" y="1502" font-size="13" fill="#3B2F23">· 温和改造与引导私营资本</text>
+    <text x="1624" y="1528" font-size="13" fill="#3B2F23">· 保障经济命脉安全与平民阶层福祉</text>
+    <rect x="1624" y="1556" width="692" height="94" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1970" y="1592" text-anchor="middle" font-size="13" font-weight="700" fill="#B8922F">合法性叙事的转换</text>
+    <text x="1970" y="1622" text-anchor="middle" font-size="12" fill="#6B5A40">从「帝君授权」到「契约授权」——多党辩论代替商战与门派倾轧</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区左 · 干部选任阶梯 ═══════════ -->
+  <g>
+    <rect x="60" y="1734" width="1140" height="806" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <text x="84" y="1774" font-size="19" font-weight="700" fill="#3B2F23">行政官僚选任：「宰相起于州部」</text>
+    <!-- 阶梯 -->
+    <g>
+      <rect x="110" y="2164" width="180" height="56" rx="8" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="200" y="2198" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">村 / 坊 干事</text>
+      <rect x="320" y="2088" width="180" height="56" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="410" y="2122" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">乡 / 镇 / 街道</text>
+      <rect x="530" y="2012" width="180" height="56" rx="8" fill="#6B5A40" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="620" y="2046" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">县 / 市</text>
+      <rect x="740" y="1936" width="180" height="56" rx="8" fill="#B8922F" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="830" y="1970" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">郡 / 府</text>
+      <rect x="950" y="1860" width="200" height="56" rx="8" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1.5"/>
+      <text x="1050" y="1894" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">中央部委</text>
+      <path d="M 296 2192 H 316 M 506 2116 H 526 M 716 2040 H 736 M 926 1964 H 946" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+      <text x="640" y="1816" text-anchor="middle" font-size="14" font-weight="700" fill="#B8922F">层层选拔 · 严禁越级提拔（越级属重大政治违规）</text>
+      <text x="640" y="1840" text-anchor="middle" font-size="12" fill="#6B5A40">每一级主官必须在下一级岗位干满完整任期并留下过硬实绩</text>
+    </g>
+    <text x="84" y="2284" font-size="13" font-weight="700" fill="#B8922F">基层强制起步（≥ 2 年）</text>
+    <text x="84" y="2312" font-size="13" fill="#3B2F23">无论顶尖学府毕业生还是名门子弟，第一步必须赴最基层单位（农建村、坊委会），直接处理劳资纠纷、农机补贴、邻里矛盾。</text>
+    <text x="84" y="2338" font-size="13" fill="#3B2F23">考核不合格暂缓晋升，严重者降职降薪——有力减少脱产政客。</text>
+    <line x1="84" y1="2366" x2="1176" y2="2366" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="84" y="2400" font-size="13" font-weight="700" fill="#B8922F">政务官 ⇄ 事务官「无缝转化」（旋转门）</text>
+    <text x="84" y="2428" font-size="13" fill="#3B2F23">· 国企攻克技术难题的总工程师 → 可随时出任分管产业升级的副市长（政务官）</text>
+    <text x="84" y="2456" font-size="13" fill="#3B2F23">· 统筹能力极强的县长 → 常平调交通部任具体业务司长（事务官）</text>
+    <text x="84" y="2484" font-size="13" fill="#3B2F23">· 配合监察院终身审计，确保国家机器既懂政治方向、又精通底层技术</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区右 · 武装力量 ═══════════ -->
+  <g>
+    <rect x="1240" y="1734" width="1100" height="806" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1264" y="1774" font-size="19" font-weight="700" fill="#F7EBC8">武装力量体制：「党指挥枪」</text>
+    <rect x="1400" y="1800" width="780" height="64" rx="10" fill="#4A3A28" stroke="#D8AF45" stroke-width="2"/>
+    <text x="1790" y="1828" text-anchor="middle" font-size="15" font-weight="700" fill="#D8AF45">璃月人民党中央军事委员会（绝对领导）</text>
+    <text x="1790" y="1852" text-anchor="middle" font-size="12" fill="#E8D8AC">武装力量不直接隶属于政务院</text>
+    <path d="M 1522 1868 V 1896 M 2058 1868 V 1896" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="1264" y="1902" width="516" height="92" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1522" y="1936" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">璃月宪兵部队</text>
+    <text x="1522" y="1966" text-anchor="middle" font-size="12" fill="#E8D8AC">原千岩军整编 · 对内维稳、反恐</text>
+    <rect x="1800" y="1902" width="516" height="92" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="2058" y="1936" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">璃月人民军</text>
+    <text x="2058" y="1966" text-anchor="middle" font-size="12" fill="#E8D8AC">对外防御、海防</text>
+    <text x="1264" y="2040" font-size="13" font-weight="700" fill="#D8AF45">军委体系内的名誉与外聘岗位</text>
+    <text x="1264" y="2070" font-size="13" fill="#F3EDDE">· 北斗：海防动员局局长兼任中央军委委员，军委层面协调海防事务</text>
+    <text x="1264" y="2100" font-size="13" fill="#F3EDDE">· 魈：退役夜叉，受聘中央警卫局名誉顾问（不驻会），特种作战与高危目标防护战术指导</text>
+    <text x="1264" y="2130" font-size="13" fill="#F3EDDE">· 申鹤：驱魔世家传人，受聘中央特殊事务局外聘专员，协助处理仙家遗物与古籍封印任务</text>
+    <rect x="1264" y="2152" width="1052" height="118" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1288" y="2184" font-size="13" font-weight="700" fill="#D8AF45">国防部＝「政务窗口」与「军地协调机制」（不负责前线指挥）</text>
+    <text x="1288" y="2212" font-size="12" fill="#E8D8AC">国防预算申请与划拨 · 军工生产协调（如向机车集团采购 QYN 5 混动牵引车作后勤装备）</text>
+    <text x="1288" y="2240" font-size="12" fill="#E8D8AC">兵役征集 · 军民技术相互转化 · 与枫丹、蒙德等国例行军事外交与联合演习</text>
+    <text x="1790" y="2310" text-anchor="middle" font-size="12" fill="#C9B98A">宪兵对内、人民军对外——分工明确、互不隶属，共同构成党领导下的武装力量体系。</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2620" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月政治概况》整理；众议院、参议院席位数约为既定编制规模，监察院职权边界以《璃月共和国宪法》及相关组织法为准。</text>
+</svg>

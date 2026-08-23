@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2480" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2480" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月驿镖局联盟业务版图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">四层业务金字塔：利润引擎 → 盈利核心 → 规模平衡 → 全民兜底 · 「非纯利、护万民」的定价哲学</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 金字塔 ═══════════ -->
+  <!-- 第 1 层 出国镖 -->
+  <g>
+    <polygon points="700,150 1700,150 1850,340 550,340" fill="#3B2F23" stroke="#D8AF45" stroke-width="2.5"/>
+    <text x="1200" y="192" text-anchor="middle" font-size="19" font-weight="700" fill="#D8AF45">第 1 层 · 出国镖 —— 利润引擎</text>
+    <text x="1200" y="222" text-anchor="middle" font-size="12" fill="#E8D8AC">垄断跨国航空与铁路渠道 · 联盟最核心利润来源</text>
+    <text x="1200" y="254" text-anchor="middle" font-size="12" fill="#F3EDDE">LRC 跨境铁路货运唯一总代理（独家排他协议）· 舱位由联盟统一调配</text>
+    <text x="1200" y="280" text-anchor="middle" font-size="12" fill="#F3EDDE">与各国航司签订垄断性包舱协议，控制出入境航空货运转运枢纽</text>
+    <text x="1200" y="306" text-anchor="middle" font-size="12" fill="#F3EDDE">面向蒙德、枫丹、须弥、稻妻大客户整批跨境运输；末端分发分包当地合作方不搞全程垄断</text>
+    <text x="1200" y="330" text-anchor="middle" font-size="12" fill="#C9B98A">各大边境口岸与枢纽机场设联盟专属转运仓与海关监管区</text>
+  </g>
+
+  <!-- 第 2 层 金镖卫+对公银行 -->
+  <g>
+    <polygon points="480,370 1920,370 2070,580 330,580" fill="url(#goldTop)" stroke="#B8922F" stroke-width="2"/>
+    <text x="1200" y="410" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">第 2 层 · 金镖卫 ＋ 镖局银行对公 —— 盈利核心</text>
+    <text x="1200" y="440" text-anchor="middle" font-size="12" fill="#3B2F23">高风险高回报押运 × 对公金融延伸 = 第二利润支柱</text>
+    <text x="1200" y="472" text-anchor="middle" font-size="12" fill="#3B2F23">金镖卫：古玩、玉石、契约正本、机密文书、神之眼相关物品武装押运 · 高溢价服务费</text>
+    <text x="1200" y="498" text-anchor="middle" font-size="12" fill="#3B2F23">押运员自宪兵退伍特种兵与原镖局精英弟子遴选（部分持神之眼）· 防弹改装厢式车</text>
+    <text x="1200" y="524" text-anchor="middle" font-size="12" fill="#3B2F23">岩元素应急自保装置——极端情况下可将货物结晶化封存防破坏</text>
+    <text x="1200" y="556" text-anchor="middle" font-size="12" font-weight="700" fill="#3B2F23">镖局银行对公：开户、贸易结算、信用证、保函；「运输＋融资」一站式打包</text>
+  </g>
+
+  <!-- 第 3 层 快递+个人金融 -->
+  <g>
+    <polygon points="300,610 2100,610 2250,850 150,850" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
+    <text x="1200" y="650" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">第 3 层 · 镖局快递 ＋ 镖局银行个人业务 —— 规模平衡（目标：盈亏平衡）</text>
+    <text x="1200" y="682" text-anchor="middle" font-size="12" fill="#6B5A40">公铁联运标准快递（联盟收寄分拣末端配送，LRC 承运干线；集装箱宪兵武装护送至货运站搭 X/H 字头列车；调度中心与 LTCC 实时对接）</text>
+    <text x="1200" y="710" text-anchor="middle" font-size="12" fill="#6B5A40">同城即时配送（依托各府换电网络，30 分钟~2 小时送达外卖文书急救药品；日均处理量逾千万单；骑手制式轻便甲胄纹章头盔成街头文化符号）</text>
+    <text x="1200" y="738" text-anchor="middle" font-size="12" fill="#6B5A40">工业与矿区专送（层岩巨渊统筹开采集团、归离原工业区定制物流；矿石样本精密机床超重超大件；入门工业级符箓拖头＋重型平板车）</text>
+    <text x="1200" y="776" text-anchor="middle" font-size="12" font-weight="700" fill="#B8922F">个人金融：工资代发、转账汇款、柜面存取 + 小额消费贷、信用卡 —— 以庞大客户量摊薄网点与人力成本</text>
+  </g>
+
+  <!-- 第 4 层 普通邮递+储蓄 -->
+  <g>
+    <polygon points="150,880 2250,880 2380,1130 20,1130" fill="#E4DCC8" stroke="#9C948A" stroke-width="2"/>
+    <text x="1200" y="920" text-anchor="middle" font-size="18" font-weight="700" fill="#6B5A40">第 4 层 · 普通邮递 ＋ 村坊便民点 ＋ 储蓄业务 —— 全国兜底（不以盈利为目的）</text>
+    <text x="1200" y="952" text-anchor="middle" font-size="12" fill="#6B5A40">标准信件、印刷品、平价包裹执行国家统一定价 · 依托分局与乡镇站网络覆盖城市乡村每一条街道</text>
+    <text x="1200" y="978" text-anchor="middle" font-size="12" fill="#6B5A40">农村寄出的农产品实行公益运费，只计成本不计利润</text>
+    <text x="1200" y="1004" text-anchor="middle" font-size="12" fill="#6B5A40">村/坊驿镖便民点支撑「工业品下乡、农产品进城」乡村振兴战略 · 偏远地区保留骡马队与岩晶蝶接驳（非遗活态传承）</text>
+    <text x="1200" y="1030" text-anchor="middle" font-size="12" fill="#6B5A40">储蓄业务全国通存通兑、城乡网点均衡布局、低门槛账户享国家存款保险</text>
+    <text x="1200" y="1062" text-anchor="middle" font-size="12" font-weight="700" fill="#8C3B2E">面向低收入群体与偏远地区居民的基础金融服务不计利润，中央财政对运维给予适当补贴</text>
+    <text x="1200" y="1104" text-anchor="middle" font-size="11" fill="#9C948A">履行国有企业的社会责任 —— 联盟既是国有经济柱石，也是江湖传统最后的庇护所</text>
+  </g>
+
+  <!-- ═══════════ 底部左 · 利润流向 ═══════════ -->
+  <g>
+    <rect x="60" y="1180" width="1140" height="560" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="1222" font-size="19" font-weight="700" fill="#F7EBC8">财务与定价哲学：「非纯利、护万民」（凝光定则）</text>
+    <text x="84" y="1256" font-size="13" font-weight="700" fill="#D8AF45">让利条款（负利润／零利润板块）</text>
+    <text x="84" y="1284" font-size="13" fill="#E8D8AC">· 农村、偏远地区农产品：公益运费，只计成本不计利润</text>
+    <text x="84" y="1310" font-size="13" fill="#E8D8AC">· 国家重点工程物资、救灾物资：零利润甚至财政补贴下的负利润运输</text>
+    <text x="84" y="1336" font-size="13" fill="#E8D8AC">· 低收入储蓄账户：中央财政运维补贴，不计商业利润</text>
+    <text x="84" y="1372" font-size="13" font-weight="700" fill="#D8AF45">三大利润来源（交叉补贴的源头）</text>
+    <rect x="84" y="1388" width="1092" height="52" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1420" font-size="12" fill="#F3EDDE">① 「出国镖」跨国垄断业务的高运价溢价　② 「金镖卫」贵重品押运的高溢价服务费</text>
+    <rect x="84" y="1448" width="1092" height="44" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1476" font-size="12" fill="#F3EDDE">③ 镖局银行对公业务的手续费与利息收入</text>
+    <!-- 分配流 -->
+    <path d="M 630 1510 V 1546" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="84" y="1552" width="1092" height="72" rx="10" fill="url(#goldTop)"/>
+    <text x="630" y="1584" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">每年利润的 30% 强制缴入「璃月驿镖员工基金」</text>
+    <text x="630" y="1610" text-anchor="middle" font-size="12" fill="#3B2F23">补贴偏远地区驿站运营 · 职工住房保障 · 职工福利体系</text>
+    <path d="M 630 1624 V 1652" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="84" y="1658" width="344" height="60" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="256" y="1686" text-anchor="middle" font-size="12" fill="#F3EDDE">偏远驿站持续运营</text>
+    <text x="256" y="1708" text-anchor="middle" font-size="11" fill="#C9B98A">兜底网络的资金保障</text>
+    <rect x="448" y="1658" width="344" height="60" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="620" y="1686" text-anchor="middle" font-size="12" fill="#F3EDDE">职工住房保障</text>
+    <text x="620" y="1708" text-anchor="middle" font-size="11" fill="#C9B98A">稳定一线队伍</text>
+    <rect x="832" y="1658" width="344" height="60" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1004" y="1686" text-anchor="middle" font-size="12" fill="#F3EDDE">职工福利体系</text>
+    <text x="1004" y="1708" text-anchor="middle" font-size="11" fill="#C9B98A">五险一金退休金之上再加一层</text>
+    <text x="84" y="1756" font-size="12" fill="#C9B98A">联盟不以利润最大化为唯一目标——用垄断业务的超额利润，反哺普惠义务与职工福祉。</text>
+  </g>
+
+  <!-- ═══════════ 底部右 · 政党关系 ═══════════ -->
+  <g>
+    <rect x="1240" y="1180" width="1100" height="560" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1264" y="1222" font-size="19" font-weight="700" fill="#3B2F23">与诸政治势力的关系</text>
+    <rect x="1264" y="1244" width="1052" height="86" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1288" y="1276" font-size="13" font-weight="700" fill="#D8AF45">执政党 · 璃月人民党</text>
+    <text x="1288" y="1304" font-size="12" fill="#E8D8AC">视联盟为「节制资本、保障民生」的样板国企，常带外宾参观。</text>
+    <rect x="1264" y="1340" width="1052" height="86" rx="10" fill="#FBF8F2" stroke="#8C3B2E" stroke-width="1.2"/>
+    <text x="1288" y="1372" font-size="13" font-weight="700" fill="#8C3B2E">农会联盟 —— 最重要的政治盟友</text>
+    <text x="1288" y="1400" font-size="12" fill="#3B2F23">感恩联盟对农产品运输的公益运费补贴。</text>
+    <rect x="1264" y="1436" width="1052" height="86" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1288" y="1468" font-size="13" font-weight="700" fill="#B8922F">民主党</text>
+    <text x="1288" y="1496" font-size="12" fill="#3B2F23">关心骑手权益、个体户寄递成本，常就「换电柜布局」「佣金比例」等细节交涉。</text>
+    <rect x="1264" y="1532" width="1052" height="86" rx="10" fill="#FBF8F2" stroke="#7A6A45" stroke-width="1.2"/>
+    <text x="1288" y="1564" font-size="13" font-weight="700" fill="#7A6A45">共和党</text>
+    <text x="1288" y="1592" font-size="12" fill="#3B2F23">赞赏其带动的重卡制造、换电产业、包装工业发展，视作本土工业重要需求侧；对外资持股快递公司保持警惕。</text>
+    <rect x="1264" y="1628" width="1052" height="96" rx="10" fill="#FBF8F2" stroke="#3E4A5A" stroke-width="1.2"/>
+    <text x="1288" y="1660" font-size="13" font-weight="700" fill="#3E4A5A">自由党 —— 最尖锐批评者</text>
+    <text x="1288" y="1688" font-size="12" fill="#3B2F23">长期抨击联盟末端垄断扼杀民营物流活力；要求拆分末端网络并向外资开放独立快递牌照；联合小商贩推动《驿镖法》修订。</text>
+    <text x="1264" y="1760" font-size="12" fill="#6B5A40">观察视角：一家国企同时扮演「民生兜底者」「文化保护者」「工业需求方」「垄断被质疑者」四种角色，</text>
+    <text x="1264" y="1786" font-size="12" fill="#6B5A40">其在议会中的处境正是璃月「节制资本」体制复杂性的缩影。</text>
+    <rect x="1264" y="1810" width="1052" height="90" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1288" y="1842" font-size="13" font-weight="700" fill="#D8AF45">《联盟远景纲要》（即将发布）三大概念</text>
+    <text x="1288" y="1870" font-size="12" fill="#E8D8AC">智能驿站村 · 人机协同镖队 · 跨府三日达 —— 以自我革命回应技术冲击与开放压力</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2300" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月驿镖局联盟概况》整理；金字塔层宽仅示意各业务板块规模层级。出国镖抵达对方口岸后的末端分发环节分包当地合作方，不搞全程垄断。</text>
+</svg>

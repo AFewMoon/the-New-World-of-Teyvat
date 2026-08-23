@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2560" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2560" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月汽车动力四大流派图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">岩元素 · 雷元素 · 电驱动（符箓自发电／化学电池）· 混合动力四架构 —— 多元复合的动力技术体系</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区 · 历史沿革 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="2280" height="180" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <line x1="140" y1="236" x2="2260" y2="236" stroke="#D8AF45" stroke-width="2.5"/>
+    <circle cx="500" cy="236" r="10" fill="#FBF8F2" stroke="#D8AF45" stroke-width="3"/>
+    <circle cx="1900" cy="236" r="10" fill="url(#goldTop)" stroke="#D8AF45" stroke-width="3"/>
+    <text x="500" y="196" text-anchor="middle" font-size="15" font-weight="700" fill="#D8AF45">魔神战争后 — 工业革命前：漫长启蒙期</text>
+    <text x="1900" y="196" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">三十年工业革命：迅猛发展期</text>
+    <text x="120" y="274" font-size="12" fill="#E8D8AC">重型物资车辆依赖最直接的岩元素驱动——粗暴释放晶体能量；体积庞大、效率低下，需神之眼操控者操作。提纯与稳能技术的初步探索为后续奠基。</text>
+    <text x="1520" y="274" font-size="12" fill="#E8D8AC">岩元素动力微型化民用化突破（首台小型车用岩引擎）；借至冬、枫丹技术交流与国际贸易枢纽地位，雷元素动力、电气化驱动萌芽并迅速发展。</text>
+  </g>
+
+  <!-- ═══════════ 岩元素动力 ═══════════ -->
+  <g>
+    <rect x="60" y="356" width="1130" height="600" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <rect x="84" y="380" width="220" height="38" rx="19" fill="url(#goldTop)"/>
+    <text x="194" y="406" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">流派一 · 岩元素动力</text>
+    <text x="320" y="406" font-size="13" fill="#6B5A40">最能体现本土特色</text>
+    <text x="84" y="452" font-size="13" font-weight="700" fill="#B8922F">技术原理</text>
+    <text x="84" y="478" font-size="13" fill="#3B2F23">· 精密加工的晶化反应炉可控萃取岩元素结晶中的地脉能量转化为机械能</text>
+    <text x="84" y="504" font-size="13" fill="#3B2F23">· 燃料：石珀、岩晶髓伴生矿等高能态转化，驱动活塞或涡轮旋转</text>
+    <text x="84" y="530" font-size="13" fill="#3B2F23">· 「千岩牢固」稳定符文阵列确保释放平顺安全，大幅降低早期炸缸风险</text>
+    <text x="84" y="566" font-size="13" font-weight="700" fill="#B8922F">优势</text>
+    <rect x="84" y="580" width="1082" height="86" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="610" font-size="13" fill="#3B2F23">· 补给极其便利：全境尤其层岩巨渊周边结晶分布广泛、价格低廉</text>
+    <text x="108" y="636" font-size="13" fill="#3B2F23">· 成熟可靠——「能在归离原的碎石路上跑一百年」，路边铁匠铺就能修</text>
+    <text x="84" y="700" font-size="13" font-weight="700" fill="#8C3B2E">劣势</text>
+    <rect x="84" y="714" width="1082" height="86" rx="10" fill="#FBF8F2" stroke="#D8CCAE" stroke-width="1.2"/>
+    <text x="108" y="744" font-size="13" fill="#3B2F23">· 能量密度相对较低：同体积下低于高品质雷元素液</text>
+    <text x="108" y="770" font-size="13" fill="#3B2F23">· 大量岩元素残渣需定期清理否则影响散热；城市拥堵中视为市容污染</text>
+    <text x="84" y="844" font-size="13" font-weight="700" fill="#B8922F">清洁化方向</text>
+    <text x="84" y="870" font-size="13" fill="#3B2F23">减少残渣排放的处理技术是当前研究热点之一。</text>
+    <text x="84" y="902" font-size="12" fill="#6B5A40">衍生应用：增程混动的模块化可更换燃烧室、丐版岩引擎面包车（见车型适配矩阵图）</text>
+  </g>
+
+  <!-- ═══════════ 雷元素动力 ═══════════ -->
+  <g>
+    <rect x="1210" y="356" width="1130" height="600" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <rect x="1234" y="380" width="220" height="38" rx="19" fill="url(#goldTop)"/>
+    <text x="1344" y="406" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">流派二 · 雷元素动力</text>
+    <text x="1470" y="406" font-size="13" fill="#C9B98A">与稻妻贸易相伴而生</text>
+    <text x="1234" y="452" font-size="13" font-weight="700" fill="#D8AF45">技术原理</text>
+    <text x="1234" y="478" font-size="13" fill="#E8D8AC">· 绝缘耐腐蚀陶瓷内胆封装高活性雷元素液，注入车载激发器</text>
+    <text x="1234" y="504" font-size="13" fill="#E8D8AC">· 磁路控制定向释放强电磁力直接驱动转子——无机械摩擦、响应极快</text>
+    <text x="1234" y="540" font-size="13" font-weight="700" fill="#D8AF45">独特服务模式：「注射」换液循环</text>
+    <g font-size="12" fill="#F3EDDE">
+      <rect x="1234" y="556" width="244" height="76" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1356" y="584" text-anchor="middle" fill="#D8AF45" font-weight="700">车主赴服务点</text>
+      <text x="1356" y="608" text-anchor="middle">璃月港及主要驿站遍布站点</text>
+      <path d="M 1482 594 H 1510" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="1518" y="556" width="244" height="76" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1640" y="584" text-anchor="middle" fill="#D8AF45" font-weight="700">专业人员换新容器</text>
+      <text x="1640" y="608" text-anchor="middle">稻妻远洋进口·群玉阁特许经营*</text>
+      <path d="M 1356 632 V 654 H 1640 V 640" fill="none" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+      <rect x="1374" y="660" width="244" height="76" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="1496" y="688" text-anchor="middle" fill="#D8AF45" font-weight="700">旧容器交还＋押金/回收费</text>
+      <text x="1496" y="712" text-anchor="middle">统一运回指定处理厂</text>
+      <path d="M 1374 698 H 1342 Q 1318 698 1318 674 V 642" fill="none" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="1770" y="700" font-size="11" fill="#C9B98A">*利益关联经国家审计</text>
+      <text x="1770" y="718" font-size="11" fill="#C9B98A">特别程序审查备案</text>
+    </g>
+    <text x="1234" y="772" font-size="12" fill="#E8D8AC">处理厂在专业术士监督下进行残余元素中和与无害化处理，实现循环利用。</text>
+    <text x="1234" y="808" font-size="13" font-weight="700" fill="#8C3B2E">劣势与市场地位</text>
+    <text x="1234" y="834" font-size="13" fill="#E8D8AC">· 本土雷元素结晶稀缺、无法大规模自产——对外依存度高、成本高昂</text>
+    <text x="1234" y="860" font-size="13" fill="#E8D8AC">· 活性极强，对容器密封性与整车安全防护要求极为严苛</text>
+    <rect x="1234" y="880" width="1082" height="44" rx="10" fill="url(#goldTop)"/>
+    <text x="1775" y="909" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">乘用车市场占有率不足 3% —— 集中于豪华性能车与富商阶层</text>
+  </g>
+
+  <!-- ═══════════ 符箓自发电 ═══════════ -->
+  <g>
+    <rect x="60" y="986" width="1130" height="585" rx="14" fill="#3B2F23" stroke="#D8AF45" stroke-width="2.5"/>
+    <rect x="84" y="1010" width="300" height="38" rx="19" fill="url(#goldTop)"/>
+    <text x="234" y="1036" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">流派三 · 符箓自发电（本土）</text>
+    <text x="400" y="1036" font-size="13" fill="#C9B98A">类燃料电池逻辑</text>
+    <text x="84" y="1082" font-size="13" font-weight="700" fill="#D8AF45">本质：持续输出电能的微型常动发电机（非储能电池）</text>
+    <text x="84" y="1108" font-size="13" fill="#E8D8AC">· 特制矿石薄片上以导能材料绘制「聚能箓」，从环境与地脉抽取微量元素力转电能</text>
+    <text x="84" y="1134" font-size="13" fill="#E8D8AC">· 与地脉深处能源建立共振契约：每月免费基础配额恰好覆盖中小功率运行需求</text>
+    <text x="84" y="1160" font-size="13" fill="#E8D8AC">· 超配额部分须向国家电网与地脉能源局申请并缴纳地脉使用费（民用商业级极少发生）</text>
+    <rect x="84" y="1178" width="1082" height="100" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1210" font-size="13" font-weight="700" fill="#D8AF45">输出特性与缓冲强制项</text>
+    <text x="108" y="1236" font-size="12" fill="#F3EDDE">恒定功率日夜不停发电 · 平均输出半衰期长达 20 年 · 无法随叫随到改变功率；</text>
+    <text x="108" y="1262" font-size="12" fill="#F3EDDE">所有搭载车辆必须配「适配缓冲装置」（蓄电池或飞轮）：怠速储能、加速瞬时放大功率。</text>
+    <text x="84" y="1322" font-size="13" font-weight="700" fill="#D8AF45">定价逻辑：「买断制能源」——买的是未来 20 年的地脉契约</text>
+    <g font-size="13">
+      <rect x="84" y="1340" width="258" height="90" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="213" y="1372" text-anchor="middle" font-weight="700" fill="#D8AF45">民用级</text>
+      <text x="213" y="1398" text-anchor="middle" fill="#F3EDDE">102 万 ~ 255 万</text>
+      <text x="213" y="1420" text-anchor="middle" font-size="11" fill="#C9B98A">对标燃油发动机</text>
+      <rect x="356" y="1340" width="258" height="90" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="485" y="1372" text-anchor="middle" font-weight="700" fill="#D8AF45">商业级</text>
+      <text x="485" y="1398" text-anchor="middle" fill="#F3EDDE">5100 万 ~ 1.7 亿</text>
+      <text x="485" y="1420" text-anchor="middle" font-size="11" fill="#C9B98A">巴士冷链工厂·钱庄贷款</text>
+      <rect x="628" y="1340" width="258" height="90" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+      <text x="757" y="1372" text-anchor="middle" font-weight="700" fill="#D8AF45">入门工业级</text>
+      <text x="757" y="1398" text-anchor="middle" fill="#F3EDDE">20.4 亿 ~ 51 亿</text>
+      <text x="757" y="1420" text-anchor="middle" font-size="11" fill="#C9B98A">重卡机车·银行抵押贷</text>
+      <rect x="900" y="1340" width="266" height="90" rx="8" fill="url(#goldTop)"/>
+      <text x="1033" y="1372" text-anchor="middle" font-weight="700" fill="#3B2F23">顶尖工业级</text>
+      <text x="1033" y="1398" text-anchor="middle" fill="#3B2F23">680 亿 ~ 1360 亿</text>
+      <text x="1033" y="1420" text-anchor="middle" font-size="11" fill="#6B5A40">国家战略资产·主权基金掌控</text>
+    </g>
+    <text x="84" y="1470" font-size="12" fill="#C9B98A">注：参考汇率 1 摩拉 ≈ 0.85 璃月元。全国总配额上限＝地脉年自然淤积量的约 30%（维持自我修复与生态平衡），</text>
+    <text x="84" y="1496" font-size="12" fill="#C9B98A">由电网与地脉能源局统一登记分配——配额制度正是化学电池与电网充电保有战略空间的根本原因。</text>
+    <text x="84" y="1530" font-size="13" fill="#E8D8AC">应用分级：民用 1~5 kW（铅酸/石珀电池·微型飞轮）→ 商业 20~200 kW（电池组·小飞轮阵列）→ 入门工业 5~20 MW</text>
+    <text x="84" y="1556" font-size="13" fill="#E8D8AC">（元素电容器·高速合金飞轮）→ 顶尖工业 200~500 MW（抽水蓄能·超大型飞轮阵列）。详见经济性专图。</text>
+  </g>
+
+  <!-- ═══════════ 化学电池 ═══════════ -->
+  <g>
+    <rect x="1210" y="986" width="1130" height="585" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1234" y="1010" width="340" height="38" rx="19" fill="#E4DCC8"/>
+    <text x="1404" y="1036" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A40">流派四 · 化学电池储能（枫丹分支）</text>
+    <text x="1234" y="1082" font-size="13" font-weight="700" fill="#B8922F">技术来源与原理</text>
+    <text x="1234" y="1108" font-size="13" fill="#3B2F23">· 进口枫丹先进技术与核心材料（特殊电解液和极板）本地化组装</text>
+    <text x="1234" y="1134" font-size="13" fill="#3B2F23">· 利用电化学反应储存电能，用毕依靠国家电网充电</text>
+    <text x="1234" y="1166" font-size="13" font-weight="700" fill="#B8922F">为什么它是平民市场的性价比之王</text>
+    <rect x="1234" y="1180" width="1082" height="112" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1258" y="1210" font-size="13" fill="#3B2F23">· 完美契合覆盖极广、单价极低的国家电网：平均电价约 25.5 璃月元/度</text>
+    <text x="1258" y="1238" font-size="13" fill="#3B2F23">　（居民 23.8 · 一般工商业 27.2 · 规模化工业两部制＋分时电价综合可低至 13~17）</text>
+    <text x="1258" y="1266" font-size="13" fill="#3B2F23">· 初始购车成本远低于买断制符箓；能量密度高、放电平稳，短途城内通行极佳</text>
+    <text x="1234" y="1326" font-size="13" font-weight="700" fill="#8C3B2E">劣势</text>
+    <text x="1234" y="1352" font-size="13" fill="#3B2F23">· 核心材料依赖进口；长途旅行补能焦虑</text>
+    <text x="1234" y="1378" font-size="13" fill="#3B2F23">· 极寒（龙脊雪山）或酷热环境下性能波动</text>
+    <rect x="1234" y="1402" width="1082" height="118" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1258" y="1434" font-size="13" font-weight="700" fill="#D8AF45">市场博弈格局：廉价电网 vs 买断契约</text>
+    <text x="1258" y="1462" font-size="12" fill="#E8D8AC">电网单价之低使大容量化学电池储能成为符箓技术的强劲对手；机关术士攻关重点即为压缩符箓成本，</text>
+    <text x="1258" y="1488" font-size="12" fill="#E8D8AC">应对「大规模化学电池＋廉价电网」的前后夹击——两条路线的拉锯塑造了混动架构的繁荣（见下）。</text>
+    <text x="1234" y="1548" font-size="12" fill="#6B5A40">衍生生态：遍布街头巷尾的两轮车换电柜网络（当地商会投资），10 秒满电续行——支撑外卖与急递经济。</text>
+  </g>
+
+  <!-- ═══════════ 混合动力四架构 ═══════════ -->
+  <text x="1200" y="1600" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">混合动力：复杂能源市场中博弈出的四种代表性架构</text>
+  <line x1="900" y1="1614" x2="1500" y2="1614" stroke="#C9A227" stroke-width="1.5"/>
+
+  <g>
+    <rect x="72" y="1634" width="546" height="620" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <rect x="72" y="1634" width="546" height="54" rx="12" fill="url(#goldTop)"/>
+    <rect x="72" y="1662" width="546" height="26" fill="url(#goldTop)"/>
+    <text x="345" y="1669" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">① 符箓-电网插电混动</text>
+    <text x="345" y="1716" text-anchor="middle" font-size="12" fill="#6B5A40">「白嫖与快充的完美结合」· 中产最推崇</text>
+    <text x="96" y="1752" font-size="13" font-weight="700" fill="#B8922F">配置</text>
+    <text x="96" y="1778" font-size="13" fill="#3B2F23">民用级符箓发电机 (1~5 kW)＋中大容量枫丹电池</text>
+    <text x="96" y="1810" font-size="13" font-weight="700" fill="#B8922F">运行逻辑</text>
+    <text x="96" y="1836" font-size="13" fill="#3B2F23">· 停车库时符箓＝「免费慢充桩」，一夜充满电池</text>
+    <text x="96" y="1862" font-size="13" fill="#3B2F23">· 行驶时电池作缓冲池提供瞬时峰值功率</text>
+    <text x="96" y="1888" font-size="13" fill="#3B2F23">· 连续长途（如直奔枫丹）时用遍布各地的电网快充</text>
+    <text x="96" y="1920" font-size="13" font-weight="700" fill="#B8922F">经济学定位</text>
+    <text x="96" y="1946" font-size="13" fill="#3B2F23">买断基础能源＋低成本快充，彻底消灭日常通勤账单</text>
+    <rect x="96" y="1972" width="498" height="250" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="120" y="2004" font-size="13" font-weight="700" fill="#B8922F">「优雅能源」的技术信仰</text>
+    <text x="120" y="2032" font-size="12" fill="#3B2F23">对追求生活品质与社交地位的璃月中产而言，拥有一台</text>
+    <text x="120" y="2058" font-size="12" fill="#3B2F23">符箓混动车意味着对「我的命运我做主」理念的现代传承；</text>
+    <text x="120" y="2084" font-size="12" fill="#3B2F23">不再为每月几百璃月元的电费账单操心——车顶那枚静静</text>
+    <text x="120" y="2110" font-size="12" fill="#3B2F23">运转的符箓，是与璃月千年地脉之间的一份私人契约。</text>
+    <text x="120" y="2150" font-size="11" fill="#9C948A">典型车型：MPV／保姆车——「带轮子的移动茶室」</text>
+  </g>
+
+  <g>
+    <rect x="642" y="1634" width="546" height="620" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="642" y="1634" width="546" height="54" rx="12" fill="#E4DCC8"/>
+    <rect x="642" y="1662" width="546" height="26" fill="#E4DCC8"/>
+    <text x="915" y="1669" text-anchor="middle" font-size="16" font-weight="700" fill="#6B5A40">② 岩-电插电式混动</text>
+    <text x="915" y="1716" text-anchor="middle" font-size="12" fill="#6B5A40">「城内零残渣，城外跑长途」</text>
+    <text x="666" y="1752" font-size="13" font-weight="700" fill="#B8922F">配置</text>
+    <text x="666" y="1778" font-size="13" fill="#3B2F23">一套主岩元素引擎＋一套电机与化学电池组</text>
+    <text x="666" y="1810" font-size="13" font-weight="700" fill="#B8922F">痛点根源</text>
+    <text x="666" y="1836" font-size="13" fill="#3B2F23">岩引擎低速怠速效率极低、残渣多——在拥堵璃月港</text>
+    <text x="666" y="1862" font-size="13" fill="#3B2F23">被视为严重的市容污染</text>
+    <text x="666" y="1894" font-size="13" font-weight="700" fill="#B8922F">运行逻辑</text>
+    <text x="666" y="1920" font-size="13" fill="#3B2F23">· 港内走走停停：岩引擎强制熄火，纯电行驶零残渣极平顺</text>
+    <text x="666" y="1946" font-size="13" fill="#3B2F23">· 驶出天衡山进归离原或电量耗尽：岩引擎点火接管驱动，</text>
+    <text x="666" y="1972" font-size="13" fill="#3B2F23">　同时为电池反向充电</text>
+    <rect x="666" y="1998" width="498" height="224" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="690" y="2030" font-size="13" font-weight="700" fill="#B8922F">优势</text>
+    <text x="690" y="2058" font-size="12" fill="#3B2F23">完美规避岩引擎的城市拥堵劣势，同时保留岩元素结晶</text>
+    <text x="690" y="2084" font-size="12" fill="#3B2F23">全提瓦特最好买、最便宜的补能优势。</text>
+    <text x="690" y="2116" font-size="12" font-weight="700" fill="#B8922F">主力用户</text>
+    <text x="690" y="2142" font-size="12" fill="#3B2F23">重型商用车（跨国物流车等）多采用此架构。</text>
+  </g>
+
+  <g>
+    <rect x="1212" y="1634" width="546" height="620" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1212" y="1634" width="546" height="54" rx="12" fill="#E4DCC8"/>
+    <rect x="1212" y="1662" width="546" height="26" fill="#E4DCC8"/>
+    <text x="1485" y="1669" text-anchor="middle" font-size="16" font-weight="700" fill="#6B5A40">③ 增程式岩电混动</text>
+    <text x="1485" y="1716" text-anchor="middle" font-size="12" fill="#6B5A40">「带着发电机去越野」</text>
+    <text x="1236" y="1752" font-size="13" font-weight="700" fill="#B8922F">配置</text>
+    <text x="1236" y="1778" font-size="13" fill="#3B2F23">车轮完全由大功率电机驱动＋底盘铺满大容量电池；</text>
+    <text x="1236" y="1804" font-size="13" fill="#3B2F23">后备箱下方隐藏模块化可更换岩元素增程器</text>
+    <text x="1236" y="1836" font-size="13" font-weight="700" fill="#B8922F">运行与维护</text>
+    <text x="1236" y="1862" font-size="13" fill="#3B2F23">· 日常＝纯电车，享受 25.5 元/度廉价电网</text>
+    <text x="1236" y="1888" font-size="13" fill="#3B2F23">· 深入层岩巨渊、须弥沙漠等无网区：投入随手可得</text>
+    <text x="1236" y="1914" font-size="13" fill="#3B2F23">　的石珀或白铁矿，增程器即启动发电输入电池</text>
+    <text x="1236" y="1940" font-size="13" fill="#3B2F23">· 燃烧室堵塞提示后，像换电池包一样用随车工具整体</text>
+    <text x="1236" y="1966" font-size="13" fill="#3B2F23">　拆下更换清洁新模块；旧件在营地集中清理</text>
+    <rect x="1236" y="1992" width="498" height="230" rx="10" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1260" y="2024" font-size="13" font-weight="700" fill="#B8922F">优势：荒野求生级动力</text>
+    <text x="1260" y="2052" font-size="12" fill="#3B2F23">既有纯电车极致的驾驶平顺性（四轮独立电控精准脱困扭矩），</text>
+    <text x="1260" y="2078" font-size="12" fill="#3B2F23">又彻底消灭离开文明社会的「续航焦虑」。</text>
+    <text x="1260" y="2110" font-size="12" font-weight="700" fill="#B8922F">主力用户</text>
+    <text x="1260" y="2136" font-size="12" fill="#3B2F23">冒险家协会高级成员、宪兵部队边境巡逻队（SUV／越野车）。</text>
+  </g>
+
+  <g>
+    <rect x="1782" y="1634" width="546" height="620" rx="12" fill="#3B2F23" stroke="#D8AF45" stroke-width="2.5"/>
+    <rect x="1782" y="1634" width="546" height="54" rx="12" fill="#8C3B2E"/>
+    <rect x="1782" y="1662" width="546" height="26" fill="#8C3B2E"/>
+    <text x="2055" y="1669" text-anchor="middle" font-size="16" font-weight="700" fill="#F7EBC8">④ 极光反应混动（岩-雷双擎）</text>
+    <text x="2055" y="1716" text-anchor="middle" font-size="12" fill="#E8D8AC">奢华的性能怪兽 · 为炫技而生</text>
+    <text x="1806" y="1752" font-size="13" font-weight="700" fill="#D8AF45">配置</text>
+    <text x="1806" y="1778" font-size="13" fill="#F3EDDE">前轴雷元素磁力驱动＋后轴大马力岩元素机械引擎</text>
+    <text x="1806" y="1810" font-size="13" font-weight="700" fill="#D8AF45">噩梦级难题：结晶反应</text>
+    <text x="1806" y="1836" font-size="12" fill="#F3EDDE">狭小底盘内高频雷元素力一旦与岩引擎高温废气非受控接触，</text>
+    <text x="1806" y="1862" font-size="12" fill="#F3EDDE">瞬间生成坚硬惰性结晶卡死传动轴减速器——车毁人亡。</text>
+    <rect x="1806" y="1878" width="498" height="200" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1830" y="1908" font-size="13" font-weight="700" fill="#D8AF45">解决方案：「惯性中和器」飞轮</text>
+    <text x="1830" y="1934" font-size="12" fill="#F3EDDE">· 深海翠玦岩制成的巨大飞轮储存切换间隙动能</text>
+    <text x="1830" y="1960" font-size="12" fill="#F3EDDE">· 车载系统毫秒级在纯雷/纯岩模式间切换，两套系统理论上永不同时工作</text>
+    <text x="1830" y="1986" font-size="12" fill="#F3EDDE">· 吸收切换时的微量泄露元素，作为稳定剂固化于飞轮表面</text>
+    <text x="1830" y="2012" font-size="12" fill="#F3EDDE">· 双动力舱航天级绝缘屏蔽材料密封</text>
+    <text x="1806" y="2104" font-size="12" fill="#E8D8AC">起步雷元素恐怖推背感，高速巡航岩元素维持极速；</text>
+    <text x="1806" y="2130" font-size="12" fill="#E8D8AC">造价高昂维护如流水——「财力与权力的象征」</text>
+    <text x="1806" y="2156" font-size="12" fill="#E8D8AC">（传闻凝光私人座驾即此架构）。</text>
+    <text x="1806" y="2192" font-size="11" fill="#C9B98A">典型车型：GT 跑车定制款 · 财政部对其征收 200% 奢侈品排量税</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2320" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月汽车动力技术》整理；价格单位为璃月元。未来方向：岩动力残渣清洁化＋符箓成本压缩，古老仙家符箓与新兴工业智慧共同驱动交通变革。</text>
+</svg>

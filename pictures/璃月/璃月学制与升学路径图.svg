@@ -1,0 +1,423 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 3180" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#9C948A"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="3180" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月学制与升学路径图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">幼儿—童生—秀才—举人—进士—庶常—翰林 · 八年免费义务教育 · 统考「进修向／就业向」双通道 · 截至 TE 2030（共和历 26 年）</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区 · 七阶学制卡片带 ═══════════ -->
+  <g>
+    <!-- 卡片 1 幼儿教育 -->
+    <g>
+      <rect x="102" y="150" width="300" height="260" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+      <rect x="102" y="150" width="300" height="36" rx="12" fill="#E4DCC8"/>
+      <rect x="102" y="172" width="300" height="14" fill="#E4DCC8"/>
+      <text x="252" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A40">① 幼儿教育</text>
+      <text x="252" y="222" text-anchor="middle" font-size="13" fill="#6B5A40">国际通称 · 幼儿园</text>
+      <text x="252" y="254" text-anchor="middle" font-size="17" font-weight="700" fill="#3B2F23">4 — 8 岁</text>
+      <text x="252" y="282" text-anchor="middle" font-size="13" fill="#6B5A40">学制 4 年</text>
+      <rect x="152" y="298" width="200" height="26" rx="13" fill="none" stroke="#9C948A" stroke-width="1.2"/>
+      <text x="252" y="316" text-anchor="middle" font-size="12" fill="#6B5A40">非义务（推荐）</text>
+      <line x1="126" y1="340" x2="378" y2="340" stroke="#D8CCAE" stroke-width="1"/>
+      <text x="252" y="368" text-anchor="middle" font-size="12" fill="#B8922F">主要出口 → 童生</text>
+      <text x="252" y="392" text-anchor="middle" font-size="11" fill="#9C948A">入园率 城 90% · 乡 60%</text>
+    </g>
+    <path d="M 406 280 H 414" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- 卡片 2 童生 -->
+    <g>
+      <rect x="418" y="150" width="300" height="260" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="3"/>
+      <rect x="418" y="150" width="300" height="36" rx="12" fill="url(#goldTop)"/>
+      <rect x="418" y="172" width="300" height="14" fill="url(#goldTop)"/>
+      <text x="568" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">② 童生</text>
+      <text x="568" y="222" text-anchor="middle" font-size="13" fill="#6B5A40">国际通称 · 小学</text>
+      <text x="568" y="254" text-anchor="middle" font-size="17" font-weight="700" fill="#3B2F23">8 — 13 岁</text>
+      <text x="568" y="282" text-anchor="middle" font-size="13" fill="#6B5A40">学制 5 年</text>
+      <rect x="468" y="298" width="200" height="26" rx="13" fill="url(#goldTop)"/>
+      <text x="568" y="316" text-anchor="middle" font-size="12" font-weight="700" fill="#3B2F23">义务教育 · 免费</text>
+      <line x1="442" y1="340" x2="694" y2="340" stroke="#D8CCAE" stroke-width="1"/>
+      <text x="568" y="368" text-anchor="middle" font-size="12" fill="#B8922F">主要出口 → 秀才</text>
+      <text x="568" y="392" text-anchor="middle" font-size="11" fill="#9C948A">会写会算、能读能述</text>
+    </g>
+    <path d="M 722 280 H 730" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- 卡片 3 秀才 -->
+    <g>
+      <rect x="734" y="150" width="300" height="260" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="3"/>
+      <rect x="734" y="150" width="300" height="36" rx="12" fill="url(#goldTop)"/>
+      <rect x="734" y="172" width="300" height="14" fill="url(#goldTop)"/>
+      <text x="884" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">③ 秀才</text>
+      <text x="884" y="222" text-anchor="middle" font-size="13" fill="#6B5A40">国际通称 · 中学</text>
+      <text x="884" y="254" text-anchor="middle" font-size="17" font-weight="700" fill="#3B2F23">13 — 16 岁</text>
+      <text x="884" y="282" text-anchor="middle" font-size="13" fill="#6B5A40">学制 3 年</text>
+      <rect x="784" y="298" width="200" height="26" rx="13" fill="url(#goldTop)"/>
+      <text x="884" y="316" text-anchor="middle" font-size="12" font-weight="700" fill="#3B2F23">义务教育 · 免费</text>
+      <line x1="758" y1="340" x2="1010" y2="340" stroke="#D8CCAE" stroke-width="1"/>
+      <text x="884" y="368" text-anchor="middle" font-size="12" fill="#B8922F">出口 → 就业或统考</text>
+      <text x="884" y="392" text-anchor="middle" font-size="11" fill="#9C948A">文理兼通 · 不分科</text>
+    </g>
+    <path d="M 1038 280 H 1046" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- 卡片 4 举人 -->
+    <g>
+      <rect x="1050" y="150" width="300" height="260" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+      <rect x="1050" y="150" width="300" height="36" rx="12" fill="#E4DCC8"/>
+      <rect x="1050" y="172" width="300" height="14" fill="#E4DCC8"/>
+      <text x="1200" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A40">④ 举人</text>
+      <text x="1200" y="222" text-anchor="middle" font-size="13" fill="#6B5A40">国际通称 · 预科</text>
+      <text x="1200" y="254" text-anchor="middle" font-size="17" font-weight="700" fill="#3B2F23">16 — 18 岁</text>
+      <text x="1200" y="282" text-anchor="middle" font-size="13" fill="#6B5A40">学制 2 年</text>
+      <rect x="1100" y="298" width="200" height="26" rx="13" fill="none" stroke="#9C948A" stroke-width="1.2"/>
+      <text x="1200" y="316" text-anchor="middle" font-size="12" fill="#6B5A40">非义务 · 高校第一级</text>
+      <line x1="1074" y1="340" x2="1326" y2="340" stroke="#D8CCAE" stroke-width="1"/>
+      <text x="1200" y="368" text-anchor="middle" font-size="12" fill="#B8922F">出口 → 就业或进士</text>
+      <text x="1200" y="392" text-anchor="middle" font-size="11" fill="#9C948A">通识打底 · 定向分流</text>
+    </g>
+    <path d="M 1354 280 H 1362" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- 卡片 5 进士 -->
+    <g>
+      <rect x="1366" y="150" width="300" height="260" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+      <rect x="1366" y="150" width="300" height="36" rx="12" fill="#E4DCC8"/>
+      <rect x="1366" y="172" width="300" height="14" fill="#E4DCC8"/>
+      <text x="1516" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A40">⑤ 进士</text>
+      <text x="1516" y="222" text-anchor="middle" font-size="13" fill="#6B5A40">国际通称 · 本科</text>
+      <text x="1516" y="254" text-anchor="middle" font-size="17" font-weight="700" fill="#3B2F23">18 — 21 岁</text>
+      <text x="1516" y="282" text-anchor="middle" font-size="13" fill="#6B5A40">学制 3 年</text>
+      <rect x="1416" y="298" width="200" height="26" rx="13" fill="none" stroke="#9C948A" stroke-width="1.2"/>
+      <text x="1516" y="316" text-anchor="middle" font-size="12" fill="#6B5A40">非义务 · 培养主干</text>
+      <line x1="1390" y1="340" x2="1642" y2="340" stroke="#D8CCAE" stroke-width="1"/>
+      <text x="1516" y="368" text-anchor="middle" font-size="12" fill="#B8922F">出口 → 就业或庶常</text>
+      <text x="1516" y="392" text-anchor="middle" font-size="11" fill="#9C948A">授进士学位（≈学士）</text>
+    </g>
+    <path d="M 1670 280 H 1678" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- 卡片 6 庶常 -->
+    <g>
+      <rect x="1682" y="150" width="300" height="260" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+      <rect x="1682" y="150" width="300" height="36" rx="12" fill="#E4DCC8"/>
+      <rect x="1682" y="172" width="300" height="14" fill="#E4DCC8"/>
+      <text x="1832" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A40">⑥ 庶常</text>
+      <text x="1832" y="222" text-anchor="middle" font-size="13" fill="#6B5A40">国际通称 · 硕士</text>
+      <text x="1832" y="254" text-anchor="middle" font-size="17" font-weight="700" fill="#3B2F23">21 — 23/24 岁</text>
+      <text x="1832" y="282" text-anchor="middle" font-size="13" fill="#6B5A40">学制 2 — 3 年</text>
+      <rect x="1732" y="298" width="200" height="26" rx="13" fill="none" stroke="#9C948A" stroke-width="1.2"/>
+      <text x="1832" y="316" text-anchor="middle" font-size="12" fill="#6B5A40">非义务 · 精英化</text>
+      <line x1="1706" y1="340" x2="1958" y2="340" stroke="#D8CCAE" stroke-width="1"/>
+      <text x="1832" y="368" text-anchor="middle" font-size="12" fill="#B8922F">出口 → 就业或翰林</text>
+      <text x="1832" y="392" text-anchor="middle" font-size="11" fill="#9C948A">导师制 + 个性化培养</text>
+    </g>
+    <path d="M 1986 280 H 1994" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <!-- 卡片 7 翰林 -->
+    <g>
+      <rect x="1998" y="150" width="300" height="260" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+      <rect x="1998" y="150" width="300" height="36" rx="12" fill="#4A3A28"/>
+      <rect x="1998" y="172" width="300" height="14" fill="#4A3A28"/>
+      <text x="2148" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#F7EBC8">⑦ 翰林</text>
+      <text x="2148" y="222" text-anchor="middle" font-size="13" fill="#C9B98A">国际通称 · 博士</text>
+      <text x="2148" y="254" text-anchor="middle" font-size="17" font-weight="700" fill="#F7EBC8">24 — 28 岁</text>
+      <text x="2148" y="282" text-anchor="middle" font-size="13" fill="#E8D8AC">学制 3 — 4 年</text>
+      <rect x="2048" y="298" width="200" height="26" rx="13" fill="none" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="2148" y="316" text-anchor="middle" font-size="12" fill="#D8AF45">最高阶段 · 极少数</text>
+      <line x1="2022" y1="340" x2="2274" y2="340" stroke="#6B5A40" stroke-width="1"/>
+      <text x="2148" y="368" text-anchor="middle" font-size="12" fill="#D8AF45">高校 · 科研院所 · 智库</text>
+      <text x="2148" y="392" text-anchor="middle" font-size="11" fill="#C9B98A">全国在读不过数千人</text>
+    </g>
+    <!-- 义务教育括线 -->
+    <path d="M 418 420 V 442 H 1034 V 420" fill="none" stroke="#B8922F" stroke-width="2"/>
+    <text x="726" y="468" text-anchor="middle" font-size="14" font-weight="700" fill="#B8922F">八年免费义务教育 · 经费以中央财政转移支付为主、府级配套为辅，偏远郡县另有专项补助</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 三大实施细节面板 ═══════════ -->
+  <g>
+    <rect x="72" y="500" width="736" height="430" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="96" y="538" font-size="19" font-weight="700" fill="#3B2F23">幼儿教育</text>
+    <text x="96" y="572" font-size="13" font-weight="700" fill="#B8922F">城市地区</text>
+    <text x="96" y="596" font-size="13" fill="#3B2F23">· 设蒙学园、幼稚园，按「游戏启蒙、习惯养成」组织教学</text>
+    <text x="96" y="620" font-size="13" fill="#3B2F23">· 内容：识字、数数、礼仪、手工与元素常识绘本</text>
+    <text x="96" y="652" font-size="13" font-weight="700" fill="#B8922F">乡村地区</text>
+    <text x="96" y="676" font-size="13" fill="#3B2F23">· 村办园、巡回幼师与季节班为主</text>
+    <text x="96" y="700" font-size="13" fill="#3B2F23">· 琉璃府等新建地区由府财政补助扩面</text>
+    <text x="96" y="732" font-size="13" font-weight="700" fill="#B8922F">经费与补助</text>
+    <text x="96" y="756" font-size="13" fill="#3B2F23">· 公办民办并存，家庭按梯度承担费用</text>
+    <text x="96" y="780" font-size="13" fill="#3B2F23">· 低收入家庭可申领儿童教育补助</text>
+    <rect x="96" y="806" width="688" height="92" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="440" y="842" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">入园率：城区约九成 · 乡村约六成</text>
+    <text x="440" y="870" text-anchor="middle" font-size="12" fill="#6B5A40">城乡差距仍是教育公平的关注重点</text>
+  </g>
+  <g>
+    <rect x="832" y="500" width="736" height="430" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="856" y="538" font-size="19" font-weight="700" fill="#3B2F23">童生与秀才课程（义务教育）</text>
+    <text x="856" y="572" font-size="13" font-weight="700" fill="#B8922F">童生 · 五年（8—13 岁）</text>
+    <text x="856" y="596" font-size="13" fill="#3B2F23">· 主干：璃月语、提瓦特通用语、数学、自然常识</text>
+    <text x="856" y="620" font-size="13" fill="#3B2F23">· 辅以契约与生活常识、道德礼仪、体育艺术</text>
+    <text x="856" y="644" font-size="13" fill="#3B2F23">· 自小渗透契约精神：「言必信、行必果」品行课</text>
+    <text x="856" y="668" font-size="13" fill="#3B2F23">· 基础财货观念教育，实用底线「会写会算、能读能述」</text>
+    <text x="856" y="700" font-size="13" font-weight="700" fill="#B8922F">秀才 · 三年（13—16 岁）</text>
+    <text x="856" y="724" font-size="13" fill="#3B2F23">· 深化文理课程，不实行文理分科</text>
+    <text x="856" y="748" font-size="13" fill="#3B2F23">· 技艺模块：工业认知、商贸实务、农耕技能、财货家政</text>
+    <text x="856" y="772" font-size="13" fill="#3B2F23">· 为统考「文理兼通、技艺双全」打底</text>
+    <rect x="856" y="798" width="688" height="100" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1200" y="836" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">毕业门槛：义务教育结业考试</text>
+    <text x="1200" y="864" text-anchor="middle" font-size="12" fill="#6B5A40">合格者获秀才结业证书，凭学历与技能就业或报考统考</text>
+  </g>
+  <g>
+    <rect x="1592" y="500" width="736" height="430" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1616" y="538" font-size="19" font-weight="700" fill="#3B2F23">学区 · 特殊教育 · 师资</text>
+    <text x="1616" y="572" font-size="13" font-weight="700" fill="#B8922F">学区与办学形式</text>
+    <text x="1616" y="596" font-size="13" fill="#3B2F23">· 就近入学学区制；城区标准化学校，班额受控</text>
+    <text x="1616" y="620" font-size="13" fill="#3B2F23">· 轻策庄、绝云间等人口稀疏区设复式教学点</text>
+    <text x="1616" y="644" font-size="13" fill="#3B2F23">· 若干教学点共设寄宿制中心校，国家供膳宿补助</text>
+    <text x="1616" y="668" font-size="13" fill="#3B2F23">· 优质学校「分校」下沉：璃港府一中设遁玉分校</text>
+    <text x="1616" y="700" font-size="13" font-weight="700" fill="#B8922F">特殊教育与师资</text>
+    <text x="1616" y="724" font-size="13" fill="#3B2F23">· 特教学校＋随班就读＋资源教室，保障残障儿童</text>
+    <text x="1616" y="748" font-size="13" fill="#3B2F23">· 师范院校培养为主，实行教师资格证书制度</text>
+    <text x="1616" y="772" font-size="13" fill="#3B2F23">· 教师须完成乡村任教或轮岗交流方可晋升</text>
+    <rect x="1616" y="798" width="688" height="100" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1960" y="836" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">乡村教师倾斜政策</text>
+    <text x="1960" y="864" text-anchor="middle" font-size="12" fill="#6B5A40">偏远津贴＋职称倾斜；师范院校与实训基地承担在职继续教育</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 统考与升学路径 ═══════════ -->
+  <g>
+    <text x="1200" y="978" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">高等教育统一入学考试（统考）与升学路径</text>
+    <line x1="1010" y1="992" x2="1390" y2="992" stroke="#C9A227" stroke-width="1.5"/>
+  </g>
+
+  <!-- 秀才结业入口胶囊 -->
+  <rect x="1030" y="1010" width="340" height="44" rx="22" fill="url(#goldTop)" stroke="#B8922F" stroke-width="1.5"/>
+  <text x="1200" y="1039" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">秀才结业证书持有者</text>
+  <path d="M 1200 1054 V 1084" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- 统考主卡 -->
+  <g>
+    <rect x="600" y="1090" width="1200" height="330" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="624" y="1128" font-size="24" font-weight="700" fill="#F7EBC8">高等教育统一入学考试（统考）</text>
+    <text x="624" y="1156" font-size="13" fill="#D8AF45">国家考试院组织 · 命题／评卷／录取三环节分离 · 异地评卷 · 随机复核 · 不设文理分科，全体考生统一试卷</text>
+    <text x="624" y="1194" font-size="14" font-weight="700" fill="#E8D8AC">五科目（报考顶尖高校者须文理兼通、技艺双全）</text>
+    <g font-size="13">
+      <rect x="624" y="1210" width="200" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="724" y="1233" text-anchor="middle" fill="#F7EBC8">璃月语</text>
+      <rect x="840" y="1210" width="220" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="950" y="1233" text-anchor="middle" fill="#F7EBC8">提瓦特通用语</text>
+      <rect x="1076" y="1210" width="160" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1156" y="1233" text-anchor="middle" fill="#F7EBC8">数学</text>
+      <rect x="1252" y="1210" width="260" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1382" y="1233" text-anchor="middle" fill="#F7EBC8">文理综合</text>
+      <rect x="1528" y="1210" width="248" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1652" y="1233" text-anchor="middle" fill="#F7EBC8">技艺与劳动实践</text>
+    </g>
+    <text x="624" y="1282" font-size="12" fill="#C9B98A">· 文理综合涵盖自然与元素科学、历史与契约文明</text>
+    <text x="624" y="1310" font-size="13" fill="#E8D8AC">录取原则：成绩优先、志愿投档；热门院校与专业另设校考面试</text>
+    <text x="624" y="1338" font-size="13" fill="#E8D8AC">报考时须明示进修意向，在「进修向」与「就业向」两条通道中二选一</text>
+    <text x="624" y="1392" font-size="12" fill="#C9B98A">管理：国家考试院为教育部直属机构，并管理义务教育结业考试等全国性考试</text>
+  </g>
+
+  <!-- 右侧公平机制与落榜出路卡 -->
+  <g>
+    <rect x="1860" y="1090" width="480" height="330" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1884" y="1128" font-size="18" font-weight="700" fill="#3B2F23">契约式公平与落榜出路</text>
+    <text x="1884" y="1162" font-size="13" font-weight="700" fill="#B8922F">「契约」的公平性保障</text>
+    <text x="1884" y="1186" font-size="13" fill="#3B2F23">· 命题、评卷、录取三环节相互分离</text>
+    <text x="1884" y="1210" font-size="13" fill="#3B2F23">· 重大考试实行异地评卷与随机复核</text>
+    <line x1="1884" y1="1234" x2="2316" y2="1234" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1884" y="1268" font-size="13" font-weight="700" fill="#B8922F">落榜者三条出路</text>
+    <rect x="1884" y="1284" width="432" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="2100" y="1308" text-anchor="middle" font-size="13" fill="#3B2F23">就地就业，凭秀才学历求职</text>
+    <rect x="1884" y="1328" width="432" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="2100" y="1352" text-anchor="middle" font-size="13" fill="#3B2F23">复读备考，来年再战统考</text>
+    <rect x="1884" y="1372" width="432" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="2100" y="1396" text-anchor="middle" font-size="13" fill="#3B2F23">转入成人教育通道（夜校·函授·开放大学）</text>
+  </g>
+
+  <!-- 双通道路径 -->
+  <path d="M 1200 1420 V 1448 M 650 1448 H 1750 M 650 1448 V 1478 M 1750 1448 V 1478" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="160" y="1484" width="980" height="250" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="184" y="1522" font-size="20" font-weight="700" fill="#F7EBC8">进修向</text>
+    <rect x="320" y="1502" width="180" height="28" rx="14" fill="url(#goldTop)"/>
+    <text x="410" y="1522" text-anchor="middle" font-size="12" font-weight="700" fill="#3B2F23">录取分数线更高</text>
+    <text x="184" y="1558" font-size="13" fill="#E8D8AC">· 报考举人时即申报本校进士进修意向</text>
+    <text x="184" y="1586" font-size="13" fill="#E8D8AC">· 举人结业考核合格者 → 保送本校进士（免升学考试）</text>
+    <text x="184" y="1614" font-size="13" fill="#E8D8AC">· 热门专业仍须按结业成绩与专业考核竞争，未达标者保送资格作废</text>
+    <text x="184" y="1642" font-size="13" fill="#E8D8AC">· 拟跨校者须参加拟转入高校组织的进士招生考试</text>
+    <rect x="184" y="1664" width="932" height="46" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="650" y="1693" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">定位：为深造者提供确定性——一次保送，直达进士</text>
+  </g>
+  <g>
+    <rect x="1260" y="1484" width="980" height="250" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1284" y="1522" font-size="20" font-weight="700" fill="#3B2F23">就业向</text>
+    <rect x="1420" y="1502" width="180" height="28" rx="14" fill="#E4DCC8"/>
+    <text x="1510" y="1522" text-anchor="middle" font-size="12" font-weight="700" fill="#6B5A40">录取分数线更低</text>
+    <text x="1284" y="1558" font-size="13" fill="#3B2F23">· 结业后直接就业，进入技术员、职员等岗位</text>
+    <text x="1284" y="1586" font-size="13" fill="#3B2F23">· 结业前普遍接受合作厂商短期「厂训」（不成文惯例，不计入学制）</text>
+    <text x="1284" y="1614" font-size="13" fill="#3B2F23">· 日后改意进修或拟转考他校：自行参加各校分别组织的进士招生考试</text>
+    <text x="1284" y="1642" font-size="13" fill="#3B2F23">· 竞争录取，不占保送名额</text>
+    <rect x="1284" y="1664" width="932" height="46" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1750" y="1693" text-anchor="middle" font-size="13" font-weight="700" fill="#B8922F">定位：低门槛入学、快就业出口，保留日后重返校园的大门</text>
+  </g>
+
+  <!-- 举人第一年通识 -->
+  <path d="M 650 1734 V 1762 H 1200 M 1750 1734 V 1762 H 1200 M 1200 1762 V 1786" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="60" y="1792" width="2280" height="190" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <text x="84" y="1830" font-size="19" font-weight="700" fill="#3B2F23">举人第一年 · 通识教育（四类方向共通 · 学分制）</text>
+    <text x="84" y="1856" font-size="12" fill="#6B5A40">定位：「通识打底、定向分流」，在进入专业前建立共同的知识底座与职业方向感；学年末设分流考试与职业规划辅导</text>
+    <g font-size="13">
+      <rect x="84" y="1874" width="240" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="204" y="1898" text-anchor="middle" fill="#3B2F23">高等数学与统计</text>
+      <rect x="340" y="1874" width="230" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="455" y="1898" text-anchor="middle" fill="#3B2F23">璃月语与写作</text>
+      <rect x="586" y="1874" width="240" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="706" y="1898" text-anchor="middle" fill="#3B2F23">逻辑与批判思维</text>
+      <rect x="842" y="1874" width="290" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="987" y="1898" text-anchor="middle" fill="#3B2F23">自然与元素科学导论</text>
+      <rect x="1148" y="1874" width="270" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1283" y="1898" text-anchor="middle" fill="#3B2F23">契约法与公民教育</text>
+      <rect x="1434" y="1874" width="280" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1574" y="1898" text-anchor="middle" fill="#3B2F23">世界经济与商业史</text>
+      <rect x="1730" y="1874" width="220" height="36" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1840" y="1898" text-anchor="middle" fill="#3B2F23">体育与审美</text>
+    </g>
+    <text x="2316" y="1898" text-anchor="end" font-size="12" fill="#B8922F">→ 学年末四大轨分流</text>
+  </g>
+
+  <!-- 四大轨分流 -->
+  <path d="M 1200 1982 V 2010" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="72" y="2016" width="546" height="300" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="2.5"/>
+    <rect x="72" y="2016" width="546" height="56" rx="12" fill="url(#goldTop)"/>
+    <rect x="72" y="2052" width="546" height="20" fill="url(#goldTop)"/>
+    <text x="345" y="2052" text-anchor="middle" font-size="17" font-weight="700" fill="#3B2F23">技术理科 ★主体</text>
+    <text x="96" y="2104" font-size="13" font-weight="700" fill="#B8922F">定位</text>
+    <text x="96" y="2128" font-size="13" fill="#3B2F23">面向工程与生产的应用科学</text>
+    <text x="96" y="2160" font-size="13" font-weight="700" fill="#B8922F">第二年侧重</text>
+    <text x="96" y="2184" font-size="13" fill="#3B2F23">工程制图、工艺实务、车间与现场实习</text>
+    <text x="96" y="2216" font-size="13" font-weight="700" fill="#B8922F">对应出口</text>
+    <text x="96" y="2240" font-size="13" fill="#3B2F23">工程师、技术员、工厂与工程企业</text>
+    <text x="96" y="2264" font-size="13" fill="#3B2F23">进士阶段工科专业（机械·土木·电气·矿业等）</text>
+    <text x="96" y="2298" font-size="11" fill="#B8922F">★ 直接对接工业化对技能人才的需求</text>
+  </g>
+  <g>
+    <rect x="642" y="2016" width="546" height="300" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="642" y="2016" width="546" height="56" rx="12" fill="#E4DCC8"/>
+    <rect x="642" y="2052" width="546" height="20" fill="#E4DCC8"/>
+    <text x="915" y="2052" text-anchor="middle" font-size="17" font-weight="700" fill="#6B5A40">学术理科</text>
+    <text x="666" y="2104" font-size="13" font-weight="700" fill="#B8922F">定位</text>
+    <text x="666" y="2128" font-size="13" fill="#3B2F23">面向基础科学的研究方向</text>
+    <text x="666" y="2160" font-size="13" font-weight="700" fill="#B8922F">第二年侧重</text>
+    <text x="666" y="2184" font-size="13" fill="#3B2F23">研究方法、文献阅读、实验与田野训练</text>
+    <text x="666" y="2216" font-size="13" font-weight="700" fill="#B8922F">对应出口</text>
+    <text x="666" y="2240" font-size="13" fill="#3B2F23">科研院所、高校、医学与基础研究</text>
+    <text x="666" y="2264" font-size="13" fill="#3B2F23">进士阶段理学专业（数理化·元素材料·生物等）</text>
+  </g>
+  <g>
+    <rect x="1212" y="2016" width="546" height="300" rx="12" fill="#F5EFE0" stroke="#B8922F" stroke-width="2.5"/>
+    <rect x="1212" y="2016" width="546" height="56" rx="12" fill="url(#goldTop)"/>
+    <rect x="1212" y="2052" width="546" height="20" fill="url(#goldTop)"/>
+    <text x="1485" y="2052" text-anchor="middle" font-size="17" font-weight="700" fill="#3B2F23">技术文科 ★主体</text>
+    <text x="1236" y="2104" font-size="13" font-weight="700" fill="#B8922F">定位</text>
+    <text x="1236" y="2128" font-size="13" fill="#3B2F23">面向商贸与行政的应用文科</text>
+    <text x="1236" y="2160" font-size="13" font-weight="700" fill="#B8922F">第二年侧重</text>
+    <text x="1236" y="2184" font-size="13" fill="#3B2F23">做账、文案、谈判模拟与社会调查</text>
+    <text x="1236" y="2216" font-size="13" font-weight="700" fill="#B8922F">对应出口</text>
+    <text x="1236" y="2240" font-size="13" fill="#3B2F23">财会、金融、物流、文秘、旅游、涉外业务</text>
+    <text x="1236" y="2264" font-size="13" fill="#3B2F23">进士阶段应用文科（会计·金融·工商管理等）</text>
+    <text x="1236" y="2298" font-size="11" fill="#B8922F">★ 承接重商传统的应用型人才主线</text>
+  </g>
+  <g>
+    <rect x="1782" y="2016" width="546" height="300" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <rect x="1782" y="2016" width="546" height="56" rx="12" fill="#E4DCC8"/>
+    <rect x="1782" y="2052" width="546" height="20" fill="#E4DCC8"/>
+    <text x="2055" y="2052" text-anchor="middle" font-size="17" font-weight="700" fill="#6B5A40">学术文科</text>
+    <text x="1806" y="2104" font-size="13" font-weight="700" fill="#B8922F">定位</text>
+    <text x="1806" y="2128" font-size="13" fill="#3B2F23">面向人文与社会科学的研究方向</text>
+    <text x="1806" y="2160" font-size="13" font-weight="700" fill="#B8922F">第二年侧重</text>
+    <text x="1806" y="2184" font-size="13" fill="#3B2F23">研究方法、文献阅读、实验与田野训练</text>
+    <text x="1806" y="2216" font-size="13" font-weight="700" fill="#B8922F">对应出口</text>
+    <text x="1806" y="2240" font-size="13" fill="#3B2F23">高校、智库、司法、文史哲研究</text>
+    <text x="1806" y="2264" font-size="13" fill="#3B2F23">进士阶段人文社科专业（文史哲·法政·经济）</text>
+  </g>
+  <text x="1200" y="2350" text-anchor="middle" font-size="13" font-weight="700" fill="#B8922F">分流规则：志愿优先、兼顾成绩 · 热门轨设名额上限 · 跨轨调整须经第一年成绩审核 —— 实际分流以技术类为主体（技术理科＋技术文科人数远多于学术两轨）</text>
+
+  <!-- 第二年分轨 -->
+  <path d="M 1200 2368 V 2392" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="60" y="2398" width="2280" height="150" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="84" y="2434" font-size="19" font-weight="700" fill="#3B2F23">举人第二年 · 分轨学习与见习</text>
+    <text x="84" y="2462" font-size="13" fill="#3B2F23">· 共同要求：修满两年学分，按所分方向修习专业基础课，并完成至少一次行业见习或企业实训</text>
+    <text x="84" y="2488" font-size="13" fill="#3B2F23">· 技术轨：工程制图、工艺实务、车间现场实习　·　学术轨：研究方法、文献阅读、实验与田野训练　·　文科轨：实务操作与社会调查</text>
+    <text x="84" y="2514" font-size="13" fill="#3B2F23">· 就业向结业后普遍进入合作厂商接受短期「厂训」——由厂商自主规划、属不成文惯例，不计入学制</text>
+  </g>
+
+  <!-- 结业出路 -->
+  <path d="M 1200 2548 V 2576 M 650 2576 H 1750 M 650 2576 V 2604 M 1750 2576 V 2604" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <g>
+    <rect x="160" y="2610" width="980" height="140" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="184" y="2646" font-size="17" font-weight="700" fill="#F7EBC8">进修向结业出路</text>
+    <text x="184" y="2676" font-size="13" fill="#E8D8AC">修满学分＋结业考核合格 → 获举人结业证书 → 按申报意向保送本校进士</text>
+    <text x="184" y="2702" font-size="13" fill="#E8D8AC">热门专业按结业成绩竞争；跨校者参加拟转入高校进士招生考试</text>
+  </g>
+  <g>
+    <rect x="1260" y="2610" width="980" height="140" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1284" y="2646" font-size="17" font-weight="700" fill="#3B2F23">就业向结业出路</text>
+    <text x="1284" y="2676" font-size="13" fill="#3B2F23">获举人结业证书 → 持证直接就业（技术员、职员等岗位）</text>
+    <text x="1284" y="2702" font-size="13" fill="#3B2F23">日后拟进修／转校：自行参加各校进士招生考试，竞争录取</text>
+  </g>
+
+  <!-- 高阶三级速览 -->
+  <path d="M 1200 2750 V 2778" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="1200" y="2768" text-anchor="middle" font-size="12" fill="#6B5A40">继续深造</text>
+  <g>
+    <rect x="60" y="2784" width="753" height="310" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="84" y="2822" font-size="18" font-weight="700" fill="#3B2F23">进士（本科 · 三年）</text>
+    <text x="84" y="2850" font-size="12" fill="#B8922F">培养专业人才的主干阶段 · 授进士学位（≈学士）</text>
+    <text x="84" y="2878" font-size="13" fill="#3B2F23">· 专业按四大方向细分，以举人结业身份按志愿报考</text>
+    <text x="84" y="2904" font-size="13" fill="#3B2F23">· 就业类普遍与厂商联合培养：理论教学至第二学年末，</text>
+    <text x="84" y="2930" font-size="13" fill="#3B2F23">　末学期约半年下厂实践，毕设结合生产课题、定向就业</text>
+    <text x="84" y="2956" font-size="13" fill="#3B2F23">· 学术类以课程、实验与论文为主</text>
+    <text x="84" y="2982" font-size="13" fill="#3B2F23">· 成绩优异者可辅修第二专业或跨校联合培养</text>
+    <text x="84" y="3008" font-size="13" fill="#3B2F23">· 毕业生是工程师、医师、教师、律师、公务员骨干来源</text>
+    <rect x="84" y="3026" width="705" height="44" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="436" y="3054" text-anchor="middle" font-size="12" fill="#6B5A40">从政者仍须从村、里等基层干事做起（干部选任制度）</text>
+  </g>
+  <g>
+    <rect x="833" y="2784" width="753" height="310" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="857" y="2822" font-size="18" font-weight="700" fill="#3B2F23">庶常（硕士 · 两至三年）</text>
+    <text x="857" y="2850" font-size="12" fill="#B8922F">导师制 + 个性化培养 · 与翰林合计仅占在校生约半成</text>
+    <text x="857" y="2878" font-size="13" fill="#3B2F23">· 录取依据：进士成绩、研究或实践经历及导师接收意向</text>
+    <text x="857" y="2904" font-size="13" fill="#3B2F23">· 学术型（三年）：科研导向，课程＋学位论文，多进院所</text>
+    <text x="857" y="2930" font-size="13" fill="#3B2F23">　高校任教或续读翰林</text>
+    <text x="857" y="2956" font-size="13" fill="#3B2F23">· 专业型（两年）：案例教学、项目实习，交应用型报告</text>
+    <text x="857" y="2982" font-size="13" fill="#3B2F23">· 不设统一专业目录：可跨学科组合（矿冶＋环境、金融＋元素材料），</text>
+    <text x="857" y="3008" font-size="13" fill="#3B2F23">　可赴蒙德、须弥等合作高校修读学分</text>
+    <rect x="857" y="3026" width="705" height="44" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1209" y="3054" text-anchor="middle" font-size="12" fill="#6B5A40">「庶常」之本义——按需取材、各成其器</text>
+  </g>
+  <g>
+    <rect x="1606" y="2784" width="753" height="310" rx="12" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="1630" y="2822" font-size="18" font-weight="700" fill="#F7EBC8">翰林（博士 · 三至四年）</text>
+    <text x="1630" y="2850" font-size="12" fill="#D8AF45">独立原创研究为核心 · 全国在读不过数千人</text>
+    <text x="1630" y="2878" font-size="13" fill="#E8D8AC">· 申请人须先取得庶常学位（特殊领域可获准入）</text>
+    <text x="1630" y="2904" font-size="13" fill="#E8D8AC">· 三级关口：开题报告 → 中期考核 → 学位论文答辩</text>
+    <text x="1630" y="2930" font-size="13" fill="#E8D8AC">· 副导师制，与科研院所、企业研究院联合培养</text>
+    <text x="1630" y="2956" font-size="13" fill="#E8D8AC">· 鼓励参加国际学术会议与跨国联合攻关</text>
+    <text x="1630" y="2982" font-size="13" fill="#E8D8AC">· 合格者授翰林学位（≈博士），多入高校、科研院所、</text>
+    <text x="1630" y="3008" font-size="13" fill="#E8D8AC">　智库与国家实验室，为学术与工程创新中坚</text>
+    <rect x="1630" y="3026" width="705" height="44" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1982" y="3054" text-anchor="middle" font-size="12" fill="#D8AF45">博士后另设「翰林馆研究学者」短期深造岗位</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="3150" text-anchor="middle" font-size="12" fill="#6B5A40">注：年龄为典型值，允许弹性入学、跳级与插班；成人可通过继续教育补齐相应阶段。学制沿用科举雅称（《璃月学制法案》，共和历十三年前后确立），别称供对外交流使用。</text>
+</svg>

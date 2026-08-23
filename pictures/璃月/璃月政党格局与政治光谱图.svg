@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2200" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8C3B2E"/>
+      <stop offset="0.28" stop-color="#C98A2E"/>
+      <stop offset="0.5" stop-color="#D8AF45"/>
+      <stop offset="0.75" stop-color="#7A6A45"/>
+      <stop offset="1" stop-color="#3E4A5A"/>
+    </linearGradient>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#9C948A"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2200" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月政党格局与政治光谱图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">「一党主导、多党合作」· 执政党与四大参政党 · 代表阶层、核心主张、票仓分布 · 志飞集团现象</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区 · 执政党 ═══════════ -->
+  <g>
+    <rect x="60" y="150" width="2280" height="430" rx="14" fill="#3B2F23" stroke="#D8AF45" stroke-width="2.5"/>
+    <rect x="84" y="176" width="260" height="38" rx="19" fill="url(#goldTop)"/>
+    <text x="214" y="202" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">执 政 党</text>
+    <text x="380" y="204" font-size="24" font-weight="700" fill="#F7EBC8">璃月人民党 (Liyue People's Party, LPP)</text>
+    <!-- 三栏 -->
+    <text x="84" y="262" font-size="14" font-weight="700" fill="#D8AF45">诞生背景</text>
+    <text x="84" y="290" font-size="13" fill="#E8D8AC">· 原七星激进改革派（以刻晴为首）牵头，</text>
+    <text x="84" y="316" font-size="13" fill="#E8D8AC">　主动剥离旧官僚资本，吸收平民精英转型</text>
+    <text x="84" y="342" font-size="13" fill="#E8D8AC">· 建党过程中合并「璃月社会党」（劳工权益）</text>
+    <text x="84" y="368" font-size="13" fill="#E8D8AC">　与「璃月环保党」（层岩巨渊及绝云间生态），</text>
+    <text x="84" y="394" font-size="13" fill="#E8D8AC">　形成强大中左翼执政联盟</text>
+    <text x="850" y="262" font-size="14" font-weight="700" fill="#D8AF45">核心主张：实践新民主主义</text>
+    <text x="850" y="290" font-size="13" fill="#E8D8AC">· 国家必须掌控铁路、电网、元素矿业等核心命脉</text>
+    <text x="850" y="316" font-size="13" fill="#E8D8AC">· 推行温和土地改革，打破古老宗族的土地兼并</text>
+    <text x="850" y="342" font-size="13" fill="#E8D8AC">· 鼓励科技创新（如符箓动力研发）</text>
+    <text x="850" y="368" font-size="13" fill="#E8D8AC">· 强调「人的力量」，减少对仙人遗迹的盲目依赖</text>
+    <text x="1616" y="262" font-size="14" font-weight="700" fill="#D8AF45">领导核心：党中央委员会</text>
+    <rect x="1616" y="278" width="700" height="66" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1636" y="306" font-size="13" font-weight="700" fill="#F7EBC8">刻晴 · 党总书记兼国家主席（虚位）</text>
+    <text x="1636" y="330" font-size="12" fill="#C9B98A">由众议院选举产生；从日常政务抽身，专注战略方向的学习调研与理论思考</text>
+    <rect x="1616" y="354" width="700" height="66" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1636" y="382" font-size="13" font-weight="700" fill="#F7EBC8">凝光 · 政务院总理</text>
+    <text x="1636" y="406" font-size="12" fill="#C9B98A">无出其右的经济手腕与资本调控能力，行政机器的实际掌舵者</text>
+    <!-- 底条 -->
+    <rect x="84" y="430" width="2232" height="110" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="108" y="464" font-size="13" font-weight="700" fill="#D8AF45">执政地位：「一党主导、多党竞争」（官方表述为『多党合作』）</text>
+    <text x="108" y="492" font-size="12" fill="#E8D8AC">凭借深厚的社会根基与执政实绩，自共和国成立以来始终保持众议院多数党地位并独立组阁（经常延揽党外专家入阁）；凝光自 TE 2005 年出任首任总理后多次连选连任。</text>
+    <text x="108" y="520" font-size="12" fill="#E8D8AC">这种稳定来自宪政框架内的定期改选（每届任期 4 年），而非帝君时代的终身制。所有合法政党均需在《璃月共和国宪法》与「契约精神」框架内活动。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 政治光谱 ═══════════ -->
+  <g>
+    <rect x="120" y="616" width="2160" height="22" rx="11" fill="url(#spectrum)"/>
+    <path d="M 2288 627 H 2300" stroke="#9C948A" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+    <text x="120" y="606" font-size="13" font-weight="700" fill="#8C3B2E">左翼</text>
+    <text x="2280" y="606" text-anchor="end" font-size="13" font-weight="700" fill="#3E4A5A">右翼</text>
+  </g>
+
+  <!-- 农会联盟 -->
+  <g>
+    <rect x="25" y="672" width="450" height="520" rx="12" fill="#F5EFE0" stroke="#8C3B2E" stroke-width="2"/>
+    <rect x="25" y="672" width="450" height="54" rx="12" fill="#8C3B2E"/>
+    <rect x="25" y="700" width="450" height="26" fill="#8C3B2E"/>
+    <text x="250" y="707" text-anchor="middle" font-size="16" font-weight="700" fill="#FBF8F2">璃月农会联盟</text>
+    <text x="49" y="762" font-size="13" font-weight="700" fill="#B8922F">定位：坚定的左翼政党</text>
+    <text x="49" y="794" font-size="13" font-weight="700" fill="#B8922F">代表阶层</text>
+    <text x="49" y="820" font-size="13" fill="#3B2F23">贫农、雇农、偏远山区的采矿劳工</text>
+    <text x="49" y="852" font-size="13" font-weight="700" fill="#B8922F">政治主张</text>
+    <text x="49" y="878" font-size="13" fill="#3B2F23">· 要求彻底的土地重新分配</text>
+    <text x="49" y="904" font-size="13" fill="#3B2F23">· 提高农产品收购最低保护价</text>
+    <text x="49" y="930" font-size="13" fill="#3B2F23">· 减免农业税</text>
+    <text x="49" y="956" font-size="13" fill="#3B2F23">· 国家向轻策庄等偏远地区倾斜教育与医疗资源</text>
+    <rect x="49" y="988" width="402" height="94" rx="8" fill="#FBF8F2" stroke="#8C3B2E" stroke-width="1"/>
+    <text x="73" y="1018" font-size="13" font-weight="700" fill="#8C3B2E">核心票仓</text>
+    <text x="73" y="1044" font-size="12" fill="#3B2F23">轻策庄、沉玉谷周边农村、</text>
+    <text x="73" y="1068" font-size="12" fill="#3B2F23">琉璃府的底层矿工聚居区</text>
+    <text x="250" y="1160" text-anchor="middle" font-size="11" fill="#9C948A">联盟重要盟友：驿镖局联盟的公益运费政策</text>
+  </g>
+
+  <!-- 人民党 -->
+  <g>
+    <rect x="500" y="672" width="450" height="520" rx="12" fill="#3B2F23" stroke="#D8AF45" stroke-width="3"/>
+    <rect x="500" y="672" width="450" height="54" rx="12" fill="url(#goldTop)"/>
+    <rect x="500" y="700" width="450" height="26" fill="url(#goldTop)"/>
+    <text x="725" y="707" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">璃月人民党 ★执政</text>
+    <text x="524" y="762" font-size="13" font-weight="700" fill="#D8AF45">定位：中左翼 · 长期执政</text>
+    <text x="524" y="794" font-size="13" font-weight="700" fill="#D8AF45">代表阶层</text>
+    <text x="524" y="820" font-size="13" fill="#F3EDDE">平民精英＋劳工＋生态议题群体（联盟结构）</text>
+    <text x="524" y="852" font-size="13" font-weight="700" fill="#D8AF45">执政实绩</text>
+    <text x="524" y="878" font-size="13" fill="#F3EDDE">· 三十年工业革命由建设期转入运营期</text>
+    <text x="524" y="904" font-size="13" fill="#F3EDDE">· 八年免费义务教育与公立教育网络</text>
+    <text x="524" y="930" font-size="13" fill="#F3EDDE">· 「节制资本」国企体系托底经济命脉</text>
+    <text x="524" y="956" font-size="13" fill="#F3EDDE">· 缓解早期资本主义的残酷剥削</text>
+    <rect x="524" y="988" width="402" height="94" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1"/>
+    <text x="548" y="1018" font-size="13" font-weight="700" fill="#D8AF45">核心票仓</text>
+    <text x="548" y="1044" font-size="12" fill="#E8D8AC">全社会基础广泛——工人、平民精英、</text>
+    <text x="548" y="1068" font-size="12" fill="#E8D8AC">郊区农会温和派均长期稳定支持</text>
+    <text x="725" y="1160" text-anchor="middle" font-size="11" fill="#C9B98A">常带外宾参观样板国企（如驿镖局联盟）</text>
+  </g>
+
+  <!-- 民主党 -->
+  <g>
+    <rect x="975" y="672" width="450" height="520" rx="12" fill="#F5EFE0" stroke="#D8AF45" stroke-width="2"/>
+    <rect x="975" y="672" width="450" height="54" rx="12" fill="#C9A227"/>
+    <rect x="975" y="700" width="450" height="26" fill="#C9A227"/>
+    <text x="1200" y="707" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">璃月民主党</text>
+    <text x="999" y="762" font-size="13" font-weight="700" fill="#B8922F">定位：政治光谱居中的摇摆力量</text>
+    <text x="999" y="794" font-size="13" font-weight="700" fill="#B8922F">代表阶层</text>
+    <text x="999" y="820" font-size="13" fill="#3B2F23">小资产阶级（吃虎岩个体户、小商贩）、富农、中农、知识分子与教师</text>
+    <text x="999" y="852" font-size="13" font-weight="700" fill="#B8922F">政治主张（民生与微观经济）</text>
+    <text x="999" y="878" font-size="13" fill="#3B2F23">· 减免小微企业税收、保护个体户产权</text>
+    <text x="999" y="904" font-size="13" fill="#3B2F23">· 增加教育投入、完善城市基础设施</text>
+    <text x="999" y="930" font-size="13" fill="#3B2F23">· 两轮车换电网络、市郊通勤铁路等具体诉求</text>
+    <rect x="999" y="988" width="402" height="94" rx="8" fill="#FBF8F2" stroke="#C9A227" stroke-width="1"/>
+    <text x="1023" y="1018" font-size="13" font-weight="700" fill="#B8922F">核心票仓</text>
+    <text x="1023" y="1044" font-size="12" fill="#3B2F23">吃虎岩、绯云坡的外围商圈、</text>
+    <text x="1023" y="1068" font-size="12" fill="#3B2F23">学校教师、大学生</text>
+    <text x="1200" y="1160" text-anchor="middle" font-size="11" fill="#9C948A">常就换电柜布局、佣金比例等细节与国企交涉</text>
+  </g>
+
+  <!-- 共和党 -->
+  <g>
+    <rect x="1450" y="672" width="450" height="520" rx="12" fill="#F5EFE0" stroke="#7A6A45" stroke-width="2"/>
+    <rect x="1450" y="672" width="450" height="54" rx="12" fill="#7A6A45"/>
+    <rect x="1450" y="700" width="450" height="26" fill="#7A6A45"/>
+    <text x="1675" y="707" text-anchor="middle" font-size="16" font-weight="700" fill="#FBF8F2">璃月共和党</text>
+    <text x="1474" y="762" font-size="13" font-weight="700" fill="#B8922F">定位：实业救国的工业派</text>
+    <text x="1474" y="794" font-size="13" font-weight="700" fill="#B8922F">代表阶层</text>
+    <text x="1474" y="820" font-size="13" fill="#3B2F23">民族资产阶级、本土轻重工业大亨、富农</text>
+    <text x="1474" y="852" font-size="13" font-weight="700" fill="#B8922F">政治主张</text>
+    <text x="1474" y="878" font-size="13" fill="#3B2F23">· 加大对本土制造业（机车集团、造船厂）补贴</text>
+    <text x="1474" y="904" font-size="13" fill="#3B2F23">· 设置贸易壁垒对抗枫丹、至冬工业品倾销</text>
+    <text x="1474" y="930" font-size="13" fill="#3B2F23">· 农村：农业机械化与规模化经营</text>
+    <rect x="1474" y="988" width="402" height="94" rx="8" fill="#FBF8F2" stroke="#7A6A45" stroke-width="1"/>
+    <text x="1498" y="1018" font-size="13" font-weight="700" fill="#7A6A45">核心票仓</text>
+    <text x="1498" y="1044" font-size="12" fill="#3B2F23">归离原工业区、黑岩厂旧址转型企业；</text>
+    <text x="1498" y="1068" font-size="12" fill="#3B2F23">飞云商会部分高层为重要金主</text>
+    <text x="1675" y="1160" text-anchor="middle" font-size="11" fill="#9C948A">赞赏重卡制造、换电产业、包装工业的需求侧带动</text>
+  </g>
+
+  <!-- 自由党 -->
+  <g>
+    <rect x="1925" y="672" width="450" height="520" rx="12" fill="#F5EFE0" stroke="#3E4A5A" stroke-width="2"/>
+    <rect x="1925" y="672" width="450" height="54" rx="12" fill="#3E4A5A"/>
+    <rect x="1925" y="700" width="450" height="26" fill="#3E4A5A"/>
+    <text x="2150" y="707" text-anchor="middle" font-size="16" font-weight="700" fill="#FBF8F2">璃月自由党</text>
+    <text x="1949" y="762" font-size="13" font-weight="700" fill="#B8922F">定位：古典重商主义与自由市场派</text>
+    <text x="1949" y="794" font-size="13" font-weight="700" fill="#B8922F">代表阶层</text>
+    <text x="1949" y="820" font-size="13" fill="#3B2F23">买办阶级、金融资产阶级、远洋贸易商</text>
+    <text x="1949" y="852" font-size="13" font-weight="700" fill="#B8922F">政治主张</text>
+    <text x="1949" y="878" font-size="13" fill="#3B2F23">· 大幅降低关税、全面开放金融市场</text>
+    <text x="1949" y="904" font-size="13" fill="#3B2F23">· 允许外国资本（北国银行等）深度参与基建</text>
+    <text x="1949" y="930" font-size="13" fill="#3B2F23">· 反对过高劳动保护法案与过度环保限制</text>
+    <rect x="1949" y="988" width="402" height="94" rx="8" fill="#FBF8F2" stroke="#3E4A5A" stroke-width="1"/>
+    <text x="1973" y="1018" font-size="13" font-weight="700" fill="#3E4A5A">核心票仓</text>
+    <text x="1973" y="1044" font-size="12" fill="#3B2F23">璃港府核心商业区、港口海关总署周边</text>
+    <text x="1973" y="1068" font-size="12" fill="#3B2F23">的跨国贸易财阀</text>
+    <text x="2150" y="1160" text-anchor="middle" font-size="11" fill="#9C948A">长期抨击驿镖局末端垄断，要求开放快递牌照</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 议会席位示意 ═══════════ -->
+  <g>
+    <text x="1200" y="1262" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">众议院席位格局示意（约 1200 席 · 各府郡按人口比例直选）</text>
+    <rect x="120" y="1290" width="1150" height="64" fill="url(#goldTop)" stroke="#B8922F" stroke-width="2"/>
+    <text x="695" y="1330" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">璃月人民党 —— 多数党 · 独立组阁（历届定期改选保持）</text>
+    <rect x="1270" y="1290" width="180" height="64" fill="#8C3B2E"/>
+    <rect x="1450" y="1290" width="240" height="64" fill="#C9A227"/>
+    <rect x="1690" y="1290" width="280" height="64" fill="#7A6A45"/>
+    <rect x="1970" y="1290" width="310" height="64" fill="#3E4A5A"/>
+    <text x="1775" y="1330" text-anchor="middle" font-size="13" font-weight="700" fill="#F7EBC8">四大在野党（参政党）合计少数</text>
+    <text x="120" y="1396" font-size="12" fill="#6B5A40">注：席段宽度为示意，不代表精确议席比例；人民党虽多数组阁，但预算、立法仍需在两院与在野党博弈，民主党常为关键摇摆力量。</text>
+    <rect x="120" y="1418" width="2160" height="56" rx="10" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1200" y="1453" text-anchor="middle" font-size="13" fill="#3B2F23">议会中的激烈辩论代替了曾经暗流涌动的商战与门派倾轧——「契约式民主」将利益冲突纳入宪政轨道。</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 志飞集团 ═══════════ -->
+  <g>
+    <rect x="60" y="1510" width="2280" height="560" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <rect x="84" y="1536" width="300" height="40" rx="20" fill="none" stroke="#D8AF45" stroke-width="1.5"/>
+    <text x="234" y="1563" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">夹缝中的巨兽 · 案例观察</text>
+    <text x="420" y="1565" font-size="22" font-weight="700" fill="#F7EBC8">志飞集团 —— 「节制资本」体制最艰难的试金石</text>
+    <text x="84" y="1622" font-size="13" fill="#E8D8AC">发迹于层岩巨渊矿运，在三十年工业革命中完成从车队老板到横跨矿业、物流、地产、金融的综合财阀的蜕变。</text>
+    <text x="84" y="1662" font-size="14" font-weight="700" fill="#D8AF45">双向政治献金：它不选边站，因为在两党的拉锯中早已超越党派分野</text>
+    <rect x="84" y="1682" width="1100" height="200" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1716" font-size="14" font-weight="700" fill="#D8AF45">在共和党面前：「本土工业脊梁」</text>
+    <text x="108" y="1746" font-size="13" fill="#E8D8AC">· 旗下重卡运输队一律采购璃月机车集团与黑岩厂联合生产的混动牵引车</text>
+    <text x="108" y="1772" font-size="13" fill="#E8D8AC">· 在归离原工业区拥有自营的矿石加工基地</text>
+    <text x="108" y="1798" font-size="13" fill="#E8D8AC">· 契合共和党「实业救国」「农业机械化规模化」的产业叙事</text>
+    <text x="108" y="1848" font-size="12" fill="#C9B98A">献金逻辑：以本土采购换取贸易保护主义政策的持续支持</text>
+    <rect x="1216" y="1682" width="1100" height="200" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="1240" y="1716" font-size="14" font-weight="700" fill="#D8AF45">在自由党面前：「开放市场先锋」</text>
+    <text x="1240" y="1746" font-size="13" fill="#E8D8AC">· 集团金融子公司与北国银行合资设立融资租赁平台</text>
+    <text x="1240" y="1772" font-size="13" fill="#E8D8AC">· 通过进口枫丹精密分拣设备大幅压低层岩巨渊矿砂的出口成本</text>
+    <text x="1240" y="1798" font-size="13" fill="#E8D8AC">· 契合自由党「降低关税」「外资深度参与」的市场叙事</text>
+    <text x="1240" y="1848" font-size="12" fill="#C9B98A">献金逻辑：以开放姿态换取金融准入与低关税环境</text>
+    <rect x="84" y="1906" width="2232" height="130" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1940" font-size="13" font-weight="700" fill="#D8AF45">双重身份的政治处境</text>
+    <text x="108" y="1968" font-size="13" fill="#E8D8AC">政治局面上是历届政务院不敢轻易触碰的纳税大户与就业吸纳器；却因垄断性矿运线路定价权与地产囤积，屡屡被民主党、农会联盟推上议会质询台。</text>
+    <text x="108" y="1996" font-size="13" fill="#E8D8AC">国资委的「节制资本」工具（国企定价权、监察院审计、国土规划否决权）与财阀的市场势力长期拉锯——这一张力构成璃月政治生态的深层底色。</text>
+    <text x="108" y="2024" font-size="12" fill="#C9B98A">观察视角：多党竞争并未消解资本影响力，而是将其转化为公开的议会博弈与监管博弈。</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2140" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月政治概况》整理；席位示意不代表精确比例。各党活动边界以《璃月共和国宪法》与「契约精神」框架为准。</text>
+</svg>

@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2120" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#B8922F"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#9C948A"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2120" fill="#FBF8F2"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月符箓动力经济性图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">地脉契约配额机制 · 「买断制能源」四级定价 · 功率分级与缓冲配置 · 与廉价电网的市场博弈</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
+
+  <!-- ═══════════ 第 1 区左 · 配额机制流程 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="1140" height="620" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="188" font-size="19" font-weight="700" fill="#F7EBC8">地脉契约配额机制：为什么符箓的能源成本接近于零</text>
+    <!-- 流程 -->
+    <rect x="84" y="214" width="480" height="64" rx="10" fill="url(#goldTop)"/>
+    <text x="324" y="242" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">激活一枚符箓</text>
+    <text x="324" y="266" text-anchor="middle" font-size="11" fill="#6B5A40">聚能箓与地脉能源建立共振契约</text>
+    <path d="M 564 246 H 594" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="600" y="214" width="576" height="64" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="888" y="242" text-anchor="middle" font-size="13" font-weight="700" fill="#D8AF45">登记分配</text>
+    <text x="888" y="266" text-anchor="middle" font-size="11" fill="#E8D8AC">民用级按出厂序列号自动获终身基础配额 · 商业级及以上逐台申报</text>
+    <path d="M 888 278 V 306" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <rect x="84" y="312" width="1092" height="66" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="630" y="340" text-anchor="middle" font-size="14" font-weight="700" fill="#F7EBC8">每月免费获得地脉能量基础配额 —— 恰好覆盖中小功率设备的运行需求</text>
+    <text x="630" y="364" text-anchor="middle" font-size="11" fill="#C9B98A">对普通用户而言，符箓的能源成本接近于零</text>
+    <!-- 分叉 -->
+    <path d="M 400 378 V 406 H 300 V 430" fill="none" stroke="#B8922F" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 860 378 V 406 H 960 V 430" fill="none" stroke="#9C948A" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrowGray)"/>
+    <rect x="120" y="436" width="480" height="96" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="144" y="468" font-size="13" font-weight="700" fill="#D8AF45">正常路径：配额内运行</text>
+    <text x="144" y="494" font-size="12" fill="#F3EDDE">恒定功率日夜发电，怠速余电存入缓冲装置，</text>
+    <text x="144" y="520" font-size="12" fill="#F3EDDE">加速时瞬时放大功率——用户无任何账单。</text>
+    <rect x="680" y="436" width="496" height="96" rx="10" fill="#8C3B2E" stroke="#D8AF45" stroke-width="1.5"/>
+    <text x="704" y="468" font-size="13" font-weight="700" fill="#F7EBC8">超额路径：额外申请缴费</text>
+    <text x="704" y="494" font-size="12" fill="#F3EDDE">私自改装致功率激增、入门工业级设备等超出基础配额，</text>
+    <text x="704" y="520" font-size="12" fill="#F3EDDE">须向国家电网与地脉能源局申请并缴纳地脉使用费。</text>
+    <!-- 上限 -->
+    <rect x="84" y="556" width="1092" height="180" rx="10" fill="#4A3A28" stroke="#D8AF45" stroke-width="1.5"/>
+    <text x="108" y="590" font-size="14" font-weight="700" fill="#D8AF45">可持续性红线：全国符箓设备总能量配额上限</text>
+    <text x="108" y="618" font-size="13" fill="#F3EDDE">＝ 地脉年自然淤积量的约 30% —— 以维持地脉系统的自我修复与生态平衡为前提。</text>
+    <text x="108" y="644" font-size="13" fill="#F3EDDE">· 当前已激活设备的总功率远未触及上限，短期扩张无虞</text>
+    <text x="108" y="670" font-size="13" fill="#F3EDDE">· 但长远而言符箓动力无法无限扩张——这正是替代路线保有战略生存空间的根本原因</text>
+    <text x="108" y="700" font-size="12" fill="#C9B98A">配额由璃月国家电网与地脉能源局统一登记、分配，运营方不得自行修改参数。</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · 电价对比 ═══════════ -->
+  <g>
+    <rect x="1240" y="146" width="1100" height="620" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1264" y="188" font-size="19" font-weight="700" fill="#3B2F23">国家电网电价体系（璃月元/度）—— 化学电池路线的底气</text>
+    <!-- 条形 -->
+    <g font-size="13">
+      <text x="1264" y="238" font-weight="700" fill="#3B2F23">居民电价</text>
+      <rect x="1440" y="222" width="676" height="30" rx="6" fill="#D8AF45"/>
+      <text x="2136" y="243" font-size="14" font-weight="700" fill="#3B2F23">23.8</text>
+      <text x="1264" y="290" font-weight="700" fill="#B8922F">全国平均</text>
+      <rect x="1440" y="274" width="723" height="30" rx="6" fill="url(#goldTop)"/>
+      <text x="2183" y="295" font-size="14" font-weight="700" fill="#3B2F23">25.5</text>
+      <text x="1264" y="342" font-weight="700" fill="#3B2F23">一般工商业</text>
+      <rect x="1440" y="326" width="770" height="30" rx="6" fill="#B8922F"/>
+      <text x="2230" y="347" font-size="14" font-weight="700" fill="#3B2F23">27.2</text>
+      <text x="1264" y="394" font-weight="700" fill="#3B2F23">规模化工业</text>
+      <rect x="1440" y="378" width="482" height="30" rx="6" fill="#9C948A"/>
+      <text x="1942" y="399" font-size="14" font-weight="700" fill="#3B2F23">13 ~ 17</text>
+      <text x="2010" y="397" font-size="11" fill="#6B5A40">（两部制电价＋分时电价综合）</text>
+    </g>
+    <line x1="1264" y1="430" x2="2316" y2="430" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="1264" y="462" font-size="13" font-weight="700" fill="#B8922F">解读</text>
+    <text x="1264" y="488" font-size="13" fill="#3B2F23">· 覆盖率极高、可靠性极强的国家电网，使「每公里电费」几乎可以忽略不计</text>
+    <text x="1264" y="514" font-size="13" fill="#3B2F23">· 对比买断制符箓的百万级初始投入，「充电」在平民市场拥有压倒性亲和力</text>
+    <text x="1264" y="540" font-size="13" fill="#3B2F23">· 高能耗场景（厂矿、跨市输电）下工业电价进一步压低用能支出</text>
+    <rect x="1264" y="572" width="1052" height="164" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1288" y="606" font-size="13" font-weight="700" fill="#D8AF45">两条路线的成本结构对照</text>
+    <text x="1288" y="634" font-size="12" fill="#E8D8AC">化学电池：初始成本低 ＋ 每度电 13~27 元 ＋ 核心材料依赖进口 ＋ 长途补能焦虑</text>
+    <text x="1288" y="660" font-size="12" fill="#E8D8AC">符箓动力：初始成本高（百万至千亿级）＋ 能源近乎免费 20 年 ＋ 免维护恒定输出 ＋ 受配额天花板约束</text>
+    <text x="1288" y="694" font-size="12" fill="#C9B98A">结论：不存在全能赢家——按初始财力、行驶强度、使用场景分层，正是混动架构繁荣的土壤。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区 · 价格表 ═══════════ -->
+  <text x="1200" y="816" text-anchor="middle" font-size="18" font-weight="700" fill="#3B2F23">「买断制能源」四级定价表（价格对标发动机／大型发电设备，单位：璃月元）</text>
+  <g>
+    <rect x="60" y="836" width="2280" height="48" fill="#3B2F23"/>
+    <text x="420" y="867" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">级别</text>
+    <text x="1060" y="867" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">单价区间</text>
+    <text x="1820" y="867" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">经济学定位</text>
+    <rect x="60" y="884" width="2280" height="56" fill="#F5EFE0"/>
+    <text x="420" y="918" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">民用级</text>
+    <text x="1060" y="918" text-anchor="middle" font-size="14" fill="#3B2F23">102 万 ~ 255 万</text>
+    <text x="1820" y="918" text-anchor="middle" font-size="13" fill="#6B5A40">对标燃油车发动机，一次性买断能源，百姓可负担</text>
+    <rect x="60" y="940" width="2280" height="56" fill="#FBF8F2"/>
+    <text x="420" y="974" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">商业级</text>
+    <text x="1060" y="974" text-anchor="middle" font-size="14" fill="#3B2F23">5100 万 ~ 1.7 亿</text>
+    <text x="1820" y="974" text-anchor="middle" font-size="13" fill="#6B5A40">中型巴士、冷链物流、中型工厂，需通过钱庄贷款</text>
+    <rect x="60" y="996" width="2280" height="56" fill="#F5EFE0"/>
+    <text x="420" y="1030" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">入门工业级</text>
+    <text x="1060" y="1030" text-anchor="middle" font-size="14" fill="#3B2F23">20.4 亿 ~ 51 亿</text>
+    <text x="1820" y="1030" text-anchor="middle" font-size="13" fill="#6B5A40">构成重型资产，企业需通过北国银行或本土钱庄贷款采购</text>
+    <rect x="60" y="1052" width="2280" height="56" fill="url(#goldTop)"/>
+    <text x="420" y="1086" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">顶尖工业级 ★国家战略资产</text>
+    <text x="1060" y="1086" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">680 亿 ~ 1360 亿</text>
+    <text x="1820" y="1086" text-anchor="middle" font-size="13" fill="#3B2F23">由主权基金与国资委严格掌控（跨市电网、大型铝/钢厂、跨国输电站）</text>
+    <rect x="60" y="836" width="2280" height="272" fill="none" stroke="#C9A227" stroke-width="2"/>
+    <line x1="740" y1="836" x2="740" y2="1108" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1400" y1="836" x2="1400" y2="1108" stroke="#D8CCAE" stroke-width="1"/>
+    <text x="2340" y="1128" text-anchor="end" font-size="11" fill="#9C948A">注：参考汇率 1 摩拉 ≈ 0.85 璃月元</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 功率用途表 ═══════════ -->
+  <g>
+    <rect x="60" y="1156" width="2280" height="48" fill="#3B2F23"/>
+    <text x="420" y="1187" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">级别</text>
+    <text x="900" y="1187" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">输出功率</text>
+    <text x="1500" y="1187" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">典型用途</text>
+    <text x="2080" y="1187" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">适配缓冲装置</text>
+    <rect x="60" y="1204" width="2280" height="62" fill="#F5EFE0"/>
+    <text x="420" y="1241" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">民用级</text>
+    <text x="900" y="1241" text-anchor="middle" font-size="14" fill="#3B2F23">1 ~ 5 kW</text>
+    <text x="1500" y="1241" text-anchor="middle" font-size="13" fill="#6B5A40">乘用车、家用电器、路灯、小型工坊</text>
+    <text x="2080" y="1241" text-anchor="middle" font-size="13" fill="#6B5A40">铅酸/石珀化学电池 · 微型飞轮</text>
+    <rect x="60" y="1266" width="2280" height="62" fill="#FBF8F2"/>
+    <text x="420" y="1303" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">商业级</text>
+    <text x="900" y="1303" text-anchor="middle" font-size="14" fill="#3B2F23">20 ~ 200 kW</text>
+    <text x="1500" y="1303" text-anchor="middle" font-size="13" fill="#6B5A40">中型巴士、冷链物流车、中型机械加工厂、商用船舶</text>
+    <text x="2080" y="1303" text-anchor="middle" font-size="13" fill="#6B5A40">高性能化学电池组 · 小型飞轮阵列</text>
+    <rect x="60" y="1328" width="2280" height="62" fill="#F5EFE0"/>
+    <text x="420" y="1365" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">入门工业级</text>
+    <text x="900" y="1365" text-anchor="middle" font-size="14" fill="#3B2F23">5 ~ 20 MW</text>
+    <text x="1500" y="1365" text-anchor="middle" font-size="13" fill="#6B5A40">电力机车、重型卡车、中型工厂、盾构机</text>
+    <text x="2080" y="1365" text-anchor="middle" font-size="13" fill="#6B5A40">元素电容器 · 高速合金飞轮</text>
+    <rect x="60" y="1390" width="2280" height="62" fill="url(#goldTop)"/>
+    <text x="420" y="1427" text-anchor="middle" font-size="14" font-weight="700" fill="#3B2F23">顶尖工业级</text>
+    <text x="900" y="1427" text-anchor="middle" font-size="14" fill="#3B2F23">200 ~ 500 MW</text>
+    <text x="1500" y="1427" text-anchor="middle" font-size="13" fill="#3B2F23">跨市电网、大型铝/钢厂、跨国输电站</text>
+    <text x="2080" y="1427" text-anchor="middle" font-size="13" fill="#3B2F23">抽水蓄能电站 · 超大型飞轮阵列</text>
+    <rect x="60" y="1156" width="2280" height="296" fill="none" stroke="#C9A227" stroke-width="2"/>
+    <line x1="660" y1="1156" x2="660" y2="1452" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1160" y1="1156" x2="1160" y2="1452" stroke="#D8CCAE" stroke-width="1"/>
+    <line x1="1840" y1="1156" x2="1840" y2="1452" stroke="#D8CCAE" stroke-width="1"/>
+  </g>
+
+  <!-- ═══════════ 第 4 区左 · 博弈 ═══════════ -->
+  <g>
+    <rect x="60" y="1486" width="1140" height="500" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
+    <text x="84" y="1528" font-size="19" font-weight="700" fill="#F7EBC8">市场博弈：廉价电网夹击下的符箓突围</text>
+    <text x="84" y="1564" font-size="13" font-weight="700" fill="#D8AF45">为什么大容量电池储能成为强劲对手</text>
+    <text x="84" y="1592" font-size="13" fill="#E8D8AC">· 面对 25.5 元/度的电网单价，「先买车后充电」的现金流优势碾压百万级买断门槛</text>
+    <text x="84" y="1618" font-size="13" fill="#E8D8AC">· 电网覆盖率与可靠性极高，城市用户的补能体验无缝且即时</text>
+    <text x="84" y="1650" font-size="13" font-weight="700" fill="#D8AF45">符箓阵营的反制与定位</text>
+    <text x="84" y="1678" font-size="13" fill="#E8D8AC">· 机关术士攻关重点：进一步压缩符箓发电机成本</text>
+    <text x="84" y="1704" font-size="13" fill="#E8D8AC">· 差异化卖点：免维护、抗极端环境、「无需妥协的自由运作」</text>
+    <text x="84" y="1730" font-size="13" fill="#E8D8AC">· 无网区域（矿区深处、沙漠腹地、跨国长途）中符箓与岩动力无可替代</text>
+    <rect x="84" y="1756" width="1092" height="196" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+    <text x="108" y="1788" font-size="13" font-weight="700" fill="#D8AF45">分层均衡的市场终局</text>
+    <text x="108" y="1816" font-size="12" fill="#F3EDDE">平民代步＝化学电池纯电；家庭多用途＝符箓插混；越野特种＝增程岩电；豪华性能＝雷动力／极光双擎；</text>
+    <text x="108" y="1842" font-size="12" fill="#F3EDDE">行政座驾＝纯符箓；重卡物流＝入门工业级符箓。四种混动架构正是各路线拉锯出的妥协产物。</text>
+    <text x="108" y="1878" font-size="12" fill="#C9B98A">政策变量：财政部以税率工具调节（奢侈品排量税 200% ↔ 化学电池面包车免税），引导消费分层。</text>
+    <text x="108" y="1912" font-size="12" fill="#C9B98A">长期约束：地脉配额上限（年淤积量 30%）决定符箓无法通吃——多元共存是制度设计的必然结果。</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区右 · 重卡金融案例 ═══════════ -->
+  <g>
+    <rect x="1240" y="1486" width="1100" height="500" rx="14" fill="#F5EFE0" stroke="#B8922F" stroke-width="2"/>
+    <text x="1264" y="1528" font-size="19" font-weight="700" fill="#3B2F23">案例：一台符箓重卡的金融学</text>
+    <text x="1264" y="1564" font-size="13" font-weight="700" fill="#B8922F">标的：拉动百吨矿石／集装箱的重型卡车</text>
+    <text x="1264" y="1590" font-size="13" fill="#3B2F23">· 动力总成：入门工业级符箓 (5~20 MW)＋高速飞轮缓冲</text>
+    <text x="1264" y="1616" font-size="13" fill="#3B2F23">· 「买断制」单价区间：20.4 亿 ~ 51 亿璃月元</text>
+    <text x="1264" y="1650" font-size="13" font-weight="700" fill="#B8922F">融资路径</text>
+    <text x="1264" y="1676" font-size="13" fill="#3B2F23">· 物流公司根本无力全款购买 → 通过本土钱庄或北国银行进行重资产抵押贷款</text>
+    <text x="1264" y="1710" font-size="13" font-weight="700" fill="#B8922F">购入后的经济账</text>
+    <text x="1264" y="1736" font-size="13" fill="#3B2F23">· 未来 20 年享受地脉契约的免费基础能源配额</text>
+    <text x="1264" y="1762" font-size="13" fill="#3B2F23">· 日常运营「燃料」成本几乎为零——重资产豪赌换取边际成本归零</text>
+    <text x="1264" y="1796" font-size="13" font-weight="700" fill="#B8922F">谁在下这场赌注</text>
+    <text x="1264" y="1822" font-size="13" fill="#3B2F23">· 业务遍及提瓦特大陆的跨国物流巨头</text>
+    <text x="1264" y="1848" font-size="13" fill="#3B2F23">· 矿区电网功率不足的矿产巨头——境内廉价电网对其意义不大</text>
+    <rect x="1264" y="1880" width="1052" height="72" rx="10" fill="#3B2F23" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1790" y="1910" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">「无需妥协的自由运作」，才是他们愿意进行这场重资产豪赌的真正原因</text>
+    <text x="1790" y="1938" text-anchor="middle" font-size="11" fill="#C9B98A">—— 璃月金融与重工业结合的奇观</text>
+  </g>
+
+  <!-- 脚注 -->
+  <text x="1200" y="2050" text-anchor="middle" font-size="12" fill="#6B5A40">注：本图据《璃月汽车动力技术》整理；价格、电价均为文中给定参考值。未来展望：随层岩深层勘探与绿色能源政策推进，动力技术朝多元化、融合化迈进。</text>
+</svg>

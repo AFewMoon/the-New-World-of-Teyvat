@@ -39,7 +39,7 @@
 
   <!-- ═══════════ 中上 · 四个通刷对象 ═══════════ -->
   <g>
-    <text x="1000" y="512" text-anchor="middle" font-size="16" font-weight="700" fill="#3B2F23">跨系统通刷范围</text>
+    <text x="1018" y="510" text-anchor="start" font-size="16" font-weight="700" fill="#3B2F23">跨系统通刷范围</text>
     <path d="M 1000 480 V 526" fill="none" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
 
     <!-- 四个对象 + 两个折扣标签 -->
