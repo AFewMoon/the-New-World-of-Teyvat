@@ -219,7 +219,7 @@
   <!-- ═══════════ 第 5 层 · 区域铁路公司 ═══════════ -->
   <g>
     <rect x="24" y="2500" width="2272" height="800" rx="16" fill="#E4EBF2" stroke="#B8922F" stroke-width="2"/>
-    <text x="1200" y="2536" text-anchor="middle" font-size="22" font-weight="700" fill="#3B2F23">区域铁路公司 · 每家全资子公司（辖 1 府 + 2 郡）＋境外璃蒙公司</text>
+    <text x="1200" y="2536" text-anchor="middle" font-size="22" font-weight="700" fill="#3B2F23">区域铁路公司 · 五大府各设一家全资子公司（辖 1 府 + 2 郡）· 另设参股境外璃蒙公司</text>
     <text x="1200" y="2558" text-anchor="middle" font-size="12" fill="#6B5A40">五大府各设一家全资子公司；总公司拥有移动资产（机车、车辆、动车组），区域公司拥有固定资产（线路、车站、供电、信号）并负责维护</text>
 
     <!-- 公司名行 -->
@@ -241,7 +241,7 @@
       <text x="1675" y="2642" text-anchor="middle" font-size="12" font-weight="400" fill="#5A4A30">琉璃府 · 灵矩郡、青墟郡</text>
       <rect x="1865" y="2580" width="350" height="90" rx="9" fill="#E9DFC6" stroke="#9C948A" stroke-width="1.5"/>
       <text x="2040" y="2612" text-anchor="middle" font-size="17" fill="#3B2F23">璃蒙公司 (LMRC)</text>
-      <text x="2040" y="2642" text-anchor="middle" font-size="12" font-weight="400" fill="#6B5A40">境外 · 蒙德境内 · 一套班子两块牌子</text>
+      <text x="2040" y="2642" text-anchor="middle" font-size="12" font-weight="400" fill="#6B5A40">境外参股 34% · 一套班子两块牌子 · 出口样板</text>
     </g>
 
     <g font-size="14" fill="#3B2F23">
