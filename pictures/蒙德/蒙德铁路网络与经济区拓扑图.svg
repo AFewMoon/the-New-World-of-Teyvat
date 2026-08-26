@@ -14,7 +14,7 @@
 
   <!-- ═══════════ 标题区 ═══════════ -->
   <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">蒙德铁路网络与经济区拓扑图</text>
-  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">四大经济分区 · 主干 200 km/h 双线电气化 · 次干 160 km/h 单线 · 高度私有化高度分离化体系</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">四大经济分区 · 三条主干线（北南／东西 200 km/h · 西南跨境 160 km/h）· 次干 160 km/h 单线 · 高度私有化高度分离化体系</text>
   <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
   <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
 
@@ -40,9 +40,9 @@
     <!-- 东西线：晨曦酒庄 — 清泉镇 — 风起地 — 星落湖 -->
     <polyline points="280,860 1169,860" fill="none" stroke="#1F7A5C" stroke-width="7"/>
     <polyline points="1191,869 1618,869" fill="none" stroke="#1F7A5C" stroke-width="7"/>
-    <!-- 西南跨境线（琥珀虚线）：归离原 — 晨曦酒庄 — 奔狼领（沿西缘走线，不穿首都区） -->
-    <polyline points="280,1100 280,871" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/>
-    <polyline points="280,849 280,430 921,430" fill="none" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/>
+    <!-- 西南跨境线（主干·绿实线）：归离原 — 晨曦酒庄 — 奔狼领（沿西缘走线，不穿首都区） -->
+    <polyline points="280,1100 280,871" fill="none" stroke="#1F7A5C" stroke-width="7"/>
+    <polyline points="280,849 280,430 921,430" fill="none" stroke="#1F7A5C" stroke-width="7"/>
     <!-- 雪山旅游线（点线）：清泉镇 — 龙脊雪山 -->
     <polyline points="500,882 500,1066 616,1066" fill="none" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/>
     <!-- 明冠联络线：明冠峡 — 风龙废墟 —（回接主干）-->
@@ -64,7 +64,7 @@
     <g font-size="13" font-weight="700">
       <text x="640" y="506" fill="#1F7A5C">北南线（主干·约 1,600 km）</text>
       <text x="560" y="842" fill="#1F7A5C">东西线（主干）</text>
-      <text x="310" y="690" fill="#8A5B1D">西南跨境线（次干·唯一铁路跨境通道·客货混跑）</text>
+      <text x="310" y="690" fill="#1F7A5C">西南跨境线（主干·160 km/h·唯一铁路跨境通道·客货混跑）</text>
       <text x="532" y="986" fill="#1F7A5C">雪山旅游线</text>
       <text x="1345" y="290" fill="#2FA47E">明冠联络线</text>
       <text x="1220" y="830" fill="#1F7A5C">摘星崖支线</text>
@@ -150,9 +150,8 @@
     <!-- 图例 -->
     <rect x="1770" y="240" width="540" height="230" rx="12" fill="#1F453B"/>
     <text x="1794" y="272" font-size="15" font-weight="700" fill="#52C79B">图例</text>
-    <line x1="1794" y1="294" x2="1854" y2="294" stroke="#1F7A5C" stroke-width="7"/><text x="1866" y="299" font-size="12.5" fill="#DDF2E8">主干线：200 km/h 双线电气化（繁忙路段四线），璃蒙铁路公司统营</text>
+    <line x1="1794" y1="294" x2="1854" y2="294" stroke="#1F7A5C" stroke-width="7"/><text x="1866" y="299" font-size="12.5" fill="#DDF2E8">主干线（北南线／东西线 200 km/h · 西南跨境线 160 km/h），璃蒙铁路公司统营</text>
     <line x1="1794" y1="322" x2="1854" y2="322" stroke="#2FA47E" stroke-width="4.5"/><text x="1866" y="327" font-size="12.5" fill="#DDF2E8">次干线／联络线：160 km/h 单线（繁忙路段双线）</text>
-    <line x1="1794" y1="350" x2="1854" y2="350" stroke="#C9862B" stroke-width="5" stroke-dasharray="14 9"/><text x="1866" y="355" font-size="12.5" fill="#DDF2E8">西南跨境线：通往归离原（璃月铁路网）</text>
     <line x1="1794" y1="378" x2="1854" y2="378" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/><text x="1866" y="383" font-size="12.5" fill="#DDF2E8">旅游／观光支线：季节性开行</text>
     <rect x="1794" y="400" width="40" height="22" fill="url(#hatch)" stroke="#6E614A"/><text x="1846" y="416" font-size="12.5" fill="#DDF2E8">风龙废墟军事区——运营与安全管理需与军方协调</text>
     <text x="1794" y="452" font-size="11.5" fill="#8FB5A6">※ 正交示意图：节点相对位置经艺术化处理，不代表真实地理方位与比例。</text>
@@ -168,7 +167,7 @@
       <rect x="84" y="1658" width="696" height="64" rx="8" fill="#F5FAF7" stroke="#9CC5B4"/><text x="108" y="1684" font-weight="700" fill="#1F7A5C">次干线供电</text><text x="108" y="1708">部分电气化；其余为内燃或混合动力牵引</text>
       <rect x="84" y="1734" width="696" height="64" rx="8" fill="#F5FAF7" stroke="#9CC5B4"/><text x="108" y="1760" font-weight="700" fill="#1F7A5C">主干线信号</text><text x="108" y="1784">LTCS-2 级固定闭塞（璃月引进）· 蒙德调度中心统一调度</text>
       <rect x="84" y="1810" width="696" height="64" rx="8" fill="#F5FAF7" stroke="#9CC5B4"/><text x="108" y="1836" font-weight="700" fill="#1F7A5C">次干线信号</text><text x="108" y="1860">各线不一——部分仍使用机械臂板信号或人工闭塞</text>
-      <rect x="84" y="1886" width="696" height="44" rx="8" fill="#1F453B"/><text x="108" y="1914" font-size="12.5" font-weight="700" fill="#52C79B">近期目标：主干线全线 200 km/h 达速运行</text>
+      <rect x="84" y="1886" width="696" height="44" rx="8" fill="#1F453B"/><text x="108" y="1914" font-size="12.5" font-weight="700" fill="#52C79B">近期目标：北南线、东西线全线 200 km/h 达速运行</text>
     </g>
 
     <rect x="828" y="1444" width="1512" height="500" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
