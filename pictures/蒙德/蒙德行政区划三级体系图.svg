@@ -78,7 +78,7 @@
     <rect x="60" y="478" width="756" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
     <rect x="84" y="502" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
     <text x="106" y="524" font-size="17" font-weight="700" fill="#1E3A31">星落湖领 (Starfall Lake)</text>
-    <text x="700" y="524" font-size="13" font-weight="700" fill="#1F7A5C">首府：星落城</text>
+    <text x="700" y="524" font-size="13" font-weight="700" fill="#1F7A5C">首府：施特恩堡</text>
     <text x="84" y="556" fill="#3E5F54">· 定位：重要工业和农业基地 · 清洁能源（风能水能）战略储备区</text>
     <text x="84" y="582" fill="#3E5F54">· 资源：星落湖水系广阔，铁矿水晶矿少量魔晶矿；大规模机械化</text>
     <text x="84" y="606" fill="#3E5F54">  种植高产小麦与风车菊</text>
@@ -92,7 +92,7 @@
     <rect x="840" y="478" width="720" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
     <rect x="864" y="502" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
     <text x="886" y="524" font-size="17" font-weight="700" fill="#1E3A31">奔狼领 (Wolvendom)</text>
-    <text x="1400" y="524" font-size="13" font-weight="700" fill="#1F7A5C">首府：奔狼堡</text>
+    <text x="1400" y="524" font-size="13" font-weight="700" fill="#1F7A5C">首府：沃尔夫斯堡</text>
     <text x="864" y="556" fill="#3E5F54">· 区位：蒙德城西偏北、明冠峡西南，南部与璃月接壤</text>
     <text x="864" y="582" fill="#3E5F54">· 经济：草原广阔森林茂密——优质羊毛与肉制品的畜牧业基地</text>
     <text x="864" y="608" fill="#3E5F54">· 军事：骑士团重要野外训练场所＋野战训练营·边境巡逻站</text>
@@ -122,7 +122,7 @@
     <rect x="60" y="858" width="756" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
     <rect x="84" y="882" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
     <text x="106" y="904" font-size="17" font-weight="700" fill="#1E3A31">晨曦酒庄领 (Dawn Winery)</text>
-    <text x="700" y="904" font-size="13" font-weight="700" fill="#1F7A5C">首府：晨曦城堡</text>
+    <text x="700" y="904" font-size="13" font-weight="700" fill="#1F7A5C">首府：摩根罗特城堡</text>
     <text x="84" y="936" fill="#3E5F54">· 区位：南部，靠近晨曦河下游，酿酒历史悠久、葡萄园广阔</text>
     <text x="84" y="962" fill="#3E5F54">· 经济：最重要的经济支柱——葡萄酒畅销提瓦特乃至更远，</text>
     <text x="84" y="986" fill="#3E5F54">  蒙德的「金色名片」</text>
@@ -136,7 +136,7 @@
     <rect x="840" y="858" width="720" height="356" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
     <rect x="864" y="882" width="8" height="30" rx="4" fill="url(#anemoTop)"/>
     <text x="886" y="904" font-size="17" font-weight="700" fill="#1E3A31">望风山地领 (Windwail Highland)</text>
-    <text x="1420" y="904" font-size="13" font-weight="700" fill="#1F7A5C">首府：鹰巢堡</text>
+    <text x="1420" y="904" font-size="13" font-weight="700" fill="#1F7A5C">首府：阿德勒霍斯特</text>
     <text x="864" y="936" fill="#3E5F54">· 区位：东部，与坎瑞亚遗迹接壤；山峰险峻、原始森林茂密</text>
     <text x="864" y="962" fill="#3E5F54">· 经济：重要的木材产地；各种珍稀动植物的栖息地</text>
     <text x="864" y="988" fill="#3E5F54">· 科研：新兴科技与元素力研究的秘密基地——最大自然保护区＋</text>
@@ -167,14 +167,14 @@
     <rect x="60" y="1238" width="756" height="356" rx="14" fill="#1F453B" stroke="#52C79B" stroke-width="2"/>
     <rect x="84" y="1262" width="8" height="30" rx="4" fill="#52C79B"/>
     <text x="106" y="1284" font-size="17" font-weight="700" fill="#DDF2E8">龙脊雪山领 (Dragonspine)</text>
-    <text x="700" y="1284" font-size="13" font-weight="700" fill="#52C79B">首府：雪栖堡</text>
+    <text x="700" y="1284" font-size="13" font-weight="700" fill="#52C79B">首府：施内瓦赫特</text>
     <text x="84" y="1316" fill="#DDF2E8">· 区位：东南部，终年积雪的龙脊雪山核心；高海拔严寒山地</text>
     <text x="84" y="1342" fill="#DDF2E8">· 资源：独特的古国遗迹、地脉紊乱区域、丰富元素结晶矿藏</text>
     <text x="84" y="1368" fill="#DDF2E8">· 科研：尖端元素力研究与炼金术核心基地＋联邦级实验室、</text>
     <text x="84" y="1392" fill="#DDF2E8">  气象观测站、冰雪极限装备测试基地</text>
     <text x="84" y="1418" fill="#DDF2E8">· 管制：盆地核心区＝国家重点科研保护区，仅向持联邦研究许可</text>
     <text x="84" y="1442" fill="#DDF2E8">  者开放；游客限入：单次停留 ≤2 周·离境后 3 个月内不得重返</text>
-    <text x="84" y="1468" fill="#DDF2E8">· 旅游：外围滑雪雪橇项目；雪栖堡设入境检查站与游客接待中心</text>
+    <text x="84" y="1468" fill="#DDF2E8">· 旅游：外围滑雪雪橇项目；施内瓦赫特设入境检查站与游客接待中心</text>
     <rect x="84" y="1486" width="708" height="88" rx="8" fill="#2C5A4C"/>
     <text x="108" y="1512" font-size="11.5" font-weight="700" fill="#52C79B">挑战</text>
     <text x="108" y="1536" font-size="11.5" fill="#DDF2E8">科研保密与旅游经济的平衡；极端环境基建维护；古国遗迹研究风险与环境安全。</text>

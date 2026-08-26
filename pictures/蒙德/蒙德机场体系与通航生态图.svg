@@ -35,7 +35,7 @@
     <rect x="84" y="616" width="1092" height="48" rx="8" fill="#1F453B"/>
     <text x="108" y="646" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">支线通航机场（8 座）：</tspan>硬质跑道 1200~1800 m，有基本航站楼和加油设施</text>
     <rect x="84" y="668" width="1092" height="48" rx="8" fill="#2C5A4C"/>
-    <text x="108" y="698" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">代表：</tspan>星落城机场 · 晨曦城堡机场 · 清泉镇机场 · 奔狼堡机场 · 鹰巢堡机场 · 荆夫港通航站 · 风起地飞行场 · 摘星崖飞行场</text>
+    <text x="108" y="698" font-size="12.5" font-weight="700" fill="#DDF2E8"><tspan fill="#52C79B">代表：</tspan>施特恩堡机场 · 摩根罗特机场 · 清泉镇机场 · 沃尔夫斯堡机场 · 阿德勒霍斯特机场 · 荆夫港通航站 · 风起地飞行场 · 摘星崖飞行场</text>
     <rect x="84" y="720" width="1092" height="48" rx="8" fill="#2C5A4C"/>
     <text x="108" y="750" font-size="12.5" fill="#DDF2E8"><tspan font-weight="700" fill="#52C79B">乡镇起降点（≈30 处）：</tspan>土质或草地跑道 600~1000 m，部分有简易机库——散布于偏远乡镇、矿区、大型农场</text>
   </g>
@@ -138,7 +138,7 @@
     <rect x="84" y="1574" width="1092" height="104" rx="10" fill="#2C5A4C"/>
     <text x="108" y="1604" font-size="13.5" font-weight="700" fill="#52C79B">小型通航公司 ≈ 50 余家（运营 1~5 架）</text>
     <text x="108" y="1630" font-size="12" fill="#DDF2E8">空中出租车、观光飞行、飞行培训；典型如「清泉空中巴士」(Springvale Air Bus)——</text>
-    <text x="108" y="1656" font-size="12" fill="#DDF2E8">每天执飞清泉镇—蒙德城—星落城定时航班，单程仅 40 分钟，票价不及铁路一等座。</text>
+    <text x="108" y="1656" font-size="12" fill="#DDF2E8">每天执飞清泉镇—蒙德城—施特恩堡定时航班，单程仅 40 分钟，票价不及铁路一等座。</text>
     <rect x="84" y="1690" width="1092" height="88 " rx="10" fill="#2C5A4C"/>
     <text x="108" y="1720" font-size="13.5" font-weight="700" fill="#52C79B">大企业自有机队</text>
     <text x="108" y="1746" font-size="12" fill="#DDF2E8">蒲公英酒业联盟、晨曦酒庄集团、蒙德风机制造集团等用于高管出行与紧急调运；晨曦酒庄集团设独立航空部，运营 3 架 WWA-1 ＋ 2 架 DND-3。</text>
@@ -153,7 +153,7 @@
     <text x="1264" y="1412" font-size="20" font-weight="700" fill="#DDF2E8">多元业态：低空经济的五个切面</text>
     <rect x="1264" y="1430" width="1052" height="86" rx="10" fill="#2C5A4C"/>
     <text x="1288" y="1458" font-size="13" font-weight="700" fill="#52C79B">空中出租车</text>
-    <text x="1288" y="1482" font-size="11.5" fill="#DDF2E8">蒙德城—晨曦酒庄—清泉镇—星落城间多家公司定期航班，高峰时段每 30 分钟一班；手机应用可预约「随叫随飞」包机——在璃月人枫丹人眼中是难以置信的奢侈。</text>
+    <text x="1288" y="1482" font-size="11.5" fill="#DDF2E8">蒙德城—晨曦酒庄—清泉镇—施特恩堡间多家公司定期航班，高峰时段每 30 分钟一班；手机应用可预约「随叫随飞」包机——在璃月人枫丹人眼中是难以置信的奢侈。</text>
     <rect x="1264" y="1526" width="1052" height="86" rx="10" fill="#2C5A4C"/>
     <text x="1288" y="1554" font-size="13" font-weight="700" fill="#52C79B">低空旅游</text>
     <text x="1288" y="1578" font-size="11.5" fill="#DDF2E8">滑翔翼、热气球与观光飞行是蒙德旅游招牌：风起地热气球观光、摘星崖滑翔翼体验、龙脊雪山直升机滑雪投放——并催生装备制造与培训产业。</text>
