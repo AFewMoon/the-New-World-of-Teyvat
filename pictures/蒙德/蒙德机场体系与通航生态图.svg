@@ -48,7 +48,7 @@
     <text x="1288" y="242" font-size="16" font-weight="700" fill="#52C79B">蒙德自由国际机场 (Mondstadt Liberty International Airport)</text>
     <text x="1288" y="270" font-size="12.5" fill="#DDF2E8">等级 4 F 级（可接纳 ZF-48 起降，未投入商业运营）· 蒙德城南郊约 24 km · 风起地正北 6 km</text>
     <text x="1288" y="296" font-size="12.5" fill="#DDF2E8">跑道 3 条：3800 m × 1 ＋ 3200 m × 2（沥青混凝土）· 航站楼 T1（国际／国内干线）＋T2（低成本及包机）</text>
-    <text x="1288" y="322" font-size="12.5" fill="#DDF2E8">年吞吐能力：近期 1400 万人次 → 远期规划 1800 万人次</text>
+    <text x="1288" y="322" font-size="12.5" fill="#DDF2E8">年吞吐能力：近期 1400 万人次；TE 2031 启动远期扩容（T1 指廊延长＋T2 卫星厅），TE 2035 达 1800 万人次</text>
     <text x="1288" y="348" font-size="12.5" fill="#DDF2E8">地面交通：地下联络线「自由国际机场站」，市域铁路直达蒙德城北站／南站；机场高速接城市环线</text>
     <text x="1288" y="374" font-size="12.5" fill="#DDF2E8">主基地：蒲公英航空公司（客运主基地）· 晨曦酒庄航空公司（货运机坪）</text>
     <text x="1288" y="402" font-size="12.5" font-weight="700" fill="#52C79B">定位：蒙德面向提瓦特的第一门户 · 全国最大客运枢纽</text>
@@ -208,8 +208,9 @@
     <text x="108" y="2374" font-size="12" fill="#DDF2E8">但凭六点结构性优势，短期尚不构成颠覆性冲击。</text>
     <rect x="852" y="2266" width="716" height="186" rx="10" fill="#2C5A4C"/>
     <text x="876" y="2296" font-size="13.5" font-weight="700" fill="#52C79B">垄断松动的前夜</text>
-    <text x="876" y="2322" font-size="12" fill="#DDF2E8">璃月国家航空多次申请开通璃月港—蒙德城第五条每日航线，将首次实质性挑战蒲公英航空地位；</text>
-    <text x="876" y="2348" font-size="12" fill="#DDF2E8">货运领域飞云物流正评估在荆夫骑士国际机场设立转运中心——双寡头的「井水不犯河水」默契面临考验。</text>
+    <text x="876" y="2322" font-size="12" fill="#DDF2E8">璃月国家航空多次申请开通璃月港—蒙德城第五条每日航线，至今未批、已成蒙方谈判筹码；</text>
+    <text x="876" y="2348" font-size="12" fill="#DDF2E8">联邦交通部推动本国双寡头扩容替代外国准入：机队 60→72 架、吞吐能力 2000→2400 万人次；</text>
+    <text x="876" y="2374" font-size="12" fill="#DDF2E8">飞云物流正评估在荆夫骑士国际机场设转运中心——双寡头的「井水不犯河水」默契面临考验。</text>
     <rect x="1592" y="2266" width="748" height="186" rx="10" fill="#2C5A4C"/>
     <text x="1616" y="2296" font-size="13.5" font-weight="700" fill="#52C79B">低空经济 2.0：「蒲公英-eVTOL」预研项目</text>
     <text x="1616" y="2322" font-size="12" fill="#DDF2E8">电动垂直起降飞行器低噪音、零排放、垂直起降，与「风神之城」环保理念契合；</text>
