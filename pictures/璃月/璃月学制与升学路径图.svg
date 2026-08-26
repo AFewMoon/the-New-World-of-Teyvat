@@ -204,22 +204,29 @@
     <rect x="600" y="1090" width="1200" height="330" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
     <text x="624" y="1128" font-size="24" font-weight="700" fill="#F7EBC8">高等教育统一入学考试（统考）</text>
     <text x="624" y="1156" font-size="13" fill="#D8AF45">国家考试院组织 · 命题／评卷／录取三环节分离 · 异地评卷 · 随机复核 · 不设文理分科，全体考生统一试卷</text>
-    <text x="624" y="1194" font-size="14" font-weight="700" fill="#E8D8AC">五科目（报考顶尖高校者须文理兼通、技艺双全）</text>
+    <text x="624" y="1194" font-size="14" font-weight="700" fill="#E8D8AC">九科目（报考顶尖高校者须文理兼通、技艺双全）</text>
     <g font-size="13">
-      <rect x="624" y="1210" width="200" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="724" y="1233" text-anchor="middle" fill="#F7EBC8">璃月语</text>
-      <rect x="840" y="1210" width="220" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="950" y="1233" text-anchor="middle" fill="#F7EBC8">提瓦特通用语</text>
-      <rect x="1076" y="1210" width="160" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="1156" y="1233" text-anchor="middle" fill="#F7EBC8">数学</text>
-      <rect x="1252" y="1210" width="260" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="1382" y="1233" text-anchor="middle" fill="#F7EBC8">文理综合</text>
-      <rect x="1528" y="1210" width="248" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
-      <text x="1652" y="1233" text-anchor="middle" fill="#F7EBC8">技艺与劳动实践</text>
+      <rect x="624" y="1210" width="170" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="709" y="1233" text-anchor="middle" fill="#F7EBC8">璃月语</text>
+      <rect x="810" y="1210" width="250" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="935" y="1233" text-anchor="middle" fill="#F7EBC8">提瓦特通用语</text>
+      <rect x="1076" y="1210" width="170" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1161" y="1233" text-anchor="middle" fill="#F7EBC8">数学</text>
+      <rect x="1262" y="1210" width="249" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1386" y="1233" text-anchor="middle" fill="#F7EBC8">物理</text>
+      <rect x="1527" y="1210" width="249" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1652" y="1233" text-anchor="middle" fill="#F7EBC8">炼金</text>
+      <rect x="624" y="1252" width="276" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="762" y="1275" text-anchor="middle" fill="#F7EBC8">历史</text>
+      <rect x="916" y="1252" width="276" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1054" y="1275" text-anchor="middle" fill="#F7EBC8">公民与社会</text>
+      <rect x="1208" y="1252" width="276" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1346" y="1275" text-anchor="middle" fill="#F7EBC8">地理</text>
+      <rect x="1500" y="1252" width="276" height="34" rx="8" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
+      <text x="1638" y="1275" text-anchor="middle" fill="#F7EBC8">技术</text>
     </g>
-    <text x="624" y="1282" font-size="12" fill="#C9B98A">· 文理综合涵盖自然与元素科学、历史与契约文明</text>
-    <text x="624" y="1310" font-size="13" fill="#E8D8AC">录取原则：成绩优先、志愿投档；热门院校与专业另设校考面试</text>
-    <text x="624" y="1338" font-size="13" fill="#E8D8AC">报考时须明示进修意向，在「进修向」与「就业向」两条通道中二选一</text>
+    <text x="624" y="1315" font-size="13" fill="#E8D8AC">录取原则：成绩优先、志愿投档；热门院校与专业另设校考面试</text>
+    <text x="624" y="1343" font-size="13" fill="#E8D8AC">报考时须明示进修意向，在「进修向」与「就业向」两条通道中二选一</text>
     <text x="624" y="1392" font-size="12" fill="#C9B98A">管理：国家考试院为教育部直属机构，并管理义务教育结业考试等全国性考试</text>
   </g>
 
