@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2300" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="anemoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3BB08A"/>
+      <stop offset="1" stop-color="#1F7A5C"/>
+    </linearGradient>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#C9862B"/>
+    </marker>
+  </defs>
+
+  <rect width="2400" height="2300" fill="#F5FAF7"/>
+
+  <!-- ═══════════ 标题区 ═══════════ -->
+  <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#1E3A31">璃蒙铁路公司与特许经营模式图</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#3E5F54">反垄断拆分后的二元格局 · 「一套班子、两块牌子」 · 30 年特许经营权 · 有偿赎回直至国有化</text>
+  <line x1="220" y1="118" x2="2180" y2="118" stroke="#2E8B6E" stroke-width="2.5"/>
+  <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#2E8B6E"/>
+
+  <!-- ═══════════ 第 1 区左 · 行业架构 ═══════════ -->
+  <g>
+    <rect x="60" y="146" width="1140" height="560" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="188" font-size="19" font-weight="700" fill="#1E3A31">反垄断拆分后的行业架构（1990 年代 TE）</text>
+    <text x="84" y="214" font-size="12.5" fill="#3E5F54">蒙德联合铁路公司被按区域和业务类型切分为四类核心企业——相互间只购买服务或组织竞标</text>
+    <!-- 中央：运营公司 -->
+    <rect x="380" y="400" width="400" height="110" rx="12" fill="url(#anemoTop)"/>
+    <text x="580" y="440" text-anchor="middle" font-size="16" font-weight="700" fill="#123B2D">运营公司</text>
+    <text x="580" y="468" text-anchor="middle" font-size="11.5" fill="#1F453B">开行客货列车 · 如晨曦快运、荆夫货运</text>
+    <text x="580" y="492" text-anchor="middle" font-size="11.5" fill="#1F453B">不拥有基础设施</text>
+    <!-- 上：线路公司 -->
+    <rect x="84" y="248" width="300" height="100" rx="12" fill="#1F453B"/>
+    <text x="234" y="284" text-anchor="middle" font-size="15" font-weight="700" fill="#52C79B">线路公司</text>
+    <text x="234" y="310" text-anchor="middle" font-size="11.5" fill="#DDF2E8">拥有线路·车站·供电信号资产</text>
+    <text x="234" y="332" text-anchor="middle" font-size="11.5" fill="#DDF2E8">如北区线路公司、东区线路公司</text>
+    <!-- 右上：车辆租赁 -->
+    <rect x="876" y="248" width="300" height="100" rx="12" fill="#1F453B"/>
+    <text x="1026" y="284" text-anchor="middle" font-size="15" font-weight="700" fill="#52C79B">车辆租赁公司</text>
+    <text x="1026" y="310" text-anchor="middle" font-size="11.5" fill="#DDF2E8">拥有机车车辆出租牟利</text>
+    <text x="1026" y="332" text-anchor="middle" font-size="11.5" fill="#DDF2E8">如蒙德车辆租赁公司 (MRSL)</text>
+    <!-- 右下：维修公司 -->
+    <rect x="876" y="430" width="300" height="100" rx="12" fill="#1F453B"/>
+    <text x="1026" y="466" text-anchor="middle" font-size="15" font-weight="700" fill="#52C79B">维修保养公司</text>
+    <text x="1026" y="492" text-anchor="middle" font-size="11.5" fill="#DDF2E8">竞标承接检修合同</text>
+    <text x="1026" y="514" text-anchor="middle" font-size="11.5" fill="#DDF2E8">各经济区均设区域性维修基地</text>
+    <!-- 箭头与费用标签 -->
+    <line x1="420" y1="398" x2="280" y2="352" stroke="#C9862B" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
+    <text x="290" y="372" font-size="11.5" fill="#8A5B1D">购买服务（运行图·站台·调度）</text>
+    <line x1="740" y1="398" x2="900" y2="352" stroke="#C9862B" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
+    <text x="756" y="372" font-size="11.5" fill="#8A5B1D">租用车辆（按里程／天数）</text>
+    <line x1="782" y1="486" x2="872" y2="482" stroke="#C9862B" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
+    <text x="788" y="468" font-size="11.5" fill="#8A5B1D">招标维修合同</text>
+    <!-- 底注 -->
+    <rect x="84" y="556" width="1092" height="126" rx="10" fill="#DDEEE6"/>
+    <text x="108" y="586" font-size="13" font-weight="700" fill="#1F7A5C">公私同规</text>
+    <text x="108" y="612" font-size="12.5" fill="#3E5F54">西风骑士团后勤部、蒙德市政厅、公立学校等公家单位同样遵循此模式——公开招标或定向采购铁路运输服务。</text>
+    <text x="108" y="638" font-size="12.5" fill="#3E5F54">璃蒙铁路公司成立后，形成「主干线国进民退、支线私企零散并存」的二元格局——传统私企仍在支线、专用线</text>
+    <text x="108" y="662" font-size="12.5" fill="#3E5F54">和部分次干线上保持独立运营。</text>
+  </g>
+
+  <!-- ═══════════ 第 1 区右 · LRC 介入与 LMRC 诞生 ═══════════ -->
+  <g>
+    <rect x="1240" y="146" width="1100" height="560" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="1264" y="188" font-size="19" font-weight="700" fill="#DDF2E8">璃月资本的介入与璃蒙铁路公司的诞生</text>
+    <!-- 时间线 -->
+    <line x1="1310" y1="252" x2="2290" y2="252" stroke="#52C79B" stroke-width="3"/>
+    <circle cx="1450" cy="252" r="9" fill="#1F7A5C"/><text x="1450" y="228" text-anchor="middle" font-size="12.5" font-weight="700" fill="#52C79B">≈2005 TE</text>
+    <text x="1450" y="284" text-anchor="middle" font-size="11.5" fill="#DDF2E8">龙灾解除后数年，LRC 应邀</text>
+    <text x="1450" y="306" text-anchor="middle" font-size="11.5" fill="#DDF2E8">开始零散收购蒙德铁路股份</text>
+    <circle cx="1800" cy="252" r="9" fill="#3BB08A"/><text x="1800" y="228" text-anchor="middle" font-size="12.5" font-weight="700" fill="#52C79B">≈2010 TE</text>
+    <text x="1800" y="284" text-anchor="middle" font-size="11.5" fill="#DDF2E8">累计持股约 34%，成最大单一</text>
+    <text x="1800" y="306" text-anchor="middle" font-size="11.5" fill="#DDF2E8">股东；成立璃蒙铁路公司</text>
+    <circle cx="2150" cy="252" r="9" fill="#8FD4BC"/><text x="2150" y="228" text-anchor="middle" font-size="12.5" font-weight="700" fill="#52C79B">30 年特许期</text>
+    <text x="2150" y="284" text-anchor="middle" font-size="11.5" fill="#DDF2E8">主干线电气化·信号升级·</text>
+    <text x="2150" y="306" text-anchor="middle" font-size="11.5" fill="#DDF2E8">动车组换装，期满可赎回</text>
+    <!-- 一套班子两块牌子 -->
+    <rect x="1264" y="336" width="1052" height="166" rx="10" fill="#2C5A4C"/>
+    <text x="1288" y="366" font-size="14" font-weight="700" fill="#52C79B">「一套班子、两块牌子」的管理模式</text>
+    <text x="1288" y="392" font-size="12.5" fill="#DDF2E8">在璃月体系内以「璃月铁路璃蒙公司」名义行使管理职能；在蒙德境内以「璃蒙铁路有限公司」独立法人运营——</text>
+    <text x="1288" y="416" font-size="12.5" fill="#DDF2E8">同一管理团队，蒙德中央政府通过嵌入后者董事会与治理架构实施监督。与璃铁五大区域公司平级。</text>
+    <text x="1288" y="440" font-size="12.5" fill="#B9DFCF">注册资本 560 亿蒙德镑 · 注册地蒙德城 · 总部设蒙德城北站附属办公楼</text>
+    <text x="1288" y="464" font-size="12.5" fill="#B9DFCF">员工约 2,100 人＝璃月派驻约 300 人 ＋ 本地雇佣约 1,800 人</text>
+    <text x="1288" y="488" font-size="12.5" font-weight="700" fill="#52C79B">对外旅客服务统一以「狮牙快线 (Lionfang Express)」品牌运营——车体涂装、车站标识与票务宣传统一使用该品牌。</text>
+    <!-- 资产 -->
+    <rect x="1264" y="514" width="1052" height="86" rx="10" fill="#DDEEE6"/>
+    <text x="1288" y="542" font-size="12.5" font-weight="700" fill="#1F7A5C">全权拥有的主干线资产（记入自身资产负债表）</text>
+    <text x="1288" y="568" font-size="12" fill="#3E5F54">MR 160 J 动车组（48 列起步）· 约 2,400 km 线路（北南线约 1,600 km＋东西线约 800 km）· 全部车站、供电与信号设备</text>
+    <text x="1288" y="590" font-size="12" fill="#3E5F54">享有特许期内主干线的独家客运运营权；租赁业务面向次干线、支线及开放准入的货运运营商，以不影响主干线业务为前提。</text>
+    <!-- 协作 -->
+    <rect x="1264" y="606" width="1052" height="76" rx="10" fill="#3A3325"/>
+    <text x="1288" y="634" font-size="12.5" font-weight="700" fill="#E0A94E">与蒙德各方的协作</text>
+    <text x="1288" y="660" font-size="12" fill="#EDE3CC">缴纳低比例特许经营费（运营收入的 1~2%）· 分包支线维护给本地企业 · 联合调度室同场办公 · 跨境货物「一次申报一次查验一次放行」。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区左 · 组织架构 ═══════════ -->
+  <g>
+    <rect x="60" y="738" width="1140" height="520" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="780" font-size="19" font-weight="700" fill="#DDF2E8">公司组织架构：六个事业部</text>
+    <g font-size="13">
+      <rect x="84" y="800" width="532" height="96" rx="10" fill="#2C5A4C"/>
+      <text x="108" y="832" font-weight="700" fill="#52C79B">动车事业部</text>
+      <text x="108" y="858" font-size="12" fill="#DDF2E8">MR 160 J 动车组的运用调度与乘务管理</text>
+      <rect x="640" y="800" width="536" height="96" rx="10" fill="#2C5A4C"/>
+      <text x="664" y="832" font-weight="700" fill="#52C79B">货运事业部</text>
+      <text x="664" y="858" font-size="12" fill="#DDF2E8">主干线货运组织＋荆夫港—璃月港海铁联运</text>
+      <rect x="84" y="908" width="532" height="96" rx="10" fill="#2C5A4C"/>
+      <text x="108" y="940" font-weight="700" fill="#52C79B">车辆检修事业部</text>
+      <text x="108" y="966" font-size="12" fill="#DDF2E8">动车组及少量国产机车的定期检修与整备</text>
+      <rect x="640" y="908" width="536" height="96" rx="10" fill="#2C5A4C"/>
+      <text x="664" y="940" font-weight="700" fill="#52C79B">基础设施事业部</text>
+      <text x="664" y="966" font-size="12" fill="#DDF2E8">约 2,750 km 主干线的线路·供电·信号设备维护</text>
+      <rect x="84" y="1016" width="532" height="96" rx="10" fill="#2C5A4C"/>
+      <text x="108" y="1048" font-weight="700" fill="#52C79B">车站运营部</text>
+      <text x="108" y="1074" font-size="12" fill="#DDF2E8">沿线主要车站：蒙德城北／南站、荆夫港、风起地、星落湖、晨曦酒庄、达达乌帕谷、誓言岬</text>
+      <rect x="640" y="1016" width="536" height="96" rx="10" fill="#2C5A4C"/>
+      <text x="664" y="1048" font-weight="700" fill="#52C79B">综合管理部</text>
+      <text x="664" y="1074" font-size="12" fill="#DDF2E8">行政·财务·法务及与蒙德中央政府的协调事务</text>
+    </g>
+    <text x="84" y="1156" font-size="11.5" fill="#8FB5A6">※ 技术对接：信号系统维护依托 LRC 总部网络中心与技术标准认证中心；跨线直通运行需经 LTCC（璃月调度控制中心）协调。</text>
+    <text x="84" y="1182" font-size="11.5" fill="#8FB5A6">※ 核心部件（IGBT 模块、变流器、轴承等）从枫丹进口，璃月不收取转手费用，以降低蒙德方面运营成本。</text>
+  </g>
+
+  <!-- ═══════════ 第 2 区右 · 治理结构 ═══════════ -->
+  <g>
+    <rect x="1240" y="738" width="1100" height="520" rx="14" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="1264" y="780" font-size="19" font-weight="700" fill="#1E3A31">治理结构与议事规则</text>
+    <!-- 董事会构成 -->
+    <rect x="1264" y="800" width="1052" height="130" rx="10" fill="#1F453B"/>
+    <text x="1288" y="830" font-size="14" font-weight="700" fill="#52C79B">董事会：11 席</text>
+    <rect x="1288" y="844" width="382" height="26" fill="url(#anemoTop)"/><rect x="1670" y="844" width="164" height="26" fill="#3BB08A"/><rect x="1834" y="844" width="164" height="26" fill="#52C79B"/><rect x="1998" y="844" width="294" height="26" fill="#3E6E5C"/>
+    <text x="1479" y="862" text-anchor="middle" font-size="11.5" font-weight="700" fill="#123B2D">璃方 7 席（含董事长）</text>
+    <text x="1752" y="862" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">蒙方 2 席</text>
+    <text x="1916" y="862" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">观察员 2</text>
+    <text x="2145" y="862" text-anchor="middle" font-size="11.5" fill="#DDF2E8">逐年扩大权限</text>
+    <text x="1288" y="902" font-size="12" fill="#B9DFCF">中央政府观察员不参与技术决策和车辆采购决策；总经理由璃铁任命、报蒙德中央政府备案。</text>
+    <!-- 高管结构 -->
+    <rect x="1264" y="946" width="512" height="140" rx="10" fill="#DDEEE6"/>
+    <text x="1288" y="974" font-size="13" font-weight="700" fill="#1F7A5C">高管与关键岗位</text>
+    <text x="1288" y="1000" font-size="12" fill="#3E5F54">副总经理 ×4：璃方派驻 2 人（分管技术·运营）；</text>
+    <text x="1288" y="1024" font-size="12" fill="#3E5F54">蒙方聘任 2 人（分管站务·本地事务）</text>
+    <text x="1288" y="1050" font-size="12" fill="#3E5F54">总工程师由璃方派驻，全面负责信号·供电·检修</text>
+    <rect x="1804" y="946" width="512" height="140" rx="10" fill="#DDEEE6"/>
+    <text x="1828" y="974" font-size="13" font-weight="700" fill="#1F7A5C">核心技术岗位须由璃方派驻</text>
+    <text x="1828" y="1000" font-size="12" fill="#3E5F54">· 信号系统负责人 · 动车检修负责人</text>
+    <text x="1828" y="1024" font-size="12" fill="#3E5F54">· 供电设施负责人</text>
+    <text x="1828" y="1050" font-size="12" fill="#3E5F54">确保技术标准与璃铁体系一致</text>
+    <!-- 议事规则 -->
+    <rect x="1264" y="1102" width="1052" height="130" rx="10" fill="#2C5A4C"/>
+    <text x="1288" y="1132" font-size="14" font-weight="700" fill="#52C79B">董事会议事规则（双门槛设计）</text>
+    <text x="1288" y="1160" font-size="12.5" fill="#DDF2E8">· 日常事项：双方总赞成高于 1/2 即可通过——保证运营效率；</text>
+    <text x="1288" y="1186" font-size="12.5" fill="#DDF2E8">· 重大事项：双方内部赞成均不低于 2/3——任何一方都无法单方面强推敏感决策；</text>
+    <text x="1288" y="1212" font-size="12.5" fill="#B9DFCF">每年向蒙德中央政府提交年度运营报告与安全审计报告。</text>
+  </g>
+
+  <!-- ═══════════ 第 3 区 · 特许经营与赎回时间轴 ═══════════ -->
+  <g>
+    <rect x="60" y="1290" width="2280" height="430" rx="14" fill="#EFF7F2" stroke="#2E8B6E" stroke-width="1.5"/>
+    <text x="84" y="1332" font-size="19" font-weight="700" fill="#1E3A31">特许经营与有偿赎回：通往国有化的渐进路径</text>
+    <line x1="130" y1="1420" x2="2270" y2="1420" stroke="#2E8B6E" stroke-width="4"/>
+    <!-- 阶段一 -->
+    <circle cx="460" cy="1420" r="12" fill="#1F7A5C"/>
+    <rect x="104" y="1450" width="712" height="230" rx="10" fill="#1F453B"/>
+    <text x="128" y="1480" font-size="13" font-weight="700" fill="#52C79B">起点：电气化改造完成之日</text>
+    <text x="128" y="1508" font-size="12" fill="#DDF2E8">30 年特许经营权起算；LMRC 享主干线独家客运运营权；</text>
+    <text x="128" y="1534" font-size="12" fill="#DDF2E8">建设期全部投资由璃月承担，若运营不及预期蒙德无需为亏损负责；</text>
+    <text x="128" y="1560" font-size="12" fill="#DDF2E8">蒙德以低风险低前期投入的方式获得铁路现代化服务。</text>
+    <text x="460" y="1716" text-anchor="middle" font-size="11.5" fill="#6B857B">赎回标的＝LMRC 全部股份（含线路·车站·供电·动车组）</text>
+    <!-- 阶段二 -->
+    <circle cx="1200" cy="1420" r="12" fill="#3BB08A"/>
+    <rect x="844" y="1450" width="712" height="230" rx="10" fill="#EAF4EE" stroke="#2E8B6E"/>
+    <text x="868" y="1480" font-size="13" font-weight="700" fill="#1F7A5C">特许期内提前赎回</text>
+    <text x="868" y="1508" font-size="12" fill="#3E5F54">资金来源：盈利收入·财政拨款·银行借贷；累计赎回比例不得超过 66.67%，确保特许期内璃方至少保有 1/3 股权；</text>
+    <text x="868" y="1534" font-size="12" fill="#3E5F54">价格依第三方评估净资产加商誉溢价确定，公式在协议中预先约定；净利润按持股比例分配。</text>
+    <text x="1200" y="1716" text-anchor="middle" font-size="11.5" fill="#6B857B">LTCS 知识产权与 MR 160 J 专利不纳入赎回范围</text>
+    <!-- 阶段三 -->
+    <circle cx="1940" cy="1420" r="12" fill="#52C79B"/>
+    <rect x="1584" y="1450" width="712" height="230" rx="10" fill="#1F453B"/>
+    <text x="1608" y="1480" font-size="13" font-weight="700" fill="#52C79B">特许期满后</text>
+    <text x="1608" y="1508" font-size="12" fill="#DDF2E8">赎回的时间·进度·比例由蒙德自由调整，可一次性或分次购回剩余股权，最终实现主干线国有化；</text>
+    <text x="1608" y="1534" font-size="12" fill="#DDF2E8">若继续使用 LTCS 信号系统与 MR 160 J 技术，须另签长期技术许可协议，按年支付授权费用。</text>
+    <text x="1940" y="1716" text-anchor="middle" font-size="11.5" fill="#6B857B">过渡保障：璃方核心技术人员留任 5~10 年确保平稳过渡</text>
+  </g>
+
+  <!-- ═══════════ 第 4 区 · 收入模式 ═══════════ -->
+  <g>
+    <rect x="60" y="1752" width="2280" height="440" rx="14" fill="#1F453B" stroke="#2E8B6E" stroke-width="2"/>
+    <text x="84" y="1794" font-size="19" font-weight="700" fill="#DDF2E8">璃月的投资回报：七项收入来源</text>
+    <g font-size="12.5">
+      <rect x="84" y="1814" width="720" height="88" rx="10" fill="#2C5A4C"/>
+      <text x="108" y="1844" font-weight="700" fill="#52C79B">① 建设总包利润</text>
+      <text x="108" y="1870" fill="#DDF2E8">电气化·信号·车站升级工程由璃月建筑企业总承包，利润率约 15~20%</text>
+      <rect x="852" y="1814" width="720" height="88" rx="10" fill="#2C5A4C"/>
+      <text x="876" y="1844" font-weight="700" fill="#52C79B">② 技术授权费</text>
+      <text x="876" y="1870" fill="#DDF2E8">LTCS 信号系统按年收取授权使用费，约为运营收入的 5%</text>
+      <rect x="1620" y="1814" width="720" height="88" rx="10" fill="#2C5A4C"/>
+      <text x="1644" y="1844" font-weight="700" fill="#52C79B">③ 专利许可费</text>
+      <text x="1644" y="1870" fill="#DDF2E8">MR 160 J 平台按列车运行里程收费，约 0.4 璃月元／公里</text>
+      <rect x="84" y="1914" width="720" height="88" rx="10" fill="#2C5A4C"/>
+      <text x="108" y="1944" font-weight="700" fill="#52C79B">④ 运营管理费</text>
+      <text x="108" y="1970" fill="#DDF2E8">从运营总收入中提取 8~10% 作为管理服务费</text>
+      <rect x="852" y="1914" width="720" height="88" rx="10" fill="#2C5A4C"/>
+      <text x="876" y="1944" font-weight="700" fill="#52C79B">⑤ 跨境收入分成</text>
+      <text x="876" y="1970" fill="#DDF2E8">璃月—蒙德跨境客货运费的 30% 归璃蒙公司</text>
+      <rect x="1620" y="1914" width="720" height="88" rx="10" fill="#2C5A4C"/>
+      <text x="1644" y="1944" font-weight="700" fill="#52C79B">⑥ 净利润分红 ＋ ⑦ 车辆销售利润</text>
+      <text x="1644" y="1970" fill="#DDF2E8">未赎回部分分红归璃铁；增购列车由璃月机车集团制造并销售，单列利润可观</text>
+    </g>
+    <rect x="84" y="2016" width="2256" height="70" rx="10" fill="#DDEEE6"/>
+    <text x="108" y="2044" font-size="12.5" font-weight="700" fill="#1F7A5C">交易的本质：璃月以商业投资者身份参与蒙德铁路现代化，通过运营期高额收入与股权赎买实现投资回报；</text>
+    <text x="108" y="2068" font-size="12.5" fill="#3E5F54">蒙德以低风险、低前期投入的方式获得铁路现代化服务，并通过灵活的赎回安排逐步实现主干线国有化。</text>
+    <text x="1200" y="2120" text-anchor="middle" font-size="11.5" fill="#6B857B">※ 璃月方面始终尊重蒙德自主发展意愿：LMRC 运营严格遵循蒙德法律法规；核心部件经枫丹进口不加价，主动降低蒙德运营成本。</text>
+  </g>
+
+  <!-- ═══════════ 脚注 ═══════════ -->
+  <line x1="220" y1="2230" x2="2180" y2="2230" stroke="#2E8B6E" stroke-width="1.5" opacity="0.5"/>
+  <text x="1200" y="2262" text-anchor="middle" font-size="12" fill="#6B857B">资料来源：《蒙德铁路概况》· 蒙德自由合众国铁路体系同人设定 · CC BY-NC-SA 4.0 · 上游素材：《原神》(HoYoverse)</text>
+</svg>
