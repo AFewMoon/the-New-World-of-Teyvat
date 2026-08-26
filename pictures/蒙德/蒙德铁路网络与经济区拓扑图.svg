@@ -150,8 +150,9 @@
     <!-- 图例 -->
     <rect x="1770" y="240" width="540" height="230" rx="12" fill="#1F453B"/>
     <text x="1794" y="272" font-size="15" font-weight="700" fill="#52C79B">图例</text>
-    <line x1="1794" y1="294" x2="1854" y2="294" stroke="#1F7A5C" stroke-width="7"/><text x="1866" y="299" font-size="12.5" fill="#DDF2E8">主干线（北南线／东西线 200 km/h · 西南跨境线 160 km/h），璃蒙铁路公司统营</text>
-    <line x1="1794" y1="322" x2="1854" y2="322" stroke="#2FA47E" stroke-width="4.5"/><text x="1866" y="327" font-size="12.5" fill="#DDF2E8">次干线／联络线：160 km/h 单线（繁忙路段双线）</text>
+    <line x1="1794" y1="294" x2="1854" y2="294" stroke="#1F7A5C" stroke-width="7"/><text x="1866" y="291" font-size="12.5" fill="#DDF2E8">主干线：北南线／东西线 200 km/h</text>
+    <text x="1866" y="310" font-size="12.5" fill="#DDF2E8">西南跨境线 160 km/h · 璃蒙铁路公司统营</text>
+    <line x1="1794" y1="332" x2="1854" y2="332" stroke="#2FA47E" stroke-width="4.5"/><text x="1866" y="337" font-size="12.5" fill="#DDF2E8">次干线／联络线：160 km/h 单线（繁忙路段双线）</text>
     <line x1="1794" y1="378" x2="1854" y2="378" stroke="#52C79B" stroke-width="4" stroke-dasharray="3 9"/><text x="1866" y="383" font-size="12.5" fill="#DDF2E8">旅游／观光支线：季节性开行</text>
     <rect x="1794" y="400" width="40" height="22" fill="url(#hatch)" stroke="#6E614A"/><text x="1846" y="416" font-size="12.5" fill="#DDF2E8">风龙废墟军事区——运营与安全管理需与军方协调</text>
     <text x="1794" y="452" font-size="11.5" fill="#8FB5A6">※ 正交示意图：节点相对位置经艺术化处理，不代表真实地理方位与比例。</text>

@@ -25,11 +25,11 @@
     <rect x="108" y="272" width="273" height="20" fill="url(#anemoTop)"/>
     <rect x="381" y="272" width="156" height="20" fill="#52C79B"/>
     <rect x="537" y="272" width="108" height="20" fill="#8FD4BC"/>
-    <rect x="645" y="272" width="531" height="20" fill="#3E6E5C"/>
+    <rect x="645" y="272" width="507" height="20" fill="#3E6E5C"/>
     <text x="244" y="287" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">国有 51%</text>
     <text x="459" y="287" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">蒲公英酒业 29%</text>
     <text x="591" y="287" text-anchor="middle" font-size="11" font-weight="700" fill="#123B2D">公众 20%</text>
-    <text x="1184" y="287" text-anchor="end" font-size="11" fill="#DDF2E8">国有控股 · 总部落户蒙德城</text>
+    <text x="1152" y="287" text-anchor="end" font-size="11" fill="#DDF2E8">国有控股 · 总部落户蒙德城</text>
     <!-- 基本信息 -->
     <text x="84" y="332" font-size="12.5" fill="#DDF2E8">主基地：蒙德自由国际机场 T1（客运）· 特色服务：「蒲公英会所」高端舱——机上供应天使的馈赠联名特调</text>
     <!-- 机队构成 scale 30px/架 -->
