@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1560" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8AF45"/>
+      <stop offset="1" stop-color="#B8922F"/>
+    </linearGradient>
+    <linearGradient id="greenGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FB069"/>
+      <stop offset="1" stop-color="#D8AF45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2000" height="1560" fill="#FBF8F2"/>
+
+  <text x="1000" y="56" text-anchor="middle" font-size="38" font-weight="700" fill="#3B2F23">璃月机动车号牌版式图</text>
+  <text x="1000" y="92" text-anchor="middle" font-size="15" fill="#6B5A40">琥珀金条 · 地区码 · 路验贴 · 岩契体防涂改 · 末位类型识别码</text>
+  <line x1="240" y1="112" x2="1760" y2="112" stroke="#C9A227" stroke-width="2.5"/>
+  <polygon points="1000,106 1010,112 1000,118 990,112" fill="#C9A227"/>
+
+  <!-- ═══════════ 标准单排牌 ═══════════ -->
+  <text x="480" y="178" font-size="18" font-weight="700" fill="#3B2F23">标准单排牌 · 520 × 110 mm</text>
+
+  <g>
+    <rect x="480" y="200" width="1040" height="220" rx="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M 496 200 H 580 V 420 H 496 A 16 16 0 0 1 480 404 V 216 A 16 16 0 0 1 496 200 Z" fill="url(#gold)"/>
+    <polygon points="530,224 552.5,237 552.5,263 530,276 507.5,263 507.5,237" fill="#F7EBC8" stroke="#8A6A1F" stroke-width="2"/>
+    <text x="530" y="312" text-anchor="middle" font-size="22" font-weight="700" fill="#3B2F23">LY</text>
+
+    <text x="620" y="310" font-size="128" font-weight="700" fill="#1A1A1A">LA</text>
+
+    <circle cx="850" cy="310" r="42" fill="#2E7D5B" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="850" y="322" text-anchor="middle" font-size="36" font-weight="700" fill="#F7EBC8">6</text>
+
+    <text x="930" y="310" font-size="128" font-weight="700" fill="#1A1A1A">882A</text>
+    <text x="1400" y="310" font-size="128" font-weight="700" fill="#C0392B">E</text>
+  </g>
+
+  <!-- 标注 -->
+  <g stroke="#B8922F" stroke-width="1.5" stroke-dasharray="4 3" fill="none">
+    <path d="M 530 420 V 452"/>
+    <path d="M 690 420 V 452"/>
+    <path d="M 850 420 V 452"/>
+    <path d="M 1100 420 V 452"/>
+    <path d="M 1440 420 V 452"/>
+  </g>
+  <g font-size="13" fill="#6B5A40" text-anchor="middle">
+    <text x="530" y="476">琥珀金条</text>
+    <text x="530" y="494">国徽 + LY</text>
+    <text x="690" y="476">地区码</text>
+    <text x="690" y="494">府 / 郡 2 位</text>
+    <text x="850" y="476">路验贴</text>
+    <text x="850" y="494">年度彩贴</text>
+    <text x="1100" y="476">号牌组合</text>
+    <text x="1100" y="494">2 ~ 4 位</text>
+    <text x="1440" y="476">类型识别码</text>
+    <text x="1440" y="494">末位单字母</text>
+  </g>
+
+  <!-- ═══════════ 前小牌 ═══════════ -->
+  <text x="170" y="562" font-size="18" font-weight="700" fill="#3B2F23">前小牌 · 360 × 110 mm</text>
+
+  <g>
+    <rect x="170" y="580" width="720" height="220" rx="14" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M 184 580 H 240 V 800 H 184 A 14 14 0 0 1 170 786 V 594 A 14 14 0 0 1 184 580 Z" fill="url(#gold)"/>
+    <polygon points="205,620 222.3,630 222.3,650 205,660 187.7,650 187.7,630" fill="#F7EBC8" stroke="#8A6A1F" stroke-width="1.6"/>
+    <text x="205" y="690" text-anchor="middle" font-size="15" font-weight="700" fill="#3B2F23">LY</text>
+
+    <text x="275" y="688" font-size="100" font-weight="700" fill="#1A1A1A">PB</text>
+
+    <circle cx="462" cy="688" r="32" fill="#2E7D5B" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="462" y="698" text-anchor="middle" font-size="28" font-weight="700" fill="#F7EBC8">6</text>
+
+    <text x="525" y="688" font-size="100" font-weight="700" fill="#1A1A1A">A6</text>
+    <text x="780" y="688" font-size="100" font-weight="700" fill="#2E7D5B">D</text>
+  </g>
+
+  <!-- ═══════════ 摩托 / 两轮牌 ═══════════ -->
+  <text x="1100" y="562" font-size="18" font-weight="700" fill="#3B2F23">摩托 / 两轮牌 · 280 × 200 mm（双行）</text>
+
+  <g>
+    <rect x="1100" y="580" width="560" height="400" rx="14" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3"/>
+    <path d="M 1114 580 H 1160 V 980 H 1114 A 14 14 0 0 1 1100 966 V 594 A 14 14 0 0 1 1114 580 Z" fill="url(#gold)"/>
+    <polygon points="1130,652 1145.6,661 1145.6,679 1130,688 1114.4,679 1114.4,661" fill="#F7EBC8" stroke="#8A6A1F" stroke-width="1.6"/>
+    <text x="1130" y="718" text-anchor="middle" font-size="13" font-weight="700" fill="#3B2F23">LY</text>
+
+    <text x="1200" y="688" font-size="96" font-weight="700" fill="#1A1A1A">AA</text>
+    <circle cx="1520" cy="688" r="30" fill="#2E7D5B" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="1520" y="698" text-anchor="middle" font-size="26" font-weight="700" fill="#F7EBC8">6</text>
+
+    <line x1="1180" y1="780" x2="1600" y2="780" stroke="#C9C9C9" stroke-width="2" stroke-dasharray="8 6"/>
+
+    <text x="1200" y="878" font-size="96" font-weight="700" fill="#1A1A1A">0A</text>
+    <text x="1500" y="878" font-size="96" font-weight="700" fill="#B8922F">Y</text>
+  </g>
+
+  <!-- ═══════════ 底色与牌面类型 ═══════════ -->
+  <text x="200" y="1032" font-size="20" font-weight="700" fill="#3B2F23">底色与牌面类型</text>
+
+  <g>
+    <rect x="200" y="1052" width="500" height="80" rx="10" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="450" y="1100" text-anchor="middle" font-size="16" fill="#1A1A1A">私家车 · 白底黑字</text>
+
+    <rect x="750" y="1052" width="500" height="80" rx="10" fill="#E8B23A" stroke="#1A1A1A" stroke-width="2"/>
+    <text x="1000" y="1100" text-anchor="middle" font-size="16" fill="#1A1A1A">营运 / 出租 · 黄底黑字</text>
+
+    <rect x="1300" y="1052" width="500" height="80" rx="10" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2"/>
+    <path d="M 1310 1052 H 1390 V 1132 H 1310 A 10 10 0 0 1 1300 1122 V 1062 A 10 10 0 0 1 1310 1052 Z" fill="url(#greenGold)"/>
+    <text x="1560" y="1100" text-anchor="middle" font-size="16" fill="#1A1A1A">新能源 · 琥珀绿渐条</text>
+  </g>
+
+  <!-- ═══════════ 类型识别码图例 ═══════════ -->
+  <text x="200" y="1228" font-size="20" font-weight="700" fill="#3B2F23">类型识别码（末位单字母）</text>
+
+  <text x="200" y="1276" font-size="15" font-weight="700" fill="#B8922F">动力类</text>
+  <g>
+    <rect x="200" y="1288" width="175" height="88" rx="10" fill="#F7EBC8" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="287.5" y="1330" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">D</text>
+    <text x="287.5" y="1356" text-anchor="middle" font-size="13" fill="#6B5A40">纯电</text>
+
+    <rect x="400" y="1288" width="175" height="88" rx="10" fill="#F7EBC8" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="487.5" y="1330" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">Y</text>
+    <text x="487.5" y="1356" text-anchor="middle" font-size="13" fill="#6B5A40">岩元素</text>
+
+    <rect x="600" y="1288" width="175" height="88" rx="10" fill="#F7EBC8" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="687.5" y="1330" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">E</text>
+    <text x="687.5" y="1356" text-anchor="middle" font-size="13" fill="#6B5A40">雷元素</text>
+
+    <rect x="800" y="1288" width="175" height="88" rx="10" fill="#F7EBC8" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="887.5" y="1330" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">F</text>
+    <text x="887.5" y="1356" text-anchor="middle" font-size="13" fill="#6B5A40">符箓</text>
+
+    <rect x="1000" y="1288" width="175" height="88" rx="10" fill="#F7EBC8" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1087.5" y="1330" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">C</text>
+    <text x="1087.5" y="1356" text-anchor="middle" font-size="13" fill="#6B5A40">符箓插混</text>
+
+    <rect x="1200" y="1288" width="175" height="88" rx="10" fill="#F7EBC8" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1287.5" y="1330" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">H</text>
+    <text x="1287.5" y="1356" text-anchor="middle" font-size="13" fill="#6B5A40">岩电插混</text>
+
+    <rect x="1400" y="1288" width="175" height="88" rx="10" fill="#F7EBC8" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1487.5" y="1330" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">Z</text>
+    <text x="1487.5" y="1356" text-anchor="middle" font-size="13" fill="#6B5A40">增程</text>
+
+    <rect x="1600" y="1288" width="175" height="88" rx="10" fill="#F7EBC8" stroke="#C9A227" stroke-width="1.5"/>
+    <text x="1687.5" y="1330" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">J</text>
+    <text x="1687.5" y="1356" text-anchor="middle" font-size="13" fill="#6B5A40">极光</text>
+  </g>
+
+  <text x="200" y="1420" font-size="15" font-weight="700" fill="#B8922F">用途类</text>
+  <g>
+    <rect x="200" y="1432" width="175" height="88" rx="10" fill="#E4EBF2" stroke="#5B7FBF" stroke-width="1.5"/>
+    <text x="287.5" y="1474" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">B</text>
+    <text x="287.5" y="1500" text-anchor="middle" font-size="13" fill="#6B5A40">公交客运</text>
+
+    <rect x="400" y="1432" width="175" height="88" rx="10" fill="#E4EBF2" stroke="#5B7FBF" stroke-width="1.5"/>
+    <text x="487.5" y="1474" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">G</text>
+    <text x="487.5" y="1500" text-anchor="middle" font-size="13" fill="#6B5A40">公务行政</text>
+
+    <rect x="600" y="1432" width="175" height="88" rx="10" fill="#E4EBF2" stroke="#5B7FBF" stroke-width="1.5"/>
+    <text x="687.5" y="1474" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">T</text>
+    <text x="687.5" y="1500" text-anchor="middle" font-size="13" fill="#6B5A40">出租租赁</text>
+
+    <rect x="800" y="1432" width="175" height="88" rx="10" fill="#E4EBF2" stroke="#5B7FBF" stroke-width="1.5"/>
+    <text x="887.5" y="1474" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">K</text>
+    <text x="887.5" y="1500" text-anchor="middle" font-size="13" fill="#6B5A40">矿山工程</text>
+
+    <rect x="1000" y="1432" width="175" height="88" rx="10" fill="#E4EBF2" stroke="#5B7FBF" stroke-width="1.5"/>
+    <text x="1087.5" y="1474" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">N</text>
+    <text x="1087.5" y="1500" text-anchor="middle" font-size="13" fill="#6B5A40">农用</text>
+
+    <rect x="1200" y="1432" width="175" height="88" rx="10" fill="#E4EBF2" stroke="#5B7FBF" stroke-width="1.5"/>
+    <text x="1287.5" y="1474" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">X</text>
+    <text x="1287.5" y="1500" text-anchor="middle" font-size="13" fill="#6B5A40">消防应急</text>
+
+    <rect x="1400" y="1432" width="175" height="88" rx="10" fill="#E4EBF2" stroke="#5B7FBF" stroke-width="1.5"/>
+    <text x="1487.5" y="1474" text-anchor="middle" font-size="34" font-weight="700" fill="#3B2F23">W</text>
+    <text x="1487.5" y="1500" text-anchor="middle" font-size="13" fill="#6B5A40">外交领事</text>
+  </g>
+</svg>
