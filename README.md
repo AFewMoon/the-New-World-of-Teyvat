@@ -343,27 +343,19 @@ cd tools
 & "C:\Program\anaconda3\python.exe" fix_punctuation.py --files 文件.md  # 处理单个文件
 ```
 
-### `concept_linker.py` — 概念链接工具
+### `concept_linker.py` — 概念扫描与术语索引
 
-基于 ML 的自动 wikilink 注入工具，扫描概念并生成分类术语索引 (`tools/术语索引/`)：
+扫描仓库 Markdown，维护概念映射 (`tools/concept_mappings.json`) 并生成分类术语索引 (`tools/术语索引/`)：
 
 ```powershell
-& "C:\Program\anaconda3\python.exe" concept_linker.py --refresh    # 全量刷新
-& "C:\Program\anaconda3\python.exe" concept_linker.py --link-only  # 仅注入链接
+& "C:\Program\anaconda3\python.exe" concept_linker.py --refresh    # 全量刷新（扫描 + 重建索引）
+& "C:\Program\anaconda3\python.exe" concept_linker.py --scan-only  # 仅扫描更新映射与索引
 & "C:\Program\anaconda3\python.exe" concept_linker.py --ci         # CI 只读校验
 ```
 
-### `tools/local/` — 本地 Obsidian 转换层 (gitignored)
+### 链接规范
 
-> **仓库规范格式为标准 Markdown 链接 `[text](页面相对路径.md)`**，链接以**当前文件所在目录**为基准解析（MkDocs 规则）：目标与文件同目录用 `./xxx.md`，跨目录用 `../目录/xxx.md`。所有协作者 (VS Code / Typora / GitHub Web) 直接读写，无需任何转换。仅 Obsidian 用户在本地做透明的 wikilink ↔ MD link 切换。
-
-Obsidian 用户首次使用前安装 git hooks：
-
-```powershell
-.\tools\local\install-hooks.ps1
-```
-
-安装后自动：`git pull` / `git checkout` 时 MD links 自动转为 wikilinks（Obsidian 可读）；`git commit` 时 wikilinks 自动转回 MD links 后再入库。
+**全库统一使用标准 Markdown 链接 `[text](页面相对路径.md)`**，链接以**当前文件所在目录**为基准解析（MkDocs 规则）：目标与文件同目录用 `./xxx.md`，跨目录用 `../目录/xxx.md`。不要写仓库根相对路径（如 `./璃月/璃月铁路概况.md` 在 `璃月/` 内的页面中会解析失败），也不要使用 Obsidian wikilink `[[...]]`。
 
 ### CI/CD 流水线
 
@@ -432,7 +424,7 @@ python -m pip config set global.trusted-host pypi.tuna.tsinghua.edu.cn
 2. **尊重已有设定**：跨区域内容（如国际关系、金融体系、交通网络）应与核心设定文档保持一致；如发现文档间口径冲突，优先以 `国际/全球体系/` 下对应文档为准；
 3. **基于游戏原设**：衍生创作应以《原神》游戏中的历史碎片、角色背景与地理设定为合理起点；
 4. **提交方式**：请通过 GitHub Issues 或 Pull Requests 提交修改建议。对于较大的新增内容，建议先开 Issue 讨论设定方向；
-5. **概念链接**：如有新增概念或文件，请运行 `concept_linker.py` 注入 wikilink（`--refresh` 或 `--scan-only` 后手动确认映射）；
+5. **概念链接**：如有新增概念或文件，请运行 `concept_linker.py --refresh` 更新 `concept_mappings.json` 与术语索引；正文链接请手写标准 Markdown 链接；
 6. **格式处理**：提交前请运行 `fix_punctuation.py` 工具确保标点与格式规范一致。
 
 ## 许可

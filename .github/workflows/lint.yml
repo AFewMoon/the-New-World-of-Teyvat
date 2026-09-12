@@ -1,11 +1,11 @@
-name: Lint & Auto-link
+name: Lint & Concept Check
 on:
   push:
     branches: [master]
   pull_request:
 
 jobs:
-  format-and-links:
+  format-and-concepts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,7 +20,7 @@ jobs:
       - name: Punctuation check
         run: python tools/fix_punctuation.py --check
 
-      - name: Link integrity check
+      - name: Concept mapping check
         run: python tools/concept_linker.py --ci
 
       - name: Auto-fix on PR

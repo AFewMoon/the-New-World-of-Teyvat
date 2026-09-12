@@ -13,8 +13,8 @@
       任一非 CJK → 补 1 空格
       （数字、% 等视为非 CJK，故 `**30%~40%**` 两侧均补空格）
       （全角标点一侧除外：`**ZF-36**（`、`：**05:30**` 等紧贴不留空格）
-      （相邻字符为 wikilink/MD 链接时按其显示文本判定首末字符，与
-      左侧保持一致：`**移交** [[…|纳塔]]` → `**移交**[[…|纳塔]]`）
+      （相邻字符为 MD 链接时按其显示文本判定首末字符，与左侧保持一致：
+      `**移交** [纳塔](纳塔/纳塔.md)` → `**移交**[纳塔](纳塔/纳塔.md)`）
 5. 中文与英文之间补 1 空格（"郡GDP" → "郡 GDP"，"GDP的" → "GDP 的"）
 6. 数字+百分号/连字符（45%~50%、30%）后跟中文 → 补 1 空格
 7. 代码块（```...```）和行内代码（`...`）内部不做变动
@@ -31,10 +31,9 @@
     `？`/`！` 结尾的项豁免；块引用（>）与表格（|）行、代码块内部不
     处理。局限：嵌套子列表会中断父块的连续扫描，父项各自成为单块末项，
     故嵌套结构中的父项均以 `。` 结尾
-13. 数学区（$$...$$ / $...$）内剥离链接语法：[[target|label]] → label、
-    [[target]] → target、[label](url) → label、![alt](url) → alt。
-    链接会被 Markdown 渲染为 <a> 标签，KaTeX 无法解析，导致公式内
-    出现链接或渲染失败
+13. 数学区（$$...$$ / $...$）内剥离链接语法：[label](url) → label、
+    ![alt](url) → alt。链接会被 Markdown 渲染为 <a> 标签，KaTeX 无法
+    解析，导致公式内出现链接或渲染失败
 """
 
 import argparse
@@ -109,8 +108,7 @@ def protect_urls(line: str) -> tuple[str, list[str]]:
 
     # 匹配 Markdown 链接 [text](url) 和图片 ![alt](url)
     # 括号内不能包含嵌套括号
-    # (?!\[) 负向前瞻防止将 [[wikilink]](paren) 误认为 Markdown 链接
-    result = re.sub(r'!?\[(?!\[)(?:[^\[\]]|\[[^\[\]]*\])*\]\([^)]+\)', repl, line)
+    result = re.sub(r'!?\[(?:[^\[\]]|\[[^\[\]]*\])*\]\([^)]+\)', repl, line)
     return result, parts
 
 
@@ -142,12 +140,12 @@ def is_fullwidth_punct(c: str) -> bool:
 
 
 def _extract_bold_first_last(content_raw: str, url_parts: list[str] | None = None) -> tuple[str | None, str | None]:
-    """从加粗内容的原始文本提取首末有效字符（处理 wikilink / MD 链接嵌套）。"""
+    """从加粗内容的原始文本提取首末有效字符（解开 MD 链接占位符）。"""
     stripped = content_raw.strip()
     if not stripped:
         return None, None
 
-    # 还原 Markdown 链接占位符为显示文本，使间距行为与 wikilink 一致
+    # 还原 Markdown 链接占位符为显示文本，使间距行为基于显示文本判定
     if url_parts:
         for i, part in enumerate(url_parts):
             placeholder = f"{chr(0)}{chr(1)}{i}{chr(0)}{chr(1)}"
@@ -155,29 +153,9 @@ def _extract_bold_first_last(content_raw: str, url_parts: list[str] | None = Non
                 m = re.match(r'^\[([^\[\]]+)\]\([^)]+\)', part)
                 if m:
                     stripped = stripped.replace(placeholder, m.group(1))
-                else:
-                    m = re.match(r'^\[\[(?:[^\[\]]+\|)?([^\[\]]+)\]\]\([^)]+\)', part)
-                    if m:
-                        stripped = stripped.replace(placeholder, m.group(1))
 
     first: str | None = stripped[0]
     last: str | None = stripped[-1]
-    if stripped.startswith('[['):
-        close = stripped.find(']]')
-        if close != -1:
-            inner = stripped[2:close]
-            pipe = inner.find('|')
-            display = inner[pipe + 1:] if pipe >= 0 else inner
-            if display:
-                first = display[0]
-    if stripped.endswith(']]'):
-        open_pos = stripped.rfind('[[')
-        if open_pos != -1:
-            inner = stripped[open_pos + 2:-2]
-            pipe = inner.find('|')
-            display = inner[pipe + 1:] if pipe >= 0 else inner
-            if display:
-                last = display[-1]
     return first, last
 
 
@@ -185,17 +163,8 @@ VERSION_NUM_RE = re.compile(r'^\d+(?:\.\d+)+\s+')
 
 
 def _effective_prev_char(chars: list[str], url_parts: list[str] | None = None) -> str:
-    """取 ** 开启标记前一元素的有效末字符：解开尾部 wikilink 或 MD 链接占位符。"""
+    """取 ** 开启标记前一元素的有效末字符：解开尾部 MD 链接占位符。"""
     s = ''.join(chars)
-    if s.endswith(']]'):
-        open_pos = s.rfind('[[')
-        if open_pos != -1:
-            inner = s[open_pos + 2:-2]
-            pipe = inner.find('|')
-            display = inner[pipe + 1:] if pipe >= 0 else inner.rsplit('/', 1)[-1]
-            if display:
-                return display[-1]
-        return ']'
     if url_parts:
         m = re.search(r'\x00\x01(\d+)\x00\x01$', s)
         if m and int(m.group(1)) < len(url_parts):
@@ -207,16 +176,7 @@ def _effective_prev_char(chars: list[str], url_parts: list[str] | None = None) -
 
 
 def _effective_next_char(text: str, pos: int, url_parts: list[str] | None = None) -> str:
-    """取 ** 关闭标记后一元素的有效首字符：解开开头 wikilink 或 MD 链接占位符。"""
-    if pos + 2 <= len(text) and text[pos:pos+2] == '[[':
-        close = text.find(']]', pos)
-        if close != -1:
-            inner = text[pos+2:close]
-            pipe = inner.find('|')
-            display = inner[pipe + 1:] if pipe >= 0 else inner
-            if display:
-                return display[0]
-        return '['
+    """取 ** 关闭标记后一元素的有效首字符：解开开头 MD 链接占位符。"""
     if url_parts:
         m = re.match(r'\x00\x01(\d+)\x00\x01', text[pos:])
         if m and int(m.group(1)) < len(url_parts):
@@ -554,11 +514,8 @@ def fix_parentheses(text: str, url_parts: list[str] | None = None) -> str:
 def _strip_links_in_math_span(span: str) -> str:
     """在单个数学区片段内剥离所有链接语法，仅保留显示文本。
 
-    [[target|label]] → label、[[target]] → target、
     [label](url) → label、![alt](url) → alt。
     """
-    # wikilink（含显示文本与纯目标，图片式 ![[...]] 一并处理）
-    span = re.sub(r"!?\[\[(?:[^\[\]]+\|)?([^\[\]]+)\]\]", r"\1", span)
     # 图片 ![alt](url)
     span = re.sub(r"!\[([^\[\]]*)\]\([^)]*\)", r"\1", span)
     # Markdown 链接 [label](url)（负向前瞻排除图片；KaTeX 的 [..] 后跟 ( 的
@@ -570,8 +527,8 @@ def _strip_links_in_math_span(span: str) -> str:
 def fix_links_in_math(text: str) -> tuple[str, bool]:
     """规则 13：数学区（$$...$$ / $...$）内禁止任何链接语法。
 
-    MkDocs 的 Markdown 处理器会先把 [label](url) / [[wikilink]] 渲染为
-    <a> 标签，KaTeX auto-render 随后再解析数学，导致公式内出现可点击
+    MkDocs 的 Markdown 处理器会先把 [label](url) 渲染为 <a> 标签，
+    KaTeX auto-render 随后再解析数学，导致公式内出现可点击
     链接或渲染失败。本规则将数学区内的链接语法剥离为纯显示文本。
     返回 (处理后的文本, 是否发生修改)。
     """
@@ -656,9 +613,6 @@ def process_line(line: str) -> str:
     #    英文括号与中文之间的空格
     cleaned = re.sub(r'([\u4e00-\u9fff])\s*\(', r'\1 (', cleaned)
     cleaned = re.sub(r'\)\s*([\u4e00-\u9fff])', r') \1', cleaned)
-    #    wikilink 与英文括号之间：`]]` 后跟 `(` → 补 1 空格
-    cleaned = re.sub(r'\]\]\s*\(', r']] (', cleaned)
-
     # 7. 处理 ** 加粗标记周围空格（逐字符扫描，区分开闭）
     cleaned = fix_bold_spacing(cleaned, url_parts)
 
@@ -678,7 +632,7 @@ def should_skip_file(path: Path) -> bool:
     """跳过非 md 文件以及 tools/、.git/ 等目录。"""
     rel = path.relative_to(BASE_DIR)
     parts = rel.parts
-    skip_dirs = {"tools", ".git", "node_modules", "__pycache__"}
+    skip_dirs = {"tools", ".git", ".codebuddy", ".obsidian", "node_modules", "__pycache__"}
     return any(p in skip_dirs for p in parts)
 
 

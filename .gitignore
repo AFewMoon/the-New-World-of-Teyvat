@@ -22,13 +22,12 @@ desktop.ini
 # Python cache
 tools/__pycache__/
 
-# Local Obsidian conversion layer (not in git)
+# Local scratch space (not in git)
 tools/local/
 
 # Concept linker generated
 tools/术语索引/
 tools/_linker_state.json
-tools/doc_embeddings.pkl
 
 # MkDocs build output
 site/

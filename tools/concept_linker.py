@@ -1,26 +1,25 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-概念链接工具 v2（Concept Linker v2）
+概念链接工具（Concept Linker）
 
 ML 增强版：
 - spaCy NER → 替代 jieba.posseg 发现专名（假阳性从 60% → <5%）
 - TF-IDF → 每篇文档 top-15 关键词作为 context_words
-- Sentence Embedding → 向量相似度消歧义
 
-依赖：pip install jieba spacy scikit-learn sentence-transformers numpy
+仓库正文一律使用标准 Markdown 链接，本工具只做概念扫描、映射维护与术语索引
+生成，不向文章写入任何链接语法。
+
+依赖：pip install jieba spacy scikit-learn numpy
       python -m spacy download zh_core_web_sm
 """
 
 from __future__ import annotations
 
 import json
-import os
 import re
 import sys
-import time
 import argparse
-import pickle
 from collections import defaultdict, Counter
 from datetime import date, datetime
 from pathlib import Path
@@ -48,7 +47,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 STATE_FILE = BASE_DIR / "tools" / "_linker_state.json"
 MAPPINGS_FILE = BASE_DIR / "tools" / "concept_mappings.json"
 INDEX_DIR = BASE_DIR / "tools" / "术语索引"
-EMBEDDINGS_CACHE = BASE_DIR / "tools" / "doc_embeddings.pkl"
 
 PROTECTED_DIRS = {".git", ".obsidian", ".clinerules", "node_modules", "__pycache__"}
 SKIP_FILES = {"README.md", "LICENSE", "AGENTS.md"}
@@ -86,16 +84,6 @@ FILE_CATEGORY_RULES: list[tuple[str, str]] = [
     ("高校", "文化与信仰"),
     ("节日", "文化与信仰"),
 ]
-
-CATEGORY_KEYWORDS: dict[str, list[str]] = {
-    "国家与地区": ["综述", "地理", "气候", "人口", "首都", "面积", "地形", "行政区"],
-    "政治实体与政党": ["政治", "政党", "议会", "选举", "立法", "宪法", "司法", "政府", "民主", "联邦", "共和", "权力", "投票", "首相", "总统", "内阁", "改革", "法案", "议员", "法院", "政体"],
-    "国际组织": ["国际", "组织", "条约", "联盟", "协定", "跨国", "外交", "成员", "秘书", "理事", "大会", "多边"],
-    "经济与产业": ["GDP", "经济", "产业", "出口", "进口", "贸易", "货币", "汇率", "通胀", "失业", "投资", "市场", "工业", "金融", "银行", "税收", "企业"],
-    "科技与基础设施": ["铁路", "航空", "电网", "高速", "虚空", "技术", "科技", "信号", "通信", "网络", "工程", "研发", "能源", "发电"],
-    "文化与信仰": ["信仰", "宗教", "神", "仪式", "传统", "文化", "节日", "诗歌", "艺术", "风俗", "神话"],
-    "人物": ["人物", "角色", "执行官", "书记", "会长", "主席", "秘书", "干部", "档案"],
-}
 
 COMMON_WORD_BLACKLIST: set[str] = {
     "职能", "成员", "社区", "设施", "立场", "组织", "管理", "系统", "制度",
@@ -244,39 +232,12 @@ def get_markdown_files(base: Path) -> list[Path]:
     return files
 
 
-def plain_text_matches(text: str, alias: str) -> list[tuple[int, int]]:
-    positions: list[tuple[int, int]] = []
-    start = 0
-    while True:
-        pos = text.find(alias, start)
-        if pos == -1:
-            break
-        positions.append((pos, pos + len(alias)))
-        start = pos + 1
-    return positions
-
-
-def get_token_ranges(text: str) -> list[tuple[int, int]]:
-    return [(s, e) for word, s, e in jieba.tokenize(text)]
-
-
-def is_token_boundary(start: int, end: int, token_ranges: list[tuple[int, int]]) -> bool:
-    token_starts = {s for s, e in token_ranges}
-    token_ends = {e for s, e in token_ranges}
-    return start in token_starts and end in token_ends
-
-
-def is_overlap(a: tuple[int, int], b: tuple[int, int]) -> bool:
-    return a[0] < b[1] and b[0] < a[1]
-
-
 def clean_body_text(text: str) -> str:
     """清理文本，仅保留正文内容用于 ML 分析。"""
     text = re.sub(r"```[\s\S]*?```", "", text)
     text = re.sub(r"`[^`]*`", "", text)
     text = re.sub(r"\$\$[\s\S]*?\$\$", "", text)
     text = re.sub(r"\$[^\n$]+\$", "", text)
-    text = re.sub(r"\[\[.*?\]\]", "", text)
     text = re.sub(r"!\[.*?\]\(.*?\)", "", text)
     text = re.sub(r"https?://\S+", "", text)
     text = re.sub(r"^[#|>].*$", "", text, flags=re.MULTILINE)
@@ -320,10 +281,6 @@ class StateManager:
         today = date.today()
         self.state["last_full_scan"] = today.isoformat()
         self.state["last_scan_week"] = today.isocalendar()[:2]
-        self.save()
-
-    def mark_injected(self):
-        self.state["last_link_injection"] = date.today().isoformat()
         self.save()
 
 
@@ -435,18 +392,9 @@ class VaultScanner:
                     continue
                 seen_headings.add(s)
                 heading_text = s[3:].strip()
-                # Clean wikilinks inside heading
-                heading_clean = re.sub(
-                    r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", heading_text
-                )
-                heading_clean = re.sub(
-                    r"\[\[([^\]]+)\]\]",
-                    lambda m: Path(m.group(1)).stem,
-                    heading_clean,
-                )
                 # Take the part after colon/dash separator
-                parts = re.split(r"[:：—\-]", heading_clean)
-                candidate = parts[-1].strip() if len(parts) > 1 else heading_clean.strip()
+                parts = re.split(r"[:：—\-]", heading_text)
+                candidate = parts[-1].strip() if len(parts) > 1 else heading_text.strip()
                 # Remove parenthetical suffixes
                 candidate = re.sub(r"[（(].*?[）)]", "", candidate).strip()
                 if (
@@ -668,9 +616,6 @@ class ConceptMapper:
         self.data["unlinked"] = new_unlinked
         return {"additions": additions, "removals": removals, "unlinked_additions": ul_additions, "unlinked_total": len(new_unlinked)}
 
-    def get_concepts_by_target(self) -> dict[str, dict[str, Any]]:
-        return {c["target"]: c for c in self.data.get("concepts", []) if c.get("verified", False)}
-
     def build_alias_index(self) -> dict[str, list[dict[str, Any]]]:
         idx: dict[str, list[dict[str, Any]]] = defaultdict(list)
         for c in self.data.get("concepts", []):
@@ -679,278 +624,6 @@ class ConceptMapper:
             for alias in c.get("aliases", []):
                 idx[alias].append(c)
         return dict(idx)
-
-
-# ─── ContextResolver ─────────────────────────────────────────────────────────
-
-class ContextResolver:
-    """TF-IDF 关键词 + Embedding 混合消歧义。"""
-
-    def __init__(self):
-        self.cat_keywords: dict[str, list[str]] = {cat: [w.strip() for w in words] for cat, words in CATEGORY_KEYWORDS.items()}
-        self.semantic = SemanticResolver()
-
-    def resolve(self, alias: str, candidates: list[dict[str, Any]], context_before: str, context_after: str, file_category: str) -> dict[str, Any]:
-        if len(candidates) == 1:
-            return candidates[0]
-
-        # 1. TF-IDF 关键词匹配
-        context = context_before[-80:] + " " + context_after[:80]
-        ctx_words = set(jieba.lcut(context))
-
-        scores: list[tuple[float, dict[str, Any]]] = []
-        for c in candidates:
-            score = 0.0
-            cat = c.get("category", "国家与地区")
-            if cat == file_category:
-                score += 3.0
-            for w in c.get("context_words", []) + self.cat_keywords.get(cat, []):
-                if w in ctx_words:
-                    score += 1.0
-            score += c.get("priority", 5) * 0.1
-            scores.append((score, c))
-
-        scores.sort(key=lambda x: (-x[0], -x[1].get("priority", 5)))
-
-        # 2. 若关键词得分接近（差距 <= 1），回退到 embedding 相似度
-        if len(scores) >= 2 and scores[0][0] - scores[1][0] <= 1.0:
-            emb_result = self.semantic.resolve(alias, candidates, context_before + context_after, file_category)
-            if emb_result:
-                return emb_result
-
-        return scores[0][1]
-
-
-class SemanticResolver:
-    """基于 sentence embeddings 的消歧义（P2）。"""
-
-    def __init__(self):
-        self.model = None
-        self.doc_embeddings: dict[str, np.ndarray] = {}
-        self.summaries: dict[str, str] = {}
-
-    def _load_model(self):
-        if self.model is not None:
-            return True
-        try:
-            # conda 环境 numpy(mkl) 与 torch 自带 OpenMP 运行时会冲突（OMP Error #15），
-            # 提前设置跳过重复初始化；CI（未安装 torch）下为无害 no-op。
-            os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
-            from sentence_transformers import SentenceTransformer as _ST
-            print("  加载 embedding 模型...")
-            self.model = _ST("paraphrase-multilingual-MiniLM-L12-v2")
-            print("  embedding 模型已加载")
-            return True
-        except Exception as e:
-            print(f"  警告: embedding 模型加载失败: {e}")
-            self.model = None
-            return False
-
-    def precompute(self, concepts: list[dict], base_dir: Path):
-        """预计算所有文档的嵌入向量和摘要（批量编码）。"""
-        if not self._load_model():
-            return
-        # Load cache if exists
-        if EMBEDDINGS_CACHE.exists():
-            try:
-                cache = pickle.loads(EMBEDDINGS_CACHE.read_bytes())
-                self.doc_embeddings = cache.get("embeddings", {})
-                self.summaries = cache.get("summaries", {})
-                # Check if cache is complete
-                if all(c["target"] in self.doc_embeddings for c in concepts if c.get("verified", False)):
-                    print(f"  使用缓存的 {len(self.doc_embeddings)} 个文档向量")
-                    return
-            except Exception:
-                pass
-        print("  计算文档向量...")
-        # 先收集所有摘要
-        batch_targets: list[str] = []
-        batch_summaries: list[str] = []
-        for c in concepts:
-            if not c.get("verified", False):
-                continue
-            target = c["target"]
-            fp = base_dir / (target + ".md")
-            try:
-                text = fp.read_text(encoding="utf-8")
-                summary = self._get_summary(text)
-                self.summaries[target] = summary
-                batch_targets.append(target)
-                batch_summaries.append(summary[:512])
-            except Exception:
-                continue
-        # 批量编码
-        if batch_summaries:
-            embeddings = self.model.encode(batch_summaries, batch_size=32, show_progress_bar=False)
-            for i, target in enumerate(batch_targets):
-                self.doc_embeddings[target] = embeddings[i]
-        # Save cache
-        try:
-            EMBEDDINGS_CACHE.write_bytes(pickle.dumps({"embeddings": self.doc_embeddings, "summaries": self.summaries}))
-        except Exception:
-            pass
-
-    def _get_summary(self, text: str) -> str:
-        """提取文档摘要（标题 + 首段正文），O(n) 单次拼接。"""
-        lines = text.splitlines()
-        parts: list[str] = []
-        total = 0
-        for line in lines:
-            if line.startswith("#") or (line.strip() and not line.startswith(">")):
-                parts.append(line.strip())
-                total += len(parts[-1])
-                if total > 1000:
-                    break
-        return " ".join(parts[:10])
-
-    def resolve(self, alias: str, candidates: list[dict], context: str, file_category: str) -> dict | None:
-        """使用向量相似度消歧义。"""
-        if not self._load_model():
-            return None
-        if not self.doc_embeddings:
-            return None
-        try:
-            ctx_emb = self.model.encode(context[:512], show_progress_bar=False)
-            best_c = None
-            best_score = -1.0
-            for c in candidates:
-                tgt = c["target"]
-                if tgt not in self.doc_embeddings:
-                    continue
-                doc_emb = self.doc_embeddings[tgt]
-                sim = float(np.dot(ctx_emb, doc_emb) / (np.linalg.norm(ctx_emb) * np.linalg.norm(doc_emb) + 1e-10))
-                if c["category"] == file_category:
-                    sim += 0.05
-                if sim > best_score:
-                    best_score = sim
-                    best_c = c
-            return best_c
-        except Exception:
-            return None
-
-
-# ─── LinkInjector ────────────────────────────────────────────────────────────
-
-class LinkInjector:
-    def __init__(self, base_dir: Path, resolver: ContextResolver):
-        self.base_dir = base_dir
-        self.resolver = resolver
-
-    def protect_regions(self, text: str) -> list[tuple[int, int, str]]:
-        protected: list[tuple[int, int, str]] = []
-        if text.startswith("---"):
-            end_idx = text.find("---", 3)
-            if end_idx != -1:
-                protected.append((0, end_idx + 3, "yaml"))
-        for m in re.finditer(r"```[\s\S]*?```", text):
-            protected.append((m.start(), m.end(), "code_block"))
-        # 数学区（$$...$$ / $...$）整体保护：KaTeX 内不能注入链接
-        for m in re.finditer(r"\$\$[\s\S]*?\$\$", text):
-            protected.append((m.start(), m.end(), "math_block"))
-        for m in re.finditer(r"\$[^\n$]+\$", text):
-            if not any(s <= m.start() < e for s, e, _ in protected):
-                protected.append((m.start(), m.end(), "math_inline"))
-        for m in re.finditer(r"\[\[.*?\]\]", text):
-            if not any(s <= m.start() < e for s, e, _ in protected):
-                protected.append((m.start(), m.end(), "wikilink"))
-        for m in re.finditer(r"!\[.*?\]\(.*?\)", text):
-            if not any(s <= m.start() < e for s, e, _ in protected):
-                protected.append((m.start(), m.end(), "image"))
-        for m in re.finditer(r"(?<!!)\[.*?\]\(.*?\)", text):
-            if not any(s <= m.start() < e for s, e, _ in protected):
-                protected.append((m.start(), m.end(), "link"))
-        for m in re.finditer(r"`[^`]*`", text):
-            if not any(s <= m.start() < e for s, e, _ in protected):
-                protected.append((m.start(), m.end(), "inline_code"))
-        for m in re.finditer(r"https?://\S+", text):
-            if not any(s <= m.start() < e for s, e, _ in protected):
-                protected.append((m.start(), m.end(), "url"))
-        for m in re.finditer(r"^#{1,6}\s+.*$", text, re.MULTILINE):
-            if not any(s <= m.start() < e for s, e, _ in protected):
-                protected.append((m.start(), m.end(), "heading"))
-        for m in re.finditer(r"^\|.*\|\s*$", text, re.MULTILINE):
-            if not any(s <= m.start() < e for s, e, _ in protected):
-                protected.append((m.start(), m.end(), "table"))
-        protected.sort()
-        merged: list[tuple[int, int, str]] = []
-        for region in protected:
-            if not merged:
-                merged.append(region)
-            else:
-                last = merged[-1]
-                if region[0] <= last[1]:
-                    merged[-1] = (last[0], max(last[1], region[1]), last[2])
-                else:
-                    merged.append(region)
-        return merged
-
-    def is_protected(self, pos: int, protected: list[tuple[int, int, str]]) -> bool:
-        for s, e, _ in protected:
-            if s <= pos < e:
-                return True
-        return False
-
-    def _build_alias_regex(self, alias_index: dict[str, list[dict[str, Any]]]) -> re.Pattern | None:
-        """将所有别名编译为一个多模式正则（长串优先）。"""
-        aliases = sorted((a for a in alias_index if len(a) >= 2), key=len, reverse=True)
-        if not aliases:
-            return None
-        escaped = [re.escape(a) for a in aliases]
-        return re.compile("|".join(escaped))
-
-    def inject(self, filepath: Path, alias_index: dict[str, list[dict[str, Any]]], file_category: str, dry_run: bool = False) -> dict[str, Any]:
-        try:
-            text = filepath.read_text(encoding="utf-8")
-        except Exception as e:
-            return {"path": str(filepath), "status": "error", "error": str(e), "additions": 0}
-        original = text
-        rel = filepath.relative_to(self.base_dir).as_posix()
-        protected = self.protect_regions(text)
-        token_ranges = get_token_ranges(text)
-
-        alias_re = self._build_alias_regex(alias_index)
-        if alias_re is None:
-            return {"path": str(rel), "status": "unchanged", "additions": 0}
-
-        # 多模式匹配：一次扫描找到所有别名出现位置
-        candidates: list[dict[str, Any]] = []
-        for m in alias_re.finditer(text):
-            alias = m.group()
-            start, end = m.start(), m.end()
-            if self.is_protected(start, protected):
-                continue
-            if not is_token_boundary(start, end, token_ranges):
-                continue
-            targets = alias_index[alias]
-            candidates.append({"start": start, "end": end, "alias": alias, "targets": targets})
-
-        candidates.sort(key=lambda x: (-(x["end"] - x["start"]), x["start"]))
-        kept: list[dict[str, Any]] = []
-        for c in candidates:
-            rngs = [(k["start"], k["end"]) for k in kept]
-            if not any(is_overlap((c["start"], c["end"]), r) for r in rngs):
-                kept.append(c)
-        kept.sort(key=lambda x: -x["end"])
-
-        replacements: list[tuple[int, int, str]] = []
-        for c in kept:
-            alias = c["alias"]
-            targets = c["targets"]
-            ctx_before = text[max(0, c["start"] - 80): c["start"]]
-            ctx_after = text[c["end"]: min(len(text), c["end"] + 80)]
-            chosen = self.resolver.resolve(alias, targets, ctx_before, ctx_after, file_category)
-            target_path = chosen["target"]
-            replacements.append((c["start"], c["end"], f"[[{target_path}|{alias}]]"))
-
-        if not dry_run and replacements:
-            lines = list(text)
-            for start, end, wikilink in sorted(replacements, key=lambda x: -x[0]):
-                lines[start:end] = list(wikilink)
-            modified = "".join(lines)
-            if modified != original:
-                filepath.write_text(modified, encoding="utf-8")
-
-        return {"path": str(rel), "status": "modified" if replacements else "unchanged", "additions": len(kept)}
 
 
 # ─── IndexGenerator ──────────────────────────────────────────────────────────
@@ -969,13 +642,13 @@ class IndexGenerator:
         master = ["# 术语总索引", "", f"> 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M')}", f"> 共 {len(concepts)} 个已链接概念 + {len(unlinked)} 个未链接概念", "", "## 目录", ""]
         for i, cat in enumerate(self.category_order):
             if cat in cat_map:
-                master.append(f"- [[#{cat}|{cat}]]（{len(cat_map[cat])} 个概念）")
+                master.append(f"- {cat}（{len(cat_map[cat])} 个概念）")
                 self._gen_category(cat, cat_map[cat], unlinked, f"{i+1:02d}")
         if unlinked:
             master.extend(["", "## 未链接概念", "", "| 概念 | 类别 | 出现频次 |", "|------|------|---------|"])
             for u in unlinked[:50]:
                 master.append(f"| {u['name']} | {u.get('category', '未知')} | {u.get('files_count', '?')} 个文件 |")
-        master.extend(["", "---", "", "*本目录由 concept_linker.py v2 自动生成，位于 tools/术语索引/ 下。*"])
+        master.extend(["", "---", "", "*本目录由 concept_linker.py 自动生成，位于 tools/术语索引/ 下。*"])
         (self.output_dir / "00_总索引.md").write_text("\n".join(master), encoding="utf-8")
 
     def _gen_category(self, category: str, concepts: list[dict], unlinked: list[dict], prefix: str):
@@ -983,7 +656,7 @@ class IndexGenerator:
         for c in sorted(concepts, key=lambda x: x.get("target", "")):
             target = c.get("target", "")
             aliases_str = "、".join(c.get("aliases", [])[:5])
-            lines.append(f"| [[{target}|{Path(target).stem}]] | {target} | {aliases_str} |")
+            lines.append(f"| {Path(target).stem} | {target} | {aliases_str} |")
         cat_unlinked = [u for u in unlinked if u.get("category") == category]
         if cat_unlinked:
             lines.extend(["", "## 未链接概念（无对应文件）", "", "| 概念 | 出现频次 |", "|------|---------|"])
@@ -994,17 +667,19 @@ class IndexGenerator:
 
 # ─── Reporter ────────────────────────────────────────────────────────────────
 
-def print_diff_report(diff: dict[str, Any], mappings_path: Path):
+def print_diff_report(diff: dict[str, Any], mappings_path: Path, verbose: bool = False):
     sep = "=" * 60
+    limit_additions = 100000 if verbose else 15
+    limit_unlinked = 100000 if verbose else 10
     print(f"\n{sep}\n  每周扫描结果\n{sep}")
     additions = diff.get("additions", [])
     removals = diff.get("removals", [])
     ul_additions = diff.get("unlinked_additions", [])
     if additions:
         print(f"\n  ■ 新增/变更（{len(additions)} 项）:")
-        for a in additions[:15]:
+        for a in additions[:limit_additions]:
             print(f"    + {a}")
-        if len(additions) > 15:
+        if len(additions) > limit_additions:
             print(f"    ... 共 {len(additions)} 项")
     if removals:
         print(f"\n  ■ 已移除（{len(removals)} 项）:")
@@ -1012,58 +687,34 @@ def print_diff_report(diff: dict[str, Any], mappings_path: Path):
             print(f"    - {r}")
     if ul_additions:
         print(f"\n  ■ 未链接概念（{len(ul_additions)} 个）:")
-        for u in ul_additions[:10]:
+        for u in ul_additions[:limit_unlinked]:
             print(f"    ? {u}")
-        if len(ul_additions) > 10:
+        if len(ul_additions) > limit_unlinked:
             print(f"    ... 共 {len(ul_additions)} 个")
-    print(f"\n{sep}\n  ★ 请编辑 {mappings_path}\n  ★ 将确认项改为 \"verified\": true\n  ★ 保存后重新运行: python concept_linker.py --link-only\n{sep}\n")
-
-
-def print_injection_report(results: list[dict[str, Any]], elapsed: float, dry_run: bool):
-    sep = "=" * 60
-    mode = "（预览模式）" if dry_run else ""
-    print(f"\n{sep}\n  链接注入完成  |  耗时 {elapsed:.1f}s  {mode}\n{sep}")
-    total = len(results)
-    modified = sum(1 for r in results if r.get("additions", 0) > 0)
-    errors = sum(1 for r in results if r.get("status") == "error")
-    total_additions = sum(r.get("additions", 0) for r in results)
-    print(f"\n  处理文件: {total} 个\n  修改文件: {modified} 个\n  新增 wikilink: {total_additions} 处")
-    if errors:
-        print(f"  错误: {errors} 个")
-    if not dry_run:
-        with_additions = [r for r in results if r.get("additions", 0) > 0]
-        with_additions.sort(key=lambda x: -x["additions"])
-        if with_additions:
-            print(f"\n  ■ 修改最多的文件:")
-            for r in with_additions[:5]:
-                print(f"    {r['path']} → +{r['additions']} 处")
-    print(f"\n{sep}\n  ★ 下一步：运行 fix_punctuation.py 修复格式\n{sep}\n")
+    print(f"\n{sep}\n  ★ 请编辑 {mappings_path}\n  ★ 将确认项改为 \"verified\": true\n  ★ 保存后重新运行: python concept_linker.py --scan-only\n{sep}\n")
 
 
 # ─── Main ────────────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="概念链接工具 v2 - ML 增强版")
-    parser.add_argument("--scan-only", action="store_true", help="仅扫描更新映射和索引")
-    parser.add_argument("--link-only", action="store_true", help="仅注入 wikilink")
-    parser.add_argument("--dry-run", action="store_true", help="预览模式")
-    parser.add_argument("--refresh", action="store_true", help="强制刷新")
-    parser.add_argument("--verbose", action="store_true", help="详细输出")
-    parser.add_argument("--skip-embedding", action="store_true", help="跳过 embedding 模型（省 120MB 内存）")
-    parser.add_argument("--target", nargs="+", help="仅处理指定文件")
-    parser.add_argument("--ci", action="store_true", help="CI 模式：只读校验链接完整性，不写文件，返回非零退出码")
+    parser = argparse.ArgumentParser(description="概念链接工具 - 概念扫描、映射维护与术语索引生成")
+    parser.add_argument("--scan-only", action="store_true", help="仅扫描更新映射和术语索引")
+    parser.add_argument("--refresh", action="store_true", help="强制刷新（忽略每周节流）")
+    parser.add_argument("--verbose", action="store_true", help="详细输出（打印全部变更条目）")
+    parser.add_argument("--ci", action="store_true", help="CI 模式：只读校验概念映射完整性，不写文件，返回非零退出码")
     args = parser.parse_args()
-    t0 = time.time()
 
     # ── CI 模式：只读校验 ──────────────────────────────────────────────────
     if args.ci:
-        print("CI 模式：校验概念链接完整性...")
+        print("CI 模式：校验概念映射完整性...")
         mapper = ConceptMapper(MAPPINGS_FILE)
         mapper.load()
         concepts = mapper.data.get("concepts", [])
-        alias_index = mapper.build_alias_index()
         if not concepts:
             print("错误: concept_mappings.json 不存在或为空，请先本地运行 --refresh 并 commit")
+            sys.exit(1)
+        if not mapper.build_alias_index():
+            print("错误: 无 verified 概念，请检查 concept_mappings.json")
             sys.exit(1)
         unlinked = mapper.data.get("unlinked", [])
         if unlinked:
@@ -1080,13 +731,11 @@ def main():
     scanner = VaultScanner(BASE_DIR)
     segmenter = Segmenter()
     mapper = ConceptMapper(MAPPINGS_FILE)
-    resolver = ContextResolver()
-    injector = LinkInjector(BASE_DIR, resolver)
     index_gen = IndexGenerator(INDEX_DIR)
 
-    # ── 阶段 1：扫描与刷新 ──────────────────────────────────────────────────
+    # ── 扫描与刷新 ──────────────────────────────────────────────────────────
     should_refresh = args.refresh or state_mgr.should_refresh_mappings()
-    if should_refresh and not args.link_only:
+    if should_refresh:
         print("\n  扫描仓库...")
         scan_candidates = scanner.scan()
         print(f"  发现 {len(scan_candidates)} 个概念候选")
@@ -1102,79 +751,19 @@ def main():
         print("  合并映射...")
         diff = mapper.merge(scan_candidates, ner_candidates)
         mapper.save()
-        print_diff_report(diff, MAPPINGS_FILE)
+        print_diff_report(diff, MAPPINGS_FILE, args.verbose)
         print("  生成术语索引...")
         index_gen.generate(mapper.data.get("concepts", []), mapper.data.get("unlinked", []))
         print(f"  术语索引已生成: {INDEX_DIR}")
         state_mgr.mark_scanned()
         if args.scan_only:
             print("\n  --scan-only 完成")
-            return
+        else:
+            print("\n  扫描完成。请核对 concept_mappings.json，并运行 fix_punctuation.py 检查格式。")
     elif args.scan_only:
         print("  错误: --scan-only 需要触发扫描（周一或 --refresh）")
-        return
-
-    # ── 阶段 2：注入 wikilinks ──────────────────────────────────────────────
-    if not args.scan_only:
-        if args.link_only:
-            mapper.load()
-        concepts = mapper.get_concepts_by_target()
-        if not concepts:
-            print("  未找到 verified 概念，自动标记所有概念...")
-            for c in mapper.data.get("concepts", []):
-                c["verified"] = True
-            mapper.save()
-            concepts = mapper.get_concepts_by_target()
-        alias_index = mapper.build_alias_index()
-        if not alias_index:
-            print("  错误: 无可用 alias 索引，请先 --scan-only")
-            return
-        print(f"  加载了 {len(concepts)} 个概念，{sum(len(v) for v in alias_index.values())} 个别名")
-
-        # Precompute embeddings (P2)
-        if not args.skip_embedding:
-            resolver.semantic.precompute(mapper.data.get("concepts", []), BASE_DIR)
-
-        # Files
-        if args.target:
-            files_to_process = []
-            for t in args.target:
-                fp = (BASE_DIR / t).resolve()
-                if fp.exists() and fp.suffix == ".md":
-                    files_to_process.append(fp)
-                else:
-                    print(f"  警告: 文件不存在: {t}")
-        else:
-            files_to_process = scanner.get_all_files()
-
-        print(f"  处理 {len(files_to_process)} 个文件...")
-        results: list[dict[str, Any]] = []
-        for fp in files_to_process:
-            rel = fp.relative_to(BASE_DIR).as_posix()
-            cat = detect_file_category(fp.stem)
-            result = injector.inject(fp, alias_index, cat, dry_run=args.dry_run)
-            results.append(result)
-            if args.verbose and result.get("additions", 0) > 0:
-                print(f"    {rel} → +{result['additions']} 处")
-
-        # Verify nested wikilinks
-        if not args.dry_run and not args.scan_only:
-            nested = 0
-            for fp in files_to_process:
-                text = fp.read_text(encoding="utf-8")
-                for m in re.finditer(r"\[\[.*?\]\]", text):
-                    inner = m.group()[2:-2]
-                    if "[[" in inner or "]]" in inner:
-                        nested += 1
-                        if args.verbose:
-                            print(f"  ⚠️ 嵌套 wikilink: {fp.name}")
-                        break
-            if nested:
-                print(f"\n  ⚠️ 发现 {nested} 个文件存在嵌套 wikilink")
-
-        print_injection_report(results, time.time() - t0, args.dry_run)
-        state_mgr.mark_injected()
-
+    else:
+        print("  本周已扫描过（周一自动刷新），加 --refresh 可强制刷新。")
 
 if __name__ == "__main__":
     main()
