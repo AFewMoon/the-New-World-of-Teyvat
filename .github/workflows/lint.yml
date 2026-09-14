@@ -20,7 +20,7 @@ jobs:
       - name: Punctuation check
         run: python tools/fix_punctuation.py --check
 
-      - name: Concept mapping check
+      - name: Concept & link check
         run: python tools/concept_linker.py --ci
 
       - name: Auto-fix on PR

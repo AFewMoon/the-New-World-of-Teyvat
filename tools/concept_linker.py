@@ -7,16 +7,26 @@ ML 增强版：
 - spaCy NER → 替代 jieba.posseg 发现专名（假阳性从 60% → <5%）
 - TF-IDF → 每篇文档 top-15 关键词作为 context_words
 
-仓库正文一律使用标准 Markdown 链接，本工具只做概念扫描、映射维护与术语索引
-生成，不向文章写入任何链接语法。
+仓库正文一律使用标准 Markdown 链接（以当前文件所在目录为基准解析：同目录
+`./xxx.md`，跨目录 `../目录/xxx.md`），本工具只做概念扫描、映射维护、术语索引
+生成与链接完整性校验，不向文章写入任何链接语法。
+
+链接校验（--ci 只读 / --fix-links 自动修复）：
+- 残留 wikilink `[[...]]` → 报错；
+- 根相对路径（以 / 开头）→ 报错，可按文件名唯一定位时修复；
+- 目标文件不存在 → 报错，全库按文件名 / stem 唯一定位时修复；
+- 目标存在但 .md 路径写法非规范（层级错误、缺 ./ 前缀、大小写不符）→ 修复为
+  os.path.relpath 规范形式。图片等非 .md 链接仅校验存在性。
 
 依赖：pip install jieba spacy scikit-learn numpy
       python -m spacy download zh_core_web_sm
+      （仅 --refresh / --scan-only 扫描流程需要；--ci / --fix-links 仅需标准库）
 """
 
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 import argparse
@@ -25,8 +35,15 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Optional
 
-import jieba
-import numpy as np
+try:
+    import jieba
+except ImportError:
+    jieba = None
+
+try:
+    import numpy as np
+except ImportError:
+    np = None
 
 try:
     import spacy
@@ -326,7 +343,7 @@ class VaultScanner:
 
     def _extract_tfidf_keywords(self, text: str) -> list[str]:
         """用 TF-IDF 提取正文关键词（TfidfVectorizer 实例复用）。"""
-        if self._tfidf_vec is None:
+        if self._tfidf_vec is None or jieba is None or np is None:
             return []
         clean = clean_body_text(text)
 
@@ -446,12 +463,16 @@ class Segmenter:
                 self.nlp = None
 
     def build_custom_dict(self, known_aliases: list[str]):
+        if jieba is None:
+            print("  警告: jieba 未安装，跳过自定义词典构建")
+            self.custom_dict_built = True
+            return
         for alias in known_aliases:
             if len(alias) >= 2:
                 jieba.add_word(alias, freq=200, tag="nz")
         self.custom_dict_built = True
 
-    def discover_unlinked(self, files: list[Path], base_dir: Path) -> list[dict[str, Any]]:
+    def discover_unlinked(self, files: list[Path]) -> list[dict[str, Any]]:
         """使用 spaCy NER（批量 pipe）发现未链接概念。"""
         self._load_spacy()
         file_counts: dict[str, dict[str, Any]] = {}
@@ -488,6 +509,9 @@ class Segmenter:
                         file_counts[w]["labels"].append(ent.label_)
         else:
             # fallback: jieba.lcut（非 posseg，快 3-5 倍）
+            if jieba is None:
+                print("  警告: spaCy 与 jieba 均未安装，跳过未链接概念发现")
+                return []
             for clean, _ in file_texts:
                 words = jieba.lcut(clean)
                 seen = set()
@@ -529,6 +553,231 @@ class Segmenter:
 
         candidates.sort(key=lambda x: -x["files_count"])
         return candidates
+
+
+# ─── LinkChecker ─────────────────────────────────────────────────────────────
+
+_LINK_RE = re.compile(r"(!?)\[((?:[^\[\]]|\[[^\[\]]*\])*)\]\(([^)]+)\)")
+_WIKILINK_RE = re.compile(r"!?\[\[[^\[\]]+\]\]")
+_EXTERNAL_PREFIXES = ("http://", "https://", "mailto:")
+
+
+class LinkChecker:
+    """Markdown 链接完整性校验与路径修复。
+
+    校验规则（与仓库链接规范一致）：
+    1. 残留 wikilink `[[...]]` → 报错（不自动修复）；
+    2. 根相对路径（以 `/` 开头）→ 报错，目标可按文件名唯一定位时修复；
+    3. 目标文件不存在 → 报错，全库按文件名 / stem 唯一定位时修复；
+    4. 目标存在但 `.md` 路径写法非规范（层级错误、缺 `./` 前缀、大小写
+       不符）→ 修复为 `os.path.relpath(target, file_dir)` 规范形式（同目录
+       补 `./` 前缀）。非 `.md` 链接（图片、LICENSE 等）仅校验存在性。
+
+    提取时跳过围栏代码块、KaTeX 数学区（块级与行内）、行内代码与外链；
+    纯锚点链接（`#...`）跳过，带锚点的链接剥离锚点后校验路径、修复时保留锚点；
+    指向 tools/（脚本与 gitignored 本地暂存目录）的链接不在校验范围。
+    """
+
+    SKIP_DIRS = {"tools", "content", "site", "node_modules", "__pycache__"}
+    SKIP_FILES = {"AGENTS.md"}
+
+    def __init__(self, base_dir: Path):
+        self.base_dir = base_dir
+        self._ignore_dirs, self._ignore_files = self._load_gitignore_skips()
+        self.files = self._collect_files()
+        self._name_index: dict[str, list[Path]] = defaultdict(list)
+        self._stem_index: dict[str, list[Path]] = defaultdict(list)
+        for fp in self.files:
+            self._name_index[fp.name].append(fp)
+            self._stem_index[fp.stem].append(fp)
+
+    def _load_gitignore_skips(self) -> tuple[set[str], set[str]]:
+        """轻量解析 .gitignore：返回 (忽略的目录名, 忽略的文件名)。
+
+        保证本地扫描范围与 CI checkout 后的仓库一致（gitignored 的本地
+        文件不参与校验）。仅处理无通配符的条目（本仓库的目录与文件条目
+        均为此类）；通配符条目（如 *.swp）对 *.md 扫描无影响，忽略。
+        """
+        dirs: set[str] = set()
+        files: set[str] = set()
+        gf = self.base_dir / ".gitignore"
+        if not gf.is_file():
+            return dirs, files
+        try:
+            lines = gf.read_text(encoding="utf-8").splitlines()
+        except OSError:
+            return dirs, files
+        for raw in lines:
+            line = raw.strip()
+            if not line or line.startswith("#") or line.startswith("!"):
+                continue
+            if any(ch in line for ch in "*?["):
+                continue
+            is_dir = line.endswith("/")
+            name = line.strip("/").split("/")[0]
+            if not name:
+                continue
+            if is_dir or "." not in name:
+                dirs.add(name)
+            else:
+                files.add(name)
+        return dirs, files
+
+    def _collect_files(self) -> list[Path]:
+        files: list[Path] = []
+        skip_dirs = self.SKIP_DIRS | self._ignore_dirs
+        skip_files = self.SKIP_FILES | self._ignore_files
+        for entry in sorted(self.base_dir.rglob("*.md")):
+            rel = entry.relative_to(self.base_dir)
+            if any(p in skip_dirs or p.startswith(".") for p in rel.parts):
+                continue
+            if entry.name in skip_files:
+                continue
+            files.append(entry)
+        return files
+
+    def _canonical(self, target: Path, file_dir: Path) -> str:
+        """计算 target 相对 file_dir 的规范链接路径（POSIX，同目录补 ./）。"""
+        rel = os.path.relpath(target.resolve(), file_dir.resolve()).replace(os.sep, "/")
+        if not rel.startswith("."):
+            rel = "./" + rel
+        return rel
+
+    def _locate(self, name: str) -> list[Path]:
+        """全库按文件名（含扩展名）优先、stem 兜底定位候选文件。"""
+        cands = self._name_index.get(name)
+        if cands:
+            return cands
+        return self._stem_index.get(Path(name).stem, [])
+
+    def _scan_line(self, fp: Path, file_dir: Path, rel_file: str, lineno: int, line: str, issues: list[dict[str, Any]]):
+        # 残留 wikilink
+        for m in _WIKILINK_RE.finditer(line):
+            issues.append({"file": rel_file, "line": lineno, "url": m.group(0), "detail": "残留 wikilink", "fix": None})
+
+        for m in _LINK_RE.finditer(line):
+            url = m.group(3).strip()
+            if not url or url.startswith(("#",) + _EXTERNAL_PREFIXES):
+                continue
+            path, _, anchor = url.partition("#")
+            if not path:
+                continue
+            anchor_part = f"#{anchor}" if anchor else ""
+            # 指向 tools/（脚本与 gitignored 本地暂存目录）的链接不在校验范围
+            stripped = [p for p in Path(path.replace("\\", "/")).parts if p not in ("..", ".")]
+            if stripped and stripped[0] == "tools":
+                continue
+
+            suggestion: str | None = None
+            if path.startswith("/"):
+                # 根相对路径：按文件名全库定位
+                cands = self._locate(path.lstrip("/").replace("\\", "/"))
+                if len(cands) == 1:
+                    detail = "根相对路径"
+                    suggestion = self._canonical(cands[0], file_dir) + anchor_part
+                else:
+                    detail = "根相对路径（无法唯一定位目标）"
+            else:
+                target = file_dir / path
+                if target.exists():
+                    if path.lower().endswith(".md") and target.is_file():
+                        canonical = self._canonical(target, file_dir)
+                        if path != canonical:
+                            detail = "非规范路径写法"
+                            suggestion = canonical + anchor_part
+                        else:
+                            continue
+                    else:
+                        continue  # 非 .md 链接（图片、LICENSE、目录等）存在即可
+                else:
+                    # 目标不存在：按文件名 / stem 全库定位
+                    name = Path(path.replace("\\", "/")).name
+                    cands = self._locate(name)
+                    if len(cands) == 1:
+                        detail = "目标不存在（可唯一定位）"
+                        suggestion = self._canonical(cands[0], file_dir) + anchor_part
+                    elif len(cands) > 1:
+                        detail = f"目标不存在（{len(cands)} 个同名候选）"
+                    else:
+                        detail = "目标不存在"
+
+            issues.append({"file": rel_file, "line": lineno, "url": url, "detail": detail, "fix": suggestion})
+
+    def _scan_file(self, fp: Path) -> list[dict[str, Any]]:
+        issues: list[dict[str, Any]] = []
+        try:
+            text = fp.read_text(encoding="utf-8")
+        except OSError:
+            return issues
+        file_dir = fp.parent
+        rel_file = fp.relative_to(self.base_dir).as_posix()
+        in_fence = False
+        in_math = False
+        for lineno, line in enumerate(text.splitlines(), 1):
+            if line.lstrip().startswith("```"):
+                in_fence = not in_fence
+                continue
+            if in_fence:
+                continue
+            # 块级数学 $$...$$：未闭合时进入数学状态，遇到闭合 $$ 后恢复
+            if in_math:
+                idx = line.find("$$")
+                if idx == -1:
+                    continue
+                in_math = False
+                line = line[idx + 2:]
+            if "$$" in line:
+                line = re.sub(r"\$\$.*?\$\$", "", line)
+                if "$$" in line:
+                    in_math = True
+                    line = line.split("$$", 1)[0]
+            # 行内代码与行内数学不做链接校验
+            line = re.sub(r"`[^`]*`", "", line)
+            line = re.sub(r"\$[^\n$]+\$", "", line)
+            self._scan_line(fp, file_dir, rel_file, lineno, line, issues)
+        return issues
+
+    def check(self) -> list[dict[str, Any]]:
+        """全库只读校验，返回问题列表（file / line / url / detail / fix）。"""
+        issues: list[dict[str, Any]] = []
+        for fp in self.files:
+            issues.extend(self._scan_file(fp))
+        return issues
+
+    def fix(self, issues: list[dict[str, Any]]) -> tuple[int, int]:
+        """按问题列表修复可修复项：逐条打印 diff 后写回。
+
+        返回 (已修复数, 需人工处理数)。仅改写括号内路径，不触碰显示文本。
+        """
+        fixable = [i for i in issues if i["fix"]]
+        unfixable_count = len(issues) - len(fixable)
+        by_file: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for i in fixable:
+            by_file[i["file"]].append(i)
+
+        fixed = 0
+        for rel, items in sorted(by_file.items()):
+            fp = self.base_dir / rel
+            try:
+                lines = fp.read_text(encoding="utf-8").split("\n")
+            except OSError:
+                continue
+            changed = False
+            for i in items:
+                ln = i["line"] - 1
+                if ln >= len(lines):
+                    continue
+                old, new = f"]({i['url']})", f"]({i['fix']})"
+                if old in lines[ln]:
+                    lines[ln] = lines[ln].replace(old, new, 1)
+                    changed = True
+                    fixed += 1
+                    print(f"  {i['file']}:{i['line']}  {i['url']} → {i['fix']}  ({i['detail']})")
+                else:
+                    print(f"  [跳过] {i['file']}:{i['line']}  未找到 ({i['url']})")
+            if changed:
+                fp.write_text("\n".join(lines), encoding="utf-8")
+        return fixed, unfixable_count
 
 
 # ─── ConceptMapper ───────────────────────────────────────────────────────────
@@ -701,31 +950,65 @@ def main():
     parser.add_argument("--scan-only", action="store_true", help="仅扫描更新映射和术语索引")
     parser.add_argument("--refresh", action="store_true", help="强制刷新（忽略每周节流）")
     parser.add_argument("--verbose", action="store_true", help="详细输出（打印全部变更条目）")
-    parser.add_argument("--ci", action="store_true", help="CI 模式：只读校验概念映射完整性，不写文件，返回非零退出码")
+    parser.add_argument("--ci", action="store_true", help="CI 模式：只读校验概念映射完整性与链接完整性，不写文件，返回非零退出码")
+    parser.add_argument("--fix-links", action="store_true", help="链接修复模式：校验正文 Markdown 链接，打印 diff 后自动修复可修复项")
     args = parser.parse_args()
+
+    # ── 链接修复模式 ──────────────────────────────────────────────────────
+    if args.fix_links:
+        print("链接修复模式：校验正文 Markdown 链接...")
+        checker = LinkChecker(BASE_DIR)
+        issues = checker.check()
+        if not issues:
+            print(f"OK: {len(checker.files)} 个文件全部链接规范，无需修复。")
+            return
+        fixable = sum(1 for i in issues if i["fix"])
+        print(f"发现 {len(issues)} 处链接问题，其中 {fixable} 处可自动修复：")
+        fixed, unfixable = checker.fix(issues)
+        print(f"\n完成：修复 {fixed} 处，{unfixable} 处需人工处理。")
+        if unfixable:
+            sys.exit(1)
+        return
 
     # ── CI 模式：只读校验 ──────────────────────────────────────────────────
     if args.ci:
-        print("CI 模式：校验概念映射完整性...")
+        print("CI 模式：校验概念映射与链接完整性...")
+        failed = False
+
         mapper = ConceptMapper(MAPPINGS_FILE)
         mapper.load()
         concepts = mapper.data.get("concepts", [])
         if not concepts:
             print("错误: concept_mappings.json 不存在或为空，请先本地运行 --refresh 并 commit")
-            sys.exit(1)
-        if not mapper.build_alias_index():
+            failed = True
+        elif not mapper.build_alias_index():
             print("错误: 无 verified 概念，请检查 concept_mappings.json")
-            sys.exit(1)
+            failed = True
+        else:
+            print(f"概念映射: OK（{len(concepts)} 个已链接概念）")
         unlinked = mapper.data.get("unlinked", [])
         if unlinked:
-            print(f"以下 {len(unlinked)} 个概念在仓库中无对应文件：")
+            print(f"错误: 以下 {len(unlinked)} 个概念在仓库中无对应文件：")
             for u in unlinked[:20]:
                 print(f"  ? {u.get('name')} ({u.get('category', '?')}, {u.get('files_count', '?')} 个文件)")
             if len(unlinked) > 20:
                 print(f"  ... 共 {len(unlinked)} 个")
-            sys.exit(1)
-        print(f"OK: {len(concepts)} 个已链接概念，0 个未链接概念。")
-        return
+            failed = True
+
+        checker = LinkChecker(BASE_DIR)
+        link_issues = checker.check()
+        if link_issues:
+            print(f"链接完整性: 错误（{len(link_issues)} 处）")
+            for i in link_issues[:50]:
+                fix_tag = f" → {i['fix']}" if i["fix"] else ""
+                print(f"  {i['file']}:{i['line']}  [{i['detail']}] ({i['url']}){fix_tag}")
+            if len(link_issues) > 50:
+                print(f"  ... 共 {len(link_issues)} 处")
+            failed = True
+        else:
+            print(f"链接完整性: OK（{len(checker.files)} 个文件全部通过）")
+
+        sys.exit(1 if failed else 0)
 
     state_mgr = StateManager(STATE_FILE)
     scanner = VaultScanner(BASE_DIR)
@@ -746,7 +1029,7 @@ def main():
         print("  spaCy NER 发现专名...")
         segmenter.build_custom_dict(existing_aliases)
         all_files = scanner.get_all_files()
-        ner_candidates = segmenter.discover_unlinked(all_files, BASE_DIR)
+        ner_candidates = segmenter.discover_unlinked(all_files)
         print(f"  发现 {len(ner_candidates)} 个未链接概念候选")
         print("  合并映射...")
         diff = mapper.merge(scan_candidates, ner_candidates)

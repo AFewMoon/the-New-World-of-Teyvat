@@ -343,15 +343,18 @@ cd tools
 & "C:\Program\anaconda3\python.exe" fix_punctuation.py --files 文件.md  # 处理单个文件
 ```
 
-### `concept_linker.py` — 概念扫描与术语索引
+### `concept_linker.py` — 概念扫描、术语索引与链接校验
 
-扫描仓库 Markdown，维护概念映射 (`tools/concept_mappings.json`) 并生成分类术语索引 (`tools/术语索引/`)：
+扫描仓库 Markdown，维护概念映射 (`tools/concept_mappings.json`) 并生成分类术语索引 (`tools/术语索引/`)；同时按「链接规范」校验全库正文链接的完整性与路径写法：
 
 ```powershell
 & "C:\Program\anaconda3\python.exe" concept_linker.py --refresh    # 全量刷新（扫描 + 重建索引）
 & "C:\Program\anaconda3\python.exe" concept_linker.py --scan-only  # 仅扫描更新映射与索引
-& "C:\Program\anaconda3\python.exe" concept_linker.py --ci         # CI 只读校验
+& "C:\Program\anaconda3\python.exe" concept_linker.py --ci         # CI 只读校验（概念映射 + 链接完整性）
+& "C:\Program\anaconda3\python.exe" concept_linker.py --fix-links  # 校验并自动修复链接路径（打印 diff 后写回）
 ```
+
+链接校验规则：残留 wikilink、根相对路径、目标文件不存在、`.md` 路径写法非规范（层级错误、缺 `./` 前缀等）均报错；目标不存在但可按文件名在全库唯一定位时，`--fix-links` 可自动改写为规范路径。图片等非 `.md` 链接仅校验存在性；`tools/` 与 gitignored 目录不参与校验。
 
 ### 链接规范
 
