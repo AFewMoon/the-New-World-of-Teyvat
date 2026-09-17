@@ -32,6 +32,16 @@ tools/_linker_state.json
 # MkDocs build output
 site/
 
+# MkDocs 输出到仓库根目录的产物（曾误提交，禁止再入库）
+# 前导 / 表示仅匹配仓库根，避免误伤 content/javascripts/ 与 content/stylesheets/
+/search/
+/assets/
+/javascripts/
+/stylesheets/
+/404.html
+/sitemap.xml
+/sitemap.xml.gz
+
 # MkDocs content copy (generated in CI)
 content/*
 !content/javascripts/
