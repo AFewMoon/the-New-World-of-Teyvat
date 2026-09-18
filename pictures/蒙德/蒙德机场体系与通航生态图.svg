@@ -46,7 +46,7 @@
     <text x="1264" y="188" font-size="20" font-weight="700" fill="#DDF2E8">两大国际机场参数对照</text>
     <rect x="1264" y="208" width="1052" height="280" rx="10" fill="#2C5A4C" stroke="#52C79B" stroke-width="1.5"/>
     <text x="1288" y="242" font-size="16" font-weight="700" fill="#52C79B">蒙德自由国际机场 (Mondstadt Liberty International Airport)</text>
-    <text x="1288" y="270" font-size="12.5" fill="#DDF2E8">等级 4 F 级（可接纳 ZF-48 起降，未投入商业运营）· 蒙德城南郊约 24 km · 风起地正北 6 km</text>
+    <text x="1288" y="270" font-size="12.5" fill="#DDF2E8">等级 5 E 级（可接纳 ZF-48 起降，未投入商业运营）· 蒙德城南郊约 24 km · 风起地正北 6 km</text>
     <text x="1288" y="296" font-size="12.5" fill="#DDF2E8">跑道 3 条：3800 m × 1 ＋ 3200 m × 2（沥青混凝土）· 航站楼 T1（国际／国内干线）＋T2（低成本及包机）</text>
     <text x="1288" y="322" font-size="12.5" fill="#DDF2E8">年吞吐能力：近期 1400 万人次；TE 2031 启动远期扩容（T1 指廊延长＋T2 卫星厅），TE 2035 达 1800 万人次</text>
     <text x="1288" y="348" font-size="12.5" fill="#DDF2E8">地面交通：地下联络线「自由国际机场站」，市域铁路直达蒙德城北站／南站；机场高速接城市环线</text>
@@ -55,7 +55,7 @@
     <text x="2290" y="270" text-anchor="end" font-size="24" font-weight="700" fill="#52C79B">1400 万</text>
     <rect x="1264" y="504" width="1052" height="252" rx="10" fill="#EAF4EE" stroke="#2E8B6E" stroke-width="1.5"/>
     <text x="1288" y="538" font-size="16" font-weight="700" fill="#1F7A5C">荆夫骑士国际机场 (Dornman Knight International Airport)</text>
-    <text x="1288" y="566" font-size="12.5" fill="#3E5F54">等级 4 E 级 · 荆夫市北部郊区 · 荆夫港以东 12 km</text>
+    <text x="1288" y="566" font-size="12.5" fill="#3E5F54">等级 5 E 级 · 荆夫市北部郊区 · 荆夫港以东 12 km</text>
     <text x="1288" y="592" font-size="12.5" fill="#3E5F54">跑道 2 条：3000 m ＋ 2600 m（沥青混凝土）· 航站楼 T1 年吞吐能力 600 万人次</text>
     <text x="1288" y="618" font-size="12.5" fill="#3E5F54">地面交通：荆夫港市域铁路支线「骑士机场站」；机场快速路直连荆夫港自由贸易区</text>
     <text x="1288" y="644" font-size="12.5" fill="#3E5F54">主基地：晨曦酒庄航空公司（货运主基地）· 蒲公英航空公司（次要基地）</text>
