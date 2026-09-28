@@ -20,7 +20,7 @@
 
   <!-- ═══════════ 标题区 ═══════════ -->
   <text x="1200" y="58" text-anchor="middle" font-size="40" font-weight="700" fill="#3B2F23">璃月政党格局与政治光谱图</text>
-  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">「一党主导、多党合作」· 执政党与四大参政党 · 代表阶层、核心主张、票仓分布 · 志飞集团现象</text>
+  <text x="1200" y="96" text-anchor="middle" font-size="15" fill="#6B5A40">「一党主导、多党合作」· 执政党与四大参政党 · 代表阶层、核心主张、票仓分布 · 乾元集团现象</text>
   <line x1="220" y1="118" x2="2180" y2="118" stroke="#C9A227" stroke-width="2.5"/>
   <polygon points="1200,112 1210,118 1200,124 1190,118" fill="#C9A227"/>
 
@@ -181,12 +181,12 @@
     <text x="1200" y="1453" text-anchor="middle" font-size="13" fill="#3B2F23">议会中的激烈辩论代替了曾经暗流涌动的商战与门派倾轧——「契约式民主」将利益冲突纳入宪政轨道。</text>
   </g>
 
-  <!-- ═══════════ 第 4 区 · 志飞集团 ═══════════ -->
+  <!-- ═══════════ 第 4 区 · 乾元集团 ═══════════ -->
   <g>
     <rect x="60" y="1510" width="2280" height="560" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2"/>
     <rect x="84" y="1536" width="300" height="40" rx="20" fill="none" stroke="#D8AF45" stroke-width="1.5"/>
     <text x="234" y="1563" text-anchor="middle" font-size="14" font-weight="700" fill="#D8AF45">夹缝中的巨兽 · 案例观察</text>
-    <text x="420" y="1565" font-size="22" font-weight="700" fill="#F7EBC8">志飞集团 —— 「节制资本」体制最艰难的试金石</text>
+    <text x="420" y="1565" font-size="22" font-weight="700" fill="#F7EBC8">乾元集团 —— 「节制资本」体制最艰难的试金石</text>
     <text x="84" y="1622" font-size="13" fill="#E8D8AC">发迹于层岩巨渊矿运，在三十年工业革命中完成从车队老板到横跨矿业、物流、地产、金融的综合财阀的蜕变。</text>
     <text x="84" y="1662" font-size="14" font-weight="700" fill="#D8AF45">双向政治献金：它不选边站，因为在两党的拉锯中早已超越党派分野</text>
     <rect x="84" y="1682" width="1100" height="200" rx="10" fill="#4A3A28" stroke="#C9A227" stroke-width="1.2"/>
