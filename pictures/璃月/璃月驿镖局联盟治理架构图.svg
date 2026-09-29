@@ -37,7 +37,7 @@
     <text x="1244" y="292" font-size="12" fill="#F3EDDE">· 自愿入股镖局按高于市价的估值转化为联盟股权</text>
     <text x="1244" y="318" font-size="12" fill="#F3EDDE">· 镖师趟子手经考核转为企业正式职工，享五险一金与退休金</text>
     <text x="1244" y="344" font-size="12" fill="#F3EDDE">· 保留各镖局字号、纹章与传统作为「文化品牌」继续发扬</text>
-    <text x="1244" y="370" font-size="12" fill="#F3EDDE">· 政府给予三年免税扶持＋境内末端物流独家经营权承诺</text>
+    <text x="1244" y="370" font-size="12" fill="#F3EDDE">· 政府给予三年免税扶持＋境内末端物流独家经营权承诺（TE 2029 冬起转为有期限特许）</text>
     <text x="1244" y="402" font-size="12" font-weight="700" fill="#D8AF45">抉择：「要么被外吞并，要么与国同行」——绝大多数选择了后者</text>
   </g>
 
@@ -81,8 +81,8 @@
     <!-- 总裁执行层 -->
     <rect x="450" y="868" width="1500" height="130" rx="14" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
     <text x="474" y="906" font-size="17" font-weight="700" fill="#3B2F23">总裁（1 人）与执行层</text>
-    <text x="474" y="934" font-size="13" fill="#3B2F23">总裁由理事会提名，报国资委与政务院批准；下设若干副总裁分管六大条线：</text>
-    <text x="474" y="964" font-size="13" fill="#6B5A40">陆路运输 · 水运与港口联动 · 仓储与供应链 · 国际物流 · 人力资源与镖师传承 · 技术与装备</text>
+    <text x="474" y="934" font-size="13" fill="#3B2F23">总裁由理事会提名，报国资委与政务院批准；下设若干副总裁分管七大条线：</text>
+    <text x="474" y="964" font-size="13" fill="#6B5A40">陆路运输 · 水运与港口联动 · 仓储与供应链 · 国际物流 · 人力与镖师传承 · 技术与装备 · 末端接入与普遍服务</text>
   </g>
 
   <!-- ═══════════ 第 3 区 · 五级科层网络 ═══════════ -->
@@ -108,13 +108,13 @@
     <path d="M 1200 1454 V 1476" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
     <!-- L4 乡镇站 -->
     <rect x="300" y="1482" width="1800" height="110" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="2"/>
-    <text x="330" y="1518" font-size="16" font-weight="700" fill="#3B2F23">Ⅳ 乡／镇驿镖站 —— 最后一公里的送达与收寄</text>
+    <text x="330" y="1518" font-size="16" font-weight="700" fill="#3B2F23">Ⅳ 乡／镇驿镖站 —— 最后一公里送达收寄（普遍服务，联盟独家）</text>
     <text x="2070" y="1518" text-anchor="end" font-size="12" fill="#6B5A40">标准化的新能源厢式货车、两轮/三轮电动车</text>
     <text x="330" y="1552" font-size="12" fill="#6B5A40">偏远山区（如轻策庄深处）恢复使用骡马队或驯化的岩晶蝶短途接驳——被视作非物质文化遗产的活态传承</text>
     <path d="M 1200 1592 V 1614" stroke="#B8922F" stroke-width="2.5" marker-end="url(#arrow)"/>
     <!-- L5 村点 -->
     <rect x="300" y="1620" width="1800" height="96" rx="12" fill="#F5EFE0" stroke="#9C948A" stroke-width="2" stroke-dasharray="10 6"/>
-    <text x="330" y="1656" font-size="16" font-weight="700" fill="#6B5A40">Ⅴ （试行）村／坊寄送网点 ——「驿镖便民点」</text>
+    <text x="330" y="1656" font-size="16" font-weight="700" fill="#6B5A40">Ⅴ （试行）村／坊寄送网点 ——「驿镖便民点」（普遍服务义务）</text>
     <text x="2070" y="1656" text-anchor="end" font-size="12" fill="#9C948A">由村委会或退休职工代管</text>
     <text x="330" y="1690" font-size="12" fill="#6B5A40">支撑「工业品下乡、农产品进城」的乡村振兴战略，被璃月农会联盟高度评价</text>
   </g>
