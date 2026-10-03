@@ -46,3 +46,7 @@ site/
 content/*
 !content/javascripts/
 !content/stylesheets/
+
+# Blender 工作区（建模资产本地保留，不入库）
+tools/blender/
+*.blend1
