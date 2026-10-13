@@ -220,7 +220,7 @@
   <g>
     <rect x="24" y="2500" width="2272" height="800" rx="16" fill="#E4EBF2" stroke="#B8922F" stroke-width="2"/>
     <text x="1200" y="2536" text-anchor="middle" font-size="22" font-weight="700" fill="#3B2F23">区域铁路公司 · 五大府各设一家全资子公司（辖 1 府 + 2 郡）· 另设参股境外璃蒙公司</text>
-    <text x="1200" y="2558" text-anchor="middle" font-size="12" fill="#6B5A40">五大府各设一家全资子公司；总公司拥有移动资产（机车、车辆、动车组），区域公司拥有固定资产（线路、车站、供电、信号）并负责维护</text>
+    <text x="1200" y="2558" text-anchor="middle" font-size="12" fill="#6B5A40">五大府各设一家全资子公司；移动资产默认归总公司，区域公司可自购自持司内交路用车；固定资产（线路、车站、供电、信号）归区域公司并负责维护</text>
 
     <!-- 公司名行 -->
     <g font-size="15" font-weight="700" fill="#3B2F23">
@@ -413,11 +413,11 @@
     <rect x="40" y="3360" width="1140" height="360" rx="12" fill="#F5EFE0" stroke="#C9A227" stroke-width="1.5"/>
     <text x="610" y="3398" text-anchor="middle" font-size="19" font-weight="700" fill="#3B2F23">总公司与区域公司的关系</text>
     <text x="64" y="3436" font-size="13" font-weight="700" fill="#B8922F">资产权属</text>
-    <text x="64" y="3458" font-size="13" fill="#3B2F23">· 总公司：机车、动车组、客车、货车、司机、乘务职工</text>
-    <text x="64" y="3478" font-size="13" fill="#3B2F23">· 区域公司：线路、车站、供电、信号、维修基地、随车工程师</text>
+    <text x="64" y="3458" font-size="13" fill="#3B2F23">· 总公司：机车、动车组、客车、货车（区域公司自购自持的车辆除外）、司机、乘务职工</text>
+    <text x="64" y="3478" font-size="13" fill="#3B2F23">· 区域公司：线路、车站、供电、信号、维修基地、随车工程师；司内交路用车可向总公司购置或自购自持</text>
     <text x="64" y="3506" font-size="13" font-weight="700" fill="#B8922F">运营模式</text>
-    <text x="64" y="3528" font-size="13" fill="#3B2F23">· 总公司：运行图、车次编排、票务系统、货运组织</text>
-    <text x="64" y="3548" font-size="13" fill="#3B2F23">· 区域公司：区域内安全运行、设备保障、旅客服务</text>
+    <text x="64" y="3528" font-size="13" fill="#3B2F23">· 总公司：跨司运行图与车次编排、票务系统、货运组织</text>
+    <text x="64" y="3548" font-size="13" fill="#3B2F23">· 区域公司：司内车次与交路自排后报备；区域内安全运行、设备保障、旅客服务；车辆可互相或与总公司租赁、借调</text>
     <text x="64" y="3576" font-size="13" font-weight="700" fill="#B8922F">财务结算 / 人事管理</text>
     <text x="64" y="3598" font-size="13" fill="#3B2F23">· 区域公司收取线路使用费、车站服务费、车辆维修费</text>
     <text x="64" y="3618" font-size="13" fill="#3B2F23">· 区域公司总经理由总公司任命，副总由区域提名、总公司审批</text>
