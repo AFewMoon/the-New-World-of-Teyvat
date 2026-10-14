@@ -12,8 +12,6 @@
 
 > 📖 **在线阅读**：[the-new-world-of-teyvat.bstinspection.com](https://the-new-world-of-teyvat.bstinspection.com/) — MkDocs Material 主题构建，推送即自动部署。
 
-> 📘 **用户手册**：目录结构、链接规范、格式约定、编辑流程与工具速查原先整理于本地《用户手册》，该文件现已移除；格式约定以仓库 `.clinerules/` 与各工具脚本的说明为准。
-
 > ⚠️ **声明**：本项目为同人二次创作，基于《原神》(HoYoverse) 的世界观背景。所有内容均为虚构，不代表任何现实政治立场。
 
 ## 项目简介
