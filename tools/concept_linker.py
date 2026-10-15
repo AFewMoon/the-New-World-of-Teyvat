@@ -6,6 +6,11 @@
 ML 增强版：
 - spaCy NER → 替代 jieba.posseg 发现专名（假阳性从 60% → <5%）
 - TF-IDF → 每篇文档 top-15 关键词作为 context_words
+- jieba 自定义词典在 scan() 前注入：已确认别名 / 自动黑名单在 TF-IDF 分词阶段
+  即生效，避免已确认专名被切碎成残片
+- 自动黑名单（tools/auto_blacklist.json）：unlinked 概念连续
+  AUTO_BLACKLIST_THRESHOLD（3）轮刷新仍无对应文件则自动沉淀；若后续成为
+  已链接概念别名则自动回滚。手工 COMMON_WORD_BLACKLIST 继续留在代码内
 
 仓库正文一律使用标准 Markdown 链接（以当前文件所在目录为基准解析：同目录
 `./xxx.md`，跨目录 `../目录/xxx.md`），本工具只做概念扫描、映射维护、术语索引
@@ -63,7 +68,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 STATE_FILE = BASE_DIR / "tools" / "_linker_state.json"
 MAPPINGS_FILE = BASE_DIR / "tools" / "concept_mappings.json"
+AUTO_BLACKLIST_FILE = BASE_DIR / "tools" / "auto_blacklist.json"
 INDEX_DIR = BASE_DIR / "tools" / "术语索引"
+
+# unlinked 概念连续多少轮刷新仍无对应文件则自动沉淀进黑名单（约 3 周，与周一自动刷新节律匹配）
+AUTO_BLACKLIST_THRESHOLD = 3
 
 PROTECTED_DIRS = {".git", ".obsidian", ".clinerules", "node_modules", "__pycache__"}
 SKIP_FILES = {"README.md", "LICENSE", "AGENTS.md"}
@@ -782,6 +791,23 @@ class LinkChecker:
 
 # ─── ConceptMapper ───────────────────────────────────────────────────────────
 
+
+def load_auto_blacklist() -> dict[str, Any]:
+    """读取自动黑名单文件；不存在或损坏时按空集处理（与 StateManager._load 容错模式一致）。"""
+    default: dict[str, Any] = {
+        "_meta": {"last_updated": "", "threshold": AUTO_BLACKLIST_THRESHOLD},
+        "words": [],
+    }
+    if not AUTO_BLACKLIST_FILE.exists():
+        return default
+    try:
+        data = json.loads(AUTO_BLACKLIST_FILE.read_text(encoding="utf-8"))
+        words = [w for w in data.get("words", []) if isinstance(w, str)]
+        return {"_meta": data.get("_meta", default["_meta"]), "words": sorted(set(words))}
+    except (json.JSONDecodeError, OSError):
+        return default
+
+
 class ConceptMapper:
     def __init__(self, path: Path):
         self.path = path
@@ -790,6 +816,7 @@ class ConceptMapper:
             "concepts": [],
             "unlinked": [],
         }
+        self.auto_blacklist: dict[str, Any] = load_auto_blacklist()
 
     def load(self) -> dict[str, Any]:
         if self.path.exists():
@@ -799,6 +826,7 @@ class ConceptMapper:
                     self.data = data
             except (json.JSONDecodeError, OSError):
                 pass
+        self.auto_blacklist = load_auto_blacklist()
         return self.data
 
     def save(self):
@@ -806,6 +834,12 @@ class ConceptMapper:
         self.data["_meta"]["total_linked"] = len(self.data.get("concepts", []))
         self.data["_meta"]["total_unlinked"] = len(self.data.get("unlinked", []))
         self.path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2), encoding="utf-8")
+        self.auto_blacklist["_meta"]["last_updated"] = date.today().isoformat()
+        self.auto_blacklist["_meta"]["threshold"] = AUTO_BLACKLIST_THRESHOLD
+        self.auto_blacklist["words"] = sorted(set(self.auto_blacklist.get("words", [])))
+        AUTO_BLACKLIST_FILE.write_text(
+            json.dumps(self.auto_blacklist, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
 
     def merge(self, scan_results: list[dict[str, Any]], jieba_candidates: list[dict[str, Any]]) -> dict[str, Any]:
         existing = {c["target"]: c for c in self.data.get("concepts", [])}
@@ -813,6 +847,7 @@ class ConceptMapper:
         new_concepts: list[dict[str, Any]] = []
         new_unlinked: list[dict[str, Any]] = []
         additions, removals, ul_additions = [], [], []
+        blacklisted, unblacklisted = [], []
 
         for candidate in scan_results:
             target = candidate["target"]
@@ -843,27 +878,57 @@ class ConceptMapper:
         for c in new_concepts:
             linked_aliases.update(c.get("aliases", []))
 
+        # 回滚：自动黑名单中的词若已成为已链接概念别名（用户建文件 / 确认别名），移出黑名单
+        blacklist_words: set[str] = set(self.auto_blacklist.get("words", []))
+        for w in sorted(blacklist_words):
+            if w in linked_aliases:
+                blacklist_words.discard(w)
+                unblacklisted.append(w)
+
         for candidate in jieba_candidates:
             name = candidate["name"]
             if name in linked_aliases:
                 continue
+            if name in blacklist_words:
+                continue  # 已在自动黑名单中，维持沉淀状态
             if name in existing_unlinked:
                 old = existing_unlinked[name]
                 old["files_count"] = candidate["files_count"]
+                old["unclaimed_rounds"] = old.get("unclaimed_rounds", 0) + 1
                 new_unlinked.append(old)
             else:
-                new_unlinked.append({"name": name, "aliases": candidate["aliases"], "category": candidate["category"], "reason": "无对应 .md 文件", "confidence": candidate["confidence"], "files_count": candidate["files_count"]})
+                new_unlinked.append({"name": name, "aliases": candidate["aliases"], "category": candidate["category"], "reason": "无对应 .md 文件", "confidence": candidate["confidence"], "files_count": candidate["files_count"], "unclaimed_rounds": 1})
                 ul_additions.append(f"[未链接] {name} ({candidate['confidence']}, {candidate['files_count']} 文件)")
+
+        # 沉淀：连续 AUTO_BLACKLIST_THRESHOLD 轮无人认领且无对应文件的词移出 unlinked，写入自动黑名单
+        kept_unlinked: list[dict[str, Any]] = []
+        for entry in new_unlinked:
+            if entry.get("unclaimed_rounds", 0) >= AUTO_BLACKLIST_THRESHOLD:
+                blacklist_words.add(entry["name"])
+                blacklisted.append(f"{entry['name']} ({entry.get('files_count', '?')} 文件)")
+            else:
+                kept_unlinked.append(entry)
+        new_unlinked = kept_unlinked
 
         for name, old in existing_unlinked.items():
             if name in linked_aliases:
                 continue
+            if name in blacklist_words:
+                continue  # 已沉淀进黑名单，不再保留在 unlinked 列表中
             if name not in {c["name"] for c in new_unlinked}:
                 new_unlinked.append(old)
 
+        self.auto_blacklist["words"] = sorted(blacklist_words)
         self.data["concepts"] = new_concepts
         self.data["unlinked"] = new_unlinked
-        return {"additions": additions, "removals": removals, "unlinked_additions": ul_additions, "unlinked_total": len(new_unlinked)}
+        return {
+            "additions": additions,
+            "removals": removals,
+            "unlinked_additions": ul_additions,
+            "unlinked_total": len(new_unlinked),
+            "blacklisted": blacklisted,
+            "unblacklisted": unblacklisted,
+        }
 
     def build_alias_index(self) -> dict[str, list[dict[str, Any]]]:
         idx: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -940,6 +1005,18 @@ def print_diff_report(diff: dict[str, Any], mappings_path: Path, verbose: bool =
             print(f"    ? {u}")
         if len(ul_additions) > limit_unlinked:
             print(f"    ... 共 {len(ul_additions)} 个")
+    blacklisted = diff.get("blacklisted", [])
+    if blacklisted:
+        print(f"\n  ■ 自动沉淀进黑名单（连续 {AUTO_BLACKLIST_THRESHOLD} 轮无对应文件，已移出未链接列表）:")
+        for b in blacklisted[:limit_unlinked]:
+            print(f"    - {b}")
+        if len(blacklisted) > limit_unlinked:
+            print(f"    ... 共 {len(blacklisted)} 项")
+    unblacklisted = diff.get("unblacklisted", [])
+    if unblacklisted:
+        print(f"\n  ■ 已从自动黑名单回滚（已成为已链接概念别名）:")
+        for u in unblacklisted:
+            print(f"    + {u}")
     print(f"\n{sep}\n  ★ 请编辑 {mappings_path}\n  ★ 将确认项改为 \"verified\": true\n  ★ 保存后重新运行: python concept_linker.py --scan-only\n{sep}\n")
 
 
@@ -1019,15 +1096,22 @@ def main():
     # ── 扫描与刷新 ──────────────────────────────────────────────────────────
     should_refresh = args.refresh or state_mgr.should_refresh_mappings()
     if should_refresh:
-        print("\n  扫描仓库...")
-        scan_candidates = scanner.scan()
-        print(f"  发现 {len(scan_candidates)} 个概念候选")
+        # 先加载映射与注入 jieba 自定义词典，再做 scan()：
+        # 已确认别名 / 自动黑名单在 TF-IDF 分词阶段即生效，避免已确认专名被切碎
         existing = mapper.load()
+        auto_words = set(load_auto_blacklist().get("words", []))
+        if auto_words:
+            COMMON_WORD_BLACKLIST.update(auto_words)
+            print(f"  已加载自动黑名单 {len(auto_words)} 词")
         existing_aliases: list[str] = []
         for c in existing.get("concepts", []):
             existing_aliases.extend(c.get("aliases", []))
-        print("  spaCy NER 发现专名...")
+        print("  构建 jieba 自定义词典...")
         segmenter.build_custom_dict(existing_aliases)
+        print("\n  扫描仓库...")
+        scan_candidates = scanner.scan()
+        print(f"  发现 {len(scan_candidates)} 个概念候选")
+        print("  spaCy NER 发现专名...")
         all_files = scanner.get_all_files()
         ner_candidates = segmenter.discover_unlinked(all_files)
         print(f"  发现 {len(ner_candidates)} 个未链接概念候选")
