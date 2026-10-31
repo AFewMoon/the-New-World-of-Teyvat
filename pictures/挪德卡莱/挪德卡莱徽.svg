@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000" width="300" height="300" role="img" aria-labelledby="t d">
+  <title id="t">挪德卡莱联合政府徽</title>
+  <desc id="d">盾徽：盾边夜蓝，环带月蓝上排一圈月牙纹；盾心夜蓝，中央一枚月矩菱形结晶，银环之上一道弯月与两道残月环绕结晶，牙口一律朝向盾心。</desc>
+  <g transform="translate(91 0) scale(4.5455)">
+    <path d="M 50,72 Q 200,54 350,72 L 350,300 Q 350,396 200,396 Q 50,396 50,300 Z" fill="#1B2A4A" />
+    <path d="M 70,90 Q 200,72 330,90 L 330,298 Q 330,378 200,378 Q 70,378 70,298 Z" fill="#7FB8D9" />
+    <g>
+      <g transform="translate(109.8 95.3) rotate(86)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(223.0 92.2) rotate(91)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(336.1 99.6) rotate(96)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(321.0 177.2) rotate(180)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(321.0 293.2) rotate(180)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(280.8 355.5) rotate(-110)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(178.0 366.4) rotate(-87)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(91.3 337.6) rotate(-42)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(79.0 246.0) rotate(0)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+      <g transform="translate(79.0 130.0) rotate(0)">
+        <circle r="10.4" fill="#1B2A4A" />
+        <circle cx="4.2" r="8.2" fill="#7FB8D9" />
+      </g>
+    </g>
+    <path d="M 88,107 Q 200,90 312,107 L 312,296 Q 312,360 200,360 Q 88,360 88,296 Z" fill="#1B2A4A" stroke="#EAF2F8" stroke-width="2.5" />
+    <circle cx="200" cy="234" r="100" fill="none" stroke="#C7D3E0" stroke-width="2.5" />
+    <g>
+      <circle cx="200" cy="134" r="21" fill="#EAF2F8" />
+      <circle cx="200" cy="142" r="17" fill="#1B2A4A" />
+      <circle cx="113" cy="284" r="21" fill="#EAF2F8" />
+      <circle cx="119" cy="279" r="17" fill="#1B2A4A" />
+      <circle cx="287" cy="284" r="21" fill="#EAF2F8" />
+      <circle cx="281" cy="279" r="17" fill="#1B2A4A" />
+    </g>
+    <g>
+      <path d="M 200,154 L 252,234 L 200,314 L 148,234 Z" fill="#7FB8D9" />
+      <path d="M 200,178 L 230,234 L 200,290 L 170,234 Z" fill="#1B2A4A" stroke="#EAF2F8" stroke-width="2.5" />
+      <path d="M 200,200 L 214,234 L 200,268 L 186,234 Z" fill="#7FB8D9" />
+      <path d="M 200,154 L 200,178 M 252,234 L 230,234 M 200,314 L 200,290 M 148,234 L 170,234" fill="none" stroke="#EAF2F8" stroke-width="2.5" />
+    </g>
+  </g>
+</svg>

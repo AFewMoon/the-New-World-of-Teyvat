@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 2000" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">璃月共和国国旗</title>
+  <desc id="d">旗面以中线左右纵分：左半米白，象契约之纸与留白；右半琥珀金，象岩与摩拉。顶部一道粉红窄边带横贯旗面，象岩层上的桃花与琉璃色。中线处跨分割线立一枚墨色六棱岩晶，晶内套赭石六棱矿脉，再套粉红六棱矿心，自外而内为「岩、脉、心」三层。</desc>
+  <g transform="scale(5)">
+    <rect width="300" height="2000" fill="#F5EFE3" x="0" y="0" />
+    <rect x="300" width="300" height="2000" fill="#E0A94A" y="0" />
+    <rect width="600" height="36" fill="#E79AA6" y="0" x="0" />
+    <polygon points="300,114 390.1,166 390.1,270 300,322 209.9,270 209.9,166" fill="#2B2118" />
+    <polygon points="300,156 353.7,187 353.7,249 300,280 246.3,249 246.3,187" fill="#8A5A2B" />
+    <polygon points="300,192 322.5,205 322.5,231 300,244 277.5,231 277.5,205" fill="#E79AA6" />
+  </g>
+</svg>
