@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 2000" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">蒙德自由合众国国旗</title>
+  <desc id="d">米白旗面，上下两道风青绿边带；中央一朵金色风车菊，五片风车状花瓣呈顺时针旋转，花心为深墨绿圆点。</desc>
+  <g transform="scale(5)">
+    <rect width="600" height="400" fill="#F4F7F5" x="0" y="0" />
+    <rect y="0" width="600" height="56" fill="#4FBFA0" x="0" />
+    <rect y="344" width="600" height="56" fill="#4FBFA0" x="0" />
+    <g transform="translate(300 200)">
+      <g fill="#D8A93C">
+        <path d="M 0,-12 C 30,-60 86,-54 104,-4 C 96,40 46,56 0,12 Z" />
+        <path d="M 0,-12 C 30,-60 86,-54 104,-4 C 96,40 46,56 0,12 Z" transform="rotate(72)" />
+        <path d="M 0,-12 C 30,-60 86,-54 104,-4 C 96,40 46,56 0,12 Z" transform="rotate(144)" />
+        <path d="M 0,-12 C 30,-60 86,-54 104,-4 C 96,40 46,56 0,12 Z" transform="rotate(216)" />
+        <path d="M 0,-12 C 30,-60 86,-54 104,-4 C 96,40 46,56 0,12 Z" transform="rotate(288)" />
+      </g>
+      <circle r="26" fill="#1E3A31" />
+      <circle r="9" fill="#F4F7F5" />
+    </g>
+  </g>
+</svg>

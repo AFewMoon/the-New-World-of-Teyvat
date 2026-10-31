@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 2000" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">挪德卡莱联合政府旗</title>
+  <desc id="d">夜蓝旗面，中央三枚白色月相：左为弯月，中为满月（外罩银环），右为残月，两侧弯月朝向对称；下方一座银色灯塔立于旗底之上，三束淡蓝光束自灯塔向上升起，止于月相下缘。</desc>
+  <g transform="scale(5)">
+    <rect width="600" height="400" fill="#1B2A4A" x="0" y="0" />
+    <g fill="#7FB8D9">
+      <polygon points="300,320 146,236 180,236" />
+      <polygon points="300,320 281,208 319,208" />
+      <polygon points="300,320 420,236 454,236" />
+    </g>
+    <path d="M 286,304 A 14,14 0 0 1 314,304 Z" fill="#C7D3E0" />
+    <rect x="286" y="304" width="28" height="16" fill="#C7D3E0" />
+    <rect x="281" y="320" width="38" height="7" fill="#C7D3E0" />
+    <polygon points="286,327 314,327 308,362 292,362" fill="#C7D3E0" />
+    <rect x="290" y="336" width="20" height="3" fill="#1B2A4A" />
+    <rect x="291" y="348" width="18" height="3" fill="#1B2A4A" />
+    <polygon points="254,362 346,362 350,378 250,378" fill="#C7D3E0" />
+    <circle cx="300" cy="150" r="59" fill="none" stroke="#C7D3E0" stroke-width="3" />
+    <circle cx="300" cy="150" r="52" fill="#EAF2F8" />
+    <circle cx="176" cy="184" r="44" fill="#EAF2F8" />
+    <circle cx="194" cy="177" r="34" fill="#1B2A4A" />
+    <circle cx="424" cy="184" r="44" fill="#EAF2F8" />
+    <circle cx="406" cy="177" r="34" fill="#1B2A4A" />
+  </g>
+</svg>

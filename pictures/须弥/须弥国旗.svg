@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 2000" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">须弥社会主义联邦国旗</title>
+  <desc id="d">旗面以中线左右对分：左半革命红，象革命与人民；右半沙金，象沙漠。中央一株月白生命树，树冠为七片尖叶自冠座对称层叠的冠形，冠内缀三枚沙金智慧果实；树干自立 Y 形分叉托住树冠，象征雨林与沙漠共同滋养的联邦。</desc>
+  <g transform="scale(5)">
+    <rect width="300" height="2000" fill="#B3272D" x="0" y="0" />
+    <rect x="300" width="300" height="2000" fill="#D9A441" y="0" />
+    <g fill="#F3F1E6">
+      <ellipse cx="300" cy="200" rx="88" ry="34" />
+      <path d="M 0,0 C 20,-26 20,-60 0,-80 C -20,-60 -20,-26 0,0 Z" transform="translate(300 178) rotate(0)" />
+      <path d="M 0,0 C 20,-26 20,-60 0,-80 C -20,-60 -20,-26 0,0 Z" transform="translate(289.6 179.7) rotate(-20)" />
+      <path d="M 0,0 C 20,-26 20,-60 0,-80 C -20,-60 -20,-26 0,0 Z" transform="translate(310.4 179.7) rotate(20)" />
+      <path d="M 0,0 C 20,-26 20,-60 0,-80 C -20,-60 -20,-26 0,0 Z" transform="translate(282 184.6) rotate(-40)" />
+      <path d="M 0,0 C 20,-26 20,-60 0,-80 C -20,-60 -20,-26 0,0 Z" transform="translate(318 184.6) rotate(40)" />
+      <path d="M 0,0 C 20,-26 20,-60 0,-80 C -20,-60 -20,-26 0,0 Z" transform="translate(275.8 192) rotate(-60)" />
+      <path d="M 0,0 C 20,-26 20,-60 0,-80 C -20,-60 -20,-26 0,0 Z" transform="translate(324.2 192) rotate(60)" />
+      <path d="M 288,364 L 312,364 L 306,300 L 348,224 L 334,212 L 300,228 L 266,212 L 252,224 L 294,300 Z" />
+    </g>
+    <g fill="#D9A441">
+      <circle cx="300" cy="182" r="6" />
+      <circle cx="278" cy="189" r="5" />
+      <circle cx="322" cy="189" r="5" />
+    </g>
+  </g>
+</svg>

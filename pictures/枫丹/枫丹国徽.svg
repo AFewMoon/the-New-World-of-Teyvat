@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000" width="300" height="300" role="img" aria-labelledby="t d">
+  <title id="t">枫丹重建共和国国徽</title>
+  <desc id="d">盾徽：金边盾形，环带为水蓝底金色菱格纹，盾心雪白，中央是一柄被天平衡量过的金色长剑；盾顶为浪花冠，金色冠座上三朵水蓝浪头。</desc>
+  <defs>
+    <clipPath id="bandClip">
+      <path d="M 66,90 Q 200,72 334,90 L 334,292 Q 334,374 200,374 Q 66,374 66,292 Z M 84,108 Q 200,90 316,108 L 316,288 Q 316,356 200,356 Q 84,356 84,288 Z" clip-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g transform="translate(91 0) scale(4.5455)">
+    <g stroke="#2C7FB8" fill="none" stroke-linecap="round">
+      <path d="M 0,0 C -2,-26 -18,-44 -42,-42 C -58,-41 -66,-28 -62,-18 C -58,-9 -44,-8 -40,-16 C -37,-22 -42,-28 -48,-26" stroke-width="13" transform="translate(166 58)" />
+      <path d="M 0,0 C -2,-26 -18,-44 -42,-42 C -58,-41 -66,-28 -62,-18 C -58,-9 -44,-8 -40,-16 C -37,-22 -42,-28 -48,-26" stroke-width="13" transform="translate(234 58) scale(-1 1)" />
+      <path d="M 0,0 C -2,-20 -12,-30 -24,-28 C -32,-27 -36,-20 -32,-15 C -29,-11 -23,-13 -24,-18" stroke-width="11" transform="translate(200 58)" />
+      <path d="M 0,0 C -2,-20 -12,-30 -24,-28 C -32,-27 -36,-20 -32,-15 C -29,-11 -23,-13 -24,-18" stroke-width="11" transform="translate(200 58) scale(-1 1)" />
+    </g>
+    <path d="M 132,62 Q 200,42 268,62 L 268,76 Q 200,56 132,76 Z" fill="#C9A94E" />
+    <path d="M 50,74 Q 200,56 350,74 L 350,294 Q 350,392 200,392 Q 50,392 50,294 Z" fill="#C9A94E" />
+    <path d="M 66,90 Q 200,72 334,90 L 334,292 Q 334,374 200,374 Q 66,374 66,292 Z M 84,108 Q 200,90 316,108 L 316,288 Q 316,356 200,356 Q 84,356 84,288 Z" fill="#2C7FB8" fill-rule="evenodd" />
+    <g clip-path="url(#bandClip)" fill="#C9A94E">
+      <g transform="rotate(45 200 233)">
+        <rect x="60" y="-160" width="9" height="800" />
+        <rect x="96" y="-160" width="9" height="800" />
+        <rect x="132" y="-160" width="9" height="800" />
+        <rect x="168" y="-160" width="9" height="800" />
+        <rect x="204" y="-160" width="9" height="800" />
+        <rect x="240" y="-160" width="9" height="800" />
+        <rect x="276" y="-160" width="9" height="800" />
+        <rect x="312" y="-160" width="9" height="800" />
+        <rect x="348" y="-160" width="9" height="800" />
+      </g>
+      <g transform="rotate(-45 200 233)">
+        <rect x="60" y="-160" width="9" height="800" />
+        <rect x="96" y="-160" width="9" height="800" />
+        <rect x="132" y="-160" width="9" height="800" />
+        <rect x="168" y="-160" width="9" height="800" />
+        <rect x="204" y="-160" width="9" height="800" />
+        <rect x="240" y="-160" width="9" height="800" />
+        <rect x="276" y="-160" width="9" height="800" />
+        <rect x="312" y="-160" width="9" height="800" />
+        <rect x="348" y="-160" width="9" height="800" />
+      </g>
+    </g>
+    <path d="M 84,108 Q 200,90 316,108 L 316,288 Q 316,356 200,356 Q 84,356 84,288 Z" fill="#F7FAFC" />
+    <path d="M 84,108 Q 200,90 316,108 L 316,288 Q 316,356 200,356 Q 84,356 84,288 Z" fill="none" stroke="#C9A94E" stroke-width="3" />
+    <path d="M 152,340 Q 168,330 184,340 Q 200,350 216,340 Q 232,330 248,340" fill="none" stroke="#2C7FB8" stroke-width="6" stroke-linecap="round" />
+    <g transform="translate(200 238) scale(1.24)" fill="#C9A94E">
+      <rect x="-72" y="-58" width="144" height="11" rx="5.5" />
+      <rect x="-75.5" y="-47" width="7" height="22" />
+      <rect x="68.5" y="-47" width="7" height="22" />
+      <path d="M -96,-25 Q -72,6 -48,-25 Z" />
+      <path d="M 48,-25 Q 72,6 96,-25 Z" />
+      <rect x="-7" y="-47" width="14" height="32" />
+      <path d="M -30,-15 L 30,-15 L 37,-6 L 30,3 L -30,3 L -37,-6 Z" />
+      <path d="M -12,3 L 12,3 L 12,39 L 0,63 L -12,39 Z" />
+      <circle cx="0" cy="-53" r="12" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 2000" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">纳塔联盟国旗</title>
+  <desc id="d">深褐旗面，中央一团高耸的金色圣火燃于圣火坛上，火心为火红；圣火背后放射六道金色光芒，每 60 度一道、严格等分，象征回声之子、流泉之众、悬木人、花羽会、沃陆之邦、烟谜主六个共和国。</desc>
+  <g transform="scale(5)">
+    <rect width="600" height="400" fill="#3A1E14" x="0" y="0" />
+    <g fill="#F0B429">
+      <polygon points="300,200 312,28 288,28" transform="rotate(30 300 200)" />
+      <polygon points="300,200 312,28 288,28" transform="rotate(90 300 200)" />
+      <polygon points="300,200 312,28 288,28" transform="rotate(150 300 200)" />
+      <polygon points="300,200 312,28 288,28" transform="rotate(210 300 200)" />
+      <polygon points="300,200 312,28 288,28" transform="rotate(270 300 200)" />
+      <polygon points="300,200 312,28 288,28" transform="rotate(330 300 200)" />
+    </g>
+    <g fill="#3A1E14" transform="translate(300 200) scale(1.16) translate(-300 -200)">
+      <path d="M 0,0 C 16,0 26,-30 24,-68 C 23,-100 13,-126 0,-146 C -13,-126 -23,-100 -24,-68 C -26,-30 -16,0 0,0 Z" transform="translate(300 284) scale(1.34)" />
+      <path d="M 0,0 C 16,0 26,-30 24,-68 C 23,-100 13,-126 0,-146 C -13,-126 -23,-100 -24,-68 C -26,-30 -16,0 0,0 Z" transform="translate(284 288) rotate(-16) scale(0.95)" />
+      <path d="M 0,0 C 16,0 26,-30 24,-68 C 23,-100 13,-126 0,-146 C -13,-126 -23,-100 -24,-68 C -26,-30 -16,0 0,0 Z" transform="translate(316 288) rotate(16) scale(0.95)" />
+    </g>
+    <g fill="#F0B429">
+      <path d="M 276,290 L 324,290 L 317,314 Q 300,320 283,314 Z" />
+      <path d="M 0,0 C 16,0 26,-30 24,-68 C 23,-100 13,-126 0,-146 C -13,-126 -23,-100 -24,-68 C -26,-30 -16,0 0,0 Z" transform="translate(300 284) scale(1.34)" />
+      <path d="M 0,0 C 16,0 26,-30 24,-68 C 23,-100 13,-126 0,-146 C -13,-126 -23,-100 -24,-68 C -26,-30 -16,0 0,0 Z" transform="translate(284 288) rotate(-16) scale(0.95)" />
+      <path d="M 0,0 C 16,0 26,-30 24,-68 C 23,-100 13,-126 0,-146 C -13,-126 -23,-100 -24,-68 C -26,-30 -16,0 0,0 Z" transform="translate(316 288) rotate(16) scale(0.95)" />
+      <rect x="270" y="284" width="60" height="10" rx="3" />
+    </g>
+    <path d="M 0,0 C 12,0 20,-24 18,-52 C 17,-76 9,-96 0,-110 C -9,-96 -17,-76 -18,-52 C -20,-24 -12,0 0,0 Z" transform="translate(300 290) scale(0.5)" fill="#C2381F" />
+  </g>
+</svg>
