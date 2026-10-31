@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 2000" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">至冬国国旗</title>
+  <desc id="d">冰白旗面，底部一道深蓝横带，带上压一道冰蓝冰线；旗心一枚完整的冰蓝六面巨晶，晶中立着一支金色火炬，焰尖收在晶顶之内，炬柄向下没入晶底，火种封在冰中。</desc>
+  <g transform="scale(5)">
+    <rect width="600" height="400" fill="#F0F4F8" x="0" y="0" />
+    <rect y="306" width="600" height="8" fill="#6FA8C9" x="0" />
+    <rect y="314" width="600" height="86" fill="#1E3A5F" x="0" />
+    <polygon points="300,56 404,124 404,238 300,306 196,238 196,124" fill="#6FA8C9" />
+    <path d="M 300,70 L 392,131 L 392,231 L 300,292 L 208,231 L 208,131 Z" fill="none" stroke="#F0F4F8" stroke-width="3.5" />
+    <g fill="#D8A93C">
+      <path d="M 300,92 C 312,122 330,152 334,182 C 338,210 324,232 300,240 C 276,232 262,210 266,182 C 270,152 288,122 300,92 Z" />
+      <rect x="256" y="236" width="88" height="7" />
+      <polygon points="258,243 342,243 322,266 278,266" />
+      <rect x="282" y="266" width="36" height="5" />
+      <polygon points="291,271 309,271 304,304 296,304" />
+    </g>
+  </g>
+</svg>

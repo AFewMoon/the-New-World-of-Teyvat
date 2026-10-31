@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000" width="300" height="300" role="img" aria-labelledby="t d">
+  <title id="t">须弥社会主义联邦国徽</title>
+  <desc id="d">盾徽：沙金盾边，深褐环带内缀沙金叶纹；月白盾心，主纹章为一株绯红生命树，树冠由五片尖叶对称层叠成扇状，冠内缀三枚沙金智慧果实，树干作 Y 形分叉；树下左垂双穗麦束、右立九齿齿轮，一为劳动党、一为科学联盟，共同拱卫树身。</desc>
+  <g transform="translate(91 0) scale(4.5455)">
+    <path d="M 50,64 Q 200,42 350,64 L 350,286 Q 350,394 200,394 Q 50,394 50,286 Z" fill="#D9A441" />
+    <path d="M 64,78 Q 200,56 336,78 L 336,286 Q 336,380 200,380 Q 64,380 64,286 Z" fill="#4A3B2A" />
+    <path d="M 88,102 Q 200,80 312,102 L 312,288 Q 312,356 200,356 Q 88,356 88,288 Z" fill="#F3F1E6" />
+    <g fill="#D9A441">
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(76 140)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(76 190)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(76 240)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(76 286)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(324 140)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(324 190)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(324 240)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(324 286)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(140 82)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(260 82)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(200 366)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(158 360) rotate(-18)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(242 360) rotate(18)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(120 348) rotate(-38)" />
+      <path d="M 0,-12 Q 7,0 0,12 Q -7,0 0,-12 Z" transform="translate(280 348) rotate(38)" />
+    </g>
+    <g fill="#B3272D">
+      <ellipse cx="200" cy="200" rx="48" ry="20" />
+      <path d="M 0,0 C 12,-15 12,-34 0,-46 C -12,-34 -12,-15 0,0 Z" transform="translate(200 184) rotate(0)" />
+      <path d="M 0,0 C 12,-15 12,-34 0,-46 C -12,-34 -12,-15 0,0 Z" transform="translate(194.5 185) rotate(-20)" />
+      <path d="M 0,0 C 12,-15 12,-34 0,-46 C -12,-34 -12,-15 0,0 Z" transform="translate(205.5 185) rotate(20)" />
+      <path d="M 0,0 C 12,-15 12,-34 0,-46 C -12,-34 -12,-15 0,0 Z" transform="translate(189.7 187.7) rotate(-40)" />
+      <path d="M 0,0 C 12,-15 12,-34 0,-46 C -12,-34 -12,-15 0,0 Z" transform="translate(210.3 187.7) rotate(40)" />
+      <path d="M 0,0 C 12,-15 12,-34 0,-46 C -12,-34 -12,-15 0,0 Z" transform="translate(186.1 192) rotate(-60)" />
+      <path d="M 0,0 C 12,-15 12,-34 0,-46 C -12,-34 -12,-15 0,0 Z" transform="translate(213.9 192) rotate(60)" />
+      <path d="M 192,344 L 208,344 L 205,296 L 226,214 L 212,206 L 200,252 L 188,206 L 174,214 L 195,296 Z" />
+    </g>
+    <g fill="#D9A441">
+      <circle cx="200" cy="172" r="5" />
+      <circle cx="186" cy="176" r="4.5" />
+      <circle cx="214" cy="176" r="4.5" />
+    </g>
+    <g fill="#4A3B2A">
+      <path d="M 138,336 L 142,336 L 134,206 L 130,206 Z" />
+      <ellipse cx="124.9" cy="220" rx="6" ry="11" transform="rotate(-30 124.9 220)" />
+      <ellipse cx="140.9" cy="220" rx="6" ry="11" transform="rotate(30 140.9 220)" />
+      <ellipse cx="126.4" cy="245" rx="6" ry="11" transform="rotate(-30 126.4 245)" />
+      <ellipse cx="142.4" cy="245" rx="6" ry="11" transform="rotate(30 142.4 245)" />
+      <ellipse cx="127.9" cy="270" rx="6" ry="11" transform="rotate(-30 127.9 270)" />
+      <ellipse cx="143.9" cy="270" rx="6" ry="11" transform="rotate(30 143.9 270)" />
+      <ellipse cx="129.5" cy="295" rx="6" ry="11" transform="rotate(-30 129.5 295)" />
+      <ellipse cx="145.5" cy="295" rx="6" ry="11" transform="rotate(30 145.5 295)" />
+      <ellipse cx="132" cy="212" rx="6" ry="11" transform="rotate(2 132 212)" />
+      <path d="M 154,336 L 158,336 L 152,230 L 148,230 Z" />
+      <ellipse cx="142.8" cy="244" rx="6" ry="11" transform="rotate(-30 142.8 244)" />
+      <ellipse cx="158.8" cy="244" rx="6" ry="11" transform="rotate(30 158.8 244)" />
+      <ellipse cx="144.2" cy="268" rx="6" ry="11" transform="rotate(-30 144.2 268)" />
+      <ellipse cx="160.2" cy="268" rx="6" ry="11" transform="rotate(30 160.2 268)" />
+      <ellipse cx="145.5" cy="292" rx="6" ry="11" transform="rotate(-30 145.5 292)" />
+      <ellipse cx="161.5" cy="292" rx="6" ry="11" transform="rotate(30 161.5 292)" />
+      <ellipse cx="150" cy="236" rx="6" ry="11" transform="rotate(2 150 236)" />
+    </g>
+    <g fill="#4A3B2A">
+      <circle cx="268" cy="268" r="28" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(0 268 268)" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(40 268 268)" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(80 268 268)" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(120 268 268)" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(160 268 268)" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(200 268 268)" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(240 268 268)" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(280 268 268)" />
+      <rect x="265" y="228" width="6" height="12" transform="rotate(320 268 268)" />
+    </g>
+    <circle cx="268" cy="268" r="10" fill="#F3F1E6" />
+  </g>
+</svg>
