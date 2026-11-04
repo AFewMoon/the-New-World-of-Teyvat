@@ -47,6 +47,10 @@ content/*
 !content/javascripts/
 !content/stylesheets/
 
-# Blender 工作区（建模资产本地保留，不入库）
-tools/blender/
+# tools 仅保留四个程序与配置，其余本地资产不入库
+tools/*
+!tools/fix_punctuation.py
+!tools/concept_linker.py
+!tools/concept_mappings.json
+!tools/auto_blacklist.json
 *.blend1
