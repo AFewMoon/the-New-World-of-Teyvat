@@ -289,7 +289,7 @@ class StateManager:
             self.state = {}
 
     def save(self):
-        self.path.write_text(json.dumps(self.state, ensure_ascii=False, indent=2), encoding="utf-8")
+        self.path.write_text(json.dumps(self.state, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
 
     def should_refresh_mappings(self) -> bool:
         today = date.today()
@@ -785,7 +785,7 @@ class LinkChecker:
                 else:
                     print(f"  [跳过] {i['file']}:{i['line']}  未找到 ({i['url']})")
             if changed:
-                fp.write_text("\n".join(lines), encoding="utf-8")
+                fp.write_text("\n".join(lines), encoding="utf-8", newline="\n")
         return fixed, unfixable_count
 
 
@@ -833,12 +833,12 @@ class ConceptMapper:
         self.data["_meta"]["last_updated"] = date.today().isoformat()
         self.data["_meta"]["total_linked"] = len(self.data.get("concepts", []))
         self.data["_meta"]["total_unlinked"] = len(self.data.get("unlinked", []))
-        self.path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2), encoding="utf-8")
+        self.path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
         self.auto_blacklist["_meta"]["last_updated"] = date.today().isoformat()
         self.auto_blacklist["_meta"]["threshold"] = AUTO_BLACKLIST_THRESHOLD
         self.auto_blacklist["words"] = sorted(set(self.auto_blacklist.get("words", [])))
         AUTO_BLACKLIST_FILE.write_text(
-            json.dumps(self.auto_blacklist, ensure_ascii=False, indent=2), encoding="utf-8"
+            json.dumps(self.auto_blacklist, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n"
         )
 
     def merge(self, scan_results: list[dict[str, Any]], jieba_candidates: list[dict[str, Any]]) -> dict[str, Any]:
@@ -963,7 +963,7 @@ class IndexGenerator:
             for u in unlinked[:50]:
                 master.append(f"| {u['name']} | {u.get('category', '未知')} | {u.get('files_count', '?')} 个文件 |")
         master.extend(["", "---", "", "*本目录由 concept_linker.py 自动生成，位于 tools/术语索引/ 下。*"])
-        (self.output_dir / "00_总索引.md").write_text("\n".join(master), encoding="utf-8")
+        (self.output_dir / "00_总索引.md").write_text("\n".join(master), encoding="utf-8", newline="\n")
 
     def _gen_category(self, category: str, concepts: list[dict], unlinked: list[dict], prefix: str):
         lines = [f"# {category}", "", f"> 共 {len(concepts)} 个概念 | 自动生成于 {datetime.now().strftime('%Y-%m-%d')}", "", "| 概念 | 目标文件 | 别名 |", "|:----|:--------|:-----|"]
@@ -976,7 +976,7 @@ class IndexGenerator:
             lines.extend(["", "## 未链接概念（无对应文件）", "", "| 概念 | 出现频次 |", "|------|---------|"])
             for u in cat_unlinked:
                 lines.append(f"| {u['name']} | {u.get('files_count', '?')} 个文件 |")
-        (self.output_dir / f"{prefix}_{category}.md").write_text("\n".join(lines), encoding="utf-8")
+        (self.output_dir / f"{prefix}_{category}.md").write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
 
 # ─── Reporter ────────────────────────────────────────────────────────────────

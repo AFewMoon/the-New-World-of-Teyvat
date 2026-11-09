@@ -713,7 +713,7 @@ def fix_file(path: Path) -> bool:
         # 确保末尾有换行（如果原文件有）
         if raw_text.endswith("\n"):
             new_content += "\n"
-        path.write_text(new_content, encoding="utf-8")
+        path.write_text(new_content, encoding="utf-8", newline="\n")
         print(f"  [FIXED] {path.relative_to(BASE_DIR)}")
 
     return modified
