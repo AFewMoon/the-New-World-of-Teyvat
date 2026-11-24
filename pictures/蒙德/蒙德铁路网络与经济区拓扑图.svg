@@ -178,10 +178,10 @@
     <text x="876" y="1540" font-size="16" font-weight="700" fill="#52C79B">MR 160 J 系列推挽动车组 (Mondstadt Railway 160 km/h Push-Pull)</text>
     <text x="876" y="1566" font-size="12.5" fill="#DDF2E8">改造自璃月 LR 160 J 技术平台·蒙德本地定型·由璃月机车集团（归离原府主厂区）制造·蒙德本地维修公司承接三级及以下检修</text>
     <g font-size="13" fill="#DDF2E8">
-      <rect x="876" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1015" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">编组 1M＋8T＋1C</text><text x="1015" y="1636" text-anchor="middle" font-size="11.5">支持重联</text>
-      <rect x="1170" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1309" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">功率 4,800 kW</text><text x="1309" y="1636" text-anchor="middle" font-size="11.5">轴式 Bo-Bo</text>
+      <rect x="876" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1015" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">编组 1M＋6T＋1C</text><text x="1015" y="1636" text-anchor="middle" font-size="11.5">共 8 节·支持重联</text>
+      <rect x="1170" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1309" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">功率 5,600 kW</text><text x="1309" y="1636" text-anchor="middle" font-size="11.5">轴式 Bo-Bo</text>
       <rect x="1464" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1603" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">160 km/h</text><text x="1603" y="1636" text-anchor="middle" font-size="11.5">提速段可 200 km/h 运行</text>
-      <rect x="1758" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1897" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">定员 786 人</text><text x="1897" y="1636" text-anchor="middle" font-size="11.5">一等软座＋二等硬座</text>
+      <rect x="1758" y="1586" width="278" height="64" rx="8" fill="#1F453B"/><text x="1897" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">定员 720 人</text><text x="1897" y="1636" text-anchor="middle" font-size="11.5">一等软座＋二等硬座</text>
       <rect x="2052" y="1586" width="264" height="64" rx="8" fill="#1F453B"/><text x="2184" y="1612" text-anchor="middle" font-weight="700" fill="#52C79B">48 列现役</text><text x="2184" y="1636" text-anchor="middle" font-size="11.5">后续每年增购数列</text>
       <text x="876" y="1676" font-size="12">涂装：墨绿底色配金色风车菊纹饰，车头印蒙德国徽；以租赁形式提供给私有运营公司使用。</text>
       <text x="876" y="1702" font-size="12">主干线全部客运列车均已换装 MR 160 J，替换此前老旧的机车牵引客车。</text>

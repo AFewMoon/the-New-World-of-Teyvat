@@ -19,7 +19,7 @@
   <!-- ═══════════ 第 1 层 · 政务院交通运输部（法规/督办） ═══════════ -->
   <g>
     <rect x="500" y="140" width="1000" height="150" rx="14" fill="#3B2F23" stroke="#C9A227" stroke-width="2.5"/>
-    <text x="524" y="176" font-size="13" fill="#D8AF45">监管与政策层 · [[璃月/璃月政治概况|政务院]]组成部分</text>
+    <text x="524" y="176" font-size="13" fill="#D8AF45">监管与政策层 · 政务院组成部分</text>
     <text x="524" y="212" font-size="21" font-weight="700" fill="#F7EBC8">政务院交通运输部</text>
     <text x="524" y="242" font-size="13" fill="#E8D8AC">· 制定《璃月城市轨道交通安全管理指导纲要》（安检标准 · 资质 · 重大事故报告）</text>
     <text x="524" y="266" font-size="13" fill="#E8D8AC">· 下达城轨票务互联互通政令，将「岩契通」一体化列为督办事项</text>
@@ -32,7 +32,7 @@
   <g>
     <rect x="120" y="356" width="1760" height="200" rx="16" fill="#E4EBF2" stroke="#B8922F" stroke-width="2"/>
     <text x="1000" y="392" text-anchor="middle" font-size="20" font-weight="700" fill="#3B2F23">所有权层 · 五府人民政府（由府国资委代表持有）</text>
-    <text x="1000" y="414" text-anchor="middle" font-size="12" fill="#6B5A40">城轨系统独立于 [[璃月/璃月铁路概况|LRC]] 国铁干线网络；各府依据《条例》由市政执法局负责本地安全管理</text>
+    <text x="1000" y="414" text-anchor="middle" font-size="12" fill="#6B5A40">城轨系统独立于 LRC 国铁干线网络；各府依据《条例》由市政执法局负责本地安全管理</text>
 
     <!-- 五府各一个小块 + 各自运营主体 -->
     <g font-size="14" fill="#3B2F23">
