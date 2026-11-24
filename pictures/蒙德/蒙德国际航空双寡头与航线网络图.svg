@@ -33,7 +33,7 @@
     <!-- 基本信息 -->
     <text x="84" y="332" font-size="12.5" fill="#DDF2E8">主基地：蒙德自由国际机场 T1（客运）· 特色服务：「蒲公英会所」高端舱——机上供应天使的馈赠联名特调</text>
     <!-- 机队构成 scale 30px/架 -->
-    <text x="84" y="372" font-size="15" font-weight="700" fill="#52C79B">机队规模：现 38 架（TE 2035 收官后 46 架，全数购自志飞联合制造集团）</text>
+    <text x="84" y="372" font-size="15" font-weight="700" fill="#52C79B">机队规模：现 38 架（TE 2035 收官后 46 架；下列构成为收官目标，全数购自志飞联合制造集团）</text>
     <g font-size="12.5" fill="#B9DFCF">
       <text x="84" y="406">ZF-36 L 长途型</text>
       <rect x="300" y="392" width="630" height="22" rx="4" fill="url(#anemoTop)"/><text x="940" y="408" font-weight="700" fill="#F5FAF7">×21</text>
@@ -74,7 +74,7 @@
     <text x="1288" y="260" font-size="12.5" fill="#3E5F54"><tspan font-weight="700" fill="#1F7A5C">总部：</tspan>摩根罗特城堡　<tspan font-weight="700" fill="#1F7A5C">主基地：</tspan>蒙德自由国际机场（货运机坪）＋ 荆夫骑士国际机场</text>
     <text x="1288" y="284" font-size="12.5" fill="#3E5F54"><tspan font-weight="700" fill="#1F7A5C">特殊地位：</tspan>承担蒙德高端酒类和花卉的全球冷链运输任务</text>
     <!-- 机队 scale 55px/架 -->
-    <text x="1264" y="330" font-size="15" font-weight="700" fill="#1F7A5C">机队规模：现 22 架（TE 2035 收官后 26 架，全志飞平台，与蒲公英共享维护体系）</text>
+    <text x="1264" y="330" font-size="15" font-weight="700" fill="#1F7A5C">机队规模：现 22 架（TE 2035 收官后 26 架；下列构成为收官目标，全志飞平台，与蒲公英共享维护体系）</text>
     <g font-size="12.5">
       <text x="1264" y="364">ZF-32 F 货运型</text>
       <rect x="1480" y="350" width="550" height="22" rx="4" fill="#1F7A5C"/><text x="2040" y="366" font-weight="700" fill="#1F7A5C">×10</text>
@@ -130,8 +130,8 @@
       <rect x="1454" y="1096" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1126" fill="#DDF2E8">蒙德—璃月港（每日 4 班货运）</text><text x="1478" y="1152" fill="#B9DFCF">荆夫—璃月港（每日 3 班花卉专线）</text>
 
       <rect x="84" y="1172" width="360" height="76" fill="#22493E"/><text x="264" y="1216" text-anchor="middle" font-weight="700" fill="#DDF2E8">枫丹</text>
-      <rect x="444" y="1172" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1202" fill="#DDF2E8">蒙德—枫丹庭（每日 4 班）</text><text x="468" y="1228" fill="#B9DFCF">荆夫—枫丹庭（每日 1 班，季节性）</text>
-      <rect x="1454" y="1172" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1216" fill="#DDF2E8">蒙德—枫丹庭（每日 2 班）</text>
+      <rect x="444" y="1172" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1202" fill="#DDF2E8">蒙德—枫丹廷（每日 4 班）</text><text x="468" y="1228" fill="#B9DFCF">荆夫—枫丹廷（每日 1 班，季节性）</text>
+      <rect x="1454" y="1172" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1216" fill="#DDF2E8">蒙德—枫丹廷（每日 2 班）</text>
 
       <rect x="84" y="1248" width="360" height="76" fill="#22493E"/><text x="264" y="1292" text-anchor="middle" font-weight="700" fill="#DDF2E8">须弥</text>
       <rect x="444" y="1248" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1278" fill="#DDF2E8">蒙德—须弥城（每日 3 班，ZF-32 E 高原型执飞）</text><text x="468" y="1304" fill="#B9DFCF">荆夫—须弥城（每日 1 班，经停璃月港）</text>
@@ -146,7 +146,7 @@
       <rect x="1454" y="1400" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1444" fill="#DDF2E8">蒙德—稻妻城（每周 3 班，须中转璃月港）</text>
 
       <rect x="84" y="1476" width="360" height="76" fill="#22493E"/><text x="264" y="1520" text-anchor="middle" font-weight="700" fill="#DDF2E8">纳塔</text>
-      <rect x="444" y="1476" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1520" fill="#DDF2E8">蒙德—纳塔（每周 5 班，部分班次经停枫丹庭）</text>
+      <rect x="444" y="1476" width="1010" height="76" fill="#2C5A4C"/><text x="468" y="1520" fill="#DDF2E8">蒙德—纳塔（每周 5 班，部分班次经停枫丹廷）</text>
       <rect x="1454" y="1476" width="886" height="76" fill="#2C5A4C"/><text x="1478" y="1520" fill="#DDF2E8">蒙德—纳塔（每周 2 班）</text>
     </g>
     <text x="84" y="1590" font-size="11.5" fill="#8FB5A6">※ 璃月方向仍为最繁忙走廊：客运每日 10 班＋货运每日 7 班；稻妻、须弥、纳塔方向此前保守的运力投放已在规模扩张中修正。</text>
