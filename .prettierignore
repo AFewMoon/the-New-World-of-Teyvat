@@ -1,0 +1,7 @@
+node_modules/
+tools/
+content/
+site/
+.trae/
+.obsidian/
+.codebuddy/

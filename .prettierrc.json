@@ -1,0 +1,12 @@
+{
+  "plugins": ["prettier-plugin-lint-md"],
+  "tabWidth": 4,
+  "useTabs": false,
+  "proseWrap": "preserve",
+  "endOfLine": "lf",
+  "no-half-width-punctuation": false,
+  "no-empty-code-lang": false,
+  "correct-title-trailing-punctuation": false,
+  "use-standard-ellipsis": false,
+  "no-special-characters": false
+}

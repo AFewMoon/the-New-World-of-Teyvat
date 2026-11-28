@@ -19,6 +19,9 @@ desktop.ini
 *.swo
 *~
 
+# Node
+node_modules/
+
 # Python cache
 tools/__pycache__/
 

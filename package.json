@@ -1,0 +1,14 @@
+{
+  "name": "the-new-world-of-teyvat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Markdown 格式工具链",
+  "scripts": {
+    "format": "prettier --write \"**/*.md\"",
+    "format:check": "prettier --check \"**/*.md\""
+  },
+  "devDependencies": {
+    "prettier": "^3.6.0",
+    "prettier-plugin-lint-md": "^1.0.3"
+  }
+}
