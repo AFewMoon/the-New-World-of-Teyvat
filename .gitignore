@@ -50,9 +50,8 @@ content/*
 !content/javascripts/
 !content/stylesheets/
 
-# tools 仅保留四个程序与配置，其余本地资产不入库
+# tools 仅保留指定程序与配置，其余本地资产不入库
 tools/*
-!tools/fix_punctuation.py
 !tools/concept_linker.py
 !tools/concept_mappings.json
 !tools/auto_blacklist.json

@@ -351,29 +351,22 @@
 
 ## 配套工具
 
-本仓库提供以下 Python 辅助工具，位于 [`tools/`](./tools) 目录下。完整工作流（编辑 → 格式化 → 提交 → 推送）遵循仓库既有约定执行。
+本仓库使用 Prettier 统一格式化 Markdown，另有 Python 辅助脚本用于概念扫描与链接校验。完整工作流（编辑 → 格式化 → 提交 → 推送）遵循仓库既有约定执行。
 
-### `fix_punctuation.py` — 文本规范化工具
+### Prettier — Markdown 格式化
 
-对仓库中所有 Markdown 文件执行统一的标点符号与格式规范化处理，保障各区域文档的书写风格一致。具体操作包括：
+使用 Prettier 3 + `prettier-plugin-lint-md`，按 `.prettierrc.json` 统一处理缩进（4 空格）、空行压缩、中英文与中文数字间距、加粗标记空格等。lint-md 中与仓库约定冲突的规则（中文语境半角括号改全角、强制代码块语言、删除标题末尾标点、省略号归一、特殊字符清理）已在配置中关闭。
 
-| 功能                   | 说明                                                                  | 示例                                   |
-| ---------------------- | --------------------------------------------------------------------- | -------------------------------------- |
-| **中文引号替换**       | 英文单双引号 → 中文引号 (「」「『』」)                                | `"背景"` → `「背景」`                  |
-| **数字间连字符**       | 数字之间的 `-` 统一为 `~`                                             | `45%-50%` → `45%~50%`                  |
-| **数字/中文/英文间距** | 数字与非数字、中文与英文间补足/规整空格                               | `郡GDP` → `郡 GDP`，`GDP的` → `GDP 的` |
-| **加粗标记空格**       | `**` 内部紧贴内容，外部依相邻字符自动补空格                           | `的**30%**` → `的 **30%**`             |
-| **标题序号删除**       | 移除 `## 一、背景` 中的中文/数字序号                                  | `## 一、背景` → `## 背景`              |
-| **保护机制**           | 代码块、行内代码、Markdown 链接/图片中的 URL 编码不受任何正则操作影响 | 原样保留                               |
-
-**使用方式**（所有命令从 `tools/` 目录运行）：
+**使用方式**（在仓库根目录运行）：
 
 ```powershell
-cd tools
-& "C:\Program\anaconda3\python.exe" fix_punctuation.py                 # 全量格式化
-& "C:\Program\anaconda3\python.exe" fix_punctuation.py --check         # CI 只读检查
-& "C:\Program\anaconda3\python.exe" fix_punctuation.py --files 文件.md  # 处理单个文件
+npm install                                 # 首次安装依赖
+npm run format                              # 全量格式化
+npm run format:check                        # CI 只读检查
+npx prettier --write "璃月/璃月铁路概况.md"  # 处理单个文件
 ```
+
+以下约定 Prettier 无法表达，需写作时人工遵守：括号按内容语言选中英文（不含中文用半角）、英文引号 → 「」『』、数字区间 `-` → `~`、标题序号、独立成行的 `---`、内容文章的一级标题、列表项结尾 `；`/`。`、KaTeX 数学区内的链接语法。
 
 ### `concept_linker.py` — 概念扫描、术语索引与链接校验
 
@@ -394,7 +387,7 @@ cd tools
 
 ### CI/CD 流水线
 
-- **`.github/workflows/lint.yml`**：push/PR 时运行 `fix_punctuation.py --check` + `concept_linker.py --ci`；PR 失败时 bot 自动修复并回推；
+- **`.github/workflows/lint.yml`**：push/PR 时运行 `npm run format:check` + `concept_linker.py --ci`；PR 失败时 bot 用 `npm run format` 自动修复并回推；
 - **`.github/workflows/deploy.yml`**：push 到 `master` 时构建 MkDocs 并部署 GitHub Pages。
 
 ### Python 国内镜像源（新手参考）
@@ -460,7 +453,7 @@ python -m pip config set global.trusted-host pypi.tuna.tsinghua.edu.cn
 3. **基于游戏原设**：衍生创作应以《原神》游戏中的历史碎片、角色背景与地理设定为合理起点；
 4. **提交方式**：请通过 GitHub Issues 或 Pull Requests 提交修改建议。对于较大的新增内容，建议先开 Issue 讨论设定方向；
 5. **概念链接**：如有新增概念或文件，请运行 `concept_linker.py --refresh` 更新 `concept_mappings.json` 与术语索引；正文链接请手写标准 Markdown 链接；
-6. **格式处理**：提交前请运行 `fix_punctuation.py` 工具确保标点与格式规范一致。
+6. **格式处理**：提交前请在仓库根目录运行 `npm run format`，确保标点与格式规范一致。
 
 ## 许可
 
